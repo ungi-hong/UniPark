@@ -1,0 +1,22 @@
+{
+  "name": "@unipark/api-types",
+  "version": "0.0.0",
+  "private": true,
+  "description": "UniPark OpenAPI スキーマと、そこから生成された TypeScript 型",
+  "main": "./generated/api.d.ts",
+  "types": "./generated/api.d.ts",
+  "exports": {
+    ".": {
+      "types": "./generated/api.d.ts"
+    },
+    "./openapi.yaml": "./openapi.yaml"
+  },
+  "scripts": {
+    "gen": "openapi-typescript ./openapi.yaml -o ./generated/api.d.ts",
+    "gen:watch": "openapi-typescript ./openapi.yaml -o ./generated/api.d.ts --watch"
+  },
+  "devDependencies": {
+    "openapi-typescript": "^7.5.0",
+    "typescript": "^5"
+  }
+}

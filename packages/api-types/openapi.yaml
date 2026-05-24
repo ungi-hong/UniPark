@@ -1,0 +1,315 @@
+openapi: 3.1.0
+info:
+  title: UniPark API
+  version: 0.1.0
+  description: |
+    UniPark — 東京の障がい者割引のある駐車場検索 API。
+    MVP は Query 側 (公開、認証なし) のみ。Command 側は Phase 3。
+servers:
+  - url: /api/v1
+    description: 同一オリジン (Next.js から rewrites 経由 or 同じドメイン)
+
+tags:
+  - name: regions
+    description: 都道府県・市区町村マスタ
+  - name: parking-lots
+    description: 駐車場検索 (近傍 / 詳細)
+  - name: system
+    description: ヘルスチェック等
+
+paths:
+  /healthz:
+    get:
+      tags: [system]
+      summary: ヘルスチェック
+      operationId: getHealthz
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /regions/prefectures:
+    get:
+      tags: [regions]
+      summary: 都道府県一覧
+      description: MVP は東京都 ('13') のみ返却
+      operationId: listPrefectures
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Prefecture"
+
+  /regions/prefectures/{prefCode}/cities:
+    get:
+      tags: [regions]
+      summary: 市区町村一覧 (駐車場件数バッジ付き)
+      operationId: listCitiesByPrefecture
+      parameters:
+        - $ref: "#/components/parameters/PrefCodePath"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CityWithCount"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /regions/cities/{cityCode}/parking-lots:
+    get:
+      tags: [regions, parking-lots]
+      summary: 市区町村別の駐車場一覧 (ページング)
+      operationId: listParkingLotsByCity
+      parameters:
+        - $ref: "#/components/parameters/CityCodePath"
+        - $ref: "#/components/parameters/PageQuery"
+        - $ref: "#/components/parameters/PerPageQuery"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParkingLotSummaryPage"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+  /parking-lots/nearby:
+    get:
+      tags: [parking-lots]
+      summary: 現在地周辺の駐車場検索
+      description: PostGIS の ST_DWithin による近傍検索。distanceM 昇順
+      operationId: findNearbyParkingLots
+      parameters:
+        - name: lng
+          in: query
+          required: true
+          schema: { type: number, format: double, minimum: -180, maximum: 180 }
+          example: 139.7671
+        - name: lat
+          in: query
+          required: true
+          schema: { type: number, format: double, minimum: -90, maximum: 90 }
+          example: 35.6812
+        - name: radius
+          in: query
+          required: false
+          description: 検索半径 (メートル)
+          schema: { type: integer, minimum: 100, maximum: 10000, default: 2000 }
+        - name: limit
+          in: query
+          required: false
+          schema: { type: integer, minimum: 1, maximum: 100, default: 50 }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ParkingLotSummary"
+
+  /parking-lots/{id}:
+    get:
+      tags: [parking-lots]
+      summary: 駐車場詳細
+      operationId: getParkingLotDetail
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParkingLotDetail"
+        "404":
+          $ref: "#/components/responses/NotFound"
+
+components:
+  parameters:
+    PrefCodePath:
+      name: prefCode
+      in: path
+      required: true
+      description: 都道府県コード (JIS X 0401, 2桁ゼロ埋め)。東京都は '13'
+      schema: { type: string, pattern: "^[0-9]{2}$", example: "13" }
+    CityCodePath:
+      name: cityCode
+      in: path
+      required: true
+      description: 市区町村コード (JIS X 0402, 5桁ゼロ埋め)
+      schema: { type: string, pattern: "^[0-9]{5}$", example: "13101" }
+    PageQuery:
+      name: page
+      in: query
+      required: false
+      schema: { type: integer, minimum: 1, default: 1 }
+    PerPageQuery:
+      name: perPage
+      in: query
+      required: false
+      schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+
+  responses:
+    NotFound:
+      description: 指定リソースが存在しない
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ApiError"
+
+  schemas:
+    HealthStatus:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string, enum: [ok] }
+        version: { type: string }
+
+    ApiError:
+      type: object
+      required: [code, message]
+      properties:
+        code: { type: string, example: "not_found" }
+        message: { type: string }
+
+    Prefecture:
+      type: object
+      required: [code, name]
+      properties:
+        code: { type: string, pattern: "^[0-9]{2}$", example: "13" }
+        name: { type: string, example: "東京都" }
+
+    City:
+      type: object
+      required: [code, name, prefectureCode]
+      properties:
+        code: { type: string, pattern: "^[0-9]{5}$", example: "13101" }
+        name: { type: string, example: "千代田区" }
+        prefectureCode: { type: string, example: "13" }
+
+    CityWithCount:
+      allOf:
+        - $ref: "#/components/schemas/City"
+        - type: object
+          required: [parkingLotCount]
+          properties:
+            parkingLotCount: { type: integer, minimum: 0, example: 3 }
+
+    DiscountType:
+      type: string
+      description: |
+        割引タイプ
+        - free: 完全無料
+        - percentage: ％割引 (discountValue が割引率)
+        - fixed: 固定額割引 (discountValue が割引額/円)
+        - cap_hours: N時間まで無料 (discountMaxHours)
+        - amount_cap: 上限金額あり (discountValue が上限額/円)
+        - unknown: 公式に明示なし／要確認
+      enum: [free, percentage, fixed, cap_hours, amount_cap, unknown]
+
+    Discount:
+      type: object
+      required: [type]
+      properties:
+        type: { $ref: "#/components/schemas/DiscountType" }
+        target:
+          type: string
+          description: 対象 (例 "障害者手帳", "身体障害者手帳・愛の手帳・精神障害者保健福祉手帳")
+        value:
+          type: number
+          description: 割引値 (type に応じて率/額)
+          nullable: true
+        maxHours:
+          type: integer
+          description: 上限時間 (cap_hours 用)
+          nullable: true
+        conditions:
+          type: string
+          description: 条件 (申請方法、本人/同乗者の別、書類など)
+
+    AccessibleSpace:
+      type: object
+      required: [count]
+      properties:
+        count: { type: integer, minimum: 0 }
+        widthCm: { type: integer, nullable: true }
+        hasRoof: { type: boolean, nullable: true }
+        nearEntrance: { type: boolean, nullable: true }
+        hasRamp: { type: boolean, nullable: true }
+        notes: { type: string, nullable: true }
+
+    ParkingLotSummary:
+      type: object
+      required:
+        - id
+        - name
+        - address
+        - latitude
+        - longitude
+        - prefectureCode
+        - prefectureName
+        - cityCode
+        - cityName
+        - accessibleSpaceTotal
+        - discountType
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        address: { type: string }
+        latitude: { type: number, format: double }
+        longitude: { type: number, format: double }
+        prefectureCode: { type: string }
+        prefectureName: { type: string }
+        cityCode: { type: string }
+        cityName: { type: string }
+        accessibleSpaceTotal: { type: integer, minimum: 0 }
+        discountType: { $ref: "#/components/schemas/DiscountType" }
+        distanceM:
+          type: number
+          description: 検索原点からの距離 (m)。/nearby のみ付与
+          nullable: true
+
+    ParkingLotDetail:
+      allOf:
+        - $ref: "#/components/schemas/ParkingLotSummary"
+        - type: object
+          required: [discount, accessibleSpaces, updatedAt]
+          properties:
+            discount: { $ref: "#/components/schemas/Discount" }
+            accessibleSpaces:
+              type: array
+              items: { $ref: "#/components/schemas/AccessibleSpace" }
+            businessHours: { type: string, nullable: true }
+            phone: { type: string, nullable: true }
+            websiteUrl: { type: string, format: uri, nullable: true }
+            notes: { type: string, nullable: true }
+            sourceUrl: { type: string, format: uri, nullable: true }
+            updatedAt: { type: string, format: date-time }
+
+    ParkingLotSummaryPage:
+      type: object
+      required: [items, total, page, perPage]
+      properties:
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/ParkingLotSummary" }
+        total: { type: integer, minimum: 0 }
+        page: { type: integer, minimum: 1 }
+        perPage: { type: integer, minimum: 1 }
