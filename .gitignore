@@ -1,0 +1,38 @@
+# Personal local notes (not committed)
+PLAN.md
+TODO.md
+DATA.md
+
+# Node.js
+node_modules/
+.next/
+out/
+dist/
+build/
+*.log
+.pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+vendor/
+/bin/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

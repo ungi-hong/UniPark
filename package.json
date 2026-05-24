@@ -1,0 +1,17 @@
+{
+  "name": "unipark",
+  "private": true,
+  "version": "0.0.0",
+  "description": "東京の障がい者割引のある駐車場をモバイルで分かりやすく探せる Web アプリ",
+  "packageManager": "pnpm@11.1.2",
+  "scripts": {
+    "dev": "pnpm --filter @unipark/web dev",
+    "dev:web": "pnpm --filter @unipark/web dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r --if-present lint",
+    "gen:types": "pnpm --filter @unipark/api-types gen"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
