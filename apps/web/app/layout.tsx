@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { ServiceWorkerRegister } from "./sw-register";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "UniPark",
   description: "東京の障がい者割引のある駐車場をモバイルで分かりやすく",
+  appleWebApp: {
+    capable: true,
+    title: "UniPark",
+    statusBarStyle: "default",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#18181b",
 };
 
 export default function RootLayout({
@@ -25,11 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Providers>{children}</Providers>
+        <ServiceWorkerRegister />
       </body>
     </html>
   );
