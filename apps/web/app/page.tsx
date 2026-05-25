@@ -1,14 +1,46 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
+import { LocateFixed } from "lucide-react";
 import "maplibre-gl/dist/maplibre-gl.css";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { Map, Marker, NavigationControl } from "react-map-gl/maplibre";
+import { useCallback, useEffect, useRef, useState } from "react";
+import {
+  Map,
+  Marker,
+  NavigationControl,
+  type MapRef,
+  type ViewStateChangeEvent,
+} from "react-map-gl/maplibre";
 import { api, type ParkingLotSummary } from "@/lib/api-client";
 
 const TOKYO_STATION = { lat: 35.6812, lng: 139.7671 };
+const DEFAULT_ZOOM = 14;
+// OpenAPI 仕様: /parking-lots/nearby の radius は 100〜10000m
+const RADIUS_MIN_M = 100;
+const RADIUS_MAX_M = 10000;
 const DEFAULT_RADIUS_M = 2000;
+
+function haversineMeters(
+  aLng: number,
+  aLat: number,
+  bLng: number,
+  bLat: number,
+): number {
+  const R = 6371000;
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const dLat = toRad(bLat - aLat);
+  const dLng = toRad(bLng - aLng);
+  const s1 = Math.sin(dLat / 2);
+  const s2 = Math.sin(dLng / 2);
+  const a =
+    s1 * s1 + Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * s2 * s2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+function clamp(v: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, v));
+}
 
 function useGeolocation() {
   const [pos, setPos] = useState<{ lat: number; lng: number } | null>(null);
@@ -34,39 +66,104 @@ function useGeolocation() {
 
 function NearbyMap({ mapTilerKey }: { mapTilerKey: string }) {
   const { pos, denied } = useGeolocation();
-  const center = pos ?? TOKYO_STATION;
   const [selected, setSelected] = useState<ParkingLotSummary | null>(null);
+  const [viewState, setViewState] = useState({
+    longitude: TOKYO_STATION.lng,
+    latitude: TOKYO_STATION.lat,
+    zoom: DEFAULT_ZOOM,
+  });
+  const [searchParams, setSearchParams] = useState({
+    lat: TOKYO_STATION.lat,
+    lng: TOKYO_STATION.lng,
+    radius: DEFAULT_RADIUS_M,
+  });
+  const mapRef = useRef<MapRef>(null);
+  const autoCentered = useRef(false);
+
+  // 位置情報が初めて取れた時だけ自動で現在地中心にパン (以降のユーザー操作は尊重)
+  useEffect(() => {
+    if (autoCentered.current) return;
+    if (!pos) return;
+    autoCentered.current = true;
+    queueMicrotask(() =>
+      setViewState((v) => ({
+        ...v,
+        longitude: pos.lng,
+        latitude: pos.lat,
+        zoom: DEFAULT_ZOOM,
+      })),
+    );
+  }, [pos]);
+
+  // 現在のマップ bounds から検索 center と radius (画面対角線の半分) を確定する
+  const syncSearchFromMap = useCallback(() => {
+    const map = mapRef.current?.getMap();
+    if (!map) return;
+    const bounds = map.getBounds();
+    const center = bounds.getCenter();
+    const ne = bounds.getNorthEast();
+    const diagonalHalfM = haversineMeters(
+      center.lng,
+      center.lat,
+      ne.lng,
+      ne.lat,
+    );
+    const radius = clamp(
+      Math.round(diagonalHalfM),
+      RADIUS_MIN_M,
+      RADIUS_MAX_M,
+    );
+    setSearchParams((prev) => {
+      // 微小な揺らぎでの再 fetch を避ける
+      if (
+        Math.abs(prev.lat - center.lat) < 1e-5 &&
+        Math.abs(prev.lng - center.lng) < 1e-5 &&
+        Math.abs(prev.radius - radius) < 50
+      ) {
+        return prev;
+      }
+      return { lat: center.lat, lng: center.lng, radius };
+    });
+  }, []);
 
   const { data, isFetching } = useQuery({
     queryKey: [
       "parking-lots",
       "nearby",
-      center.lat,
-      center.lng,
-      DEFAULT_RADIUS_M,
+      searchParams.lat,
+      searchParams.lng,
+      searchParams.radius,
     ],
-    queryFn: () =>
-      api.findNearbyParkingLots({
-        lat: center.lat,
-        lng: center.lng,
-        radius: DEFAULT_RADIUS_M,
-      }),
+    queryFn: () => api.findNearbyParkingLots(searchParams),
   });
 
-  const statusLabel = denied
-    ? "位置情報なし — 東京駅を表示"
-    : pos
-      ? `${data?.length ?? 0} 件 (半径 ${DEFAULT_RADIUS_M / 1000} km)`
-      : "現在地取得中…";
+  const radiusKm = (searchParams.radius / 1000).toFixed(1);
+  const count = data?.length ?? 0;
+  const statusLabel =
+    !pos && !denied
+      ? "現在地取得中…"
+      : `${count} 件 (半径 ${radiusKm} km)`;
+
+  const recenterToMe = () => {
+    if (!pos) return;
+    setViewState((v) => ({
+      ...v,
+      longitude: pos.lng,
+      latitude: pos.lat,
+      zoom: DEFAULT_ZOOM,
+    }));
+  };
 
   return (
     <div className="relative flex-1">
       <Map
-        initialViewState={{
-          longitude: center.lng,
-          latitude: center.lat,
-          zoom: 14,
-        }}
+        ref={mapRef}
+        {...viewState}
+        onMove={(e: ViewStateChangeEvent) =>
+          setViewState((v) => ({ ...v, ...e.viewState }))
+        }
+        onMoveEnd={syncSearchFromMap}
+        onLoad={syncSearchFromMap}
         mapStyle={`https://api.maptiler.com/maps/streets-v2/style.json?key=${mapTilerKey}`}
         style={{ position: "absolute", inset: 0 }}
       >
@@ -100,6 +197,18 @@ function NearbyMap({ mapTilerKey }: { mapTilerKey: string }) {
           一覧で見る
         </Link>
       </div>
+
+      {!selected && (
+        <button
+          type="button"
+          onClick={recenterToMe}
+          disabled={!pos}
+          aria-label="現在地に戻す"
+          className="absolute bottom-4 left-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-zinc-700 shadow-lg transition disabled:opacity-40"
+        >
+          <LocateFixed className="h-5 w-5" />
+        </button>
+      )}
 
       {selected && (
         <SimpleInfoPanel
