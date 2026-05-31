@@ -155,7 +155,7 @@ function NearbyMap({ mapTilerKey }: { mapTilerKey: string }) {
   };
 
   return (
-    <div className="relative flex-1">
+    <div className="relative flex-1 [&_.maplibregl-ctrl-top-right]:mt-12">
       <Map
         ref={mapRef}
         {...viewState}
