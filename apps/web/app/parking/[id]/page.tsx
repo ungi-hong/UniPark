@@ -235,6 +235,11 @@ export default function ParkingDetailPage({
             </a>
           </p>
         )}
+        <p className="pt-2 border-t border-zinc-200">
+          <Link href="/about" className="text-blue-600 underline">
+            このアプリについて・免責事項
+          </Link>
+        </p>
       </footer>
     </div>
   );
