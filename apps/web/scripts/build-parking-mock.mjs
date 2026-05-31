@@ -1,4 +1,5 @@
-// discount-research.json を MSW 用の ParkingLotDetail[] (mocks/data/parking-lots.ts) に変換する生成スクリプト。
+// discount-research.json を API データ ParkingLotDetail[] (lib/data/parking-lots.ts) に変換する生成スクリプト。
+// 出力は Next Route Handlers (app/api/v1) と MSW (テスト用) の双方が lib/data/repository 経由で参照する。
 //
 // - 緯度経度は国土地理院ジオコーディング API (https://msearch.gsi.go.jp/address-search/AddressSearch)
 //   で住所から取得。解決できない住所は市区町村名でフォールバック。
@@ -6,7 +7,7 @@
 // - normal_rate / capacity は detail 画面の notes に集約。
 //
 // 実行: node apps/web/scripts/build-parking-mock.mjs
-// 出力: apps/web/mocks/data/parking-lots.ts
+// 出力: apps/web/lib/data/parking-lots.ts
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -14,7 +15,7 @@ import { dirname, resolve } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SRC = resolve(__dirname, "../data/discount-research.json");
-const OUT = resolve(__dirname, "../mocks/data/parking-lots.ts");
+const OUT = resolve(__dirname, "../lib/data/parking-lots.ts");
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
