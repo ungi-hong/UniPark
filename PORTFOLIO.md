@@ -1,9 +1,9 @@
 # UniPark — 障がい者割引のある駐車場を探せるマップアプリ
 
-> 東京の「障がい者割引のある駐車場」を、現在地から地図で・地域階層リストから探せるモバイル Web アプリ。Next.js フロントと Go (DDD + CQRS) バックエンドのモノレポ構成で開発中。
+> 東京の「障がい者割引のある駐車場」を、現在地から地図で・地域階層リストから探せるモバイル Web アプリ。データが読み取り専用・小規模なため別 API サーバを立てず、**Next.js (App Router + Route Handlers) で完結する構成**。pnpm workspaces のモノレポで、API 契約 (OpenAPI/TS 型) を共有の真実の源として持つ。
 
-> 🚧 **開発ステータス: 設計完了 → 実装初期段階(2026年5月開始 / 進行中)**
-> 立ち上げて間もないプロジェクト。要件定義・アーキテクチャ・データモデル・API 契約・フェーズ分けまでを先に固め切った上で、フロントエンドから実装に着手している段階。バックエンド (Go) は設計図が完成済みで、これから実装に入る。詳細は末尾の「開発ステータス」を参照。
+> 🚧 **開発ステータス: MVP 実装済み(2026年5月開始 / 進行中)**
+> 要件定義・アーキテクチャ・データモデル・API 契約・フェーズ分けを先に固めた上で実装。フロントエンドと Next Route Handlers によるデータ供給まで動作する。当初は Go バックエンド分離を設計したが、本データ特性では過剰と判断し Next 完結へ方針転換した(Go バックエンドは将来の拡張オプションとして設計を保持)。詳細は末尾の「開発ステータス」を参照。
 
 ---
 
@@ -32,54 +32,84 @@ UniPark は、
 
 | 機能 | 状態 |
 |---|---|
-| マップ画面: 現在地取得 + 周辺駐車場のピン表示 | ✅ FE 実装済 |
-| 地図移動に追従した範囲(bounds)再検索 + 現在地ボタン | ✅ FE 実装済 |
-| ピンタップ → 簡易情報シート → 詳細導線 | ✅ FE 実装済 |
-| 階層リスト: 都道府県 → 市区町村(件数バッジ) → 駐車場 | ✅ FE 実装済 |
-| 詳細ページ: 場所名 / 周辺地図 / 住所 / 割引情報 / 車椅子区画 / 最終更新日 | ✅ FE 実装済 |
-| PWA: manifest + アイコン + Service Worker(オフライン詳細キャッシュ) | ✅ FE 実装済 |
-| Query API 5本(都道府県 / 市区町村 / 近傍 / 市区町村別 / 詳細) | 🔶 OpenAPI 定義済 + MSW モック稼働。Go 実装はこれから |
-| CLI データ投入 (YAML → DB) | ⬜ 設計済・未実装 |
+| マップ画面: 現在地取得 + 周辺駐車場のピン表示 | ✅ 実装済 |
+| 地図移動に追従した範囲(bounds)再検索 + 現在地ボタン | ✅ 実装済 |
+| ピンタップ → 簡易情報シート → 詳細導線 | ✅ 実装済 |
+| 階層リスト: 都道府県 → 市区町村(件数バッジ) → 駐車場 | ✅ 実装済 |
+| 詳細ページ: 場所名 / 周辺地図 / 住所 / 割引情報 / 車椅子区画 / 最終更新日 | ✅ 実装済 |
+| PWA: manifest + アイコン + Service Worker(オフライン詳細キャッシュ) | ✅ 実装済 |
+| Query API 5本(都道府県 / 市区町村 / 近傍 / 市区町村別 / 詳細) | ✅ Next Route Handlers で実装済(OpenAPI 契約準拠) |
+| データ整備: 東京都全62自治体・276件を一次情報ベースで収集 + 実座標付与 | ✅ 実装済 |
 | 検索 / フィルタ・誤情報報告・管理画面 | ⬜ Phase 2〜3 |
 
 ---
 
 ## アーキテクチャ
 
-pnpm workspaces + Go modules のモノレポ。フロントとバックエンドを `apps/web` / `apps/api` に分け、API 仕様は `packages/api-types` の OpenAPI スキーマを**単一の真実の源**として両者で共有する。
+pnpm workspaces のモノレポ。アプリ本体は `apps/web` の Next.js 一本に集約し、API 仕様は `packages/api-types` の OpenAPI スキーマを**単一の真実の源**として、フロント (api-client) と Next Route Handlers の双方で共有する。
 
 ```
-[Mobile PWA] ──HTTPS──> [Next.js apps/web] ──MapTiler (maplibre-gl)
-                              │ REST/JSON (OpenAPI 駆動)
-                              v
-                    [Go API apps/api]  DDD レイヤード + CQRS
-                      presentation → application(command / query) → domain ← infrastructure
-                              │
-                              v
-                    [PostgreSQL 16 + PostGIS]
-                      正規化テーブル(write) + マテリアライズドビュー(read, GIST index)
+[Mobile PWA]
+   │ HTTPS
+   v
+[Next.js apps/web]
+   ├─ App Router (client) ── react-map-gl / maplibre-gl ── MapTiler ベクタータイル
+   │      │ fetch /api/v1/** (OpenAPI 契約 / TanStack Query)
+   │      v
+   └─ Route Handlers (app/api/v1/**)
+          │
+          v
+   [lib/data/repository]  ← 静的データ (lib/data/parking-lots.ts)
+                             生成元: discount-research.json (一次情報)
+```
+
+データは読み取り専用で件数も小規模(東京都276件)。書き込み・認証・DB が不要なため、独立した API サーバは立てず Next.js の Route Handlers が JSON を返す。検索ロジック(近傍の Haversine・市区町村フィルタ・ページング)は `lib/data/repository.ts` に一本化し、Route Handlers とテスト用 MSW の双方が同じ結果を返す。
+
+### データパイプライン
+
+施設データは「収集 → 構造化 → ジオコーディング → 静的データ生成」の一方向フローで作る。
+
+```
+一次情報 (自治体公式 / 施設公式 / 運営会社公式)
+   │ 市区町村単位で調査・二重確認
+   v
+discount-research.json (276件 / 全62自治体)
+   │ build-parking-mock.mjs
+   │   ・国土地理院ジオコーディング API で住所→実座標
+   │   ・discount_scope/rate → OpenAPI の DiscountType にマッピング
+   v
+lib/data/parking-lots.ts (ParkingLotDetail[])
 ```
 
 ### 設計上のこだわり
 
-- **DDD レイヤードアーキテクチャ**: `domain` は DB も HTTP も知らない純粋なレイヤーにし、依存方向を `presentation → application → domain ← infrastructure` に固定。バックエンドの学習と、テスタブルな構成(DI 前提)の両立が目的。
-- **CQRS(軽量版)**: Write はリポジトリ経由で集約を更新しドメインロジックを通す。Read はドメイン層を介さず ReadStore からマテビューを直接 SELECT して DTO を返す。「画面のための SQL」を割り切り、複雑な JOIN / 非正規化を Read 側に閉じ込める。イベントソーシングは採用せず、DB は 1 つ。
-- **PostGIS 近傍検索**: 位置を `GEOGRAPHY(POINT, 4326)` で持ち、`ST_DWithin` + `ST_Distance` で半径内検索。マテビューに GIST インデックスを張る。
-- **CLI = 管理機能の土台**: MVP のデータ投入を `cobra` CLI で実装し、それが呼ぶ `application/command` を Phase 3 の管理画面でも HTTP 経由で再利用する設計。同じユースケースを CLI と Web で共有する。
+- **「規模に合った構成」を選ぶ判断**: 読み取り専用・静的データに対して別バックエンド + DB はオーバーエンジニアリングと判断し、Next 完結に倒した。一方で API 契約 (OpenAPI/型) は維持し、将来バックエンドを切り出す際の差し替え口を残している。
+- **契約駆動の疎結合**: フロントの `api-client` と Route Handler は OpenAPI から生成した TS 型を介してのみ繋がる。`/api/v1` という URL 契約を保つことで、内部実装(静的データ / 将来の外部 API)を入れ替えてもフロントは無改修。
+- **情報の信頼性を UX に組み込む**: データモデルに `source_url` / `updated_at` を持たせ、詳細ページに「最終更新日」「情報源」を必ず表示(後述)。
+
+### 将来の拡張オプション(設計済み・未着手)
+
+書き込み(利用者からの誤情報報告・修正の取り込み)、複数クライアント供給、大規模な地理検索が必要になった段階で、`packages/api-types` の契約を据え置いたまま Route Handlers を外部バックエンドへ差し替えられるように設計してある。その想定構成:
+
+- **Go バックエンド (DDD レイヤード + CQRS 軽量版)**: `domain` を DB も HTTP も知らない純粋レイヤーにし、依存方向を `presentation → application → domain ← infrastructure` に固定。Write は集約経由でドメインロジックを通し、Read は ReadStore からマテビューを直接 SELECT。
+- **PostgreSQL 16 + PostGIS**: 位置を `GEOGRAPHY(POINT, 4326)` で持ち `ST_DWithin` + `ST_Distance` で半径内検索、Read 用マテビューに GIST インデックス。
+- **CLI = 管理機能の土台**: データ投入を `cobra` CLI で実装し、それが呼ぶ `application/command` を管理画面でも HTTP 経由で再利用。
+
+→ MVP では採用しないが、スケール要件が出た時に「契約は変えずに実装だけ載せ替える」ための設計。
 
 ---
 
 ## 技術的な工夫
 
-### 1. OpenAPI 駆動 + MSW による「フロント先行開発」
+### 1. OpenAPI 契約を中心に据えた疎結合 + フロント先行開発
 
-バックエンドの完成を待たずにフロントを完成させるため、`openapi.yaml` を真実の源として TS 型を自動生成し、**MSW (Mock Service Worker) でブラウザ内に API 仕様どおりのモックサーバを立てた**。収集済みの東京の駐車場データをモックレスポンスとして返すことで、Go 実装ゼロの段階でも UI が実 API と同じ契約で動く。バックエンド完成後は MSW を無効化するだけで実 API に切り替わる。
+`openapi.yaml` を真実の源として `openapi-typescript` で TS 型を自動生成し、フロントと Route Handler の両方がこの型で繋がる構成。実装初期はバックエンド完成を待たずに進めるため **MSW (Mock Service Worker) で API 仕様どおりのモックをブラウザに立てて** UI を先行実装し、データ供給の本体ができた段階で **MSW をテスト専用に降格し、同じ契約のまま Next Route Handlers に切り替えた**。型ずれは生成 TS 型で防ぐ。
 
-→ **API 契約を中心に据えることで、FE/BE を疎結合に並行開発できる構成**。型ずれは生成 TS 型と Go stub の双方で防ぐ。
+→ 「契約を中心に据える」ことで、モック → 実装 → (将来) 外部 API という実装の載せ替えをフロント無改修で行える。
 
 ### 2. 地図移動に追従する近傍検索
 
-`react-map-gl` + `maplibre-gl`(MapTiler のベクタータイル)で地図を描画し、地図の表示範囲(bounds)が変わるたびに周辺検索を再実行。Geolocation API で現在地に飛ぶボタンも実装。タイル提供者非依存の構成にしてあり、MapTiler から他プロバイダや自前 OSM への切り替えも想定。
+`react-map-gl` + `maplibre-gl`(MapTiler のベクタータイル)で地図を描画し、地図の表示範囲(bounds)が変わるたびに周辺検索を再実行。Geolocation API で現在地に飛ぶボタンも実装。タイル提供者非依存の構成で、MapTiler から他プロバイダや自前 OSM への切り替えも想定。
 
 ### 3. 依存の薄い手書き PWA
 
@@ -87,7 +117,7 @@ pnpm workspaces + Go modules のモノレポ。フロントとバックエンド
 
 ### 4. 情報の信頼性を UX に組み込む
 
-障がい者割引情報の誤りは利用者の不利益に直結するため、データモデルに `source_url` / `updated_at` を持たせ、詳細ページに「最終更新日」「情報源」を必ず表示する設計。Phase 2 で誤情報報告フォームを追加予定。
+障がい者割引情報の誤りは利用者の不利益に直結するため、データモデルに `source_url` / `updated_at` を持たせ、詳細ページに「最終更新日」「情報源」を必ず表示する設計。収集も市区町村単位で一次情報を二重確認し、料金の差異や休止施設は注記して反映している。Phase 2 で誤情報報告フォームを追加予定。
 
 ---
 
@@ -95,49 +125,46 @@ pnpm workspaces + Go modules のモノレポ。フロントとバックエンド
 
 | 層 | 技術 |
 |---|---|
-| モノレポ | pnpm workspaces + Go modules + Makefile |
+| モノレポ | pnpm workspaces (`apps/web` + `packages/api-types`) |
 | フロント | Next.js 16 (App Router / Turbopack) + React 19 + TypeScript 5 |
 | スタイル | Tailwind CSS v4 + shadcn/ui |
 | マップ | react-map-gl + maplibre-gl + MapTiler |
 | サーバ状態 | TanStack Query v5 |
-| API モック | MSW (Mock Service Worker) |
+| API | Next.js Route Handlers (`app/api/v1`)。MSW はテスト用に保持 |
+| データ | 静的 TS データ (`lib/data`) + 国土地理院ジオコーディングで実座標付与 |
 | PWA | 手書き Service Worker + `app/manifest.ts` |
-| バックエンド | Go + chi + pgx/v5 + sqlc + golang-migrate + cobra (CLI) |
-| アーキテクチャ | DDD レイヤード + CQRS(軽量) |
-| DB | PostgreSQL 16 + PostGIS(GEOGRAPHY + GIST index、Read 用マテビュー) |
-| API 契約 | OpenAPI + oapi-codegen(Go stub / TS 型を生成) |
-| インフラ(予定) | Vercel (web) + Cloud Run (api) + Cloud SQL (db) |
+| API 契約 | OpenAPI + openapi-typescript(TS 型を生成しフロント/Route Handler で共有) |
+| インフラ(予定) | Vercel (web のみで完結) |
+| 将来の拡張オプション | Go + chi + pgx/v5 + sqlc + cobra / DDD レイヤード + CQRS / PostgreSQL 16 + PostGIS |
 
 ---
 
 ## 開発ステータス
 
-> **2026年5月開始**。立ち上げて間もないプロジェクトで、「いきなりコードを書き始める」のではなく、**設計を成果物として作り込んでから実装に入る**進め方を取っている。現時点の中心的な成果は実装そのものより**設計ドキュメント**にある。
+> **2026年5月開始**。「いきなりコードを書き始める」のではなく、**要件・設計・リスク・段階計画を先に文書化してから実装に入る**進め方を取っている。
 
 ### 設計フェーズの成果物(完成)
 
-実装に先立って、以下を文書として固め切った。これ自体がこのプロジェクトの主要なアウトプット。
+実装に先立って、以下を文書として固め切った。
 
-- **要件定義書**(`PLAN.md`)— 機能要件を ID 付きで一覧化し、優先度(必須 / 任意)とフェーズ(MVP / Phase 2〜4)を割り当て。「仮定して進める項目」を明示して意思決定を残している
-- **アーキテクチャ設計** — DDD レイヤード + CQRS の採用理由、依存方向、各レイヤーの責務、テスタビリティ方針まで言語化
-- **データモデル設計** — Write 側の正規化テーブル、Read 側のマテビュー(SQL 込み)、PostGIS 近傍検索クエリパターンを確定
+- **要件定義書**(`PLAN.md`)— 機能要件を ID 付きで一覧化し、優先度(必須 / 任意)とフェーズ(MVP / Phase 2〜4)を割り当て。「仮定して進める項目」を明示
+- **アーキテクチャ設計** — 各構成案のトレードオフを検討。MVP は Next 完結とし、スケール時の Go + DDD/CQRS 分離案も設計図として保持
+- **データモデル設計** — `ParkingLotDetail` を中心に、割引種別(free / cap_hours / percentage 等)・車椅子区画・情報源/更新日を定義
 - **API 契約**(OpenAPI スキーマ)— Query 系 5 エンドポイントを定義し、TS 型を自動生成
-- **リスク・トレードオフ分析** — 「割引情報の誤りは深刻」「CQRS が MVP に過剰では」等のリスクを洗い出し、それぞれに緩和策を対応づけ
-- **フェーズ分割と TODO** — Phase 0〜4 のタスクをチェックリスト化し、各フェーズの完了条件を定義
+- **リスク・トレードオフ分析** — 「割引情報の誤りは深刻」「別バックエンドは MVP に過剰では」等を洗い出し緩和策を対応づけ
+- **フェーズ分割と TODO** — Phase 0〜4 のタスクをチェックリスト化
 
 ### 実装フェーズ(進行中)
 
-設計に沿って、フロントエンドから着手している。
-
 - ✅ モノレポ基盤・OpenAPI 型生成パイプライン
 - ✅ フロントエンド MVP 一式(マップ / 階層リスト 3 ページ / 詳細ページ / PWA)
-- ✅ MSW モックサーバ + 東京の駐車場データの構造化(スマホ実機で動作確認可)
-- 🔜 バックエンド `apps/api`(Go DDD + CQRS)の実装 — **設計図は完成済み、ここから着手**
-- 🔜 PostgreSQL + PostGIS マイグレーション / Read Model マテビュー / CLI データ投入
-- 🔜 MSW → 実 API 切り替えと本番デプロイ
-- ⏸ 自動テスト・CI/CD・本格 a11y・管理画面(Phase 2〜3 / DDD + DI 構成で後付けしやすく設計済み)
+- ✅ 東京都全62自治体・276件の駐車場データを一次情報ベースで収集・構造化 + 実座標付与
+- ✅ **Next Route Handlers によるデータ供給(MSW はテスト専用に降格)** — Next.js で完結
+- 🔜 自動テスト・CI/CD・検索 / フィルタ・本格 a11y(Phase 2)
+- 🔜 誤情報報告フォーム・管理画面(Phase 2〜3)
+- ⏸ Go バックエンド + PostgreSQL/PostGIS への分離 — スケール要件が出た場合の拡張オプション(契約据え置きで載せ替え可能に設計済み)
 
-→ 見てほしいのは、**「とりあえず動くもの」ではなく、要件・設計・リスク・段階計画を先に文書化し、その設計図どおりに実装を進めている**という開発プロセスそのもの。バックエンドの DDD / CQRS は学習も兼ねた意図的な技術選定。
+→ 見てほしいのは、**要件・設計・リスク・段階計画を先に文書化し、規模に合わせて構成を選び直しながら実装を進めている**という開発プロセスそのもの。
 
 ---
 
@@ -151,4 +178,3 @@ pnpm workspaces + Go modules のモノレポ。フロントとバックエンド
 ![詳細ページ](./docs/screenshots/detail.png)
 デモ URL:
 -->
-
