@@ -15,7 +15,7 @@ description: Use when the user invokes /research-parking with a Japanese municip
 ## 絶対ルール
 
 - **`shogaisha-techo.com` (障害者手帳で行こう) は読み込まない / 引用しない**。検索結果に出ても WebFetch せず、`source_url` にも入れない。規約上スクレイピング禁止。
-- `source_url` は **一次情報のみ**: 自治体公式 (`*.lg.jp`)、施設公式、運営会社公式 (`tmpc.or.jp`, `s-park.jp`, `tokyo-park.or.jp` 等)。まとめサイト・ブログは原則 NG。
+- `source_url` は **一次情報のみ**: 自治体公式 (`*.lg.jp`)、施設公式、運営会社公式 (例: `tmpc.or.jp`, `s-park.jp`, `tokyo-park.or.jp`、各都道府県の道路公社・駐車場公社、`times-info.net` 等)。まとめサイト・ブログは原則 NG。
 - 「完全無料」「一部無料」のいずれかに該当する施設のみ記録。**割引なし / 不明 / 要確認** の施設は記録しない (調査メモは会話内で報告)。
 - 「最初の◯分無料」「◯時間まで無料」「半額」「◯割引」など、**完全無料でないものは `discount_scope: "partial"`**。
 - 既存 `id` と重複させない。同じ施設が既にあれば**スキップ**し、その旨をユーザーに報告 (上書きはユーザー承認後)。
@@ -32,13 +32,13 @@ description: Use when the user invokes /research-parking with a Japanese municip
 複数クエリを **並列** で投げる (Tool calls in parallel):
 
 - `<市区町村名> 駐車場 障害者割引`
-- `<市区町村名> 区営駐車場 障害者 減免` / `<市区町村名> 市営駐車場 障害者 減免`
+- `<市区町村名> 区営駐車場 障害者 減免` / `<市区町村名> 市営駐車場 障害者 減免` (町村は `町営` / `村営`)
 - `<市区町村名> 公共施設 駐車場 障害者手帳 無料`
 - 主要施設を狙う追加クエリ (区役所/市役所、図書館、文化会館、公園、病院、ホール 等)
 
 加えて、**運営会社横断の障害者割引リスト** を毎回必ずクロスチェックする (個別検索で漏れがちな施設を補える):
 
-- **公益財団法人東京都道路整備保全公社 (TMPC) の都営駐車場** — 対象自治体に 1 つでもあれば必ず確認 (多くで「障害者手帳提示で 1 時間無料」が一次情報に明記)
+- **公益財団法人東京都道路整備保全公社 (TMPC) の都営駐車場** (対象が東京都の場合) — 対象自治体に 1 つでもあれば必ず確認 (多くで「障害者手帳提示で 1 時間無料」が一次情報に明記)。東京都以外では、その都道府県の道路公社・駐車場公社・市の外郭団体の駐車場一覧を同様に探して確認する
   - 一覧: `https://www.tmpc.or.jp/04_parking/tokyo/` および周辺別ページ (例: `tokyo_station_area.html`)
   - 個別ページ URL パターン: `https://www.tmpc.or.jp/04_parking/tokyo/tp_<施設名ローマ字>.html`
   - 住所・台数が tmpc 個別ページに無い場合は s-park.jp の同名ページ (`https://www.s-park.jp/map/<id>`) で補完
@@ -61,7 +61,7 @@ description: Use when the user invokes /research-parking with a Japanese municip
 | `municipality_code` | string | JIS X 0402 5桁 (例 `"13101"`) |
 | `municipality` | string | `"千代田区"` |
 | `name` | string | 施設名 (駐車場名まで含める) |
-| `address` | string | 「東京都〜」を含むフル住所 |
+| `address` | string | 都道府県名から始まるフル住所 (例「東京都〜」「神奈川県〜」) |
 | `capacity` | number \| null | 総台数 |
 | `capacity_accessible` | number \| null | 身障者用区画数 |
 | `normal_rate` | string | 通常料金 (例 `"30分250円"`) |
