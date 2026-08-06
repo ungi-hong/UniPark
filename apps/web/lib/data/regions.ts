@@ -274,6 +274,81 @@ const cities: City[] = [
     "code": "14102",
     "name": "横浜市神奈川区",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14103",
+    "name": "横浜市西区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14104",
+    "name": "横浜市中区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14105",
+    "name": "横浜市南区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14106",
+    "name": "横浜市保土ケ谷区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14107",
+    "name": "横浜市磯子区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14108",
+    "name": "横浜市金沢区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14109",
+    "name": "横浜市港北区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14110",
+    "name": "横浜市戸塚区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14111",
+    "name": "横浜市港南区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14112",
+    "name": "横浜市旭区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14113",
+    "name": "横浜市緑区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14114",
+    "name": "横浜市瀬谷区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14115",
+    "name": "横浜市栄区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14116",
+    "name": "横浜市泉区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14117",
+    "name": "横浜市青葉区",
+    "prefectureCode": "14"
   }
 ];
 

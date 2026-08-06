@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 285
+// 件数: 346
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -6540,6 +6540,1406 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 1日1回1,300円\n障害者割引: 8時間まで無料(8時間超過分は通常料金)\n総台数: 153台",
     "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/mitsuzawa/mituzawarinji/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14103-001",
+    "name": "横浜市西区区役所駐車場",
+    "address": "神奈川県横浜市西区中央一丁目5番10号",
+    "latitude": 35.453632,
+    "longitude": 139.616882,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14103",
+    "cityName": "横浜市西区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方及びその介護者が対象(身体障害者手帳・愛の手帳・精神障害者保健福祉手帳の提示、または障害者手帳アプリ「ミライロID」とマイナポータルを連携している場合はミライロIDの提示で代替可。介護者のみの利用は対象外)。区役所窓口で駐車券の減免処理が必要で、処理しない場合は料金が発生する。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 30分250円(8:00〜22:00)/60分100円(22:00〜翌8:00)、土曜・日曜・祝日は当日最大料金1,200円(24時切替)\n障害者割引: 無料(来庁に必要な所要時間分)\n総台数: 9台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/nishi/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14103-002",
+    "name": "横浜美術館駐車場",
+    "address": "神奈川県横浜市西区みなとみらい3-4-1",
+    "latitude": 35.457115,
+    "longitude": 139.63063,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14103",
+    "cityName": "横浜市西区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1.5,
+      "conditions": "身体障害者手帳、療育手帳(愛の手帳)、精神障害者保健福祉手帳、被爆者手帳、戦傷病者手帳、公害医療手帳(公害認定証)、特定医療費(指定難病)受給者証、自立支援医療受給者証、障害福祉サービス受給者証のいずれかを提示。総合案内、券売所、美術図書室、西口受付で申し出る。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 最初の90分500円、90分以降30分ごとに250円\n障害者割引: 最初の90分無料\n総台数: 157台",
+    "sourceUrl": "https://yokohama.art.museum/visit/access/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14103-003",
+    "name": "みなとみらい公共駐車場(パシフィコ横浜駐車場)",
+    "address": "神奈川県横浜市西区みなとみらい1-1-1",
+    "latitude": 35.459438,
+    "longitude": 139.636246,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14103",
+    "cityName": "横浜市西区",
+    "accessibleSpaceTotal": 11,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳等の提示で駐車料金が半額になる。精算機に駐車券を挿入する前に中央防災センター(展示ホールB1F、TEL 045-221-2127)へ連絡が必要。月極・定期料金及び自動二輪駐車場利用料金は対象外、他割引との併用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 11
+      }
+    ],
+    "notes": "通常料金: 0:00〜24:00 30分300円・1時間600円、最大料金は平日(特定日を除く)7:00〜24:00で1,800円、土日祝・特定日7:00〜24:00で2,400円\n障害者割引: 駐車料金半額\n総台数: 1015台",
+    "sourceUrl": "https://yokohama-parking-guidesystem.jp/result/3/48",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14103-004",
+    "name": "ノース駐車場(パシフィコ横浜)",
+    "address": "神奈川県横浜市西区みなとみらい1-1-2",
+    "latitude": 35.459438,
+    "longitude": 139.636246,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14103",
+    "cityName": "横浜市西区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳等の提示で駐車料金が半額になる。精算機に駐車券を挿入する前にノース中央管理室(TEL 045-211-4387)へ連絡が必要。他割引との併用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 0:00〜24:00 30分300円・1時間600円、最大料金は平日(特定日を除く)7:00〜24:00で1,800円、土日祝・特定日7:00〜24:00で2,400円\n障害者割引: 駐車料金半額\n総台数: 152台",
+    "sourceUrl": "https://yokohama-parking-guidesystem.jp/result/3/49",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14103-005",
+    "name": "臨港パーク駐車場(パシフィコ横浜)",
+    "address": "神奈川県横浜市西区みなとみらい1丁目",
+    "latitude": 35.460369,
+    "longitude": 139.635635,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14103",
+    "cityName": "横浜市西区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳等の提示で駐車料金が1時間無料になる。精算機に駐車券を挿入する前に臨港パーク駐車場管理事務所(TEL 045-221-2175、8:00〜21:00)へ連絡が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 30分250円、平日(特定日を除く)8:00〜21:00の最大料金1,100円\n障害者割引: 1時間無料\n総台数: 90台",
+    "sourceUrl": "https://yokohama-parking-guidesystem.jp/result/3/50",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-001",
+    "name": "横浜市中区役所駐車場",
+    "address": "神奈川県横浜市中区日本大通35番地",
+    "latitude": 35.444958,
+    "longitude": 139.641998,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方及びその介護者が対象。身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳を提示(ミライロIDとマイナポータル連携時はミライロID提示で代替可)。介護者のみの利用は対象外。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 30分300円(18:00~8:30の間の最大料金1,000円)\n障害者割引: 無料(所要時間無料)\n総台数: 7台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/naka/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-002",
+    "name": "横浜市庁舎駐車場",
+    "address": "神奈川県横浜市中区本町6丁目50番地の10",
+    "latitude": 35.450195,
+    "longitude": 139.634903,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "手続・相談等のため来庁した障害者及びその介護者が対象。身体障害者手帳、愛の手帳、精神障害者保健福祉手帳を利用窓口で提示。車高2.3mを超える福祉車両の場合は警備員案内により1階車寄せに臨時駐車可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 平日8:00~24:00 30分300円、0:00~8:00 60分100円、土日祝1日最大2,300円\n障害者割引: 無料(利用時間無料)\n総台数: 179台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/city-info/yokohamashi/shichosha/park.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-003",
+    "name": "横浜市営馬車道地下駐車場",
+    "address": "神奈川県横浜市中区本町六丁目",
+    "latitude": 35.450417,
+    "longitude": 139.634552,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "対象は身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳の保持者(運転・同乗問わず)。事前申請不要、精算前に駐車券及び手帳を管理室へ提示。定期購入時も提示要。最大料金への割引適用なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 08:00-20:00 30分340円、20:00-08:00 60分100円、24時間最大2,000円\n障害者割引: グループA(身体障害者手帳1~4級等):3時間まで無料・超過分50%引・定期券50%引/グループB(身体障害者手帳5~6級等):時間問わず50%引・定期券30%引\n総台数: 200台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/riyoannai/chika/bashamichi.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-004",
+    "name": "横浜市営日本大通り地下駐車場",
+    "address": "神奈川県横浜市中区日本大通9",
+    "latitude": 35.446644,
+    "longitude": 139.641769,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "対象は身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳の保持者(運転・同乗問わず)。事前申請不要、精算前に駐車券及び手帳を管理室へ提示。最大料金への割引適用なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 07:00-23:00 15分400円、23:00-07:00 30分300円\n障害者割引: グループA:3時間まで無料・超過分50%引・定期券50%引/グループB:時間問わず50%引・定期券30%引",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/riyoannai/chika/nihon.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-005",
+    "name": "横浜市営伊勢佐木長者町地下駐車場",
+    "address": "神奈川県横浜市中区長者町5-50",
+    "latitude": 35.441059,
+    "longitude": 139.631943,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "対象は身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳の保持者(運転・同乗問わず)。事前申請不要、精算前に駐車券及び手帳を管理室へ提示。最大料金への割引適用なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円、24時間最大1,200円\n障害者割引: グループA:3時間まで無料・超過分50%引・定期券50%引/グループB:時間問わず50%引・定期券30%引\n総台数: 198台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/riyoannai/chika/isezaki.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-006",
+    "name": "横浜市営福富町西公園地下駐車場",
+    "address": "神奈川県横浜市中区福富町西通2番地先",
+    "latitude": 35.446384,
+    "longitude": 139.631241,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "対象は身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳の保持者(運転・同乗問わず)。事前申請不要、精算前に駐車券及び手帳を管理室へ提示。最大料金への割引適用なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円、24時間最大1,000円\n障害者割引: グループA:3時間まで無料・超過分50%引・定期券50%引/グループB:時間問わず50%引・定期券30%引\n総台数: 184台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/riyoannai/chika/fukutomi.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-007",
+    "name": "横浜市営山下町地下駐車場",
+    "address": "神奈川県横浜市中区山下町60",
+    "latitude": 35.444057,
+    "longitude": 139.648651,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "対象は身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳の保持者(運転・同乗問わず)。事前申請不要、精算前に駐車券及び手帳を管理室へ提示。最大料金への割引適用なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 夜間18:00-08:00最大800円、土日祝当日最大(24時切替)1,800円、平日最大料金なし\n障害者割引: グループA:3時間まで無料・超過分50%引・定期券50%引/グループB:時間問わず50%引・定期券30%引",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/riyoannai/chika/yamasita.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-008",
+    "name": "横浜市技能文化会館駐車場",
+    "address": "神奈川県横浜市中区万代町2丁目4番地7",
+    "latitude": 35.441891,
+    "longitude": 139.635071,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "横浜市技能文化会館利用者に限る。入庫後、1階受付に障がい者手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円、一日最大1,200円\n障害者割引: 無料",
+    "sourceUrl": "https://gibun.jp/gibun/access/parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-009",
+    "name": "横浜港大さん橋国際客船ターミナル駐車場",
+    "address": "神奈川県横浜市中区海岸通1-1-4",
+    "latitude": 35.448357,
+    "longitude": 139.644119,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障害者手帳、療育手帳、特定医療費(指定難病)受給者証等の保持者(本人または介護者)対象。駐車券・運転免許証・手帳等を2階インフォメーションまたは1階防災センターへ提示。3時間超過分は通常料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで500円、以降30分ごとに250円、24時間最大(平日)1,500円・(土休日)2,000円\n障害者割引: 3時間まで無料\n総台数: 400台",
+    "sourceUrl": "https://osanbashi.jp/access/parking",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-010",
+    "name": "山下公園駐車場",
+    "address": "神奈川県横浜市中区山下町279",
+    "latitude": 35.444874,
+    "longitude": 139.653641,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 6,
+      "conditions": "障害者手帳保有者が療養・健康増進目的で公園を使用する場合が対象(運転・同乗問わず)。営業時間内は管理事務所で手帳原本と駐車券を提示、時間外は出庫ゲートのインターホンでコールセンター対応。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日30分300円、土日祝30分400円、当日最大(0時~24時)2,400円\n障害者割引: 6時間まで無料\n総台数: 222台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/genmen.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-011",
+    "name": "根岸森林公園第1駐車場",
+    "address": "神奈川県横浜市中区根岸台",
+    "latitude": 35.422935,
+    "longitude": 139.638306,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳保有者が療養・健康増進目的で公園を使用する場合が対象(運転・同乗問わず)。営業時間内は管理事務所で手帳原本と駐車券を提示、時間外は出庫ゲートのインターホンでコールセンター対応。時間制限の記載なし。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 平日2時間300円(以降20分毎50円)、土休日2時間400円(以降30分毎100円)\n障害者割引: 無料\n総台数: 100台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/genmen.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-012",
+    "name": "港の見える丘公園駐車場",
+    "address": "神奈川県横浜市中区山手町254-10",
+    "latitude": 35.438961,
+    "longitude": 139.653717,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳保有者が療養・健康増進目的で公園を使用する場合が対象(運転・同乗問わず)。出庫ゲートのインターホンでコールセンターに連絡し遠隔操作でゲート解放(Bグループ)。時間制限の記載なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日30分250円、土日祝・12/29~1/3 30分300円\n障害者割引: 無料\n総台数: 17台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/genmen.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14104-013",
+    "name": "本牧市民・臨海公園駐車場",
+    "address": "神奈川県横浜市中区本牧三之谷59",
+    "latitude": 35.412724,
+    "longitude": 139.661316,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14104",
+    "cityName": "横浜市中区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、横浜市愛の手帳、精神障害者保健福祉手帳の保持者が対象。営業時間内(9:15~21:00)は管理事務所またはレストハウスで手帳提示、時間外は精算機のインターホンでサポートセンターへ連絡。団体利用は本牧市民公園管理センターへの事前手続きが必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 最初の1時間200円、以降30分100円\n障害者割引: 全額減免(無料)\n総台数: 272台",
+    "sourceUrl": "https://shimin-rinkai.jp/54.html/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14105-001",
+    "name": "南区総合庁舎駐車場(南区役所駐車場)",
+    "address": "神奈川県横浜市南区浦舟町2丁目33番地",
+    "latitude": 35.434521,
+    "longitude": 139.627686,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14105",
+    "cityName": "横浜市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳の提示で所要時間無料。事前申請不要、出庫精算前に駐車券と手帳を管理室へ提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00-22:00 30分250円、22:00-8:00 60分100円(土日祝当日最大800円)\n障害者割引: 無料(所要時間無料)\n総台数: 132台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/minami/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14105-002",
+    "name": "横浜市立大学附属市民総合医療センター駐車場",
+    "address": "神奈川県横浜市南区浦舟町4丁目57番地",
+    "latitude": 35.433781,
+    "longitude": 139.624664,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14105",
+    "cityName": "横浜市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、愛の手帳(療育手帳)を持つ患者本人が対象。外来受診時は清算前にロビー係員へ確認書類を提示。本人が来場できない場合は領収書等で受診確認の上で免除対応。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分まで無料、3時間まで患者500円(患者以外は1時間500円)、3時間超1時間300円、1日最大1,700円\n障害者割引: 受診当日の駐車料金全額免除\n総台数: 378台",
+    "sourceUrl": "https://www.yokohama-cu.ac.jp/urahp/summary/access/parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14105-003",
+    "name": "横浜市南スポーツセンター駐車場",
+    "address": "神奈川県横浜市南区大岡1丁目14-1",
+    "latitude": 35.423775,
+    "longitude": 139.605225,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14105",
+    "cityName": "横浜市南区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "知的障害の判定を受けている方、身体障害者手帳及び精神障害者保健福祉手帳をお持ちの方が対象。帰館時に受付窓口で手帳を提示することで駐車料金全額免除。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 利用時間8:30-21:10、2時間300円、以降30分毎50円加算\n障害者割引: 無料(全額免除)",
+    "sourceUrl": "https://www.yokohama-minamisc.jp/barrier-free",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14106-001",
+    "name": "保土ケ谷区役所駐車場(本館・別館)",
+    "address": "神奈川県横浜市保土ケ谷区川辺町2番地9",
+    "latitude": 35.46064,
+    "longitude": 139.595428,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14106",
+    "cityName": "横浜市保土ケ谷区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳を提示することで駐車料金が無料。運転・同乗は問わない。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 本館(8:00-18:00)30分250円/夜間(18:00-翌8:00)60分100円・夜間最大500円、別館(8:00-22:00)30分250円/22:00以降60分100円・当日最大800円\n障害者割引: 無料\n総台数: 44台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/hodogaya/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14106-002",
+    "name": "神奈川県立保土ケ谷公園駐車場(A・B)",
+    "address": "神奈川県横浜市保土ケ谷区花見台4-2",
+    "latitude": 35.452229,
+    "longitude": 139.581009,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14106",
+    "cityName": "横浜市保土ケ谷区",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の提示で障害者1名につき普通車1台の駐車料金が全額免除。出庫時に精算機のインターホンで管理センターを呼び出し、手帳をカメラに提示。事後の減免処理は不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 普通車 1時間まで220円、以降30分ごと110円、上限1,020円\n障害者割引: 無料\n総台数: 787台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/hodogaya/handicapped.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14106-003",
+    "name": "陣ケ下渓谷公園駐車場",
+    "address": "神奈川県横浜市保土ケ谷区川島町1514",
+    "latitude": 35.467537,
+    "longitude": 139.564011,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14106",
+    "cityName": "横浜市保土ケ谷区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "療養・健康増進目的での公園利用時、障害者手帳(身体障害者手帳・精神障害者保健福祉手帳・療育手帳)提示で駐車料金免除。出庫時に精算機のインターホンでコールセンターを呼び出し手帳所有を伝える。事後の処理は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00-22:00 30分100円、22:00-翌8:00 60分100円、駐車後24時間最大1,300円\n障害者割引: 無料\n総台数: 20台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/genmen.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14106-004",
+    "name": "横浜市保土ケ谷スポーツセンター駐車場",
+    "address": "神奈川県横浜市保土ケ谷区神戸町129-2",
+    "latitude": 35.454346,
+    "longitude": 139.595169,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14106",
+    "cityName": "横浜市保土ケ谷区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳所持者、知的障害の判定を受けている方は駐車場料金全額免除。事前に受付にて手帳を提示。介助者以外の同伴者の駐車料金は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 400円/2時間、以降30分ごと100円加算\n障害者割引: 無料\n総台数: 49台",
+    "sourceUrl": "https://hodogaya-sports.com/wcag/use/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14107-001",
+    "name": "磯子区総合庁舎駐車場(磯子区役所・磯子公会堂・磯子図書館共用)",
+    "address": "神奈川県横浜市磯子区磯子三丁目5番1号",
+    "latitude": 35.402821,
+    "longitude": 139.618546,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14107",
+    "cityName": "横浜市磯子区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳の提示者及びその介護者が対象。区役所・磯子公会堂・磯子図書館の利用者に限定。ミライロID(マイナポータル連携済アプリ)可。窓口混雑等により60分を超えた分は有料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分250円(8:00〜22:00)、60分100円(22:00〜翌8:00)、土日祝は最大料金1,500円(平日は最大料金なし)\n障害者割引: 所要時間分無料\n総台数: 137台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/isogo/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14107-002",
+    "name": "横浜市磯子スポーツセンター駐車場",
+    "address": "神奈川県横浜市磯子区杉田五丁目32番25号",
+    "latitude": 35.38327,
+    "longitude": 139.621933,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14107",
+    "cityName": "横浜市磯子区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "帰り際に障害者手帳(ミライロID等マイナポータル連携済デジタル手帳可)を受付窓口に提示することで駐車料金を全額免除。専用駐車場1台あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降20分ごとに50円\n障害者割引: 全額免除(無料)\n総台数: 8台",
+    "sourceUrl": "https://yokohama-sport.jp/isogo-sc-ysa/handicapped/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-001",
+    "name": "金沢区役所駐車場(金沢区総合庁舎駐車場)",
+    "address": "神奈川県横浜市金沢区泥亀二丁目9番1号",
+    "latitude": 35.337433,
+    "longitude": 139.624435,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳所持者及びその介護者が対象(運転・同乗問わず)。手帳を駐車場管理室等へ提示。指定管理者タイムズ24(問合せ:タイムズコンタクトセンター0120-77-8924)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(8:00-22:00)、60分100円(22:00-8:00)、土日祝は当日最大800円\n障害者割引: 所要時間無料\n総台数: 74台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kanazawa/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-002",
+    "name": "海の公園 柴口駐車場(E駐車場)",
+    "address": "神奈川県横浜市金沢区海の公園10",
+    "latitude": 35.340237,
+    "longitude": 139.636703,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害者保健福祉手帳所持者が対象(運転・同乗問わず、療養・健康増進目的の利用)。受付時間9:00-17:00は公園管理事務所で手帳原本及び駐車券を提示、時間外は出庫ゲートのインターホンでコールセンターへ連絡。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間310円、駐車後12時間最大1,550円(12時間以降は1時間310円)\n障害者割引: 無料\n総台数: 1064台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/uminokoen/umishibaE/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-003",
+    "name": "海の公園 磯浜駐車場(F駐車場)",
+    "address": "神奈川県横浜市金沢区海の公園10",
+    "latitude": 35.340237,
+    "longitude": 139.636703,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害者保健福祉手帳所持者が対象(運転・同乗問わず)。受付時間内は管理事務所で手帳原本及び駐車券を提示、時間外はインターホンでコールセンターへ連絡。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間310円、駐車後12時間最大1,550円(12時間以降は1時間310円)\n障害者割引: 無料\n総台数: 362台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/uminokoen/umiisohamaF/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-004",
+    "name": "野島公園 第1駐車場",
+    "address": "神奈川県横浜市金沢区野島町24",
+    "latitude": 35.325848,
+    "longitude": 139.635849,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害者保健福祉手帳所持者が対象(運転・同乗問わず)。管理事務所で手帳原本及び駐車券を提示(受付時間外はインターホンでコールセンターへ連絡)。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間200円、以降30分100円\n障害者割引: 無料\n総台数: 104台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/nojima/nojima1/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-005",
+    "name": "野島公園 第2駐車場",
+    "address": "神奈川県横浜市金沢区乙舳町80",
+    "latitude": 35.328857,
+    "longitude": 139.632126,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害者保健福祉手帳所持者が対象(運転・同乗問わず)。管理事務所で手帳原本及び駐車券を提示(受付時間外はインターホンでコールセンターへ連絡)。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間200円、以降30分100円\n障害者割引: 無料\n総台数: 52台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/nojima/niojima2/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-006",
+    "name": "小柴自然公園駐車場",
+    "address": "神奈川県横浜市金沢区長浜116-2",
+    "latitude": 35.354843,
+    "longitude": 139.636597,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害者保健福祉手帳所持者が対象(運転・同乗問わず)。出庫ゲートの精算機インターホンでコールセンターへ連絡して減免処理。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間200円、以降30分100円\n障害者割引: 無料\n総台数: 103台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/koshiba/koshiba/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-007",
+    "name": "横浜市立金沢動物園 正面口駐車場(金沢自然公園)",
+    "address": "神奈川県横浜市金沢区釜利谷東5-15-1",
+    "latitude": 35.350033,
+    "longitude": 139.605927,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳)提示で減免。正面口駐車場は入庫時にスタッフへ声掛けの上、手帳提示。減免申出は利用当日のみ。身障者用駐車スペースあり。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回600円\n障害者割引: 無料\n総台数: 450台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/zoo/kanazawa/faq.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14108-008",
+    "name": "横浜市立金沢動物園 高速側駐車場(金沢自然公園)",
+    "address": "神奈川県横浜市金沢区釜利谷東5-15-1",
+    "latitude": 35.350033,
+    "longitude": 139.605927,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14108",
+    "cityName": "横浜市金沢区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳)提示で減免。高速側駐車場は入口精算機に備付けの緊急電話で申し出て減免処理。減免申出は利用当日のみ。駐車場一番奥(動物園入口寄り)に身障者用スペースあり。管理:公益財団法人横浜市緑の協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回600円\n障害者割引: 無料\n総台数: 750台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/zoo/kanazawa/faq.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14109-001",
+    "name": "横浜市港北区総合庁舎駐車場",
+    "address": "神奈川県横浜市港北区大豆戸町26番地1",
+    "latitude": 35.518993,
+    "longitude": 139.633163,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14109",
+    "cityName": "横浜市港北区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳の提示で駐車料金無料(所要時間無料)。障害者手帳アプリ「ミライロID」の提示でも可。低公害車利用者は車検証提示で対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 8:00~22:00 30分250円、22:00~8:00 60分100円、土日祝当日最大1,200円\n障害者割引: 無料\n総台数: 60台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kohoku/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14109-002",
+    "name": "新横浜公園第1駐車場",
+    "address": "神奈川県横浜市港北区小机町3300",
+    "latitude": 35.51012,
+    "longitude": 139.606674,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14109",
+    "cityName": "横浜市港北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳保持者及びその介護者1名が対象。精算前に入場時の駐車券と手帳(スマートフォンアプリ「ミライロID」の提示可)を管理事務所等の受付に提示すると無料出庫券と交換。特別支援学校バス等は団体申請書の事前提出が必要。レストラン横のタイムズ日産スタジアム駐車場及びイベント主催者受付分は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7:00~22:00 120分400円(以降30分毎100円)\n障害者割引: 全額免除\n総台数: 427台",
+    "sourceUrl": "https://www.nissan-stadium.jp/access/img/genmen202404.pdf",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14109-003",
+    "name": "新横浜公園第2駐車場",
+    "address": "神奈川県横浜市港北区小机町3300",
+    "latitude": 35.51012,
+    "longitude": 139.606674,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14109",
+    "cityName": "横浜市港北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳保持者及びその介護者1名が対象。精算前に入場時の駐車券と手帳(ミライロID可)を管理事務所等の受付に提示すると無料出庫券と交換。特別支援学校バス等は団体申請書の事前提出が必要。レストラン横のタイムズ日産スタジアム駐車場及びイベント主催者受付分は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7:00~22:00 120分400円(以降30分毎100円)\n障害者割引: 全額免除\n総台数: 100台",
+    "sourceUrl": "https://www.nissan-stadium.jp/access/img/genmen202404.pdf",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14109-004",
+    "name": "新横浜公園第3駐車場",
+    "address": "神奈川県横浜市港北区小机町3300",
+    "latitude": 35.51012,
+    "longitude": 139.606674,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14109",
+    "cityName": "横浜市港北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳保持者及びその介護者1名が対象。精算前に入場時の駐車券と手帳(ミライロID可)を管理事務所等の受付に提示すると無料出庫券と交換。特別支援学校バス等は団体申請書の事前提出が必要。レストラン横のタイムズ日産スタジアム駐車場及びイベント主催者受付分は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7:30~22:00 120分400円(以降30分毎100円)\n障害者割引: 全額免除\n総台数: 136台",
+    "sourceUrl": "https://www.nissan-stadium.jp/access/img/genmen202404.pdf",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14110-001",
+    "name": "戸塚区総合庁舎駐車場(戸塚区役所・戸塚区民文化センターさくらプラザ共用)",
+    "address": "神奈川県横浜市戸塚区戸塚町16番地17",
+    "latitude": 35.400028,
+    "longitude": 139.532776,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14110",
+    "cityName": "横浜市戸塚区",
+    "accessibleSpaceTotal": 9,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方及びその介護者の方が対象(介護者のみの利用は対象外)。身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳の提示が必要。障害者手帳アプリ「ミライロID」とマイナポータルを連携している場合はミライロIDの提示で手帳提示に代替可。区役所窓口またはさくらプラザ4階受付で提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 30分220円(7:00〜22:30)、60分100円(22:30〜7:00)、土日祝日当日最大1,800円\n障害者割引: 無料(利用時間分の駐車料金を減免)\n総台数: 100台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/totsuka/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14110-002",
+    "name": "横浜市戸塚スポーツセンター駐車場",
+    "address": "神奈川県横浜市戸塚区上倉田町477番地",
+    "latitude": 35.397713,
+    "longitude": 139.535583,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14110",
+    "cityName": "横浜市戸塚区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳の提示(マイナポータル連携済のミライロIDアプリ提示でも可)で駐車料金を全額免除。お帰りの際に受付窓口へ手帳を提示。専用区画1台(縦479cm×横253cm)確保。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降30分ごとに50円\n障害者割引: 無料(全額免除)\n総台数: 27台",
+    "sourceUrl": "https://yokohama-sport.jp/totsuka-sc-ysa/access/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14111-001",
+    "name": "港南区役所駐車場",
+    "address": "神奈川県横浜市港南区港南四丁目2番10号",
+    "latitude": 35.401218,
+    "longitude": 139.593277,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14111",
+    "cityName": "横浜市港南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "区役所・公会堂利用者のうち障害のある方及びその介護者が対象。身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳のいずれかを提示(事前申請不要、入庫後精算前に駐車券と手帳を管理室へ提示)。ミライロIDとマイナポータルを連携している場合はミライロID提示で手帳提示に代替可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時40分~22時:30分200円/22時~8時40分:60分100円\n障害者割引: 所要時間無料\n総台数: 52台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/konan/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14111-002",
+    "name": "済生会横浜市南部病院駐車場",
+    "address": "神奈川県横浜市港南区港南台三丁目2番10号",
+    "latitude": 35.375286,
+    "longitude": 139.579254,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14111",
+    "cityName": "横浜市港南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "当日受診の患者本人が対象(運転・同乗は問わない)。身体障がい者手帳、愛の手帳(療育手帳)、精神障がい者保健福祉手帳のいずれかを、駐車料金精算前に1階計算窓口(時間外は1階西玄関防災センター)へ手帳・駐車券・診察券とともに提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来患者:3時間まで400円(以降30分毎100円)\n障害者割引: 当日分無料\n総台数: 111台",
+    "sourceUrl": "https://www.nanbu.saiseikai.or.jp/guide/floor-map/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14112-001",
+    "name": "旭区役所駐車場",
+    "address": "神奈川県横浜市旭区鶴ケ峰一丁目4-12",
+    "latitude": 35.474888,
+    "longitude": 139.544846,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14112",
+    "cityName": "横浜市旭区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳の提示、またはミライロID/マイナポータル連携で代替可。運転者・同乗の介護者いずれも対象。精算前に駐車券とあわせて管理室へ提示。低公害車も同様に無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 平日8-22時 30分200円(第1)/30分150円(第2)、平日22-8時 60分100円、土日祝 当日最大900円(第1)/800円(第2)\n障害者割引: 利用時間無料\n総台数: 51台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/asahi/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14112-002",
+    "name": "こども自然公園 第1駐車場",
+    "address": "神奈川県横浜市旭区大池町65-1",
+    "latitude": 35.452869,
+    "longitude": 139.535431,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14112",
+    "cityName": "横浜市旭区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の保持者が療養、健康増進の目的で公園を利用する場合が対象。運転・同乗いずれも可。管理事務所(受付9:00-17:00)で障害者手帳原本及び駐車券を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間300円、以降20分ごとに50円\n障害者割引: 無料(療養・健康増進目的での公園利用時)\n総台数: 172台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/genmen.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14112-003",
+    "name": "横浜市旭スポーツセンター駐車場",
+    "address": "神奈川県横浜市旭区川島町1983",
+    "latitude": 35.464417,
+    "longitude": 139.548447,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14112",
+    "cityName": "横浜市旭区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "受付窓口で障害者手帳を提示(ミライロID・マイナポータル連携も可)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降30分ごとに50円\n障害者割引: 全額免除\n総台数: 50台",
+    "sourceUrl": "https://yokohama-sport.jp/asahi-sc-ysa/handicapped/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14112-004",
+    "name": "神奈川県立がんセンター駐車場",
+    "address": "神奈川県横浜市旭区中尾二丁目3番2号",
+    "latitude": 35.468315,
+    "longitude": 139.524734,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14112",
+    "cityName": "横浜市旭区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等保持者は駐車料金が免除。診療日は病院1階総合案内、休診日は防災センターへ手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 診療利用1回500円(30分無料)、その他の利用3時間まで500円(30分無料)、以後1時間ごとに100円\n障害者割引: 無料(障害者手帳提示で免除)",
+    "sourceUrl": "https://kcch.kanagawa-pho.jp/general/koutsu.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14112-005",
+    "name": "旭図書館駐車場",
+    "address": "神奈川県横浜市旭区白根4-6-2",
+    "latitude": 35.481087,
+    "longitude": 139.54715,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14112",
+    "cityName": "横浜市旭区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳の提示で無料駐車券の交付を受けられる。地区センター等周辺施設と共用の駐車場。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、1時間まで100円、以降1時間ごとに100円\n障害者割引: 無料(無料駐車券交付)\n総台数: 39台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/kyodo-manabi/library/tshokan/asahi/access.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14113-001",
+    "name": "横浜市緑区役所駐車場",
+    "address": "神奈川県横浜市緑区寺山町118番地",
+    "latitude": 35.511959,
+    "longitude": 139.537979,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14113",
+    "cityName": "横浜市緑区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方及びその介護者の方が、身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳を提示することで、区役所利用の所要時間分の駐車料金が無料。ただし窓口混雑等により60分を超えた場合、超過分は有料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 8時~22時:30分ごと200円、22時~8時:60分ごと100円、土日祝は最大800円(24時間、立体駐車場)\n障害者割引: 所要時間無料\n総台数: 79台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/midori/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14113-002",
+    "name": "横浜市緑スポーツセンター駐車場",
+    "address": "神奈川県横浜市緑区中山1-29-7",
+    "latitude": 35.516659,
+    "longitude": 139.536865,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14113",
+    "cityName": "横浜市緑区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "受付窓口で障害者手帳(ミライロID・マイナポータル連携可)を提示。利用者本人および同伴介護者ともに駐車料金を全額免除。障害者用駐車区画1台分(縦500cm×横170cm)を確保。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "障害者割引: 駐車料金全額免除",
+    "sourceUrl": "https://yokohama-sport.jp/midori-sc-ysa/handicapped/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14113-003",
+    "name": "四季の森公園駐車場",
+    "address": "神奈川県横浜市緑区寺山町291",
+    "latitude": 35.502064,
+    "longitude": 139.53714,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14113",
+    "cityName": "横浜市緑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "入場時に身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日無料、土日祝(1月4日~12月28日)は普通車510円・二輪車80円(利用時間8:30~17:00、5/1~9/30は8:30~18:00)\n障害者割引: 駐車料金免除\n総台数: 165台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/shikinomori/access.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14114-001",
+    "name": "瀬谷区総合庁舎駐車場(瀬谷区役所駐車場)",
+    "address": "神奈川県横浜市瀬谷区二ツ橋町190番地",
+    "latitude": 35.466015,
+    "longitude": 139.498642,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14114",
+    "cityName": "横浜市瀬谷区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方及びその介護者の方が対象。身体障害者手帳・愛の手帳・精神障害者保健福祉手帳の提示が必要(手帳現物のほか、マイナポータル連携済みのミライロIDアプリの提示でも可)。区役所利用当日に限り所要時間分が無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 営業時間内(8:00~22:30) 30分150円、営業時間外 60分100円、休日最大料金800円\n障害者割引: 所要時間無料\n総台数: 100台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/seya/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14114-002",
+    "name": "瀬谷本郷公園駐車場",
+    "address": "神奈川県横浜市瀬谷区本郷一丁目70番2号",
+    "latitude": 35.4744,
+    "longitude": 139.472275,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14114",
+    "cityName": "横浜市瀬谷区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、横浜市の愛の手帳(療育手帳)、精神障害者保健福祉手帳の交付を受けている方が対象。営業時間内(9:00~17:00)は管理事務所またはレストハウスで駐車券と手帳を提示、職員不在時は出庫時に精算機のインターホンでサポートセンターへ連絡。障害者団体としての利用は事前申請が必要(指定管理者:横浜植木株式会社 駐車場担当 045-262-7410)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入出庫15分間無料、以降1時間200円、以後30分毎100円(営業時間5:00~23:00)\n障害者割引: 全額減免\n総台数: 100台",
+    "sourceUrl": "https://seya-yokohamaueki.jp/access/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14114-003",
+    "name": "横浜市瀬谷スポーツセンター駐車場",
+    "address": "神奈川県横浜市瀬谷区南台2-4-65",
+    "latitude": 35.458008,
+    "longitude": 139.486542,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14114",
+    "cityName": "横浜市瀬谷区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "施設を利用された方に限り、帰り際に受付窓口で障害者手帳を提示(またはマイナポータル連携済みのミライロIDアプリ提示)することで駐車料金を全額免除。障害のある方向けの専用駐車区画(縦435cm×横250cm、斜線部幅120cm)を利用する場合は事前に受付へ申告が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間300円、以後30分毎50円\n障害者割引: 全額免除\n総台数: 47台",
+    "sourceUrl": "https://yokohama-sport.jp/seya-sc-ysa/handicapped/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14115-001",
+    "name": "栄区庁舎駐車場(第1駐車場)",
+    "address": "神奈川県横浜市栄区桂町303番地19",
+    "latitude": 35.364349,
+    "longitude": 139.553375,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14115",
+    "cityName": "横浜市栄区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳の提示により、区役所利用時は駐車の所要時間全て無料。介護者のみの利用(本人不同伴)は対象外。障害者手帳アプリ「ミライロID」を提示する場合は、あらかじめ「マイナポータル」と連携済みであることが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(8:00~22:00)、60分100円(22:00~8:00)\n障害者割引: 所要時間無料\n総台数: 58台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/sakae/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14115-002",
+    "name": "栄区庁舎・公会堂スポーツセンター駐車場(第2駐車場)",
+    "address": "神奈川県横浜市栄区桂町303番地19",
+    "latitude": 35.364349,
+    "longitude": 139.553375,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14115",
+    "cityName": "横浜市栄区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳の提示により、栄公会堂・栄スポーツセンター等の利用時は駐車の所要時間全て無料。介護者のみの利用(本人不同伴)は対象外。ミライロID提示の場合はマイナポータル連携済みであることが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(8:00~22:00)、土日祝当日最大料金900円\n障害者割引: 所要時間無料\n総台数: 47台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/sakae/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14115-003",
+    "name": "本郷ふじやま公園駐車場",
+    "address": "神奈川県横浜市栄区中野町56",
+    "latitude": 35.364624,
+    "longitude": 139.561996,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14115",
+    "cityName": "横浜市栄区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方が、療養・健康増進目的で公園を利用する場合に駐車料金が免除。手帳所持者が乗車していれば運転・同乗は問わない。出庫ゲート精算機のインターホンでコールセンターを呼び出し手帳所有を伝え、手帳原本を提示のうえ都度減免処理が必要(事後の処理は不可)。問合せ:公益財団法人横浜市緑の協会 管理課 駐車場担当 045-228-9431。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円、駐車後24時間最大900円(営業時間8時~19時)\n障害者割引: 無料(駐車料金免除)\n総台数: 30台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/genmen.php",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14115-004",
+    "name": "本郷台駅前県市等合同施設駐車場(あーすぷらざ・リリス)",
+    "address": "神奈川県横浜市栄区小菅ケ谷1-2-1",
+    "latitude": 35.367752,
+    "longitude": 139.553055,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14115",
+    "cityName": "横浜市栄区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳をお持ちの方は駐車料金が無料。1階事務所受付、駐車場スタッフ、または2階総合受付にて障がい者手帳と駐車券を提示。2024年8月11日よりタイムズ24株式会社が運営管理(神奈川県立地球市民かながわプラザ〈あーすぷらざ〉・横浜市栄区民文化センター〈リリス〉共用の県市等合同施設駐車場)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 普通車20分につき100円(4時間を超え当日中24時までは最大料金1,200円)、大型車30分につき400円\n障害者割引: 無料(駐車料金免除)\n総台数: 90台",
+    "sourceUrl": "https://www.earthplaza.jp/ep/access/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14116-001",
+    "name": "泉区総合庁舎駐車場",
+    "address": "神奈川県横浜市泉区和泉中央北五丁目1番1号",
+    "latitude": 35.418259,
+    "longitude": 139.488937,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14116",
+    "cityName": "横浜市泉区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳のご提示により所要時間無料。ただし障害者本人が駐車場を使用した場合に適用され、「介護者」の方のみが使用された場合は含まない。事前申請不要、精算前に駐車券及び手帳を管理室へ提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 平日8:00~22:30は30分200円、夜間(22:30~8:00)は60分100円。休日は最大800円(平日は最大料金なし)。\n障害者割引: 無料(所要時間全体)\n総台数: 96台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/izumi/madoguchi-shisetsu/kuyakusho/parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14116-002",
+    "name": "横浜市泉スポーツセンター駐車場",
+    "address": "神奈川県横浜市泉区西が岡3-11",
+    "latitude": 35.420452,
+    "longitude": 139.514206,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14116",
+    "cityName": "横浜市泉区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "帰館時に受付窓口にて障害者手帳(紙媒体)またはデジタル障害者手帳アプリ「ミライロID」、マイナポータル連携済アプリを提示することで駐車料金を全額免除。専用駐車区画(1台分)には三角コーンを設置、利用時は受付へ声かけ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "障害者割引: 全額免除",
+    "sourceUrl": "https://yokohama-sport.jp/izumi-sc-ysa/handicapped/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14117-001",
+    "name": "青葉区総合庁舎駐車場(第1駐車場・第2駐車場・地下駐車場)",
+    "address": "神奈川県横浜市青葉区市ケ尾町31番地4",
+    "latitude": 35.553493,
+    "longitude": 139.536621,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14117",
+    "cityName": "横浜市青葉区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方及びその介護者の方(身体障害者手帳、愛の手帳、精神障害者保健福祉手帳のご提示をお願いします)。障害者手帳アプリ「ミライロID」とマイナポータルを連携している場合はミライロIDの提示で手帳提示に代えることができる。介護者のみの利用の場合は対象外。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 第1駐車場: 8時~22時 30分200円/22時~8時 60分100円、土日祝当日最大600円。第2駐車場: 8時~22時 30分200円/22時~8時 60分100円、平日当日最大900円、土日祝当日最大500円。\n障害者割引: 所要時間無料\n総台数: 178台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/aoba/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
     "updatedAt": "2026-08-06T00:00:00Z"
   }
 ];
