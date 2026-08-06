@@ -1,0 +1,111 @@
+name: Auto Merge Research PRs
+
+# 調査ルーチンが作る research/* PR を自動でマージする。
+# コンフリクト (discount-research.json の末尾追記同士 / PLACE-DATA.md のステータス行) は
+# scripts/resolve-research-conflicts.mjs で決定的に解消する。
+#
+# 注意: GITHUB_TOKEN による push / マージは他のワークフローを起動しないため、
+#   - ci.yml 相当の検証はこのジョブ内で実施する
+#   - マージ後の再生成は data-sync.yml を workflow_dispatch で明示的に起動する
+
+on:
+  pull_request:
+    types: [opened]
+  schedule:
+    # ルーチン (UTC 8 */5 * * *) の約 30 分後に毎時回収する
+    - cron: "38 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: auto-merge-research
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    # pull_request イベントは research/* ブランチのみ対象 (schedule / dispatch は常に実行)
+    if: github.event_name != 'pull_request' || startsWith(github.event.pull_request.head.ref, 'research/')
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Merge research PRs
+        run: |
+          set -uo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          merged_any=0
+          for pr in $(gh pr list --state open --json number,headRefName \
+              --jq '.[] | select(.headRefName | startswith("research/")) | .number' | sort -n); do
+            branch=$(gh pr view "$pr" --json headRefName --jq .headRefName)
+            echo "::group::PR #$pr ($branch)"
+
+            git fetch origin main "$branch"
+            git checkout -B "$branch" "origin/$branch"
+
+            if ! git merge --no-edit origin/main; then
+              if ! node scripts/resolve-research-conflicts.mjs; then
+                git merge --abort
+                git checkout main
+                gh pr comment "$pr" --body "自動コンフリクト解消に失敗しました。手動での解消が必要です。(auto-merge-research)"
+                echo "::endgroup::"
+                continue
+              fi
+              git commit --no-edit
+            fi
+
+            # ci.yml と同じ検証 (GITHUB_TOKEN の push では ci.yml が発火しないため)
+            if ! (node apps/web/scripts/build-parking-mock.mjs \
+                && pnpm lint && pnpm typecheck && pnpm test && pnpm build); then
+              git checkout -- .
+              git checkout main
+              gh pr comment "$pr" --body "マージ後の検証 (regenerate/lint/typecheck/test/build) に失敗したため自動マージを中止しました。ログ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }} (auto-merge-research)"
+              echo "::endgroup::"
+              continue
+            fi
+
+            # 再生成された生成物は PR に含めない (マージ後に data-sync.yml が main で再生成する)
+            git checkout -- .
+            git push origin "$branch"
+            git checkout main
+
+            # push 直後は mergeability の再計算で UNKNOWN になることがあるためリトライ
+            ok=0
+            for i in 1 2 3 4 5 6; do
+              if gh pr merge "$pr" --merge --delete-branch; then
+                ok=1
+                break
+              fi
+              sleep 5
+            done
+            if [ "$ok" = 1 ]; then
+              merged_any=1
+              git pull --ff-only origin main
+            else
+              gh pr comment "$pr" --body "gh pr merge が繰り返し失敗しました。手動での対応が必要です。(auto-merge-research)"
+            fi
+            echo "::endgroup::"
+          done
+
+          if [ "$merged_any" = 1 ]; then
+            gh workflow run data-sync.yml --ref main
+          fi
