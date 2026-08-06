@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 276 (geocode 成功 276 / 市区町村フォールバック 0)
+// 件数: 285
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -132,8 +132,8 @@ export const parkingLots: ParkingLotDetail[] = [
     "id": "13102-003",
     "name": "東京都八重洲駐車場",
     "address": "東京都中央区京橋1-10-1先",
-    "latitude": 35.679047,
-    "longitude": 139.771744,
+    "latitude": 35.678669,
+    "longitude": 139.772644,
     "prefectureCode": "13",
     "prefectureName": "東京都",
     "cityCode": "13102",
@@ -4126,8 +4126,8 @@ export const parkingLots: ParkingLotDetail[] = [
     "id": "13117-008",
     "name": "桐ケ丘体育館 駐車場",
     "address": "東京都北区桐ケ丘2-3-1",
-    "latitude": 35.781364,
-    "longitude": 139.712402,
+    "latitude": 35.781372,
+    "longitude": 139.712372,
     "prefectureCode": "13",
     "prefectureName": "東京都",
     "cityCode": "13117",
@@ -6323,5 +6323,223 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 入庫後30分無料 / 以降30分ごと100円 / 1日最大700円(現金のみ)\n障害者割引: 無料\n総台数: 170台",
     "sourceUrl": "https://www.tamarokuto.or.jp/access/",
     "updatedAt": "2026-05-31T00:00:00Z"
+  },
+  {
+    "id": "14101-001",
+    "name": "鶴見区総合庁舎駐車場(鶴見区役所駐車場)",
+    "address": "神奈川県横浜市鶴見区鶴見中央三丁目20番1号",
+    "latitude": 35.508606,
+    "longitude": 139.681915,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14101",
+    "cityName": "横浜市鶴見区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある人及びその介護者が対象。身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳のいずれかを提示することで駐車料金が全額免除(利用時間無料)。平面駐車場に身体障害者用区画1台あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 150円/30分(月〜金8時〜18時、第2・第4土曜開庁日8時〜12時30分)\n障害者割引: 無料(利用時間無料)\n総台数: 55台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/tsurumi/madoguchi-shisetsu/kuyakusho/annai/shisetsu/kuyakusyotyuusyajou.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14101-002",
+    "name": "三ツ池公園駐車場(正門駐車場・北門駐車場)",
+    "address": "神奈川県横浜市鶴見区三ツ池公園1-1",
+    "latitude": 35.522442,
+    "longitude": 139.661118,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14101",
+    "cityName": "横浜市鶴見区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害(児)者、知的障害(児)者、精神障害(児)者が対象(障害者1名につき普通車1台)。出庫時に発券機の受話器で管理者を呼び出しカメラ越しに身体障害者手帳・精神障害者保健福祉手帳・療育手帳のいずれかを提示するか、パークセンターで手続き。ミライロID提示も可。出庫後の申請は不可。正門駐車場・北門駐車場それぞれに身障者用区画2台ずつ(計4台)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 普通車510円/1日(繁忙期3/16〜4/15、4/29〜5/5は830円)\n障害者割引: 無料(駐車料金全額免除)\n総台数: 156台",
+    "sourceUrl": "https://kanagawa-park.or.jp/mitsuike/baria.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14101-003",
+    "name": "横浜市鶴見スポーツセンター駐車場",
+    "address": "神奈川県横浜市鶴見区元宮2-5-1",
+    "latitude": 35.519749,
+    "longitude": 139.677505,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14101",
+    "cityName": "横浜市鶴見区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方が対象。帰りに受付窓口で障害者手帳を提示(マイナポータル連携済のミライロID等アプリ提示でも可)。障害者用区画2台確保(区画サイズ縦560cm×横230cm)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降30分ごとに50円\n障害者割引: 無料(駐車料金全額免除)\n総台数: 23台",
+    "sourceUrl": "https://yokohama-sport.jp/tsurumi-sc-ysa/handicapped",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14102-001",
+    "name": "神奈川区役所駐車場",
+    "address": "神奈川県横浜市神奈川区広台太田町3番地8",
+    "latitude": 35.47683,
+    "longitude": 139.62944,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14102",
+    "cityName": "横浜市神奈川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "区役所・消防署・県税事務所の利用者のうち障害のある方及びその介護者の方が対象(介護者のみの利用は対象外)。身体障害者手帳・愛の手帳・精神障害者保健福祉手帳の提示、またはミライロIDの提示(マイナポータル連携時)で減免。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~18:00 30分200円、17:30~8:00 1,000円(一泊料金)\n障害者割引: 所要時間無料\n総台数: 32台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kanagawa/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14102-002",
+    "name": "横浜市ポートサイド地下駐車場",
+    "address": "神奈川県横浜市神奈川区栄町92",
+    "latitude": 35.46991,
+    "longitude": 139.630966,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14102",
+    "cityName": "横浜市神奈川区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障害者手帳・愛の手帳(療育手帳)・精神障害者保健福祉手帳所持者が乗車していれば運転・同乗問わず対象。事前申請不要、精算前に駐車券と手帳を管理室へ提示(定期購入時も提示)。等級により減免率が異なる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 平日8:00~20:00 30分300円・20:00~8:00 60分100円(平日最大1,500円、土日祝最大2,000円)\n障害者割引: 1~4級等:3時間まで無料・以降50%引き(定期券50%引き)/5~6級等:全時間50%引き(定期券30%引き)\n総台数: 200台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/kurashi/machizukuri-kankyo/doro/anzenshisetsu/riyoannai/chika/20251117095005466.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14102-003",
+    "name": "三ツ沢公園第1駐車場",
+    "address": "神奈川県横浜市神奈川区三ツ沢西町3-1",
+    "latitude": 35.470428,
+    "longitude": 139.602768,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14102",
+    "cityName": "横浜市神奈川区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 8,
+      "conditions": "療養・健康増進目的で公園を利用する障害者手帳(身体障害者手帳・愛の手帳・精神障害者保健福祉手帳)所持者が対象。運転・同乗問わず。受付時間内(9:00~17:00)は管理事務所へ手帳原本と駐車券を提示、時間外は出庫ゲートのインターホンでコールセンターに連絡し手帳所有を申告。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降30分100円\n障害者割引: 8時間まで無料(8時間超過分は通常料金)\n総台数: 88台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/mitsuzawa/mituzawa1/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14102-004",
+    "name": "三ツ沢公園第2駐車場",
+    "address": "神奈川県横浜市神奈川区三ツ沢西町3-1",
+    "latitude": 35.470428,
+    "longitude": 139.602768,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14102",
+    "cityName": "横浜市神奈川区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 8,
+      "conditions": "療養・健康増進目的で公園を利用する障害者手帳(身体障害者手帳・愛の手帳・精神障害者保健福祉手帳)所持者が対象。運転・同乗問わず。受付時間内(9:00~17:00)は管理事務所へ手帳原本と駐車券を提示、時間外は出庫ゲートのインターホンでコールセンターに連絡し手帳所有を申告。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降30分100円\n障害者割引: 8時間まで無料(8時間超過分は通常料金)\n総台数: 241台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/mitsuzawa/mituzawa2/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14102-005",
+    "name": "三ツ沢公園第3駐車場",
+    "address": "神奈川県横浜市神奈川区三ツ沢西町3-1",
+    "latitude": 35.470428,
+    "longitude": 139.602768,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14102",
+    "cityName": "横浜市神奈川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 8,
+      "conditions": "療養・健康増進目的で公園を利用する障害者手帳(身体障害者手帳・愛の手帳・精神障害者保健福祉手帳)所持者が対象。運転・同乗問わず。受付時間内(9:00~17:00)は管理事務所へ手帳原本と駐車券を提示、時間外は出庫ゲートのインターホンでコールセンターに連絡し手帳所有を申告。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間300円、以降30分100円\n障害者割引: 8時間まで無料(8時間超過分は通常料金)\n総台数: 112台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/mitsuzawa/mituzawa3/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14102-006",
+    "name": "三ツ沢公園臨時駐車場",
+    "address": "神奈川県横浜市神奈川区三ツ沢西町3-1",
+    "latitude": 35.470428,
+    "longitude": 139.602768,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14102",
+    "cityName": "横浜市神奈川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 8,
+      "conditions": "療養・健康増進目的で公園を利用する障害者手帳(身体障害者手帳・愛の手帳・精神障害者保健福祉手帳)所持者が対象。混雑時のみ営業する臨時駐車場。運転・同乗問わず。受付時間内は管理事務所へ手帳原本と駐車券を提示、時間外は出庫ゲートのインターホンでコールセンターに連絡し手帳所有を申告。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1回1,300円\n障害者割引: 8時間まで無料(8時間超過分は通常料金)\n総台数: 153台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/mitsuzawa/mituzawarinji/",
+    "updatedAt": "2026-08-06T00:00:00Z"
   }
 ];
