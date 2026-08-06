@@ -2,6 +2,8 @@ name: Data Sync
 
 # discount-research.json が main に入ったら生成データを再生成してコミットする。
 # このコミットは Vercel の Git 連携によって自動デプロイされる。
+# workflow_dispatch は auto-merge-research.yml から起動される
+# (GITHUB_TOKEN によるマージでは push イベントが発火しないため)。
 
 on:
   push:
@@ -9,6 +11,7 @@ on:
     paths:
       - apps/web/data/discount-research.json
       - apps/web/scripts/build-parking-mock.mjs
+  workflow_dispatch:
 
 permissions:
   contents: write
