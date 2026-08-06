@@ -11,7 +11,8 @@ import {
 // 本番/開発では app/api/v1/**/route.ts (Next Route Handlers) が同じデータを返す。
 // データソースは lib/data/repository に一本化されており、両者は同じ結果を返す。
 
-const API = "/api/v1";
+// "*" 始まりでオリジン非依存にする (Node のテストではリクエストが絶対 URL になるため)
+const API = "*/api/v1";
 
 export const handlers = [
   http.get(`${API}/healthz`, () =>

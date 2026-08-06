@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "msw:init": "msw init public/ --save"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",
@@ -30,11 +31,7 @@
     "eslint-config-next": "16.2.6",
     "msw": "^2.7.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
-  },
-  "msw": {
-    "workerDirectory": [
-      "public"
-    ]
+    "typescript": "^5",
+    "vitest": "^4.1.10"
   }
 }

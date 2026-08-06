@@ -9,6 +9,8 @@
     "dev:web": "pnpm --filter @unipark/web dev",
     "build": "pnpm -r build",
     "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
     "gen:types": "pnpm --filter @unipark/api-types gen"
   },
   "engines": {
