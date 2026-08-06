@@ -79,9 +79,8 @@ description: Use when the user invokes /research-parking with a Japanese municip
 
 ### 5. PLACE-DATA.md の更新
 
-- 該当市区町村の行を **`[△]`** に書き換える。
+- 該当市区町村の行を **`[△]`** に書き換える (`[△]` が最終ステータス)。
 - 1 件も見つからなかった場合は `[~]` を残し、ユーザーに「該当なし」を報告 (`[ ]` には戻さない)。
-- **`[○]` / `[✓]` には絶対に書き換えない** — それは「ユーザーが二重確認した後」のステータス。
 
 ### 6. 報告
 
@@ -91,7 +90,6 @@ description: Use when the user invokes /research-parking with a Japanese municip
 2. 各施設の 1 行サマリ (`name` + `discount_rate` + `source_url`)
 3. 重複・スキップ・該当なしの施設
 4. 「PLACE-DATA.md を `[△]` に更新しました」
-5. 「`[○]` に上げる際はご自身でも公式情報を再確認してください」と促す
 
 ## 判別: full vs partial
 
@@ -115,5 +113,5 @@ description: Use when the user invokes /research-parking with a Japanese municip
 
 - `shogaisha-techo.com` への WebFetch / 内容の引用 / `source_url` への記載。
 - `discount-research.json` の既存エントリの**勝手な書き換え** (誤り発見時もまずユーザーに報告)。
-- `PLACE-DATA.md` を `[○]` `[✓]` `[★]` に上げる (ユーザー専権)。
+- `PLACE-DATA.md` に `[△]` 以外の独自ステータス記号を導入する。
 - TaskCreate などで作業を細切れに追跡する (この調査は 1 ターンで完結する流れ作業)。
