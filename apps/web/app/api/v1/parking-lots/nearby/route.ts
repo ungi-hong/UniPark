@@ -2,9 +2,12 @@ import { findNearby } from "@/lib/data/repository";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const lng = Number(url.searchParams.get("lng"));
-  const lat = Number(url.searchParams.get("lat"));
-  if (Number.isNaN(lng) || Number.isNaN(lat)) {
+  // searchParams.get は未指定で null を返し Number(null) は 0 になるため、欠落は明示的に弾く
+  const lngRaw = url.searchParams.get("lng");
+  const latRaw = url.searchParams.get("lat");
+  const lng = Number(lngRaw);
+  const lat = Number(latRaw);
+  if (!lngRaw || !latRaw || Number.isNaN(lng) || Number.isNaN(lat)) {
     return Response.json(
       { code: "bad_request", message: "lng and lat are required" },
       { status: 400 },
