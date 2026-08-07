@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 453
+// 件数: 459
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -10354,6 +10354,150 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入庫後30分無料、30分超~120分まで200円、以降60分ごとに100円、最大料金600円(当日24時まで)\n障害者割引: 半額\n総台数: 136台",
     "sourceUrl": "https://www.city.zama.kanagawa.jp/bunkasports/sports/shisetsu/1003267.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14218-001",
+    "name": "綾瀬スポーツ公園駐車場",
+    "address": "神奈川県綾瀬市本蓼川345",
+    "latitude": 35.435692,
+    "longitude": 139.448441,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14218",
+    "cityName": "綾瀬市",
+    "accessibleSpaceTotal": 9,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳(身体障害者手帳等)をお持ちの方およびその介護者が駐車場を利用するとき、駐車料金が免除される。駐車券と手帳を持って綾瀬スポーツ公園レストハウス窓口へ持参するか、出口精算機のウェブカメラに手帳をかざして提示する。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 入庫後30分まで無料、以降入庫後60分まで100円、以降60分ごとに100円、入庫当日最大600円(大型車は1回・日1500円、事前予約制)\n障害者割引: 無料(駐車料金免除)\n総台数: 475台",
+    "sourceUrl": "https://www.city.ayase.kanagawa.jp/soshiki/midorikoenka/koen/1/5787.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14301-001",
+    "name": "神奈川県立葉山公園駐車場",
+    "address": "神奈川県三浦郡葉山町下山口1443-1",
+    "latitude": 35.258633,
+    "longitude": 139.593628,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14301",
+    "cityName": "葉山町",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳をお持ちの方(ミライロIDの利用も可)。公園係員に手帳を提示のうえ、QRコードの発券手続きを行うことで駐車料金が全額免除される。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 季節・曜日により変動。10月～4月:平日30分未満無料/30分~1時間100円/以降50円毎30分、土日祝30分未満無料/30分~1時間400円/以降200円毎30分。5月~9月:平日30分未満無料/30分~1時間400円/以降200円毎30分、土日祝30分未満無料/30分~1時間800円/以降400円毎30分。12/29~1/3は休日料金適用。\n障害者割引: 無料(全額免除)\n総台数: 113台",
+    "sourceUrl": "https://www.hayama-park.com/access/index.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14301-002",
+    "name": "長者ヶ崎駐車場",
+    "address": "神奈川県三浦郡葉山町下山口字白石2049番5ほか",
+    "latitude": 35.258633,
+    "longitude": 139.593628,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14301",
+    "cityName": "葉山町",
+    "accessibleSpaceTotal": 2,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳の提示により駐車場使用料が50%割引となる。他の割引との併用不可。管理ブースで手帳を提示。運営は神奈川県道路公社。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 季節・曜日により変動。7~8月平日:1,600円/回(13時以降800円)、7~8月土日祝:2,200円/回(13時以降1,100円)、1~3月・11~12月/4~6月・9~10月の土日祝:400円/時間(当日最大1,600円)、平日開放時間中は無料。\n障害者割引: 駐車場使用料50%割引\n総台数: 130台",
+    "sourceUrl": "https://www.kdt-kousha.or.jp/parking-post/parking_chojagasaki/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14341-001",
+    "name": "大磯港臨港道路付属第一駐車場",
+    "address": "神奈川県中郡大磯町大磯1398-18",
+    "latitude": 35.306038,
+    "longitude": 139.315933,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14341",
+    "cityName": "大磯町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳または療育手帳の所持者が乗車する車両が対象。減免処理は港湾管理事務所または第1駐車場詰所で行う(原則開所時間のみ対応)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 310円/時間(1日上限1,040円)、大型自動車 630円/時間(1日上限2,090円)、原付・自動二輪車 160円/時間(1日上限520円)\n障害者割引: 5割減額\n総台数: 114台",
+    "sourceUrl": "https://www.town.oiso.kanagawa.jp/soshiki/sangyokankoubu/sangyo/tanto/oisoko/1358496911892.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14341-002",
+    "name": "大磯港臨港道路付属第二駐車場",
+    "address": "神奈川県中郡大磯町大磯1398-18",
+    "latitude": 35.306038,
+    "longitude": 139.315933,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14341",
+    "cityName": "大磯町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳または療育手帳の所持者が乗車する車両が対象。減免処理は港湾管理事務所または第1駐車場詰所で行う(原則開所時間のみ対応)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 310円/時間(1日上限1,040円)、大型自動車 630円/時間(1日上限2,090円)、原付・自動二輪車 160円/時間(1日上限520円)\n障害者割引: 5割減額\n総台数: 239台",
+    "sourceUrl": "https://www.town.oiso.kanagawa.jp/soshiki/sangyokankoubu/sangyo/tanto/oisoko/1358496911892.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14341-003",
+    "name": "旧吉田茂邸地区駐車場(県立大磯城山公園)",
+    "address": "神奈川県中郡大磯町国府本郷551-1",
+    "latitude": 35.305794,
+    "longitude": 139.290771,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14341",
+    "cityName": "大磯町",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳またはミライロIDの提示が対象。公園管理事務所または旧吉田茂邸地区管理休憩棟に手帳(またはミライロID)と駐車券を提示して減免処理。営業時間9:00~17:00(閉門)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 土日祝日: 普通車1時間300円、中型車以上1200円。平日は無料。(普通車23台、中型車以上2台、身障者用1台)\n障害者割引: 無料(土日祝日の有料時間帯も減免)\n総台数: 26台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/ooisojoyama/qa.html",
     "updatedAt": "2026-08-07T00:00:00Z"
   }
 ];

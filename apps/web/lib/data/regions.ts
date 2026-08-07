@@ -469,6 +469,21 @@ const cities: City[] = [
     "code": "14216",
     "name": "座間市",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14218",
+    "name": "綾瀬市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14301",
+    "name": "葉山町",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14341",
+    "name": "大磯町",
+    "prefectureCode": "14"
   }
 ];
 
