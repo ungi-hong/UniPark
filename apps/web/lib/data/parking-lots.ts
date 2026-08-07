@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 376
+// 件数: 425
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -8641,6 +8641,1075 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 30分ごとに150円、駐車後24時間ごとの最大料金1,500円\n障害者割引: 最初の2時間無料\n総台数: 220台",
     "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/jidosha/1006482.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14153-001",
+    "name": "相模大野立体駐車場(市営)",
+    "address": "神奈川県相模原市南区相模大野4-4-2",
+    "latitude": 35.53363,
+    "longitude": 139.434601,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14153",
+    "cityName": "相模原市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "相模原市内在住で、身体障害者手帳1~2級、療育手帳A1~A2(またはB1かつ身体障害者手帳3級)、精神障害者保健福祉手帳1級等の交付を受けている方が乗車している自動車が対象。事前に南高齢・障害者相談課(南区相模大野6-22-1 南保健福祉センター3階、TEL 042-701-7722)等の窓口で手帳等に対象である旨の表示を受けた上で、出場時に精算機の呼び出しボタン等で係員を呼び手帳等を提示(夜間無人時間帯はインターホンでコールセンターに連絡)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分150円(駐車後24時間最大料金1,500円)\n障害者割引: 駐車基本料金のうち最初の2時間分無料\n総台数: 786台",
+    "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/jidosha/1006482.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14153-002",
+    "name": "小田急相模原駅自動車駐車場(市営)",
+    "address": "神奈川県相模原市南区南台3-20-1 ラクアル・オダサガ内",
+    "latitude": 35.514729,
+    "longitude": 139.422043,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14153",
+    "cityName": "相模原市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "相模原市内在住で、身体障害者手帳1~2級、療育手帳A1~A2(またはB1かつ身体障害者手帳3級)、精神障害者保健福祉手帳1級等の交付を受けている方が乗車している自動車が対象。事前に南高齢・障害者相談課(南区相模大野6-22-1 南保健福祉センター3階、TEL 042-701-7722)等の窓口で手帳等に対象である旨の表示を受けた上で、出場時に精算機の呼び出しボタン等で係員を呼び手帳等を提示(夜間無人時間帯はインターホンでコールセンターに連絡)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分150円(駐車後24時間最大料金1,500円)\n障害者割引: 駐車基本料金のうち最初の2時間分無料\n総台数: 128台",
+    "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/jidosha/1006482.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14153-003",
+    "name": "相模原公園 駐車場(中央駐車場)",
+    "address": "神奈川県相模原市南区下溝3277番地",
+    "latitude": 35.531422,
+    "longitude": 139.385513,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14153",
+    "cityName": "相模原市南区",
+    "accessibleSpaceTotal": 8,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳またはスマートフォンアプリ「ミライロID」をお持ちの方1名につき普通車1台が無料。駐車券と手帳またはミライロIDを公園管理事務所(8:30~17:00、休所日12/29~1/3)で提示するか、料金精算機のインターホンでコールセンターに連絡して無料処理。身障者用駐車枠8台分あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 平日:2時間以内100円、3時間以上200円/土日祝:最大610円(大型車は別料金体系、二輪車は無料、西駐車場は常時無料)\n障害者割引: 無料(全額免除)\n総台数: 282台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/sagamihara/handicapped.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-001",
+    "name": "健康増進センター(すこやかん)駐車場",
+    "address": "神奈川県横須賀市西逸見町1-38-11",
+    "latitude": 35.284496,
+    "longitude": 139.652008,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-822-4411)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-002",
+    "name": "ウェルシティ市民プラザ駐車場",
+    "address": "神奈川県横須賀市西逸見町1-38-11",
+    "latitude": 35.284496,
+    "longitude": 139.652008,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-824-7561)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-003",
+    "name": "総合体育会館駐車場",
+    "address": "神奈川県横須賀市不入斗町1-2",
+    "latitude": 35.268318,
+    "longitude": 139.663284,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-826-2800)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-004",
+    "name": "北体育会館駐車場",
+    "address": "神奈川県横須賀市夏島町2",
+    "latitude": 35.318287,
+    "longitude": 139.632019,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-865-9333)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-005",
+    "name": "佐島の丘温水プール駐車場",
+    "address": "神奈川県横須賀市佐島の丘1-1-1",
+    "latitude": 35.229794,
+    "longitude": 139.613785,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-855-0911)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-006",
+    "name": "くりはま花の国駐車場",
+    "address": "神奈川県横須賀市神明町1",
+    "latitude": 35.224331,
+    "longitude": 139.700729,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-833-8282)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-007",
+    "name": "くりはま花の国プール(障害者温水訓練室)駐車場",
+    "address": "神奈川県横須賀市神明町1821-12",
+    "latitude": 35.217888,
+    "longitude": 139.70871,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-835-7754)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-008",
+    "name": "しょうぶ園駐車場",
+    "address": "神奈川県横須賀市阿部倉18-1",
+    "latitude": 35.25629,
+    "longitude": 139.640228,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-853-3688)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-009",
+    "name": "うみかぜ公園駐車場",
+    "address": "神奈川県横須賀市平成町3-23",
+    "latitude": 35.276543,
+    "longitude": 139.683044,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-822-4022)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-010",
+    "name": "海辺つり公園駐車場",
+    "address": "神奈川県横須賀市平成町3-1",
+    "latitude": 35.266479,
+    "longitude": 139.690582,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-822-4022)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-011",
+    "name": "夏島都市緑地駐車場",
+    "address": "神奈川県横須賀市夏島町2-26",
+    "latitude": 35.318287,
+    "longitude": 139.632019,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 080-2391-9779)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-012",
+    "name": "夏島グラウンド駐車場",
+    "address": "神奈川県横須賀市浦郷町5-2931-71",
+    "latitude": 35.312,
+    "longitude": 139.637787,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 080-2391-9779)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-013",
+    "name": "荒崎公園駐車場",
+    "address": "神奈川県横須賀市長井6-5320-3",
+    "latitude": 35.197918,
+    "longitude": 139.607666,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-857-2500)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-014",
+    "name": "三笠公園駐車場",
+    "address": "神奈川県横須賀市稲岡町82-14",
+    "latitude": 35.29361,
+    "longitude": 139.665237,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の提示により駐車料金全額免除。ゲート清算機のインターホンで係員を呼び出し手帳を提示(TEL 046-824-6291)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間420円、以後30分毎に210円加算(2時間超は1時間毎に100円加算)\n障害者割引: 無料\n総台数: 33台",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/5560/sisetu/fc00000436.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-015",
+    "name": "不入斗公園駐車場",
+    "address": "神奈川県横須賀市不入斗町1-2-1",
+    "latitude": 35.268318,
+    "longitude": 139.663284,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-823-9360)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-016",
+    "name": "大津公園駐車場",
+    "address": "神奈川県横須賀市大津町5-4-1",
+    "latitude": 35.258156,
+    "longitude": 139.688644,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-823-1550)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-017",
+    "name": "追浜公園駐車場",
+    "address": "神奈川県横須賀市夏島町2-2",
+    "latitude": 35.318287,
+    "longitude": 139.632019,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-865-3307)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-018",
+    "name": "はまゆう公園駐車場",
+    "address": "神奈川県横須賀市不入斗町4-25",
+    "latitude": 35.273754,
+    "longitude": 139.663803,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-826-2874)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-019",
+    "name": "佐原2丁目公園駐車場",
+    "address": "神奈川県横須賀市佐原2-2-10",
+    "latitude": 35.243771,
+    "longitude": 139.68364,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-833-5505)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-020",
+    "name": "光の丘公園駐車場",
+    "address": "神奈川県横須賀市光の丘8-9",
+    "latitude": 35.222916,
+    "longitude": 139.672409,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-849-9120)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-021",
+    "name": "西公園駐車場",
+    "address": "神奈川県横須賀市武3-33-1",
+    "latitude": 35.218193,
+    "longitude": 139.646011,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-857-6022)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-022",
+    "name": "湘南国際村西公園駐車場",
+    "address": "神奈川県横須賀市湘南国際村1-2-5",
+    "latitude": 35.253918,
+    "longitude": 139.605972,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-858-0779)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-023",
+    "name": "長井海の手公園(ソレイユの丘)駐車場",
+    "address": "神奈川県横須賀市長井4",
+    "latitude": 35.196491,
+    "longitude": 139.614563,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-857-2500)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-024",
+    "name": "ヴェルニー公園駐車場",
+    "address": "神奈川県横須賀市汐入町1-1",
+    "latitude": 35.28447,
+    "longitude": 139.657227,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-845-6660)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-025",
+    "name": "ヴェルクよこすか(勤労福祉会館)駐車場",
+    "address": "神奈川県横須賀市日の出町1-5",
+    "latitude": 35.280415,
+    "longitude": 139.67424,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除(施設利用料はトレーニング室のみ半額)。詳細は施設へ問い合わせ(TEL 046-822-0202)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-026",
+    "name": "横須賀市文化会館駐車場",
+    "address": "神奈川県横須賀市深田台50",
+    "latitude": 35.274662,
+    "longitude": 139.67305,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の所持者は駐車料金無料。1階管理事務所で手帳と駐車券を提示(TEL 046-823-2950)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 30分まで無料、30分超~4時間400円、以降30分毎210円加算(夜間23:00~7:30は30分毎100円加算、19:00~7:30の最大料金1,000円)\n障害者割引: 無料\n総台数: 156台",
+    "sourceUrl": "https://yokosuka-bunka.info/access_parking/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-027",
+    "name": "横須賀市自然・人文博物館駐車場",
+    "address": "神奈川県横須賀市深田台95",
+    "latitude": 35.274662,
+    "longitude": 139.67305,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、本人及び介助者1名まで駐車料金全額免除。詳細は施設へ問い合わせ(TEL 046-824-3688)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.yokosuka.kanagawa.jp/2625/g_info/documents/260401_yokosukacityshisetsu.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14201-028",
+    "name": "横須賀美術館駐車場",
+    "address": "神奈川県横須賀市鴨居4-1",
+    "latitude": 35.259796,
+    "longitude": 139.738297,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14201",
+    "cityName": "横須賀市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳)をお持ちの方は駐車料金無料。詳細は美術館へ問い合わせ(TEL 046-822-4000 横須賀市コールセンター)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車320円(1時間まで)、以降160円/30分(1日上限1,600円)\n障害者割引: 無料\n総台数: 120台",
+    "sourceUrl": "https://yokosuka-moa.jp/outline/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14203-001",
+    "name": "平塚市役所駐車場",
+    "address": "神奈川県平塚市浅間町9番1号",
+    "latitude": 35.3354,
+    "longitude": 139.349503,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14203",
+    "cityName": "平塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、指定難病医療受給者証、小児慢性特定疾病医療受給者証をお持ちの方(介護のため同乗する方を含む)が市役所本館・別館、消防署本署、中央図書館、博物館、美術館、青少年会館、教育会館、平塚税務署等を利用するために駐車した場合、駐車券とともに手帳等を用務先窓口で提示することで駐車料金を全額免除"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者:入庫90分以内無料、以降30分毎100円(1日最大1,200円) / 非利用者:1時間以内300円(1日最大1,500円)\n障害者割引: 全額免除(無料)\n総台数: 188台",
+    "sourceUrl": "https://www.city.hiratsuka.kanagawa.jp/shiyakusho/page27_00002.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14203-002",
+    "name": "文化ゾーン第2駐車場",
+    "address": "神奈川県平塚市浅間町12番41号",
+    "latitude": 35.337769,
+    "longitude": 139.349014,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14203",
+    "cityName": "平塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、指定難病医療受給者証、小児慢性特定疾病医療受給者証をお持ちの方(介護のため同乗する方を含む)が市役所本館・別館、消防署本署、中央図書館、博物館、美術館、青少年会館、教育会館、平塚税務署等を利用するために駐車した場合、駐車券とともに手帳等を用務先窓口で提示することで駐車料金を全額免除"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者:入庫90分以内無料、以降30分毎100円(1日最大1,200円) / 非利用者:1時間以内300円(1日最大1,500円)\n障害者割引: 全額免除(無料)\n総台数: 59台",
+    "sourceUrl": "https://www.city.hiratsuka.kanagawa.jp/shiyakusho/page27_00002.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14203-003",
+    "name": "文化ゾーン第3駐車場",
+    "address": "神奈川県平塚市西八幡一丁目3番3号",
+    "latitude": 35.337746,
+    "longitude": 139.348129,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14203",
+    "cityName": "平塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、指定難病医療受給者証、小児慢性特定疾病医療受給者証をお持ちの方(介護のため同乗する方を含む)が市役所本館・別館、消防署本署、中央図書館、博物館、美術館、青少年会館、教育会館、平塚税務署等を利用するために駐車した場合、駐車券とともに手帳等を用務先窓口で提示することで駐車料金を全額免除"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者:入庫90分以内無料、以降30分毎100円(1日最大1,200円) / 非利用者:1時間以内300円(1日最大1,500円)\n障害者割引: 全額免除(無料)\n総台数: 67台",
+    "sourceUrl": "https://www.city.hiratsuka.kanagawa.jp/shiyakusho/page27_00002.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14203-004",
+    "name": "平塚市総合公園駐車場",
+    "address": "神奈川県平塚市大原1番1号",
+    "latitude": 35.340607,
+    "longitude": 139.344925,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14203",
+    "cityName": "平塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳を所持し自ら運転または当該手帳所持者を同乗させている場合、公園内各施設(管理事務所、総合体育館、野球場、競技場、レストハウス、ふれあい動物園、宿泊研修所)窓口で手帳提示のうえ割引認証を受けるか、施設受付時間外は出口精算機のオートフォンで手帳をカメラにかざして認証を受ける"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間以内無料、2~3時間200円、3時間超過100円/時間(当日最大900円)※宿泊研修所を除く\n障害者割引: 半額(2~3時間100円、当日最大400円)\n総台数: 921台",
+    "sourceUrl": "https://www.city.hiratsuka.kanagawa.jp/koen/page-c_00837.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14203-005",
+    "name": "ひらつかシーテラス第一駐車場(東側)",
+    "address": "神奈川県平塚市龍城ケ丘19-1",
+    "latitude": 35.315536,
+    "longitude": 139.347595,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14203",
+    "cityName": "平塚市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 12,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳をお持ちの方。公園管理事務所営業時間内(8:30~17:15、年末年始除く)に公園管理棟で減免認証を受ける(営業時間外は精算機のインターホンで減免の旨を申告)"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 9月~6月:20分100円(最初の30分無料、1日最大900円) / 7月~8月:30分300円(1日最大1,800円)\n障害者割引: 入庫から12時間の範囲で無料\n総台数: 73台",
+    "sourceUrl": "https://hiratsuka-seaterrace.com/access/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14203-006",
+    "name": "ひらつかシーテラス第二駐車場(西側)",
+    "address": "神奈川県平塚市龍城ケ丘19-1",
+    "latitude": 35.315536,
+    "longitude": 139.347595,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14203",
+    "cityName": "平塚市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 12,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳をお持ちの方。公園管理事務所営業時間内(8:30~17:15、年末年始除く)に公園管理棟で減免認証を受ける(営業時間外は精算機のインターホンで減免の旨を申告)"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 9月~6月:20分100円(最初の20分無料、最大料金なし) / 7月~8月:30分300円(最大料金なし)\n障害者割引: 入庫から12時間の範囲で無料\n総台数: 12台",
+    "sourceUrl": "https://hiratsuka-seaterrace.com/access/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14204-001",
+    "name": "神奈川県立大船フラワーセンター 駐車場",
+    "address": "神奈川県鎌倉市岡本1018",
+    "latitude": 35.347687,
+    "longitude": 139.520691,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14204",
+    "cityName": "鎌倉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、戦傷病者手帳、療育手帳、精神障がい者保健福祉手帳、被爆者健康手帳をお持ちの方(本人)および付き添い1名は入園料・駐車料金が無料。手帳は原本を提示すること。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車200円/時間(以降30分ごとに100円加算)、大・中型車620円/時間(以降30分ごとに300円加算)\n障害者割引: 無料",
+    "sourceUrl": "https://www.fcofuna-kanagawa.jp/info/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14204-002",
+    "name": "鎌倉体育館 駐車場",
+    "address": "神奈川県鎌倉市由比ガ浜2-9-9",
+    "latitude": 35.313919,
+    "longitude": 139.548813,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14204",
+    "cityName": "鎌倉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "鎌倉市内に住所を有し、身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた者およびその介助者1人は、施設の個人利用時または駐車場利用時の料金が免除。手帳提示のほか障がい者手帳アプリ「MIRAIRO ID」の提示でも可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分以内無料、30分超~3時間以内300円、3時間超過後は1時間ごとに100円加算\n障害者割引: 無料\n総台数: 24台",
+    "sourceUrl": "https://www.kamakura-sports.jp/kamakura_taiikukan/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14204-003",
+    "name": "大船体育館 駐車場",
+    "address": "神奈川県鎌倉市台3-2-5",
+    "latitude": 35.3466,
+    "longitude": 139.531342,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14204",
+    "cityName": "鎌倉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "鎌倉市内に住所を有し、身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた者およびその介助者1人は、施設の個人利用時または駐車場利用時の料金が免除。手帳提示のほか障がい者手帳アプリ「MIRAIRO ID」の提示でも可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.kamakura-sports.jp/ofuna_taiikukan/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-001",
+    "name": "江の島なぎさ駐車場",
+    "address": "神奈川県藤沢市江の島1-2-1",
+    "latitude": 35.301151,
+    "longitude": 139.483063,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳(ミライロID可)を所持する本人が対象。精算前に出口精算機横の事務所へ駐車券と手帳等を持参のうえ申告。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間400円(当日最大料金・宿泊料金なし)\n障害者割引: 半額(10円未満切捨て)\n総台数: 327台",
+    "sourceUrl": "https://www.s-n-p.jp/parking/p7enoshima/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-002",
+    "name": "片瀬海岸地下駐車場",
+    "address": "神奈川県藤沢市片瀬海岸2-19",
+    "latitude": 35.309505,
+    "longitude": 139.480103,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳所持者本人が対象。B1階駐車場管理事務所にて精算前に駐車券と手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分210円(7・8月は30分260円)、当日最大1,710円(7・8月最大料金なし)\n障害者割引: 半額(10円未満切捨て)\n総台数: 200台",
+    "sourceUrl": "https://www.s-n-p.jp/parking/p6katase/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-003",
+    "name": "湘南海岸公園 西部駐車場",
+    "address": "神奈川県藤沢市鵠沼海岸1-17-24",
+    "latitude": 35.315083,
+    "longitude": 139.473785,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳所持者本人が対象。精算前に出口精算機横の事務所へ駐車券と手帳等を持参のうえ申告。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分210円(7・8月260円)、最大1,600円(7・8月3,000円)\n障害者割引: 半額(10円未満切捨て)\n総台数: 435台",
+    "sourceUrl": "https://www.s-n-p.jp/parking/p3seibu/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-004",
+    "name": "湘南海岸公園 中部駐車場",
+    "address": "神奈川県藤沢市片瀬海岸3-25-26",
+    "latitude": 35.313042,
+    "longitude": 139.476273,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳所持者本人が対象。精算前に出口精算機横の事務所へ駐車券と手帳等を持参のうえ申告(夜間は電話でコールセンター対応)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分210円(7・8月260円)、最大1,700円(7・8月3,000円)\n障害者割引: 半額(10円未満切捨て)\n総台数: 362台",
+    "sourceUrl": "https://www.s-n-p.jp/parking/p4chubu/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-005",
+    "name": "湘南海岸公園 中部バス駐車場",
+    "address": "神奈川県藤沢市片瀬海岸3-25-26",
+    "latitude": 35.313042,
+    "longitude": 139.476273,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳所持者本人が対象(普通自動車のみ)。精算前に出口精算機横の事務所へ駐車券と手帳等を持参のうえ申告。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車30分210円(7・8月260円)、大型車1時間1,050円(7・8月1,570円)\n障害者割引: 半額(10円未満切捨て、普通車のみ対象)",
+    "sourceUrl": "https://www.s-n-p.jp/parking/p5chububus/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-006",
+    "name": "緑陰広場駐車場",
+    "address": "神奈川県藤沢市鵠沼海岸1丁目地内",
+    "latitude": 35.315491,
+    "longitude": 139.473022,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳(ミライロID可)所持者が対象。通常料金支払後、領収証と手帳等を公園管理事務所窓口に提示し差額の返金を受ける方式。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日単位2,100円〜1,100円(時期・時間帯により変動)\n障害者割引: 半額(100円未満切捨て)\n総台数: 58台",
+    "sourceUrl": "https://www.s-n-p.jp/parking/p2ryokuin/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-007",
+    "name": "奥田公園駐車場",
+    "address": "神奈川県藤沢市鵠沼東5-3",
+    "latitude": 35.334106,
+    "longitude": 139.490417,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "藤沢市民会館・南市民図書館・秩父宮記念体育館・藤沢市保健所/南保健センターの利用者が対象。身体障害者手帳、療育手帳、精神障害者保健福祉手帳、特定医療費(指定難病)医療受給者証、特定疾患医療受給者証、介護保険法第12条第3項の被保険者証のいずれかまたは障がい者手帳アプリの提示で認証を受け、駐車料金が免除。指定管理者:公益財団法人藤沢市まちづくり協会。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 最初の1時間400円、以後30分200円\n障害者割引: 無料(全額免除、ただし夜間利用の宿泊料金1,000円は対象外)\n総台数: 410台",
+    "sourceUrl": "https://f-machikyo.or.jp/business/parking/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-008",
+    "name": "湘南港臨港道路付属駐車場",
+    "address": "神奈川県藤沢市江の島1-12-2",
+    "latitude": 35.299664,
+    "longitude": 139.48317,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳等所持者本人が対象(神奈川県EV・FCV認定カードも対象)。ヨットハウスフロントで駐車券と手帳を提示しスタンプを受け、出口係員に手帳等を提示して確認を受ける。指定管理者:株式会社リビエラリゾート(湘南港・葉山港指定管理者、神奈川県管理施設)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1時間300円、大型車1時間620円、二輪車1時間150円\n障害者割引: 半額(10円未満切捨て)\n総台数: 325台",
+    "sourceUrl": "https://www.riviera.co.jp/marina/enoshima/parking/index.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14205-009",
+    "name": "市営湘南台駅地下自動車駐車場",
+    "address": "神奈川県藤沢市湘南台1丁目43番13(地下2階)",
+    "latitude": 35.397186,
+    "longitude": 139.466293,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14205",
+    "cityName": "藤沢市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳、難病の患者に対する医療受給者証のいずれかを所持する方が乗車する自動車が対象。出庫時に駐車場係員へ手帳等を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 20分100円、最大料金(24時間)1,100円\n障害者割引: 60%減額\n総台数: 121台",
+    "sourceUrl": "https://www.city.fujisawa.kanagawa.jp/shisetsu/annai/chushajo/002.html",
     "updatedAt": "2026-08-07T00:00:00Z"
   }
 ];

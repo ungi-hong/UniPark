@@ -399,6 +399,31 @@ const cities: City[] = [
     "code": "14152",
     "name": "相模原市中央区",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14153",
+    "name": "相模原市南区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14201",
+    "name": "横須賀市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14203",
+    "name": "平塚市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14204",
+    "name": "鎌倉市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14205",
+    "name": "藤沢市",
+    "prefectureCode": "14"
   }
 ];
 
