@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 425
+// 件数: 441
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -9710,6 +9710,376 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 20分100円、最大料金(24時間)1,100円\n障害者割引: 60%減額\n総台数: 121台",
     "sourceUrl": "https://www.city.fujisawa.kanagawa.jp/shisetsu/annai/chushajo/002.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14206-001",
+    "name": "小田原こどもの森公園わんぱくらんど駐車場",
+    "address": "神奈川県小田原市久野4377-1",
+    "latitude": 35.259594,
+    "longitude": 139.126846,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14206",
+    "cityName": "小田原市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳のいずれかを持つ方は駐車料金が全額免除。利用時は運転免許証等の公的証明書(住所・本人確認)の提示が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1台 市民510円、市民以外1,010円\n障害者割引: 無料\n総台数: 300台",
+    "sourceUrl": "https://www.city.odawara.kanagawa.jp/faq/p05893.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14206-002",
+    "name": "小田原市立総合医療センター駐車場(南側有料駐車場)",
+    "address": "神奈川県小田原市久野46番地",
+    "latitude": 35.267757,
+    "longitude": 139.151993,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14206",
+    "cityName": "小田原市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳の交付を受けている方は駐車料金が全額免除。駐車票と手帳を1階総合受付に提示して手続きが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分は無料。外来受診者は以降3時間まで200円、その後1時間毎に200円加算(1日上限1,000円)。お見舞い客は以降1時間毎200円。一般利用は以降1時間毎400円。\n障害者割引: 無料\n総台数: 128台",
+    "sourceUrl": "https://www.city.odawara.kanagawa.jp/hospital/access/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14206-003",
+    "name": "小田原市観光交流センター駐車場(優先駐車スペース)",
+    "address": "神奈川県小田原市本町一丁目7番50号",
+    "latitude": 35.249054,
+    "longitude": 139.157654,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14206",
+    "cityName": "小田原市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "観光交流センター東側の有料駐車場18台とは別に、障がいのある方などの優先駐車スペースが2台分あり無料(荷捌き用1台分も別途無料)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 21台",
+    "sourceUrl": "https://www.city.odawara.kanagawa.jp/global-image/units/593577/1-20230818121625_b64dee289f2af9.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14207-001",
+    "name": "茅ヶ崎第2駐車場(市役所駐車場)",
+    "address": "神奈川県茅ヶ崎市茅ヶ崎一丁目1番1号",
+    "latitude": 35.333851,
+    "longitude": 139.404266,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14207",
+    "cityName": "茅ヶ崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、医療受給者証(指定難病)、医療受給者証(小児慢性特定疾病)の交付を受けている人及び付添者が対象。駐車券を持参し、館内の減免機にて自身で処理(一般利用者は1時間無料、対象者は全時間無料)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~22時:30分100円(24時間最大1,000円)、22時~翌8時:60分100円\n障害者割引: 特に配慮が必要な方は全ての利用時間無料\n総台数: 79台",
+    "sourceUrl": "https://www.city.chigasaki.kanagawa.jp/shisetsu_info/1002571/1015824.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14207-002",
+    "name": "茅ヶ崎第3駐車場(総合体育館駐車場)",
+    "address": "神奈川県茅ヶ崎市茅ヶ崎一丁目9番63号",
+    "latitude": 35.334408,
+    "longitude": 139.4039,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14207",
+    "cityName": "茅ヶ崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、医療受給者証(指定難病)、医療受給者証(小児慢性特定疾病)の交付を受けている人及び付添者が対象。駐車券を持参し、館内の減免機にて自身で処理(一般利用者は1時間無料、対象者は全時間無料)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~22時:30分100円(24時間最大900円)、22時~翌8時:60分100円\n障害者割引: 特に配慮が必要な方は全ての利用時間無料\n総台数: 72台",
+    "sourceUrl": "https://www.city.chigasaki.kanagawa.jp/shisetsu_info/1002571/1015825.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14207-003",
+    "name": "茅ヶ崎第4駐車場(市民文化会館駐車場)",
+    "address": "神奈川県茅ヶ崎市茅ヶ崎一丁目11番1号",
+    "latitude": 35.335075,
+    "longitude": 139.404083,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14207",
+    "cityName": "茅ヶ崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、医療受給者証(指定難病)、医療受給者証(小児慢性特定疾病)の交付を受けている人及び付添者が対象。駐車券を持参し、館内の減免機にて自身で処理(一般利用者は1時間無料、対象者は全時間無料)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~22時:30分100円(24時間最大900円)、22時~翌8時:60分100円\n障害者割引: 特に配慮が必要な方は全ての利用時間無料\n総台数: 37台",
+    "sourceUrl": "https://www.city.chigasaki.kanagawa.jp/shisetsu_info/1002571/1015826.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14207-004",
+    "name": "神奈川県立茅ヶ崎里山公園 西駐車場",
+    "address": "神奈川県茅ヶ崎市芹沢1030",
+    "latitude": 35.375366,
+    "longitude": 139.420929,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14207",
+    "cityName": "茅ヶ崎市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(ミライロID可)の交付を受けている方が対象。来園時にパークセンターへ提示、または精算機のインターホンで申し出。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 平日:普通車200円/回、土日祝:普通車410円/回(大型車は610円/1,220円)\n障害者割引: 無料(全額免除)\n総台数: 260台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/satoyama/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14207-005",
+    "name": "柳島スポーツ公園駐車場(南側・北側)",
+    "address": "神奈川県茅ヶ崎市柳島1300番地",
+    "latitude": 35.32296,
+    "longitude": 139.37706,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14207",
+    "cityName": "茅ヶ崎市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "障害者手帳をお持ちの方は利用料金が減免。クラブハウス内公園管理室窓口(6時~22時)にて手帳を提示のうえ申し出。減免の具体的な金額・割合は公式サイト上に明記されていないため要確認。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 60分200円(22:15~6:00は60分100円)、当日最大 平日600円・土日祝900円\n障害者割引: 利用料金減免(具体的な割引率・上限額は公式サイトに記載なし、要問い合わせ)\n総台数: 111台",
+    "sourceUrl": "https://www.city.chigasaki.kanagawa.jp/shisetsu_info/s_sports/1028429.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14208-001",
+    "name": "文化プラザ駐車場(逗子文化プラザホール地下駐車場)",
+    "address": "神奈川県逗子市逗子4-2-10",
+    "latitude": 35.295444,
+    "longitude": 139.582352,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14208",
+    "cityName": "逗子市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "障害者手帳をお持ちの方は3時間まで無料(一般の施設利用者は1時間まで無料)。障がい者割引を受ける方は駐車券をカウンター(図書館またはホール窓口)へお持ちください。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 30分150円(上限なし)※逗子文化プラザ利用者は1時間まで無料\n障害者割引: 3時間まで無料\n総台数: 30台",
+    "sourceUrl": "https://www.library.city.zushi.lg.jp/contents?pid=53",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14208-002",
+    "name": "清水橋南駐車場",
+    "address": "神奈川県逗子市逗子4-9-21",
+    "latitude": 35.295181,
+    "longitude": 139.581497,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14208",
+    "cityName": "逗子市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "障害者手帳をお持ちの方は3時間まで無料(一般の施設(文化プラザ・図書館)利用者は1時間まで無料)。駐車券をカウンターへお持ちください。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時00分~21時00分 20分毎100円、24時間最大1,200円\n障害者割引: 3時間まで無料\n総台数: 54台",
+    "sourceUrl": "https://www.library.city.zushi.lg.jp/contents?pid=53",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14210-001",
+    "name": "下浦海岸第2駐車場",
+    "address": "神奈川県三浦市南下浦町上宮田字芝原1096番12ほか",
+    "latitude": 35.19202,
+    "longitude": 139.65239,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14210",
+    "cityName": "三浦市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "管理ブースで障害者手帳等を提示することで通常料金の50%割引が適用される。他の割引・優待との併用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 7~8月:1時間400円/1~6月・9~12月平日:1回500円/土日祝:1時間300円(いずれも当日最大1,200円)\n障害者割引: 駐車場使用料50%割引\n総台数: 223台",
+    "sourceUrl": "https://www.kdt-kousha.or.jp/parking-post/parking_shimourakaigan_2/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14210-002",
+    "name": "神奈川県立城ケ島公園第1駐車場",
+    "address": "神奈川県三浦市三崎町城ケ島",
+    "latitude": 35.133396,
+    "longitude": 139.619797,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14210",
+    "cityName": "三浦市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(またはミライロID)の提示で駐車料金免除。入場時に係員へ手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回(ワンデーパス)500円、二輪車100円/日(令和6年4月1日改定、大型車不可)\n障害者割引: 無料",
+    "sourceUrl": "https://www.pref.kanagawa.jp/docs/d2t/chiki/jyogashima1daypass.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14210-003",
+    "name": "神奈川県立城ケ島公園第2駐車場",
+    "address": "神奈川県三浦市三崎町城ケ島",
+    "latitude": 35.133396,
+    "longitude": 139.619797,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14210",
+    "cityName": "三浦市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(またはミライロID)の提示で駐車料金免除。出庫時に精算機のカメラへ手帳を提示、または時間外はインターフォンでコールセンター担当者へ提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回(ワンデーパス)500円、二輪車100円/日、大型車1,000円/日(令和6年4月1日改定)\n障害者割引: 無料",
+    "sourceUrl": "https://www.pref.kanagawa.jp/docs/d2t/chiki/jyogashima1daypass.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14211-001",
+    "name": "秦野戸川公園 大倉駐車場",
+    "address": "神奈川県秦野市堀山下1513",
+    "latitude": 35.424973,
+    "longitude": 139.168518,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14211",
+    "cityName": "秦野市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示で駐車料金を全額免除。駐車券とともに手帳(コピー不可)をパークセンターカウンターに提示するか、出庫時にゲートのガイダンスに従って提示。大型・中型車の場合は事前の減免申請が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分未満無料。以降、土日祝・夏季(7/21-8/31)・年末年始は30分毎に普通車200円加算(4時間超は上限800円)、平日は30分毎に普通車100円加算(4時間超は上限500円)\n障害者割引: 無料\n総台数: 150台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/hadanotokawa/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14211-002",
+    "name": "秦野戸川公園 水無川駐車場",
+    "address": "神奈川県秦野市堀山下1513",
+    "latitude": 35.424973,
+    "longitude": 139.168518,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14211",
+    "cityName": "秦野市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示で駐車料金を全額免除。駐車券とともに手帳(コピー不可)をパークセンターカウンターに提示するか、出庫時にゲートのガイダンスに従って提示。大型・中型車の場合は事前の減免申請が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分未満無料。以降、土日祝・夏季(7/21-8/31)・年末年始は30分毎に普通車200円加算(4時間超は上限800円)、平日は30分毎に普通車100円加算(4時間超は上限500円)\n障害者割引: 無料\n総台数: 87台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/hadanotokawa/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14211-003",
+    "name": "秦野戸川公園 諏訪丸駐車場",
+    "address": "神奈川県秦野市堀山下1513",
+    "latitude": 35.424973,
+    "longitude": 139.168518,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14211",
+    "cityName": "秦野市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示で駐車料金を全額免除。駐車券とともに手帳(コピー不可)をパークセンターカウンターに提示するか、出庫時にゲートのガイダンスに従って提示。大型・中型車の場合は事前の減免申請が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 30分未満無料。以降、土日祝・夏季(7/21-8/31)・年末年始は30分毎に普通車200円加算(4時間超は上限800円)、平日は30分毎に普通車100円加算(4時間超は上限500円)\n障害者割引: 無料\n総台数: 97台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/hadanotokawa/access.html",
     "updatedAt": "2026-08-07T00:00:00Z"
   }
 ];

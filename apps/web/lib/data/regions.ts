@@ -424,6 +424,31 @@ const cities: City[] = [
     "code": "14205",
     "name": "藤沢市",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14206",
+    "name": "小田原市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14207",
+    "name": "茅ヶ崎市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14208",
+    "name": "逗子市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14210",
+    "name": "三浦市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14211",
+    "name": "秦野市",
+    "prefectureCode": "14"
   }
 ];
 
