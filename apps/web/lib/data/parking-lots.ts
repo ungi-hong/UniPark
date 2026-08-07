@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 441
+// 件数: 453
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -10080,6 +10080,280 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 30分未満無料。以降、土日祝・夏季(7/21-8/31)・年末年始は30分毎に普通車200円加算(4時間超は上限800円)、平日は30分毎に普通車100円加算(4時間超は上限500円)\n障害者割引: 無料\n総台数: 97台",
     "sourceUrl": "https://www.kanagawa-park.or.jp/hadanotokawa/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14212-001",
+    "name": "神奈川県立七沢森林公園駐車場",
+    "address": "神奈川県厚木市七沢901-1",
+    "latitude": 35.447639,
+    "longitude": 139.300446,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14212",
+    "cityName": "厚木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害(児)者・知的障害(児)者・精神障害(児)者が公園施設を利用する場合、来園時に駐車場スタッフへ障害者手帳またはミライロIDを提示することで駐車料金が全額免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通530円/回・大型1,050円/回・二輪110円/回(有料期間:4月・5月・10月・11月の土日祝のみ。北口駐車場は通年無料)\n障害者割引: 無料\n総台数: 240台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/nanasawa/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14213-001",
+    "name": "大和市文化創造拠点シリウス駐車場",
+    "address": "神奈川県大和市大和南一丁目8番1号",
+    "latitude": 35.469677,
+    "longitude": 139.465881,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14213",
+    "cityName": "大和市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちの方及びその介護者は駐車場・駐輪場利用が無料。車高2.1mを超える福祉車両は事前に防災センター(046-259-8291)へ連絡。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分200円(1日上限1,000円)\n障害者割引: 無料\n総台数: 55台",
+    "sourceUrl": "https://yamato-bunka.jp/access/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14213-002",
+    "name": "大和市立病院駐車場",
+    "address": "神奈川県大和市深見西8-3-6",
+    "latitude": 35.48666,
+    "longitude": 139.457428,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14213",
+    "cityName": "大和市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳の交付を受けている方は診療以外の目的での来院でも駐車料金が免除。会計時に駐車券を提示、または1階防災センターで手帳等を確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分まで無料、30分超~1時間200円、以降30分毎100円加算(1日上限1,000円)\n障害者割引: 無料",
+    "sourceUrl": "https://www.yamatocity-mh.jp/about/traffic/parking/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14213-003",
+    "name": "大和ゆとりの森駐車場(F・マリノス 成城石井パーク)",
+    "address": "神奈川県大和市福田4112",
+    "latitude": 35.437775,
+    "longitude": 139.451767,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14213",
+    "cityName": "大和市",
+    "accessibleSpaceTotal": 13,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳をお持ちの方は駐車料金が免除。駐車券と手帳を持って仲良しプラザ窓口へ。東側駐車場(一般198台・身障者用5台)、南側駐車場(一般99台・身障者用3台)、南側第2駐車場(一般197台・身障者用5台)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 13
+      }
+    ],
+    "notes": "通常料金: 30分~1時間毎100円(1日上限600円)\n障害者割引: 無料\n総台数: 507台",
+    "sourceUrl": "https://www.sakata-greenservice.co.jp/yutori/guide/parking/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-001",
+    "name": "海老名中央公園地下駐車場",
+    "address": "神奈川県海老名市中央一丁目5番1号",
+    "latitude": 35.452179,
+    "longitude": 139.393051,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持する者が運転または同乗する場合、精算時に手帳を提示。時間単価のみ半額で、最大料金には適用されない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時~23時: 最初30分150円、以降30分ごとに100円(最大1,000円)/23時~7時: 60分ごとに100円(最大500円)/入庫後15分以内出庫は無料\n障害者割引: 時間単価の半額\n総台数: 198台",
+    "sourceUrl": "https://www.city.ebina.kanagawa.jp/guide/kotsu/chushajo/1003644.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-002",
+    "name": "えびな市民活動センター駐車場",
+    "address": "神奈川県海老名市さつき町51番地の2",
+    "latitude": 35.447823,
+    "longitude": 139.380585,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者手帳・療育手帳をお持ちの方及びその介護者は不徴収者。減免申請不要、施設窓口で手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間無料、以降1時間ごとに200円(市民割引カード利用で100円)、入場日上限1,600円(カード利用時800円)\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.ebina.kanagawa.jp/guide/kyodo/npo/1013489.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-003",
+    "name": "海老名運動公園駐車場(西側・貫抜)",
+    "address": "神奈川県海老名市社家4032番地の1",
+    "latitude": 35.429985,
+    "longitude": 139.377808,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者手帳・療育手帳をお持ちの方及びその介護者は不徴収者。減免申請不要、施設窓口で手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 最初の1時間無料、以降1時間ごとに200円、1日上限1,400円\n障害者割引: 無料\n総台数: 607台",
+    "sourceUrl": "https://www.city.ebina.kanagawa.jp/guide/bunka/sports/1013466.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-004",
+    "name": "北部公園駐車場",
+    "address": "神奈川県海老名市上今泉6-14-1",
+    "latitude": 35.465725,
+    "longitude": 139.409119,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者手帳・療育手帳をお持ちの方及びその介護者は不徴収者。減免申請不要、施設窓口で手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間無料、以降1時間ごとに200円、1日上限1,400円\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.ebina.kanagawa.jp/guide/bunka/sports/1013466.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-005",
+    "name": "中野公園駐車場(第1・第2)",
+    "address": "神奈川県海老名市中野一丁目2314番2",
+    "latitude": 35.41291,
+    "longitude": 139.373383,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者手帳・療育手帳をお持ちの方及びその介護者は不徴収者。減免申請不要、施設窓口で手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 8:30~17:30開放。最初の1時間無料、以降1時間ごとに200円、1日上限1,400円\n障害者割引: 無料\n総台数: 136台",
+    "sourceUrl": "https://www.city.ebina.kanagawa.jp/guide/bunka/sports/1013466.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-006",
+    "name": "海老名市文化会館・中央図書館・総合福祉会館共用駐車場",
+    "address": "神奈川県海老名市めぐみ町6番1号",
+    "latitude": 35.452042,
+    "longitude": 139.386597,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳(身体障がい者手帳・精神障がい者手帳・療育手帳)をお持ちの方及びその介護者は利用施設窓口で手帳提示により無料券を交付。減免申請不要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間無料、以降1時間ごとに200円、入場日上限2,000円\n障害者割引: 無料(窓口で無料券を発行)\n総台数: 365台",
+    "sourceUrl": "https://www.city.ebina.kanagawa.jp/guide/bunka/bunka/1013493.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14215-007",
+    "name": "海老名市立中央図書館 障がい者等専用駐車場",
+    "address": "神奈川県海老名市めぐみ町6番1号",
+    "latitude": 35.452042,
+    "longitude": 139.386597,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14215",
+    "cityName": "海老名市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳(身体障がい者手帳・精神障がい者手帳・療育手帳)をお持ちの方及びその介護者が対象。図書館1階窓口で手帳を提示。満車の場合は文化会館・福祉会館共用駐車場(最初の1時間無料)を利用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 7台",
+    "sourceUrl": "https://ebina.city-library.jp/news/entry-5332.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14216-001",
+    "name": "スカイアリーナ座間(市民体育館)駐車場",
+    "address": "神奈川県座間市相武台1-47-1",
+    "latitude": 35.496349,
+    "longitude": 139.403137,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14216",
+    "cityName": "座間市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "座間市内に在住・在勤・在学する障がい者本人および介助者が対象。駐車券と障害者手帳等をスカイアリーナ座間1階受付、またはスカイグリーンパーク管理棟の係員に提示することで駐車場料金が半額減免される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分無料、30分超~120分まで200円、以降60分ごとに100円、最大料金600円(当日24時まで)\n障害者割引: 半額\n総台数: 136台",
+    "sourceUrl": "https://www.city.zama.kanagawa.jp/bunkasports/sports/shisetsu/1003267.html",
     "updatedAt": "2026-08-07T00:00:00Z"
   }
 ];

@@ -449,6 +449,26 @@ const cities: City[] = [
     "code": "14211",
     "name": "秦野市",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14212",
+    "name": "厚木市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14213",
+    "name": "大和市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14215",
+    "name": "海老名市",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14216",
+    "name": "座間市",
+    "prefectureCode": "14"
   }
 ];
 
