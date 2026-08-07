@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 346
+// 件数: 376
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -7941,5 +7941,706 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 第1駐車場: 8時~22時 30分200円/22時~8時 60分100円、土日祝当日最大600円。第2駐車場: 8時~22時 30分200円/22時~8時 60分100円、平日当日最大900円、土日祝当日最大500円。\n障害者割引: 所要時間無料\n総台数: 178台",
     "sourceUrl": "https://www.city.yokohama.lg.jp/aoba/madoguchi-shisetsu/kuyakusho/annai/access-parking.html",
     "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14118-001",
+    "name": "都筑区総合庁舎駐車場(都筑区役所・都筑図書館・都筑公会堂)",
+    "address": "神奈川県横浜市都筑区茅ケ崎中央32番1号",
+    "latitude": 35.544849,
+    "longitude": 139.570541,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14118",
+    "cityName": "横浜市都筑区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳を持つ障害のある方及びその介護者が対象。駐車場利用窓口で手帳(またはミライロID等)を提示することで所要時間分無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 日中料金(8:00～22:00)30分250円、夜間料金(22:00～8:00)60分100円、土日祝は当日最大料金1,100円\n障害者割引: 所要時間無料\n総台数: 162台",
+    "sourceUrl": "https://www.city.yokohama.lg.jp/tsuzuki/madoguchi-shisetsu/kuyakusho/chushajo/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14118-002",
+    "name": "都筑中央公園駐車場",
+    "address": "神奈川県横浜市都筑区茅ケ崎中央57-11",
+    "latitude": 35.547421,
+    "longitude": 139.572525,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14118",
+    "cityName": "横浜市都筑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳所持者が療養・健康増進目的で公園を利用する場合、駐車料金が免除。運転・同乗いずれも対象。出庫ゲート精算機のインターホンでコールセンターに手帳所持を申告し、利用時に必ず減免処理が必要(事後精算不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00～22:00 30分100円、22:00～8:00 60分100円、駐車後24時間最大1,000円\n障害者割引: 無料(減免)\n総台数: 54台",
+    "sourceUrl": "https://www.hama-midorinokyokai.or.jp/park/parking/tsudukichuo/tsudukichuo/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14118-003",
+    "name": "横浜市都筑スポーツセンター駐車場",
+    "address": "神奈川県横浜市都筑区池辺町2973-1",
+    "latitude": 35.526558,
+    "longitude": 139.57634,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14118",
+    "cityName": "横浜市都筑区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(物理手帳のほか、ミライロIDとマイナポータルを連携済みの場合はミライロID提示でも可)を帰館時に受付窓口へ提示することで駐車料金全額免除。第一駐車場に専用区画1台(縦495cm×横245cm)を確保。介護者同伴の場合は介護者の利用料金も半額免除。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 2時間300円、以降30分ごとに50円加算(15分以内出庫は無料)\n障害者割引: 全額免除",
+    "sourceUrl": "https://yokohama-sport.jp/tsuzuki-sc-ysa/handicapped/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14131-001",
+    "name": "川崎市役所本庁舎駐車場",
+    "address": "神奈川県川崎市川崎区宮本町1番地",
+    "latitude": 35.530712,
+    "longitude": 139.703003,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14131",
+    "cityName": "川崎市川崎区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方が運転または同乗し、市役所本庁舎・南庁舎・北庁舎等の行政手続き窓口・会議室を利用する場合が対象(展望ロビー・カフェ利用は対象外)。利用終了時に施設窓口で障害者手帳・療育手帳等またはミライロIDを提示"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 市役所利用者(行政手続き・会議室利用):最初の1時間無料、以降30分400円。一般利用者:平日30分500円、土日祝8-18時最大1,200円・18-8時最大900円\n障害者割引: 所要時間無料(全額)\n総台数: 140台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055338.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14131-002",
+    "name": "川崎マリエン駐車場",
+    "address": "神奈川県川崎市川崎区東扇島38-1",
+    "latitude": 35.497829,
+    "longitude": 139.764069,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14131",
+    "cityName": "川崎市川崎区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳または精神障害者保健福祉手帳を提示"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 1時間未満無料、1〜3時間200円、3〜5時間400円、当日最大600円(普通車)。大型車は同時間帯400円/800円、最大1,200円\n障害者割引: 無料\n総台数: 253台",
+    "sourceUrl": "https://kawasakiport.or.jp/outdoor/parking.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14131-003",
+    "name": "富士見公園立体駐車場(富士通スタジアム川崎・かわQホール等共用)",
+    "address": "神奈川県川崎市川崎区富士見1・2丁目他",
+    "latitude": 35.531635,
+    "longitude": 139.710922,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14131",
+    "cityName": "川崎市川崎区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、療育(愛護)手帳、精神障害者保健福祉手帳のいずれかを所持する利用者が対象。利用日8:00〜22:00に管理事務所受付にて手帳と駐車券を提示(事前申請不要)"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 20分100円、当日最大料金 平日1,200円/土日祝1,500円\n障害者割引: 無料(全額免除)\n総台数: 291台",
+    "sourceUrl": "https://kawasaki-fujimi.com/info/2017/0424_01/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14131-004",
+    "name": "東扇島東公園駐車場",
+    "address": "神奈川県川崎市川崎区東扇島38-1",
+    "latitude": 35.497829,
+    "longitude": 139.764069,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14131",
+    "cityName": "川崎市川崎区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、療育手帳、精神障害者保健福祉手帳、公害医療手帳のいずれかの交付を受けている本人または付添の運転者が対象。精算機の専用電話でオペレーターを呼び出し手帳の種類を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:3時間未満200円〜8時間以上800円。大型車:同時間帯400円〜1,600円\n障害者割引: 無料(全額免除)",
+    "sourceUrl": "https://www.city.kawasaki.jp/580/page/0000001282.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14131-005",
+    "name": "大師公園駐車場(タイムズ大師公園)",
+    "address": "神奈川県川崎市川崎区大師公園1",
+    "latitude": 35.53196,
+    "longitude": 139.731735,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14131",
+    "cityName": "川崎市川崎区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳提示。精算時に出口の専用電話でオペレーターの指示に従い手帳を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:最初の1時間200円、以降30分100円、当日最大800円(24時まで)。大型車(マイクロバス):最初の1時間500円、以降30分250円\n障害者割引: 無料\n総台数: 60台",
+    "sourceUrl": "https://daishi-park.com/access/",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14131-006",
+    "name": "川崎市立川崎病院駐車場",
+    "address": "神奈川県川崎市川崎区新川通12-1",
+    "latitude": 35.526581,
+    "longitude": 139.706238,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14131",
+    "cityName": "川崎市川崎区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳またはミライロID提示。精算前に会計窓口または総合案内で駐車券と手帳等を提示"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 診療:入庫後3時間200円、以降1時間100円、当日最大1,000円。面会:入庫後1時間300円、以降30分150円、当日最大1,000円\n障害者割引: 無料\n総台数: 130台",
+    "sourceUrl": "https://www.city.kawasaki.jp/kawasaki_hospital/category/365-0-0-0-0-0-0-0-0-0.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14132-001",
+    "name": "幸区役所駐車場(幸市民館・幸図書館・幸スポーツセンター・さいわい健康福祉プラザ・石川記念武道館 共用)",
+    "address": "神奈川県川崎市幸区戸手本町1-11-1",
+    "latitude": 35.544292,
+    "longitude": 139.68692,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14132",
+    "cityName": "川崎市幸区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳またはミライロIDを対象施設(幸区役所・幸市民館・幸図書館・幸スポーツセンター・さいわい健康福祉プラザ・石川記念武道館)の指定窓口で提示。手帳非所持の場合は本人氏名記載の障がいを確認できる書類+運転免許証等顔写真付き身分証明書の2点提示でも可。石川記念武道館利用者は幸スポーツセンター窓口で認証を受ける。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 施設利用者:最初の1時間無料、以降30分100円(土日祝も同様)。一般利用者:平日8-18時60分300円/18-24時20分100円、土日祝8-24時20分100円、24-8時60分100円(全日共通)、土日祝当日最大料金1,000円\n障害者割引: 所要時間の全てが無料\n総台数: 75台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055382.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14133-001",
+    "name": "中原区役所駐車場(タイムズセントア武蔵小杉)",
+    "address": "神奈川県川崎市中原区小杉町三丁目1501番地",
+    "latitude": 35.574684,
+    "longitude": 139.657257,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14133",
+    "cityName": "川崎市中原区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳等を1階庁舎案内(または区役所内の窓口)に提示。専用駐車スペース(2台)利用時は1階庁舎案内で手帳を提示し駐車許可証の交付を受ける必要あり。ミライロID対応。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 8時~24時 15分300円、24時~8時 60分100円(当日最大2,600円)\n障害者割引: 手続きに要した時間分無料(区役所利用者は最初の1時間無料、以降15分300円)\n総台数: 105台",
+    "sourceUrl": "https://www.city.kawasaki.jp/nakahara/page/0000064647.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14133-002",
+    "name": "とどろきアリーナ駐車場(等々力緑地・川崎とどろきパーク)",
+    "address": "神奈川県川崎市中原区等々力1-3",
+    "latitude": 35.586826,
+    "longitude": 139.648911,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14133",
+    "cityName": "川崎市中原区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・戦傷病者手帳を各施設の受付窓口で提示。駐車券持参のうえ手続きが必要。ミライロID対応。問合せ:川崎とどろきパーク 044-711-2522"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 東駐車場:最初60分240円/以降30分毎120円、市民ミュージアム前:最初60分300円/以降30分毎150円、南駐車場:最初60分300円/以降30分毎150円\n障害者割引: 駐車料金免除(無料)\n総台数: 553台",
+    "sourceUrl": "https://www.city.kawasaki.jp/shisei/category/288-6-1-0-0-0-0-0-0-0.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14134-001",
+    "name": "高津区役所駐車場",
+    "address": "神奈川県川崎市高津区下作延2丁目8番1号",
+    "latitude": 35.59927,
+    "longitude": 139.607651,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14134",
+    "cityName": "川崎市高津区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方(運転者または同乗者)が用件を終えた際に、施設(高津区役所・みぞのくち市税事務所)の指定窓口で身体障害者手帳・療育手帳等を提示。手帳がない場合は障がいを確認できる書類(本人氏名記載)と顔写真付き身分証明書の2点提示で対応。1階平面(15台)・地下(22台)各1台ずつ思いやりスペースあり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 施設利用者:最初の1時間無料、以降15分100円/一般利用者:平日8-18時60分500円、平日18-8時30分100円、土日祝8-18時20分100円、土日祝18-8時60分100円(最大1,500円)\n障害者割引: 所要時間全て無料\n総台数: 37台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055384.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14134-002",
+    "name": "川崎市民プラザ駐車場(中央・西・東)",
+    "address": "神奈川県川崎市高津区新作1丁目19番1号",
+    "latitude": 35.584904,
+    "longitude": 139.611023,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14134",
+    "cityName": "川崎市高津区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを総合フロントまたはスポーツフロント前の有料駐車場コーナーで提示。中央駐車場(33台、障害者用2台含む)・西駐車場(67台、障害者用2台含む)・東駐車場(14台)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 施設利用で6時間まで無料、6時間超は30分ごとに100円(1日上限1,000円)。施設利用がない場合は最初から30分ごとに100円。\n障害者割引: 無料(時間制限なし)\n総台数: 114台",
+    "sourceUrl": "https://www.kawasaki-shiminplaza.jp/faq/detail?id=257",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14134-003",
+    "name": "川崎市高津スポーツセンター駐車場",
+    "address": "神奈川県川崎市高津区二子3丁目15番1号",
+    "latitude": 35.60334,
+    "longitude": 139.622025,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14134",
+    "cityName": "川崎市高津区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者が、施設利用前に受付で駐車券と手帳を提示。障害者専用駐車スペース3台。介護者・付添者も同伴時は無料(付添者自身が施設利用する場合は別途料金)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 最初の1時間無料、1時間超2時間までは300円/1時間、2時間超は30分ごとに100円(1日上限1,000円)\n障害者割引: 無料\n総台数: 50台",
+    "sourceUrl": "http://takaspo.life/shisetsuannai/pg690.html",
+    "updatedAt": "2026-08-06T00:00:00Z"
+  },
+  {
+    "id": "14135-001",
+    "name": "多摩区役所駐車場",
+    "address": "神奈川県川崎市多摩区登戸1775-1",
+    "latitude": 35.619602,
+    "longitude": 139.562103,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14135",
+    "cityName": "川崎市多摩区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方本人が運転するか、障がいのある方を同乗させて区役所等を利用する場合が対象。利用後、施設窓口で身体障害者手帳・療育手帳・精神障害者保健福祉手帳等を提示(各種手帳がない場合は氏名明記の障がい確認書類+顔写真付き身分証の2点でも可)。申し出がない場合は無料対象外。ミライロID(マイナポータル連携済)も手帳提示と同様に取り扱い。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 施設利用者：最初の1時間無料、以降30分ごと100円。一般利用者：平日8-18時60分300円、18-24時20分100円、24-8時60分100円(最大1,000円/日)、土日祝8-24時20分100円。営業時間8:00〜翌6:00\n障害者割引: 所要時間全て無料\n総台数: 109台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055386.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14135-002",
+    "name": "生田緑地東口駐車場",
+    "address": "神奈川県川崎市多摩区枡形7-1",
+    "latitude": 35.610806,
+    "longitude": 139.561996,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14135",
+    "cityName": "川崎市多摩区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、療育手帳、精神障害者保健福祉手帳等の交付を受けた方が対象。個人利用は園内施設受付(東口ビジターセンター等)で手帳を提示し駐車サービス券を受け取る。団体利用は事前申請(ネットまたはFAX)が必要。マイナポータル連携済みのミライロID提示でも同様の取り扱い。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車：1時間300円、以降30分ごと150円(平日限定・普通車のみ当日24時まで最大1,000円)。大型車：1時間700円、以降30分ごと350円\n障害者割引: 駐車料金免除(無料)\n総台数: 140台",
+    "sourceUrl": "https://www.ikutaryokuti.jp/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14135-003",
+    "name": "生田緑地西口駐車場",
+    "address": "神奈川県川崎市多摩区枡形6-26",
+    "latitude": 35.610565,
+    "longitude": 139.557922,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14135",
+    "cityName": "川崎市多摩区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、療育手帳、精神障害者保健福祉手帳等の交付を受けた方が対象。個人利用は西口サテライト受付で手帳を提示し駐車サービス券を受け取る。団体利用は事前申請(ネットまたはFAX)が必要。マイナポータル連携済みのミライロID提示でも同様の取り扱い。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車：1時間300円、以降30分ごと150円(平日限定・普通車のみ当日24時まで最大1,000円)。西口は普通車専用(大型車不可)\n障害者割引: 駐車料金免除(無料)\n総台数: 52台",
+    "sourceUrl": "https://www.ikutaryokuti.jp/access.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14135-004",
+    "name": "稲田公園有料駐車場",
+    "address": "神奈川県川崎市多摩区菅稲田堤2-9-1",
+    "latitude": 35.63726,
+    "longitude": 139.537811,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14135",
+    "cityName": "川崎市多摩区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方本人、または障がいのある方のために運転する方で、公園利用のため駐車場を利用する場合に障害者手帳等の提示で駐車料金無料。駐車場設置のオートフォンで管理者に連絡が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入庫から2時間まで400円、以降30分ごとに50円加算。営業時間24時間(入庫は5:00〜22:00)\n障害者割引: 無料\n総台数: 32台",
+    "sourceUrl": "https://www.city.kawasaki.jp/tama/page/0000063661.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14136-001",
+    "name": "宮前区役所駐車場",
+    "address": "神奈川県川崎市宮前区宮前平2-20-5",
+    "latitude": 35.589382,
+    "longitude": 139.579346,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14136",
+    "cityName": "川崎市宮前区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方が運転、または同乗している場合は所要時間すべて無料。宮前区役所・宮前市民館・宮前図書館・宮前消防署の利用者が対象で、窓口等で駐車券への認証措置を受ける必要がある。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 施設利用者：最初の1時間無料、以降30分100円。一般利用者：平日8:00〜21:00 60分400円・21:00〜8:00 60分100円/土日祝8:00〜21:00 20分100円・21:00〜8:00 60分100円(当日最大1000円)\n障害者割引: 無料(所要時間無料)\n総台数: 18台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055385.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14136-002",
+    "name": "宮前市民館・宮前図書館駐車場",
+    "address": "神奈川県川崎市宮前区宮前平2-20-4",
+    "latitude": 35.589382,
+    "longitude": 139.579346,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14136",
+    "cityName": "川崎市宮前区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方が運転、または同乗している場合は所要時間すべて無料。宮前区役所・宮前市民館・宮前図書館・宮前消防署の利用者が対象で、窓口等で駐車券への認証措置を受ける必要がある。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 施設利用者：最初の1時間無料、以降30分100円。一般利用者：平日8:00〜21:00 60分400円・21:00〜8:00 60分100円/土日祝8:00〜21:00 20分100円・21:00〜8:00 60分100円(当日最大1000円)\n障害者割引: 無料(所要時間無料)\n総台数: 38台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055385.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14136-003",
+    "name": "宮前区役所第2駐車場",
+    "address": "神奈川県川崎市宮前区宮前平2-19-9",
+    "latitude": 35.588715,
+    "longitude": 139.579193,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14136",
+    "cityName": "川崎市宮前区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方が運転、または同乗している場合は所要時間すべて無料。宮前区役所・宮前市民館・宮前図書館・宮前消防署の利用者が対象で、窓口等で駐車券への認証措置を受ける必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者：最初の1時間無料、以降30分100円。一般利用者：平日8:00〜21:00 60分300円・21:00〜8:00 60分100円/土日祝8:00〜21:00 20分100円・21:00〜8:00 60分100円(当日最大1000円)\n障害者割引: 無料(所要時間無料)\n総台数: 42台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055385.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14136-004",
+    "name": "県立東高根森林公園駐車場",
+    "address": "神奈川県川崎市宮前区神木本町2-10-1",
+    "latitude": 35.602196,
+    "longitude": 139.586945,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14136",
+    "cityName": "川崎市宮前区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者・知的障がい者・精神障がい者が公園施設を利用する場合、障害者手帳の提示により駐車料金が免除(有料となる土日祝も含めて免除)。北口障がい者駐車場の利用は事前申込が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日：無料。土日祝(6/1〜10/31)：大型車880円・普通車600円。土日祝(11/1〜5/31)：大型車880円・普通車800円。二輪車は通年無料(利用時間8:30〜19:00)\n障害者割引: 無料(障害者手帳提示で駐車料金免除)\n総台数: 112台",
+    "sourceUrl": "https://higashitakane.com/access/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14137-001",
+    "name": "麻生区役所駐車場",
+    "address": "神奈川県川崎市麻生区万福寺1-5-1",
+    "latitude": 35.604046,
+    "longitude": 139.505768,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14137",
+    "cityName": "川崎市麻生区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "麻生区役所・麻生市民館・麻生図書館・麻生休日急患診療所・しんゆり市税事務所を利用するために駐車場を利用する障がいのある方またはその方のために運転する方が対象。身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳またはミライロIDを出庫時に窓口で提示し申し出ることで所要時間全てが無料。申出がない場合は対象外。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 施設利用者は最初の1時間無料、以降15分ごとに100円(平日)。一般利用者は平日8時〜18時30分ごとに400円、夜間(18時〜8時)60分100円。土日祝は最大料金1,500円。\n障害者割引: 無料(所要時間全て)\n総台数: 63台",
+    "sourceUrl": "https://www.city.kawasaki.jp/230/page/0000055387.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14137-002",
+    "name": "王禅寺ふるさと公園駐車場",
+    "address": "神奈川県川崎市麻生区王禅寺528-1",
+    "latitude": 35.58456,
+    "longitude": 139.519073,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14137",
+    "cityName": "川崎市麻生区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳等またはミライロIDの提示により個人利用は全額減免。団体の場合は事前に申請書の提出が必要。(等々力緑地、富士見公園北側、稲田公園、橘公園、多摩川緑地の各公園内有料駐車場と共通の減免制度)"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1時間300円、超過30分ごとに50円(利用時間は季節により変動)\n障害者割引: 無料\n総台数: 63台",
+    "sourceUrl": "https://www.city.kawasaki.jp/350/cmsfiles/contents/0000024/24545/shisetugennmennichirann.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14137-003",
+    "name": "王禅寺余熱利用市民施設(ヨネッティー王禅寺)駐車場",
+    "address": "神奈川県川崎市麻生区王禅寺1321",
+    "latitude": 35.590809,
+    "longitude": 139.525986,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14137",
+    "cityName": "川崎市麻生区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳等の提示により個人利用の駐車場料金は全額免除。付添者の減免あり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.city.kawasaki.jp/350/cmsfiles/contents/0000024/24545/shisetugennmennichirann.pdf",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14137-004",
+    "name": "川崎市麻生スポーツセンター駐車場",
+    "address": "神奈川県川崎市麻生区上麻生3-6-1",
+    "latitude": 35.599705,
+    "longitude": 139.505463,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14137",
+    "cityName": "川崎市麻生区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳等またはミライロIDを受付に提示し駐車登録することで、障がいのある方専用駐車場(1台分)の利用が無料。専用スペースが満車の場合は有料駐車スペースに駐車のうえ受付に申し出れば駐車料金免除。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 14台",
+    "sourceUrl": "https://www.asao-sports.com/handicapped/",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14151-001",
+    "name": "相模原市営橋本駅北口第1自動車駐車場",
+    "address": "神奈川県相模原市緑区橋本6-2-4",
+    "latitude": 35.596298,
+    "longitude": 139.344482,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14151",
+    "cityName": "相模原市緑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "相模原市内在住で、身体障害者手帳(1級・2級)、療育手帳(A1・A2、または中軽度Bかつ身体障害者手帳3級以上に該当)、精神障害者保健福祉手帳(1級)のいずれかを所持する方が乗車する自動車が対象。事前に区の高齢・障害者相談課等の窓口で手帳等に「対象である旨」の表示を受けたうえで、駐車場出場時に精算機の呼び出しボタンで係員を呼び、表示済みの手帳等を提示(夜間無人時間帯はインターホンでカメラに提示)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに150円、駐車後24時間ごとの最大料金1,500円\n障害者割引: 基本料金の最初の2時間分が無料\n総台数: 737台",
+    "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/jidosha/1006482.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14151-002",
+    "name": "相模原市営橋本駅北口第2自動車駐車場",
+    "address": "神奈川県相模原市緑区橋本3-28",
+    "latitude": 35.594326,
+    "longitude": 139.346558,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14151",
+    "cityName": "相模原市緑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "相模原市内在住で、身体障害者手帳(1級・2級)、療育手帳(A1・A2、または中軽度Bかつ身体障害者手帳3級以上に該当)、精神障害者保健福祉手帳(1級)のいずれかを所持する方が乗車する自動車が対象。事前に区の高齢・障害者相談課等の窓口で手帳等に「対象である旨」の表示を受けたうえで、駐車場出場時に精算機の呼び出しボタンで係員を呼び、表示済みの手帳等を提示(夜間無人時間帯はインターホンでカメラに提示)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに150円、駐車後24時間ごとの最大料金1,500円\n障害者割引: 基本料金の最初の2時間分が無料\n総台数: 397台",
+    "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/jidosha/1006482.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14152-001",
+    "name": "相模原駅自動車駐車場",
+    "address": "神奈川県相模原市中央区相模原1-1-20",
+    "latitude": 35.581825,
+    "longitude": 139.368988,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14152",
+    "cityName": "相模原市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "相模原市内在住で、身体障害者手帳1級・2級、最重度(A1)・重度(A2)の療育手帳、中度(B1)の療育手帳かつ身体障害者手帳3級、または精神障害者保健福祉手帳1級のいずれかに該当する人が乗車している自動車が対象。事前に中央高齢・障害者相談課の窓口(相模原市中央区富士見6-1-1 ウェルネスさがみはらA館1階)に障害者手帳等を持参し「対象である旨」の表示を受ける必要がある。利用時は駐車場出場時に精算機の呼び出しボタン等で係員を呼び、対象表示済みの手帳を提示する(障害のある人が同乗しない状態で出場する場合は、入場時に係員を呼び出す必要あり)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに150円、駐車後24時間ごとの最大料金1,500円\n障害者割引: 最初の2時間無料\n総台数: 220台",
+    "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/jidosha/1006482.html",
+    "updatedAt": "2026-08-07T00:00:00Z"
   }
 ];

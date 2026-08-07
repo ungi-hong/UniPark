@@ -349,6 +349,56 @@ const cities: City[] = [
     "code": "14117",
     "name": "横浜市青葉区",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14118",
+    "name": "横浜市都筑区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14131",
+    "name": "川崎市川崎区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14132",
+    "name": "川崎市幸区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14133",
+    "name": "川崎市中原区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14134",
+    "name": "川崎市高津区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14135",
+    "name": "川崎市多摩区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14136",
+    "name": "川崎市宮前区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14137",
+    "name": "川崎市麻生区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14151",
+    "name": "相模原市緑区",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14152",
+    "name": "相模原市中央区",
+    "prefectureCode": "14"
   }
 ];
 
