@@ -489,6 +489,16 @@ const cities: City[] = [
     "code": "14342",
     "name": "二宮町",
     "prefectureCode": "14"
+  },
+  {
+    "code": "14382",
+    "name": "箱根町",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14401",
+    "name": "愛川町",
+    "prefectureCode": "14"
   }
 ];
 

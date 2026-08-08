@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 460
+// 件数: 464
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -10519,6 +10519,102 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 30分100円(ラディアン開館時間内に館内の認証機を通すと最初の1時間分無料)\n障害者割引: 無料\n総台数: 72台",
     "sourceUrl": "https://www.town.ninomiya.kanagawa.jp/0000001080.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "14382-001",
+    "name": "大涌谷駐車場",
+    "address": "神奈川県足柄下郡箱根町仙石原1251-1",
+    "latitude": 35.247826,
+    "longitude": 139.019028,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14382",
+    "cityName": "箱根町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、またはミライロIDの提示で普通車の駐車料金が無料。運転・同乗いずれでも対象。入庫後、駐車場管理事務所または大涌谷インフォメーションセンターにて駐車券と手帳を提示し減免手続きが必要(営業時間9:00-16:00)。管理: 神奈川県道路公社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日: 最初2時間500円、以降30分毎200円加算、最大1,300円/休日: 最初30分500円、2時間まで1,000円、以降30分毎400円加算、最大2,600円\n障害者割引: 無料\n総台数: 147台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/owakudani/parking/index.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "14382-002",
+    "name": "神奈川県立恩賜箱根公園駐車場",
+    "address": "神奈川県足柄下郡箱根町元箱根171",
+    "latitude": 35.194187,
+    "longitude": 139.026962,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14382",
+    "cityName": "箱根町",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、またはミライロIDの提示で駐車料金が全額免除(手帳・ミライロID保有者1名につき普通車1台)。駐車場出口横の係員詰所にて駐車券と手帳(またはミライロID)を提示し減免処理(対応時間9:00-16:00)。出庫後の減免処理・返金は不可。管理: 神奈川県道路公社。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 普通車: 平日500円/回、休日1,000円/回(大型車2,000円/回、二輪車無料)\n障害者割引: 無料\n総台数: 84台",
+    "sourceUrl": "https://www.kanagawa-park.or.jp/onsisite/handicapped.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "14401-001",
+    "name": "神奈川県立あいかわ公園 南駐車場",
+    "address": "神奈川県愛甲郡愛川町半原5423",
+    "latitude": 35.539577,
+    "longitude": 139.257156,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14401",
+    "cityName": "愛川町",
+    "accessibleSpaceTotal": 12,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "有料日に駐車場入場時に身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれか(コピー不可)またはスマートフォンアプリ「ミライロID」の提示で普通車の駐車料金を無料。障がい者施設・障がい者団体が公園を利用する場合は全額免除。大型・中型車は事前に減免申請が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 12
+      }
+    ],
+    "notes": "通常料金: 普通車500円、大型・中型1,500円、二輪車100円(土・日・祝日、ゴールデンウィーク・夏休み・春休み等の有料日のみ。平日は無料)\n障害者割引: 無料\n総台数: 468台",
+    "sourceUrl": "http://www.aikawa-park.jp/publics/index/4/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "14401-002",
+    "name": "神奈川県立あいかわ公園 北駐車場",
+    "address": "神奈川県愛甲郡愛川町半原5423",
+    "latitude": 35.539577,
+    "longitude": 139.257156,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14401",
+    "cityName": "愛川町",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "有料日に駐車場入場時に身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれか(コピー不可)またはスマートフォンアプリ「ミライロID」の提示で普通車の駐車料金を無料。障がい者施設・障がい者団体が公園を利用する場合は全額免除。大型・中型車は事前に減免申請が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 普通車500円、大型・中型1,500円、二輪車100円(土・日・祝日、ゴールデンウィーク・夏休み・春休み等の有料日のみ。平日は無料。平日は大型・中型専用として30台分利用可)\n障害者割引: 無料\n総台数: 283台",
+    "sourceUrl": "http://www.aikawa-park.jp/publics/index/4/",
     "updatedAt": "2026-08-08T00:00:00Z"
   }
 ];
