@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 464
+// 件数: 473
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -10615,6 +10615,213 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 普通車500円、大型・中型1,500円、二輪車100円(土・日・祝日、ゴールデンウィーク・夏休み・春休み等の有料日のみ。平日は無料。平日は大型・中型専用として30台分利用可)\n障害者割引: 無料\n総台数: 283台",
     "sourceUrl": "http://www.aikawa-park.jp/publics/index/4/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "14402-001",
+    "name": "宮ヶ瀬湖畔エリア 小中沢駐車場",
+    "address": "神奈川県愛甲郡清川村宮ヶ瀬字春ノ木丸1676-3",
+    "latitude": 35.500069,
+    "longitude": 139.214569,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14402",
+    "cityName": "清川村",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "大型車以外で障がい者である旨の証明ができる方は無料。現地にて障害者手帳等の証明書を提示(申請不要)。大型車は事前の駐車場料金減免申請が必要。イベント開催期間中(桜まつり・ふるさとまつり・クリスマスみんなのつどい)は減免措置なし。管理:公益財団法人宮ヶ瀬ダム周辺振興財団(TEL 046-288-3600)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:平日無料/土日祝・GW 30分無料・2時間未満300円・2時間以上500円、大型車:常時1,500円(平日は無料表記あり)\n障害者割引: 無料(大型車以外)\n総台数: 344台",
+    "sourceUrl": "https://www.miyagase.or.jp/publics/index/20/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "14402-002",
+    "name": "宮ヶ瀬湖畔エリア 水の郷駐車場",
+    "address": "神奈川県愛甲郡清川村宮ケ瀬940-5",
+    "latitude": 35.500069,
+    "longitude": 139.214569,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14402",
+    "cityName": "清川村",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "大型車以外で村民・障がい者である旨の証明ができる方は無料。個人は現地にて障害者手帳等の証明書を提示(申請不要)。団体は利用日の3週間前までに駐車場料金減免申請書の提出が必要。大型車は事前の減免申請が必要。イベント開催期間中(桜まつり・ふるさとまつり・クリスマスみんなのつどい)は減免措置なし。管理:宮ヶ瀬水の郷観光協同組合(TEL 046-288-2888)、減免申請窓口:清川村村づくり観光課(TEL 046-288-3864)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:平日無料/土日祝・GW 30分無料・2時間未満300円・2時間以上500円、大型車:常時1,500円、二輪車:平日無料・土日祝100円\n障害者割引: 無料(大型車以外)\n総台数: 247台",
+    "sourceUrl": "https://www.town.kiyokawa.kanagawa.jp/soshiki/sangyokanko/miyagase/275.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11102-001",
+    "name": "プラザノース駐車場(さいたま市北区役所・北図書館)",
+    "address": "埼玉県さいたま市北区宮原町1丁目852番地1",
+    "latitude": 35.931389,
+    "longitude": 139.620361,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11102",
+    "cityName": "さいたま市北区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の障害者手帳をお持ちの方が対象。身障者用駐車区画(6台分、駐車場入場ゲートを入って2つめのエリア角)を利用、または満車時は一般区画利用後に窓口へ申し出。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 最初の2時間無料、以降30分ごとに110円加算\n障害者割引: 身障者用駐車区画は無料\n総台数: 183台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/faq/001/007/001/p110835.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11102-002",
+    "name": "さいたま市大宮盆栽美術館駐車場",
+    "address": "埼玉県さいたま市北区土呂町2丁目24番地3",
+    "latitude": 35.928982,
+    "longitude": 139.633408,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11102",
+    "cityName": "さいたま市北区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方が対象。障害者用駐車区画2台分を無料で利用可能。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 一般車39台は2時間まで無料、大型バス3台は880円\n障害者割引: 障害者用駐車区画(2台)は無料\n総台数: 42台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/faq/001/004/002/p110848.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11103-001",
+    "name": "大宮区役所駐車場",
+    "address": "埼玉県さいたま市大宮区吉敷町一丁目124番地1",
+    "latitude": 35.901691,
+    "longitude": 139.630554,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11103",
+    "cityName": "さいたま市大宮区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を各窓口で提示すると駐車料金の減免(無料)手続きを実施。区役所・大宮図書館等利用者は一般も60分無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 100円／20分\n障害者割引: 無料\n総台数: 89台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/omiya/001/003/003/p021647.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11103-002",
+    "name": "大宮公園東駐車場",
+    "address": "埼玉県さいたま市大宮区高鼻町四丁目(大宮公園内)",
+    "latitude": 35.918793,
+    "longitude": 139.63179,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11103",
+    "cityName": "さいたま市大宮区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳を出口モニターに提示すると無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで200円、以降30分ごとに100円\n障害者割引: 無料\n総台数: 238台",
+    "sourceUrl": "https://www.pref.saitama.lg.jp/omiya-park/oshirase/h30/parking-yuryouka.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11103-003",
+    "name": "大宮公園西駐車場",
+    "address": "埼玉県さいたま市大宮区高鼻町四丁目(大宮公園内)",
+    "latitude": 35.918793,
+    "longitude": 139.63179,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11103",
+    "cityName": "さいたま市大宮区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳を出口モニターに提示すると無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで200円、以降30分ごとに100円\n障害者割引: 無料\n総台数: 40台",
+    "sourceUrl": "https://www.pref.saitama.lg.jp/omiya-park/oshirase/h30/parking-yuryouka.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11103-004",
+    "name": "大宮ソニックシティ地下駐車場",
+    "address": "埼玉県さいたま市大宮区桜木町一丁目7番5号",
+    "latitude": 35.905506,
+    "longitude": 139.619995,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11103",
+    "cityName": "さいたま市大宮区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を提示し、ビル2階総合案内等で事前に3時間無料券を受け取る必要あり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分／200円(最大料金2,000円/24時間)\n障害者割引: 3時間無料\n総台数: 140台",
+    "sourceUrl": "https://www.sonic-city.or.jp/access.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11103-005",
+    "name": "JACK大宮自動車駐車場",
+    "address": "埼玉県さいたま市大宮区錦町682-2",
+    "latitude": 35.904289,
+    "longitude": 139.624069,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11103",
+    "cityName": "さいたま市大宮区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを精算前に駐車場係員へ提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 100円/15分(入庫後24時間最大料金2,500円)\n障害者割引: 半額\n総台数: 110台",
+    "sourceUrl": "https://www.saitama-toshiseibi.or.jp/parking-jack/",
     "updatedAt": "2026-08-08T00:00:00Z"
   }
 ];

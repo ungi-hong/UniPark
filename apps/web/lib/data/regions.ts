@@ -10,6 +10,10 @@ type City = components["schemas"]["City"];
 
 export const prefectures: Prefecture[] = [
   {
+    "code": "11",
+    "name": "埼玉県"
+  },
+  {
     "code": "13",
     "name": "東京都"
   },
@@ -20,6 +24,16 @@ export const prefectures: Prefecture[] = [
 ];
 
 const cities: City[] = [
+  {
+    "code": "11102",
+    "name": "さいたま市北区",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11103",
+    "name": "さいたま市大宮区",
+    "prefectureCode": "11"
+  },
   {
     "code": "13101",
     "name": "千代田区",
@@ -498,6 +512,11 @@ const cities: City[] = [
   {
     "code": "14401",
     "name": "愛川町",
+    "prefectureCode": "14"
+  },
+  {
+    "code": "14402",
+    "name": "清川村",
     "prefectureCode": "14"
   }
 ];
