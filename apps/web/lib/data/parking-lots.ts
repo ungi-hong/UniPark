@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 473
+// 件数: 487
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -10822,6 +10822,344 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 100円/15分(入庫後24時間最大料金2,500円)\n障害者割引: 半額\n総台数: 110台",
     "sourceUrl": "https://www.saitama-toshiseibi.or.jp/parking-jack/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11105-001",
+    "name": "北与野駅北口地下駐車場",
+    "address": "埼玉県さいたま市中央区上落合2-3-10",
+    "latitude": 35.891033,
+    "longitude": 139.62793,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11105",
+    "cityName": "さいたま市中央区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを精算前に係員へ提示。10円未満切捨て。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分150円(夜間22時~翌8時は1,500円)\n障害者割引: 半額\n総台数: 156台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/001/010/018/002/001/p056813.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11105-002",
+    "name": "埼玉県立小児医療センター駐車場",
+    "address": "埼玉県さいたま市中央区新都心1番地2",
+    "latitude": 35.891815,
+    "longitude": 139.632233,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11105",
+    "cityName": "さいたま市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳1~3級、療育手帳A・B、精神障害者保健福祉手帳1級の所持者対象。精算前に窓口等での割引処理が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 面会:1出庫300円、外来等:1出庫100円(機械式駐車場)\n障害者割引: 無料\n総台数: 320台",
+    "sourceUrl": "https://www.saitama-pho.jp/scm-c/kotsu/kotsuannai.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11105-003",
+    "name": "彩の国さいたま芸術劇場駐車場",
+    "address": "埼玉県さいたま市中央区上峰3-15-1",
+    "latitude": 35.87603,
+    "longitude": 139.621567,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11105",
+    "cityName": "さいたま市中央区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを1階総合インフォメーションに提示すると無料サービス券が交付される。埼玉県条例(公の施設の使用料及び利用料金の減免に関する条例施行規則)に基づく。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 最初の1時間無料、以降1時間350円(1日上限1,300円)\n障害者割引: 無料\n総台数: 155台",
+    "sourceUrl": "https://www.saf.or.jp/arthall/access/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11105-004",
+    "name": "けやきひろば駐車場",
+    "address": "埼玉県さいたま市中央区新都心10番地",
+    "latitude": 35.892948,
+    "longitude": 139.631271,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11105",
+    "cityName": "さいたま市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 24,
+      "conditions": "GMOアリーナさいたま(旧さいたまスーパーアリーナ)またはけやきひろば来場者対象。身体障害者手帳・療育手帳・精神障害者保健福祉手帳(いずれもミライロID可)、障害福祉サービス受給者証、特定医療費(指定難病)受給者証、特定疾患医療受給者証、被爆者健康手帳、戦傷病者手帳、介護保険被保険者証(要介護・要支援認定)のいずれかを駐車場管理室に提示。同乗者による手続きも可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間400円、以降30分ごとに200円(当日最大2,200円、0時~7時は最大料金適用外)\n障害者割引: 入庫時間より24時間まで無料",
+    "sourceUrl": "https://www.saitama-arena.co.jp/faq/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11106-001",
+    "name": "プラザウエスト駐車場(桜区役所駐車場)",
+    "address": "埼玉県さいたま市桜区道場4丁目3番1号",
+    "latitude": 35.85675,
+    "longitude": 139.610306,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11106",
+    "cityName": "さいたま市桜区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳)またはスマートフォンアプリ「ミライロID」を施設窓口・駐車場管理窓口で提示。さいたま市の「市立施設使用料等の減免」制度により、プラザウエストは施設使用料が半額になる一方、駐車場使用料は無料(令和8年4月1日現在の市公式リストで「プラザウエスト駐車場」が使用料無料施設として明記)。桜区役所とプラザウエストは同一建物・同一駐車場を共用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 3時間まで無料。以後、超過時間30分ごとに110円(消費税込)\n障害者割引: 無料\n総台数: 404台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/002/003/004/003/001/p005696_d/fil/13_12syou-koukyouryoukin.pdf",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11107-001",
+    "name": "浦和駅東口駐車場",
+    "address": "埼玉県さいたま市浦和区東高砂町11-1",
+    "latitude": 35.857906,
+    "longitude": 139.65863,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11107",
+    "cityName": "さいたま市浦和区",
+    "accessibleSpaceTotal": 18,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算前に必ず管理室等で障害者手帳をご提示ください。提示により駐車料金が半額になります。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 18
+      }
+    ],
+    "notes": "通常料金: 30分200円(夜間22時~翌8時は最大2,000円)\n障害者割引: 半額\n総台数: 849台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/001/010/018/002/001/p056816.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11107-002",
+    "name": "浦和パーキングセンター自動車駐車場",
+    "address": "埼玉県さいたま市浦和区仲町1-9-1",
+    "latitude": 35.860588,
+    "longitude": 139.655609,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11107",
+    "cityName": "さいたま市浦和区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算前に障害者手帳をご提示いただくと、駐車料金が半額になります。運営: 一般財団法人さいたま市都市整備公社。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 最初の1時間400円、以降30分毎200円(0-6時は1時間200円、当日最大1,500円)\n障害者割引: 半額\n総台数: 425台",
+    "sourceUrl": "https://www.saitama-toshiseibi.or.jp/urawa-parking/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11107-003",
+    "name": "浦和中央パーキング",
+    "address": "埼玉県さいたま市浦和区高砂1-2-1-11",
+    "latitude": 35.856964,
+    "longitude": 139.657883,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11107",
+    "cityName": "さいたま市浦和区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算前に駐車場係員に障害者手帳を提示すると駐車料金が半額になります。運営: 一般財団法人さいたま市都市整備公社。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 30分200円(昼間6-24時)、30分100円(夜間24-6時)\n障害者割引: 半額\n総台数: 134台",
+    "sourceUrl": "https://www.saitama-toshiseibi.or.jp/parking-urawa-central/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11107-004",
+    "name": "埼玉会館駐車場",
+    "address": "埼玉県さいたま市浦和区高砂3-1-4",
+    "latitude": 35.857227,
+    "longitude": 139.652298,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11107",
+    "cityName": "さいたま市浦和区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方は、入庫時にご本人がご提示いただくと駐車料金が免除されます。利用時間9:00~21:30。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 1時間350円(上限料金設定なし)\n障害者割引: 免除(無料)\n総台数: 39台",
+    "sourceUrl": "https://www.saf.or.jp/saitama/access/",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11108-001",
+    "name": "さいたま市南区役所駐車場(サウスピア地階含む)",
+    "address": "埼玉県さいたま市南区別所七丁目20番1号",
+    "latitude": 35.845428,
+    "longitude": 139.645584,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11108",
+    "cityName": "さいたま市南区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを持参し、区役所各窓口で駐車券を提示すると減免(無料)手続きが可能。障害者用区画は駐車場棟2台・サウスピア地階2台(福祉車両対応、高さ制限2.8m)。区役所利用者は緑色の駐車券により1時間まで無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分ごとに100円\n障害者割引: 無料(減免)\n総台数: 59台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/minami/001/002/010/p022843.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11108-002",
+    "name": "武蔵浦和駅東駐車場",
+    "address": "埼玉県さいたま市南区別所7-2-1",
+    "latitude": 35.847588,
+    "longitude": 139.64859,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11108",
+    "cityName": "さいたま市南区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算前にオートホンで指定管理者(タイムズ24)のコールセンターへ連絡する必要あり。営業時間7時~24時(1月1日休業)。障害者手帳の提示が条件と見られるが、ページ上に手帳種別の明記はなし。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 100円/30分(夜間22時~翌8時は1,200円)\n障害者割引: 駐車料金半額\n総台数: 92台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/001/010/018/002/001/p056815.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11108-003",
+    "name": "さいたま市文化センター駐車場",
+    "address": "埼玉県さいたま市南区根岸1-7-1",
+    "latitude": 35.843861,
+    "longitude": 139.664429,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11108",
+    "cityName": "さいたま市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者手帳をお持ちの方は駐車場の使用料金が2分の1に減額。あわせて施設使用料も2分の1に減額される障害者減免制度あり(利用申請時に手帳提示が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで無料、以降最初の30分220円、以降30分ごとに110円加算\n障害者割引: 駐車場使用料半額\n総台数: 137台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/008/003/001/bunkasenta.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11109-001",
+    "name": "美園コミュニティセンター駐車場",
+    "address": "埼玉県さいたま市緑区美園4-19-1",
+    "latitude": 35.895203,
+    "longitude": 139.726944,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11109",
+    "cityName": "さいたま市緑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、駐車場及び自転車等駐車場の使用料が無料(さいたま市障害者の利用に係る公の施設使用料等減免条例に基づく)。なお同施設の会議室等の施設使用料は2分の1減額(10円未満切捨て)であり、駐車場のみ全額免除となる点に注意。手続きは利用申請時・駐車場出庫時に窓口で手帳等を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料\n総台数: 53台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/002/003/004/003/003/p084969.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11109-002",
+    "name": "プラザイースト駐車場",
+    "address": "埼玉県さいたま市緑区中尾1440-8",
+    "latitude": 35.871799,
+    "longitude": 139.68541,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11109",
+    "cityName": "さいたま市緑区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により、駐車場使用料が2分の1に減額(10円未満切捨て)。さいたま市障害者の利用に係る公の施設使用料等減免条例に基づく。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 最初の2時間以内無料、2時間超~2時間30分以内100円、以降30分ごとに100円加算(消費税別、10円未満切捨て)\n障害者割引: 半額(通常料金の2分の1)\n総台数: 123台",
+    "sourceUrl": "https://www.city.saitama.lg.jp/008/003/001/praza_east.html",
     "updatedAt": "2026-08-08T00:00:00Z"
   }
 ];

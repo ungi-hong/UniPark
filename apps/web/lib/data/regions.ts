@@ -35,6 +35,31 @@ const cities: City[] = [
     "prefectureCode": "11"
   },
   {
+    "code": "11105",
+    "name": "さいたま市中央区",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11106",
+    "name": "さいたま市桜区",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11107",
+    "name": "さいたま市浦和区",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11108",
+    "name": "さいたま市南区",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11109",
+    "name": "さいたま市緑区",
+    "prefectureCode": "11"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"
