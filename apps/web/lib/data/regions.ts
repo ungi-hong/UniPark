@@ -60,6 +60,26 @@ const cities: City[] = [
     "prefectureCode": "11"
   },
   {
+    "code": "11110",
+    "name": "さいたま市岩槻区",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11201",
+    "name": "川越市",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11203",
+    "name": "川口市",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11206",
+    "name": "行田市",
+    "prefectureCode": "11"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"
