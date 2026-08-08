@@ -6883,5 +6883,20 @@
     "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳またはミライロIDの提示が対象。公園管理事務所または旧吉田茂邸地区管理休憩棟に手帳(またはミライロID)と駐車券を提示して減免処理。営業時間9:00~17:00(閉門)。",
     "source_url": "https://www.kanagawa-park.or.jp/ooisojoyama/qa.html",
     "verified_at": "2026-08-07"
+  },
+  {
+    "id": "14342-001",
+    "municipality_code": "14342",
+    "municipality": "二宮町",
+    "name": "ラディアン駐車場(二宮町生涯学習センター)",
+    "address": "神奈川県中郡二宮町二宮1240-10",
+    "capacity": 72,
+    "capacity_accessible": null,
+    "normal_rate": "30分100円(ラディアン開館時間内に館内の認証機を通すと最初の1時間分無料)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・療育手帳(2023年10月1日から精神障害者保健福祉手帳の交付を受けている方も対象拡大)の交付を受けている方及びその介護者が対象。ラディアン受付窓口で手帳等を提示すると駐車料金が無料になる。",
+    "source_url": "https://www.town.ninomiya.kanagawa.jp/0000001080.html",
+    "verified_at": "2026-08-08"
   }
 ]
