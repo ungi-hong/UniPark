@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 459
+// 件数: 460
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -10499,5 +10499,26 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 土日祝日: 普通車1時間300円、中型車以上1200円。平日は無料。(普通車23台、中型車以上2台、身障者用1台)\n障害者割引: 無料(土日祝日の有料時間帯も減免)\n総台数: 26台",
     "sourceUrl": "https://www.kanagawa-park.or.jp/ooisojoyama/qa.html",
     "updatedAt": "2026-08-07T00:00:00Z"
+  },
+  {
+    "id": "14342-001",
+    "name": "ラディアン駐車場(二宮町生涯学習センター)",
+    "address": "神奈川県中郡二宮町二宮1240-10",
+    "latitude": 35.300343,
+    "longitude": 139.25293,
+    "prefectureCode": "14",
+    "prefectureName": "神奈川県",
+    "cityCode": "14342",
+    "cityName": "二宮町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(2023年10月1日から精神障害者保健福祉手帳の交付を受けている方も対象拡大)の交付を受けている方及びその介護者が対象。ラディアン受付窓口で手帳等を提示すると駐車料金が無料になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円(ラディアン開館時間内に館内の認証機を通すと最初の1時間分無料)\n障害者割引: 無料\n総台数: 72台",
+    "sourceUrl": "https://www.town.ninomiya.kanagawa.jp/0000001080.html",
+    "updatedAt": "2026-08-08T00:00:00Z"
   }
 ];
