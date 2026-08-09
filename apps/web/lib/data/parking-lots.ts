@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 498
+// 件数: 502
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11411,6 +11411,96 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 2時間まで無料、以降1時間ごとに100円(大型車は30分ごとに500円)\n障害者割引: 無料(手続きが必要)\n総台数: 580台",
     "sourceUrl": "https://www.parks.or.jp/tokorozawa-kokuu/faq/001/001599.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11214-001",
+    "name": "粕壁二丁目自動車駐車場",
+    "address": "埼玉県春日部市粕壁二丁目6088番地1",
+    "latitude": 35.982803,
+    "longitude": 139.75238,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11214",
+    "cityName": "春日部市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳またはミライロIDを提示する障がい者本人、障がい者を扶養する人、または障がい者に付き添う介護者(手帳所持者1人につき介護者1人に限る)が対象。必ず使用前に春日部市役所本庁舎3階くらしの安全課窓口で「自動車駐車場使用料免除申請受付票」に記入して申請する必要があり、使用後の申請は不可。団体利用は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分以内無料、以後30分ごと100円\n障害者割引: 無料(全額免除)",
+    "sourceUrl": "https://www.city.kasukabe.lg.jp/soshikikarasagasu/kotsubohanka/gyomuannai/1/24995.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11214-002",
+    "name": "武里駅西口自動車駐車場",
+    "address": "埼玉県春日部市大場398番地1",
+    "latitude": 35.950001,
+    "longitude": 139.769974,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11214",
+    "cityName": "春日部市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳またはミライロIDを提示する障がい者本人、障がい者を扶養する人、または障がい者に付き添う介護者(手帳所持者1人につき介護者1人に限る)が対象。必ず使用前に春日部市役所本庁舎3階くらしの安全課窓口で「自動車駐車場使用料免除申請受付票」に記入して申請する必要があり、使用後の申請は不可。団体利用は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分以内無料、以後30分ごと100円\n障害者割引: 無料(全額免除)",
+    "sourceUrl": "https://www.city.kasukabe.lg.jp/soshikikarasagasu/kotsubohanka/gyomuannai/1/24995.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11215-001",
+    "name": "狭山市駅西口駐車場",
+    "address": "埼玉県狭山市入間川一丁目23番5号",
+    "latitude": 35.853531,
+    "longitude": 139.411774,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11215",
+    "cityName": "狭山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者手帳をお持ちの方は一時利用料金が半額。出庫時に自動精算機に駐車券を挿入し、受話器を取って係員を呼び出し、障害者手帳をカメラにかざすことで適用。障害者用回数券は11枚550円・120枚6,000円で窓口購入可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分100円(最大料金24時間1,500円、2025年10月1日改定)\n障害者割引: 半額\n総台数: 87台",
+    "sourceUrl": "https://times-info.net/campaign/sayama/",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11217-001",
+    "name": "鴻巣市鴻巣駅東口第1・第2駐車場",
+    "address": "埼玉県鴻巣市本町1丁目1-1-2(エルミ鴻巣)",
+    "latitude": 36.058846,
+    "longitude": 139.510056,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11217",
+    "cityName": "鴻巣市",
+    "accessibleSpaceTotal": 17,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(またはデジタル障害者手帳ミライロID)を所持する本人の乗車(運転または同乗)が必須。エルミこうのすアネックス内の対象公共施設(鴻巣市立中央図書館、市民活動センター、パスポートセンター、市民サービスコーナー、就労支援センター、障がい者就労支援センター、映画館内多目的ホール)の利用者が対象。対象施設窓口で手帳提示のうえサービス認証機での手続きが必要(1日1回のみ適用)。本人同伴であれば保護者による申請も可。制度開始日:令和8年4月1日(2026年4月1日)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 17
+      }
+    ],
+    "notes": "通常料金: 最初の1時間無料、以降30分ごとに100円加算(夜間20時~8時は上限600円)\n障害者割引: 入庫時刻から4時間分の駐車料金無料(通常の1時間無料に加え3時間分を減免)\n総台数: 795台",
+    "sourceUrl": "https://www.city.kounosu.saitama.jp/page/39940.html",
     "updatedAt": "2026-08-09T00:00:00Z"
   }
 ];

@@ -85,6 +85,21 @@ const cities: City[] = [
     "prefectureCode": "11"
   },
   {
+    "code": "11214",
+    "name": "春日部市",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11215",
+    "name": "狭山市",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11217",
+    "name": "鴻巣市",
+    "prefectureCode": "11"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"
