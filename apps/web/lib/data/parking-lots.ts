@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 502
+// 件数: 507
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11501,6 +11501,123 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 最初の1時間無料、以降30分ごとに100円加算(夜間20時~8時は上限600円)\n障害者割引: 入庫時刻から4時間分の駐車料金無料(通常の1時間無料に加え3時間分を減免)\n総台数: 795台",
     "sourceUrl": "https://www.city.kounosu.saitama.jp/page/39940.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11221-001",
+    "name": "草加市立病院駐車場",
+    "address": "埼玉県草加市草加2丁目21番1号",
+    "latitude": 35.83548,
+    "longitude": 139.796295,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11221",
+    "cityName": "草加市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳をお持ちの患者さんは、会計窓口に手帳をご提示することで駐車料金が全額免除となる(公式サイトFAQより原文)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 患者:駐車券認証で4時間まで100円(以降1時間ごとに100円加算)。一般来院者:1時間100円(以降1時間ごとに100円加算)。\n障害者割引: 身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちの患者は駐車料金が全額免除",
+    "sourceUrl": "https://www.soka-city-hospital.jp/qa.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11221-002",
+    "name": "ハーモネスタワー有料駐車場(草加市立中央図書館利用者向け)",
+    "address": "埼玉県草加市松原一丁目1番9号",
+    "latitude": 35.844284,
+    "longitude": 139.79805,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11221",
+    "cityName": "草加市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "下肢等に障がいがあり身体障害者手帳の交付を受けている方が草加市立中央図書館を利用する場合、図書館カウンターで障害者手帳を提示すると、ハーモネスタワー有料駐車場の無料駐車券(最大3時間まで)が交付される。障がい者用駐車区画は3台分設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 250円(最初の60分)、以降120円(30分ごと)\n障害者割引: 身体障害者手帳保持者(下肢等に障がいがある方)が図書館利用時、最大3時間まで無料駐車券を交付",
+    "sourceUrl": "https://www.lib.city.soka.saitama.jp/facility/chuo_lib/",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11222-001",
+    "name": "越谷市越谷駅東口駐車場",
+    "address": "埼玉県越谷市弥生町16番3号",
+    "latitude": 35.888966,
+    "longitude": 139.786575,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11222",
+    "cityName": "越谷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳、または越谷市障害者等の施設使用料減額団体登録証をお持ちの方が対象。精算前に係員に提示すると一時駐車料金が半額になる。定期利用は対象外。ミライロID提示可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分まで無料。昼間(8時~20時)30分ごとに100円、当日最大1,000円。夜間(20時~8時)60分ごとに100円、当日最大500円(普通自動車等403台・二輪自動車等6台、計409台)\n障害者割引: 一時駐車料金が半額\n総台数: 409台",
+    "sourceUrl": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/kurashi/sumai/saikaihatsu/tyuusyajou-open.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11222-002",
+    "name": "越谷市中央市民会館駐車場",
+    "address": "埼玉県越谷市越ヶ谷四丁目1番1号",
+    "latitude": 35.889099,
+    "longitude": 139.791641,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11222",
+    "cityName": "越谷市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちの方が対象。施設利用の申込み時に本人が障害者手帳を提示(ミライロID可)。介護者は介護している旨を申し出る。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 1台につき1時間以内は無料。1時間を超えた場合は30分(30分に満たないときは30分とする)ごとに100円(障がい者駐車場2台、思いやり駐車場1台、一般駐車場88台、合計91台)\n障害者割引: 使用料の半額を減額\n総台数: 91台",
+    "sourceUrl": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/syogaisien/joseigenmen/genmen.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11222-003",
+    "name": "越谷市立病院駐車場",
+    "address": "埼玉県越谷市東越谷十丁目32番地",
+    "latitude": 35.899837,
+    "longitude": 139.803177,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11222",
+    "cityName": "越谷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちの方が対象。病院への受診・見舞いでの利用に限り、発生した駐車料金が半額になる。手帳提示またはミライロID可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来受診者は無料(会計窓口で駐車券に無料チェック)。その他の利用者は1時間まで無料、以降30分超過ごとに100円加算(敷地内駐車場153台、敷地外駐車場67台、計220台)\n障害者割引: 使用料の半額を減額(病院への受診・見舞いでの利用に限る)\n総台数: 220台",
+    "sourceUrl": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/syogaisien/joseigenmen/genmen.html",
     "updatedAt": "2026-08-09T00:00:00Z"
   }
 ];
