@@ -80,6 +80,11 @@ const cities: City[] = [
     "prefectureCode": "11"
   },
   {
+    "code": "11208",
+    "name": "所沢市",
+    "prefectureCode": "11"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

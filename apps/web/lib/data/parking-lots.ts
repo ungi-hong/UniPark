@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 496
+// 件数: 498
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11362,5 +11362,55 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 普通車1日500円、中型・大型自動車1,500円(花蓮開花時期・6月中旬~8月中旬のみ有料。それ以外の期間は無料)\n障害者割引: 無料\n総台数: 490台",
     "sourceUrl": "https://www.ikiiki-zaidan.or.jp/kodaihasu/facility/riyoannai.html",
     "updatedAt": "2026-08-08T00:00:00Z"
+  },
+  {
+    "id": "11208-001",
+    "name": "所沢市民文化センター ミューズ 駐車場",
+    "address": "埼玉県所沢市並木一丁目9番地の1",
+    "latitude": 35.800167,
+    "longitude": 139.473694,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11208",
+    "cityName": "所沢市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳の提示により無料で利用可能(手帳の種類の明記なし、身体障害者用駐車スペースは地上2台・地下5台)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 1回500円(30分以内の利用はレシート提出により返金)\n障害者割引: 無料\n総台数: 230台",
+    "sourceUrl": "https://www.muse-tokorozawa.or.jp/facility/parking.php",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11208-002",
+    "name": "所沢航空記念公園 駐車場(南・東・北駐車場)",
+    "address": "埼玉県所沢市並木1-13",
+    "latitude": 35.798306,
+    "longitude": 139.469131,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11208",
+    "cityName": "所沢市",
+    "accessibleSpaceTotal": 11,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳等をお持ちの方は、管理事務所へ手帳と駐車券を持参し手続きを行うことで無料になる。記念館横駐車場は令和7年9月1日~令和9年3月末まで工事のため閉鎖中。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 11
+      }
+    ],
+    "notes": "通常料金: 2時間まで無料、以降1時間ごとに100円(大型車は30分ごとに500円)\n障害者割引: 無料(手続きが必要)\n総台数: 580台",
+    "sourceUrl": "https://www.parks.or.jp/tokorozawa-kokuu/faq/001/001599.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
   }
 ];
