@@ -7438,5 +7438,35 @@
     "discount_conditions": "障がい者手帳を係員に提示した場合、有料期間中の駐車料金が免除となる。南側駐車場に身障者用4台分のスペースあり。",
     "source_url": "https://www.ikiiki-zaidan.or.jp/kodaihasu/facility/riyoannai.html",
     "verified_at": "2026-08-08"
+  },
+  {
+    "id": "11208-001",
+    "municipality_code": "11208",
+    "municipality": "所沢市",
+    "name": "所沢市民文化センター ミューズ 駐車場",
+    "address": "埼玉県所沢市並木一丁目9番地の1",
+    "capacity": 230,
+    "capacity_accessible": 7,
+    "normal_rate": "1回500円(30分以内の利用はレシート提出により返金)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "障害者手帳の提示により無料で利用可能(手帳の種類の明記なし、身体障害者用駐車スペースは地上2台・地下5台)。",
+    "source_url": "https://www.muse-tokorozawa.or.jp/facility/parking.php",
+    "verified_at": "2026-08-09"
+  },
+  {
+    "id": "11208-002",
+    "municipality_code": "11208",
+    "municipality": "所沢市",
+    "name": "所沢航空記念公園 駐車場(南・東・北駐車場)",
+    "address": "埼玉県所沢市並木1-13",
+    "capacity": 580,
+    "capacity_accessible": 11,
+    "normal_rate": "2時間まで無料、以降1時間ごとに100円(大型車は30分ごとに500円)",
+    "discount_rate": "無料(手続きが必要)",
+    "discount_scope": "full",
+    "discount_conditions": "障がい者手帳等をお持ちの方は、管理事務所へ手帳と駐車券を持参し手続きを行うことで無料になる。記念館横駐車場は令和7年9月1日~令和9年3月末まで工事のため閉鎖中。",
+    "source_url": "https://www.parks.or.jp/tokorozawa-kokuu/faq/001/001599.html",
+    "verified_at": "2026-08-09"
   }
 ]
