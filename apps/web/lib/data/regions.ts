@@ -110,6 +110,21 @@ const cities: City[] = [
     "prefectureCode": "11"
   },
   {
+    "code": "11224",
+    "name": "戸田市",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11227",
+    "name": "朝霞市",
+    "prefectureCode": "11"
+  },
+  {
+    "code": "11229",
+    "name": "和光市",
+    "prefectureCode": "11"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

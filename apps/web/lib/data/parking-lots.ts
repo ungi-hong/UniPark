@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 507
+// 件数: 513
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11618,6 +11618,148 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 外来受診者は無料(会計窓口で駐車券に無料チェック)。その他の利用者は1時間まで無料、以降30分超過ごとに100円加算(敷地内駐車場153台、敷地外駐車場67台、計220台)\n障害者割引: 使用料の半額を減額(病院への受診・見舞いでの利用に限る)\n総台数: 220台",
     "sourceUrl": "https://www.city.koshigaya.saitama.jp/kurashi_shisei/fukushi/syogaisien/joseigenmen/genmen.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11224-001",
+    "name": "彩湖・道満グリーンパーク駐車場",
+    "address": "埼玉県戸田市大字重瀬745",
+    "latitude": 35.825771,
+    "longitude": 139.629181,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11224",
+    "cityName": "戸田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳等)を所持する者が乗車する自動車が利用する場合、駐車料金を全額免除。管理事務所で事前に申請するか、駐車場係員に申し出る必要あり。料金精算後の返金は不可。運営は公益財団法人戸田市水と緑の公社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 土曜・日曜・祝日・振替休日料金:2時間以下200円(最初の15分無料)、2〜3時間300円、3〜4時間400円、4〜5時間500円、5〜6時間700円、6〜7時間900円、7〜8時間1,100円、8時間超(1日最大)1,200円。平日は半額、最初の1時間無料。準中型車以上(車両総重量3.5t以上または最大積載量2t以上)は2,100円/回。\n障害者割引: 無料(駐車料金全額免除)",
+    "sourceUrl": "https://www.toda-kousha.com/park/saikodoman/",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11227-001",
+    "name": "TMGあさか医療センター 駐車場",
+    "address": "埼玉県朝霞市溝沼1340-1",
+    "latitude": 35.810886,
+    "longitude": 139.593857,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11227",
+    "cityName": "朝霞市",
+    "accessibleSpaceTotal": 9,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳等)をお持ちの方は駐車料金無料。来院時に総合受付で手帳を提示。精算後30分以内に出庫"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 入庫から30分まで無料、30分~5時間まで200円、5時間以降30分ごとに100円、24時間最大2,000円(第1駐車場264台・身障者用8台/第2駐車場22台・身障者用1台)\n障害者割引: 無料\n総台数: 286台",
+    "sourceUrl": "https://www.asakadai-hp.jp/guide/access/",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11229-001",
+    "name": "和光市役所駐車場(和光市民文化センター サンアゼリア共有)",
+    "address": "埼玉県和光市広沢1番5号",
+    "latitude": 35.779507,
+    "longitude": 139.604248,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11229",
+    "cityName": "和光市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(知的障害者)・精神障害者保健福祉手帳のいずれかを所持する方が運転または同乗する自動車が対象。市役所及び周辺公共施設(児童センター等)利用時に限る。窓口で障害者手帳または障害者手帳アプリ(ミライロID等)を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 1時間まで無料、以降30分ごとに100円(当日24時までの最大料金1,500円)\n障害者割引: 無料\n総台数: 250台",
+    "sourceUrl": "https://www.city.wako.lg.jp/shisei/city/1006196/1006205.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11229-002",
+    "name": "埼玉県営和光樹林公園 北駐車場・南駐車場",
+    "address": "埼玉県和光市広沢三番地内",
+    "latitude": 35.777462,
+    "longitude": 139.600662,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11229",
+    "cityName": "和光市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害保健福祉手帳のいずれかの所持者は駐車料金免除。入口インターホン・カメラによる遠隔操作で手帳確認(聴覚障害者にも対応)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 200円/1時間(以降30分ごとに100円)、利用時間6:00〜19:00\n障害者割引: 無料\n総台数: 182台",
+    "sourceUrl": "https://www.seibu-green.co.jp/wako-jurin/facility.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11229-003",
+    "name": "埼玉県営和光樹林公園 中央駐車場(和光市総合体育館共用)",
+    "address": "埼玉県和光市広沢三番地内",
+    "latitude": 35.777462,
+    "longitude": 139.600662,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11229",
+    "cityName": "和光市",
+    "accessibleSpaceTotal": 10,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳(愛の手帳)・精神障害保健福祉手帳のいずれかの所持者は駐車料金免除。入口インターホン・カメラによる遠隔操作で手帳確認(聴覚障害者にも対応)。和光市総合体育館利用者も共用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 10
+      }
+    ],
+    "notes": "通常料金: 200円/1時間(以降30分ごとに100円)、利用時間8:00〜23:30\n障害者割引: 無料\n総台数: 157台",
+    "sourceUrl": "https://www.seibu-green.co.jp/wako-jurin/facility.html",
+    "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11229-004",
+    "name": "和光市広沢複合施設「わぴあ」駐車場",
+    "address": "埼玉県和光市広沢1番5-54号",
+    "latitude": 35.779507,
+    "longitude": 139.604248,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11229",
+    "cityName": "和光市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳をお持ちの方は各施設利用時に手帳提示で駐車料金無料(施設フロント前のチェッカーに駐車券を通す)。ただしわぴあルーム・和カフェのみの利用は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 100円/30分(1日最大1,500円。深夜1時を過ぎると翌日料金)\n障害者割引: 無料\n総台数: 272台",
+    "sourceUrl": "https://wapia.jp/access/",
     "updatedAt": "2026-08-09T00:00:00Z"
   }
 ];
