@@ -7693,5 +7693,35 @@
     "discount_conditions": "障害者手帳をお持ちの方は各施設利用時に手帳提示で駐車料金無料(施設フロント前のチェッカーに駐車券を通す)。ただしわぴあルーム・和カフェのみの利用は対象外。",
     "source_url": "https://wapia.jp/access/",
     "verified_at": "2026-08-09"
+  },
+  {
+    "id": "11230-001",
+    "municipality_code": "11230",
+    "municipality": "新座市",
+    "name": "新座市役所駐車場",
+    "address": "埼玉県新座市野火止1-1-1",
+    "capacity": 127,
+    "capacity_accessible": 3,
+    "normal_rate": "8:00~22:00は最初の30分無料、以降30分ごとに100円。22:00~翌8:00は同料金体系で最大500円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗している場合、来庁先窓口で駐車券を提示し割引処理を受けることで駐車料金が無料になる。令和元年8月1日よりコインパーキング方式。問合せ:管財契約課管財係048-477-3152",
+    "source_url": "https://www.city.niiza.lg.jp/soshiki/4/koin-parking.html",
+    "verified_at": "2026-08-10"
+  },
+  {
+    "id": "11230-002",
+    "municipality_code": "11230",
+    "municipality": "新座市",
+    "name": "新座市民会館・中央図書館第1・第2駐車場",
+    "address": "埼玉県新座市野火止1-1-2",
+    "capacity": 68,
+    "capacity_accessible": null,
+    "normal_rate": "8:00~22:00は最初の30分無料、以降30分ごとに100円。22:00~翌8:00は同料金体系で最大500円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗している場合、市民会館または図書館の窓口で駐車券を提示し割引処理を受けることで駐車料金が無料になる。第1駐車場32台・第2駐車場36台。問合せ:管財契約課管財係048-477-3152",
+    "source_url": "https://www.city.niiza.lg.jp/soshiki/4/koin-parking.html",
+    "verified_at": "2026-08-10"
   }
 ]
