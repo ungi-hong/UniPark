@@ -7798,5 +7798,35 @@
     "discount_conditions": "障がいのある方は駐車場利用が無料。管理事務所へ立ち寄り手続きが必要(手帳種別・提示方法の詳細記載なし、要問合せ:巾着田管理事務所 042-982-0268)。",
     "source_url": "https://kinchakuda.com/faq/",
     "verified_at": "2026-08-10"
+  },
+  {
+    "id": "11326-001",
+    "municipality_code": "11326",
+    "municipality": "毛呂山町",
+    "name": "埼玉医科大学病院 駐車場(A駐車場・B駐車場・C駐車場・第1ビル前駐車場)",
+    "address": "埼玉県入間郡毛呂山町毛呂本郷38",
+    "capacity": 484,
+    "capacity_accessible": 32,
+    "normal_rate": "B駐車場・C駐車場: 入庫〜1時間未満無料、1〜8時間300円、以降30分毎150円加算。第1ビル前駐車場: 平日・土曜1時間毎550円、日曜・祝日1日最大550円。",
+    "discount_rate": "無料(駐車券の割引処理が必要)",
+    "discount_scope": "full",
+    "discount_conditions": "障害者手帳(身体障害者手帳等)の交付を受けている方は、出庫時に駐車券を手帳と一緒に割引処理窓口(第1ビル駐車場管理室 8:00〜17:00、本館1F警備センター 17:00〜8:00)に提出することで駐車料金が無料になる。入院患者の駐車利用は不可。A駐車場・第1ビル前駐車場は身障者専用スペース。",
+    "source_url": "https://www.saitama-med.ac.jp/hospital/access.html",
+    "verified_at": "2026-08-10"
+  },
+  {
+    "id": "11341-001",
+    "municipality_code": "11341",
+    "municipality": "滑川町",
+    "name": "国営武蔵丘陵森林公園 駐車場(南口・中央口・西口・北口)",
+    "address": "埼玉県比企郡滑川町山田1920",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "普通車650円、大型1,650円、原付・自動二輪250円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を提示することで、本人及び介助者1名の入園料及び駐車料金が無料になる。南口・中央口・西口・北口の各駐車場で適用される。",
+    "source_url": "https://mitte-x-img.istsw.jp/shinrin-koen-x/file/hana-ikimono/shinrinkoen_guidemap2102.pdf",
+    "verified_at": "2026-08-10"
   }
 ]
