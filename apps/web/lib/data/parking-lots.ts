@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 515
+// 件数: 519
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11806,6 +11806,95 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 8:00~22:00は最初の30分無料、以降30分ごとに100円。22:00~翌8:00は同料金体系で最大500円\n障害者割引: 無料\n総台数: 68台",
     "sourceUrl": "https://www.city.niiza.lg.jp/soshiki/4/koin-parking.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11237-001",
+    "name": "埼玉県営みさと公園駐車場(第1・第2駐車場)",
+    "address": "埼玉県三郷市高州3丁目362",
+    "latitude": 35.784378,
+    "longitude": 139.873703,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11237",
+    "cityName": "三郷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛の手帳(療育手帳)、精神障害者保健福祉手帳のいずれかをお持ちの方が対象。駐車料金を全額免除。手続きは午前8時30分から午後5時30分の間はみさと公園管理事務所窓口で実施、午後5時30分から午前8時30分の間は第2駐車場のみインターホンとカメラによる遠隔操作で対応。聴覚障がいのある方も利用可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車200円/1時間(以降30分ごとに100円加算)。第1駐車場は大型車1,000円/2時間(以降30分500円)\n障害者割引: 無料\n総台数: 304台",
+    "sourceUrl": "https://www.seibu-la.co.jp/misato-yoshikawa/facility/misato.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11238-001",
+    "name": "蓮田市営第1駐車場",
+    "address": "埼玉県蓮田市東6-1-8",
+    "latitude": 35.97924,
+    "longitude": 139.652557,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11238",
+    "cityName": "蓮田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "中央公民館を利用した方で、身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかをお持ちの方が対象。減免を受ける場合は申請が必要(中央公民館窓口、TEL 048-769-2002)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫〜20分無料、20分超1時間まで200円、1時間超は30分ごとに100円、当日最大700円\n障害者割引: 2時間まで無料\n総台数: 73台",
+    "sourceUrl": "https://www.city.hasuda.saitama.jp/kominkan/hasudadaiichityuusyajyou.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11238-002",
+    "name": "蓮田病院 駐車場",
+    "address": "埼玉県蓮田市根金1662-1",
+    "latitude": 36.019505,
+    "longitude": 139.638824,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11238",
+    "cityName": "蓮田市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳を1階正面受付に提示すると駐車料金が無料になる(駐車券を正面受付に提示し割引処理を受ける)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 外来受診の方:最初の30分無料、10時間まで200円(割引処理適用の場合)、以後60分ごとに100円\n障害者割引: 無料\n総台数: 250台",
+    "sourceUrl": "https://www.hasuda-hp.or.jp/gairaiannai/",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11240-001",
+    "name": "県営権現堂公園駐車場(幸手権現堂桜堤)",
+    "address": "埼玉県幸手市内国府間887-3",
+    "latitude": 36.091702,
+    "longitude": 139.723419,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11240",
+    "cityName": "幸手市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの所持者。埼玉県都市公園条例に基づき、県営公園(権現堂公園を含む)の駐車場使用料は障害者手帳またはミライロIDの提示により免除される。桜まつり期間中の有料時のみ実質的に適用対象(通常期間は元々無料)。詳細窓口:権現堂公園管理事務所(0480-53-8787)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 桜まつり期間中のみ有料(普通車1,000円/回)。それ以外の期間は無料\n障害者割引: 無料(使用料免除)",
+    "sourceUrl": "https://www.pref.saitama.lg.jp/a0604/genmen.html",
     "updatedAt": "2026-08-10T00:00:00Z"
   }
 ];
