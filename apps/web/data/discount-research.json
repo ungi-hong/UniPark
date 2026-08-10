@@ -7783,5 +7783,20 @@
     "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの所持者。埼玉県都市公園条例に基づき、県営公園(権現堂公園を含む)の駐車場使用料は障害者手帳またはミライロIDの提示により免除される。桜まつり期間中の有料時のみ実質的に適用対象(通常期間は元々無料)。詳細窓口:権現堂公園管理事務所(0480-53-8787)。",
     "source_url": "https://www.pref.saitama.lg.jp/a0604/genmen.html",
     "verified_at": "2026-08-10"
+  },
+  {
+    "id": "11242-001",
+    "municipality_code": "11242",
+    "municipality": "日高市",
+    "name": "巾着田駐車場(曼珠沙華の里「巾着田」)",
+    "address": "埼玉県日高市大字高麗本郷125-2",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "普通車500円/日、二輪車100円/日、バス3,000円/日",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "障がいのある方は駐車場利用が無料。管理事務所へ立ち寄り手続きが必要(手帳種別・提示方法の詳細記載なし、要問合せ:巾着田管理事務所 042-982-0268)。",
+    "source_url": "https://kinchakuda.com/faq/",
+    "verified_at": "2026-08-10"
   }
 ]
