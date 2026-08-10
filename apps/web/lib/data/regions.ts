@@ -125,6 +125,11 @@ const cities: City[] = [
     "prefectureCode": "11"
   },
   {
+    "code": "11230",
+    "name": "新座市",
+    "prefectureCode": "11"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

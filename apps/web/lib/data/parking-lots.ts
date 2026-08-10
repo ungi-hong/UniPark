@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 513
+// 件数: 515
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11761,5 +11761,51 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 100円/30分(1日最大1,500円。深夜1時を過ぎると翌日料金)\n障害者割引: 無料\n総台数: 272台",
     "sourceUrl": "https://wapia.jp/access/",
     "updatedAt": "2026-08-09T00:00:00Z"
+  },
+  {
+    "id": "11230-001",
+    "name": "新座市役所駐車場",
+    "address": "埼玉県新座市野火止1-1-1",
+    "latitude": 35.79324,
+    "longitude": 139.56575,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11230",
+    "cityName": "新座市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗している場合、来庁先窓口で駐車券を提示し割引処理を受けることで駐車料金が無料になる。令和元年8月1日よりコインパーキング方式。問合せ:管財契約課管財係048-477-3152"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 8:00~22:00は最初の30分無料、以降30分ごとに100円。22:00~翌8:00は同料金体系で最大500円\n障害者割引: 無料\n総台数: 127台",
+    "sourceUrl": "https://www.city.niiza.lg.jp/soshiki/4/koin-parking.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11230-002",
+    "name": "新座市民会館・中央図書館第1・第2駐車場",
+    "address": "埼玉県新座市野火止1-1-2",
+    "latitude": 35.79324,
+    "longitude": 139.56575,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11230",
+    "cityName": "新座市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗している場合、市民会館または図書館の窓口で駐車券を提示し割引処理を受けることで駐車料金が無料になる。第1駐車場32台・第2駐車場36台。問合せ:管財契約課管財係048-477-3152"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~22:00は最初の30分無料、以降30分ごとに100円。22:00~翌8:00は同料金体系で最大500円\n障害者割引: 無料\n総台数: 68台",
+    "sourceUrl": "https://www.city.niiza.lg.jp/soshiki/4/koin-parking.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
   }
 ];
