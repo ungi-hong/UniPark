@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 519
+// 件数: 520
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11895,6 +11895,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 桜まつり期間中のみ有料(普通車1,000円/回)。それ以外の期間は無料\n障害者割引: 無料(使用料免除)",
     "sourceUrl": "https://www.pref.saitama.lg.jp/a0604/genmen.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11242-001",
+    "name": "巾着田駐車場(曼珠沙華の里「巾着田」)",
+    "address": "埼玉県日高市大字高麗本郷125-2",
+    "latitude": 35.884254,
+    "longitude": 139.310928,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11242",
+    "cityName": "日高市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方は駐車場利用が無料。管理事務所へ立ち寄り手続きが必要(手帳種別・提示方法の詳細記載なし、要問合せ:巾着田管理事務所 042-982-0268)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円/日、二輪車100円/日、バス3,000円/日\n障害者割引: 無料",
+    "sourceUrl": "https://kinchakuda.com/faq/",
     "updatedAt": "2026-08-10T00:00:00Z"
   }
 ];
