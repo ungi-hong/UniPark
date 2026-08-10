@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 520
+// 件数: 522
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11916,6 +11916,52 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車500円/日、二輪車100円/日、バス3,000円/日\n障害者割引: 無料",
     "sourceUrl": "https://kinchakuda.com/faq/",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11326-001",
+    "name": "埼玉医科大学病院 駐車場(A駐車場・B駐車場・C駐車場・第1ビル前駐車場)",
+    "address": "埼玉県入間郡毛呂山町毛呂本郷38",
+    "latitude": 35.936001,
+    "longitude": 139.304062,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11326",
+    "cityName": "毛呂山町",
+    "accessibleSpaceTotal": 32,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳等)の交付を受けている方は、出庫時に駐車券を手帳と一緒に割引処理窓口(第1ビル駐車場管理室 8:00〜17:00、本館1F警備センター 17:00〜8:00)に提出することで駐車料金が無料になる。入院患者の駐車利用は不可。A駐車場・第1ビル前駐車場は身障者専用スペース。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 32
+      }
+    ],
+    "notes": "通常料金: B駐車場・C駐車場: 入庫〜1時間未満無料、1〜8時間300円、以降30分毎150円加算。第1ビル前駐車場: 平日・土曜1時間毎550円、日曜・祝日1日最大550円。\n障害者割引: 無料(駐車券の割引処理が必要)\n総台数: 484台",
+    "sourceUrl": "https://www.saitama-med.ac.jp/hospital/access.html",
+    "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "11341-001",
+    "name": "国営武蔵丘陵森林公園 駐車場(南口・中央口・西口・北口)",
+    "address": "埼玉県比企郡滑川町山田1920",
+    "latitude": 36.092148,
+    "longitude": 139.373993,
+    "prefectureCode": "11",
+    "prefectureName": "埼玉県",
+    "cityCode": "11341",
+    "cityName": "滑川町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を提示することで、本人及び介助者1名の入園料及び駐車料金が無料になる。南口・中央口・西口・北口の各駐車場で適用される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車650円、大型1,650円、原付・自動二輪250円\n障害者割引: 無料",
+    "sourceUrl": "https://mitte-x-img.istsw.jp/shinrin-koen-x/file/hana-ikimono/shinrinkoen_guidemap2102.pdf",
     "updatedAt": "2026-08-10T00:00:00Z"
   }
 ];
