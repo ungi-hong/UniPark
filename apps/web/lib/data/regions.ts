@@ -189,6 +189,21 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12203",
+    "name": "市川市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12204",
+    "name": "船橋市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12207",
+    "name": "松戸市",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

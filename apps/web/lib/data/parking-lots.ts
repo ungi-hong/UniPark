@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 538
+// 件数: 545
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12326,6 +12326,155 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 8時間以内600円、以後1時間ごとに100円加算\n障害者割引: 無料\n総台数: 201台",
     "sourceUrl": "https://www.seibu-la.co.jp/makuhari/access.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12203-001",
+    "name": "市川市文化会館駐車場",
+    "address": "千葉県市川市大和田1-1-5",
+    "latitude": 35.717266,
+    "longitude": 139.922256,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12203",
+    "cityName": "市川市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳等)所持者は駐車場を無料で利用可能。利用には事前に市川市文化会館(TEL 047-379-5111)への電話予約が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円(最大料金なし)\n障害者割引: 無料",
+    "sourceUrl": "https://www.tekona.net/bunkakaikan/facilities/service/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12203-002",
+    "name": "行徳文化ホールI&I駐車場",
+    "address": "千葉県市川市末広1-1-48",
+    "latitude": 35.686951,
+    "longitude": 139.917526,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12203",
+    "cityName": "市川市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳所持者は駐車場を無料で利用可能。利用には事前に行徳文化ホールI&I(TEL 047-701-3011)への電話予約が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.tekona.net/gyotoku/facilities/service/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12204-001",
+    "name": "船橋市本町駐車場",
+    "address": "千葉県船橋市本町2-1-1(船橋スクエア21地下)",
+    "latitude": 35.698036,
+    "longitude": 139.985718,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12204",
+    "cityName": "船橋市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳・療育手帳(知的障害者)・精神障害者保健福祉手帳・戦傷病者手帳・被爆者健康手帳のいずれかの交付を受けている方が対象。手帳またはミライロID(障害者手帳アプリ)の画面を管理人に提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに170円(最大料金 当日1回1,700円)\n障害者割引: 駐車開始時刻から1時間無料\n総台数: 104台",
+    "sourceUrl": "https://www.city.funabashi.lg.jp/shisetsu/parking1/0001/0003/0002/p042627.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12204-002",
+    "name": "船橋駅南口地下駐車場",
+    "address": "千葉県船橋市湊町2-10-25",
+    "latitude": 35.694916,
+    "longitude": 139.982101,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12204",
+    "cityName": "船橋市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳・療育手帳(知的障害)・精神障害者保健福祉手帳・戦傷病者手帳・被爆者健康手帳のいずれかの交付を受けている方が対象。手帳・証明書またはミライロIDの画面を管理人に提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分170円\n障害者割引: 駐車開始時刻から1時間無料\n総台数: 55台",
+    "sourceUrl": "https://www.city.funabashi.lg.jp/shisetsu/parking1/0001/0002/0002/p013185.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12204-003",
+    "name": "船橋アリーナ(船橋市総合体育館)駐車場",
+    "address": "千葉県船橋市習志野台7-5-1",
+    "latitude": 35.729637,
+    "longitude": 140.052017,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12204",
+    "cityName": "船橋市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "船橋市内在住・在勤・在学で、身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳のいずれかを所持する方が対象。手帳またはミライロIDを提示し、総合案内で「駐車場利用許可書」の交付を受ける。介護者の免除については施設へ事前連絡が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1日1回300円(30分以内出庫は無料、大型車1,000円)\n障害者割引: 無料\n総台数: 458台",
+    "sourceUrl": "https://www.funabashi-arena.com/map/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12204-004",
+    "name": "ふなばしアンデルセン公園 駐車場",
+    "address": "千葉県船橋市金堀町525番",
+    "latitude": 35.75853,
+    "longitude": 140.058273,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12204",
+    "cityName": "船橋市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持する方が対象。本人および介護者1名の入園料と駐車料金が無料。手帳またはミライロIDの提示が必要(各種受給者証の提示では無料の対象外)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円(大型車2,000円、要予約)\n障害者割引: 無料",
+    "sourceUrl": "https://www.park-funabashi.or.jp/and/guide.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12207-001",
+    "name": "松戸市立総合医療センター駐車場(第1・第2・第3駐車場)",
+    "address": "千葉県松戸市千駄堀993番地の1",
+    "latitude": 35.801975,
+    "longitude": 139.932526,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12207",
+    "cityName": "松戸市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳等を提示された方は駐車料金無料(第1・第2・第3駐車場共通)。8時~13時はタイムズ割引スタッフ、13時~20時は総合案内、20時~翌8時は時間外受付にて手続き。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来患者:入庫後12時間まで100円、以降60分毎200円(最初の30分無料)/一般(お見舞い等):入庫後60分毎200円(最初の30分無料、第2・第3駐車場は当日最大500円)\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.matsudo.chiba.jp/hospital/access/parking.html",
     "updatedAt": "2026-08-11T00:00:00Z"
   }
 ];
