@@ -174,6 +174,21 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12104",
+    "name": "千葉市若葉区",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12105",
+    "name": "千葉市緑区",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12106",
+    "name": "千葉市美浜区",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

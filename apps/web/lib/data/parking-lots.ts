@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 529
+// 件数: 538
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12129,6 +12129,203 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 4時間まで200円、4時間超1日400円(普通車)\n障害者割引: 無料\n総台数: 210台",
     "sourceUrl": "https://hanashima-park.com/pages/34/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12104-001",
+    "name": "千葉市動物公園 駐車場",
+    "address": "千葉県千葉市若葉区源町280番地",
+    "latitude": 35.644882,
+    "longitude": 140.127136,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12104",
+    "cityName": "千葉市若葉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳(またはミライロID)の提示により、乗車している普通乗用車の駐車場使用料が免除。入園料も同様に免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車800円/回\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.chiba.jp/zoo/guide/index.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12104-002",
+    "name": "泉自然公園 駐車場",
+    "address": "千葉県千葉市若葉区野呂町108",
+    "latitude": 35.578934,
+    "longitude": 140.226883,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12104",
+    "cityName": "千葉市若葉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳)またはミライロIDの提示により駐車料金が免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車400円/回\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.chiba.jp/toshi/koenryokuchi/kanri/wakaba/izumitop.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12105-001",
+    "name": "千葉市 昭和の森 駐車場(第1・第2・第3駐車場)",
+    "address": "千葉県千葉市緑区土気町34",
+    "latitude": 35.524296,
+    "longitude": 140.283813,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12105",
+    "cityName": "千葉市緑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(ミライロID可)を提示。千葉市都市公園条例第21条に基づく減免。出口の精算機インターホンでコールセンターに手帳をカメラで提示し、確認後ゲートバーが上がり無料で出庫(駐車券は機械に入れない)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車 1時間100円(1日最大400円)/バス(第1駐車場のみ利用可)終日1,600円\n障害者割引: 無料\n総台数: 826台",
+    "sourceUrl": "https://www.showano-mori.jp/guide_page/118",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12106-001",
+    "name": "幕張メッセ駐車場",
+    "address": "千葉県千葉市美浜区豊砂3-1",
+    "latitude": 35.652084,
+    "longitude": 140.029022,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12106",
+    "cityName": "千葉市美浜区",
+    "accessibleSpaceTotal": 51,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳またはミライロIDを提示すると駐車料金が無料。手帳所持者本人が乗車していることが条件。出庫時に係員へ手帳またはミライロIDを提示(予約不可)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 51
+      }
+    ],
+    "notes": "通常料金: 普通・準中型車1,000円/1日1回(大型・中型車4,100円、自動二輪車200円)\n障害者割引: 無料\n総台数: 5000台",
+    "sourceUrl": "https://www.m-messe.co.jp/access/access_car",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12106-002",
+    "name": "幕張新都心地下第一駐車場(県営)",
+    "address": "千葉県千葉市美浜区中瀬2-2",
+    "latitude": 35.649796,
+    "longitude": 140.036377,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12106",
+    "cityName": "千葉市美浜区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを保有する方が使用する自動車が対象(1名につき1台まで)。時間貸し利用のみが対象で定期券利用は対象外。精算前に管理室または精算機のコールセンターへ手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分100円(1日最大料金1,000円)\n障害者割引: 無料\n総台数: 280台",
+    "sourceUrl": "https://www.pref.chiba.lg.jp/kigyou/kensetsu/shintoshin/parking.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12106-003",
+    "name": "幕張新都心地下第二駐車場(県営)",
+    "address": "千葉県千葉市美浜区中瀬1-113",
+    "latitude": 35.652084,
+    "longitude": 140.040665,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12106",
+    "cityName": "千葉市美浜区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを保有する方が使用する自動車が対象(1名につき1台まで)。時間貸し利用のみが対象で定期券利用は対象外。精算前に管理室または精算機のコールセンターへ手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分100円(1日最大料金1,000円)\n障害者割引: 無料\n総台数: 459台",
+    "sourceUrl": "https://www.pref.chiba.lg.jp/kigyou/kensetsu/shintoshin/parking.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12106-004",
+    "name": "稲毛海浜公園第1駐車場",
+    "address": "千葉県千葉市美浜区高浜7-2-2",
+    "latitude": 35.62006,
+    "longitude": 140.059479,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12106",
+    "cityName": "千葉市美浜区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により利用料金免除。small planet Café、稲毛記念館、BOTANICA MUSEUMのいずれかで減免券を受け取り、出庫時に提示(各施設の営業時間内のみ対応)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:3時間まで400円、以降30分ごとに100円(24時間最大1,000円)※夏季期間は1回1,000円\n障害者割引: 無料",
+    "sourceUrl": "https://sunsetbeachpark.jp/access/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12106-005",
+    "name": "稲毛海浜公園第2駐車場",
+    "address": "千葉県千葉市美浜区高浜7-2-2",
+    "latitude": 35.62006,
+    "longitude": 140.059479,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12106",
+    "cityName": "千葉市美浜区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により利用料金免除。small planet Café または稲毛記念館で減免券を受け取り、出庫時に提示(各施設の営業時間内のみ対応)。第2駐車場は身障者用駐車スペースが第1駐車場より多く用意されている。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:3時間まで400円、以降30分ごとに100円(24時間最大1,000円)※夏季期間は1回1,000円\n障害者割引: 無料",
+    "sourceUrl": "https://sunsetbeachpark.jp/access/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12106-006",
+    "name": "千葉県立幕張海浜公園駐車場(A・B・Cブロック)",
+    "address": "千葉県千葉市美浜区ひび野2-116",
+    "latitude": 35.643024,
+    "longitude": 140.039276,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12106",
+    "cityName": "千葉市美浜区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方は駐車料金が無料。無料出庫の方法は各駐車場(A・Bブロック平面、Cブロック立体)の発券機・精算機の掲示物を参照。Cブロックには障がい者用区画1台を含む(A・Bブロックの障がい者用区画数は不明)。大型車・バイクは入庫不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 8時間以内600円、以後1時間ごとに100円加算\n障害者割引: 無料\n総台数: 201台",
+    "sourceUrl": "https://www.seibu-la.co.jp/makuhari/access.html",
     "updatedAt": "2026-08-11T00:00:00Z"
   }
 ];
