@@ -14,6 +14,10 @@ export const prefectures: Prefecture[] = [
     "name": "埼玉県"
   },
   {
+    "code": "12",
+    "name": "千葉県"
+  },
+  {
     "code": "13",
     "name": "東京都"
   },
@@ -158,6 +162,16 @@ const cities: City[] = [
     "code": "11341",
     "name": "滑川町",
     "prefectureCode": "11"
+  },
+  {
+    "code": "12101",
+    "name": "千葉市中央区",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12102",
+    "name": "千葉市花見川区",
+    "prefectureCode": "12"
   },
   {
     "code": "13101",

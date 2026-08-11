@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 522
+// 件数: 529
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -11963,5 +11963,172 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 普通車650円、大型1,650円、原付・自動二輪250円\n障害者割引: 無料",
     "sourceUrl": "https://mitte-x-img.istsw.jp/shinrin-koen-x/file/hana-ikimono/shinrinkoen_guidemap2102.pdf",
     "updatedAt": "2026-08-10T00:00:00Z"
+  },
+  {
+    "id": "12101-001",
+    "name": "千葉市栄町立体駐車場",
+    "address": "千葉県千葉市中央区栄町3-8",
+    "latitude": 35.614491,
+    "longitude": 140.120758,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12101",
+    "cityName": "千葉市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(ミライロID可)の原本を出庫時に提示することで利用料が免除。時間制利用のみ対象(月契約制は不可)。運営はアマノマネジメントサービス株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分100円(税込)。最大料金:入庫から12時間まで1,000円/24時間まで1,500円\n障害者割引: 無料(全額免除)\n総台数: 200台",
+    "sourceUrl": "https://chiba-sakae-parking.info/disability-discount/",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12101-002",
+    "name": "青葉の森公園駐車場(北口)",
+    "address": "千葉県千葉市中央区青葉町977-1",
+    "latitude": 35.597885,
+    "longitude": 140.138885,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12101",
+    "cityName": "千葉市中央区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(コピー不可、ミライロID可)を、発券された駐車券とともに公園センター・県立中央博物館等の窓口へ提示。本人または介護者の車に同乗して利用する場合が対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 普通車:4時間まで300円、4時間超~8時間まで600円、以降1時間ごと100円増(大型車:1日2,400円)\n障害者割引: 無料\n総台数: 120台",
+    "sourceUrl": "https://www.cue-net.or.jp/kouen/aoba/annai/parking.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12101-003",
+    "name": "青葉の森公園駐車場(南口)",
+    "address": "千葉県千葉市中央区青葉町977-1",
+    "latitude": 35.597885,
+    "longitude": 140.138885,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12101",
+    "cityName": "千葉市中央区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(コピー不可、ミライロID可)を、発券された駐車券とともにスポーツプラザ・つくしんぼの家等の窓口へ提示。本人または介護者の車に同乗して利用する場合が対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 普通車:4時間まで300円、4時間超~8時間まで600円、以降1時間ごと100円増(大型車:1日2,400円)\n障害者割引: 無料\n総台数: 309台",
+    "sourceUrl": "https://www.cue-net.or.jp/kouen/aoba/annai/parking.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12101-004",
+    "name": "青葉の森公園駐車場(西口)",
+    "address": "千葉県千葉市中央区青葉町977-1",
+    "latitude": 35.597885,
+    "longitude": 140.138885,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12101",
+    "cityName": "千葉市中央区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(コピー不可、ミライロID可)を、発券された駐車券とともに公園センター・緑の相談所等の窓口へ提示。本人または介護者の車に同乗して利用する場合が対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 普通車:4時間まで300円、4時間超~8時間まで600円、以降1時間ごと100円増(大型車:1日2,400円)\n障害者割引: 無料\n総台数: 144台",
+    "sourceUrl": "https://www.cue-net.or.jp/kouen/aoba/annai/parking.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12101-005",
+    "name": "千葉市役所本庁舎駐車場(市民駐車場)",
+    "address": "千葉県千葉市中央区千葉港1-1",
+    "latitude": 35.608322,
+    "longitude": 140.106003,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12101",
+    "cityName": "千葉市中央区",
+    "accessibleSpaceTotal": 10,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示(ミライロID可)。退場時に指定の手順に従い提示することで無料。運営はタイムズ24(株)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 10
+      }
+    ],
+    "notes": "通常料金: 平日8時~18時:基本300円/30分(入庫30分無料、最大1,500円)。平日18時~8時・土日祝夜間:100円/60分(最大500円)。土日祝8時~18時:200円/60分(最大600円)\n障害者割引: 無料\n総台数: 294台",
+    "sourceUrl": "https://www.city.chiba.jp/faq/zaiseikyoku/shisan/shinchosha/59.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12101-006",
+    "name": "千葉市中央図書館・生涯学習センター駐車場",
+    "address": "千葉県千葉市中央区弁天3丁目7番7号",
+    "latitude": 35.617867,
+    "longitude": 140.11412,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12101",
+    "cityName": "千葉市中央区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳(ミライロID可)の交付を受けている方は、精算機で精算処理をする前に生涯学習センター1階「総合案内」へ申し出て手帳を提示することで駐車料金が免除。第1駐車場に障害者用スペース6台分あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 入庫から2時間まで無料。以降20分ごとに100円\n障害者割引: 無料(全額免除)\n総台数: 138台",
+    "sourceUrl": "https://www.library.city.chiba.jp/faq/facilities.html",
+    "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12102-001",
+    "name": "花島公園駐車場",
+    "address": "千葉県千葉市花見川区花島町308番地",
+    "latitude": 35.682953,
+    "longitude": 140.097153,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12102",
+    "cityName": "千葉市花見川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "本人または介護者が運転する場合、身体障害者手帳・精神障害者保健福祉手帳・療育手帳のいずれか(原本、コピー不可)を提示。平日8:30~16:30は出口精算機横のインターホンで申請しカメラに手帳をかざす、平日16:30以降・土日祝は出口脇の詰所で手続き。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 4時間まで200円、4時間超1日400円(普通車)\n障害者割引: 無料\n総台数: 210台",
+    "sourceUrl": "https://hanashima-park.com/pages/34/",
+    "updatedAt": "2026-08-11T00:00:00Z"
   }
 ];
