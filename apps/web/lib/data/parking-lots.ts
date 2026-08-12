@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 548
+// 件数: 552
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12546,6 +12546,94 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 無料(一般駐車場450台・身障者用駐車場7台とも無料)\n障害者割引: 無料\n総台数: 457台",
     "sourceUrl": "https://tobunspo.or.jp/access/",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12215-001",
+    "name": "地方独立行政法人 総合病院国保旭中央病院 駐車場(第1駐車場・第2駐車場)",
+    "address": "千葉県旭市イの1326番地",
+    "latitude": 35.723259,
+    "longitude": 140.66864,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12215",
+    "cityName": "旭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳の提示により駐車料金が無料。防災センターにて身体障害者手帳および駐車券を提示のうえ、無料駐車券を受け取る。ただし入院患者は適用外で通常料金となる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の4時間まで100円、以降1時間毎100円\n障害者割引: 無料",
+    "sourceUrl": "https://www.hospital.asahi.chiba.jp/access/car/chiba.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12217-001",
+    "name": "千葉県立柏の葉公園 駐車場(第1・第2駐車場)",
+    "address": "千葉県柏市柏の葉4-1",
+    "latitude": 35.896393,
+    "longitude": 139.937592,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12217",
+    "cityName": "柏市",
+    "accessibleSpaceTotal": 13,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方(または同乗の付添者)が、各手帳(コピー不可)と駐車券を持参し、公園センター内サービスカウンター、コミュニティ体育館、日本庭園内松柏亭、庭球場クラブハウスのいずれかで手続きすることで駐車料金が免除される"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 13
+      }
+    ],
+    "notes": "通常料金: 普通車:4時間以内300円、4時間超~8時間以内600円、8時間超は1時間ごとに100円加算/中型・大型車:1日1回2,400円\n障害者割引: 免除(無料)\n総台数: 849台",
+    "sourceUrl": "https://www.cue-net.or.jp/kouen/kasiwa/access/index.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12218-001",
+    "name": "かつうら海中公園立体駐車場",
+    "address": "千葉県勝浦市吉尾123",
+    "latitude": 35.138664,
+    "longitude": 140.283295,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12218",
+    "cityName": "勝浦市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身障者手帳を駐車場係員に提示(利用時間8:30~21:00)"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車 2時間まで200円(以後1時間ごとに100円)/大型車 2時間まで600円(以後1時間ごとに300円)\n障害者割引: 全額免除(無料)\n総台数: 167台",
+    "sourceUrl": "https://www.city.katsuura.lg.jp/page/1691.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12219-001",
+    "name": "サンプラザ市原駐車場",
+    "address": "千葉県市原市五井中央西1丁目1番地25",
+    "latitude": 35.512093,
+    "longitude": 140.088486,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12219",
+    "cityName": "市原市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等、官公庁発行の証明書・手帳をご提示ください。問い合わせ:0436-24-1151"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 立体駐車場30分100円(4時間以上連続駐車で一律800円)、平面駐車場30分100円(一律料金設定なし)\n障害者割引: 無料(駐車料金免除)",
+    "sourceUrl": "http://sunplaza-ichihara.com/access/",
     "updatedAt": "2026-08-12T00:00:00Z"
   }
 ];

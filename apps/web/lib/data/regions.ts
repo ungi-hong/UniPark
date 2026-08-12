@@ -219,6 +219,26 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12215",
+    "name": "旭市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12217",
+    "name": "柏市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12218",
+    "name": "勝浦市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12219",
+    "name": "市原市",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"
