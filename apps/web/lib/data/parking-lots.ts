@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 552
+// 件数: 554
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12634,6 +12634,52 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 立体駐車場30分100円(4時間以上連続駐車で一律800円)、平面駐車場30分100円(一律料金設定なし)\n障害者割引: 無料(駐車料金免除)",
     "sourceUrl": "http://sunplaza-ichihara.com/access/",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12221-001",
+    "name": "県立八千代広域公園駐車場",
+    "address": "千葉県八千代市大和田新田312-5",
+    "latitude": 35.722275,
+    "longitude": 140.09935,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12221",
+    "cityName": "八千代市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者・知的障害者・精神障害者とその介護者が対象。駐車券と障害者手帳を「八千代市総合グラウンド」「オーエンス八千代市民ギャラリー事務室」「TRC八千代中央図書館インフォメーション」のいずれかに提示することで無料。利用時間は毎日8:00~22:00(12/29~1/3を除く)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 入庫後1時間以内無料、1時間超~4時間以内300円、4時間超~8時間以内600円、8時間超過分は1時間ごとに100円加算\n障害者割引: 無料\n総台数: 381台",
+    "sourceUrl": "https://www.city.yachiyo.lg.jp/soshiki/46/4060.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12222-001",
+    "name": "アビスタ駐車場(我孫子市生涯学習センター)",
+    "address": "千葉県我孫子市若松26番地の4",
+    "latitude": 35.866405,
+    "longitude": 140.014816,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12222",
+    "cityName": "我孫子市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳またはこれに準ずる書類、精神障害者保健福祉手帳の所持者本人が利用する場合、駐車料金が全額免除。アビスタ1階総合受付で手帳またはミライロIDアプリを提示(開館時間外は駐車場精算機の直通電話で連絡)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間無料、以降1時間ごとに100円(入庫から24時間最大500円、夜間20時~8時最大300円)\n障害者割引: 無料(全額免除)\n総台数: 120台",
+    "sourceUrl": "https://www.city.abiko.chiba.jp/event/shisetsu/abista.html",
     "updatedAt": "2026-08-12T00:00:00Z"
   }
 ];

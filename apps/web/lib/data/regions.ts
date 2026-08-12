@@ -239,6 +239,16 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12221",
+    "name": "八千代市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12222",
+    "name": "我孫子市",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"
