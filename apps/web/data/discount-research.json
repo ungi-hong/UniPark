@@ -8278,5 +8278,35 @@
     "discount_conditions": "障害者手帳等、官公庁発行の証明書・手帳をご提示ください。問い合わせ:0436-24-1151",
     "source_url": "http://sunplaza-ichihara.com/access/",
     "verified_at": "2026-08-12"
+  },
+  {
+    "id": "12221-001",
+    "municipality_code": "12221",
+    "municipality": "八千代市",
+    "name": "県立八千代広域公園駐車場",
+    "address": "千葉県八千代市大和田新田312-5",
+    "capacity": 381,
+    "capacity_accessible": 6,
+    "normal_rate": "入庫後1時間以内無料、1時間超~4時間以内300円、4時間超~8時間以内600円、8時間超過分は1時間ごとに100円加算",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者・知的障害者・精神障害者とその介護者が対象。駐車券と障害者手帳を「八千代市総合グラウンド」「オーエンス八千代市民ギャラリー事務室」「TRC八千代中央図書館インフォメーション」のいずれかに提示することで無料。利用時間は毎日8:00~22:00(12/29~1/3を除く)。",
+    "source_url": "https://www.city.yachiyo.lg.jp/soshiki/46/4060.html",
+    "verified_at": "2026-08-12"
+  },
+  {
+    "id": "12222-001",
+    "municipality_code": "12222",
+    "municipality": "我孫子市",
+    "name": "アビスタ駐車場(我孫子市生涯学習センター)",
+    "address": "千葉県我孫子市若松26番地の4",
+    "capacity": 120,
+    "capacity_accessible": null,
+    "normal_rate": "最初の1時間無料、以降1時間ごとに100円(入庫から24時間最大500円、夜間20時~8時最大300円)",
+    "discount_rate": "無料(全額免除)",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳、療育手帳またはこれに準ずる書類、精神障害者保健福祉手帳の所持者本人が利用する場合、駐車料金が全額免除。アビスタ1階総合受付で手帳またはミライロIDアプリを提示(開館時間外は駐車場精算機の直通電話で連絡)。",
+    "source_url": "https://www.city.abiko.chiba.jp/event/shisetsu/abista.html",
+    "verified_at": "2026-08-12"
   }
 ]
