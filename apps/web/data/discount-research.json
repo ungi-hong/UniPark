@@ -8458,5 +8458,20 @@
     "discount_conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。申請により定期利用料金を半額に減免。減免申請書と手帳の写しの提出が必要(一時利用には適用なし)。",
     "source_url": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
     "verified_at": "2026-08-12"
+  },
+  {
+    "id": "12231-001",
+    "municipality_code": "12231",
+    "municipality": "印西市",
+    "name": "千葉県立北総花の丘公園駐車場",
+    "address": "千葉県印西市原山1-12-1",
+    "capacity": 405,
+    "capacity_accessible": 5,
+    "normal_rate": "準中型車・普通車: 4時間まで300円、4時間超~8時間以内600円、8時間超は1時間ごと100円増/中型車・大型車: 1回2,400円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "運転手または同乗者が身体障害者手帳・療育手帳・精神障害者保健福祉手帳などを提示。手帳原本(コピー不可)と発券された駐車券をBゾーン花と緑の文化館1階インフォメーションに提出、または電話で問い合わせが必要。",
+    "source_url": "https://hayashi-lce.jp/hokusou/pages/58/",
+    "verified_at": "2026-08-12"
   }
 ]
