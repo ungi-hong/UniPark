@@ -249,6 +249,21 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12225",
+    "name": "君津市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12227",
+    "name": "浦安市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12229",
+    "name": "袖ケ浦市",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

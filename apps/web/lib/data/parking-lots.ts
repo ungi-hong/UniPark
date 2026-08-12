@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 554
+// 件数: 564
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12680,6 +12680,245 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 最初の1時間無料、以降1時間ごとに100円(入庫から24時間最大500円、夜間20時~8時最大300円)\n障害者割引: 無料(全額免除)\n総台数: 120台",
     "sourceUrl": "https://www.city.abiko.chiba.jp/event/shisetsu/abista.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12225-001",
+    "name": "君津バスターミナル駐車場",
+    "address": "千葉県君津市三直733番地",
+    "latitude": 35.324715,
+    "longitude": 139.939926,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12225",
+    "cityName": "君津市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている者が運転または同乗する自動車が対象。通常駐車料金・定期駐車料金を2分の1(10円未満切捨て)に減額。通常駐車は管理人駐在時間内に管理棟で手帳と駐車券を提示、定期駐車は申込時に手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 1時間まで無料、以降1日1台1回520円(定期利用料金あり)\n障害者割引: 半額\n総台数: 375台",
+    "sourceUrl": "https://www.city.kimitsu.lg.jp/soshiki/28/702.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12227-001",
+    "name": "浦安市運動公園駐車場(第1・第2駐車場)",
+    "address": "千葉県浦安市舞浜2番地27",
+    "latitude": 35.62756,
+    "longitude": 139.88739,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12227",
+    "cityName": "浦安市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗する場合が対象。市民スポーツ課・みどり公園課・環境衛生課・障がい福祉課に「浦安市運動公園外3施設駐車場利用料金に関する届出書」を提出すると届出月の翌々月から自動割引適用。もしくは利用当日に手帳を提示して精算時に割引適用も可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分無料、以降60分ごと100円(3時間30分超は平日7時〜19時20分100円/土日祝20分100円、19時〜7時60分100円)、最大600円(施設利用者)\n障害者割引: 半額(最大300円)\n総台数: 636台",
+    "sourceUrl": "https://www.urayasu-zaidan.or.jp/undo/1002146/1003708.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12227-002",
+    "name": "浦安ドッグラン駐車場(浦安市運動公園隣)",
+    "address": "千葉県浦安市舞浜2-27",
+    "latitude": 35.640255,
+    "longitude": 139.885254,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12227",
+    "cityName": "浦安市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗する場合が対象。運動公園外3施設と同一の届出書提出、または当日手帳提示で割引適用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分無料、以降60分ごと100円\n障害者割引: 半額\n総台数: 20台",
+    "sourceUrl": "https://www.city.urayasu.lg.jp/shisetsu/sonota/1032392.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12227-003",
+    "name": "浦安市総合公園駐車場",
+    "address": "千葉県浦安市明海七丁目2番",
+    "latitude": 35.635902,
+    "longitude": 139.928879,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12227",
+    "cityName": "浦安市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗する場合が対象。届出書の事前提出(翌々月から自動適用)または当日手帳提示のいずれか。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、以降全日60分ごと100円、最大料金 昼間(8時〜22時)600円・夜間(22時〜8時)600円\n障害者割引: 半額(通常60分ごと50円、最大300円)\n総台数: 251台",
+    "sourceUrl": "https://www.city.urayasu.lg.jp/shisetsu/kouen/1005625.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12227-004",
+    "name": "高洲海浜公園駐車場",
+    "address": "千葉県浦安市高洲九丁目2番",
+    "latitude": 35.631897,
+    "longitude": 139.920792,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12227",
+    "cityName": "浦安市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗する場合が対象。届出書の事前提出(翌々月から自動適用)または当日手帳提示のいずれか。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、以降全日60分ごと100円、最大料金 昼間(8時〜22時)600円・夜間(22時〜8時)600円\n障害者割引: 半額(通常60分ごと50円、最大300円)\n総台数: 152台",
+    "sourceUrl": "https://www.city.urayasu.lg.jp/shisetsu/kouen/1005634.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12229-001",
+    "name": "長浦駅北口駐車場",
+    "address": "千葉県袖ケ浦市蔵波25-1",
+    "latitude": 35.451355,
+    "longitude": 139.996109,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12229",
+    "cityName": "袖ケ浦市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。申請により定期利用料金を半額に減免。減免申請書と手帳の写しの提出が必要(一時利用には適用なし)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 一時利用(1暦日):市民500円/市民以外550円(入庫後20分無料)、定期利用(1ヶ月):市民4,500円/市民以外5,000円\n障害者割引: 定期利用料50%減免\n総台数: 100台",
+    "sourceUrl": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12229-002",
+    "name": "袖ケ浦駅前第1駐車場",
+    "address": "千葉県袖ケ浦市奈良輪1301-10",
+    "latitude": 35.431938,
+    "longitude": 139.95697,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12229",
+    "cityName": "袖ケ浦市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。申請により定期利用料金を半額に減免。減免申請書と手帳の写しの提出が必要(一時利用には適用なし)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 一時利用(1暦日):市民500円/市民以外550円(入庫後20分無料)、定期利用(1ヶ月):市民5,000円/市民以外5,500円\n障害者割引: 定期利用料50%減免\n総台数: 65台",
+    "sourceUrl": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12229-003",
+    "name": "長浦駅臨海駐車場",
+    "address": "千葉県袖ケ浦市長浦1-31",
+    "latitude": 35.45697,
+    "longitude": 139.990341,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12229",
+    "cityName": "袖ケ浦市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。申請により定期利用料金を半額に減免。減免申請書と手帳の写しの提出が必要(一時利用には適用なし)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時利用(1暦日):市民450円/市民以外500円(入庫後20分無料)、定期利用(1ヶ月):市民4,500円/市民以外5,000円\n障害者割引: 定期利用料50%減免\n総台数: 69台",
+    "sourceUrl": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12229-004",
+    "name": "袖ケ浦駅前第2駐車場",
+    "address": "千葉県袖ケ浦市奈良輪2-3-5",
+    "latitude": 35.431046,
+    "longitude": 139.959702,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12229",
+    "cityName": "袖ケ浦市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。申請により定期利用料金を半額に減免。減免申請書と手帳の写しの提出が必要(一時利用には適用なし)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時利用(1暦日):市民500円/市民以外550円(入庫後20分無料)、定期利用(1ヶ月):市民4,500円/市民以外5,000円\n障害者割引: 定期利用料50%減免\n総台数: 30台",
+    "sourceUrl": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12229-005",
+    "name": "袖ケ浦バスターミナル駐車場",
+    "address": "千葉県袖ケ浦市坂戸市場2533-1",
+    "latitude": 35.418282,
+    "longitude": 139.956238,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12229",
+    "cityName": "袖ケ浦市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。申請により定期利用料金を半額に減免。減免申請書と手帳の写しの提出が必要(一時利用には適用なし)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 一時利用(1暦日):四輪 市民500円/市民以外550円、二輪 市民250円/市民以外300円(入庫後60分無料)。定期利用は他駐車場と同様の月額制。\n障害者割引: 定期利用料50%減免\n総台数: 70台",
+    "sourceUrl": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
     "updatedAt": "2026-08-12T00:00:00Z"
   }
 ];
