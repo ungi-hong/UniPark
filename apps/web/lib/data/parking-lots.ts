@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 545
+// 件数: 548
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12476,5 +12476,76 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 外来患者:入庫後12時間まで100円、以降60分毎200円(最初の30分無料)/一般(お見舞い等):入庫後60分毎200円(最初の30分無料、第2・第3駐車場は当日最大500円)\n障害者割引: 無料",
     "sourceUrl": "https://www.city.matsudo.chiba.jp/hospital/access/parking.html",
     "updatedAt": "2026-08-11T00:00:00Z"
+  },
+  {
+    "id": "12211-001",
+    "name": "成田国際空港駐車場(P1・P2・P5)",
+    "address": "千葉県成田市古込字古込1-1",
+    "latitude": 35.772411,
+    "longitude": 140.389862,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12211",
+    "cityName": "成田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証等の提示が必要(営業用車両を除く)。対象はP1・P5(第1ターミナル前)、P2(第2ターミナル前)の一般駐車場。事前精算機のインターホンを押し、係員の指示に従いカメラに手帳を提示・本人確認後、精算機に駐車券を挿入すると半額表示で精算開始。P3利用時は事前精算機がないため第1駐車場管理事務所(0120-03-2253)へ事前連絡が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 24時間ごとに P1・P2は2,100円〜10,500円(120時間まで、以降24時間毎に1,000円加算)、P5は1,570円〜7,850円(120時間まで)\n障害者割引: 駐車料金50%割引",
+    "sourceUrl": "https://www.narita-airport.jp/ja/service/ud/private-parking/",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12212-001",
+    "name": "東邦大学医療センター佐倉病院 B駐車場(身障者専用)",
+    "address": "千葉県佐倉市下志津564-1",
+    "latitude": 35.717945,
+    "longitude": 140.169464,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12212",
+    "cityName": "佐倉市",
+    "accessibleSpaceTotal": 14,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者専用駐車場(B駐車場、車椅子使用者・身体障害者向け)。障害者手帳を防災センターに提示することで駐車料金が無料になる。24時間入出庫可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 14
+      }
+    ],
+    "notes": "通常料金: 300円(12時間まで)、1,000円(24時間まで)、以降24時間ごとに1,000円\n障害者割引: 無料\n総台数: 14台",
+    "sourceUrl": "https://www.sakura.med.toho-u.ac.jp/kotu/index.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12213-001",
+    "name": "東金文化会館 身障者用駐車場",
+    "address": "千葉県東金市八坂台1丁目2107番地3",
+    "latitude": 35.569077,
+    "longitude": 140.363785,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12213",
+    "cityName": "東金市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "バーミヤン側入口にある身障者用駐車場(7台)を利用する際、適正利用のため身体障害者手帳またはミライロID等の提示が必要。事前予約可。一般駐車場(450台、建物裏手)も無料だが満車の場合は東金駅周辺の時間貸駐車場の利用が案内される。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 無料(一般駐車場450台・身障者用駐車場7台とも無料)\n障害者割引: 無料\n総台数: 457台",
+    "sourceUrl": "https://tobunspo.or.jp/access/",
+    "updatedAt": "2026-08-12T00:00:00Z"
   }
 ];

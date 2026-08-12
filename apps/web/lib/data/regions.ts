@@ -204,6 +204,21 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12211",
+    "name": "成田市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12212",
+    "name": "佐倉市",
+    "prefectureCode": "12"
+  },
+  {
+    "code": "12213",
+    "name": "東金市",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"
