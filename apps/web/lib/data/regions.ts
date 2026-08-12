@@ -264,6 +264,11 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12231",
+    "name": "印西市",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

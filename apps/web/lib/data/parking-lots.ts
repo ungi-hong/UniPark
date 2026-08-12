@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 564
+// 件数: 565
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12919,6 +12919,31 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 一時利用(1暦日):四輪 市民500円/市民以外550円、二輪 市民250円/市民以外300円(入庫後60分無料)。定期利用は他駐車場と同様の月額制。\n障害者割引: 定期利用料50%減免\n総台数: 70台",
     "sourceUrl": "https://www.city.sodegaura.lg.jp/soshiki/toshi/sieityuusyajounoriyouhouhou.html",
+    "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12231-001",
+    "name": "千葉県立北総花の丘公園駐車場",
+    "address": "千葉県印西市原山1-12-1",
+    "latitude": 35.800854,
+    "longitude": 140.124664,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12231",
+    "cityName": "印西市",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "運転手または同乗者が身体障害者手帳・療育手帳・精神障害者保健福祉手帳などを提示。手帳原本(コピー不可)と発券された駐車券をBゾーン花と緑の文化館1階インフォメーションに提出、または電話で問い合わせが必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 準中型車・普通車: 4時間まで300円、4時間超~8時間以内600円、8時間超は1時間ごと100円増/中型車・大型車: 1回2,400円\n障害者割引: 無料\n総台数: 405台",
+    "sourceUrl": "https://hayashi-lce.jp/hokusou/pages/58/",
     "updatedAt": "2026-08-12T00:00:00Z"
   }
 ];
