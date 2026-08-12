@@ -8173,5 +8173,50 @@
     "discount_conditions": "身体障がい者手帳等を提示された方は駐車料金無料(第1・第2・第3駐車場共通)。8時~13時はタイムズ割引スタッフ、13時~20時は総合案内、20時~翌8時は時間外受付にて手続き。",
     "source_url": "https://www.city.matsudo.chiba.jp/hospital/access/parking.html",
     "verified_at": "2026-08-11"
+  },
+  {
+    "id": "12211-001",
+    "municipality_code": "12211",
+    "municipality": "成田市",
+    "name": "成田国際空港駐車場(P1・P2・P5)",
+    "address": "千葉県成田市古込字古込1-1",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "24時間ごとに P1・P2は2,100円〜10,500円(120時間まで、以降24時間毎に1,000円加算)、P5は1,570円〜7,850円(120時間まで)",
+    "discount_rate": "駐車料金50%割引",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証等の提示が必要(営業用車両を除く)。対象はP1・P5(第1ターミナル前)、P2(第2ターミナル前)の一般駐車場。事前精算機のインターホンを押し、係員の指示に従いカメラに手帳を提示・本人確認後、精算機に駐車券を挿入すると半額表示で精算開始。P3利用時は事前精算機がないため第1駐車場管理事務所(0120-03-2253)へ事前連絡が必要。",
+    "source_url": "https://www.narita-airport.jp/ja/service/ud/private-parking/",
+    "verified_at": "2026-08-12"
+  },
+  {
+    "id": "12212-001",
+    "municipality_code": "12212",
+    "municipality": "佐倉市",
+    "name": "東邦大学医療センター佐倉病院 B駐車場(身障者専用)",
+    "address": "千葉県佐倉市下志津564-1",
+    "capacity": 14,
+    "capacity_accessible": 14,
+    "normal_rate": "300円(12時間まで)、1,000円(24時間まで)、以降24時間ごとに1,000円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者専用駐車場(B駐車場、車椅子使用者・身体障害者向け)。障害者手帳を防災センターに提示することで駐車料金が無料になる。24時間入出庫可。",
+    "source_url": "https://www.sakura.med.toho-u.ac.jp/kotu/index.html",
+    "verified_at": "2026-08-12"
+  },
+  {
+    "id": "12213-001",
+    "municipality_code": "12213",
+    "municipality": "東金市",
+    "name": "東金文化会館 身障者用駐車場",
+    "address": "千葉県東金市八坂台1丁目2107番地3",
+    "capacity": 457,
+    "capacity_accessible": 7,
+    "normal_rate": "無料(一般駐車場450台・身障者用駐車場7台とも無料)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "バーミヤン側入口にある身障者用駐車場(7台)を利用する際、適正利用のため身体障害者手帳またはミライロID等の提示が必要。事前予約可。一般駐車場(450台、建物裏手)も無料だが満車の場合は東金駅周辺の時間貸駐車場の利用が案内される。",
+    "source_url": "https://tobunspo.or.jp/access/",
+    "verified_at": "2026-08-12"
   }
 ]
