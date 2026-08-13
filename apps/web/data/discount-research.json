@@ -8473,5 +8473,20 @@
     "discount_conditions": "運転手または同乗者が身体障害者手帳・療育手帳・精神障害者保健福祉手帳などを提示。手帳原本(コピー不可)と発券された駐車券をBゾーン花と緑の文化館1階インフォメーションに提出、または電話で問い合わせが必要。",
     "source_url": "https://hayashi-lce.jp/hokusou/pages/58/",
     "verified_at": "2026-08-12"
+  },
+  {
+    "id": "12410-001",
+    "municipality_code": "12410",
+    "municipality": "横芝光町",
+    "name": "坂田城跡梅林 梅林有料駐車場",
+    "address": "千葉県山武郡横芝光町坂田750",
+    "capacity": 40,
+    "capacity_accessible": null,
+    "normal_rate": "1日500円",
+    "discount_rate": "1日200円",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳提示。坂田城跡梅まつり開催期間中(例年2月下旬〜3月上旬)の有料駐車場が対象。問い合わせ先: 横芝光町観光まちづくり協会 0479-74-8585、または産業課 0479-84-1215",
+    "source_url": "https://www.town.yokoshibahikari.chiba.jp/site/yokoshibahikari-navi/1580.html",
+    "verified_at": "2026-08-13"
   }
 ]
