@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 566
+// 件数: 570
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12965,6 +12965,94 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 1日500円\n障害者割引: 1日200円\n総台数: 40台",
     "sourceUrl": "https://www.town.yokoshibahikari.chiba.jp/site/yokoshibahikari-navi/1580.html",
+    "updatedAt": "2026-08-13T00:00:00Z"
+  },
+  {
+    "id": "27102-001",
+    "name": "都島区役所駐車場",
+    "address": "大阪府大阪市都島区中野町2丁目16番20号",
+    "latitude": 34.701317,
+    "longitude": 135.528412,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27102",
+    "cityName": "大阪市都島区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳のいずれかを区役所窓口で提示。開庁時間内に区役所を利用する場合が対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 午前8時~午後7時:40分ごとに200円(最大料金は月~金・第4日曜700円、土曜・日曜・祝日500円)。午後7時~午前8時:1時間ごとに100円(最大料金300円)。\n障害者割引: 開庁時間内に区役所窓口を利用する方で、障がいのある方が乗車する車両は駐車料金が無料。\n総台数: 15台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/miyakojima/page/0000327853.html",
+    "updatedAt": "2026-08-13T00:00:00Z"
+  },
+  {
+    "id": "27102-002",
+    "name": "大阪市立総合医療センター駐車場(都島センタービル)",
+    "address": "大阪府大阪市都島区都島本通2丁目13番22号",
+    "latitude": 34.708454,
+    "longitude": 135.523514,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27102",
+    "cityName": "大阪市都島区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳を提示。外来受診時は総合案内(時間外は警備室)に駐車券・手帳・診療費領収書(または外来基本カード)を提示。入院患者・家族(運転者が障がい者)はナースステーションに手帳を提示し、入退院日用の無料券を2枚配付。マイナポータル連携済みのミライロIDは手帳提示と同等の扱い(スマホ画面で必要情報が確認できない場合は手帳提示が必要)。駐車禁止除外標章では割引不可。面会者は無料ではなく割引料金の適用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一般の方:20分毎に400円加算、24時間最大3,000円。当日受診・入院患者は60分まで200円、以降30分毎100円加算、24時間最大1,200円。\n障害者割引: 障がい者(当日受診の患者・入院患者)は24時間以内は駐車料金無料。24時間以降は当日受診患者と同じ料金(60分まで200円、以降30分毎100円加算、24時間最大1,200円)が適用。",
+    "sourceUrl": "https://www.osakacity-hp.or.jp/ocgh/about/access.html",
+    "updatedAt": "2026-08-13T00:00:00Z"
+  },
+  {
+    "id": "27103-001",
+    "name": "福島区役所地下駐車場",
+    "address": "大阪府大阪市福島区大開1丁目8番1号",
+    "latitude": 34.6922,
+    "longitude": 135.472565,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27103",
+    "cityName": "大阪市福島区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "区役所内の相談窓口(用件に応じた担当窓口)にて障害者手帳(または「ミライロID」アプリの提示)を確認のうえ、駐車券を無料処理。駐車料金を先に精算すると割引不可のため要事前提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分/200円(1日最大1,400円)\n障害者割引: 身体障害者手帳・精神障害者保健福祉手帳・療育手帳の交付を受けている方(本人運転または当該障がい者が乗車し他の方が運転する車両)が利用する場合、駐車料金無料\n総台数: 14台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/fukushima/page/0000400199.html",
+    "updatedAt": "2026-08-13T00:00:00Z"
+  },
+  {
+    "id": "27104-001",
+    "name": "此花区役所駐車場(南側)",
+    "address": "大阪府大阪市此花区春日出北1-8-4",
+    "latitude": 34.682819,
+    "longitude": 135.452499,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27104",
+    "cityName": "大阪市此花区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳のいずれかの保有者、要介護状態区分「要介護1~5」の認定者、または大阪府障がい者等用駐車区画利用証の交付を受けている方が対象。無料手続きの際に手帳等の提示が必須(窓口で申請)。北側駐車場(19台)には本制度の適用なし。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 平日8時~20時 1時間200円、20時~翌8時 2時間100円、土日祝は当日最大500円\n障害者割引: 対象者が運転または乗車する車両は駐車料金無料\n総台数: 8台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/konohana/page/0000487404.html",
     "updatedAt": "2026-08-13T00:00:00Z"
   }
 ];
