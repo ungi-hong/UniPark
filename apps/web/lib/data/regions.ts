@@ -269,6 +269,11 @@ const cities: City[] = [
     "prefectureCode": "12"
   },
   {
+    "code": "12410",
+    "name": "横芝光町",
+    "prefectureCode": "12"
+  },
+  {
     "code": "13101",
     "name": "千代田区",
     "prefectureCode": "13"

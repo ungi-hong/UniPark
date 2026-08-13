@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 565
+// 件数: 566
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12945,5 +12945,26 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 準中型車・普通車: 4時間まで300円、4時間超~8時間以内600円、8時間超は1時間ごと100円増/中型車・大型車: 1回2,400円\n障害者割引: 無料\n総台数: 405台",
     "sourceUrl": "https://hayashi-lce.jp/hokusou/pages/58/",
     "updatedAt": "2026-08-12T00:00:00Z"
+  },
+  {
+    "id": "12410-001",
+    "name": "坂田城跡梅林 梅林有料駐車場",
+    "address": "千葉県山武郡横芝光町坂田750",
+    "latitude": 35.666958,
+    "longitude": 140.473816,
+    "prefectureCode": "12",
+    "prefectureName": "千葉県",
+    "cityCode": "12410",
+    "cityName": "横芝光町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳提示。坂田城跡梅まつり開催期間中(例年2月下旬〜3月上旬)の有料駐車場が対象。問い合わせ先: 横芝光町観光まちづくり協会 0479-74-8585、または産業課 0479-84-1215"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日500円\n障害者割引: 1日200円\n総台数: 40台",
+    "sourceUrl": "https://www.town.yokoshibahikari.chiba.jp/site/yokoshibahikari-navi/1580.html",
+    "updatedAt": "2026-08-13T00:00:00Z"
   }
 ];
