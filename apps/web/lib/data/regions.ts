@@ -826,6 +826,26 @@ const cities: City[] = [
     "code": "27117",
     "name": "大阪市旭区",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27118",
+    "name": "大阪市城東区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27120",
+    "name": "大阪市住吉区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27121",
+    "name": "大阪市東住吉区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27122",
+    "name": "大阪市西成区",
+    "prefectureCode": "27"
   }
 ];
 

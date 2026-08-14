@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 594
+// 件数: 603
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -13603,6 +13603,218 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 60分毎200円(最大600円)\n障害者割引: 無料\n総台数: 6台",
     "sourceUrl": "http://asahisc.sbt-csp.jp/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27118-001",
+    "name": "城東区役所駐車場（城東区民センター・城東図書館・城東区老人福祉センター共用）",
+    "address": "大阪府大阪市城東区中央3丁目5番45号",
+    "latitude": 34.703159,
+    "longitude": 135.545578,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27118",
+    "cityName": "大阪市城東区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の交付を受けている方が運転する車両、または同乗する車両は無料。駐車場管理室（常駐管理時間帯：月~木・土 8:30-17:30、金 8:30-19:00、日 8:30-17:30、国民の祝日・12/29~1/3を除く）に手帳を提示。管理時間外に身障者用スペースが満車等の場合は、城東区役所3階総務課、城東図書館4階貸出カウンター、城東区民センター2階事務室、城東区老人福祉センター4階事務室のいずれかへ申し出。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 8:00~22:30 最初60分300円、以降30分毎200円（22:30~8:00は夜間駐車300円）\n障害者割引: 無料\n総台数: 16台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/joto/page/0000504401.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27118-002",
+    "name": "大阪市立城東屋内プール駐車場",
+    "address": "大阪府大阪市城東区関目2丁目17-45",
+    "latitude": 34.706394,
+    "longitude": 135.552948,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27118",
+    "cityName": "大阪市城東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がいのある方には駐車2時間無料のサービス券を交付。障がい者本人および介助者1名はプール入場料も無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~22:00 60分毎200円、22:00~8:00 60分毎100円（最大料金24時間800円）\n障害者割引: 2時間無料\n総台数: 8台",
+    "sourceUrl": "https://joto.sbt-csp.jp/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27120-001",
+    "name": "住吉区役所駐車場(住吉区民センター・住吉図書館 共用)",
+    "address": "大阪府大阪市住吉区南住吉3-15-55",
+    "latitude": 34.604515,
+    "longitude": 135.500015,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27120",
+    "cityName": "大阪市住吉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "住吉区役所・住吉区民センター・住吉図書館いずれかの利用者で、身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳のいずれかを所持する方(本人運転、または当該障がい者が乗車し介助者が運転する場合を含む)が対象。利用施設の窓口(住吉区役所は各課窓口、3階は総務課のみ／住吉図書館は図書館窓口)にて駐車券と手帳(またはミライロID)を提示し手続きすることで無料。精算前に必ず窓口での手続きが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 40分300円(入庫後24時間最大料金600円、最大料金は1回限り以降は通常料金加算)\n障害者割引: 無料\n総台数: 59台",
+    "sourceUrl": "https://www.oml.city.osaka.lg.jp/index.php?page_id=322",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27120-002",
+    "name": "大阪急性期・総合医療センター駐車場",
+    "address": "大阪府大阪市住吉区万代東3丁目1番56号",
+    "latitude": 34.616692,
+    "longitude": 135.503952,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27120",
+    "cityName": "大阪市住吉区",
+    "accessibleSpaceTotal": 23,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳のいずれかの交付を受けている方は駐車料金無料。平日9時~17時30分は会計窓口、夜間・土日祝は守衛室に申し出て手続きが必要。駐車禁止除外指定車標章を車内フロントに掲示すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 23
+      }
+    ],
+    "notes": "通常料金: 1時間300円\n障害者割引: 無料",
+    "sourceUrl": "https://www.gh.opho.jp/access.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27120-003",
+    "name": "住吉スポーツセンター・屋内プール駐車場",
+    "address": "大阪府大阪市住吉区浅香1-8-15",
+    "latitude": 34.592316,
+    "longitude": 135.51207,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27120",
+    "cityName": "大阪市住吉区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がい者手帳をお持ちの方は1階窓口で割引手続きをすることで最初の2時間駐車無料(2時間を超える分は通常料金が加算される)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 30分無料、以降60分毎200円\n障害者割引: 最初の2時間無料\n総台数: 39台",
+    "sourceUrl": "https://www.hos-sumiyoshi.com/access/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27121-001",
+    "name": "長居公園地下駐車場",
+    "address": "大阪府大阪市東住吉区長居公園1丁目",
+    "latitude": 34.610451,
+    "longitude": 135.514496,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27121",
+    "cityName": "大阪市東住吉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(またはミライロID)を提示すると当日1回300円の均一料金になる。出庫時に現地係員へ駐車券と手帳を提示すること。先に精算機で精算すると割引を受けられないため要注意。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日60分350円(当日上限1,000円)/土日祝30分300円(当日上限2,000円)\n障害者割引: 当日1回300円\n総台数: 255台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258436.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27121-002",
+    "name": "長居公園南駐車場(タイムズ長居植物園前)",
+    "address": "大阪府大阪市東住吉区長居公園1",
+    "latitude": 34.610451,
+    "longitude": 135.514496,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27121",
+    "cityName": "大阪市東住吉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳等の提示で1回300円の均一料金。出庫時に精算機備え付けのオートホンを使用してモニターへ手帳を提示する。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日(月〜金)60分350円(最大1,000円/日)/土日祝30分300円(最大2,000円/日)\n障害者割引: 300円/回\n総台数: 272台",
+    "sourceUrl": "https://times-info.net/P27-osaka/C121/park-detail-BUK0038648/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27122-001",
+    "name": "西成区役所駐車場",
+    "address": "大阪府大阪市西成区岸里1丁目5番20号",
+    "latitude": 34.634983,
+    "longitude": 135.494125,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27122",
+    "cityName": "大阪市西成区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳の所持者が運転または同乗する車両が対象。区役所窓口(総務課)にて確認の上、駐車無料券を発行(区役所閉庁日・閉庁時間帯は発行不可)。入出庫可能時間7:00~21:30。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 60分300円(最大料金 平日19時~9時300円、土日祝9時~19時500円)\n障害者割引: 無料(駐車無料券発行)\n総台数: 36台",
+    "sourceUrl": "https://www.osaka-city-callcenter.jp/faq/detail.aspx?id=1145",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27122-002",
+    "name": "西成スポーツセンター駐車場",
+    "address": "大阪府大阪市西成区玉出東1丁目6-1",
+    "latitude": 34.628033,
+    "longitude": 135.496353,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27122",
+    "cityName": "大阪市西成区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がい者は駐車場利用開始から2時間まで無料(それ以降は通常料金)。施設利用者は最初の2時間を100円で利用可の別枠あり。夜間の出退不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 昼間(8:30~21:30)1時間毎200円、夜間(21:30~8:30)1時間毎100円、1日最大700円\n障害者割引: 2時間まで無料\n総台数: 19台",
+    "sourceUrl": "http://osakashi.opas.jp/chikubetu/facility_s/city_ward_nishinari/%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9%EF%BC%92%EF%BC%91%E8%A5%BF%E6%88%90%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/",
     "updatedAt": "2026-08-14T00:00:00Z"
   }
 ];
