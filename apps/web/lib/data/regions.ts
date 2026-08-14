@@ -776,6 +776,31 @@ const cities: City[] = [
     "code": "27104",
     "name": "大阪市此花区",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27106",
+    "name": "大阪市西区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27107",
+    "name": "大阪市港区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27108",
+    "name": "大阪市大正区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27109",
+    "name": "大阪市天王寺区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27111",
+    "name": "大阪市浪速区",
+    "prefectureCode": "27"
   }
 ];
 

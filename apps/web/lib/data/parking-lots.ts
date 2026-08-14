@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 570
+// 件数: 585
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -13054,5 +13054,335 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 平日8時~20時 1時間200円、20時~翌8時 2時間100円、土日祝は当日最大500円\n障害者割引: 対象者が運転または乗車する車両は駐車料金無料\n総台数: 8台",
     "sourceUrl": "https://www.city.osaka.lg.jp/konohana/page/0000487404.html",
     "updatedAt": "2026-08-13T00:00:00Z"
+  },
+  {
+    "id": "27106-001",
+    "name": "西区役所駐車場",
+    "address": "大阪府大阪市西区新町4丁目5番14号",
+    "latitude": 34.676029,
+    "longitude": 135.485992,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27106",
+    "cityName": "大阪市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳の交付を受けている方が運転または同乗している車両が対象。利用窓口で駐車券と手帳を提示。区役所開庁時間内のみ受付。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初30分300円、以降30分以内まで15分毎200円、以降1時間毎100円\n障害者割引: 無料(区役所での手続き・相談で来庁し、運転または同乗している場合)\n総台数: 27台",
+    "sourceUrl": "https://www.osaka-city-callcenter.jp/faq/detail.aspx?id=1144",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27106-002",
+    "name": "大阪市立西横堀駐車場",
+    "address": "大阪府大阪市西区立売堀1丁目(阪神高速道路環状線高架下)",
+    "latitude": 34.67968,
+    "longitude": 135.495377,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27106",
+    "cityName": "大阪市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳(またはミライロID)の所持者本人が運転、または介護者運転の車に同乗する場合が対象。管理事務所で精算前に駐車券と手帳等を提示する必要がある(精算後は割引不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時~24時 30分までごとに350円、上限料金1,700円~2,200円(ブロックにより異なる)\n障害者割引: 一時駐車料金及び上限料金を半額に減額\n総台数: 1191台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258436.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27106-003",
+    "name": "大阪市立靱地下駐車場",
+    "address": "大阪府大阪市西区靱本町2丁目(靱公園地下)",
+    "latitude": 34.684086,
+    "longitude": 135.491104,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27106",
+    "cityName": "大阪市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳(またはミライロID)の所持者本人が運転、または介護者運転の車に同乗する場合が対象。管理事務所で精算前に駐車券と手帳等を提示する必要がある(精算後は割引不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに300円、24時間上限1,800円(土日祝1,600円)\n障害者割引: 一時駐車料金及び上限料金を半額に減額\n総台数: 246台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258436.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27106-004",
+    "name": "大阪市立本町地下駐車場",
+    "address": "大阪府大阪市西区靱本町1丁目(本町通道路下)",
+    "latitude": 34.68528,
+    "longitude": 135.495178,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27106",
+    "cityName": "大阪市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳(またはミライロID)の所持者本人が運転、または介護者運転の車に同乗する場合が対象。管理事務所で精算前に駐車券と手帳等を提示する必要がある(精算後は割引不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに200円、上限料金24時間までごとに1,500円\n障害者割引: 一時駐車料金及び上限料金を半額に減額\n総台数: 154台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258436.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27106-005",
+    "name": "大阪市立土佐堀地下駐車場",
+    "address": "大阪府大阪市西区土佐堀1丁目(江戸堀線道路下)",
+    "latitude": 34.690697,
+    "longitude": 135.493271,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27106",
+    "cityName": "大阪市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳(またはミライロID)の所持者本人が運転、または介護者運転の車に同乗する場合が対象。管理事務所で精算前に駐車券と手帳等を提示する必要がある(精算後は割引不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時~24時 20分までごとに200円、上限料金入庫後24時間までごとに1,400円\n障害者割引: 一時駐車料金及び上限料金を半額に減額\n総台数: 210台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258436.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27107-001",
+    "name": "港区役所地下駐車場",
+    "address": "大阪府大阪市港区市岡1丁目15番25号",
+    "latitude": 34.664059,
+    "longitude": 135.460693,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27107",
+    "cityName": "大阪市港区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳、被爆者健康手帳等の所持者本人が運転する場合、または当該障がい者が乗車し移動のために他の方が運転する場合が対象。1・3・6階の各課窓口(2・4・5階利用者は6階61番窓口)で手帳を提示し確認を受けたうえでQRコードの発行を受ける。駐車料金を先に精算すると割引を受けられないため注意。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 終日60分までごとに300円\n障害者割引: 駐車料金が24時間無料になるQRコードを発行\n総台数: 14台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/minato/page/0000032161.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27107-002",
+    "name": "港区民センター駐車場",
+    "address": "大阪府大阪市港区磯路1丁目7番17号",
+    "latitude": 34.668053,
+    "longitude": 135.461746,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27107",
+    "cityName": "大阪市港区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳等をお持ちの方が対象。3階窓口に駐車券と障がい者手帳を持参して手続きする。駐車台数に限りがあるため公共交通機関の利用が推奨されている。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分200円、最大料金1,200円(9:00~18:00)/400円(18:00~9:00)\n障害者割引: 駐車料金無料\n総台数: 9台",
+    "sourceUrl": "https://www.osakacommunity.jp/minato-center/facility/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27108-001",
+    "name": "大正区役所屋外駐車場",
+    "address": "大阪府大阪市大正区千島2丁目7番95号",
+    "latitude": 34.650146,
+    "longitude": 135.472366,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27108",
+    "cityName": "大阪市大正区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体・精神・療育いずれかの障がい者手帳所持者が対象。区役所での手続き等での来庁時に手帳を提示することが条件(当日限り)。運営はタイムズ24株式会社(2025年4月1日から)。バイク駐車不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 60分300円。最大料金は平日7時~21時500円・21時~7時300円、土日祝7時~21時1000円・21時~7時300円(24時間365日利用可、現金・クレジットカード・コード決済対応)\n障害者割引: 身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の交付を受けている方が、区役所に手続き等で来庁する際に手帳を提示すると、当日に限り駐車料金が無料\n総台数: 38台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/taisho/page/0000651470.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27109-001",
+    "name": "天王寺区役所・天王寺区保健福祉センター駐車場",
+    "address": "大阪府大阪市天王寺区真法院町20番33号",
+    "latitude": 34.658142,
+    "longitude": 135.519348,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27109",
+    "cityName": "大阪市天王寺区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳のいずれかの交付を受けている方が運転する場合、または当該手帳所持者が乗車しその移動のために他の方が運転する場合が対象。駐車場管理室(駐車場出口)にて手帳を提示。区役所地下1階、高さ制限2.3m。土曜・日曜(開庁日以外)、国民の祝日、12月29日~1月3日は利用不可。運営管理会社:日本駐車場メンテナンス株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の30分200円、以降60分ごと300円(現金のみ、1万円・5千円札不可)\n障害者割引: 駐車料金無料\n総台数: 13台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/tennoji/page/0000025197.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27109-002",
+    "name": "大阪市立上汐地下駐車場",
+    "address": "大阪府大阪市天王寺区上汐4丁目(市道天王寺区第8601号線道路下)",
+    "latitude": 34.662468,
+    "longitude": 135.516525,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27109",
+    "cityName": "大阪市天王寺区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の提示(ミライロID提示も可)。駐車料金を先に精算すると割引を受けられないため、出庫時に管理事務所で手帳を提示してから精算する必要がある。定期券利用時は障がい者割引の対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時~24時 30分までごとに200円、上限料金:入庫後24時間までごとに1,500円\n障害者割引: 一時駐車料金及び上限料金が半額\n総台数: 124台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258259.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27109-003",
+    "name": "大阪赤十字病院駐車場",
+    "address": "大阪府大阪市天王寺区筆ケ崎町5-30",
+    "latitude": 34.664013,
+    "longitude": 135.525162,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27109",
+    "cityName": "大阪市天王寺区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳をお持ちの方が対象。防災センター(北玄関)に障害者手帳を提示し割引手続きが必要。外来患者は精算機に駐車券・診察券を挿入し精算。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来患者・入院患者ご家族(入退院日のみ):3時間まで無料、以降30分毎200円、当日24時までの最大料金1,000円/一般の方:15分まで無料、以降30分毎300円、当日24時までの最大料金2,000円\n障害者割引: 駐車料金無料(終日)\n総台数: 423台",
+    "sourceUrl": "https://www.osaka-med.jrc.or.jp/access/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27111-001",
+    "name": "浪速区役所駐車場",
+    "address": "大阪府大阪市浪速区敷津東1-4-20",
+    "latitude": 34.659534,
+    "longitude": 135.499527,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27111",
+    "cityName": "大阪市浪速区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の交付を受けている方本人が運転する車両、または当該障がい者が乗車し他の方が運転する車両が対象。区役所内で用件のある窓口にて手帳を提示のうえ、駐車券とあわせて提示すると窓口で駐車無料券が発行される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 営業時間内 20分ごと200円\n障害者割引: 駐車料金全額免除(駐車無料券発行)\n総台数: 18台",
+    "sourceUrl": "https://www.osaka-city-callcenter.jp/faq/detail.aspx?id=1411",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27111-002",
+    "name": "大阪市立塩草地下駐車場",
+    "address": "大阪府大阪市浪速区塩草1丁目(浪速公園地下)",
+    "latitude": 34.66188,
+    "longitude": 135.492065,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27111",
+    "cityName": "大阪市浪速区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方本人が運転、または介護者運転の車に同乗する場合に適用。出庫時に駐車券と手帳等(ミライロID可)を提示。駐車料金を先に精算すると割引不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時~24時 40分までごとに200円、入庫後24時間までごとの上限900円\n障害者割引: 一時駐車料金及び上限料金が半額\n総台数: 133台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258258.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27111-003",
+    "name": "浪速スポーツセンター駐車場",
+    "address": "大阪府大阪市浪速区難波中3丁目8-8",
+    "latitude": 34.66098,
+    "longitude": 135.499725,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27111",
+    "cityName": "大阪市浪速区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "施設を利用し障がい者手帳を受付に提示した場合に適用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分250円(平日最大12時間1,000円、土日祝最大12時間1,500円)\n障害者割引: 1時間を超えた分の駐車料金が無料",
+    "sourceUrl": "https://cs-plaza.co.jp/naniwa-sc/charge",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27111-004",
+    "name": "石井記念愛染園附属愛染橋病院 障がい者用駐車場",
+    "address": "大阪府大阪市浪速区日本橋5-16-15",
+    "latitude": 34.657345,
+    "longitude": 135.505142,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27111",
+    "cityName": "大阪市浪速区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がいのある方が対象。障がい者用駐車区画(1台分)を無料で利用できる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 併設立体駐車場は2024年4月1日より利用中止(周辺提携駐車場は別途)\n障害者割引: 障がい者用駐車場1台を無料で利用可能",
+    "sourceUrl": "https://byouin.aizenen.or.jp/info/faq/",
+    "updatedAt": "2026-08-14T00:00:00Z"
   }
 ];
