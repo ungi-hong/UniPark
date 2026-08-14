@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 585
+// 件数: 594
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -13383,6 +13383,226 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 併設立体駐車場は2024年4月1日より利用中止(周辺提携駐車場は別途)\n障害者割引: 障がい者用駐車場1台を無料で利用可能",
     "sourceUrl": "https://byouin.aizenen.or.jp/info/faq/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27113-001",
+    "name": "西淀川区役所来庁者用駐車場",
+    "address": "大阪府大阪市西淀川区御幣島1丁目2番10号",
+    "latitude": 34.711246,
+    "longitude": 135.455872,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27113",
+    "cityName": "大阪市西淀川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳又は精神障がい者保健福祉手帳のいずれかの交付を受けている方が運転または同乗する車両が対象(区役所施設利用時に限る)。デジタル障がい者手帳「ミライロID」の提示でも可。開庁時間内に利用窓口で駐車券と手帳(またはミライロID)を提示して申し出る必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分ごと300円(24時間最大1000円、最大料金は1回限り)\n障害者割引: 無料(無料駐車サービス券発行)\n総台数: 29台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/nishiyodogawa/page/0000226422.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27114-001",
+    "name": "東淀川区役所駐車場",
+    "address": "大阪府大阪市東淀川区東淡路4丁目15番1号",
+    "latitude": 34.737885,
+    "longitude": 135.516174,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27114",
+    "cityName": "大阪市東淀川区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "区役所利用者のうち障がいのある方が運転または同乗する車両が対象。窓口で身体障害者手帳・精神障害者保健福祉手帳・療育手帳のいずれかを提示(障がい者手帳アプリ「ミライロID」の提示でも可)。駐車台数に限りがあるため公共交通機関の利用を推奨。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 60分300円、6時間最大500円(以降も同料金を反復適用)\n障害者割引: 無料(駐車料金全額免除)\n総台数: 27台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/higashiyodogawa/page/0000000457.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27114-002",
+    "name": "東淀川体育館駐車場",
+    "address": "大阪府大阪市東淀川区東中島4丁目4番4号",
+    "latitude": 34.732517,
+    "longitude": 135.505173,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27114",
+    "cityName": "大阪市東淀川区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者用区画利用者は通常料金の半額。駐車料金は前払い制で2階事務所受付にて現金精算。指定管理者:公益財団法人大阪スポーツみどり振興財団フィットネス21。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 午前・午後・夜間毎600円、2区分使用1,000円、全日(9時~21時)1,300円\n障害者割引: 通常料金の半額\n総台数: 15台",
+    "sourceUrl": "http://osakashi.opas.jp/chikubetu/facility_n/city_ward_higashiyodogawa/%E6%9D%B1%E6%B7%80%E5%B7%9D%E4%BD%93%E8%82%B2%E9%A4%A8/1003.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27114-003",
+    "name": "東淀川複合施設駐車場(HST東淀川屋内プール・東淀川図書館・東淀川区民会館)",
+    "address": "大阪府大阪市東淀川区東淡路1丁目4番53号",
+    "latitude": 34.733337,
+    "longitude": 135.519348,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27114",
+    "cityName": "大阪市東淀川区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "障がい者手帳等の提示で1回220円の定額料金が適用される(一般利用者の増分課金なし)。同建物は1階プール・2階トレーニング室・3階図書館・4階区民会館の複合施設で駐車場を共用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 施設利用者:最初の1時間220円(以降30分毎110円)、一般利用者:最初の1時間330円(以降1時間毎330円)\n障害者割引: 1回220円(定額)\n総台数: 20台",
+    "sourceUrl": "http://osakashi.opas.jp/chikubetu/facility_n/city_ward_higashiyodogawa/%EF%BC%A8%EF%BC%B3%EF%BC%B4%E6%9D%B1%E6%B7%80%E5%B7%9D%E5%B1%8B%E5%86%85%E3%83%97%E3%83%BC%E3%83%AB/982.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27115-001",
+    "name": "大阪市立東成スポーツセンター駐車場",
+    "address": "大阪府大阪市東成区東中本2-11-30",
+    "latitude": 34.67894,
+    "longitude": 135.547882,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27115",
+    "cityName": "大阪市東成区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がい者本人が利用する場合、出庫時等に証明書(障がい者手帳等)の提示が必要。障がい者用区画は1台分。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 2時間まで無料\n総台数: 18台",
+    "sourceUrl": "https://higashinarisc.sbt-csp.jp/archives/access/%E6%89%80%E5%9C%A8%E5%9C%B0%E8%A9%B3%E7%B4%B0%EF%BC%8F%E9%A7%90%E8%BB%8A%E5%A0%B4",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27116-001",
+    "name": "生野区役所駐車場",
+    "address": "大阪府大阪市生野区勝山南3-1-19",
+    "latitude": 34.654057,
+    "longitude": 135.534515,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27116",
+    "cityName": "大阪市生野区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳のいずれかを持つ方が運転する車両、またはその方が乗車し他の方が運転する車両が対象。手帳またはミライロIDを提示。高さ230cm超の車両は利用不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の30分300円、以降30分ごとに200円、24時間最大1,100円\n障害者割引: 無料(駐車料金が無料になる駐車無料券を発行)",
+    "sourceUrl": "https://www.city.osaka.lg.jp/ikuno/page/0000000473.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27116-002",
+    "name": "大阪市立生野屋内プール(メディプランプール生野)駐車場",
+    "address": "大阪府大阪市生野区桃谷3丁目8番18号",
+    "latitude": 34.660564,
+    "longitude": 135.535553,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27116",
+    "cityName": "大阪市生野区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳の提示が条件。2時間を超えた分は通常料金が適用される。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 一般30分200円・施設利用者60分200円、6時間最大800円\n障害者割引: 身体障害者は2時間無料、以降は通常料金(60分200円、6時間最大800円)\n総台数: 8台",
+    "sourceUrl": "https://www.cospa-wellness.co.jp/corp/ikuno-pool/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27117-001",
+    "name": "大阪市立芸術創造館・旭図書館駐車場",
+    "address": "大阪府大阪市旭区中宮1-11-14",
+    "latitude": 34.721626,
+    "longitude": 135.542526,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27117",
+    "cityName": "大阪市旭区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳のいずれかを持つ本人が運転、または同乗する車両が対象。芸術創造館窓口で手帳を提示して手続き。旭図書館と併設の地下駐車場。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 2時間まで30分ごとに100円、2~4時間600円、4時間以上1,000円\n障害者割引: 無料(芸術創造館の開館時間内に限る、9:15~22:45)\n総台数: 33台",
+    "sourceUrl": "https://geijutsusozokan.jp/facility/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27117-002",
+    "name": "大阪市立旭スポーツセンター駐車場",
+    "address": "大阪府大阪市旭区高殿5-3-25",
+    "latitude": 34.71674,
+    "longitude": 135.54071,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27117",
+    "cityName": "大阪市旭区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "受付にて駐車証明書と障がい者手帳を提示し、無料券を受け取る。24時間営業。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 60分毎200円(最大600円)\n障害者割引: 無料\n総台数: 6台",
+    "sourceUrl": "http://asahisc.sbt-csp.jp/",
     "updatedAt": "2026-08-14T00:00:00Z"
   }
 ];

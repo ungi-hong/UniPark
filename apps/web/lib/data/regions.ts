@@ -801,6 +801,31 @@ const cities: City[] = [
     "code": "27111",
     "name": "大阪市浪速区",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27113",
+    "name": "大阪市西淀川区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27114",
+    "name": "大阪市東淀川区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27115",
+    "name": "大阪市東成区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27116",
+    "name": "大阪市生野区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27117",
+    "name": "大阪市旭区",
+    "prefectureCode": "27"
   }
 ];
 
