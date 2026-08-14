@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 603
+// 件数: 621
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -13815,6 +13815,415 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 昼間(8:30~21:30)1時間毎200円、夜間(21:30~8:30)1時間毎100円、1日最大700円\n障害者割引: 2時間まで無料\n総台数: 19台",
     "sourceUrl": "http://osakashi.opas.jp/chikubetu/facility_s/city_ward_nishinari/%E3%83%95%E3%82%A3%E3%83%83%E3%83%88%E3%83%8D%E3%82%B9%EF%BC%92%EF%BC%91%E8%A5%BF%E6%88%90%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27123-001",
+    "name": "淀川区役所駐車場",
+    "address": "大阪府大阪市淀川区十三東2丁目3番3号",
+    "latitude": 34.72102,
+    "longitude": 135.486923,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27123",
+    "cityName": "大阪市淀川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の交付を受けている方が自ら運転する車両、または当該障がい者が乗車しその移動のために他の方が運転する車両が対象。駐車券と手帳を持参のうえ各階窓口に申し出る。ミライロID提示も可(画面で確認できない場合は原本提示が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 40分ごとに200円(24時間最大 平日800円・土日祝600円)\n障害者割引: 無料\n総台数: 32台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/yodogawa/page/0000037856.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27123-002",
+    "name": "大阪市立十三市民病院 駐車場",
+    "address": "大阪府大阪市淀川区野中北2丁目12番27号",
+    "latitude": 34.729,
+    "longitude": 135.476791,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27123",
+    "cityName": "大阪市淀川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けた方、またはその方が来院するために運転する方が対象。手帳を添えて駐車券を会計窓口・総合案内・時間外受付(警備員室)のいずれかに提示し認証を受ける。お見舞い・新型コロナワクチン接種利用は一般料金(対象外)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一般料金 1時間毎に330円(21時~7時は1時間毎110円)、24時間最大770円\n障害者割引: 無料",
+    "sourceUrl": "https://www.osakacity-hp.or.jp/juso/access.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27123-003",
+    "name": "新大阪駅南駐車場(大阪市立)",
+    "address": "大阪府大阪市淀川区西中島5丁目(新御堂筋高架下)",
+    "latitude": 34.731316,
+    "longitude": 135.500122,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27123",
+    "cityName": "大阪市淀川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(本人運転または介護者運転で同乗)が対象。ミライロID提示可。管理事務所で駐車券と手帳を提示して精算(先に精算機で精算すると適用不可)。定期券は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時~23時 30分ごとに350円、23時~翌7時 60分ごとに100円、24時間最大2,300円\n障害者割引: 一時駐車料金・上限料金とも半額\n総台数: 241台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258251.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27123-004",
+    "name": "新大阪駅南第2駐車場(大阪市立)",
+    "address": "大阪府大阪市淀川区西中島5丁目(新御堂筋高架下)",
+    "latitude": 34.731316,
+    "longitude": 135.500122,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27123",
+    "cityName": "大阪市淀川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(本人運転または介護者運転で同乗)が対象。ミライロID提示可。管理事務所で駐車券と手帳を提示して精算(先に精算機で精算すると適用不可)。定期券は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時~22時 30分ごとに350円、22時~翌7時 60分ごとに100円、24時間最大2,200円\n障害者割引: 一時駐車料金・上限料金とも半額\n総台数: 66台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258252.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27124-001",
+    "name": "大阪市鶴見区役所駐車場",
+    "address": "大阪府大阪市鶴見区横堤5-4-19",
+    "latitude": 34.704277,
+    "longitude": 135.574509,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27124",
+    "cityName": "大阪市鶴見区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者福祉手帳・療育手帳の交付を受けている方が、手続き等で区役所に来庁される際、窓口で手帳を提示すると駐車無料。管理事業者は日本駐車場メンテナンス株式会社。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 終日100円/30分\n障害者割引: 無料\n総台数: 20台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/tsurumi/page/0000384917.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27124-002",
+    "name": "鶴見区民センター・鶴見図書館駐車場",
+    "address": "大阪府大阪市鶴見区横堤5-3-15",
+    "latitude": 34.704643,
+    "longitude": 135.573578,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27124",
+    "cityName": "大阪市鶴見区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方が対象。駐車後に精算機で駐車券(駐車カード)を受け取り、鶴見区民センターまたは鶴見図書館の窓口で手帳とともに提示すると、無料化した駐車カードと交換される。鶴見図書館・鶴見区民センターの共用駐車場(タイムズ運営)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 9:00~22:00 30分110円、22:00~9:00 60分110円、駐車後24時間最大770円\n障害者割引: 無料\n総台数: 14台",
+    "sourceUrl": "https://www.oml.city.osaka.lg.jp/index.php?page_id=332",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27124-003",
+    "name": "花博記念公園鶴見緑地駐車場",
+    "address": "大阪府大阪市鶴見区緑地公園2-163",
+    "latitude": 34.709694,
+    "longitude": 135.576126,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27124",
+    "cityName": "大阪市鶴見区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "障がい者手帳等の公的証明書を提示。鶴見緑地パークセンター(対応時間9:00~17:30)まで駐車券と手帳等を持参して事前認証を受けるか、出口ゲートのインターホンで電話オペレーターに手帳等を提示。問合せ: 06-6911-8787。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 駐車場ごとに異なる(例: 中央第一駐車場 昼間300円/60分、平日上限700円・土日祝上限1,400円)。園内に中央第一(760台)、中央第二(239台)、南(360台)、南第二(141台)、北西(148台)、西(69台)の各駐車場あり。\n障害者割引: 24時間上限200円(鶴見緑地パークセンター事前認証)または300円(出口ゲート・電話オペレーター対応)\n総台数: 1717台",
+    "sourceUrl": "https://www.tsurumi-ryokuchi.jp/news/19614",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27125-001",
+    "name": "住之江公園駐車場",
+    "address": "大阪府大阪市住之江区南加賀屋1-1-117",
+    "latitude": 34.61256,
+    "longitude": 135.473618,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27125",
+    "cityName": "大阪市住之江区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳・被爆者健康手帳・特定疾患医療受給者証・小児慢性特定疾患医療受診券、またはミライロIDアプリの提示(普通自動車・小型自動車に乗車の場合が対象)。入庫時もしくは出庫時に管理事務所へ提示。早朝・夜間は出庫ゲートのインターホンで警備会社係員に連絡しカメラに提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜19:00 最初の1時間390円、以降1時間毎100円(ただし最初加算のみ110円)、平日最大800円(5時間超)・休日最大1,600円(12時間超)、19:00〜翌8:00は早朝夜間割引で一律300円\n障害者割引: 無料(全額免除)\n総台数: 63台",
+    "sourceUrl": "https://www.toshi-kouen.jp/staticpages/index.php/suminoe_facilities10",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27125-002",
+    "name": "大阪府咲洲庁舎駐車場",
+    "address": "大阪府大阪市住之江区南港北1-14-16",
+    "latitude": 34.638866,
+    "longitude": 135.415039,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27125",
+    "cityName": "大阪市住之江区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "1階正面玄関前の障がい者等用駐車スペース(6台)利用時のみ無料。障がい者手帳、被爆者健康手帳、障がい者等用駐車区画利用証のいずれかを警備員に提示し誘導に従う。地下駐車場に入庫した場合は料金免除の対象外。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 全日30分300円、当日1日最大料金 平日1,000円・土日祝1,200円(午前0時まで、以降繰返し適用)、利用時間6:00〜0:00\n障害者割引: 無料\n総台数: 173台",
+    "sourceUrl": "https://www.pref.osaka.lg.jp/faq/o040070/faq_001910.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27125-003",
+    "name": "ATC(アジア太平洋トレードセンター)駐車場",
+    "address": "大阪府大阪市住之江区南港北2-1-10",
+    "latitude": 34.638329,
+    "longitude": 135.412613,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27125",
+    "cityName": "大阪市住之江区",
+    "accessibleSpaceTotal": 21,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・指定難病登録者証等をお持ちの方(本人運転、または介護者が運転する車に同乗の場合)が対象。精算機のインターホンで申し出(清算後は対応不可)。身障者用駐車場はITM(第1)駐車場12台/O's(第2)駐車場9台。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 21
+      }
+    ],
+    "notes": "通常料金: 300円/30分毎、最大料金/1日 平日1,000円・土日祝特定日1,200円、営業時間7:00〜24:00\n障害者割引: 1時間分の駐車料金無料サービス\n総台数: 1200台",
+    "sourceUrl": "https://www.atc-co.com/guide/access",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27126-001",
+    "name": "平野区役所駐車場",
+    "address": "大阪府大阪市平野区背戸口3丁目8番19号",
+    "latitude": 34.621017,
+    "longitude": 135.546494,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27126",
+    "cityName": "大阪市平野区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳のいずれかを持つ方が自ら運転する車両、またはその方が乗車し移動のために他の方が運転する車両が対象。お手続きをする窓口にて手帳等と駐車券を提示し、駐車無料券の交付を受ける必要がある(先に精算すると割引不可)。営業時間外は出入庫不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 入庫から60分ごとに300円(営業時間中の最大料金600円)\n障害者割引: 無料\n総台数: 43台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/hirano/page/0000039470.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27126-002",
+    "name": "大阪市立平野図書館 障がい者用駐車場",
+    "address": "大阪府大阪市平野区平野東1-8-2",
+    "latitude": 34.624668,
+    "longitude": 135.559143,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27126",
+    "cityName": "大阪市平野区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "一般来館者用駐車場は無く、障がい者用のみ2台設置され無料で利用可能。詳細は図書館(06-6793-0881)へ要問合せ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.oml.city.osaka.lg.jp/page/372.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27126-003",
+    "name": "平野スポーツセンター駐車場",
+    "address": "大阪府大阪市平野区平野南4-6-1",
+    "latitude": 34.61813,
+    "longitude": 135.560059,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27126",
+    "cityName": "大阪市平野区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がい者は証明書(障害者手帳等)の提示で2時間まで無料。駐車券が必要で、施設利用の確認を行った上で割引処理される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:30~21:30 60分毎200円、21:30~8:30 120分毎100円、24時間最大700円(北側:屋内12台+屋外3台、南側:屋外16台)\n障害者割引: 2時間まで無料\n総台数: 31台",
+    "sourceUrl": "https://hiranosc.sbt-csp.jp/archives/access/%E6%89%80%E5%9C%A8%E5%9C%B0%E8%A9%B3%E7%B4%B0%EF%BC%8F%E9%A7%90%E8%BB%8A%E5%A0%B4",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27127-001",
+    "name": "大阪市北区役所地下駐車場",
+    "address": "大阪府大阪市北区扇町2丁目1番27号",
+    "latitude": 34.705719,
+    "longitude": 135.510284,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27127",
+    "cityName": "大阪市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "北区役所・区民センターを利用した方で、身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の交付を受けている方が運転または同乗する車両が対象。利用した窓口へ駐車券と手帳を提示して申し出ること。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日8時〜17時: 最初30分300円、以後20分毎300円/平日17時〜22時: 20分毎300円/土日祝: 終日20分毎300円/24時間最大1,800円\n障害者割引: 利用時間分のサービス券発行(無料)\n総台数: 38台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kita/page/0000215984.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27127-002",
+    "name": "大阪市役所本庁舎駐車場",
+    "address": "大阪府大阪市北区中之島1丁目3番20号",
+    "latitude": 34.693871,
+    "longitude": 135.501282,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27127",
+    "cityName": "大阪市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳のいずれかの交付を受けている方が運転または同乗する車両が対象。出庫時に出口ゲート精算機で手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 終日20分毎300円、24時間最大2,500円(利用時間: 月〜金7時〜23時、祝日・振替休日・12/29〜1/3を除く)\n障害者割引: 必要時間無料\n総台数: 100台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/somu/page/0000004215.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27127-003",
+    "name": "大阪市立大阪駅前地下駐車場",
+    "address": "大阪府大阪市北区梅田1丁目3番地先",
+    "latitude": 34.698891,
+    "longitude": 135.49646,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27127",
+    "cityName": "大阪市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(ミライロID提示可)を管理事務所係員に駐車券とあわせて提示。駐車料金を先に精算すると割引不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 6時〜23時: 60分700円/23時〜翌6時: 60分350円\n障害者割引: 一時駐車料金及び上限料金 半額\n総台数: 340台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258262.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27127-004",
+    "name": "大阪市立扇町通地下駐車場",
+    "address": "大阪府大阪市北区扇町1丁目1番20号",
+    "latitude": 34.702637,
+    "longitude": 135.508713,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27127",
+    "cityName": "大阪市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(ミライロID提示可)を管理事務所係員に駐車券とあわせて提示。駐車料金を先に精算すると割引不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時〜22時: 30分300円/22時〜翌8時: 60分100円/当日1日上限1,600円(24時まで)\n障害者割引: 一時駐車料金及び上限料金 半額\n総台数: 262台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258263.html",
+    "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27127-005",
+    "name": "大阪市立豊崎地下駐車場",
+    "address": "大阪府大阪市北区豊崎3丁目21号",
+    "latitude": 34.709175,
+    "longitude": 135.49707,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27127",
+    "cityName": "大阪市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳(ミライロID提示可)を管理事務所係員に駐車券とあわせて提示。駐車料金を先に精算すると割引不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時〜23時: 30分350円/23時〜翌7時: 30分150円/当日1日上限1,900円(24時まで)\n障害者割引: 一時駐車料金及び上限料金 半額(定期券利用者は対象外)\n総台数: 116台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258254.html",
     "updatedAt": "2026-08-14T00:00:00Z"
   }
 ];
