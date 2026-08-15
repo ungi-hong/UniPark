@@ -871,6 +871,31 @@ const cities: City[] = [
     "code": "27127",
     "name": "大阪市北区",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27128",
+    "name": "大阪市中央区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27141",
+    "name": "堺市堺区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27142",
+    "name": "堺市中区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27143",
+    "name": "堺市東区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27144",
+    "name": "堺市西区",
+    "prefectureCode": "27"
   }
 ];
 

@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 621
+// 件数: 649
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -14225,5 +14225,651 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 7時〜23時: 30分350円/23時〜翌7時: 30分150円/当日1日上限1,900円(24時まで)\n障害者割引: 一時駐車料金及び上限料金 半額(定期券利用者は対象外)\n総台数: 116台",
     "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258254.html",
     "updatedAt": "2026-08-14T00:00:00Z"
+  },
+  {
+    "id": "27128-001",
+    "name": "大阪市中央区役所地下駐車場",
+    "address": "大阪府大阪市中央区久太郎町1丁目2番27号",
+    "latitude": 34.681446,
+    "longitude": 135.509827,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳の交付を受けている方が運転する車両または同乗する車両は無料。障がい者手帳アプリ「ミライロID」の提示でも適用可（スマホ画面で確認できない場合は原本提示）。出口の駐車場管理室または5階54番総務課窓口に手帳等を提示。区役所・保健福祉センターの開庁時間内に限る。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 月～金曜日 9時～19時 20分300円、19時～翌9時 30分100円（最大料金 9時～19時 1,900円、19時～翌9時 400円）／土曜日・日曜日・国民の祝日・国民の休日 9時～19時 30分100円、19時～翌9時 60分100円（最大料金 9時～19時 1,000円、19時～翌9時 400円）\n障害者割引: 無料\n総台数: 41台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/chuo/page/0000360071.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-002",
+    "name": "大阪府庁本館西側駐車場",
+    "address": "大阪府大阪市中央区大手前2丁目（大阪府庁本館と大阪府公館の間）",
+    "latitude": 34.687008,
+    "longitude": 135.519318,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "利用者または同乗者が障がい者手帳または被爆者健康手帳を提示した場合、開庁日の7時から20時までの利用料金が無料。駐車場内西側に障がい者等用駐車スペースあり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 全日30分400円（駐車後12時間まで最大料金2,500円、繰り返し適用）\n障害者割引: 開庁日7時～20時は無料\n総台数: 55台",
+    "sourceUrl": "https://www.pref.osaka.lg.jp/o040070/yodo/chuushajyou/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-003",
+    "name": "大阪城前駐車場（大阪府庁分館6号館東側）",
+    "address": "大阪府大阪市中央区大手前（大阪府庁分館6号館東側）",
+    "latitude": 34.690132,
+    "longitude": 135.519943,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "利用者または同乗者が障がい者手帳または被爆者健康手帳を提示した場合、開庁日の7時から20時までの利用料金が無料。駐車場内に障がい者等用駐車スペースあり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 全日30分400円（駐車後12時間まで最大料金2,500円、繰り返し適用）\n障害者割引: 開庁日7時～20時は無料\n総台数: 59台",
+    "sourceUrl": "https://www.pref.osaka.lg.jp/o040070/yodo/chuushajyou/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-004",
+    "name": "大阪府立男女共同参画・青少年センター（ドーンセンター）駐車場",
+    "address": "大阪府大阪市中央区大手前1丁目3番49号",
+    "latitude": 34.689968,
+    "longitude": 135.520569,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "ドーンセンター利用者で障がい者手帳をお持ちの方は、センター利用時間内に限り駐車場料金を全額免除。駐車券と障がい者手帳を2階総合受付に持参し、施設利用内容確認後に手帳確認済みの記録、出庫時に係員へ確認済み駐車券を提示して無料精算。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに200円、最大料金（24時間以内）2,400円\n障害者割引: 全額免除\n総台数: 92台",
+    "sourceUrl": "https://www.dawncenter.jp/shisetsu/park.php",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-005",
+    "name": "大阪国際がんセンター駐車場",
+    "address": "大阪府大阪市中央区大手前3丁目1番69号",
+    "latitude": 34.685032,
+    "longitude": 135.519012,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "「身体障がい者手帳」「療育手帳」「精神障がい者保健福祉手帳」をお持ちの方、デジタル障害者手帳「ミライロID」をお持ちの方、血液及び骨髄提供者の方は無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 患者さま1日1回400円／その他の方30分まで（超過30分毎）400円（500円）、1日最大料金上限なし\n障害者割引: 無料\n総台数: 175台",
+    "sourceUrl": "https://oici.jp/hospital/patient/nyuuinmachi/cyushajyo/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-006",
+    "name": "大阪歴史博物館地下駐車場",
+    "address": "大阪府大阪市中央区大手前4丁目1番32号",
+    "latitude": 34.683029,
+    "longitude": 135.521225,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳等の提示で駐車料金が半額。出庫前に駐車場管理窓口へ立ち寄る必要あり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間500円、以降30分ごとに200円（高さ2.1mまでの乗用車）\n障害者割引: 半額\n総台数: 120台",
+    "sourceUrl": "https://www.osakamushis.jp/about/faq.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-007",
+    "name": "大阪市立安土町地下駐車場",
+    "address": "大阪府大阪市中央区安土町3丁目",
+    "latitude": 34.684418,
+    "longitude": 135.502136,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方が利用（本人運転または介護者運転の車に同乗）される場合、一時駐車料金及び上限料金が半額。ミライロIDの提示でも適用可。駐車料金を先に精算すると割引不可。定期券は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時～24時 30分までごとに350円、上限料金 入庫後24時間までごとに2,000円\n障害者割引: 半額\n総台数: 527台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258268.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-008",
+    "name": "大阪市立谷町筋地下駐車場",
+    "address": "大阪府大阪市中央区谷町1・2丁目",
+    "latitude": 34.688431,
+    "longitude": 135.517487,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方が利用（本人運転または介護者運転の車に同乗）される場合、一時駐車料金及び上限料金が半額。ミライロIDの提示でも適用可。駐車料金を先に精算すると割引不可。定期券は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時～24時 30分までごとに350円、上限料金 入庫後24時間までごとに1,800円（日祝は900円）\n障害者割引: 半額\n総台数: 211台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258493.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-009",
+    "name": "大阪市立法円坂駐車場",
+    "address": "大阪府大阪市中央区法円坂2丁目（中央大通高架下）",
+    "latitude": 34.680103,
+    "longitude": 135.519852,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方が利用（本人運転または介護者運転の車に同乗）される場合、一時駐車料金及び上限料金が半額。ミライロIDの提示でも適用可。駐車料金を先に精算すると割引不可。定期券は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 第1ブロック・第2ブロックとも 0時～24時 30分までごとに350円、上限料金 入庫後24時間までごとに1,700円\n障害者割引: 半額\n総台数: 501台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258257.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-010",
+    "name": "大阪市立長堀通地下駐車場",
+    "address": "大阪府大阪市中央区南船場2～4丁目",
+    "latitude": 34.676491,
+    "longitude": 135.504868,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方が利用（本人運転または介護者運転の車に同乗）される場合、一時駐車料金及び上限料金が半額。ミライロIDの提示でも適用可。駐車料金を先に精算すると割引不可。定期券は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時～24時 30分までごとに350円、当日1日上限料金（24時まで）1,500円（土日祝は1,700円）\n障害者割引: 半額\n総台数: 1030台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258273.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27128-011",
+    "name": "大阪市立東長堀地下駐車場",
+    "address": "大阪府大阪市中央区南船場1丁目",
+    "latitude": 34.676468,
+    "longitude": 135.508621,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27128",
+    "cityName": "大阪市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの方が利用（本人運転または介護者運転の車に同乗）される場合、一時駐車料金及び上限料金が半額。ミライロIDの提示でも適用可。駐車料金を先に精算すると割引不可。定期券は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0時～24時 30分までごとに350円、上限料金 入庫後24時間までごとに1,400円\n障害者割引: 半額\n総台数: 270台",
+    "sourceUrl": "https://www.city.osaka.lg.jp/kensetsu/page/0000258280.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-001",
+    "name": "大仙公園第1駐車場",
+    "address": "大阪府堺市堺区旭ヶ丘北町5丁256番地",
+    "latitude": 34.558056,
+    "longitude": 135.479996,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、またはミライロID画面提示で全額免除。自動精算機設置駐車場では精算機横の受話器でコールセンターへ申し出た後、手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 普通乗用車等：2時間まで200円、2時間超3時間まで300円、3時間超4時間まで400円、4時間超5時間まで500円、5時間超閉門まで600円（バス・マイクロバスは1回1,000円）\n障害者割引: 無料（全額免除）\n総台数: 127台",
+    "sourceUrl": "https://sakai-park.or.jp/access/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-002",
+    "name": "大仙公園第3駐車場",
+    "address": "大阪府堺市堺区百舌鳥夕雲町2丁151番地",
+    "latitude": 34.559666,
+    "longitude": 135.486862,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、またはミライロID画面提示で全額免除。堺市博物館の来館者もこの駐車場を利用。自動精算機設置駐車場では精算機横の受話器でコールセンターへ申し出た後、手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 普通乗用車等：2時間まで200円、2時間超3時間まで300円、3時間超4時間まで400円、4時間超5時間まで500円、5時間超閉門まで600円（バス・マイクロバスは1回1,000円）\n障害者割引: 無料（全額免除）\n総台数: 113台",
+    "sourceUrl": "https://sakai-park.or.jp/access/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-003",
+    "name": "大浜公園駐車場",
+    "address": "大阪府堺市堺区大浜北町4丁3番50号",
+    "latitude": 34.580994,
+    "longitude": 135.461838,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、またはミライロID画面提示で全額免除。自動精算機設置駐車場では精算機横の受話器でコールセンターへ申し出た後、手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 普通乗用車等：2時間まで200円、2時間超3時間まで300円、3時間超4時間まで400円、4時間超5時間まで500円、5時間超閉門まで600円（バス・マイクロバスは1回1,000円）\n障害者割引: 無料（全額免除）\n総台数: 270台",
+    "sourceUrl": "https://sakai-park.or.jp/access/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-004",
+    "name": "大浜公園野球場駐車場",
+    "address": "大阪府堺市堺区大浜北町4丁3番50号",
+    "latitude": 34.580994,
+    "longitude": 135.461838,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、またはミライロID画面提示で全額免除。自動精算機設置駐車場では精算機横の受話器でコールセンターへ申し出た後、手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通乗用車等：2時間まで200円、2時間超3時間まで300円、3時間超4時間まで400円、4時間超5時間まで500円、5時間超閉門まで600円\n障害者割引: 無料（全額免除）\n総台数: 70台",
+    "sourceUrl": "https://sakai-park.or.jp/access/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-005",
+    "name": "堺市役所本庁舎駐車場（堺区役所）",
+    "address": "大阪府堺市堺区南瓦町3番1号",
+    "latitude": 34.573673,
+    "longitude": 135.482986,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 13,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "車いす利用者、障害のある方、妊娠中の方、未就学児連れ、松葉杖利用者など移動に配慮が必要な方が市役所・区役所に用務で来庁した場合、用務先窓口で障害者手帳等（身体障害者手帳・療育手帳・精神保健福祉手帳・ミライロID・母子手帳等）と駐車券を提示すると所要時間分の無料券を受け取れる。正面玄関前にゆずりあい駐車区画4区画あり（立体6区画・地下3区画は別途）。展望ロビーや食堂のみの利用は対象外。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 13
+      }
+    ],
+    "notes": "通常料金: 立体駐車場：30分200円／地下駐車場：3時間まで200円、以降3時間ごと200円（開庁日）。閉庁日はいずれも1日最大500円。\n障害者割引: 所要時間分無料（無料券発行）\n総台数: 130台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/shisei/gaiyo/annai/siyakusyosimintyuusyajou.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-006",
+    "name": "フェニーチェ堺駐車場",
+    "address": "大阪府堺市堺区翁橋町2-1-1",
+    "latitude": 34.572079,
+    "longitude": 135.479675,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害のある方専用の駐車スペース（3台）は無料。専用スペース満車等で敷地内有料駐車スペースを利用した場合は、総合受付窓口で駐車券と障害者手帳等（身体障害者手帳・療育手帳・精神障害者手帳またはミライロID）を提示すると駐車料金無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分200円（最大料金の適用なし）\n障害者割引: 無料\n総台数: 94台",
+    "sourceUrl": "https://www.fenice-sacay.jp/about/barrier-free/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27141-007",
+    "name": "堺市立健康福祉プラザ駐車場",
+    "address": "大阪府堺市堺区旭ヶ丘中町4丁3番1号",
+    "latitude": 34.558006,
+    "longitude": 135.476456,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27141",
+    "cityName": "堺市堺区",
+    "accessibleSpaceTotal": 15,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等（身体障害者手帳、障害福祉サービス受給者証、指定難病に係る医療費受給証等）を提示すると1時間超過分を含め駐車料金全額免除。詳細は市民交流センター（072-275-5017）へ問い合わせ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 15
+      }
+    ],
+    "notes": "通常料金: 1時間まで無料、1時間超2時間まで200円、2時間超3時間まで300円、3時間超4時間まで400円、4時間超5時間まで500円、5時間超閉場まで600円\n障害者割引: 無料（全額免除）\n総台数: 77台",
+    "sourceUrl": "http://www.sakai-kfp.info/html/access.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27142-001",
+    "name": "堺市中区役所駐車場",
+    "address": "大阪府堺市中区深井沢町2470-7",
+    "latitude": 34.528427,
+    "longitude": 135.498566,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27142",
+    "cityName": "堺市中区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(ミライロID提示可)をお持ちの方は、区役所窓口で手帳等と駐車券を提示し所要時間を申し出ることで、用務で来庁した所要時間分の駐車料金が無料になる。区役所窓口での駐車券提示による一般来庁者向け1時間無料とは別措置。駐車場入口付近に車いす使用者用駐車区画2区画、ゆずりあい駐車区画2区画を設置(大阪府障がい者等用駐車区画利用証制度協力施設)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 午前8時から午後6時までは最初の1時間200円、以後30分ごとに100円。午後6時から翌午前8時までは60分ごとに100円(夜間最大料金300円)\n障害者割引: 所要時間無料",
+    "sourceUrl": "https://www.city.sakai.lg.jp/naka/annai/access_yasashiinihongo/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27142-002",
+    "name": "堺市教育文化センター(ソフィア・堺)駐車場",
+    "address": "大阪府堺市中区深井清水町1426",
+    "latitude": 34.534042,
+    "longitude": 135.491669,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27142",
+    "cityName": "堺市中区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちの方は駐車料金が無料減免。1階の中文化会館事務所で手帳と駐車券を提示して手続きが必要。総台数134台のうち身体障害者用3台、ゆずりあい駐車区画1台を設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 入庫後30分は無料、以降30分ごとに100円\n障害者割引: 無料\n総台数: 134台",
+    "sourceUrl": "https://www.sofia-sakai.jp/about/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27142-003",
+    "name": "原池公園体育館駐車場",
+    "address": "大阪府堺市中区八田寺町320",
+    "latitude": 34.528957,
+    "longitude": 135.478668,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27142",
+    "cityName": "堺市中区",
+    "accessibleSpaceTotal": 7,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "堺市発行の一覧(市内公共施設における駐車場料金)にて身体障害者手帳・療育手帳・精神障害者保健福祉手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証の提示で駐車料金の割引対象施設として掲載。割引の具体的な割合・上限等は施設により異なるため要問合せ(TEL 072-278-1004)。総台数453台のうち身障者用スペース7台を設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 普通車:30分まで無料、30分以上2時間まで200円、以降1時間ごとに100円(1日最大1,000円)。バス:1日1回1,500円\n障害者割引: 障害者手帳等提示による駐車料金の割引\n総台数: 453台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/waribiki2.files/2025tyusyajyou.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27143-001",
+    "name": "東区役所駐車場",
+    "address": "大阪府堺市東区日置荘原寺町195番地1",
+    "latitude": 34.538452,
+    "longitude": 135.536819,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27143",
+    "cityName": "堺市東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(スマートフォンアプリ「ミライロID」の提示も可)をお持ちの方が、区役所に用事で来られた際、行き先の窓口で手帳と駐車券を提示し所要時間をお申し付けることで、その所要時間分の駐車料金が無料になる。1階案内係では手続き不可、行き先窓口でのみ手続き可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日8時~18時: 最初の1時間200円、以後30分毎に100円(上限設定なし)／平日18時~8時: 60分100円(最大300円)／休日8時~18時: 最初の1時間200円、以後30分毎に100円(最大600円)／休日18時~8時: 60分100円(最大300円)\n障害者割引: 所要時間分無料",
+    "sourceUrl": "https://www.city.sakai.lg.jp/higashi/annai/access/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27143-002",
+    "name": "初芝体育館駐車場",
+    "address": "大阪府堺市東区野尻町221-4",
+    "latitude": 34.539497,
+    "longitude": 135.522629,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27143",
+    "cityName": "堺市東区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、難病医療受給証、小児慢性特定疾病医療受給証、特定疾患医療受給証、被爆者健康手帳のいずれかを所持する者(または同伴の保護者)が体育館受付にて提示した場合、駐車料金を無料とする。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入庫から30分まで無料、30分超~2時間200円、2時間超~3時間300円、3時間超~4時間400円、4時間超~5時間500円、5時間超~閉場まで600円\n障害者割引: 無料\n総台数: 98台",
+    "sourceUrl": "https://hatsushiba-taiikukan.com/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27143-003",
+    "name": "堺市立東文化会館 ベルヒル駐車場(ベルヒル北野田6・7階)",
+    "address": "大阪府堺市東区北野田1084-136",
+    "latitude": 34.52737,
+    "longitude": 135.548828,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27143",
+    "cityName": "堺市東区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等(身体障害者手帳・療育手帳・精神障害者保健福祉手帳等)をお持ちの方は受付にその旨お申し出いただくと駐車料金が無料になる。大阪府障がい者等専用駐車区画利用認証制度協力施設で、車いす使用者駐車区画(6階・7階各1区画)およびゆずりあい駐車区画(6階・7階各1区画)を設置。当館利用者は必ず6階・7階に駐車すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分150円(最初の30分は無料)。当館利用者は受付提示で60%割引(6階・7階駐車の場合のみ、3階駐車は割引対象外)\n障害者割引: 無料",
+    "sourceUrl": "https://www.sakai-higashibunka.jp/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27144-001",
+    "name": "堺市西区役所駐車場(第一・第二駐車場)",
+    "address": "大阪府堺市西区鳳東町6丁600",
+    "latitude": 34.535034,
+    "longitude": 135.46405,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27144",
+    "cityName": "堺市西区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを持参し、区役所の用務先窓口で手帳と駐車券を提示、所要時間を申し出ることで無料。ミライロID提示でも可。一般来庁者は窓口でサービス券発行を受ければ1時間まで無料。第1・第2駐車場それぞれに車いす使用者用駐車区画1区画、ゆずりあい駐車区画1区画あり(大阪府障がい者等用駐車区画利用証制度協力施設)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 第一駐車場: 8:00-22:00 最初の1時間200円、以降30分ごとに100円(最大600円)/22:00-8:00 1時間ごとに100円(最大300円)。第二駐車場: 8:00-22:00 最初の1時間200円、以降30分ごとに100円(最大700円)/22:00-8:00 最初の1時間200円、以降30分ごとに100円(最大300円)\n障害者割引: 用務所要時間は無料",
+    "sourceUrl": "https://www.city.sakai.lg.jp/nishi/annai/chizu.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27144-002",
+    "name": "大仙公園第2駐車場",
+    "address": "大阪府堺市西区上野芝町1",
+    "latitude": 34.553326,
+    "longitude": 135.480316,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27144",
+    "cityName": "堺市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証の提示で全額免除。運営は公益財団法人堺市公園協会(072-245-0070)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車: 1時間200円、2時間まで300円、3時間まで400円、4時間まで500円、5時間以降600円(1日最大)\n障害者割引: 全額免除\n総台数: 144台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/waribiki2.files/2025tyusyajyou.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27144-003",
+    "name": "家原大池公園体育館前・公園前駐車場",
+    "address": "大阪府堺市西区家原寺町1-18-1",
+    "latitude": 34.536457,
+    "longitude": 135.47084,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27144",
+    "cityName": "堺市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "体育館受付に駐車券を持参し、身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、またはミライロIDを提示することで駐車料金が全額減免。営業時間8:00-21:30。問合せ: 家原大池体育館 072-271-1718。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の2時間200円、以降1時間毎100円、最大600円\n障害者割引: 全額減免\n総台数: 109台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kurashi/koen/shokai/ebaraooike.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27144-004",
+    "name": "浜寺公園駐車場(第1〜第5駐車場)",
+    "address": "大阪府堺市西区浜寺公園町",
+    "latitude": 34.544964,
+    "longitude": 135.443848,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27144",
+    "cityName": "堺市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳・特定疾患医療受給者証・小児慢性特定疾病医療受給者証等の交付を受けている方が乗車している場合、出庫時に係員へ手帳(またはミライロID)を提示することで駐車料金が免除。運営: 一般財団法人大阪府公園協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車 24時間以内1,350円(大型車は4時間以内1,050円、24時間以内2,100円)\n障害者割引: 無料(全額免除)\n総台数: 1085台",
+    "sourceUrl": "https://hamadera.osaka-park.or.jp/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
   }
 ];
