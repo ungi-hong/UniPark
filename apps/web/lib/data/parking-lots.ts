@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 649
+// 件数: 671
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -14870,6 +14870,517 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車 24時間以内1,350円(大型車は4時間以内1,050円、24時間以内2,100円)\n障害者割引: 無料(全額免除)\n総台数: 1085台",
     "sourceUrl": "https://hamadera.osaka-park.or.jp/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27145-001",
+    "name": "堺市南区役所駐車場(第1・第2)",
+    "address": "大阪府堺市南区桃山台1丁1番1号",
+    "latitude": 34.486538,
+    "longitude": 135.490402,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27145",
+    "cityName": "堺市南区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示で、用務にかかった時間相当分の駐車料金が無料になる無料券が発行される。駐車券を最終用務先窓口に提示し、所要時間分の処理を受ける。大阪府障がい者等用駐車区画利用証制度協力施設で、車いす使用者用駐車区画2区画・ゆずりあい駐車区画2区画を設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 来庁者は最初の60分無料。以降は有料(区画・時間帯により異なる、詳細は運営会社へ要確認)\n障害者割引: 無料(来庁の所要時間相当分)\n総台数: 393台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/minami/annai/chizu/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27145-002",
+    "name": "荒山公園(P1・P2・P3・臨時)駐車場",
+    "address": "大阪府堺市南区宮山台2-3",
+    "latitude": 34.502922,
+    "longitude": 135.496719,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27145",
+    "cityName": "堺市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証の提示で、有料期間中の駐車料金が全額免除。駐車場入口付近の詰所係員に手帳等を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 通常は無料。梅・桜の時期(例年2月上旬〜4月上旬)のみ全駐車場有料: 普通車500円、マイクロバス1,000円、バス(大型・中型)2,000円(利用時間7:30-18:30)\n障害者割引: 全額免除\n総台数: 90台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/waribiki2.files/2025tyusyajyou.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27145-003",
+    "name": "大蓮公園駐車場(タイムズ大蓮公園)",
+    "address": "大阪府堺市南区若松台2-5",
+    "latitude": 34.49144,
+    "longitude": 135.511368,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27145",
+    "cityName": "堺市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証の提示で全額免除。自動精算機右側の受話器でコールセンターへ減免を申し出た後、手帳を提示。ミライロID対応。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(平日は当日1日最大料金700円・24時迄、土日祝は最大料金の適用なし)\n障害者割引: 全額免除\n総台数: 31台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/waribiki2.files/2025tyusyajyou.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27145-004",
+    "name": "堺市立ビッグバン駐車場(第1・第2)",
+    "address": "大阪府堺市南区茶山台1-9-1",
+    "latitude": 34.493732,
+    "longitude": 135.513275,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27145",
+    "cityName": "堺市南区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳など公的機関発行の手帳を提示した利用者は駐車料金無料。第1駐車場に障害者専用区画5台、第2駐車場(入館口まで約400m)に1台設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 第1駐車場: 3時間まで700円、以降1時間毎300円(平日当日最大1,000円、土日祝最大料金なし)。第2駐車場: 平日60分200円(当日最大500円)、休日3時間まで700円・以降60分毎300円(最大料金なし)\n障害者割引: 無料\n総台数: 158台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/shisei/toshi/senbokusaisei/alacarte/bigbang/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27146-001",
+    "name": "堺市北区役所・北図書館・北保健センター駐車場",
+    "address": "大阪府堺市北区新金岡町5丁1番4号",
+    "latitude": 34.565651,
+    "longitude": 135.515381,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27146",
+    "cityName": "堺市北区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを窓口で提示(ミライロIDの提示でも可)すると所要時間の駐車料金が無料。一般来庁者(区役所・図書館利用)は駐車券を窓口提示で1時間まで無料。車いす使用者用駐車区画2区画、ゆずりあい駐車区画2区画あり(大阪府障がい者等用駐車区画利用証制度協力施設)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 最初の1時間200円、以後30分ごとに100円(最大料金の設定なし)\n障害者割引: 無料(所要時間分)",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kita/annai/access_kita/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27146-002",
+    "name": "堺市三国ヶ丘庁舎市民駐車場",
+    "address": "大阪府堺市北区百舌鳥赤畑町1丁3番1",
+    "latitude": 34.563251,
+    "longitude": 135.492233,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27146",
+    "cityName": "堺市北区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を持つ本人または同乗者で用務来庁の場合、用務先窓口で手帳と駐車券を提示すると所要時間分の駐車料金が無料。一般来庁者は用務先窓口で1時間無料券を配布。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 最初の1時間200円、以降30分毎100円(平日18時〜翌8時、土日祝終日は最大料金500円)\n障害者割引: 無料(所要時間分)\n総台数: 20台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/shisei/gaiyo/annai/mikunigaokacyousya.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27146-003",
+    "name": "金岡公園南駐車場",
+    "address": "大阪府堺市北区長曽根町1179-18",
+    "latitude": 34.57233,
+    "longitude": 135.504929,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27146",
+    "cityName": "堺市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、または障害者手帳アプリ「ミライロID」の提示で駐車料金が全額減免。運営は公益財団法人堺市公園協会(072-245-0070)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車: 2時間まで200円(以降1時間毎100円、1日最大600円)、中型車以上: 1日1回1000円\n障害者割引: 全額減免(無料)\n総台数: 271台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kurashi/koen/shokai/kanaoka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27146-004",
+    "name": "金岡公園北駐車場",
+    "address": "大阪府堺市北区長曽根町1179-18",
+    "latitude": 34.57233,
+    "longitude": 135.504929,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27146",
+    "cityName": "堺市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証、または障害者手帳アプリ「ミライロID」の提示で駐車料金が全額減免。運営は公益財団法人堺市公園協会(072-245-0070)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車: 2時間まで200円(以降1時間毎100円、1日最大600円)、中型車以上: 1日1回1000円(土曜・日曜・祝日のみ営業)\n障害者割引: 全額減免(無料)\n総台数: 135台",
+    "sourceUrl": "https://www.city.sakai.lg.jp/kurashi/koen/shokai/kanaoka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27146-005",
+    "name": "堺市立のびやか健康館 駐車場",
+    "address": "大阪府堺市北区金岡町2760-1",
+    "latitude": 34.558048,
+    "longitude": 135.527603,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27146",
+    "cityName": "堺市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を受付窓口で駐車券とともに提示すると駐車料金が無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分無料、3時間まで100円、以降1時間ごと100円\n障害者割引: 無料\n総台数: 220台",
+    "sourceUrl": "https://www.cospa-wellness.co.jp/corp/nobiyaka/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27146-006",
+    "name": "大泉緑地 駐車場(第1〜第3駐車場)",
+    "address": "大阪府堺市北区金岡町128",
+    "latitude": 34.566017,
+    "longitude": 135.524185,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27146",
+    "cityName": "堺市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳(またはミライロID)の交付を受けた方が乗車している場合、出庫時に係員へ申し出て手帳等を提示すると駐車料金が全額免除。係員不在時は出庫ゲートのインターホンまたは管理事務所(072-259-0316)へ連絡。運営: 一般財団法人大阪府公園協会。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車: 入庫〜1時間190円/390円(土日祝)、以降段階加算、最大24時間800円(平日)/1,490円(土日祝)。大型バス4時間まで520円(平日)/1,050円(土日祝)\n障害者割引: 全額免除(無料)\n総台数: 787台",
+    "sourceUrl": "https://oizumi.osaka-park.or.jp/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-001",
+    "name": "タイムズ豊中市役所自動車駐車場(豊中市役所来庁者用駐車場)",
+    "address": "大阪府豊中市中桜塚3丁目1番1号",
+    "latitude": 34.781261,
+    "longitude": 135.469757,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、小児慢性特定疾病医療受給者証、特定疾患医療受給者証、特定医療費(指定難病)受給者証の交付を受けている人が対象。開庁時(8:45-17:15)は第一庁舎・第二庁舎1階総合受付で手帳等を提示しQR駐車サービス券を受け取る。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日8:30-18:00: 最初30分無料、以降30分毎100円/平日夜間18:00-8:30: 60分毎100円(最大200円)/土日祝8:30-18:00: 40分毎200円(1日最大700円)/土日祝夜間18:00-8:30: 60分毎100円(最大200円)\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/shisetsu/shi/raityousyaparking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-002",
+    "name": "市立豊中病院駐車場",
+    "address": "大阪府豊中市柴原町4丁目14番1号",
+    "latitude": 34.802406,
+    "longitude": 135.458038,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳等の交付を受けている方が対象。1階総合案内所で駐車券と手帳等を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来: 最初1時間無料、以降30分毎100円(1.5時間以降200円)/面会者: 最初30分無料、以降30分毎100円/入退院: 1時間まで無料、以降30分毎100円(上限500円)\n障害者割引: 無料\n総台数: 293台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/hp/info/sisetu/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-003",
+    "name": "エトレとよなか地下駐車場(旧・市立豊中駅西自動車駐車場)",
+    "address": "大阪府豊中市玉井町1丁目1-1",
+    "latitude": 34.787334,
+    "longitude": 135.461502,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、小児慢性特定疾病医療受給者証、特定疾患医療受給者証、特定医療費(指定難病)受給者証の交付を受けている方が運転または同乗している場合が対象。駐車券を精算機に通す前に駐車場係員へ手帳等を提示。運営はエヌエイチサービス株式会社(旧市営駐車場、市の減免ページからも案内あり)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 基本料金30分200円(6:30-23:00)/当日最大1,000円(6:30-24:00)/夜間600円(24:00-6:30、入出庫不可)\n障害者割引: 料金の50%減額",
+    "sourceUrl": "https://etre-parking.com/price/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-004",
+    "name": "豊中市立文化芸術センター駐車場",
+    "address": "大阪府豊中市曽根東町3-7-2",
+    "latitude": 34.769993,
+    "longitude": 135.469788,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・戦傷病者手帳・被爆者健康手帳・小児慢性特定疾病医療受給者証・特定医療費(指定難病)受給者証の交付を受けている方が対象(ミライロID可)。1階事務所で駐車券と証明書を本人が提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 8:00-22:30/最初30分無料、以降30分毎100円\n障害者割引: 全額免除(無料)\n総台数: 64台",
+    "sourceUrl": "https://www.toyonaka-hall.jp/faq/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-005",
+    "name": "すこやかプラザ駐車場(とよなかハートパレット有料駐車場)",
+    "address": "大阪府豊中市岡上の町2丁目1番15号",
+    "latitude": 34.783966,
+    "longitude": 135.464203,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "公共施設(すこやかプラザ)利用時のみ4時間無料。身体障害者手帳、精神障害者保健福祉手帳、療育手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証等の交付を受けている方が対象(ミライロID可)。1階窓口で駐車券と手帳等を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 不明(時間貸有料駐車場)\n障害者割引: 4時間無料",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/kenko/shougai/syogaifukushi_shimin/keigen/sonota_waribiki/tyuusyajouryoukinn.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-006",
+    "name": "青少年交流文化館いぶき駐車場(武道館ひびき・豊島体育館と共用)",
+    "address": "大阪府豊中市服部西町4丁目13番1号",
+    "latitude": 34.763241,
+    "longitude": 135.466583,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "市の駐車場利用料金割引制度における「文化・体育施設駐車場(体育館・プール・武道館・いぶき等)」に該当。身体障害者手帳、療育手帳、精神障害者保健福祉手帳、難病患者医療助成受給確認証の所持者が運転または同乗している自動車が対象。各施設総合案内所で手続き。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 最初30分無料、以降30分毎100円\n障害者割引: 無料\n総台数: 54台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/kenko/shougai/syogaifukushi_shimin/keigen/sonota_waribiki/tyuusyajouryoukinn.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-007",
+    "name": "二ノ切池公園自動車駐車場",
+    "address": "大阪府豊中市東豊中町5丁目地内",
+    "latitude": 34.795425,
+    "longitude": 135.487045,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の交付を受けている方が運転または同乗している場合、駐車料金無料(ミライロID対応)。特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証保持者も対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 24時間利用可/最初30分無料、以降30分毎100円、夜間最大料金(20:00-8:00)500円\n障害者割引: 無料\n総台数: 79台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-008",
+    "name": "豊島公園自動車駐車場",
+    "address": "大阪府豊中市曽根南町1丁目地内",
+    "latitude": 34.767139,
+    "longitude": 135.469269,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の交付を受けている方が運転または同乗している場合、駐車料金無料(ミライロID対応)。特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証保持者も対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 5:00-22:00/最初30分無料、以降30分毎100円、夜間最大料金(20:00-8:00)500円\n障害者割引: 無料\n総台数: 105台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-009",
+    "name": "ふれあい緑地(北)自動車駐車場",
+    "address": "大阪府豊中市利倉東1丁目地内",
+    "latitude": 34.764668,
+    "longitude": 135.46405,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の交付を受けている方が運転または同乗している場合、駐車料金無料(ミライロID対応)。特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証保持者も対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 8:00-20:00/最初30分無料、以降30分毎100円\n障害者割引: 無料\n総台数: 61台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-010",
+    "name": "ふれあい緑地(中央)自動車駐車場",
+    "address": "大阪府豊中市服部西町5丁目地内",
+    "latitude": 34.761509,
+    "longitude": 135.463623,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の交付を受けている方が運転または同乗している場合、駐車料金無料(ミライロID対応)。特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証保持者も対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 7:00-21:00/最初30分無料、以降30分毎100円\n障害者割引: 無料\n総台数: 82台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-011",
+    "name": "ふれあい緑地(南)自動車駐車場",
+    "address": "大阪府豊中市服部寿町4丁目地内",
+    "latitude": 34.75919,
+    "longitude": 135.466736,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の交付を受けている方が運転または同乗している場合、駐車料金無料(ミライロID対応)。特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証保持者も対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 8:00-20:00/最初30分無料、以降30分毎100円\n障害者割引: 無料\n総台数: 94台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27203-012",
+    "name": "千里中央公園自動車駐車場",
+    "address": "大阪府豊中市新千里東町3丁目地内",
+    "latitude": 34.812321,
+    "longitude": 135.503952,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27203",
+    "cityName": "豊中市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等の交付を受けている方が運転または同乗している場合、駐車料金無料(ミライロID対応)。特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証保持者も対象。管理運営は株式会社カンソー。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 24時間利用可/最初30分無料、以降30分毎100円、夜間最大料金(20:00-8:00)500円\n障害者割引: 無料\n総台数: 144台",
+    "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
     "updatedAt": "2026-08-15T00:00:00Z"
   }
 ];

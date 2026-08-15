@@ -896,6 +896,21 @@ const cities: City[] = [
     "code": "27144",
     "name": "堺市西区",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27145",
+    "name": "堺市南区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27146",
+    "name": "堺市北区",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27203",
+    "name": "豊中市",
+    "prefectureCode": "27"
   }
 ];
 
