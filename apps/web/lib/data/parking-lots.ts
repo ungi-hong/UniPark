@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 696
+// 件数: 725
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -15953,6 +15953,655 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "障害者割引: 無料",
     "sourceUrl": "https://www.hosp.kaizuka.osaka.jp/hospital/access/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27209-001",
+    "name": "守口市役所来庁者駐車場",
+    "address": "大阪府守口市京阪本通2-5-5",
+    "latitude": 34.735928,
+    "longitude": 135.561172,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27209",
+    "cityName": "守口市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを所持し、用務等で駐車場を利用する場合が対象。窓口で駐車券に押印を受けたうえで、手帳等とあわせて庁舎1階総合案内に提示し無料処理を受ける。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 30分150円(最大料金なし)。庁舎内駐車場は入庫後60分まで無料、以降30分ごとに150円。西側駐車場は平日8時~18時のみ同様の割引あり。\n障害者割引: 利用時間全額無料\n総台数: 74台",
+    "sourceUrl": "https://www.city.moriguchi.osaka.jp/kakukanoannai/somubu/soumuka/cyousya/16572.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27209-002",
+    "name": "守口市立図書館駐車場",
+    "address": "大阪府守口市大日町2丁目14番10号",
+    "latitude": 34.751598,
+    "longitude": 135.57753,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27209",
+    "cityName": "守口市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを所持する方が対象。清算前に図書館カウンタースタッフへ声をかけ、対象の手帳・受給者証を提示することで割引処理(無料)を受けられる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 初めの1時間無料、以降30分ごとに150円(利用可能時間8:45~21:15)\n障害者割引: 無料\n総台数: 24台",
+    "sourceUrl": "https://lib-moriguchi.jp/guide/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-001",
+    "name": "枚方市役所駐車場",
+    "address": "大阪府枚方市大垣内町2丁目1番20号",
+    "latitude": 34.814358,
+    "longitude": 135.650635,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳またはミライロIDの所持者。窓口で提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 平日8:30~18:00は10分毎100円、平日18:00~翌8:30は60分毎100円(最大300円)、土日祝8:30~18:00は30分毎200円(最大700円)、土日祝18:00~翌8:30は60分毎100円(最大300円)\n障害者割引: 所要に要した全時間無料\n総台数: 71台",
+    "sourceUrl": "https://www.city.hirakata.osaka.jp/0000008542.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-002",
+    "name": "市営岡東町自動車駐車場",
+    "address": "大阪府枚方市岡東町14-49",
+    "latitude": 34.814304,
+    "longitude": 135.648956,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳または精神障害者保健福祉手帳(またはミライロID)の交付を受けた本人が運転するか同乗している場合。使用料精算前に駐車場管理事務所で手帳を係員に提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに100円、当日最大1,400円(7:00~24:00)\n障害者割引: 一時使用料および定期使用料が半額",
+    "sourceUrl": "https://www.city.hirakata.osaka.jp/0000002692.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-003",
+    "name": "枚方市総合文化芸術センター駐車場(第1~第3駐車場)",
+    "address": "大阪府枚方市新町2-1-60",
+    "latitude": 34.818077,
+    "longitude": 135.645584,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳の所持者、または知的障害者更生相談所・児童相談所・精神保健指定医により知的障害があると判定された方(ミライロID可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分無料、以降1時間毎200円(入庫後1時間以内利用時は500円となる場合あり)\n障害者割引: 全額減免(無料)\n総台数: 150台",
+    "sourceUrl": "https://hirakata-arts.jp/news/2021/11/detail_540.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-004",
+    "name": "王仁公園駐車場",
+    "address": "大阪府枚方市王仁公園1-1",
+    "latitude": 34.817825,
+    "longitude": 135.705948,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "運転者または同乗者が障害者手帳(身体・精神・知的・療育)を提示。事務所開所時間内(9~17時)は窓口で手帳と駐車券を提示、閉所時間帯(17時~翌9時)はゲートのカメラに手帳を提示。フラップ式(運動広場横)は対応不可。指定管理者:京阪ひらかたスポーツみどりグループ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 9:00~18:00は入庫後30分無料、以降30分毎100円(24時間最大500円)。18:00~9:00は入庫後30分無料、以降60分毎100円(24時間最大500円)\n障害者割引: 使用料免除(無料)",
+    "sourceUrl": "https://gomypark.com/wp-content/uploads/2023/06/b072456e059fd8379456ee8c95aa8775.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-005",
+    "name": "中の池公園駐車場",
+    "address": "大阪府枚方市東山2",
+    "latitude": 34.848587,
+    "longitude": 135.691498,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "運転者または同乗者が障害者手帳(身体・精神・知的・療育)をゲートのカメラに提示することで免除。指定管理者:京阪ひらかたスポーツみどりグループ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 9:00~18:00は入庫後30分無料、以降30分毎100円(24時間最大500円)。18:00~9:00は入庫後30分無料、以降60分毎100円(24時間最大500円)\n障害者割引: 使用料免除(無料)\n総台数: 43台",
+    "sourceUrl": "https://gomypark.com/wp-content/uploads/2023/06/b072456e059fd8379456ee8c95aa8775.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-006",
+    "name": "ラポールひらかた地下駐車場(枚方市立総合福祉会館)",
+    "address": "大阪府枚方市新町2丁目1番35号",
+    "latitude": 34.816734,
+    "longitude": 135.646515,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、小児慢性特定疾患医療受給者証、特定疾患医療受給者証、特定医療費(指定難病)受給者証、介護保険被保険者証(要介護3以上)のいずれかを入口で係員に提示。利用時間8:55~21:45。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 自動車以外での移動が困難な方専用の駐車場のため一般開放なし(一般料金設定なし)\n障害者割引: 無料\n総台数: 17台",
+    "sourceUrl": "https://www.hirakata-shakyo.net/wp-content/themes/rapport/pdf/rapport-access.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27210-007",
+    "name": "市立ひらかた病院・枚方市保健センター駐車場",
+    "address": "大阪府枚方市禁野本町2-14-1",
+    "latitude": 34.819572,
+    "longitude": 135.6577,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27210",
+    "cityName": "枚方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者手帳、小児慢性特定疾患医療受給者証、特定疾患医療受給者証、特定医療費(指定難病)受給者証の所持者は無料。会計窓口等で駐車券を提示し割引処理を受ける。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一般利用者(お見舞い等):7:00~21:00は60分毎300円、21:00~7:00は60分毎100円(最初の30分無料)、平日当日最大1,200円、土日祝当日最大600円。外来受診者:当日1日200円(最初の30分無料)\n障害者割引: 無料",
+    "sourceUrl": "https://hirakatacity-hp.osaka.jp/other/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-001",
+    "name": "茨木市役所駐車場",
+    "address": "大阪府茨木市駅前三丁目8番13号",
+    "latitude": 34.816399,
+    "longitude": 135.568848,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または市長等が交付する「減免者等駐車場専用カード」を利用。市内外在住問わず利用可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。来庁者は1階受付の割引ライターに駐車券を通せば30分無料。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-002",
+    "name": "茨木市中央公園駐車場",
+    "address": "大阪府茨木市駅前四丁目8番38号",
+    "latitude": 34.818096,
+    "longitude": 135.569351,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。定期契約は月15,000円。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-003",
+    "name": "JR茨木北駐車場",
+    "address": "大阪府茨木市春日一丁目4番5号",
+    "latitude": 34.816975,
+    "longitude": 135.562073,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、24時間最大料金1,200円(2日目以降繰り返し)。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-004",
+    "name": "JR駅前ビル駐車場",
+    "address": "大阪府茨木市西駅前町4番112号",
+    "latitude": 34.816601,
+    "longitude": 135.561981,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。定期契約は月15,000円。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-005",
+    "name": "阪急茨木西口駐車場",
+    "address": "大阪府茨木市永代町2番19号",
+    "latitude": 34.816376,
+    "longitude": 135.574753,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-006",
+    "name": "阪急茨木北口駐車場",
+    "address": "大阪府茨木市永代町8番32号",
+    "latitude": 34.818363,
+    "longitude": 135.576065,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-007",
+    "name": "双葉町駐車場",
+    "address": "大阪府茨木市双葉町11番街区",
+    "latitude": 34.815464,
+    "longitude": 135.575256,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 20分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-008",
+    "name": "阪急茨木東口駐車場",
+    "address": "大阪府茨木市双葉町1番14号",
+    "latitude": 34.817093,
+    "longitude": 135.576691,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 20分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-009",
+    "name": "総持寺駅南駐車場",
+    "address": "大阪府茨木市中総持寺町3番35号",
+    "latitude": 34.825005,
+    "longitude": 135.584915,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示、または「減免者等駐車場専用カード」を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 30分100円、20:00~8:00 60分100円、24時間最大料金1,200円(2日目以降繰り返し)。定期契約は月12,000円。管理人駐在時間 6:00~11:00、16:00~20:00。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/office/hobun/reiki_int/reiki_honbun/k213RG00000671.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-010",
+    "name": "生涯学習センターきらめき駐車場",
+    "address": "大阪府茨木市畑田町1番43号",
+    "latitude": 34.827572,
+    "longitude": 135.565948,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを事務室に提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 8:00~20:00 最初30分無料、以降30分100円(最大600円)。20:00~8:00 60分100円(24時間最大1,200円)。\n障害者割引: 駐車場使用料の5割減額\n総台数: 116台",
+    "sourceUrl": "https://www.city.ibaraki.osaka.jp/kikou/shimin/kirameki/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27211-011",
+    "name": "茨木市立中央図書館駐車場",
+    "address": "大阪府茨木市畑田町1番51号",
+    "latitude": 34.826859,
+    "longitude": 135.565826,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27211",
+    "cityName": "茨木市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者手帳・療育手帳をお持ちの方が対象。市内有人駐車場で発行される「減免者等駐車場専用カード」の利用が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00~20:00 最初30分無料、以降30分100円(最大600円)。20:00~8:00(夜間) 1時間100円、24時間最大料金1,200円(2日目以降繰り返し)。\n障害者割引: 利用料金の5割減免",
+    "sourceUrl": "https://www.lib.ibaraki.osaka.jp/information/120/20251032252912.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27212-001",
+    "name": "八尾市立総合体育館「ウイング」駐車場",
+    "address": "大阪府八尾市青山町3丁目5-24",
+    "latitude": 34.622471,
+    "longitude": 135.614426,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27212",
+    "cityName": "八尾市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者本人が運転または同乗し、施設利用のために駐車した場合。受付窓口にて障がい者手帳等の証明書と駐車券を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車:2時間まで300円(うち最初30分無料)、以後1時間ごとに100円増。準中型・中型自動車:2時間まで450円、以後1時間ごとに150円増。大型自動車:2時間まで600円、以後1時間ごとに200円増\n障害者割引: 無料(施設利用時のみ)\n総台数: 196台",
+    "sourceUrl": "http://yao-taisin.com/kaku-shisetu-soutai.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27212-002",
+    "name": "八尾市立山本球場駐車場",
+    "address": "大阪府八尾市山本町南7丁目9-11",
+    "latitude": 34.621738,
+    "longitude": 135.621185,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27212",
+    "cityName": "八尾市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者本人が運転または同乗し、施設利用のために駐車した場合。受付窓口にて障がい者手帳等の証明書と駐車券を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車:2時間まで300円(うち最初30分無料)、以後1時間ごとに100円増。準中型・中型自動車:2時間まで450円、以後1時間ごとに150円増。大型自動車:2時間まで600円、以後1時間ごとに200円増\n障害者割引: 無料(施設利用時のみ)\n総台数: 42台",
+    "sourceUrl": "http://yao-taisin.com/kaku-shisetu-yamakyuu.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27212-003",
+    "name": "八尾市立志紀テニス場駐車場",
+    "address": "大阪府八尾市志紀町西1-3",
+    "latitude": 34.601353,
+    "longitude": 135.607742,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27212",
+    "cityName": "八尾市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者本人が運転または同乗し、施設利用のために駐車した場合。受付窓口にて障がい者手帳等の証明書と駐車券を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車:2時間まで300円(うち最初30分無料)、以後1時間ごとに100円増\n障害者割引: 無料(施設利用時のみ)\n総台数: 28台",
+    "sourceUrl": "http://yao-taisin.com/kaku-shisetu-shiki.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27212-004",
+    "name": "八尾市立南木の本防災体育館駐車場",
+    "address": "大阪府八尾市南木の本3-1-9",
+    "latitude": 34.605396,
+    "longitude": 135.588242,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27212",
+    "cityName": "八尾市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者本人が運転または同乗し、施設利用のために駐車した場合。受付窓口にて障がい者手帳等の証明書と駐車券を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分を超え2時間まで300円、以降1時間ごとに100円加算\n障害者割引: 無料(施設利用時のみ)\n総台数: 34台",
+    "sourceUrl": "http://www.mk-bousai.sakura.ne.jp/minaki-sisetuannai.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27212-005",
+    "name": "八尾市生涯学習センター(かがやき)駐車場",
+    "address": "大阪府八尾市旭ヶ丘5-85-16",
+    "latitude": 34.633636,
+    "longitude": 135.608475,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27212",
+    "cityName": "八尾市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者が運転または乗車している場合。受付窓口にて障がい者手帳等の証明書と駐車券を提示"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 普通自動車:30分を超え2時間まで300円、以後1時間ごとに100円加算。準中型・中型自動車:450円/150円、大型自動車:600円/200円\n障害者割引: 無料(施設利用時のみ)\n総台数: 86台",
+    "sourceUrl": "https://kagayaki-yao.jp/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27212-006",
+    "name": "八尾市立病院駐車場",
+    "address": "大阪府八尾市龍華町1丁目3番1号",
+    "latitude": 34.620766,
+    "longitude": 135.587952,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27212",
+    "cityName": "八尾市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳のいずれかを持ち、当院を利用した場合"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分無料、以降30分ごとに100円\n障害者割引: 無料",
+    "sourceUrl": "https://www.hospital.yao.osaka.jp/access/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27213-001",
+    "name": "りんくう公園 第1駐車場",
+    "address": "大阪府泉佐野市りんくう往来北1-271",
+    "latitude": 34.41449,
+    "longitude": 135.295395,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27213",
+    "cityName": "泉佐野市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳・特定疾患医療受給者証・小児慢性特定疾患医療受診券のいずれかを所持する方が同乗している場合が対象。駐車場係員へ手帳原本またはミライロIDアプリ画面を提示(スクリーンショット・コピー不可)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 普通車:平日 30分310円/最大24時間800円、土日祝 30分510円/最大24時間1490円(時間帯・時期により変動あり)\n障害者割引: 無料(全額免除)\n総台数: 73台",
+    "sourceUrl": "https://rinku.osaka-park.or.jp/18368",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27213-002",
+    "name": "りんくう公園 第2駐車場",
+    "address": "大阪府泉佐野市りんくう往来北1-271",
+    "latitude": 34.41449,
+    "longitude": 135.295395,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27213",
+    "cityName": "泉佐野市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳・特定疾患医療受給者証・小児慢性特定疾患医療受診券のいずれかを所持する方が同乗している場合が対象。駐車場係員へ手帳原本またはミライロIDアプリ画面を提示(スクリーンショット・コピー不可)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 普通車:平日 30分310円/最大24時間800円、土日祝 30分510円/最大24時間1490円(時間帯・時期により変動あり)\n障害者割引: 無料(全額免除)\n総台数: 59台",
+    "sourceUrl": "https://rinku.osaka-park.or.jp/18348",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27213-003",
+    "name": "関西国際空港 P1・P2駐車場",
+    "address": "大阪府泉佐野市泉州空港北1",
+    "latitude": 34.436893,
+    "longitude": 135.253601,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27213",
+    "cityName": "泉佐野市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳等の対象手帳またはミライロIDアプリを所持する方。出庫時に駐車場出口(2番ブース)で係員に駐車券と手帳等を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分220円(通常期)〜300円(繁忙期)、24時間最大3,080円(通常期)〜4,200円(繁忙期)\n障害者割引: 駐車料金50%割引",
+    "sourceUrl": "https://www.kansai-airport.or.jp/access/parking/disabled.html",
     "updatedAt": "2026-08-15T00:00:00Z"
   }
 ];
