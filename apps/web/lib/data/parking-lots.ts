@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 671
+// 件数: 696
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -15381,6 +15381,578 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 24時間利用可/最初30分無料、以降30分毎100円、夜間最大料金(20:00-8:00)500円\n障害者割引: 無料\n総台数: 144台",
     "sourceUrl": "https://www.city.toyonaka.osaka.jp/machi/kouen_midori/kouen_joho/kouentyusyajyo.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27204-001",
+    "name": "池田市立駐車場(池田ステーションN地下1階)",
+    "address": "大阪府池田市菅原町3-1(池田ステーションN地下1階)",
+    "latitude": 34.821121,
+    "longitude": 135.427109,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27204",
+    "cityName": "池田市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がいのある方が運転又は同乗している場合、身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示(ミライロID利用可)で、駐車料金が2時間まで無料。場内防災センター等で提示。2時間超過分は通常料金。夜間(23時以降)の入庫不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 1時間以内300円、1時間超20分ごとに100円、昼間上限(8時~23時)1,200円、夜間上限(23時~8時)900円\n障害者割引: 駐車料金が2時間まで無料\n総台数: 28台",
+    "sourceUrl": "https://www.city.ikeda.osaka.jp/soshiki/toshiseibibu/toshiseisaku/shieichushajo/1585901565725.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27204-002",
+    "name": "池田市立図書館 サンシティ池田駐車場(タイムズサンシティ池田)",
+    "address": "大阪府池田市呉服町1-1",
+    "latitude": 34.821445,
+    "longitude": 135.425156,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27204",
+    "cityName": "池田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体の障がいが原因で車による来館が必要な池田市立図書館利用者が対象。身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示(ミライロID利用可)で駐車割引券を発行。駐車券及び手帳を図書館カウンターへ提示すること。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日7時~23時:30分200円(最大1,200円)、土日祝7時~23時:30分200円(最大1,300円)、23時~7時:60分100円\n障害者割引: 図書館利用時間により30分または1時間分の駐車割引券を発行\n総台数: 75台",
+    "sourceUrl": "https://lib-ikedacity.jp/disability/parking.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27204-003",
+    "name": "ツナガリエ石橋 石橋西パーキング",
+    "address": "大阪府池田市石橋1丁目9-10",
+    "latitude": 34.806507,
+    "longitude": 135.443268,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27204",
+    "cityName": "池田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "ツナガリエ石橋(ダイバーシティセンター)の利用に伴う駐車。障がい者手帳(身体障害者手帳・療育手帳・精神障がい者保健福祉手帳、ミライロID可)、またはけが・妊産婦の方が対象。障害者手帳又はミライロIDと駐車券・駐車証明書を提示し、申込書に記入。詳細はダイバーシティセンター(072-768-8020)へ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 利用時間により30分または60分の駐車券を交付",
+    "sourceUrl": "https://www.city.ikeda.osaka.jp/soshiki/siminseikatsu/jinkenbunka/diversity/16279.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27205-001",
+    "name": "吹田市役所本庁舎駐車場",
+    "address": "大阪府吹田市泉町1丁目3番40号",
+    "latitude": 34.759232,
+    "longitude": 135.516708,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27205",
+    "cityName": "吹田市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "手帳の交付を受けている方が運転または同乗する車両が対象。出入口に配置している警備員に手帳等を提示し確認を受ける。市役所での用務が1時間を超えた場合や閉庁日等の利用時は、最後に立ち寄った行先課へ申し出ると利用時間に応じた追加の割引処理あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 開庁日(月〜金)午前8時30分〜午後6時出場:最初の1時間無料、以降30分ごとに250円。午後6時〜午後10時出場および閉庁日(土日祝・12/29〜1/3):30分ごとに250円。最大料金設定なし。\n障害者割引: 身体障害者手帳・精神障害者保健福祉手帳・療育手帳の提示で3時間まで駐車料金無料(以降は通常料金)\n総台数: 105台",
+    "sourceUrl": "https://www.city.suita.osaka.jp/shisei/1018754/1020203/1037766.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27205-002",
+    "name": "子育て青少年拠点夢つながり未来館(ゆいぴあ)駐車場",
+    "address": "大阪府吹田市山田西4丁目2番43号",
+    "latitude": 34.804256,
+    "longitude": 135.51622,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27205",
+    "cityName": "吹田市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "施設利用者で障がい者手帳をお持ちの方が対象。精算機で受付券を発券し、3階貸室受付窓口で手帳(またはミライロID)とともに提示すると無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 20分ごとに100円(1日の上限なし)\n障害者割引: 障がい者手帳提示で駐車料金無料(無料券発行)\n総台数: 20台",
+    "sourceUrl": "https://www.city.suita.osaka.jp/kosodate/1018331/1018260/1013870.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27205-003",
+    "name": "千里ニュータウンプラザ駐車場",
+    "address": "大阪府吹田市津雲台1丁目2番1号",
+    "latitude": 34.794083,
+    "longitude": 135.508316,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27205",
+    "cityName": "吹田市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の交付を受けている方が運転または同乗する場合、出入口に配置している警備員に手帳等を提示し確認を受ける。同施設内の千里図書館・千里市民センター利用者にも適用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 自動車機械式駐車場、30分まで無料、以降30分ごとに200円。利用時間8時30分〜22時30分。\n障害者割引: 障害者手帳等提示で駐車料金無料\n総台数: 68台",
+    "sourceUrl": "https://www.city.suita.osaka.jp/shisei/shisetsu/1019110/1018385/1006616.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27205-004",
+    "name": "千里南公園駐車場",
+    "address": "大阪府吹田市津雲台1丁目3番",
+    "latitude": 34.796333,
+    "longitude": 135.508972,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27205",
+    "cityName": "吹田市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "駐車場出口に設置の直通電話から手帳番号を申告する。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 最初の30分無料。8時〜22時は30分ごとに100円。22時〜翌8時は60分ごとに100円(夜間最大料金400円)。\n障害者割引: 障がい者手帳保持者は終日無料\n総台数: 48台",
+    "sourceUrl": "https://www.city.suita.osaka.jp/sangyo/1018152/1018167/1018168/1028864/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27205-005",
+    "name": "万博記念公園駐車場(東・南・中央・西・日本庭園前)",
+    "address": "大阪府吹田市千里万博公園1-1",
+    "latitude": 34.809277,
+    "longitude": 135.524734,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27205",
+    "cityName": "吹田市",
+    "accessibleSpaceTotal": 12,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳、被爆者健康手帳、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証の交付を受けた方が対象。窓口で手帳等と駐車券を提示(事前申請の場合は来園日7日前〔土日祝除く〕までに申請可)。ただし特別支援学校以外の学校団体利用の大型車両等は対象外。テニスコート・フットサルコート利用者に限り西駐車場は無料(別条件)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 12
+      }
+    ],
+    "notes": "通常料金: 平日:普通車2時間まで410円、以降加算、4時間超24時間まで1,100円。土日祝:2時間まで620円、4時間超24時間まで1,600円(マイクロバス・大型車・二輪車は別料金)。\n障害者割引: 身体障がい者手帳等提示で駐車場使用料無料\n総台数: 982台",
+    "sourceUrl": "https://www.expo70-park.jp/guide/fee/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27205-006",
+    "name": "吹田市立中央図書館駐車場",
+    "address": "大阪府吹田市出口町18-9",
+    "latitude": 34.764126,
+    "longitude": 135.515961,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27205",
+    "cityName": "吹田市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等をお持ちの方は駐車券を1階カウンターへ持参。6台中1台が障がい者用スペースで無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 最初の30分無料、以降30分ごとに100円、最大700円(午前10時〜午後8時入庫時)\n障害者割引: 障がい者用駐車スペース(1台)利用は無料\n総台数: 6台",
+    "sourceUrl": "https://www.lib.suita.osaka.jp/facilities/010/index.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27206-001",
+    "name": "泉大津市立駐車場",
+    "address": "大阪府泉大津市旭町20番6号",
+    "latitude": 34.502491,
+    "longitude": 135.407867,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27206",
+    "cityName": "泉大津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算時に(1)身体障害者手帳、(2)精神障害者保健福祉手帳、(3)療育手帳のいずれかを提示。定期料金には割引適用なし。運営はパラカ株式会社(パラカコールセンター 0120-100-608)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 終日30分毎200円、駐車後24時間最大料金600円、午後8時から午前8時の時間最大料金400円\n障害者割引: 駐車料金の5割減額(10円未満の端数は切り捨て)",
+    "sourceUrl": "https://www.city.izumiotsu.lg.jp/kakuka/tosiseisakubu/doboku/osirase/1538296817167.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-001",
+    "name": "高槻駅南立体駐車場",
+    "address": "大阪府高槻市紺屋町1番2号",
+    "latitude": 34.851776,
+    "longitude": 135.618851,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた方が運転もしくは同乗している車両が対象。精算機にミライロIDのQRコードをかざす、精算機のインターフォンでカメラに手帳を提示する、または駐車場係員に手帳を提示する。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 全日20分ごとに100円(夜間最大600円)\n障害者割引: 有料分の半額(10円未満切捨て)\n総台数: 150台",
+    "sourceUrl": "https://www.city.takatsuki.osaka.jp/soshiki/52/3937.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-002",
+    "name": "桃園町駐車場",
+    "address": "大阪府高槻市桃園町3番1号",
+    "latitude": 34.846581,
+    "longitude": 135.616714,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた方が運転もしくは同乗している車両が対象。精算機にミライロIDのQRコードをかざす、精算機のインターフォンでカメラに手帳を提示する、または駐車場係員に手帳を提示する。市役所本庁舎北側に位置し、行政手続き来庁者は別途1時間無料あり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 全日20分ごとに100円(夜間最大600円)\n障害者割引: 有料分の半額(10円未満切捨て)\n総台数: 177台",
+    "sourceUrl": "https://www.city.takatsuki.osaka.jp/soshiki/52/3937.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-003",
+    "name": "高槻駅北地下駐車場",
+    "address": "大阪府高槻市芥川町一丁目2番",
+    "latitude": 34.851784,
+    "longitude": 135.616257,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた方が運転もしくは同乗している車両が対象。精算機にミライロIDのQRコードをかざす、精算機のインターフォンでカメラに手帳を提示する、または駐車場係員に手帳を提示する。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 全日20分ごとに100円(夜間最大600円)\n障害者割引: 有料分の半額(10円未満切捨て)\n総台数: 441台",
+    "sourceUrl": "https://www.city.takatsuki.osaka.jp/soshiki/52/3937.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-004",
+    "name": "萩谷総合公園駐車場",
+    "address": "大阪府高槻市大字萩谷地内",
+    "latitude": 34.89679,
+    "longitude": 135.576736,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた方が運転もしくは同乗している車両が対象。駐車場設置の電話(インターフォン)使用でカメラに手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 1時間までごとに100円(3時間超は400円上限)\n障害者割引: 有料分の半額(10円未満切捨て)\n総台数: 350台",
+    "sourceUrl": "https://www.city.takatsuki.osaka.jp/soshiki/54/5532.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-005",
+    "name": "古曽部防災公園駐車場",
+    "address": "大阪府高槻市古曽部町3丁目地内",
+    "latitude": 34.861816,
+    "longitude": 135.622482,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた方が運転もしくは同乗している車両が対象。駐車場設置の電話(インターフォン)使用でカメラに手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 1時間までごとに100円(3時間超は400円上限)\n障害者割引: 有料分の半額(10円未満切捨て)\n総台数: 84台",
+    "sourceUrl": "https://www.city.takatsuki.osaka.jp/soshiki/54/5532.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-006",
+    "name": "芥川緑地駐車場",
+    "address": "大阪府高槻市南平台5丁目地内",
+    "latitude": 34.86507,
+    "longitude": 135.589325,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けた方が運転もしくは同乗している車両が対象。精算前に駐車場詰所へ手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 1日1時間までごとに100円(3時間超は400円上限)\n障害者割引: 有料分の半額(10円未満切捨て)\n総台数: 119台",
+    "sourceUrl": "https://www.city.takatsuki.osaka.jp/soshiki/54/5532.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-007",
+    "name": "安満遺跡公園駐車場",
+    "address": "大阪府高槻市八丁畷町12番3号",
+    "latitude": 34.854542,
+    "longitude": 135.629242,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、療育手帳(または知的障がい判定書)、精神障がい者保健福祉手帳、もしくはミライロIDの提示が必要。入庫時の駐車券と証明書類を持参し、パークセンター内公園事務室(9時~19時)で手続き。2023年4月1日より高槻市外在住者も対象に拡大。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 100円/30分(1日最大料金800円)\n障害者割引: 利用料金の5割引\n総台数: 416台",
+    "sourceUrl": "https://www.seibu-la.co.jp/park/ama-sitepark/about/",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27207-008",
+    "name": "高槻城公園芸術文化劇場 南館地下駐車場",
+    "address": "大阪府高槻市野見町6番8号",
+    "latitude": 34.844921,
+    "longitude": 135.62178,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27207",
+    "cityName": "高槻市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳またはミライロIDの提示が必要。出庫前に1階劇場事務室または地下1階防災センターで手続き。車いす区画3台あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分200円(1日最大1,600円)\n障害者割引: 記載料金の半額\n総台数: 150台",
+    "sourceUrl": "https://www.takatsuki-bsj.jp/tat/facility/accessibility",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-001",
+    "name": "貝塚市役所第1駐車場",
+    "address": "大阪府貝塚市畠中1丁目17番1号",
+    "latitude": 34.437611,
+    "longitude": 135.358231,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳を提示された方は、施設利用者以外も無料。初期無料時間を超える場合は本庁舎総合案内(開庁時間中)・当直室(時間外)で駐車券のテナントチェッカー処理が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 60分200円(7:00~22:00、初期無料4時間)/60分100円(22:00~7:00、初期無料30分)、24時間最大料金3,000円\n障害者割引: 無料\n総台数: 112台",
+    "sourceUrl": "https://www.city.kaizuka.lg.jp/kakuka/soumu/shomu/topics/chuusyajyoyuuryouka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-002",
+    "name": "貝塚市役所第2駐車場",
+    "address": "大阪府貝塚市畠中1丁目17番1号",
+    "latitude": 34.437611,
+    "longitude": 135.358231,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳を提示された方は、施設利用者以外も無料。初期無料時間を超える場合は本庁舎総合案内(開庁時間中)・当直室(時間外)で駐車券のテナントチェッカー処理が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(7:00~22:00、初期無料4時間)/60分100円(22:00~7:00、初期無料30分)、24時間最大料金3,000円\n障害者割引: 無料\n総台数: 53台",
+    "sourceUrl": "https://www.city.kaizuka.lg.jp/kakuka/soumu/shomu/topics/chuusyajyoyuuryouka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-003",
+    "name": "貝塚市民文化会館(コスモスシアター)駐車場",
+    "address": "大阪府貝塚市畠中1丁目18番1号",
+    "latitude": 34.437508,
+    "longitude": 135.359283,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳を提示された方は、施設利用者以外も無料。初期無料時間を超える場合はコスモスシアター内・文化振興事業団事務所で駐車券処理が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(7:00~22:00、初期無料4時間)/60分100円(22:00~7:00、初期無料30分)、24時間最大料金3,000円\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.kaizuka.lg.jp/kakuka/soumu/shomu/topics/chuusyajyoyuuryouka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-004",
+    "name": "保健・福祉合同庁舎駐車場",
+    "address": "大阪府貝塚市畠中1丁目18番8号",
+    "latitude": 34.437019,
+    "longitude": 135.359711,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳を提示された方は、施設利用者以外も無料。初期無料時間を超える場合は健康推進課カウンターで駐車券処理が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(7:00~22:00、初期無料4時間)/60分100円(22:00~7:00、初期無料30分)、24時間最大料金3,000円\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.kaizuka.lg.jp/kakuka/soumu/shomu/topics/chuusyajyoyuuryouka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-005",
+    "name": "貝塚市立総合体育館駐車場",
+    "address": "大阪府貝塚市畠中1丁目13番1号",
+    "latitude": 34.437244,
+    "longitude": 135.359863,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳を提示された方は、施設利用者以外も無料。初期無料時間を超える場合は総合体育館受付で駐車券処理が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(7:00~22:00、初期無料4時間)/60分100円(22:00~7:00、初期無料30分)、24時間最大料金3,000円\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.kaizuka.lg.jp/kakuka/soumu/shomu/topics/chuusyajyoyuuryouka.html",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-006",
+    "name": "二色の浜公園駐車場(第1~第4駐車場)",
+    "address": "大阪府貝塚市澤859-1",
+    "latitude": 34.435703,
+    "longitude": 135.335373,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳・特定疾患医療受給者証・小児慢性特定疾患医療受診券のいずれか(原本またはミライロID)を入庫時に係員へ提示することで利用料金を免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車 平日1時間200円/土日祝1時間300円(入庫後最大料金640円)\n障害者割引: 無料(免除)",
+    "sourceUrl": "https://nishikinohama-park.com/download/shinsei/3/techo.pdf",
+    "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27208-007",
+    "name": "市立貝塚病院駐車場",
+    "address": "大阪府貝塚市堀3丁目10番20号",
+    "latitude": 34.449715,
+    "longitude": 135.360535,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27208",
+    "cityName": "貝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかをお持ちの方は、来院の際に総合案内へお申し出ることで駐車場料金が無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://www.hosp.kaizuka.osaka.jp/hospital/access/index.html",
     "updatedAt": "2026-08-15T00:00:00Z"
   }
 ];

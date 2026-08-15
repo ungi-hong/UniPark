@@ -911,6 +911,31 @@ const cities: City[] = [
     "code": "27203",
     "name": "豊中市",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27204",
+    "name": "池田市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27205",
+    "name": "吹田市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27206",
+    "name": "泉大津市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27207",
+    "name": "高槻市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27208",
+    "name": "貝塚市",
+    "prefectureCode": "27"
   }
 ];
 
