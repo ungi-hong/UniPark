@@ -1046,6 +1046,16 @@ const cities: City[] = [
     "code": "27232",
     "name": "阪南市",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27361",
+    "name": "熊取町",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27362",
+    "name": "田尻町",
+    "prefectureCode": "27"
   }
 ];
 

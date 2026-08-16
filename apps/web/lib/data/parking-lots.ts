@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 775
+// 件数: 778
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -17724,6 +17724,76 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車(軽自動車含む)500円/大型車(マイクロバス含む)1,500円\n障害者割引: 無料\n総台数: 140台",
     "sourceUrl": "https://www.city.hannan.lg.jp/kakuka/toshi/douro/koenkankei/wanpaku.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27361-001",
+    "name": "永楽ゆめの森公園駐車場",
+    "address": "大阪府泉南郡熊取町大字野田65番10",
+    "latitude": 34.369041,
+    "longitude": 135.372665,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27361",
+    "cityName": "熊取町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2.5,
+      "conditions": "対象は「障がい者等」に該当する者(1.身体障害者手帳の交付を受けている者 2.療育手帳の交付を受けている者 3.精神障害者保健福祉手帳の交付を受けている者 4.大阪府特定疾患医療受給者証の交付を受けている者 5.難病の患者に対する医療等に関する法律による医療受給者証の交付を受けている者)。町内・町外利用者を問わず適用。利用時に駐車券と対象者であることが確認できるもの(各種手帳・受給者証等)を持参し、公園管理事務所(072-452-7676)で手続きが必要。手続きをしない場合は障がい者等でない町外利用者料金が適用される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車(1日1回当たり) 町内利用者:2時間30分以内無料、超過時100円/ 町外利用者:平日(祝日除く)300円、土曜・日曜・祝日500円\n障害者割引: 2時間30分以内無料、2時間30分を超える場合は100円(1日1回当たり)\n総台数: 190台",
+    "sourceUrl": "https://www.town.kumatori.lg.jp/section/reiki_int/reiki_honbun/k239RG00000506.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27362-001",
+    "name": "関西国際空港 第5駐車場（P5）",
+    "address": "大阪府泉南郡田尻町泉州空港中11-1",
+    "latitude": 34.438229,
+    "longitude": 135.230042,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27362",
+    "cityName": "田尻町",
+    "accessibleSpaceTotal": 23,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳をお持ちの方が対象(ミライロIDの提示可)。第2ターミナルビル国内線案内所で割引券を受け取り、出庫時に駐車場出口有人ブースで駐車券・手帳等とあわせて提示のうえ精算。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 23
+      }
+    ],
+    "notes": "通常料金: 普通車:30分200円、24時間未満最大2,800円(通常期)\n障害者割引: 50%割引(半額)\n総台数: 833台",
+    "sourceUrl": "https://www.kansai-airport.or.jp/access/parking",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27362-002",
+    "name": "関西国際空港 第6駐車場（P6）",
+    "address": "大阪府泉南郡田尻町泉州空港中11-1",
+    "latitude": 34.438229,
+    "longitude": 135.230042,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27362",
+    "cityName": "田尻町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳をお持ちの方が対象(ミライロIDの提示可)。第2ターミナルビル国内線案内所で割引券を受け取り、出庫時に駐車場出口有人ブースで駐車券・手帳等とあわせて提示のうえ精算。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:30分180円、24時間未満最大2,520円(通常期)\n障害者割引: 50%割引(半額)\n総台数: 779台",
+    "sourceUrl": "https://www.kansai-airport.or.jp/access/parking",
     "updatedAt": "2026-08-16T00:00:00Z"
   }
 ];
