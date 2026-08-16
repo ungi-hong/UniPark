@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 732
+// 件数: 749
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -16753,6 +16753,409 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 普通車 1時間まで 平日300円/土日祝390円(以降段階加算、最大料金あり)\n障害者割引: 無料",
     "sourceUrl": "https://fukakitaryokuchi.jp/faq",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27219-001",
+    "name": "和泉市庁舎駐車場",
+    "address": "大阪府和泉市府中町二丁目7番5号",
+    "latitude": 34.483067,
+    "longitude": 135.424164,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27219",
+    "cityName": "和泉市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている者が庁舎(本館・別館・飲食物販店舗)または和泉市コミュニティセンター利用のために駐車する場合が対象。サービス券は庁舎本館1階・2階総合案内受付で発券。立体駐車場1階に車いす区画4台、2階・屋上階におもいやり駐車区画2台あり。問合せ:和泉市総務部総務管財室 0725-99-8105"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 平日入庫後30分無料、以降30分毎100円(最大料金:平日9時~16時は設定なし、16時~翌9時は400円)。土日祝も同様に30分無料、以降30分毎100円\n障害者割引: 庁舎等利用のサービス券(2時間無料)に加え、障がい者手帳提示でさらに2時間無料(合計最大4時間無料)\n総台数: 192台",
+    "sourceUrl": "https://www.city.osaka-izumi.lg.jp/kakukano/soumubu/soumuka/tyousyatyuusyazyou/22923.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27219-002",
+    "name": "黒鳥山公園駐車場",
+    "address": "大阪府和泉市黒鳥町四丁目531-1",
+    "latitude": 34.485916,
+    "longitude": 135.444839,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27219",
+    "cityName": "和泉市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "出庫時に障がい者手帳(身体障害者手帳等)の提示が必要。令和7年(2025年)3月20日よりデジタル障害者手帳「ミライロID」による割引も利用可(事前登録要)。身体障がい者用区画2台、おもいやり駐車区画2台あり。特別期間中は臨時駐車場等で約300台対応。問合せ:和泉市都市デザイン部都市整備室公園緑地担当 0725-99-8139"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 通常期間(5/20~翌3/19):入場後2時間無料、以降30分毎100円、22時~翌6時は1回1,000円。特別期間(3/20~5/19):入場後1時間無料、以降30分毎150円、22時~翌6時は1回1,000円\n障害者割引: 通常の無料時間に加えて1時間無料\n総台数: 67台",
+    "sourceUrl": "https://www.city.osaka-izumi.lg.jp/kakukano/dezainbu/kouenryokuti/osirase/1419499658856.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27219-003",
+    "name": "和泉シティプラザ駐車場",
+    "address": "大阪府和泉市いぶき野五丁目4番7号",
+    "latitude": 34.458324,
+    "longitude": 135.457458,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27219",
+    "cityName": "和泉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示で入庫後4時間まで駐車料金免除(令和5年10月1日実施)。入庫後2時間までは手続き不要、それを超える場合は出庫前に1階生涯学習センター受付で手続きが必要。屋内駐車場110台・屋外駐車場120台の合計230台。問合せ:0725-57-6660"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 利用時間8:30~22:30、入庫後2時間無料、以降30分毎100円\n障害者割引: 入庫後4時間まで無料\n総台数: 230台",
+    "sourceUrl": "https://www.izumicityplaza.or.jp/news/20231003-15481.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-001",
+    "name": "箕面駅前第一駐車場",
+    "address": "大阪府箕面市箕面6丁目4番17号",
+    "latitude": 34.833294,
+    "longitude": 135.47023,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳(障害者手帳アプリ「ミライロID」含む)の所持者本人が運転または同乗している場合に限り、上記料金の半額。ミライロIDはQRコード読み取り機、手帳原本は管理事務所で対応。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~20時:60分200円(最大1,200円)/20時~翌8時:60分100円(最大400円)\n障害者割引: 半額\n総台数: 285台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/dourokanri/publicparking/minoh.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-002",
+    "name": "箕面駅前第二駐車場",
+    "address": "大阪府箕面市箕面5丁目12番67号",
+    "latitude": 34.832047,
+    "longitude": 135.470413,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "対象障害者手帳(ミライロID含む)所持者本人が運転または同乗している場合に限り、上記料金の半額。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~20時:60分200円(最大1,000円)/20時~翌8時:60分100円(最大300円)\n障害者割引: 半額\n総台数: 281台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/dourokanri/publicparking/minoh.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-003",
+    "name": "箕面市立箕面船場駐車場",
+    "address": "大阪府箕面市船場東3丁目10番1号",
+    "latitude": 34.821384,
+    "longitude": 135.491364,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳等の提示で半額。駐車券と手帳の両方が揃っている場合のみ適用。船場図書館利用者もこの駐車場を利用(館内に専用駐車場なし)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円、昼間(8時~18時)最大800円、夜間(18時~翌8時)最大500円\n障害者割引: 半額(60分100円、昼間最大400円、夜間最大250円)\n総台数: 116台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/dourokanri/publicparking/semba.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-004",
+    "name": "箕面船場第二駐車場",
+    "address": "大阪府箕面市船場東3丁目14番1号",
+    "latitude": 34.823799,
+    "longitude": 135.4953,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "対象障害者手帳所持者が運転または同乗している場合半額。夜間等無人時はゲートのオートフォンでコールセンターに連絡し、ウェブカメラに手帳を提示して遠隔確認・精算。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円、24時間最大600円(現在500円)\n障害者割引: 半額\n総台数: 446台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/dourokanri/publicparking/semba.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-005",
+    "name": "箕面市立中央図書館地下駐車場",
+    "address": "大阪府箕面市箕面5丁目11番23号",
+    "latitude": 34.831169,
+    "longitude": 135.471313,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等保持者専用の地下駐車場(全8台とも身障者用)。中央生涯学習センター・メイプルホールと共用。一般利用者向け区画ではなく手帳保持者専用のため常時無料。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 8台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/library/annai/chuuou.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-006",
+    "name": "箕面市立西南図書館駐車場",
+    "address": "大阪府箕面市半町4-6-39",
+    "latitude": 34.811695,
+    "longitude": 135.457108,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳等の所持者が運転または同乗している場合、利用料金が無料。図書館1階または2階カウンターで手帳と駐車券を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分100円(最初30分無料)、入庫後24時間最大700円(繰り返し適用)\n障害者割引: 無料\n総台数: 25台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/library/annai/seinan.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-007",
+    "name": "箕面市立東図書館駐車場(東生涯学習センター駐車場)",
+    "address": "大阪府箕面市粟生間谷西3-1-3",
+    "latitude": 34.843979,
+    "longitude": 135.511826,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳の提示で無料。身障者用区画が満車の場合も同様に無料対応。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 最初30分無料、1時間まで200円、3時間まで300円、以降30分毎100円、24時間最大600円\n障害者割引: 無料\n総台数: 82台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/library/annai/higashi.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27220-008",
+    "name": "箕面市立小野原図書館駐車場",
+    "address": "大阪府箕面市小野原西5-2-36",
+    "latitude": 34.830925,
+    "longitude": 135.511276,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27220",
+    "cityName": "箕面市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体・知的・精神障害者手帳等の提示で無料。専用駐車スペースが満車の場合も手帳提示で無料対応。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 30分100円(最初30分無料)\n障害者割引: 無料\n総台数: 22台",
+    "sourceUrl": "https://www.city.minoh.lg.jp/library/annai/onohara.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27221-001",
+    "name": "柏原駅西口自動車駐車場",
+    "address": "大阪府柏原市上市1丁目149番7ほか",
+    "latitude": 34.584503,
+    "longitude": 135.623718,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27221",
+    "cityName": "柏原市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "柏原市自動車駐車場条例第12条第1項に基づき、身体障害者手帳・精神障害者保健福祉手帳・療育手帳の交付を受けている者、またはこれらの者を同乗させている者は利用料金半額(一時利用・定期利用とも対象、定期利用限定の文言なし)。減額を受けるには規則で定める手続きにより指定管理者の承認が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時利用: 入庫後30分まで無料、以降30分毎100円(4時間30分〜24時間は800円、以降24時間毎800円加算) / 定期利用: 1ヶ月12,000円\n障害者割引: 半額\n総台数: 37台",
+    "sourceUrl": "https://www.city.kashiwara.lg.jp/reiki/reiki_honbun/e600RG00000827.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27221-002",
+    "name": "柏原駅東自動車駐車場",
+    "address": "大阪府柏原市上市4丁目388番42ほか",
+    "latitude": 34.586155,
+    "longitude": 135.62561,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27221",
+    "cityName": "柏原市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "柏原市自動車駐車場条例第12条第1項に基づき、身体障害者手帳・精神障害者保健福祉手帳・療育手帳の交付を受けている者、またはこれらの者を同乗させている者は利用料金半額(一時利用のみ対象施設、定期利用制度なし)。減額を受けるには規則で定める手続きにより指定管理者の承認が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時利用のみ: 入庫後30分まで無料、以降30分毎100円(4時間30分〜24時間は800円、以降24時間毎800円加算)\n障害者割引: 半額\n総台数: 14台",
+    "sourceUrl": "https://www.city.kashiwara.lg.jp/reiki/reiki_honbun/e600RG00000827.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27222-001",
+    "name": "大阪はびきの医療センター駐車場",
+    "address": "大阪府羽曳野市はびきの3-7-1",
+    "latitude": 34.549576,
+    "longitude": 135.592239,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27222",
+    "cityName": "羽曳野市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳をお持ちの方は総合案内または守衛室に手帳を提示することで駐車料金が免除。精神障害者保健福祉手帳・療育手帳については公式ページに記載なし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来受診患者 1回200円(30分以内無料)、それ以外は1時間ごとに200円\n障害者割引: 免除(無料)",
+    "sourceUrl": "https://www.ra.opho.jp/about/access/",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27223-001",
+    "name": "門真市役所第1駐車場(旧本館前駐車場)",
+    "address": "大阪府門真市中町1-1",
+    "latitude": 34.738827,
+    "longitude": 135.587341,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27223",
+    "cityName": "門真市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "市役所での用務のため、午前8時から午後6時までに利用する場合が対象。身体障害者手帳、精神障害者保健福祉手帳、療育手帳、難病患者医療助成受給確認証の交付を受けている者、その他市がこれらの者に準ずると認める者が運転または同乗している車両に必要時間分の駐車料金が付与される。思いやり駐車区画3区画あり。管理:名鉄協商株式会社 0120-722-247。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分100円\n障害者割引: 無料(市役所用務のための必要時間分)\n総台数: 37台",
+    "sourceUrl": "https://www.city.kadoma.osaka.jp/soshiki/somu/zaisankatuyou/siseijouhou/sisetusyoukai/24788.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27223-002",
+    "name": "門真市役所第2駐車場(別館前駐車場及び旧第六中学校運動広場駐車場)",
+    "address": "大阪府門真市中町1-1",
+    "latitude": 34.738827,
+    "longitude": 135.587341,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27223",
+    "cityName": "門真市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "市役所での用務のため、午前8時から午後6時までに利用する場合が対象。身体障害者手帳、精神障害者保健福祉手帳、療育手帳、難病患者医療助成受給確認証の交付を受けている者、その他市がこれらの者に準ずると認める者が運転または同乗している車両に必要時間分の駐車料金が付与される。車いす使用者駐車区画2区画、思いやり駐車区画1区画あり。管理:名鉄協商株式会社 0120-722-247。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分100円\n障害者割引: 無料(市役所用務のための必要時間分)\n総台数: 69台",
+    "sourceUrl": "https://www.city.kadoma.osaka.jp/soshiki/somu/zaisankatuyou/siseijouhou/sisetusyoukai/24788.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27223-003",
+    "name": "門真市民文化会館ルミエールホール地下駐車場",
+    "address": "大阪府門真市末広町29番1号",
+    "latitude": 34.736668,
+    "longitude": 135.593307,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27223",
+    "cityName": "門真市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳、難病患者医療助成受給確認証を1階管理事務所に提示し署名すると2時間の無料駐車券を交付。手帳1冊につき1日1枚。2時間超過分は通常料金が適用される。現在一部20台が閉鎖中で使用可能台数は20台。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 20分100円(1日最大1,300円、9:00〜22:00)\n障害者割引: 2時間無料\n総台数: 40台",
+    "sourceUrl": "https://npotoybox.jp/lumi/institution/undergroundparkinglot.html",
     "updatedAt": "2026-08-16T00:00:00Z"
   }
 ];

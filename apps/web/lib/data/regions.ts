@@ -986,6 +986,31 @@ const cities: City[] = [
     "code": "27218",
     "name": "大東市",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27219",
+    "name": "和泉市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27220",
+    "name": "箕面市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27221",
+    "name": "柏原市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27222",
+    "name": "羽曳野市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27223",
+    "name": "門真市",
+    "prefectureCode": "27"
   }
 ];
 
