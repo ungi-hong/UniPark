@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 725
+// 件数: 732
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -16603,5 +16603,156 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 30分220円(通常期)〜300円(繁忙期)、24時間最大3,080円(通常期)〜4,200円(繁忙期)\n障害者割引: 駐車料金50%割引",
     "sourceUrl": "https://www.kansai-airport.or.jp/access/parking/disabled.html",
     "updatedAt": "2026-08-15T00:00:00Z"
+  },
+  {
+    "id": "27214-001",
+    "name": "錦織公園 南駐車場",
+    "address": "大阪府富田林市錦織1560",
+    "latitude": 34.483078,
+    "longitude": 135.573944,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27214",
+    "cityName": "富田林市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "障がい者手帳を駐車場の係員に提示すると利用料金が減免される(大阪府公式バリアフリー情報に記載。具体的な割引率・全額免除かは公式ページに明記なし)。南駐車場の利用時間は9時〜17時(入庫は16時30分まで)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:平日無料・土日祝640円(1日)/大型車:平日無料(要予約)・土日祝利用不可/単車:無料\n障害者割引: 減免(割引率は明記なし)\n総台数: 245台",
+    "sourceUrl": "https://www.pref.osaka.lg.jp/o130170/kenshi_kikaku/seinou-hyouji/bf-294.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27215-001",
+    "name": "寝屋川公園第1駐車場(北駐車場)",
+    "address": "大阪府寝屋川市寝屋川公園1707",
+    "latitude": 34.760391,
+    "longitude": 135.652222,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27215",
+    "cityName": "寝屋川市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳・特定医療費(指定難病)受給者証・特定疾患医療受給者証・小児慢性特定疾患医療受診券のいずれかを所持する方が乗車している車両が対象。入庫時または出庫時に係員へ手帳原本またはミライロID(アプリを自身で起動して提示、スクリーンショット・コピー不可)を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:平日1時間まで190円、以降段階制で10時間超24時間まで800円/土日祝1時間まで390円、以降段階制で10時間超24時間まで1,490円\n障害者割引: 無料(全額免除)\n総台数: 244台",
+    "sourceUrl": "https://neyagawa.osaka-park.or.jp/riyouryoukin",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27215-002",
+    "name": "寝屋川公園第2駐車場(南駐車場)",
+    "address": "大阪府寝屋川市寝屋川公園1707",
+    "latitude": 34.760391,
+    "longitude": 135.652222,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27215",
+    "cityName": "寝屋川市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳・被爆者健康手帳・特定医療費(指定難病)受給者証・特定疾患医療受給者証・小児慢性特定疾患医療受診券のいずれかを所持する方が乗車している車両が対象。入庫時または出庫時に係員へ手帳原本またはミライロID(アプリを自身で起動して提示、スクリーンショット・コピー不可)を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:平日1時間まで190円、以降段階制で10時間超24時間まで800円/土日祝1時間まで390円、以降段階制で10時間超24時間まで1,490円\n障害者割引: 無料(全額免除)\n総台数: 210台",
+    "sourceUrl": "https://neyagawa.osaka-park.or.jp/riyouryoukin",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27216-001",
+    "name": "河内長野市立市民総合体育館・大師総合運動場駐車場",
+    "address": "大阪府河内長野市大師町25-1",
+    "latitude": 34.445225,
+    "longitude": 135.571854,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27216",
+    "cityName": "河内長野市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの施設利用者および介助者は、駐車料金無料。詳しくは市民総合体育館(0721-65-0121)へ問合せ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者:入庫後60分無料、以降30分毎50円/施設利用者以外:入庫後60分無料、以降30分毎100円(当日最大料金500円)\n障害者割引: 無料\n総台数: 159台",
+    "sourceUrl": "https://www.ssksports.com/shisetsu/kawachinagano/guide",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27216-002",
+    "name": "河内長野市立下里総合運動場・コノミヤスペランツァ球技場駐車場",
+    "address": "大阪府河内長野市下里町892-3",
+    "latitude": 34.442455,
+    "longitude": 135.533737,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27216",
+    "cityName": "河内長野市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳・精神障がい者保健福祉手帳・療育手帳をお持ちの施設利用者および介助者は、駐車料金無料。詳しくは市民総合体育館(0721-65-0121)へ問合せ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者/施設利用者以外:平日1回200円、土日祝1回400円(入庫後30分無料)\n障害者割引: 無料\n総台数: 134台",
+    "sourceUrl": "https://www.ssksports.com/shisetsu/kawachinagano/guide",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27217-001",
+    "name": "タイムズ スポーツパークまつばら",
+    "address": "大阪府松原市三宅西5-876",
+    "latitude": 34.592686,
+    "longitude": 135.54747,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27217",
+    "cityName": "松原市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちのご本人が対象。ミライロIDアプリの「QRコード機能」を起動し、精算機に貼付されたQRコードをスキャンすることで駐車場・駐輪場料金の減免が適用される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分100円\n障害者割引: 駐車場・駐輪場料金の減免(割引額は現地精算機の表示による)\n総台数: 50台",
+    "sourceUrl": "https://mirairo-id.jp/place/times/",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27218-001",
+    "name": "深北緑地 第1駐車場・第2駐車場",
+    "address": "大阪府大東市深野北4-284",
+    "latitude": 34.727352,
+    "longitude": 135.628754,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27218",
+    "cityName": "大東市",
+    "accessibleSpaceTotal": 10,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者手帳、療育手帳、被爆者健康手帳、特定疾患医療受給者証、小児慢性特定疾患医療受診券、またはミライロIDの提示で駐車料金を免除。手帳保有者本人が同乗していることが必要。提示方法は(1)係員に手帳を提示、(2)精算機で音声案内に従い操作、(3)管理事務所(9:00-17:00)で手帳と駐車券を提示、のいずれか。第1駐車場・第2駐車場それぞれに車いす使用者用駐車区画5台分(計10台)あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 10
+      }
+    ],
+    "notes": "通常料金: 普通車 1時間まで 平日300円/土日祝390円(以降段階加算、最大料金あり)\n障害者割引: 無料",
+    "sourceUrl": "https://fukakitaryokuchi.jp/faq",
+    "updatedAt": "2026-08-16T00:00:00Z"
   }
 ];

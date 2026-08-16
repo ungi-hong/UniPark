@@ -961,6 +961,31 @@ const cities: City[] = [
     "code": "27213",
     "name": "泉佐野市",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27214",
+    "name": "富田林市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27215",
+    "name": "寝屋川市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27216",
+    "name": "河内長野市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27217",
+    "name": "松原市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27218",
+    "name": "大東市",
+    "prefectureCode": "27"
   }
 ];
 
