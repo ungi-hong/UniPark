@@ -1031,6 +1031,21 @@ const cities: City[] = [
     "code": "27227",
     "name": "東大阪市",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27230",
+    "name": "交野市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27231",
+    "name": "大阪狭山市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27232",
+    "name": "阪南市",
+    "prefectureCode": "27"
   }
 ];
 

@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 771
+// 件数: 775
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -17640,6 +17640,90 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 8時〜22時1時間200円、22時〜8時1時間100円、平日24時間最大500円、土日祝24時間最大600円、夜間最大(18時〜8時)300円\n障害者割引: 障害者手帳提示で駐車料金免除\n総台数: 18台",
     "sourceUrl": "https://www.hos-higashitaiikukan.com/access/",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27230-001",
+    "name": "大阪府民の森 ほしだ園地 駐車場",
+    "address": "大阪府交野市星田5019-1",
+    "latitude": 34.768608,
+    "longitude": 135.669647,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27230",
+    "cityName": "交野市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証、被ばく者健康手帳のいずれかを所持する方とその介護者が対象。駐車場及びクライミングウォール利用料が全額免除。提示方法等の詳細は管理事務所(ピトンの小屋)に要問合せ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車200円/時間(大型バス600円/時間・要予約)\n障害者割引: 全額免除(無料)\n総台数: 88台",
+    "sourceUrl": "https://o-wonderforest.com/hoshida/info.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27231-001",
+    "name": "大阪狭山市役所本庁舎駐車場",
+    "address": "大阪府大阪狭山市狭山一丁目2384番地の1",
+    "latitude": 34.503681,
+    "longitude": 135.555862,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27231",
+    "cityName": "大阪狭山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "有効な障がい者手帳(ミライロID可)を所持している人は障がい者減免により無料。出庫前に事前精算機を使用し、障がい者手帳を提示して必ず減免処理を行うこと。市役所利用者向けの用務時間減免(窓口発行の減免処理券、最大2時間まで)とは別枠の障がい者減免。SAYAKAホール駐車場と相互利用可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から60分まで無料、以降120分まで300円、以降60分毎に100円加算(入庫後24時間最大料金600円、最大料金は繰り返し適用)\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.osakasayama.osaka.jp/sosiki/soumubu/shisankatsuyou_keiyaku/shiyakusyo/7800.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27231-002",
+    "name": "大阪狭山市文化会館(SAYAKAホール)駐車場",
+    "address": "大阪府大阪狭山市狭山一丁目875番地の1",
+    "latitude": 34.501736,
+    "longitude": 135.555756,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27231",
+    "cityName": "大阪狭山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "有効な障がい者手帳またはミライロIDを事前精算機に提示することで障がい者減免が可能(全額無料)。原則ホール利用者への一般減免処理券の発行はないが、障がい者手帳提示者は対象。市役所本庁舎駐車場と相互利用可能、運営・管理はアマノマネジメントサービス株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上2時間未満300円、2時間以上3時間未満400円、3時間以上4時間未満500円、4時間以上24時間未満600円(24時間経過後は60分毎100円、最大料金は繰り返し適用)\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.osakasayama.osaka.jp/sosiki/seisakusuishinbu/kouminrenkei_kyoudousuishin/bunka/8119.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27232-001",
+    "name": "わんぱく王国駐車場",
+    "address": "大阪府阪南市山中渓119-8",
+    "latitude": 34.323997,
+    "longitude": 135.27449,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27232",
+    "cityName": "阪南市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、または子ども家庭センター・自立相談支援センターで知的障がい者と認定された方が入場時に手帳(コピー不可)を提示することで駐車料金が免除される。第1駐車場が満車の場合のみ第2駐車場を利用可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車(軽自動車含む)500円/大型車(マイクロバス含む)1,500円\n障害者割引: 無料\n総台数: 140台",
+    "sourceUrl": "https://www.city.hannan.lg.jp/kakuka/toshi/douro/koenkankei/wanpaku.html",
     "updatedAt": "2026-08-16T00:00:00Z"
   }
 ];
