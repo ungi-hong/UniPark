@@ -1011,6 +1011,26 @@ const cities: City[] = [
     "code": "27223",
     "name": "門真市",
     "prefectureCode": "27"
+  },
+  {
+    "code": "27224",
+    "name": "摂津市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27225",
+    "name": "高石市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27226",
+    "name": "藤井寺市",
+    "prefectureCode": "27"
+  },
+  {
+    "code": "27227",
+    "name": "東大阪市",
+    "prefectureCode": "27"
   }
 ];
 

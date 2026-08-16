@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 749
+// 件数: 771
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -17156,6 +17156,490 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 20分100円(1日最大1,300円、9:00〜22:00)\n障害者割引: 2時間無料\n総台数: 40台",
     "sourceUrl": "https://npotoybox.jp/lumi/institution/undergroundparkinglot.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27224-001",
+    "name": "摂津市立コミュニティプラザ立体駐車場(保健センター横)",
+    "address": "大阪府摂津市南千里丘5番30号",
+    "latitude": 34.786041,
+    "longitude": 135.554062,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27224",
+    "cityName": "摂津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳をお持ちの方が運転する自動車、またはその方が同乗する自動車は駐車料金無料。摂津市立コミュニティプラザ・摂津市保健センター利用者専用(公共施設利用者以外の駐車不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1台500円(駐車時間1時間以内は無料)\n障害者割引: 無料\n総台数: 22台",
+    "sourceUrl": "https://settsu-cp.com/?page_id=7",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27224-002",
+    "name": "摂津市立小川自動車駐車場",
+    "address": "大阪府摂津市学園町一丁目4番",
+    "latitude": 34.785748,
+    "longitude": 135.558609,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27224",
+    "cityName": "摂津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "摂津市立自動車駐車場条例施行規則第7条第1項第3号により、身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている者が、摂津市立男女共同参画センター、摂津市民文化ホール、摂津市立保健センター、摂津市立休日小児急病診療所、摂津市立柳田テニスコート、三宅柳田小学校多目的ホール、摂津市立コミュニティプラザ、摂津市教育センターのいずれかを利用する場合、当駐車場の利用料金が全額免除。同条第4号により、上記以外の一時・定期利用の障害者は5割減額。手帳の提示が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間までごと100円、6時間超24時間以内600円。定期利用(1か月)11,000円。\n障害者割引: 特定公共施設利用時は全額免除(無料)。それ以外の一時・定期利用は5割減額(1時間までごと50円、6時間超24時間以内300円、定期利用月5,500円)。\n総台数: 59台",
+    "sourceUrl": "https://www.city.settsu.osaka.jp/section/reiki/reiki_honbun/v100RG00000359.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27224-003",
+    "name": "摂津市立摂津駅前自転車自動車駐車場",
+    "address": "大阪府摂津市鶴野一丁目1番41号",
+    "latitude": 34.779877,
+    "longitude": 135.561401,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27224",
+    "cityName": "摂津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けておられる方が対象。摂津市立自動車駐車場条例施行規則に基づく5割減額。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 自動車:30分100円、5時間超24時間以内1,000円\n障害者割引: 5割引(自動車:30分50円、5時間超24時間以内500円)\n総台数: 2台",
+    "sourceUrl": "https://www.n-parking.com/park/w_park022.php",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27224-004",
+    "name": "摂津市立南摂津駅前第1自動車駐車場",
+    "address": "大阪府摂津市東一津屋17番1号",
+    "latitude": 34.766178,
+    "longitude": 135.569046,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27224",
+    "cityName": "摂津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けておられる方が対象。摂津市立自動車駐車場条例施行規則に基づく5割減額。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに100円、5時間超24時間以内1,000円。定期利用(1か月)13,000円。\n障害者割引: 5割引(30分ごとに50円、5時間超24時間以内500円、定期利用月6,500円)\n総台数: 127台",
+    "sourceUrl": "https://www.n-parking.com/park/w_park032.php",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27224-005",
+    "name": "摂津市立南摂津駅前第2自転車自動車駐車場",
+    "address": "大阪府摂津市一津屋三丁目16番1号",
+    "latitude": 34.765045,
+    "longitude": 135.567856,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27224",
+    "cityName": "摂津市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "自動車区画3台はすべて障害者専用区画。身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けておられる方が対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 自動車区画3台はすべて障害者専用のため一般料金設定なし\n障害者割引: 30分までごと50円、5時間超24時間以内500円(通常料金の5割相当)\n総台数: 3台",
+    "sourceUrl": "https://www.n-parking.com/park/w_park020.php",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27224-006",
+    "name": "フォルテ摂津自動車駐車場",
+    "address": "大阪府摂津市千里丘東2丁目10-1",
+    "latitude": 34.791924,
+    "longitude": 135.551773,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27224",
+    "cityName": "摂津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象(摂津市立自動車駐車場条例施行規則に基づく5割減額)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 5時間まで30分毎100円、5時間超24時間まで1,000円\n障害者割引: 5割引(5時間まで30分毎50円、5時間超24時間まで500円)",
+    "sourceUrl": "https://settutosikaihatu.sakura.ne.jp/tyusya/tyusya.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27225-001",
+    "name": "高石市立高石駅前自動車駐車場",
+    "address": "大阪府高石市綾園1丁目9番1号(アプラたかいし地下1・2階)",
+    "latitude": 34.521965,
+    "longitude": 135.433899,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27225",
+    "cityName": "高石市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳の交付を受けている方等が対象。高石都市開発株式会社(アプラたかいし3階、受付時間 午前9時30分〜午後5時、電話072-267-0018)へ申し出ることで減額を受けられる場合がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間時間帯(7:00〜24:00)最初の30分無料、以後30分ごとに110円、最大料金1,100円(5時間超過)。夜間時間帯(24:00〜7:00)1回につき1,100円。\n障害者割引: 料金の5割に相当する金額を減額\n総台数: 215台",
+    "sourceUrl": "https://www.city.takaishi.lg.jp/kakuka/doboku/dobokukanri_ka/koutsu/parking/yuuryoujidousyatyuusyajou.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27225-002",
+    "name": "高石市庁舎自動車駐車場",
+    "address": "大阪府高石市加茂4丁目1番1号",
+    "latitude": 34.521198,
+    "longitude": 135.442276,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27225",
+    "cityName": "高石市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳(知的障害と判定された者に交付)又は精神障害者保健福祉手帳の交付を受けている者が運転し、又は同乗する自動車が対象。自動車を出場させる際に出口精算機へ当該手帳を提示することが必要(高石市庁舎自動車駐車場条例施行規則第5条第2項)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 5時間以内は1時間ごとに100円、5時間超〜12時間以内は500円、12時間超〜24時間以内は800円。\n障害者割引: 使用料全額免除",
+    "sourceUrl": "https://www.city.takaishi.lg.jp/section/reiki_int/reiki_honbun/k227RG00000739.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27226-001",
+    "name": "藤井寺市役所本庁舎駐車場",
+    "address": "大阪府藤井寺市岡1丁目1番1号",
+    "latitude": 34.574944,
+    "longitude": 135.597244,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27226",
+    "cityName": "藤井寺市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "各種障害者手帳(身体障害者手帳・療育手帳・精神障害者保健福祉手帳等)所持者、要介護者で配慮が必要な方など(付き添いの方を含む)は、来庁目的での利用時、駐車券を取り総合案内で減免処理を受けることで無料。地下駐車場に障害者専用スペース2区画(既設)、ゆずりあいスペース3区画(増設)あり。管理運営はアマノマネジメントサービス株式会社大阪支店。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 令和4年8月1日より有料化。入庫後1時間まで無料、それ以降は有料(具体的な時間単価・上限額は現地掲示の料金表(画像)のみで公式サイト本文には未記載)\n障害者割引: 各種障害者手帳所持者は駐車料金無料",
+    "sourceUrl": "https://www.city.fujiidera.lg.jp/soshiki/somubu/soumu/osirase/14203.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27226-002",
+    "name": "藤井寺市立市民総合会館(パープルホール)駐車場",
+    "address": "大阪府藤井寺市北岡1-2-3",
+    "latitude": 34.575703,
+    "longitude": 135.596603,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27226",
+    "cityName": "藤井寺市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳所持者、要介護が必要な方とその付き添いの方は無料。パープルホール事務室へ駐車券または手帳を提示するか、精算機横の受話器でコールセンターに連絡しカメラに手帳を提示。障害者手帳アプリ「ミライロID」の提示でも可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2024年8月1日より有料化。入庫後1時間まで無料、以降30分ごとに100円、24時間最大料金1,000円。本館1階駐車場32台(ゲート式、8:00〜22:30)、屋外駐車場21台(フラップ式、24時間)。\n障害者割引: 障害者手帳所持者は駐車料金無料\n総台数: 53台",
+    "sourceUrl": "https://www.city-fujiidera-kosha.or.jp/topics/6929",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27226-003",
+    "name": "藤井寺市立藤井寺駅南駐輪・駐車場",
+    "address": "大阪府藤井寺市藤井寺1丁目19番69号",
+    "latitude": 34.570389,
+    "longitude": 135.594772,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27226",
+    "cityName": "藤井寺市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳、難病受給者証等を現地にて呈示(本人が自ら運転、または同乗している場合に限る)。障がい者手帳アプリ「ミライロID」の呈示でも減免可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 自動車一時利用: 目安として最初の1時間300円、以降60分毎150円、24時間最大800円程度(詳細は現地表示の料金表による)\n障害者割引: 自動車一時使用300円減免、自転車一時使用150円減免、原動機付自転車一時使用200円減免",
+    "sourceUrl": "https://www.city.fujiidera.lg.jp/soshiki/toshiseibi/toshikeikaku/tyuurinn_tyuusyazyou/fujideraekiminami.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27226-004",
+    "name": "藤井寺市立ふじみ緑地駐車場",
+    "address": "大阪府藤井寺市小山藤美町880番40",
+    "latitude": 34.580196,
+    "longitude": 135.596802,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27226",
+    "cityName": "藤井寺市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者手帳(身体障害者手帳・精神障害者保健福祉手帳・療育手帳等)の呈示、またはミライロIDの呈示により、精算時に駐車料金の半額を減免。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(具体的な時間単価・上限額は一次情報からは未確認)。車椅子使用者用駐車施設あり。\n障害者割引: 精算時に駐車料金を半額減免",
+    "sourceUrl": "https://www.city.fujiidera.lg.jp/soshiki/toshiseibi/machihozen/tyuurinn_tyuusyazyou/10504.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-001",
+    "name": "花園中央公園駐車場(第1〜5駐車場)",
+    "address": "大阪府東大阪市松原南2丁目1番(第1〜4駐車場)/大阪府東大阪市吉田6丁目7番(第5駐車場)",
+    "latitude": 34.66806,
+    "longitude": 135.628601,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳の交付を受けている方、またはその方と同乗する介助者が対象。出庫時に手帳またはスマートフォンアプリ「ミライロID」を提示。第1〜4駐車場は2023年6月からゲート式駐車場としては国内初のミライロIDQRコード読取による減免システムを導入し、精算機にかざすだけで手続き可能。花園ラグビー場、花園中央公園野球場、東大阪市民美術センター来場者も本駐車場を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日:60分200円、22時以降100円、1日最大1,000円/土日祝・特定日:60分300円、22時以降100円、1日最大1,500円(入庫後30分以内出庫は無料)\n障害者割引: 出庫時に障害者手帳またはミライロIDの提示で駐車料金無料\n総台数: 465台",
+    "sourceUrl": "https://hanazono-centralparks-hos.com/hanazono-parking/",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-002",
+    "name": "東大阪アリーナ駐車場(総合体育館)",
+    "address": "大阪府東大阪市中小阪4丁目7番60号",
+    "latitude": 34.656837,
+    "longitude": 135.593674,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳の交付を受けている方が対象。手帳またはスマートフォンアプリ「ミライロID」を総合受付に提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:2時間まで300円、以降30分ごとに50円/大型車:2時間まで900円、以降30分ごとに150円\n障害者割引: 障害者手帳提示で駐車場使用料金免除\n総台数: 102台",
+    "sourceUrl": "https://www.hos-arena.com/access/",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-003",
+    "name": "東大阪市文化創造館駐車場",
+    "address": "大阪府東大阪市御厨南二丁目3番4号",
+    "latitude": 34.665787,
+    "longitude": 135.588867,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、精神障がい者保健福祉手帳、療育手帳所持者が運転または同乗している場合が対象。1階受付で手帳またはスマートフォンアプリ「ミライロID」を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 30分を超えて利用する1時間ごとに200円。1日上限:平日8〜23時500円、土日祝8〜23時700円、夜間23〜8時300円\n障害者割引: 施設利用時間分の駐車料金免除。車椅子専用駐車場は無料\n総台数: 65台",
+    "sourceUrl": "https://higashiosaka.hall-info.jp/access/index.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-004",
+    "name": "中部緑地庭球場駐車場",
+    "address": "大阪府東大阪市中新開2丁目7番17号",
+    "latitude": 34.682636,
+    "longitude": 135.62178,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の所持者、またはその方と同乗する介助者が対象。出庫時に手帳またはミライロIDを提示。管理はタイムズ24株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初10分無料、7時〜22時1時間200円、22時〜7時1時間100円、24時間最大800円\n障害者割引: 出庫時に手帳提示で駐車料金無料",
+    "sourceUrl": "https://www.city.higashiosaka.lg.jp/0000003722.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-005",
+    "name": "吉原公園野球場駐車場",
+    "address": "大阪府東大阪市吉原2丁目2番15号",
+    "latitude": 34.686089,
+    "longitude": 135.621933,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方、またはその方と同乗する介助者が対象。出庫時に手帳またはミライロIDを提示。管理はタイムズ24株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初10分無料、7時〜22時1時間200円、22時〜7時1時間100円、24時間最大800円\n障害者割引: 出庫時に手帳提示で駐車料金無料",
+    "sourceUrl": "https://www.city.higashiosaka.lg.jp/0000004465.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-006",
+    "name": "布施公園野球場駐車場",
+    "address": "大阪府東大阪市森河内東1丁目10番2号",
+    "latitude": 34.679005,
+    "longitude": 135.570969,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方、またはその方と同乗する介助者が対象。出庫時に手帳またはミライロIDを提示。管理はタイムズ24株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初10分無料、平日1時間200円(当日最大600円)、休日1時間200円・22時〜7時100円(当日最大800円)\n障害者割引: 出庫時に手帳提示で駐車料金無料",
+    "sourceUrl": "https://www.city.higashiosaka.lg.jp/0000004434.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-007",
+    "name": "金岡公園野球場駐車場",
+    "address": "大阪府東大阪市大蓮東1丁目5番8号",
+    "latitude": 34.642174,
+    "longitude": 135.578293,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳をお持ちの方が対象。出庫時に手帳を提示。管理はタイムズ24株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初10分無料、7時〜22時1時間200円、22時〜7時1時間100円、24時間最大800円\n障害者割引: 出庫時に手帳提示で駐車料金無料",
+    "sourceUrl": "https://www.city.higashiosaka.lg.jp/0000004113.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-008",
+    "name": "金岡公園庭球場駐車場",
+    "address": "大阪府東大阪市大蓮東1丁目5番8号",
+    "latitude": 34.642174,
+    "longitude": 135.578293,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳をお持ちの方が対象。出庫時に手帳を提示。管理はタイムズ24株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初10分無料、7時〜22時1時間200円、22時〜7時1時間100円、24時間最大800円\n障害者割引: 出庫時に手帳提示で駐車料金無料",
+    "sourceUrl": "https://www.city.higashiosaka.lg.jp/0000003867.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-009",
+    "name": "大阪府立中央図書館駐車場(ライティホール)",
+    "address": "大阪府東大阪市荒本北1丁目2番1号",
+    "latitude": 34.679993,
+    "longitude": 135.601273,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障がい者保健福祉手帳、療育手帳を1階総合案内(エントランス受付)に提示すると無料サービス券を発行。平面駐車場に車いす使用者用1台、地下駐車場に車いす使用者用2台・ゆずりあい区画2台あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 入庫後15分間無料、平日60分100円(最大料金なし)、土日祝60分150円(当日最大600円)\n障害者割引: 無料サービス券発行による駐車料金無料\n総台数: 108台",
+    "sourceUrl": "https://www.library.pref.osaka.jp/central/taimen/taimen_shisetsu.html",
+    "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27227-010",
+    "name": "東大阪市立東体育館駐車場",
+    "address": "大阪府東大阪市鷹殿町1番2号",
+    "latitude": 34.667862,
+    "longitude": 135.64003,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27227",
+    "cityName": "東大阪市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時〜22時1時間200円、22時〜8時1時間100円、平日24時間最大500円、土日祝24時間最大600円、夜間最大(18時〜8時)300円\n障害者割引: 障害者手帳提示で駐車料金免除\n総台数: 18台",
+    "sourceUrl": "https://www.hos-higashitaiikukan.com/access/",
     "updatedAt": "2026-08-16T00:00:00Z"
   }
 ];
