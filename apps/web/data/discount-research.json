@@ -11623,5 +11623,50 @@
     "discount_conditions": "身体障害者手帳、精神障害者保健福祉手帳、または子ども家庭センター・自立相談支援センターで知的障がい者と認定された方が入場時に手帳(コピー不可)を提示することで駐車料金が免除される。第1駐車場が満車の場合のみ第2駐車場を利用可能。",
     "source_url": "https://www.city.hannan.lg.jp/kakuka/toshi/douro/koenkankei/wanpaku.html",
     "verified_at": "2026-08-16"
+  },
+  {
+    "id": "27361-001",
+    "municipality_code": "27361",
+    "municipality": "熊取町",
+    "name": "永楽ゆめの森公園駐車場",
+    "address": "大阪府泉南郡熊取町大字野田65番10",
+    "capacity": 190,
+    "capacity_accessible": null,
+    "normal_rate": "普通自動車(1日1回当たり) 町内利用者:2時間30分以内無料、超過時100円/ 町外利用者:平日(祝日除く)300円、土曜・日曜・祝日500円",
+    "discount_rate": "2時間30分以内無料、2時間30分を超える場合は100円(1日1回当たり)",
+    "discount_scope": "partial",
+    "discount_conditions": "対象は「障がい者等」に該当する者(1.身体障害者手帳の交付を受けている者 2.療育手帳の交付を受けている者 3.精神障害者保健福祉手帳の交付を受けている者 4.大阪府特定疾患医療受給者証の交付を受けている者 5.難病の患者に対する医療等に関する法律による医療受給者証の交付を受けている者)。町内・町外利用者を問わず適用。利用時に駐車券と対象者であることが確認できるもの(各種手帳・受給者証等)を持参し、公園管理事務所(072-452-7676)で手続きが必要。手続きをしない場合は障がい者等でない町外利用者料金が適用される。",
+    "source_url": "https://www.town.kumatori.lg.jp/section/reiki_int/reiki_honbun/k239RG00000506.html",
+    "verified_at": "2026-08-16"
+  },
+  {
+    "id": "27362-001",
+    "municipality_code": "27362",
+    "municipality": "田尻町",
+    "name": "関西国際空港 第5駐車場（P5）",
+    "address": "大阪府泉南郡田尻町泉州空港中11-1",
+    "capacity": 833,
+    "capacity_accessible": 23,
+    "normal_rate": "普通車:30分200円、24時間未満最大2,800円(通常期)",
+    "discount_rate": "50%割引(半額)",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障がい者手帳をお持ちの方が対象(ミライロIDの提示可)。第2ターミナルビル国内線案内所で割引券を受け取り、出庫時に駐車場出口有人ブースで駐車券・手帳等とあわせて提示のうえ精算。",
+    "source_url": "https://www.kansai-airport.or.jp/access/parking",
+    "verified_at": "2026-08-16"
+  },
+  {
+    "id": "27362-002",
+    "municipality_code": "27362",
+    "municipality": "田尻町",
+    "name": "関西国際空港 第6駐車場（P6）",
+    "address": "大阪府泉南郡田尻町泉州空港中11-1",
+    "capacity": 779,
+    "capacity_accessible": null,
+    "normal_rate": "普通車:30分180円、24時間未満最大2,520円(通常期)",
+    "discount_rate": "50%割引(半額)",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障がい者手帳をお持ちの方が対象(ミライロIDの提示可)。第2ターミナルビル国内線案内所で割引券を受け取り、出庫時に駐車場出口有人ブースで駐車券・手帳等とあわせて提示のうえ精算。",
+    "source_url": "https://www.kansai-airport.or.jp/access/parking",
+    "verified_at": "2026-08-16"
   }
 ]
