@@ -822,6 +822,31 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "23112",
+    "name": "名古屋市南区",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23113",
+    "name": "名古屋市守山区",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23114",
+    "name": "名古屋市緑区",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23115",
+    "name": "名古屋市名東区",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23116",
+    "name": "名古屋市天白区",
+    "prefectureCode": "23"
+  },
+  {
     "code": "27102",
     "name": "大阪市都島区",
     "prefectureCode": "27"
