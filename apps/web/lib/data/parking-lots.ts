@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 778
+// 件数: 784
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -17795,5 +17795,135 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 普通車:30分180円、24時間未満最大2,520円(通常期)\n障害者割引: 50%割引(半額)\n総台数: 779台",
     "sourceUrl": "https://www.kansai-airport.or.jp/access/parking",
     "updatedAt": "2026-08-16T00:00:00Z"
+  },
+  {
+    "id": "27366-001",
+    "name": "せんなん里海公園駐車場（岬第1駐車場・岬第2駐車場・潮騒ビバレー駐車場）",
+    "address": "大阪府泉南郡岬町淡輪地先",
+    "latitude": 34.313828,
+    "longitude": 135.182571,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27366",
+    "cityName": "岬町",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、被爆者健康手帳、特定疾患医療受給者証、小児慢性特定疾患医療受診券のいずれかの交付を受けた方が乗車している場合、駐車場利用料金を全額免除。入庫時にインターフォンで係員に申し出のうえ、手帳またはミライロIDを提示(バス等大型車は事前に公園管理事務所へ申請が必要)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 普通車:平日320円・土日祝640円/大型車:平日1,050円・土日祝2,100円\n障害者割引: 無料",
+    "sourceUrl": "https://sennan.osaka-park.or.jp/parkingarea/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "27383-001",
+    "name": "大阪府立金剛登山道駐車場(第一・第二駐車場)",
+    "address": "大阪府南河内郡千早赤阪村大字千早1330-2",
+    "latitude": 34.407166,
+    "longitude": 135.669693,
+    "prefectureCode": "27",
+    "prefectureName": "大阪府",
+    "cityCode": "27383",
+    "cityName": "千早赤阪村",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健手帳・療育手帳の所持者、特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証・被爆者健康手帳の所持者およびその介護者が対象。対象施設利用時に駐車場料金が全額免除(テントサイト・バーベキューロストル等は半額免除)。手帳・受給者証の提示が必要。管理は一般財団法人大阪府みどり公社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車 1日600円、大型バス 1日1,300円\n障害者割引: 無料(全額免除)\n総台数: 307台",
+    "sourceUrl": "https://osaka-midori.jp/mori/parking.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23101-001",
+    "name": "名古屋市吹上中央帯駐車場",
+    "address": "愛知県名古屋市千種区吹上二丁目13番",
+    "latitude": 35.158993,
+    "longitude": 136.929733,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23101",
+    "cityName": "名古屋市千種区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、愛護(療育)手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費受給者証(指定難病)等の受給者証を所持する方が運転または同乗する場合が対象。駐車料金を支払う前に駐車整理券と手帳等を管理事務所(出口ゲートのインターフォン)で提示し減免手続きを行う。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(平日1日最大2,000円)\n障害者割引: 入庫後8時間まで全額免除(8時間超過分は5割減額)\n総台数: 171台",
+    "sourceUrl": "https://www.city.nagoya.jp/ryokuseidoboku/page/0000013132.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23101-002",
+    "name": "名古屋市池下駐車場",
+    "address": "愛知県名古屋市千種区覚王山通8丁目29番1",
+    "latitude": 35.166451,
+    "longitude": 136.947205,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23101",
+    "cityName": "名古屋市千種区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、愛護(療育)手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定医療費受給者証(指定難病)等を所持する方が運転または同乗する場合が対象。駐車料金を支払う前に駐車整理券と手帳等を駐車場管理事務所に提示し減免手続きを行う。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(0時~7時は1回600円)\n障害者割引: 駐車料金の50%減額\n総台数: 190台",
+    "sourceUrl": "https://www.city.nagoya.jp/ryokuseidoboku/page/0000013137.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23101-003",
+    "name": "東山動植物園駐車場(正門前・北園門前・新池・スカイタワー前など園内全駐車場)",
+    "address": "愛知県名古屋市千種区東山元町3-70",
+    "latitude": 35.153454,
+    "longitude": 136.976807,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23101",
+    "cityName": "名古屋市千種区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、愛護(療育)手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費受給者証(指定難病)、その他難病患者向け受給者証、または障害者手帳アプリ「ミライロID」所持者が対象。手続きは、駐車場入口の自動改札機で一旦全額支払い領収書を受取り、入園門の券売所で手帳等原本(コピー不可)と領収書を提示すると駐車料金が全額返金される。ミライロID利用者は入庫時に画面提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車1回800円(2026年9月30日まで、10月1日以降1,000円)、大型自動車1回2,000円、自動二輪車等1回400円\n障害者割引: 駐車料金全額免除(返金方式)\n総台数: 1600台",
+    "sourceUrl": "https://www.higashiyama.city.nagoya.jp/01_annai/01_02koutsu/01_02-01.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23101-004",
+    "name": "千種文化小劇場(ちくさ座)駐車場",
+    "address": "愛知県名古屋市千種区千種三丁目6番10号",
+    "latitude": 35.161369,
+    "longitude": 136.935471,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23101",
+    "cityName": "名古屋市千種区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護(療育)手帳等の手帳所持者本人が運転する普通自動車が対象(障害者手帳アプリ「ミライロID」対応)。詳細な手続きは施設窓口で要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1回 普通自動車300円\n障害者割引: 駐車料金全額免除\n総台数: 13台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
   }
 ];
