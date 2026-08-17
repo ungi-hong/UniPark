@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 784
+// 件数: 801
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -17924,6 +17924,376 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 1日1回 普通自動車300円\n障害者割引: 駐車料金全額免除\n総台数: 13台",
     "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23102-001",
+    "name": "徳川園駐車場(北駐車場・南駐車場)",
+    "address": "愛知県名古屋市東区徳川町1001",
+    "latitude": 35.183765,
+    "longitude": 136.933029,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23102",
+    "cityName": "名古屋市東区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・被爆者健康手帳・精神障害者保健福祉手帳・愛護手帳(療育手帳)・特定医療費受給者証(難病)等を所持する本人が乗車している自動車(大型車を除く)が対象。南駐車場は駐車後、駐車場出入口の駐車場事務所に手帳を提示。北駐車場は出庫前に駐車場出入口の駐車場事務所にて駐車券と一緒に手帳を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 普通車:25分毎100円(当日最大1,000円、6:00~23:00) 北駐車場地下79台(身障者用2台)。南駐車場は大型車専用4台+身障者用3台、大型車は最初の1時間500円・以降30分毎500円(9:15~17:45)\n障害者割引: 無料\n総台数: 79台",
+    "sourceUrl": "https://www.tokugawaen.aichi.jp/transportation-guide/index.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23102-002",
+    "name": "東文化小劇場駐車場(カルポート東駐車場、東図書館・市民ギャラリー矢田・東スポーツセンター共用)",
+    "address": "愛知県名古屋市東区大幸南一丁目1番10号 カルポート東",
+    "latitude": 35.188923,
+    "longitude": 136.946381,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23102",
+    "cityName": "名古屋市東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・被爆者健康手帳・精神障害者保健福祉手帳・愛護手帳(療育手帳)、または種別「難病患者」の医療受給者証・障害福祉サービス受給者証・地域相談支援受給者証・移動支援/地域活動支援受給者証を所持する本人が乗車している普通自動車が対象。ミライロID利用可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1回 普通自動車300円(回数券11回分3,000円/25回分5,000円)\n障害者割引: 無料(全額減免)\n総台数: 102台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23103-001",
+    "name": "名古屋市大曽根駐車場",
+    "address": "愛知県名古屋市北区大曽根三丁目1201番",
+    "latitude": 35.191853,
+    "longitude": 136.93512,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23103",
+    "cityName": "名古屋市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳、特定医療費受給者証等の交付を受けている方が運転または同乗する自家用車(定期券・回数券は対象外)。駐車場使用料を支払う前に駐車整理券と手帳等を大曽根駐車場管理事務所(TEL 052-991-6612)に提示し減額手続きを行う。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 10分50円、最大料金 昼間(7:00〜翌0:00)1,200円・夜間(0:00〜7:00)500円\n障害者割引: 5割減額\n総台数: 146台",
+    "sourceUrl": "https://www.city.nagoya.jp/ryokuseidoboku/page/0000013141.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23103-002",
+    "name": "名城公園北園駐車場",
+    "address": "愛知県名古屋市北区名城一丁目",
+    "latitude": 35.189117,
+    "longitude": 136.901443,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23103",
+    "cityName": "名古屋市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "名城公園の利用が目的で、身体障害者手帳・愛護手帳・精神障害者保健福祉手帳・戦傷病者手帳・被爆者健康手帳・特定医療費受給者証・難病関連受給者証等の所持者が運転または同乗する自家用車(大型車を除く)が対象。手帳等を係員またはインターホン越しにカメラへ提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 24時間 30分230円\n障害者割引: 無料(全額減額)",
+    "sourceUrl": "https://www.kaigo-wel.city.nagoya.jp/view/wel/shiori/kokyo_ryokin/koen_tyusyajyo.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23103-003",
+    "name": "名城公園北園第2駐車場",
+    "address": "愛知県名古屋市北区名城一丁目2-25",
+    "latitude": 35.189415,
+    "longitude": 136.903809,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23103",
+    "cityName": "名古屋市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛護手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、難病関連受給者証等をお持ちの方。駐車券を使わずインターフォンを押し、カメラに手帳をかざすと出口ゲートが開く方式。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(名城公園フラワープラザ料金表による、名城公園野球場南)\n障害者割引: 無料(全額)",
+    "sourceUrl": "https://www.meijyo-fp.com/facility/cafe-49129/index.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23103-004",
+    "name": "北文化小劇場駐車場(北図書館共用)",
+    "address": "愛知県名古屋市北区志賀町4丁目60番地の31",
+    "latitude": 35.203732,
+    "longitude": 136.912521,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23103",
+    "cityName": "名古屋市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)等をお持ちの本人が乗車している普通自動車が対象。障害者手帳アプリ「ミライロID」利用可。手続き方法の詳細は施設(TEL 052-910-3366)へ要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1回 普通自動車300円\n障害者割引: 無料(全額免除)\n総台数: 31台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23103-005",
+    "name": "北スポーツセンター駐車場",
+    "address": "愛知県名古屋市北区成願寺一丁目6番12号",
+    "latitude": 35.215233,
+    "longitude": 136.9142,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23103",
+    "cityName": "名古屋市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、戦傷病者手帳、被爆者健康手帳、精神障がい者保健福祉手帳、愛護手帳の交付を受けている方は使用料免除。同行の介護者2名までも使用料免除。問い合わせ TEL 052-917-0501。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(詳細な時間料金は施設へ要確認)\n障害者割引: 使用料免除(無料)\n総台数: 156台",
+    "sourceUrl": "https://www.nagoya-rehab.or.jp/portal/facility/2000053.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23104-001",
+    "name": "西文化小劇場・西図書館共用駐車場",
+    "address": "愛知県名古屋市西区花の木二丁目18番23号",
+    "latitude": 35.189823,
+    "longitude": 136.889984,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23104",
+    "cityName": "名古屋市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)、戦傷病者手帳、被爆者健康手帳、特定医療費受給者証(難病患者)等をお持ちのご本人が乗車している普通自動車が対象。手帳またはミライロID提示で駐車場利用料金が全額無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1回 普通自動車300円\n障害者割引: 無料\n総台数: 40台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23104-002",
+    "name": "庄内緑地(庄内緑地グリーンプラザ)駐車場",
+    "address": "愛知県名古屋市西区山田町大字上小田井字敷地3527",
+    "latitude": 35.215015,
+    "longitude": 136.886612,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23104",
+    "cityName": "名古屋市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "公園利用が目的で、身体障害者手帳、愛護手帳(療育手帳等)、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費受給者証等(難病患者含む)を所持し運転または同乗する普通自動車(自家用車)が対象。係員に手帳等を提示(コピー不可)。日付をまたぐ利用は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 基本料金1時間以内200円、以降2時間毎200円加算(平日30分無料)\n障害者割引: 無料(全額減免)\n総台数: 643台",
+    "sourceUrl": "https://shonai-ryokuchi.jp/access/parking.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23104-003",
+    "name": "西生涯学習センター駐車場",
+    "address": "愛知県名古屋市西区浄心一丁目1-45",
+    "latitude": 35.19302,
+    "longitude": 136.890625,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23104",
+    "cityName": "名古屋市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(これに類するものを含む)、難病患者の特定医療費受給者証等をお持ちの方は窓口で手帳またはミライロID提示により駐車料金無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1台につき1回300円(30分以内無料)。令和8年10月1日より500円に改定。\n障害者割引: 無料\n総台数: 13台",
+    "sourceUrl": "https://www.city.nagoya.jp/kodomo/shougaigakushu/1015902/1015903/1034379/1015907.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23105-001",
+    "name": "中村公園文化プラザ駐車場(中村図書館・中村文化小劇場共用)",
+    "address": "愛知県名古屋市中村区中村町字茶ノ木25番地",
+    "latitude": 35.174046,
+    "longitude": 136.853912,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23105",
+    "cityName": "名古屋市中村区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)等の手帳所持者本人が乗車する普通自動車が対象。精算窓口/係員に手帳(またはミライロID)を提示することで駐車料金が全額減免される。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 1回300円(入庫後30分以内は無料)※2026年10月1日から1回500円に改定予定\n障害者割引: 無料(全額減免)\n総台数: 26台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23105-002",
+    "name": "中村生涯学習センター駐車場",
+    "address": "愛知県名古屋市中村区鳥居通3-1-3",
+    "latitude": 35.174583,
+    "longitude": 136.864548,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23105",
+    "cityName": "名古屋市中村区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等をお持ちの方は駐車料金が減免(施設利用料金自体は減免対象外、駐車料金のみ対象)。ミライロIDの提示も可能。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 1回300円(入庫後30分以内は無料)※2026年10月1日から1回500円に改定予定\n障害者割引: 無料(全額減免)\n総台数: 23台",
+    "sourceUrl": "https://www.city.nagoya.jp/kodomo/shougaigakushu/1015902/1015903/1034379/1015908.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23105-003",
+    "name": "中村公園駐車場(予約者専用駐車場)",
+    "address": "愛知県名古屋市中村区中村町高畑68",
+    "latitude": 35.175304,
+    "longitude": 136.854553,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23105",
+    "cityName": "名古屋市中村区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛護手帳(療育手帳)、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、難病患者向け受給者証等の所持者(大型自動車を除く)が対象。駐車場係員に手帳(またはミライロID)を提示。利用には事前に中村公園事務所(052-413-5525)への予約が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回300円、大型バス1回2,000円(利用時間8:45~17:30)※2026年10月1日から普通車1回500円に改定予定\n障害者割引: 無料(全額減免)",
+    "sourceUrl": "https://www.nakamura-park.com/access/index.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23106-001",
+    "name": "久屋駐車場",
+    "address": "愛知県名古屋市中区栄三丁目5番12号先",
+    "latitude": 35.168533,
+    "longitude": 136.908096,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23106",
+    "cityName": "名古屋市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳、特定医療費受給者証、指定難病要支援者証明事業により発行される登録者証等を所持する方が運転または同乗する場合が対象。支払い前に駐車整理券と手帳等を駐車場管理事務所(052-261-8505)へ提示し減額手続きが必要(精算後は不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(7時~24時)30分300円(平日最大1,500円)、夜間(24時~7時)600円\n障害者割引: 駐車料金の50%減額(定期券・回数券は対象外)\n総台数: 509台",
+    "sourceUrl": "https://www.city.nagoya.jp/jutakutoshi/page/0000012689.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23106-002",
+    "name": "大須駐車場",
+    "address": "愛知県名古屋市中区大須三丁目14番12号",
+    "latitude": 35.161163,
+    "longitude": 136.90271,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23106",
+    "cityName": "名古屋市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳、特定医療費受給者証、指定難病要支援者証明事業の登録者証、難病患者に該当する障害福祉サービス受給者証等を所持する方が運転または同乗する場合が対象。支払い前に駐車整理券と手帳等を駐車場管理事務所(052-251-6775)へ提示し減額手続きが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(7時~22時)平日30分200円(最大1,000円)・休日30分300円、夜間(22時~7時)600円\n障害者割引: 駐車料金の50%減額(定期券・回数券は対象外)\n総台数: 202台",
+    "sourceUrl": "https://www.city.nagoya.jp/jutakutoshi/page/0000012694.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23106-003",
+    "name": "古沢公園駐車場",
+    "address": "愛知県名古屋市中区金山一丁目3番1号",
+    "latitude": 35.146961,
+    "longitude": 136.901443,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23106",
+    "cityName": "名古屋市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、愛護手帳、特定医療費受給者証、指定難病要支援者証明登録者証、特定の障害福祉サービス受給者証等を所持する方が運転または同乗する場合が対象。駐車前に管理事務所(052-331-4048)で減額手続きが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(7時~22時)30分200円、夜間(22時~7時)600円\n障害者割引: 駐車料金の50%減額(定期券・回数券は対象外)\n総台数: 249台",
+    "sourceUrl": "https://www.city.nagoya.jp/jutakutoshi/page/0000012703.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23106-004",
+    "name": "久屋大通庭園フラリエ駐車場",
+    "address": "愛知県名古屋市中区大須四丁目4番1号",
+    "latitude": 35.161655,
+    "longitude": 136.908325,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23106",
+    "cityName": "名古屋市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障害者手帳、愛護手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定医療費受給者証等の難病患者向け受給者証等を所持する方が運転または同乗する自家用自動車(大型自動車を除く)が対象。公園利用が目的であること。手帳・受給者証のコピー不可、原本を係員またはインターホン越しに提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~22時 30分200円、22時~8時 60分100円\n障害者割引: 使用料全額免除(ただし午前0時~午前8時の利用は減額対象外)\n総台数: 18台",
+    "sourceUrl": "https://www.nga.or.jp/exemption/",
     "updatedAt": "2026-08-17T00:00:00Z"
   }
 ];
