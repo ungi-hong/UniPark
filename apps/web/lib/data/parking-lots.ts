@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 835
+// 件数: 840
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -19065,6 +19065,120 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 土日祝1台1回500円(しだれ梅まつり期間は1,000円)、平日及び12・1月は無料\n障害者割引: 無料(有料日の料金が免除)\n総台数: 224台",
     "sourceUrl": "https://dela-farm.com/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23202-001",
+    "name": "岡崎市図書館交流プラザ「りぶら」駐車場(康生パーク)",
+    "address": "愛知県岡崎市康生通西4丁目71番地",
+    "latitude": 34.959457,
+    "longitude": 137.159195,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23202",
+    "cityName": "岡崎市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳、戦傷病者手帳、被爆者健康手帳のいずれかをお持ちの方、またはミライロIDの提示者が対象。図書館交流プラザ2階総合案内に手帳(またはミライロID画面)を提示すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 入庫から2時間まで無料、以降30分毎100円(夜間22時~翌7時は30分毎50円)\n障害者割引: 3時間まで無料(一般利用者の2時間無料より1時間延長)\n総台数: 450台",
+    "sourceUrl": "https://www.city.okazaki.lg.jp/libra/kotsu/1010198.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23203-001",
+    "name": "一宮駅東地下駐車場・一宮市銀座通公共駐車場",
+    "address": "愛知県一宮市栄2丁目・3丁目",
+    "latitude": 35.304958,
+    "longitude": 136.796906,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23203",
+    "cityName": "一宮市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者であることを理由に自動車税又は軽自動車税の減免を受けている方が対象(減免対象車両に限る)。障害福祉課(市役所本庁舎2階25番窓口)・尾西庁舎窓口課・木曽川庁舎総務窓口課で、自動車税減免の押印がある身体障害者手帳等と本人確認書類を提示して「特別利用証明書」の交付を受け、利用時に携帯する必要がある。申請書は窓口で作成可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から20分無料、午前7時~午後7時は30分ごとに100円、午後7時~翌午前1時は60分ごとに100円(午前7時~翌午前1時の上限1,000円)\n障害者割引: 普通使用料の2分の1(半額)\n総台数: 236台",
+    "sourceUrl": "https://www.city.ichinomiya.aichi.jp/fukushi/shougaifukushi/1044107/1000147/1010684/1001074.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23203-002",
+    "name": "一宮市本町自動車整理場",
+    "address": "愛知県一宮市本町3丁目9-27",
+    "latitude": 35.302235,
+    "longitude": 136.799881,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23203",
+    "cityName": "一宮市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者であることを理由に自動車税又は軽自動車税の減免を受けている方が対象(減免対象車両に限る)。障害福祉課(市役所本庁舎2階25番窓口)・尾西庁舎窓口課・木曽川庁舎総務窓口課で、自動車税減免の押印がある身体障害者手帳等と本人確認書類を提示して「特別利用証明書」の交付を受け、利用時に携帯する必要がある。申請書は窓口で作成可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 午前7時~午後7時は30分ごとに100円、午後7時~翌午前1時は60分ごとに100円(午前1時~午前7時は利用不可)\n障害者割引: 普通使用料の2分の1(半額)\n総台数: 20台",
+    "sourceUrl": "https://www.city.ichinomiya.aichi.jp/fukushi/shougaifukushi/1044107/1000147/1010684/1001074.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23203-003",
+    "name": "一宮市大宮公園自動車整理場",
+    "address": "愛知県一宮市真清田1丁目2-7",
+    "latitude": 35.306919,
+    "longitude": 136.801529,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23203",
+    "cityName": "一宮市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者であることを理由に自動車税又は軽自動車税の減免を受けている方が対象(減免対象車両に限る)。障害福祉課(市役所本庁舎2階25番窓口)・尾西庁舎窓口課・木曽川庁舎総務窓口課で、自動車税減免の押印がある身体障害者手帳等と本人確認書類を提示して「特別利用証明書」の交付を受け、利用時に携帯する必要がある。申請書は窓口で作成可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 営業時間午前8時~午後9時30分、最初の1時間150円、以降30分ごとに50円、夜間(午後9時~翌午前8時30分)は1台につき600円\n障害者割引: 普通使用料の2分の1(半額)\n総台数: 43台",
+    "sourceUrl": "https://www.city.ichinomiya.aichi.jp/fukushi/shougaifukushi/1044107/1000147/1010684/1001074.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23205-001",
+    "name": "半田市福祉文化会館駐車場(瀧上工業雁宿ホール)",
+    "address": "愛知県半田市雁宿町一丁目22番地の1",
+    "latitude": 34.89624,
+    "longitude": 136.925125,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23205",
+    "cityName": "半田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "半田市身体障がい者福祉センター条例施行規則第4条の規定により利用証の交付を受け、同センター(福祉文化会館内に所在)を利用する者が対象。減免を受けるには利用証の提示が必要(半田市福祉文化会館駐車場管理規則第3条)。なお一般来館者(瀧上工業雁宿ホール利用者)は窓口で駐車券を提示すると入庫後1時間無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで210円、以降30分ごとに100円(1日最大640円、5:00~24:00・隣接雁宿駐車場と同一料金体系)\n障害者割引: 入庫時から240分(4時間)まで無料\n総台数: 100台",
+    "sourceUrl": "https://www1.g-reiki.net/handa-fd/reiki_honbun/i507RG00000253.html",
     "updatedAt": "2026-08-17T00:00:00Z"
   }
 ];

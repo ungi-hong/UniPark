@@ -847,6 +847,21 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "23202",
+    "name": "岡崎市",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23203",
+    "name": "一宮市",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23205",
+    "name": "半田市",
+    "prefectureCode": "23"
+  },
+  {
     "code": "27102",
     "name": "大阪市都島区",
     "prefectureCode": "27"
