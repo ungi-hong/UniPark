@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 801
+// 件数: 819
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -18293,6 +18293,417 @@ export const parkingLots: ParkingLotDetail[] = [
     },
     "accessibleSpaces": [],
     "notes": "通常料金: 8時~22時 30分200円、22時~8時 60分100円\n障害者割引: 使用料全額免除(ただし午前0時~午前8時の利用は減額対象外)\n総台数: 18台",
+    "sourceUrl": "https://www.nga.or.jp/exemption/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23107-001",
+    "name": "名古屋市吹上駐車場",
+    "address": "愛知県名古屋市昭和区吹上二丁目1番",
+    "latitude": 35.157478,
+    "longitude": 136.930344,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23107",
+    "cityName": "名古屋市昭和区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、戦傷病者手帳、愛護手帳(療育手帳)、被爆者健康手帳、精神障害者保健福祉手帳等の所持者。名古屋市営駐車場は8か所あり、久屋・大須・古沢公園・池下・大曽根駐車場は5割減額、吹上・吹上中央帯・金城ふ頭駐車場は全額免除(吹上は8時間超過分のみ5割)。管理事務所で駐車券と手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8時~21時 30分200円、21時~翌8時 1回600円(平日1日最大2,000円)\n障害者割引: 入庫後8時間まで全額免除、8時間超過分は5割減額\n総台数: 199台",
+    "sourceUrl": "https://www.city.nagoya.jp/ryokuseidoboku/page/0000013127.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23107-002",
+    "name": "昭和文化小劇場 駐車場",
+    "address": "愛知県名古屋市昭和区花見通1丁目41番地の2",
+    "latitude": 35.149921,
+    "longitude": 136.948929,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23107",
+    "cityName": "名古屋市昭和区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)、医療受給者証(種別「難病患者」)、障害福祉サービス受給者証(種別「難病患者」)、地域相談支援受給者証(種別「難病患者」)、移動支援・地域活動支援受給者証(種別「難病患者」)所持者本人が乗車する普通自動車が対象。ミライロID利用可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車1日1回300円\n障害者割引: 全額免除\n総台数: 25台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23107-003",
+    "name": "鶴舞公園駐車場(北・岡谷鋼機名古屋公会堂側)",
+    "address": "愛知県名古屋市昭和区鶴舞1丁目1番",
+    "latitude": 35.154156,
+    "longitude": 136.917221,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23107",
+    "cityName": "名古屋市昭和区",
+    "accessibleSpaceTotal": 4,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "公園利用目的で身体障害者手帳、愛護手帳(療育手帳等)、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費受給者証等を所持し運転又は同乗する普通自動車が対象。精算機付近のカメラ付インターホンで申し出て駐車券と手帳(コピー不可)を提示、またはミライロID利用可。障害者用スペースは公会堂裏2台・正面玄関寄り2台の計4台。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 30分200円(平日9:00~17:00は最大1,400円)、入出庫24時間可能\n障害者割引: 全額免除\n総台数: 150台",
+    "sourceUrl": "https://www.kaigo-wel.city.nagoya.jp/view/wel/shiori/kokyo_ryokin/koen_tyusyajyo.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23107-004",
+    "name": "鶴舞公園秋の池駐車場",
+    "address": "愛知県名古屋市昭和区鶴舞1丁目",
+    "latitude": 35.154938,
+    "longitude": 136.92009,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23107",
+    "cityName": "名古屋市昭和区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "公園利用目的で身体障害者手帳、愛護手帳(療育手帳等)、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費受給者証等を所持し運転又は同乗する普通自動車が対象。精算機付近のインターホンで申し出て駐車券と手帳を提示、ミライロID利用可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(平日は最大1,400円)、入出庫24時間可能\n障害者割引: 全額免除\n総台数: 42台",
+    "sourceUrl": "https://www.kaigo-wel.city.nagoya.jp/view/wel/shiori/kokyo_ryokin/koen_tyusyajyo.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23107-005",
+    "name": "鶴舞公園南駐車場(テラスポ鶴舞・名古屋市障害者スポーツセンター側)",
+    "address": "愛知県名古屋市昭和区鶴舞1丁目1番156号",
+    "latitude": 35.154915,
+    "longitude": 136.916733,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23107",
+    "cityName": "名古屋市昭和区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)所持者。公園駐車場の障害者減免制度(有料公園施設使用料の減額・全額)が適用され、精算機インターホンで手帳提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 20分100円(入庫AM4:30~AM0:00/出庫24時間可能)\n障害者割引: 全額免除\n総台数: 92台",
+    "sourceUrl": "https://www.nagoya-rehab.or.jp/portal/facility/2000072.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23108-001",
+    "name": "瑞穂区役所地下駐車場",
+    "address": "愛知県名古屋市瑞穂区瑞穂通3-32",
+    "latitude": 35.131516,
+    "longitude": 136.934753,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23108",
+    "cityName": "名古屋市瑞穂区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "区役所地下駐車場は障害の有無にかかわらず全利用者が無料。43台(公用車6台と共用)のうち1台が車いす利用者はじめ障害のある方の優先スペース。車高2.3m超の車両は入場不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 無料(全利用者対象、駐車料金・駐車券は発生しません)\n障害者割引: 無料\n総台数: 43台",
+    "sourceUrl": "https://www.city.nagoya.jp/mizuho/page/0000176278.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23108-002",
+    "name": "瑞穂文化小劇場駐車場",
+    "address": "愛知県名古屋市瑞穂区豊岡通3-29",
+    "latitude": 35.121857,
+    "longitude": 136.941101,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23108",
+    "cityName": "名古屋市瑞穂区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)、医療受給者証・障害福祉サービス受給者証(難病患者)等をお持ちのご本人が乗車する普通自動車が対象。ミライロID提示可。精算時に施設窓口へ手帳等を提示。駐車場は瑞穂図書館と共用(48台)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1回300円(30分以内無料)\n障害者割引: 無料(全額減免)\n総台数: 48台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23108-003",
+    "name": "名古屋市瑞穂図書館駐車場",
+    "address": "愛知県名古屋市瑞穂区豊岡通3丁目29番地",
+    "latitude": 35.121857,
+    "longitude": 136.941101,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23108",
+    "cityName": "名古屋市瑞穂区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、被爆者健康手帳、戦傷病者手帳等の手帳・受給者証をお持ちの方(敬老手帳は対象外)は、精算時に窓口で手帳を提示することで全額減免。事前申請不要。駐車場は瑞穂文化小劇場と共用(48台)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1回300円(30分以内無料)\n障害者割引: 無料(全額減免)\n総台数: 48台",
+    "sourceUrl": "https://www.library.city.nagoya.jp/guide/annai.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23108-004",
+    "name": "瑞穂生涯学習センター駐車場",
+    "address": "愛知県名古屋市瑞穂区惣作町2-27-3",
+    "latitude": 35.120274,
+    "longitude": 136.925507,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23108",
+    "cityName": "名古屋市瑞穂区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "公式ページ原文:「30分以内無料、身体障害者手帳等をお持ちの方は減免」。全額か一部かは明記なし。詳細は瑞穂生涯学習センター(電話052-871-2255)へ要確認。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 1回300円(30分以内無料)※2026年10月1日から1回500円に改定予定\n障害者割引: 減免あり(減免率の明記なし)\n総台数: 19台",
+    "sourceUrl": "https://www.city.nagoya.jp/kyoiku/page/0000051929.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23108-005",
+    "name": "パロマ瑞穂スポーツパーク駐車場",
+    "address": "愛知県名古屋市瑞穂区山下通5丁目1番地",
+    "latitude": 35.124908,
+    "longitude": 136.941589,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23108",
+    "cityName": "名古屋市瑞穂区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳等)をお持ちの方が同乗する普通車が対象(マイクロバス等大型車は対象外)。駐車料金支払時の領収書と手帳を持参し管理事務所へ申し出ることで駐車料金を全額減免。身障者用駐車スペースの事前予約は不可。園内5駐車場(P1~P5、合計1,656台)共通の制度。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 1日1回500円(大型車2,000円)\n障害者割引: 無料(全額減免)\n総台数: 1656台",
+    "sourceUrl": "https://www.nespa.or.jp/shisetsu/mizuho/barrierfree/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23109-001",
+    "name": "白鳥庭園駐車場",
+    "address": "愛知県名古屋市熱田区熱田西町2-5",
+    "latitude": 35.125439,
+    "longitude": 136.901764,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23109",
+    "cityName": "名古屋市熱田区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛護手帳(療育手帳)、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費受給者証、障害福祉サービス受給者証(障害種別4・5のみ)等の手帳所持者、及び介護者(必要に応じて2名まで)は入園時に窓口で手帳またはデジタル障害者手帳「ミライロID」を提示すれば入園料が無料となり、駐車料金も無料(駐車券を窓口へ提出)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車1回500円\n障害者割引: 無料\n総台数: 40台",
+    "sourceUrl": "https://www.shirotori-garden.jp/guidance/waribiki/index.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23109-002",
+    "name": "名古屋市体育館駐車場",
+    "address": "愛知県名古屋市熱田区六野二丁目5番3号",
+    "latitude": 35.134384,
+    "longitude": 136.914093,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23109",
+    "cityName": "名古屋市熱田区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等の所持者は、駐車場利用時に手帳を提示することにより駐車料金が無料となる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 普通自動車1日1回300円(回数券あり、30分以内無料)\n障害者割引: 無料\n総台数: 45台",
+    "sourceUrl": "https://www.nagoyashi-taiikukan.jp/parking.php",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23109-003",
+    "name": "熱田生涯学習センター駐車場",
+    "address": "愛知県名古屋市熱田区熱田西町2-13",
+    "latitude": 35.126167,
+    "longitude": 136.899551,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23109",
+    "cityName": "名古屋市熱田区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "原文「30分以内無料、身体障害者手帳等をお持ちの方は減免」。名古屋市公共施設のミライロID利用可能施設一覧(生涯学習センター区分)でも「駐車料金が対象となります。施設の利用料金は減免されません。」と案内されているが、減免率(全額か一部か)の明記はなく要問合せ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 普通自動車1台につき1回300円(令和8年10月1日から500円、30分以内無料)\n障害者割引: 減免(具体的な割引率は公式ページに記載なし)\n総台数: 16台",
+    "sourceUrl": "https://www.city.nagoya.jp/kyoiku/page/0000051927.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23110-001",
+    "name": "中川文化小劇場・中川図書館共用駐車場",
+    "address": "愛知県名古屋市中川区吉良町178番地の3",
+    "latitude": 35.13802,
+    "longitude": 136.861832,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23110",
+    "cityName": "名古屋市中川区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、愛護手帳(療育手帳)等をお持ちのご本人が乗車している普通自動車が対象。ミライロID提示も可。管理事務所窓口にて手帳またはミライロIDを提示し減免手続きを行う。中川文化小劇場と中川図書館が共用する駐車場(85台)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 1日1回300円(現金のみ)\n障害者割引: 無料(全額減免)\n総台数: 85台",
+    "sourceUrl": "https://www.bunka758.or.jp/facility/parking/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23111-001",
+    "name": "名古屋市営金城ふ頭駐車場",
+    "address": "愛知県名古屋市港区金城ふ頭二丁目7番2",
+    "latitude": 35.050579,
+    "longitude": 136.84938,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23111",
+    "cityName": "名古屋市港区",
+    "accessibleSpaceTotal": 100,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、愛護手帳、特定医療費受給者証、指定難病要支援者証明事業による登録者証等をお持ちの方が運転または同乗する場合に対象。駐車料金を支払う前に、駐車整理券と手帳等を駐車場管理事務所に提示して減免手続きが必要。名古屋市営駐車場8か所のうち、久屋・大須・古沢公園・池下・大曽根は50%減免だが、当駐車場は吹上・吹上中央帯と並び100%減免。名古屋港水族館・ポートメッセなごや来場者も利用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 100
+      }
+    ],
+    "notes": "通常料金: 60分500円(平日最大1,000円・休日最大1,500円)\n障害者割引: 無料(駐車場使用料100%減免)\n総台数: 5005台",
+    "sourceUrl": "https://www.kaigo-wel.city.nagoya.jp/view/wel/shiori/kokyo_ryokin/shiei_tyusyajyo.html",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23111-002",
+    "name": "名古屋港水族館 身体障がい者用駐車場",
+    "address": "愛知県名古屋市港区港町1番3号",
+    "latitude": 35.092251,
+    "longitude": 136.878876,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23111",
+    "cityName": "名古屋市港区",
+    "accessibleSpaceTotal": 8,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳・愛護手帳等、被爆者健康手帳、戦傷病者手帳のいずれかを提示(障害者手帳アプリ「ミライロID」でも可)。水族館北側に隣接し8台分、先着順・予約不可。満車の場合は隣接の有料一般駐車場を利用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "障害者割引: 無料",
+    "sourceUrl": "https://nagoyaaqua.jp/news/other/28173/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23111-003",
+    "name": "荒子川公園駐車場(北駐車場ほか)",
+    "address": "愛知県名古屋市港区品川町2丁目1-1(荒子川公園ガーデンプラザ)",
+    "latitude": 35.102798,
+    "longitude": 136.860397,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23111",
+    "cityName": "名古屋市港区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、愛護手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定医療費受給者証等の難病関連受給者証をお持ちの方が運転または同乗する普通自動車が対象(名古屋市有料公園施設使用料減免制度、対象15公園の一つ)。係員に手帳等原本を提示(コピー不可)。日をまたぐ利用は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 無料(初夏・秋のイベント開催期間中の北駐車場のみ有料500円)\n障害者割引: 無料(全額免除)",
+    "sourceUrl": "https://www.nga.or.jp/exemption/",
+    "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23111-004",
+    "name": "戸田川緑地駐車場(第1~第5駐車場)",
+    "address": "愛知県名古屋市港区春田野2-3204",
+    "latitude": 35.115471,
+    "longitude": 136.812531,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23111",
+    "cityName": "名古屋市港区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等をお持ちの方が運転または同乗する普通自動車が対象(名古屋市有料公園施設使用料減免制度、対象15公園の一つ)。係員に手帳等原本を提示(コピー不可)。イベント有料期間のみ実質的に適用対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 無料(初夏の物語・秋の物語開催期間中のみ有料: 普通車500円/回)\n障害者割引: 無料(全額免除)\n総台数: 1101台",
     "sourceUrl": "https://www.nga.or.jp/exemption/",
     "updatedAt": "2026-08-17T00:00:00Z"
   }
