@@ -12598,5 +12598,35 @@
     "discount_conditions": "半田市身体障がい者福祉センター条例施行規則第4条の規定により利用証の交付を受け、同センター(福祉文化会館内に所在)を利用する者が対象。減免を受けるには利用証の提示が必要(半田市福祉文化会館駐車場管理規則第3条)。なお一般来館者(瀧上工業雁宿ホール利用者)は窓口で駐車券を提示すると入庫後1時間無料。",
     "source_url": "https://www1.g-reiki.net/handa-fd/reiki_honbun/i507RG00000253.html",
     "verified_at": "2026-08-17"
+  },
+  {
+    "id": "23206-001",
+    "municipality_code": "23206",
+    "municipality": "春日井市",
+    "name": "勝川駅南口立体駐車場",
+    "address": "愛知県春日井市勝川町8丁目13番地",
+    "capacity": 73,
+    "capacity_accessible": 2,
+    "normal_rate": "入庫〜3時間まで30分ごとに150円、3時間超は900円(3時間分)+30分ごとに50円",
+    "discount_rate": "3時間まで半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳をお持ちの方が運転又は同乗して利用する場合、料金が3時間まで半額。お帰りの際、出口精算機にて割引の手続きが必要。手続き不明点は指定管理者の勝川開発株式会社(0568-34-6800)へ問い合わせ。",
+    "source_url": "https://www.city.kasugai.lg.jp/shisei/shisetsu/koutsu/1010596/kachigawaekiminami.html",
+    "verified_at": "2026-08-18"
+  },
+  {
+    "id": "23206-002",
+    "municipality_code": "23206",
+    "municipality": "春日井市",
+    "name": "勝川駅前地下駐車場",
+    "address": "愛知県春日井市松新町1丁目36番地",
+    "capacity": 135,
+    "capacity_accessible": 3,
+    "normal_rate": "入庫〜3時間まで30分ごとに150円、3時間超は900円(3時間分)+30分ごとに50円",
+    "discount_rate": "3時間まで半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳をお持ちの方が運転又は同乗して利用する場合、料金が3時間まで半額。手続きは場内管理事務所で実施。",
+    "source_url": "https://www.city.kasugai.lg.jp/shisei/shisetsu/koutsu/1010596/kachigawaekimae.html",
+    "verified_at": "2026-08-18"
   }
 ]
