@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 840
+// 件数: 842
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -19180,5 +19180,57 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 1時間まで210円、以降30分ごとに100円(1日最大640円、5:00~24:00・隣接雁宿駐車場と同一料金体系)\n障害者割引: 入庫時から240分(4時間)まで無料\n総台数: 100台",
     "sourceUrl": "https://www1.g-reiki.net/handa-fd/reiki_honbun/i507RG00000253.html",
     "updatedAt": "2026-08-17T00:00:00Z"
+  },
+  {
+    "id": "23206-001",
+    "name": "勝川駅南口立体駐車場",
+    "address": "愛知県春日井市勝川町8丁目13番地",
+    "latitude": 35.228088,
+    "longitude": 136.955292,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23206",
+    "cityName": "春日井市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳をお持ちの方が運転又は同乗して利用する場合、料金が3時間まで半額。お帰りの際、出口精算機にて割引の手続きが必要。手続き不明点は指定管理者の勝川開発株式会社(0568-34-6800)へ問い合わせ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入庫〜3時間まで30分ごとに150円、3時間超は900円(3時間分)+30分ごとに50円\n障害者割引: 3時間まで半額\n総台数: 73台",
+    "sourceUrl": "https://www.city.kasugai.lg.jp/shisei/shisetsu/koutsu/1010596/kachigawaekiminami.html",
+    "updatedAt": "2026-08-18T00:00:00Z"
+  },
+  {
+    "id": "23206-002",
+    "name": "勝川駅前地下駐車場",
+    "address": "愛知県春日井市松新町1丁目36番地",
+    "latitude": 35.230503,
+    "longitude": 136.955978,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23206",
+    "cityName": "春日井市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳をお持ちの方が運転又は同乗して利用する場合、料金が3時間まで半額。手続きは場内管理事務所で実施。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 入庫〜3時間まで30分ごとに150円、3時間超は900円(3時間分)+30分ごとに50円\n障害者割引: 3時間まで半額\n総台数: 135台",
+    "sourceUrl": "https://www.city.kasugai.lg.jp/shisei/shisetsu/koutsu/1010596/kachigawaekimae.html",
+    "updatedAt": "2026-08-18T00:00:00Z"
   }
 ];

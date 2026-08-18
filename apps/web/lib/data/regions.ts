@@ -862,6 +862,11 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "23206",
+    "name": "春日井市",
+    "prefectureCode": "23"
+  },
+  {
     "code": "27102",
     "name": "大阪市都島区",
     "prefectureCode": "27"
