@@ -12658,5 +12658,20 @@
     "discount_conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳のいずれかを提示(ミライロIDでも可)。対象は午前5時30分~翌日午前0時30分の間に入出庫した当日利用分のみで、夜間駐車(午前0時30分~午前5時30分)は減免対象外。出庫時に駐車券を持参し、地下1階管理人室にて手帳等を提示して減免を受ける。公式ページは「減免」とのみ記載し、全額免除か一部減額かは明記されていないため要確認(問合せ先: 小牧市都市政策部都市整備課 0568-76-1157)。",
     "source_url": "https://www.city.komaki.aichi.jp/admin/soshiki/toshiseisakubu/toshiseibi/4/3/1/36242.html",
     "verified_at": "2026-08-18"
+  },
+  {
+    "id": "23225-001",
+    "municipality_code": "23225",
+    "municipality": "知立市",
+    "name": "知立市駅前駐車場",
+    "address": null,
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": null,
+    "discount_rate": "知立市有料駐車場プリペイドカード(1,100円券)を年2枚交付",
+    "discount_scope": "partial",
+    "discount_conditions": "知立市内に住所を有し、身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持し、かつ自動車税(軽自動車税)の減免を受けている人が対象。市役所福祉課(1階北側5番窓口、電話0566-95-0118)に、障害者手帳、減免を受けた車両の車検証、交付申請書を提出して申請。前回交付日から1年経過した月の初日から再申請可能。",
+    "source_url": "https://www.city.chiryu.aichi.jp/soshiki/fukushikodomo/fukushi/gyomu/1/2/1445302180496.html",
+    "verified_at": "2026-08-18"
   }
 ]
