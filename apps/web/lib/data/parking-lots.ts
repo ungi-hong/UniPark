@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 842
+// 件数: 844
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -19231,6 +19231,53 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 入庫〜3時間まで30分ごとに150円、3時間超は900円(3時間分)+30分ごとに50円\n障害者割引: 3時間まで半額\n総台数: 135台",
     "sourceUrl": "https://www.city.kasugai.lg.jp/shisei/shisetsu/koutsu/1010596/kachigawaekimae.html",
+    "updatedAt": "2026-08-18T00:00:00Z"
+  },
+  {
+    "id": "23216-001",
+    "name": "中部国際空港(セントレア)駐車場(一般駐車場 P1~P3)",
+    "address": "愛知県常滑市セントレア1丁目1",
+    "latitude": 34.858509,
+    "longitude": 136.809021,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23216",
+    "cityName": "常滑市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を所持する本人が対象。一般駐車場が対象で、予約駐車場の予約料金および大型車両は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車 1時間ごとに400円(入庫から1時間無料)、24時間ごとの上限1,800円(通常期、2025年7月1日改定後)\n障害者割引: 身体障害者等割引として駐車料金5割引(1時間あたり200円相当、24時間上限900円相当)\n総台数: 6700台",
+    "sourceUrl": "https://www.centrair.jp/access/parking/disability.html",
+    "updatedAt": "2026-08-18T00:00:00Z"
+  },
+  {
+    "id": "23219-001",
+    "name": "小牧駅地下駐車場",
+    "address": "愛知県小牧市中央一丁目261番地",
+    "latitude": 35.289227,
+    "longitude": 136.927994,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23219",
+    "cityName": "小牧市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳のいずれかを提示(ミライロIDでも可)。対象は午前5時30分~翌日午前0時30分の間に入出庫した当日利用分のみで、夜間駐車(午前0時30分~午前5時30分)は減免対象外。出庫時に駐車券を持参し、地下1階管理人室にて手帳等を提示して減免を受ける。公式ページは「減免」とのみ記載し、全額免除か一部減額かは明記されていないため要確認(問合せ先: 小牧市都市政策部都市整備課 0568-76-1157)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 入庫から60分無料、以後30分ごとに100円、駐車時間24時間ごとに1,000円を限度(月ぎめ定期券10,000円)\n障害者割引: 身体障害者手帳等の提示により駐車料金を減免(具体的な割引率・金額は公式ページに記載なし、要確認)\n総台数: 193台",
+    "sourceUrl": "https://www.city.komaki.aichi.jp/admin/soshiki/toshiseisakubu/toshiseibi/4/3/1/36242.html",
     "updatedAt": "2026-08-18T00:00:00Z"
   }
 ];

@@ -867,6 +867,16 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "23216",
+    "name": "常滑市",
+    "prefectureCode": "23"
+  },
+  {
+    "code": "23219",
+    "name": "小牧市",
+    "prefectureCode": "23"
+  },
+  {
     "code": "27102",
     "name": "大阪市都島区",
     "prefectureCode": "27"
