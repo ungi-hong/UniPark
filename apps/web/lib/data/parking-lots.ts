@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 844
+// 件数: 846
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -19279,5 +19279,51 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 入庫から60分無料、以後30分ごとに100円、駐車時間24時間ごとに1,000円を限度(月ぎめ定期券10,000円)\n障害者割引: 身体障害者手帳等の提示により駐車料金を減免(具体的な割引率・金額は公式ページに記載なし、要確認)\n総台数: 193台",
     "sourceUrl": "https://www.city.komaki.aichi.jp/admin/soshiki/toshiseisakubu/toshiseibi/4/3/1/36242.html",
     "updatedAt": "2026-08-18T00:00:00Z"
+  },
+  {
+    "id": "23238-001",
+    "name": "愛・地球博記念公園(モリコロパーク)駐車場",
+    "address": "愛知県長久手市茨ケ廻間乙1533-1",
+    "latitude": 35.174267,
+    "longitude": 137.08168,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23238",
+    "cityName": "長久手市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育(愛護)手帳・精神障害者保健福祉手帳・ミライロID・難病医療費受給者証のいずれかを、入口ゲートで受け取った駐車券とあわせて北口案内所、西口案内所・休憩所、地球市民交流センターのいずれかの窓口に提示することで駐車料金が免除される。難病医療費受給者証は2022年4月1日より対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円(通常期)/1,000円(混雑期:土日・祝日・GW・お盆等)、大型車1,700円/3,400円、バイク200円/400円。入場から出場まで1時間30分以内は無料。\n障害者割引: 無料(駐車料金全額免除)",
+    "sourceUrl": "https://www.aichi-koen.com/moricoro/riyouannai/genmen/",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "23342-001",
+    "name": "県営名古屋空港駐車場",
+    "address": "愛知県西春日井郡豊山町大字豊場",
+    "latitude": 35.243748,
+    "longitude": 136.902573,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23342",
+    "cityName": "豊山町",
+    "accessibleSpaceTotal": 18,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "対象は身体障害者手帳、療育(愛護)手帳、戦傷病者手帳、被爆者健康手帳、精神障害者保健福祉手帳、特定医療費(指定難病)受給者証の交付を受けている方(個人利用のみ)。駐車料金精算前に総合案内所にて駐車券と手帳等を提示(コピー不可、ミライロID可)。手帳等を提示できなかった場合の後日還付は不可。身障者駐車場(B棟1階)18台のほか、思いやり駐車場(A棟1階)22台(うち車いす用8台)も併設。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 18
+      }
+    ],
+    "notes": "通常料金: 入庫から1時間まで無料、以降1時間ごとに100円(通常期)/200円(繁忙期)、24時間上限1,000円(通常期)/2,000円(繁忙期)\n障害者割引: 全額免除(無料)\n総台数: 1349台",
+    "sourceUrl": "https://nagoya-airport.jp/access/parking.html",
+    "updatedAt": "2026-08-19T00:00:00Z"
   }
 ];
