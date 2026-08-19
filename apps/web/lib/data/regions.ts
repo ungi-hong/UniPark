@@ -32,6 +32,10 @@ export const prefectures: Prefecture[] = [
   {
     "code": "27",
     "name": "大阪府"
+  },
+  {
+    "code": "28",
+    "name": "兵庫県"
   }
 ];
 
@@ -1190,6 +1194,16 @@ const cities: City[] = [
     "code": "27383",
     "name": "千早赤阪村",
     "prefectureCode": "27"
+  },
+  {
+    "code": "28101",
+    "name": "神戸市東灘区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28102",
+    "name": "神戸市灘区",
+    "prefectureCode": "28"
   }
 ];
 

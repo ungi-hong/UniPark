@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 846
+// 件数: 858
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -19324,6 +19324,286 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 入庫から1時間まで無料、以降1時間ごとに100円(通常期)/200円(繁忙期)、24時間上限1,000円(通常期)/2,000円(繁忙期)\n障害者割引: 全額免除(無料)\n総台数: 1349台",
     "sourceUrl": "https://nagoya-airport.jp/access/parking.html",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28101-001",
+    "name": "瀬戸公園駐車場",
+    "address": "兵庫県神戸市東灘区魚崎南町1丁目2-1",
+    "latitude": 34.713669,
+    "longitude": 135.279678,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28101",
+    "cityName": "神戸市東灘区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」(事前申請制。身体障害者手帳1~4級所持者本人運転、または身体障害者手帳1種・療育手帳A判定・精神障害者保健福祉手帳1級所持者の介護者運転車両への同乗者が対象)と障害者手帳を携帯し、出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間を超える分は正規料金。定期券併用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 最初の1時間300円、以降1時間ごとに100円\n障害者割引: 3時間まで無料\n総台数: 85台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260726201435.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28101-002",
+    "name": "魚崎浜公園駐車場",
+    "address": "兵庫県神戸市東灘区魚崎浜町27-41(第3工区内)",
+    "latitude": 34.706108,
+    "longitude": 135.282471,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28101",
+    "cityName": "神戸市東灘区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」(事前申請制)と障害者手帳を携帯し、出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間を超える分は正規料金。定期券併用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 1時間ごとに200円、最大料金500円\n障害者割引: 3時間まで無料\n総台数: 40台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260726201435.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28101-003",
+    "name": "住吉公園駐車場",
+    "address": "兵庫県神戸市東灘区住吉宮町3丁目4",
+    "latitude": 34.715839,
+    "longitude": 135.261475,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28101",
+    "cityName": "神戸市東灘区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」(事前申請制)と障害者手帳を携帯し、出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間を超える分は正規料金。定期券併用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 最初の1時間300円、以降1時間ごとに100円\n障害者割引: 3時間まで無料\n総台数: 32台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260726201435.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28101-004",
+    "name": "六甲アイランド公園西駐車場",
+    "address": "兵庫県神戸市東灘区向洋町中5丁目(小磯記念美術館地下)",
+    "latitude": 34.691814,
+    "longitude": 135.265549,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28101",
+    "cityName": "神戸市東灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」(事前申請制)と障害者手帳を携帯し、出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間を超える分は正規料金。定期券併用不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円、当日1日最大料金500円(24時まで)\n障害者割引: 3時間まで無料\n総台数: 295台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28101-005",
+    "name": "向洋西公園駐車場",
+    "address": "兵庫県神戸市東灘区向洋町中6丁目",
+    "latitude": 34.688438,
+    "longitude": 135.266205,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28101",
+    "cityName": "神戸市東灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」(事前申請制)と障害者手帳を携帯し、出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間を超える分は正規料金。定期券併用不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円、当日1日最大料金500円(24時まで)\n障害者割引: 3時間まで無料\n総台数: 108台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28101-006",
+    "name": "神戸ファッションプラザ駐車場",
+    "address": "兵庫県神戸市東灘区向洋町中2丁目9-1",
+    "latitude": 34.688877,
+    "longitude": 135.27037,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28101",
+    "cityName": "神戸市東灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」(事前申請制)と駐車券をホテルプラザ神戸3階フロントに提示し、3時間無料駐車場サービス券1枚を受け取り出庫時に精算。24時間利用可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設により異なる(詳細は施設へ要問合せ)\n障害者割引: 3時間無料駐車サービス券進呈",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28102-001",
+    "name": "フォレスタ六甲駐車場",
+    "address": "兵庫県神戸市灘区永手町4丁目2",
+    "latitude": 34.7155,
+    "longitude": 135.238449,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28102",
+    "cityName": "神戸市灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員に申し付け)。福祉駐車券と障害者手帳等の携帯が必要。3時間を超える分は正規料金。業務目的・営利目的・長時間駐車、定期券併用は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分220円、当日最大990円\n障害者割引: 3時間まで無料\n総台数: 76台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28102-002",
+    "name": "ウェルブ六甲道1番街駐車場",
+    "address": "兵庫県神戸市灘区備後町5丁目3",
+    "latitude": 34.713825,
+    "longitude": 135.237976,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28102",
+    "cityName": "神戸市灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員に申し付け)。福祉駐車券と障害者手帳等の携帯が必要。3時間を超える分は正規料金。業務目的・営利目的・長時間駐車、定期券併用は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 40分250円、当日最大900円\n障害者割引: 3時間まで無料\n総台数: 161台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28102-003",
+    "name": "ウェルブ六甲道2番街駐車場",
+    "address": "兵庫県神戸市灘区深田町4丁目1",
+    "latitude": 34.714649,
+    "longitude": 135.239044,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28102",
+    "cityName": "神戸市灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員に申し付け)。福祉駐車券と障害者手帳等の携帯が必要。3時間を超える分は正規料金。業務目的・営利目的・長時間駐車、定期券併用は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分250円、当日最大1,350円(24時以降別途加算)\n障害者割引: 3時間まで無料\n総台数: 62台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28102-004",
+    "name": "ウェルブ六甲道4番街駐車場",
+    "address": "兵庫県神戸市灘区桜口町4丁目3",
+    "latitude": 34.71254,
+    "longitude": 135.239487,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28102",
+    "cityName": "神戸市灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員に申し付け)。福祉駐車券と障害者手帳等の携帯が必要。3時間を超える分は正規料金。業務目的・営利目的・長時間駐車、定期券併用は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分250円、当日最大料金 平日1,100円/土日900円\n障害者割引: 3時間まで無料\n総台数: 102台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28102-005",
+    "name": "ウェルブ六甲道5番街1番館駐車場",
+    "address": "兵庫県神戸市灘区桜口町5丁目2",
+    "latitude": 34.712116,
+    "longitude": 135.238235,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28102",
+    "cityName": "神戸市灘区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員に申し付け)。福祉駐車券と障害者手帳等の携帯が必要。3時間を超える分は正規料金。業務目的・営利目的・長時間駐車、定期券併用は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00-20:00 30分220円、20:00-8:00 60分110円\n障害者割引: 3時間まで無料\n総台数: 39台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-19T00:00:00Z"
+  },
+  {
+    "id": "28102-006",
+    "name": "王子公園駐車場",
+    "address": "兵庫県神戸市灘区王子町3丁目1",
+    "latitude": 34.709831,
+    "longitude": 135.213562,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28102",
+    "cityName": "神戸市灘区",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入。福祉駐車券と障害者手帳等の携帯が必要。3時間を超える分は正規料金。利用可能時間9:00-17:00(11月~2月は9:00-16:30)、休園日(水曜、12/29~1/1)は利用不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 0~2時間 30分ごと150円、2~4時間 30分ごと100円、4時間超 30分ごと50円\n障害者割引: 3時間まで無料\n総台数: 390台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260726201435.pdf",
     "updatedAt": "2026-08-19T00:00:00Z"
   }
 ];
