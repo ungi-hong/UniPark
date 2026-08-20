@@ -1254,6 +1254,26 @@ const cities: City[] = [
     "code": "28203",
     "name": "明石市",
     "prefectureCode": "28"
+  },
+  {
+    "code": "28204",
+    "name": "西宮市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28205",
+    "name": "洲本市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28206",
+    "name": "芦屋市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28207",
+    "name": "伊丹市",
+    "prefectureCode": "28"
   }
 ];
 
