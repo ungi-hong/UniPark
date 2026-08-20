@@ -1274,6 +1274,31 @@ const cities: City[] = [
     "code": "28207",
     "name": "伊丹市",
     "prefectureCode": "28"
+  },
+  {
+    "code": "28209",
+    "name": "豊岡市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28210",
+    "name": "加古川市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28212",
+    "name": "赤穂市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28213",
+    "name": "西脇市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28214",
+    "name": "宝塚市",
+    "prefectureCode": "28"
   }
 ];
 

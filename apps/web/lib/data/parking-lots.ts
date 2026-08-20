@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 959
+// 件数: 973
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -21852,6 +21852,311 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入庫から30分まで無料、入庫から8時間まで200円、以降30分毎100円積上げ(最大24時間2,000円)\n障害者割引: 無料\n総台数: 180台",
     "sourceUrl": "https://www.hosp.itami.hyogo.jp/utilization/access.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28209-001",
+    "name": "豊岡市営出石西の丸駐車場",
+    "address": "兵庫県豊岡市出石町内町87番地の6",
+    "latitude": 35.458183,
+    "longitude": 134.875443,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28209",
+    "cityName": "豊岡市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が対象。精算機横に設置のオートフォンで申し出るか、ミライロIDの認証を行うことで駐車料金の5割相当額の減免が適用される。管理者:タイムズ24株式会社(電話:0120-72-8924)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 軽自動車・普通自動車:24時間ごとに400円/準中型・中型・大型自動車:24時間ごとに1,200円/自動二輪車:24時間まで100円(いずれも繰り返し適用)\n障害者割引: 駐車料金の5割相当額を減免",
+    "sourceUrl": "https://times-info.net/P28-hyogo/C209/park-detail-BUK0073308/",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28209-002",
+    "name": "豊岡市営出石鉄砲町駐車場",
+    "address": "兵庫県豊岡市出石町鉄砲1番地の2",
+    "latitude": 35.464733,
+    "longitude": 134.875488,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28209",
+    "cityName": "豊岡市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が対象。精算機横に設置のオートフォンで申し出るか、ミライロIDの認証を行うことで駐車料金の5割相当額の減免が適用される。管理者:タイムズ24株式会社(電話:0120-72-8924)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 軽自動車・普通自動車:24時間ごとに400円/準中型・中型・大型自動車:24時間ごとに1,200円/自動二輪車:24時間まで100円(いずれも繰り返し適用)\n障害者割引: 駐車料金の5割相当額を減免\n総台数: 96台",
+    "sourceUrl": "https://times-info.net/P28-hyogo/C209/park-detail-BUK0073311/",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28210-001",
+    "name": "加古川市営駐車場（たんようカーパークつつじ）",
+    "address": "兵庫県加古川市加古川町北在家2002",
+    "latitude": 34.756058,
+    "longitude": 134.839615,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28210",
+    "cityName": "加古川市",
+    "accessibleSpaceTotal": 5,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が運転又は同乗する自動車が対象。市役所へ用務来庁の場合は駐車券を携行し、精算時に手帳を提示して割引処理を受ける。(市公式サイトはbot対策により直接WebFetch不可のため、複数回の独立したWeb検索結果で一貫した内容を確認して採用。要再確認)"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 100円/30分（入場後30分は一律無料、上限600円/24時間ごと）\n障害者割引: 半額\n総台数: 437台",
+    "sourceUrl": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/somubu/kanzai/carpark/index.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28212-001",
+    "name": "赤穂駅南駐車場",
+    "address": "兵庫県赤穂市加里屋290",
+    "latitude": 34.756844,
+    "longitude": 134.392395,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28212",
+    "cityName": "赤穂市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳(身体障害者福祉法第15条)、療育手帳、精神障害者保健福祉手帳の交付を受けている方が自ら運転する自動車を定期駐車もしくは一時駐車させるとき、または同乗する自動車を一時駐車させるときに料金の5割を免除。減免を受けるにはプラット赤穂2階管理事務所で各種手帳の提示等の手続きが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、その後1時間以内200円、以降30分ごとに100円加算、上限800円(6時~24時、一時駐車の場合)\n障害者割引: 5割減免(半額)\n総台数: 191台",
+    "sourceUrl": "https://www.city.ako.lg.jp/kensetsu/shoukou/station_parking.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28212-002",
+    "name": "赤穂駅北駐車場",
+    "address": "兵庫県赤穂市山手町2",
+    "latitude": 34.756962,
+    "longitude": 134.39502,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28212",
+    "cityName": "赤穂市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳(身体障害者福祉法第15条)、療育手帳、精神障害者保健福祉手帳の交付を受けている方が自ら運転する自動車を定期駐車もしくは一時駐車させるとき、または同乗する自動車を一時駐車させるときに料金の5割を免除。減免を受けるにはプラット赤穂2階管理事務所で各種手帳の提示等の手続きが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、その後1時間以内200円、以降30分ごとに100円加算、上限500円(6時~24時、一時駐車の場合)\n障害者割引: 5割減免(半額)\n総台数: 42台",
+    "sourceUrl": "https://www.city.ako.lg.jp/kensetsu/shoukou/station_parking.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28212-003",
+    "name": "丸山県民サンビーチ駐車場",
+    "address": "兵庫県赤穂市尾崎字丸山2296-3",
+    "latitude": 34.744137,
+    "longitude": 134.419159,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28212",
+    "cityName": "赤穂市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者手帳の提示があった場合、駐車料金が半額になる。デジタル障害者手帳アプリ「ミライロID」の提示にも対応。問合せ先: 赤穂市産業振興部観光課(電話0791-43-6839)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(入庫から1時間以内の出庫は無料)、24時間最大500円(4月~11月の土日祝日は最大1,800円)、バイク・自転車は無料\n障害者割引: 半額",
+    "sourceUrl": "https://www.city.ako.lg.jp/sangyoshinko/kankou/maruyama_parking.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28213-001",
+    "name": "西脇中央駐車場（アピカ駐車場）",
+    "address": "兵庫県西脇市西脇951",
+    "latitude": 34.985954,
+    "longitude": 134.968094,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28213",
+    "cityName": "西脇市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかの交付を受けている方が乗車する普通自動車が対象。駐車場利用1回につき3時間までの駐車料金が無料。出庫時に管理事務所へ申し出て手帳を提示すること。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごと100円、1日最大1,200円（6時間以上24時間未満）\n障害者割引: 3時間まで無料\n総台数: 250台",
+    "sourceUrl": "https://www.city.nishiwaki.lg.jp/kakukanogoannai/kensetsusuidoubu/shisetukanrika/parking_cycle_parking/apikaparking.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-001",
+    "name": "宝塚市役所内駐車場",
+    "address": "兵庫県宝塚市東洋町1番1号",
+    "latitude": 34.799294,
+    "longitude": 135.360291,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳の交付を受けた方、またはその方のために他の方が運転する自動車が対象。事前精算機のウェブカメラ、防災センター窓口、本庁舎4階管財課窓口、または駐車場出口ゲート精算機のウェブカメラのいずれかに手帳を提示。歩行困難者向けの屋根付き駐車スペースもあり。問合せ：総務部管財課 0797-77-2031"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の60分無料、以降30分ごとに100円\n障害者割引: 無料（使用料免除）",
+    "sourceUrl": "https://www.city.takarazuka.hyogo.jp/about/profile/1001188.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-002",
+    "name": "末広中央公園駐車場",
+    "address": "兵庫県宝塚市末広町",
+    "latitude": 34.801384,
+    "longitude": 135.358231,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳（身体障害者手帳、療育手帳、精神障害者保健福祉手帳）の交付を受けた方、またはその方のために他の方が運転する自動車が対象。出庫口のインターフォンで三井リパークコールセンター（0120-050-321）へ連絡して免除手続き。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の60分無料、以降30分ごとに100円\n障害者割引: 無料（使用料免除）\n総台数: 120台",
+    "sourceUrl": "https://www.city.takarazuka.hyogo.jp/anzen/1009516/park/1055989.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-003",
+    "name": "武田尾駅前駐車場",
+    "address": "兵庫県宝塚市玉瀬字イヅリハ1-42",
+    "latitude": 34.854725,
+    "longitude": 135.301178,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳をお持ちの方が対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1回1日500円\n障害者割引: 無料（使用料免除）",
+    "sourceUrl": "https://www.city.takarazuka.hyogo.jp/anzen/1009491/1009710/1049759.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-004",
+    "name": "宝塚市立スポーツセンター駐車場",
+    "address": "兵庫県宝塚市小浜1丁目1番11号",
+    "latitude": 34.801941,
+    "longitude": 135.363022,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳をお持ちの方が対象。受付事務所で手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 6時〜22時：1時間以内無料、以降1時間ごとに150円／22時〜翌6時：2,000円\n障害者割引: 無料（駐車料金免除）",
+    "sourceUrl": "https://tspf.hyogo.jp/access/",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-005",
+    "name": "宝塚市立西公民館駐車場（西図書館共用）",
+    "address": "兵庫県宝塚市小林2丁目7番30号",
+    "latitude": 34.790161,
+    "longitude": 135.352997,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者手帳をお持ちの方が対象。窓口でお申し出が必要。西図書館利用者もこの駐車場を利用（車いす使用者対応駐車区画あり）。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 駐車開始から1時間無料、以降30分ごとに100円（30分未満切り上げ）、最大900円\n障害者割引: 無料（駐車場利用料免除）",
+    "sourceUrl": "https://www.takarazuka-kominkan.jp/nishi/faq/",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-006",
+    "name": "ベガ・ホール駐車場（中央図書館共用）",
+    "address": "兵庫県宝塚市清荒神1丁目2番18号",
+    "latitude": 34.811108,
+    "longitude": 135.352737,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳または療育手帳をベガ・ホールで提示することで無料。中央図書館利用者もこの駐車場を利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の30分無料、以降30分ごとに200円（水曜8:00〜19:00最大800円、全曜日19:00〜翌8:00最大400円）\n障害者割引: 無料（提示により無料）\n総台数: 23台",
+    "sourceUrl": "https://www.city.takarazuka.hyogo.jp/1060680/1060699/kyoikuiinkai/library/1054760.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28214-007",
+    "name": "宝塚市立病院駐車場",
+    "address": "兵庫県宝塚市小浜4丁目5-1",
+    "latitude": 34.804588,
+    "longitude": 135.365311,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28214",
+    "cityName": "宝塚市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳をお持ちの方が対象。総合案内または初診・再診受付にて駐車券と手帳を提示し認証を受ける。診療が長時間になる等で4時間を超える場合は200円据え置きの特例あり（要認証）。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、4時間以内200円、以降30分ごとに100円加算\n障害者割引: 無料（駐車料金免除）",
+    "sourceUrl": "https://www.takarazukacity-hp.com/faq/",
     "updatedAt": "2026-08-20T00:00:00Z"
   }
 ];
