@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 894
+// 件数: 924
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -20415,6 +20415,680 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 普通車1日1回500円、大型車(車高2.7m以上)1日1回2,000円、二輪車無料\n障害者割引: 無料\n総台数: 1600台",
     "sourceUrl": "https://shiawasenomura.org/access/parking/",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-001",
+    "name": "デザイン・クリエイティブセンター神戸(KIITO) 駐車場",
+    "address": "兵庫県神戸市中央区小野浜町1丁目4",
+    "latitude": 34.685116,
+    "longitude": 135.199448,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。福祉駐車券、障害者手帳及び駐車券をKIITO1階事務所にて提示(車いす区画利用の場合は駐車券不要)。減免受付は施設の開館時間内のみ(開館時間9:00~21:00、休館日:月曜(祝日の場合は翌日))。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 7:00~21:00 30分100円、21:00~7:00 60分100円、平日24時間最大800円、土日祝24時間最大1,000円\n障害者割引: 3時間まで無料\n総台数: 21台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-002",
+    "name": "三宮(北・南)駐車場",
+    "address": "兵庫県神戸市中央区加納町6丁目(フラワーロード・東遊園地地下)",
+    "latitude": 34.688801,
+    "longitude": 135.196121,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。24時間利用可。北駐車場・南駐車場を連絡する中間精算機経由で両方を連続利用する場合、最初に入った駐車場のみ3時間以内無料の対象。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分250円、1日上限1,200円(平日)/1,800円(土日祝)。自動二輪車250台分あり\n障害者割引: 3時間まで無料\n総台数: 1044台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-003",
+    "name": "三宮中央通り駐車場",
+    "address": "兵庫県神戸市中央区三宮町1丁目(花時計線地下)",
+    "latitude": 34.691757,
+    "longitude": 135.193298,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。入庫7:00~23:00、出庫7:00~24:00。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分まで250円、以後12分ごと100円、1日上限1,530円(平日)/1,830円(土日祝)。自動二輪車86台分あり\n障害者割引: 3時間まで無料\n総台数: 488台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-004",
+    "name": "サンセンタープラザ駐車場",
+    "address": "兵庫県神戸市中央区三宮町1丁目",
+    "latitude": 34.691757,
+    "longitude": 135.193298,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。福祉駐車券、障害者手帳及び駐車券を駐車場管理事務所に提示。入庫7:00~23:30、出庫7:00~24:00。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-005",
+    "name": "こうべ市民福祉交流センター駐車場",
+    "address": "兵庫県神戸市中央区磯上通3丁目1-32",
+    "latitude": 34.692993,
+    "longitude": 135.201996,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合は係員に福祉駐車券・障害者手帳・駐車券を提示)。利用可能時間8:30~21:30(日祝8:30~17:30)。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-006",
+    "name": "ポートアイランド市民広場駐車場",
+    "address": "兵庫県神戸市中央区港島中町6丁目",
+    "latitude": 34.665726,
+    "longitude": 135.212982,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合は係員に福祉駐車券・障害者手帳・駐車券を提示)。入庫7:30~21:30、出庫7:30~22:00。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-007",
+    "name": "空港島西緑地駐車場",
+    "address": "兵庫県神戸市中央区神戸空港12番",
+    "latitude": 34.637703,
+    "longitude": 135.224792,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。利用可能時間は7・8月 入庫10:00~18:30/出庫10:00~19:00、それ以外の月 入庫10:00~16:30/出庫10:00~17:00。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-008",
+    "name": "神戸市立医療センター中央市民病院 駐車場",
+    "address": "兵庫県神戸市中央区港島南町2丁目1-1",
+    "latitude": 34.6586,
+    "longitude": 135.21521,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。福祉駐車券、障害者手帳及び駐車券を同病院1階守衛室(全日)に提示。24時間利用可。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 160円/1時間、1日上限1,000円(患者及び付添の方は最初60分無料)\n障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-009",
+    "name": "中突堤駐車施設(メリケン駐車場)",
+    "address": "兵庫県神戸市中央区波止場町(ホテルオークラ北側)",
+    "latitude": 34.682678,
+    "longitude": 135.187027,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。24時間利用可。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日 最初60分無料、以降30分ごと210円/土日祝 最初30分無料、以降30分ごと210円。夜間(20:00~8:00)最大840円\n障害者割引: 3時間まで無料\n総台数: 110台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-010",
+    "name": "中突堤中央ターミナル駐車施設(かもめりあ駐車場)",
+    "address": "兵庫県神戸市中央区波止場町(中突堤中央ターミナル北側)",
+    "latitude": 34.682678,
+    "longitude": 135.187027,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。福祉駐車券と障害者手帳と駐車券を中突堤中央ターミナル内の総合インフォメーションカウンターで警備員に提示。24時間利用可だが、減免受付は警備員対応時間の9:00~19:00の間のみ可。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分210円、夜間(20:00~翌8:00)最大840円\n障害者割引: 3時間まで無料\n総台数: 130台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-011",
+    "name": "花隈駐車場",
+    "address": "兵庫県神戸市中央区花隈町1(花隈公園地下)",
+    "latitude": 34.687752,
+    "longitude": 135.1828,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。入庫7:00~23:00、出庫7:00~24:00。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分250円、1日上限1,000円。自動二輪車20台分あり\n障害者割引: 3時間まで無料\n総台数: 252台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-012",
+    "name": "神戸駅南駐車場",
+    "address": "兵庫県神戸市中央区東川崎町1丁目(JR神戸駅南側地下)",
+    "latitude": 34.679077,
+    "longitude": 135.181961,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円、1日上限1,220円(平日)/1,530円(土日祝)。自動二輪車63台分あり\n障害者割引: 3時間まで無料\n総台数: 240台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-013",
+    "name": "大倉山駐車場",
+    "address": "兵庫県神戸市中央区楠町4丁目(中央体育館北側広場地下)",
+    "latitude": 34.683533,
+    "longitude": 135.173096,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(7:00~22:00)30分150円、夜間60分100円、1日上限1,020円。自動二輪車30台分あり\n障害者割引: 3時間まで無料\n総台数: 279台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-014",
+    "name": "神戸市立神戸アイセンター病院 駐車場",
+    "address": "兵庫県神戸市中央区港島南町2丁目1-8",
+    "latitude": 34.6586,
+    "longitude": 135.21521,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。福祉駐車券、障害者手帳及び駐車券を同病院2階受付に提示。24時間利用可。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間160円、1日上限1,000円(利用内容により1~3時間無料になる場合あり)\n障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-015",
+    "name": "中央区役所駐車場",
+    "address": "兵庫県神戸市中央区東町115番地(中央区役所地下)",
+    "latitude": 34.689537,
+    "longitude": 135.194977,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合はインターホンで係員へ)。利用可能時間 平日(第2・4木曜以外)8:30~18:00、第2・4木曜8:30~19:15。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28110-016",
+    "name": "ポートアイランド南公園駐車場",
+    "address": "兵庫県神戸市中央区港島中町8丁目",
+    "latitude": 34.661572,
+    "longitude": 135.212021,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28110",
+    "cityName": "神戸市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の福祉駐車券保有者(本人:身体障害者手帳1級~4級で第2種、介護者:身体障害者手帳1級~4級で第1種・精神障害者保健福祉手帳1級・療育手帳A判定のいずれかの方)が対象。出庫時に自動精算機へ駐車券・福祉駐車券の順に挿入(処理できない場合は係員に福祉駐車券・障害者手帳・駐車券を提示)。24時間利用可。管理:神戸市建設局公園部管理課。3時間超過分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分160円\n障害者割引: 3時間まで無料\n総台数: 88台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260726201435.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28111-001",
+    "name": "西神中央駅駐車場",
+    "address": "兵庫県神戸市西区糀台5丁目2-3",
+    "latitude": 34.718746,
+    "longitude": 135.019836,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28111",
+    "cityName": "神戸市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」を交付された対象者(身体障害者手帳1種・療育手帳A判定・精神障害者保健福祉手帳1級等)またはその介護者が、精算時に福祉駐車券と障害者手帳を係員に提示(割引方法C)。3時間超過分は正規料金、駐車時間により1日上限料金になる場合あり。入庫5:00~23:30、出庫5:00~翌1:30。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の60分250円、以降30分あたり70円(2026年7月1日改定後、税込)\n障害者割引: 3時間まで無料",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260729195724.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28111-002",
+    "name": "神戸市立西神戸医療センター 駐車場",
+    "address": "兵庫県神戸市西区糀台5丁目7-1",
+    "latitude": 34.716888,
+    "longitude": 135.018921,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28111",
+    "cityName": "神戸市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "障害者手帳所持者が駐車場事前精算機(1階救急外来待合い付近、2階フロアーマネージャーコーナー付近)に駐車券と診察券を挿入すると3時間無料(以後30分50円)。障害者用長時間駐車承認書所持者は終日無料。市発行の福祉駐車券による3時間無料(割引方法A)も利用可(西神戸医療センター利用者に限る)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間220円、以後30分50円(外来患者・付添者は最初の1時間無料)\n障害者割引: 3時間無料、以後30分50円",
+    "sourceUrl": "https://nmc.kcho.jp/news/news/20240405.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28111-003",
+    "name": "高塚公園駐車場",
+    "address": "兵庫県神戸市西区高塚台5丁目2-1",
+    "latitude": 34.72591,
+    "longitude": 135.012939,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28111",
+    "cityName": "神戸市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "神戸市発行の「福祉駐車券」を交付された対象者(身体障害者手帳1種・療育手帳A判定・精神障害者保健福祉手帳1級等)またはその介護者が、入庫時に福祉駐車券と障害者手帳を係員に提示(割引方法A)。3時間超過分は正規料金。入庫8:00~18:00、出庫24時間。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間300円、以降1時間ごとに100円\n障害者割引: 3時間まで無料\n総台数: 41台",
+    "sourceUrl": "https://www.city.kobe.lg.jp/documents/6570/20260726201435.pdf",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28201-001",
+    "name": "市営大手前地下駐車場(タイムズ大手前地下駐車場)",
+    "address": "兵庫県姫路市白銀町",
+    "latitude": 34.830681,
+    "longitude": 134.690689,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28201",
+    "cityName": "姫路市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを持つ方またはその介護者。手帳またはミライロIDを提示することで駐車料金の5割相当額を減免。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分につき200円、24時間最大800円(定期:1ヶ月20,000円/3ヶ月55,000円)\n障害者割引: 5割減免\n総台数: 153台",
+    "sourceUrl": "https://www.city.himeji.lg.jp/sangyo/0000001595.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28201-002",
+    "name": "大手門駐車場",
+    "address": "兵庫県姫路市本町68番地",
+    "latitude": 34.835873,
+    "longitude": 134.687363,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28201",
+    "cityName": "姫路市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを持つ方またはその介護者。窓口受付時間9時~17時の間、精算前(事前精算含む)に窓口または自動電話(カメラに手帳提示)で手帳を提示することで駐車料金の5割を減免。大型バス等は利用日の1週間前までに事前申請が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 普通車:最初の3時間以内600円、3時間超~24時間以内900円/大型バス等:1日1回2,500円\n障害者割引: 5割減免\n総台数: 555台",
+    "sourceUrl": "https://himeji-machishin.jp/toshi/parking/news.html/?id=206",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28201-003",
+    "name": "兵庫県立はりま姫路総合医療センター 立体駐車場",
+    "address": "兵庫県姫路市神屋町3丁目264番地",
+    "latitude": 34.828217,
+    "longitude": 134.702499,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28201",
+    "cityName": "姫路市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを持つ来院者(手帳提示者本人)。総合案内カウンターにて駐車券と手帳を提示することで駐車料金全額免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来患者:入庫後6時間まで100円、以降60分ごと100円(最大1,000円/24時まで)/一般・見舞い・付き添い:60分ごと200円(最大1,000円/24時まで)\n障害者割引: 全額免除\n総台数: 505台",
+    "sourceUrl": "https://hgmc.hyogo.jp/about/access.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28202-001",
+    "name": "阪神尼崎駅前駐車場",
+    "address": "兵庫県尼崎市神田中通1丁目1番地",
+    "latitude": 34.719048,
+    "longitude": 135.416733,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28202",
+    "cityName": "尼崎市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の保持者が運転または同乗する車両が対象。出口ゲート精算機のWebカメラに手帳を提示して減免処理するか、あまがさき観光案内所(9:00~17:00)で駐車券持参のうえ事前手続き。3時間を超える分は正規料金。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 普通車20分100円(24時間最大1,000円)、二輪車60分100円(24時間最大400円)\n障害者割引: 3時間まで無料\n総台数: 295台",
+    "sourceUrl": "https://www.city.amagasaki.hyogo.jp/kurashi/kuruma/tyusyajo/090_chusya.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28202-002",
+    "name": "尼崎市役所第1・第2駐車場",
+    "address": "兵庫県尼崎市東七松町1丁目23番1号",
+    "latitude": 34.734482,
+    "longitude": 135.406021,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28202",
+    "cityName": "尼崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳所有者が乗車する車両が対象。ご利用の窓口で申し出。開庁日の開庁時間中のみ適用され、3時間を超える分は正規料金。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日8:00~18:00は最初60分無料、以降30分毎100円。平日18:00~翌8:00は60分200円(最大400円)。土日祝8:00~18:00は60分200円(最大500円)。土日祝18:00~翌8:00は60分200円(最大400円)。\n障害者割引: 3時間分無料(開庁時間中)\n総台数: 131台",
+    "sourceUrl": "https://www.city.amagasaki.hyogo.jp/shisei/siyakusyo/026tel_annai/026chushajou.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28202-003",
+    "name": "尼崎市総合文化センター駐車場",
+    "address": "兵庫県尼崎市昭和通2丁目7-16",
+    "latitude": 34.720459,
+    "longitude": 135.419983,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28202",
+    "cityName": "尼崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の提示、またはミライロIDの提示。来館時に係員へ声掛けして減免処理。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円、最大料金1,000円(入庫当日限り)\n障害者割引: 無料\n総台数: 164台",
+    "sourceUrl": "https://www.archaic.or.jp/guide/access.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28202-004",
+    "name": "尼崎市立魚つり公園駐車場",
+    "address": "兵庫県尼崎市平左衛門町66",
+    "latitude": 34.682587,
+    "longitude": 135.37146,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28202",
+    "cityName": "尼崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳保持者が対象。魚つり公園管理棟受付にて手帳を提示のうえ、減免申請書に記入することで駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車: 30分未満100円、30分以上1時間未満200円、以降30分毎に加算、8時間以上800円(大型車は同区分の2倍)\n障害者割引: 半額",
+    "sourceUrl": "https://amagasaki-uoturikouen.com/guide.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28203-001",
+    "name": "明石駅前立体駐車場",
+    "address": "兵庫県明石市山下町14-7",
+    "latitude": 34.649059,
+    "longitude": 134.995224,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28203",
+    "cityName": "明石市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が自ら運転し、または同乗する普通自動車が対象。料金支払い前に精算機横のインターフォンからオペレーターへ申し出るか、7時~20時の間は管理人に申し出て減免処理を受ける。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 24時間以内は20分ごとに100円(上限1,200円)、24時間超過時は24時間ごとに1,200円に加え端数時間分を加算\n障害者割引: 5割減免\n総台数: 304台",
+    "sourceUrl": "https://www.city.akashi.lg.jp/doboku/kouan_ka/shisetsu/riyoryokin/ryokin/087.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28203-002",
+    "name": "大蔵海岸駐車場(東駐車場)",
+    "address": "兵庫県明石市大蔵海岸通1丁目4番",
+    "latitude": 34.643356,
+    "longitude": 135.014389,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28203",
+    "cityName": "明石市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が自ら運転し、または同乗する普通自動車が対象。出庫前に駐車場事務所(東西各駐車場出口横、午前9時~午後5時)で申請が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車:1時間以内100円、以降1時間毎100円、9時間超24時間以内1,000円\n障害者割引: 5割減免\n総台数: 146台",
+    "sourceUrl": "https://www.city.akashi.lg.jp/doboku/kaigan_ka/shisetsu/koen-sports/kaigan/ookurakaigantyuushazyou.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28203-003",
+    "name": "大蔵海岸駐車場(西駐車場)",
+    "address": "兵庫県明石市大蔵海岸通2丁目5番",
+    "latitude": 34.643745,
+    "longitude": 135.009232,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28203",
+    "cityName": "明石市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が自ら運転し、または同乗する普通自動車が対象。出庫前に駐車場事務所(東西各駐車場出口横、午前9時~午後5時)で申請が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車:1時間以内100円、以降1時間毎100円、9時間超24時間以内1,000円\n障害者割引: 5割減免\n総台数: 178台",
+    "sourceUrl": "https://www.city.akashi.lg.jp/doboku/kaigan_ka/shisetsu/koen-sports/kaigan/ookurakaigantyuushazyou.html",
+    "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28203-004",
+    "name": "明石市立文化博物館駐車場",
+    "address": "兵庫県明石市上ノ丸2丁目13番1号",
+    "latitude": 34.65184,
+    "longitude": 134.995255,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28203",
+    "cityName": "明石市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳または療育手帳をお持ちの方が受付で提示することで駐車料金が半額減免。開館時間内(18時30分まで)に出庫が必要。台数限定のため公共交通機関の利用推奨。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1台1時間100円(1時間未満は1時間として計算)、上限1,000円\n障害者割引: 半額減免\n総台数: 32台",
+    "sourceUrl": "https://www.akashibunpaku.com/access.html",
     "updatedAt": "2026-08-20T00:00:00Z"
   }
 ];
