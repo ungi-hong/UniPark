@@ -1204,6 +1204,31 @@ const cities: City[] = [
     "code": "28102",
     "name": "神戸市灘区",
     "prefectureCode": "28"
+  },
+  {
+    "code": "28105",
+    "name": "神戸市兵庫区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28106",
+    "name": "神戸市長田区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28107",
+    "name": "神戸市須磨区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28108",
+    "name": "神戸市垂水区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28109",
+    "name": "神戸市北区",
+    "prefectureCode": "28"
   }
 ];
 
