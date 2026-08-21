@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 992
+// 件数: 993
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22574,6 +22574,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車500円/日、大型車1,600円/日、自動二輪100円/日\n障害者割引: 無料",
     "sourceUrl": "https://awaji-kaikyopark.kkr.mlit.go.jp/about",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28382-001",
+    "name": "播磨町健康いきいきセンター 駐車場",
+    "address": "兵庫県加古郡播磨町南大中1丁目8番60号",
+    "latitude": 34.72039,
+    "longitude": 134.868805,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28382",
+    "cityName": "播磨町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳または療育手帳をフロントにて提示することで、無料の出庫カードを交付。台数に限りがあるため自転車・徒歩・公共交通機関での来場が推奨されている。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1回1台につき100円(フロントで出庫カードを購入)\n障害者割引: 無料(出庫カードを無料で交付)",
+    "sourceUrl": "https://ikiiki-harima.com/guide/",
     "updatedAt": "2026-08-21T00:00:00Z"
   }
 ];
