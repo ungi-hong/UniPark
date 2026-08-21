@@ -1314,6 +1314,11 @@ const cities: City[] = [
     "code": "28221",
     "name": "丹波篠山市",
     "prefectureCode": "28"
+  },
+  {
+    "code": "28226",
+    "name": "淡路市",
+    "prefectureCode": "28"
   }
 ];
 

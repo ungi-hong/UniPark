@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 991
+// 件数: 992
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22553,6 +22553,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
     "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28226-001",
+    "name": "淡路島 国営明石海峡公園 淡路口駐車場",
+    "address": "兵庫県淡路市夢舞台8-10",
+    "latitude": 34.565056,
+    "longitude": 135.013855,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28226",
+    "cityName": "淡路市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳を提示の場合、駐車料無料。同乗者が11名以上の場合は2名の手帳提示が必要。海岸南駐車場も同一料金体系(12月〜2月は閉鎖)。観光バスは減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円/日、大型車1,600円/日、自動二輪100円/日\n障害者割引: 無料",
+    "sourceUrl": "https://awaji-kaikyopark.kkr.mlit.go.jp/about",
     "updatedAt": "2026-08-21T00:00:00Z"
   }
 ];
