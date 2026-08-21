@@ -14878,5 +14878,20 @@
     "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳を提示の場合、駐車料無料。同乗者が11名以上の場合は2名の手帳提示が必要。海岸南駐車場も同一料金体系(12月〜2月は閉鎖)。観光バスは減免対象外。",
     "source_url": "https://awaji-kaikyopark.kkr.mlit.go.jp/about",
     "verified_at": "2026-08-21"
+  },
+  {
+    "id": "28382-001",
+    "municipality_code": "28382",
+    "municipality": "播磨町",
+    "name": "播磨町健康いきいきセンター 駐車場",
+    "address": "兵庫県加古郡播磨町南大中1丁目8番60号",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "1回1台につき100円(フロントで出庫カードを購入)",
+    "discount_rate": "無料(出庫カードを無料で交付)",
+    "discount_scope": "full",
+    "discount_conditions": "障害者手帳または療育手帳をフロントにて提示することで、無料の出庫カードを交付。台数に限りがあるため自転車・徒歩・公共交通機関での来場が推奨されている。",
+    "source_url": "https://ikiiki-harima.com/guide/",
+    "verified_at": "2026-08-21"
   }
 ]
