@@ -14863,5 +14863,20 @@
     "discount_conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。",
     "source_url": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
     "verified_at": "2026-08-21"
+  },
+  {
+    "id": "28226-001",
+    "municipality_code": "28226",
+    "municipality": "淡路市",
+    "name": "淡路島 国営明石海峡公園 淡路口駐車場",
+    "address": "兵庫県淡路市夢舞台8-10",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "普通車500円/日、大型車1,600円/日、自動二輪100円/日",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳を提示の場合、駐車料無料。同乗者が11名以上の場合は2名の手帳提示が必要。海岸南駐車場も同一料金体系(12月〜2月は閉鎖)。観光バスは減免対象外。",
+    "source_url": "https://awaji-kaikyopark.kkr.mlit.go.jp/about",
+    "verified_at": "2026-08-21"
   }
 ]
