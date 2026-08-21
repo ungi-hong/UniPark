@@ -1309,6 +1309,11 @@ const cities: City[] = [
     "code": "28219",
     "name": "三田市",
     "prefectureCode": "28"
+  },
+  {
+    "code": "28221",
+    "name": "丹波篠山市",
+    "prefectureCode": "28"
   }
 ];
 

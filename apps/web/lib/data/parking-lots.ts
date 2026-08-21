@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 980
+// 件数: 991
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22311,6 +22311,248 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 8:00-23:00は1時間ごと100円(最初30分無料)、23:00-翌8:00は出庫のみ可(2,000円加算)\n障害者割引: 駐車料金免除(無料)\n総台数: 400台",
     "sourceUrl": "https://sanda-bunka.jp/faq/%e8%ba%ab%e4%bd%93%e9%9a%9c%e5%ae%b3%e8%80%85%e3%81%a7%e3%81%99%e3%81%8c%e3%80%81%e9%a7%90%e8%bb%8a%e6%96%99%e9%87%91%e3%81%af%e7%84%a1%e6%96%99%e3%81%ab%e3%81%aa%e3%82%8a%e3%81%be%e3%81%9b%e3%82%93/",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-001",
+    "name": "丹波篠山市三の丸西駐車場",
+    "address": "兵庫県丹波篠山市北新町24番地1",
+    "latitude": 35.073341,
+    "longitude": 135.21611,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円/回(繁忙期4・5・9・10・11月は800円)、バス1,000円(繁忙期1,300円)\n障害者割引: 定期駐車の場合、料金の5割引\n総台数: 350台",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-002",
+    "name": "丹波篠山市大手前南駐車場",
+    "address": "兵庫県丹波篠山市北新町47番地2",
+    "latitude": 35.075439,
+    "longitude": 135.216354,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-003",
+    "name": "丹波篠山市大手前北駐車場",
+    "address": "兵庫県丹波篠山市北新町88番地1",
+    "latitude": 35.076054,
+    "longitude": 135.216003,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-004",
+    "name": "丹波篠山市交響ホール西駐車場",
+    "address": "兵庫県丹波篠山市北新町41番地",
+    "latitude": 35.075584,
+    "longitude": 135.218216,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-005",
+    "name": "丹波篠山市河原町駐車場",
+    "address": "兵庫県丹波篠山市河原町209番地1",
+    "latitude": 35.07127,
+    "longitude": 135.224197,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-006",
+    "name": "丹波篠山市立町駐車場",
+    "address": "兵庫県丹波篠山市立町49番地",
+    "latitude": 35.073948,
+    "longitude": 135.222916,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-007",
+    "name": "丹波篠山市歴史美術館前駐車場",
+    "address": "兵庫県丹波篠山市二階町7番地1",
+    "latitude": 35.077152,
+    "longitude": 135.219574,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-008",
+    "name": "丹波篠山市裁判所北駐車場",
+    "address": "兵庫県丹波篠山市黒岡314番地",
+    "latitude": 35.079494,
+    "longitude": 135.220276,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-009",
+    "name": "丹波篠山市役所庁舎前駐車場",
+    "address": "兵庫県丹波篠山市北新町41番地",
+    "latitude": 35.075584,
+    "longitude": 135.218216,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-010",
+    "name": "丹波篠山市西町駐車場",
+    "address": "兵庫県丹波篠山市西新町53番地1",
+    "latitude": 35.073441,
+    "longitude": 135.213287,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28221-011",
+    "name": "丹波篠山市南新町駐車場",
+    "address": "兵庫県丹波篠山市南新町148番地1",
+    "latitude": 35.069206,
+    "longitude": 135.219543,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28221",
+    "cityName": "丹波篠山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳の交付を受けている者が定期駐車(月極契約駐車)する場合に駐車料金の5割を減免(丹波篠山市営駐車場条例施行規則第7条第1項第4号)。減免を受けるには「市営駐車場定期駐車使用料減免申請書」を市長に提出。時間貸し・都度利用への適用は規則上明記されていない。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間未満無料、1時間以上500円/回(繁忙期800円)\n障害者割引: 定期駐車の場合、料金の5割引",
+    "sourceUrl": "https://www.city.tambasasayama.lg.jp/section/reiki_int/reiki_honbun/j700RG00000856.html",
     "updatedAt": "2026-08-21T00:00:00Z"
   }
 ];
