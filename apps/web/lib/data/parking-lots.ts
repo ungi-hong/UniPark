@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 973
+// 件数: 980
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22158,5 +22158,159 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 30分以内無料、4時間以内200円、以降30分ごとに100円加算\n障害者割引: 無料（駐車料金免除）",
     "sourceUrl": "https://www.takarazukacity-hp.com/faq/",
     "updatedAt": "2026-08-20T00:00:00Z"
+  },
+  {
+    "id": "28217-001",
+    "name": "川西市役所内駐車場",
+    "address": "兵庫県川西市中央町12番1号",
+    "latitude": 34.830666,
+    "longitude": 135.417191,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28217",
+    "cityName": "川西市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者が自ら運転または同乗している場合、開庁時に行先の窓口で手帳を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 開庁時(平日8:00-18:00)最初の60分無料、以降平日30分200円・18:00-翌8:00は60分100円、休日(土日祝・年末年始)は当日午前0時まで最大500円\n障害者割引: 駐車料金免除(開庁時間中)",
+    "sourceUrl": "https://www.city.kawanishi.hyogo.jp/kurashi/fukushi_kaigo/syougai/1001023/1001032.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28217-002",
+    "name": "ドラゴンランド駐車場",
+    "address": "兵庫県川西市小花2丁目",
+    "latitude": 34.823242,
+    "longitude": 135.417267,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28217",
+    "cityName": "川西市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 3,
+      "conditions": "障がい者手帳をお持ちの方(3時間経過後は通常料金が加算される)。詳細は管理業者アマノマネジメントサービス株式会社(0120-951-365)へ"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 平日:最初30分無料、以降60分ごとに200円、当日最大550円/土日祝:最初30分無料、以降60分ごとに200円、最大料金設定なし\n障害者割引: 最初の3時間無料\n総台数: 62台",
+    "sourceUrl": "https://www.city.kawanishi.hyogo.jp/kurashi/1017490/midori/dragonland_parking.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28217-003",
+    "name": "市民温水プール・総合体育館・弓道場駐車場(キセラ川西プラザ駐車場・市民温水プール駐車場)",
+    "address": "兵庫県川西市火打1丁目1番4号",
+    "latitude": 34.833416,
+    "longitude": 135.418976,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28217",
+    "cityName": "川西市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳または療育手帳保持者。利用施設の窓口へ手帳を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者は最初の3時間無料、以降30分につき100円(1日上限600円)\n障害者割引: 駐車料金免除\n総台数: 376台",
+    "sourceUrl": "https://www.city.kawanishi.hyogo.jp/kurashi/shimin/sports/sshisetuan/1007525.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28219-001",
+    "name": "三田市営駐車場(市役所横・屋外)",
+    "address": "兵庫県三田市三輪2丁目1番1号",
+    "latitude": 34.889999,
+    "longitude": 135.226074,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28219",
+    "cityName": "三田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳所持者(本人運転または介護者運転)、精神障害者保健福祉手帳所持者(同乗)、療育手帳所持者(同乗)が対象。手帳等の提示により免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 平日8時-18時:入庫後60分無料、以降30分ごと150円/平日18時-翌8時・土日祝日:30分ごと150円(最大1,000円)\n障害者割引: 使用料全額免除",
+    "sourceUrl": "https://www.city.sanda.lg.jp/soshiki/138/gyomu/doro/4614.html",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28219-002",
+    "name": "新三田駅前駐車場",
+    "address": "兵庫県三田市福島455番地9",
+    "latitude": 34.909298,
+    "longitude": 135.207367,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28219",
+    "cityName": "三田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者が対象。定期使用・一時使用のいずれも適用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時駐車:30分ごと150円(3時間以内)、3時間超24時間以内は1,000円/定期券:全日1箇月14,000円\n障害者割引: 5割減免\n総台数: 280台",
+    "sourceUrl": "https://www.city.sanda.lg.jp/material/files/group/38/tyuurinntyuusyajyougaiyou.pdf",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28219-003",
+    "name": "藍本駅前駐車場",
+    "address": "兵庫県三田市藍本876-2番地",
+    "latitude": 34.983997,
+    "longitude": 135.15773,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28219",
+    "cityName": "三田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者が対象。定期使用・一時使用のいずれも適用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時使用:1日500円/定期券:全日1箇月6,000円\n障害者割引: 5割減免\n総台数: 21台",
+    "sourceUrl": "https://www.city.sanda.lg.jp/material/files/group/38/tyuurinntyuusyajyougaiyou.pdf",
+    "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "28219-004",
+    "name": "三田市総合文化センター(郷の音ホール)駐車場",
+    "address": "兵庫県三田市天神1丁目3番1号",
+    "latitude": 34.890026,
+    "longitude": 135.223053,
+    "prefectureCode": "28",
+    "prefectureName": "兵庫県",
+    "cityCode": "28219",
+    "cityName": "三田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身障者用駐車許可証またはゆずりあい駐車場利用証を提示。専用駐車スペース利用時は証明書を車のフロントに提示。専用スペースが満車の場合は一般駐車場を利用し、総合案内所で駐車券と証明書を提示すれば免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00-23:00は1時間ごと100円(最初30分無料)、23:00-翌8:00は出庫のみ可(2,000円加算)\n障害者割引: 駐車料金免除(無料)\n総台数: 400台",
+    "sourceUrl": "https://sanda-bunka.jp/faq/%e8%ba%ab%e4%bd%93%e9%9a%9c%e5%ae%b3%e8%80%85%e3%81%a7%e3%81%99%e3%81%8c%e3%80%81%e9%a7%90%e8%bb%8a%e6%96%99%e9%87%91%e3%81%af%e7%84%a1%e6%96%99%e3%81%ab%e3%81%aa%e3%82%8a%e3%81%be%e3%81%9b%e3%82%93/",
+    "updatedAt": "2026-08-21T00:00:00Z"
   }
 ];

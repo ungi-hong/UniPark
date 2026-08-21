@@ -1299,6 +1299,16 @@ const cities: City[] = [
     "code": "28214",
     "name": "宝塚市",
     "prefectureCode": "28"
+  },
+  {
+    "code": "28217",
+    "name": "川西市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28219",
+    "name": "三田市",
+    "prefectureCode": "28"
   }
 ];
 
