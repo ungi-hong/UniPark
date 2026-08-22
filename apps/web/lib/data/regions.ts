@@ -65,6 +65,21 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "01202",
+    "name": "函館市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01203",
+    "name": "小樽市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01204",
+    "name": "旭川市",
+    "prefectureCode": "01"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"

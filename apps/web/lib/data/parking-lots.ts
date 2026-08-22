@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1000
+// 件数: 1003
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22744,6 +22744,77 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "障害者割引: 免除(全額無料)",
     "sourceUrl": "https://makomanai-park.jp/access/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01202-001",
+    "name": "函館空港駐車場",
+    "address": "北海道函館市高松町511番地",
+    "latitude": 41.77327,
+    "longitude": 140.813065,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01202",
+    "cityName": "函館市",
+    "accessibleSpaceTotal": 10,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかの保有者が対象。出庫時に自動精算機からAMSお客様さぽーとセンター(0120-951-365)を呼び出して手続き。運営:北海道エアポート株式会社。公式ページには割引制度の存在は明記されているが具体的な割引率(%)の記載はなく、電話確認が必要。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 10
+      }
+    ],
+    "notes": "通常料金: 1時間まで無料、1時間30分まで200円、2時間まで300円、以降1時間毎150円(通常期)/24時間毎最大1,000円(多客期は1時間毎200円・24時間毎最大1,200円)\n障害者割引: 障がい者割引あり(割引率は公式ページに明記なし、要問合せ)",
+    "sourceUrl": "https://www.hokkaido-airports.com/rd_parking/hkd/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01203-001",
+    "name": "小樽市立病院駐車場",
+    "address": "北海道小樽市若松1丁目1番1号",
+    "latitude": 43.185734,
+    "longitude": 141.007629,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01203",
+    "cityName": "小樽市",
+    "accessibleSpaceTotal": 20,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳所持者が対象。受診後、1階料金計算窓口に駐車券を提示のうえ申し出ることで無料処理(手帳の提示・確認を求められる場合あり)。身障者用駐車区画は計20台(駐車場内5台、建物正面8台、救急前7台)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 20
+      }
+    ],
+    "notes": "通常料金: 一般来院者:1回100円(12時間超過ごとに100円加算)\n障害者割引: 無料\n総台数: 250台",
+    "sourceUrl": "https://www.otaru-general-hospital.jp/for-visitors/access-parking/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01204-001",
+    "name": "旭川市 ときわ市民ホール・勤労者福祉会館・勤労者体育センター・サン・アザレア共用駐車場(第1・第2駐車場)",
+    "address": "北海道旭川市5条通4丁目・6条通4丁目",
+    "latitude": 43.771515,
+    "longitude": 142.356323,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01204",
+    "cityName": "旭川市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者の方は駐車料金が免除。ときわ市民ホール・旭川勤労者福祉会館・旭川勤労者体育センター・旭川建設労働者福祉センター(サン・アザレア)の4施設が共用する第1・第2駐車場(合計160台、各施設公式ページに同一文言で記載)。提示方法等詳細は各施設へ要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、以降1時間100円(超過30分ごとに50円加算)\n障害者割引: 無料\n総台数: 160台",
+    "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/facility00/facility08/p006191.html",
     "updatedAt": "2026-08-22T00:00:00Z"
   }
 ];
