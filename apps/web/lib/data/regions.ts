@@ -80,6 +80,21 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "01205",
+    "name": "室蘭市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01206",
+    "name": "釧路市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01207",
+    "name": "帯広市",
+    "prefectureCode": "01"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"

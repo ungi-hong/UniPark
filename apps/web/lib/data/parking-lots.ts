@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1003
+// 件数: 1008
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22815,6 +22815,121 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 30分以内無料、以降1時間100円(超過30分ごとに50円加算)\n障害者割引: 無料\n総台数: 160台",
     "sourceUrl": "https://www.city.asahikawa.hokkaido.jp/facility00/facility08/p006191.html",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01205-001",
+    "name": "東室蘭駅前パークアンドライド駐車場",
+    "address": "北海道室蘭市海岸町1丁目4番1号",
+    "latitude": 42.320992,
+    "longitude": 140.971924,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01205",
+    "cityName": "室蘭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳の交付を受けている者が、当該手帳を提示して駐車券の認証を受けた場合に駐車料金を免除する(室蘭市道路附属物自動車駐車場条例施行規則第7条)。認証は蘭東支所「えきがるセンター」窓口等で受け、東室蘭駅東口の精算機で精算する。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 利用1回につき500円(入庫から30分以内の出庫でも有料)\n障害者割引: 無料\n総台数: 95台",
+    "sourceUrl": "https://www1.g-reiki.net/muroran/reiki_honbun/q000RG00000762.html",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01205-002",
+    "name": "市立室蘭総合病院 外来駐車場",
+    "address": "北海道室蘭市山手町3丁目8番1号",
+    "latitude": 42.314796,
+    "longitude": 140.975647,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01205",
+    "cityName": "室蘭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方及びこれらの方を乗車させて来院する方が対象。利用時に手帳の提示が必要で、開院日8時30分~17時は「総合案内」、閉院日・時間外は「救急外来窓口」で駐車券の認証を受ける。第2駐車場に障害をお持ちの方向けの優先駐車場を設置(従来の車椅子用駐車場は現在は車椅子専用)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来患者:1日1回100円/外来患者以外(面会者等):1時間まで100円、以後30分毎に50円加算\n障害者割引: 1回100円(減額又は免除のため時間経過による加算なし)",
+    "sourceUrl": "https://www.city.muroran.lg.jp/hospital/introduction/?content=2601",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01205-003",
+    "name": "日鋼記念病院 身障者用駐車場",
+    "address": "北海道室蘭市新富町1丁目5番13号",
+    "latitude": 42.316559,
+    "longitude": 140.984314,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01205",
+    "cityName": "室蘭市",
+    "accessibleSpaceTotal": 37,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身障者用駐車場(37台、立体駐車場とは別区画)は24時間無料で利用可能。身体障害者手帳をお持ちの方は手帳の掲示に協力を依頼。手帳非保持でも通院に支障がある患者には病院から駐車場許可証を発行(受診時に各外来窓口へ申出)。なお一般の外来患者・入院面会者向けにも別途割引制度あり(外来患者:1階会計カウンターで割引QRコード発行により100円/6時間ごと、入院・お見舞いの方:1階総合案内で面会証確認により100円/3時間まで、以降100円/30分ごと)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 37
+      }
+    ],
+    "notes": "通常料金: 立体駐車場:200円/30分、最大料金1,000円/入庫から24時間ごと(繰り返し適用)\n障害者割引: 無料\n総台数: 260台",
+    "sourceUrl": "https://www.nikko-kinen.or.jp/guide/access/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01206-001",
+    "name": "たんちょう釧路空港 駐車場",
+    "address": "北海道釧路市鶴丘2番地",
+    "latitude": 43.043812,
+    "longitude": 144.192734,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01206",
+    "cityName": "釧路市",
+    "accessibleSpaceTotal": 13,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "出口精算機手前の呼び出しブザーを押し、窓口係員に身体障害者手帳・療育手帳・精神障害者保健福祉手帳・戦傷病者手帳・被爆者健康手帳・特定疾患医療受給者証・特定医療費(指定難病)受給者証・小児慢性特定疾病医療受給者証のいずれかを提示すると駐車料金が半額になる。職員不在時間帯(対応時間 平日9:00〜17:00)に出庫した場合は後日精算可能。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 13
+      }
+    ],
+    "notes": "通常料金: 1時間まで無料、1時間30分まで200円、2時間まで300円、以降1時間毎150円、24時間毎最大800円(多客期は1,100円、いずれも6日目以降は割引あり)\n障害者割引: 半額",
+    "sourceUrl": "https://www.hokkaido-airports.com/rd_parking/kuh/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01207-001",
+    "name": "とかち帯広空港駐車場(A・B駐車場)",
+    "address": "北海道帯広市泉町西9線中8-41",
+    "latitude": 42.722912,
+    "longitude": 143.209183,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01207",
+    "cityName": "帯広市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを提示すると駐車料金が半額。出庫時、自動精算機にてAMSお客様さぽーとセンターを呼び出して手続き。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 通常期:1時間まで無料/1時間30分まで200円/2時間まで300円/以降1時間毎150円、24時間毎の最大800円(6日目以降24時間毎最大700円)。多客期(土日祝・お盆・年末年始):以降1時間毎200円、24時間毎の最大1,100円(6日目以降24時間毎最大1,000円)\n障害者割引: 半額",
+    "sourceUrl": "https://www.hokkaido-airports.com/ja/obihiro/access/parking/",
     "updatedAt": "2026-08-22T00:00:00Z"
   }
 ];
