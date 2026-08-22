@@ -10,6 +10,10 @@ type City = components["schemas"]["City"];
 
 export const prefectures: Prefecture[] = [
   {
+    "code": "01",
+    "name": "北海道"
+  },
+  {
     "code": "11",
     "name": "埼玉県"
   },
@@ -40,6 +44,16 @@ export const prefectures: Prefecture[] = [
 ];
 
 const cities: City[] = [
+  {
+    "code": "01101",
+    "name": "札幌市中央区",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01103",
+    "name": "札幌市東区",
+    "prefectureCode": "01"
+  },
   {
     "code": "11102",
     "name": "さいたま市北区",

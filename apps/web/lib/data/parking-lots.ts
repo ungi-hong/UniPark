@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 993
+// 件数: 998
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22596,5 +22596,112 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 1回1台につき100円(フロントで出庫カードを購入)\n障害者割引: 無料(出庫カードを無料で交付)",
     "sourceUrl": "https://ikiiki-harima.com/guide/",
     "updatedAt": "2026-08-21T00:00:00Z"
+  },
+  {
+    "id": "01101-001",
+    "name": "北一条地下駐車場",
+    "address": "北海道札幌市中央区北一条西5-1",
+    "latitude": 43.062305,
+    "longitude": 141.349228,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01101",
+    "cityName": "札幌市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳等の障がい者手帳を精算時に提示することで駐車料金が50%優待になる(運営:タイムズ24)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分300円(平日最大2,500円[7:30-22:00]/夜間最大1,000円[21:30-8:00]、土日祝最大2,200円)\n障害者割引: 50%割引\n総台数: 149台",
+    "sourceUrl": "https://times-info.net/P01-hokkaido/C101/park-detail-BUK0029883/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01101-002",
+    "name": "市立札幌病院 駐車場",
+    "address": "北海道札幌市中央区北11条西13丁目1-1",
+    "latitude": 43.069893,
+    "longitude": 141.33429,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01101",
+    "cityName": "札幌市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳を所持する外来受診患者は駐車料金無料。1階中央ロビー総合案内または防災センターで駐車券の確認(磁気入力処理)を受ける必要あり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで100円(以降30分ごとに50円)\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.sapporo.jp/hospital/access/parking.html",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01101-003",
+    "name": "札幌医科大学附属病院 駐車場(第1・第2・東駐車場)",
+    "address": "北海道札幌市中央区南1条西16丁目291番地",
+    "latitude": 43.055676,
+    "longitude": 141.333206,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01101",
+    "cityName": "札幌市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳のいずれか所持者は駐車料金全額免除。受診を証明する書類(領収書・受付票・予約票等)と手帳を持参し、平日9時~18時に1階ロビー「駐車券割引カウンター」で認証を受ける。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来受診者 1回400円\n障害者割引: 無料\n総台数: 300台",
+    "sourceUrl": "https://web.sapmed.ac.jp/hospital/access/mumhv600000033px.html",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01101-004",
+    "name": "ビッグシャイン88北1条駐車場(北海道立近代美術館提携)",
+    "address": "北海道札幌市中央区北1条西15丁目1-6",
+    "latitude": 43.059322,
+    "longitude": 141.333847,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01101",
+    "cityName": "札幌市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "北海道立近代美術館の提携駐車場。身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれか提示で1時間無料。美術館来館者向けの押印割引(20分無料)とは併用不可(美術館で押印すると障害者割引は適用不可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分130円\n障害者割引: 1時間無料",
+    "sourceUrl": "https://artmuseum.pref.hokkaido.lg.jp/knb/access/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01103-001",
+    "name": "タイムズ札幌丘珠空港",
+    "address": "北海道札幌市東区丘珠町63",
+    "latitude": 43.120789,
+    "longitude": 141.39444,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01103",
+    "cityName": "札幌市東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳をお持ちの利用者及びその同伴者は減免(半額)。駐車場内東側精算機の専用オートフォンより手続き。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで無料、2時間まで200円、24時間まで400円、以降24時間毎400円(最大料金:駐車後24時間で400円)\n障害者割引: 半額\n総台数: 386台",
+    "sourceUrl": "https://times-info.net/P01-hokkaido/C103/park-detail-BUK0043675/",
+    "updatedAt": "2026-08-22T00:00:00Z"
   }
 ];
