@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 998
+// 件数: 1000
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22702,6 +22702,48 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 1時間まで無料、2時間まで200円、24時間まで400円、以降24時間毎400円(最大料金:駐車後24時間で400円)\n障害者割引: 半額\n総台数: 386台",
     "sourceUrl": "https://times-info.net/P01-hokkaido/C103/park-detail-BUK0043675/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01105-001",
+    "name": "大和ハウス プレミストドーム(札幌ドーム) 駐車場",
+    "address": "北海道札幌市豊平区羊ケ丘1番地",
+    "latitude": 42.996433,
+    "longitude": 141.394989,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01105",
+    "cityName": "札幌市豊平区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳・いつくしみの手帳・被爆者健康手帳のいずれかの所持者が対象。利用当日は手帳所有者本人の同乗が必須。購入はローソンチケット・セブンチケット・チケットぴあのみ取扱い(前売限定、当日券売り場での障がい者割引の記載なし)。車いす利用者向けに敷地内無料送迎サービス(事前予約制)あり。通常時(イベントなしの時間貸)については障害者割引の記載は確認できなかった。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: イベント開催時(前売): 普通車3,000円/台。当日払い: 普通車1,000円/台。通常時(イベントなし): 最初の1時間220円、以降30分ごと110円\n障害者割引: イベント開催時、障がい者用駐車券・車いす席専用駐車券は1,200円/台(前売のみ)",
+    "sourceUrl": "https://www.sapporo-dome.co.jp/access/parking/",
+    "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01106-001",
+    "name": "北海道立真駒内公園駐車場(A・B・C駐車場)",
+    "address": "北海道札幌市南区真駒内公園3番1号",
+    "latitude": 42.996368,
+    "longitude": 141.34285,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01106",
+    "cityName": "札幌市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "有料期間・時間内(4月29日~11月3日の土曜・日曜・祝日、6:30~19:00、C駐車場は7:00~18:00)の利用が対象。対象は(1)身体障がい者・知的障がい者・精神障がい者及びその引率者、(2)盲学校・聾学校・養護学校の児童生徒の引率者、(3)児童福祉施設入所又は通園する児童の引率者、(4)老人福祉施設入所者及びその引率者、(5)(6)公園維持管理・子育て支援ボランティア団体(要事前登録)。個人利用の場合は駐車場入口で障害者手帳等の証明書を提示すれば事前申請不要で即時免除。団体利用は前日までに公園事務所へ連絡し申請書提出が必要。なお有料期間・時間外は全利用者が無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 免除(全額無料)",
+    "sourceUrl": "https://makomanai-park.jp/access/",
     "updatedAt": "2026-08-22T00:00:00Z"
   }
 ];

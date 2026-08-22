@@ -55,6 +55,16 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "01105",
+    "name": "札幌市豊平区",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01106",
+    "name": "札幌市南区",
+    "prefectureCode": "01"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"
