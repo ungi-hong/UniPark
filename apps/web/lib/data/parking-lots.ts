@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1012
+// 件数: 1018
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -23017,6 +23017,138 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入場から24時間まで2,500円、以降24時間毎2,500円加算(通常期)/入場から24時間まで3,000円、以降24時間毎3,000円加算(多客期)\n障害者割引: 半額\n総台数: 1011台",
     "sourceUrl": "https://www.hokkaido-airports.com/ja/new-chitose/access/parking/",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01231-001",
+    "name": "恵庭駅東口駐車場",
+    "address": "北海道恵庭市黄金中央2丁目1001番",
+    "latitude": 42.883743,
+    "longitude": 141.588898,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01231",
+    "cityName": "恵庭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体若しくは精神に障害があるため歩行が困難な障害者、又は当該障害者と生計を一にする者が所有する自動車で、自動車税又は軽自動車税の課税免除・減免を受けている車両が対象。減免対象者は券売機では購入不可。市民活動センター(恵庭市緑町2丁目1-1 えにあす1階、平日10時~17時、土日祝は0123-34-7000へ要事前電話予約)の有人窓口で、初回は申込書・障がい者手帳(原本)・手帳コピー(顔写真氏名頁+自動車税減免頁)・代金(現金のみ)を提示して購入。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: 定期駐車券・プリペイドカード購入時5割減免(定期駐車券5,000円/月→2,500円/月)\n総台数: 105台",
+    "sourceUrl": "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/seikatsukankyoubu/seikatukankyou/shiminseikatsu/kotsu/3/2450.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01231-002",
+    "name": "恵庭駅西口駐車場",
+    "address": "北海道恵庭市相生町1丁目602番",
+    "latitude": 42.882767,
+    "longitude": 141.584839,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01231",
+    "cityName": "恵庭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体若しくは精神に障害があるため歩行が困難な障害者、又は当該障害者と生計を一にする者が所有する自動車で、自動車税又は軽自動車税の課税免除・減免を受けている車両が対象。減免対象者は券売機では購入不可。市民活動センター(恵庭市緑町2丁目1-1 えにあす1階、平日10時~17時、土日祝は0123-34-7000へ要事前電話予約)の有人窓口で、初回は申込書・障がい者手帳(原本)・手帳コピー(顔写真氏名頁+自動車税減免頁)・代金(現金のみ)を提示して購入。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: 定期駐車券・プリペイドカード購入時5割減免(定期駐車券5,000円/月→2,500円/月)\n総台数: 83台",
+    "sourceUrl": "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/seikatsukankyoubu/seikatukankyou/shiminseikatsu/kotsu/3/2450.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01231-003",
+    "name": "恵み野駅東口駐車場",
+    "address": "北海道恵庭市恵み野西1丁目2番3",
+    "latitude": 42.903149,
+    "longitude": 141.574829,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01231",
+    "cityName": "恵庭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体若しくは精神に障害があるため歩行が困難な障害者、又は当該障害者と生計を一にする者が所有する自動車で、自動車税又は軽自動車税の課税免除・減免を受けている車両が対象。減免対象者は券売機では購入不可。市民活動センター(恵庭市緑町2丁目1-1 えにあす1階、平日10時~17時、土日祝は0123-34-7000へ要事前電話予約)の有人窓口で、初回は申込書・障がい者手帳(原本)・手帳コピー(顔写真氏名頁+自動車税減免頁)・代金(現金のみ)を提示して購入。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: 定期駐車券・プリペイドカード購入時5割減免(定期駐車券5,000円/月→2,500円/月)\n総台数: 124台",
+    "sourceUrl": "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/seikatsukankyoubu/seikatukankyou/shiminseikatsu/kotsu/3/2450.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01231-004",
+    "name": "恵み野高架下東駐車場",
+    "address": "北海道恵庭市中島町6丁目18番26、18番29",
+    "latitude": 42.898514,
+    "longitude": 141.577469,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01231",
+    "cityName": "恵庭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体若しくは精神に障害があるため歩行が困難な障害者、又は当該障害者と生計を一にする者が所有する自動車で、自動車税又は軽自動車税の課税免除・減免を受けている車両が対象。プリペイドカードは全駐車場共通で利用可能。減免対象者は券売機では購入不可。市民活動センター(恵庭市緑町2丁目1-1 えにあす1階、平日10時~17時、土日祝は0123-34-7000へ要事前電話予約)の有人窓口で障がい者手帳等を提示して購入。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: プリペイドカード購入時5割減免(定期駐車券の販売窓口対象外エリア)\n総台数: 76台",
+    "sourceUrl": "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/seikatsukankyoubu/seikatukankyou/shiminseikatsu/kotsu/3/2450.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01231-005",
+    "name": "恵み野高架下西駐車場",
+    "address": "北海道恵庭市柏陽町1丁目1番5、2番5",
+    "latitude": 42.900612,
+    "longitude": 141.573563,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01231",
+    "cityName": "恵庭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体若しくは精神に障害があるため歩行が困難な障害者、又は当該障害者と生計を一にする者が所有する自動車で、自動車税又は軽自動車税の課税免除・減免を受けている車両が対象。プリペイドカードは全駐車場共通で利用可能。減免対象者は券売機では購入不可。市民活動センター(恵庭市緑町2丁目1-1 えにあす1階、平日10時~17時、土日祝は0123-34-7000へ要事前電話予約)の有人窓口で障がい者手帳等を提示して購入。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: プリペイドカード購入時5割減免(定期駐車券の販売窓口対象外エリア)\n総台数: 73台",
+    "sourceUrl": "https://www.city.eniwa.hokkaido.jp/soshikikarasagasu/seikatsukankyoubu/seikatukankyou/shiminseikatsu/kotsu/3/2450.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01231-006",
+    "name": "島松駅横駐車場",
+    "address": "北海道恵庭市島松仲町1丁目557番9",
+    "latitude": 42.920574,
+    "longitude": 141.575394,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01231",
+    "cityName": "恵庭市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体若しくは精神に障害があるため歩行が困難な障害者、又は当該障害者と生計を一にする者が所有する自動車で、自動車税又は軽自動車税の課税免除・減免を受けている車両が対象。減免対象者は券売機では購入不可。市民活動センター(恵庭市緑町2丁目1-1 えにあす1階、平日10時~17時、土日祝は0123-34-7000へ要事前電話予約)の有人窓口で障がい者手帳等を提示して購入。なお本駐車場の定期駐車券は2025年10月分より販売休止中のため、現状はプリペイドカードのみ減免対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: プリペイドカード購入時5割減免(定期駐車券は令和7年10月分より販売休止中)\n総台数: 109台",
+    "sourceUrl": "https://www.city.eniwa.hokkaido.jp/kurashi/kurashi_tetsuzuki/kotsu/shiminchushajo/3782.html",
     "updatedAt": "2026-08-23T00:00:00Z"
   }
 ];

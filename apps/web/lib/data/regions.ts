@@ -105,6 +105,11 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "01231",
+    "name": "恵庭市",
+    "prefectureCode": "01"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"
