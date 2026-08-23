@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1009
+// 件数: 1012
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22951,6 +22951,72 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通自動車 1時間ごと70円、二輪車 1時間ごと30円(令和6年10月1日改定)\n障害者割引: 利用料金50%割引(回数券は対象外)\n総台数: 105台",
     "sourceUrl": "https://www.city.ebetsu.hokkaido.jp/soshiki/dorokanri/76126.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01224-001",
+    "name": "新千歳空港駐車場 A駐車場",
+    "address": "北海道千歳市美々987-22",
+    "latitude": 42.787346,
+    "longitude": 141.678482,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01224",
+    "cityName": "千歳市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを提示。出口(または事前)精算機のインターホンで「さぽーとセンター」が対応し、駐車券と手帳提示により駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで無料、2時間まで1,000円、3時間まで1,500円、以降1時間毎500円加算、24時間ごとの最大料金3,500円(通常期)/4,500円(多客期・土日祝・お盆・年末年始)\n障害者割引: 半額\n総台数: 1800台",
+    "sourceUrl": "https://www.hokkaido-airports.com/ja/new-chitose/access/parking/",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01224-002",
+    "name": "新千歳空港駐車場 B駐車場",
+    "address": "北海道千歳市美々987-22",
+    "latitude": 42.787346,
+    "longitude": 141.678482,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01224",
+    "cityName": "千歳市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを提示。出口(または事前)精算機のインターホンで「さぽーとセンター」が対応し、駐車券と手帳提示により駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで無料、2時間まで1,000円、3時間まで1,500円、以降1時間毎500円加算、24時間ごとの最大料金3,500円(通常期)/4,500円(多客期・土日祝・お盆・年末年始)\n障害者割引: 半額\n総台数: 2416台",
+    "sourceUrl": "https://www.hokkaido-airports.com/ja/new-chitose/access/parking/",
+    "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01224-003",
+    "name": "新千歳空港駐車場 C駐車場",
+    "address": "北海道千歳市美々987-22",
+    "latitude": 42.787346,
+    "longitude": 141.678482,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01224",
+    "cityName": "千歳市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを提示。出口(または事前)精算機のインターホンで「さぽーとセンター」が対応し、駐車券と手帳提示により駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入場から24時間まで2,500円、以降24時間毎2,500円加算(通常期)/入場から24時間まで3,000円、以降24時間毎3,000円加算(多客期)\n障害者割引: 半額\n総台数: 1011台",
+    "sourceUrl": "https://www.hokkaido-airports.com/ja/new-chitose/access/parking/",
     "updatedAt": "2026-08-23T00:00:00Z"
   }
 ];
