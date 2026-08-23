@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1008
+// 件数: 1009
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -22931,5 +22931,26 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 通常期:1時間まで無料/1時間30分まで200円/2時間まで300円/以降1時間毎150円、24時間毎の最大800円(6日目以降24時間毎最大700円)。多客期(土日祝・お盆・年末年始):以降1時間毎200円、24時間毎の最大1,100円(6日目以降24時間毎最大1,000円)\n障害者割引: 半額",
     "sourceUrl": "https://www.hokkaido-airports.com/ja/obihiro/access/parking/",
     "updatedAt": "2026-08-22T00:00:00Z"
+  },
+  {
+    "id": "01217-001",
+    "name": "大麻中町駐車場(市営駐車場)",
+    "address": "北海道江別市大麻中町26-8",
+    "latitude": 43.07494,
+    "longitude": 141.493698,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01217",
+    "cityName": "江別市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳を所持する方が対象。介助者が運転する自動車も対象。利用時に駐車券と手帳(またはミライロID)を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車 1時間ごと70円、二輪車 1時間ごと30円(令和6年10月1日改定)\n障害者割引: 利用料金50%割引(回数券は対象外)\n総台数: 105台",
+    "sourceUrl": "https://www.city.ebetsu.hokkaido.jp/soshiki/dorokanri/76126.html",
+    "updatedAt": "2026-08-23T00:00:00Z"
   }
 ];
