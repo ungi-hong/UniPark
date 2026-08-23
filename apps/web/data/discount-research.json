@@ -15118,5 +15118,20 @@
     "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを提示すると駐車料金が半額。出庫時、自動精算機にてAMSお客様さぽーとセンターを呼び出して手続き。",
     "source_url": "https://www.hokkaido-airports.com/ja/obihiro/access/parking/",
     "verified_at": "2026-08-22"
+  },
+  {
+    "id": "01217-001",
+    "municipality_code": "01217",
+    "municipality": "江別市",
+    "name": "大麻中町駐車場(市営駐車場)",
+    "address": "北海道江別市大麻中町26-8",
+    "capacity": 105,
+    "capacity_accessible": null,
+    "normal_rate": "普通自動車 1時間ごと70円、二輪車 1時間ごと30円(令和6年10月1日改定)",
+    "discount_rate": "利用料金50%割引(回数券は対象外)",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳を所持する方が対象。介助者が運転する自動車も対象。利用時に駐車券と手帳(またはミライロID)を提示。",
+    "source_url": "https://www.city.ebetsu.hokkaido.jp/soshiki/dorokanri/76126.html",
+    "verified_at": "2026-08-23"
   }
 ]
