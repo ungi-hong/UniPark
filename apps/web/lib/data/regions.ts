@@ -10,6 +10,10 @@ type City = components["schemas"]["City"];
 
 export const prefectures: Prefecture[] = [
   {
+    "code": "01",
+    "name": "北海道"
+  },
+  {
     "code": "11",
     "name": "埼玉県"
   },
@@ -32,10 +36,79 @@ export const prefectures: Prefecture[] = [
   {
     "code": "27",
     "name": "大阪府"
+  },
+  {
+    "code": "28",
+    "name": "兵庫県"
   }
 ];
 
 const cities: City[] = [
+  {
+    "code": "01101",
+    "name": "札幌市中央区",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01103",
+    "name": "札幌市東区",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01105",
+    "name": "札幌市豊平区",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01106",
+    "name": "札幌市南区",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01202",
+    "name": "函館市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01203",
+    "name": "小樽市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01204",
+    "name": "旭川市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01205",
+    "name": "室蘭市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01206",
+    "name": "釧路市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01207",
+    "name": "帯広市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01217",
+    "name": "江別市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01224",
+    "name": "千歳市",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01231",
+    "name": "恵庭市",
+    "prefectureCode": "01"
+  },
   {
     "code": "11102",
     "name": "さいたま市北区",
@@ -1190,6 +1263,136 @@ const cities: City[] = [
     "code": "27383",
     "name": "千早赤阪村",
     "prefectureCode": "27"
+  },
+  {
+    "code": "28101",
+    "name": "神戸市東灘区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28102",
+    "name": "神戸市灘区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28105",
+    "name": "神戸市兵庫区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28106",
+    "name": "神戸市長田区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28107",
+    "name": "神戸市須磨区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28108",
+    "name": "神戸市垂水区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28109",
+    "name": "神戸市北区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28110",
+    "name": "神戸市中央区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28111",
+    "name": "神戸市西区",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28201",
+    "name": "姫路市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28202",
+    "name": "尼崎市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28203",
+    "name": "明石市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28204",
+    "name": "西宮市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28205",
+    "name": "洲本市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28206",
+    "name": "芦屋市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28207",
+    "name": "伊丹市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28209",
+    "name": "豊岡市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28210",
+    "name": "加古川市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28212",
+    "name": "赤穂市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28213",
+    "name": "西脇市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28214",
+    "name": "宝塚市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28217",
+    "name": "川西市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28219",
+    "name": "三田市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28221",
+    "name": "丹波篠山市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28226",
+    "name": "淡路市",
+    "prefectureCode": "28"
+  },
+  {
+    "code": "28382",
+    "name": "播磨町",
+    "prefectureCode": "28"
   }
 ];
 
