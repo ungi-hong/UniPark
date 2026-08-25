@@ -110,6 +110,11 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "01453",
+    "name": "東神楽町",
+    "prefectureCode": "01"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"

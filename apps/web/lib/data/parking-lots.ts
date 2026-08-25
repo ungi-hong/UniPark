@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1018
+// 件数: 1019
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -23150,5 +23150,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 入庫から30分まで無料、以降60分ごとに100円(当日1日最大料金500円、24時以降は加算)\n障害者割引: プリペイドカード購入時5割減免(定期駐車券は令和7年10月分より販売休止中)\n総台数: 109台",
     "sourceUrl": "https://www.city.eniwa.hokkaido.jp/kurashi/kurashi_tetsuzuki/kotsu/shiminchushajo/3782.html",
     "updatedAt": "2026-08-23T00:00:00Z"
+  },
+  {
+    "id": "01453-001",
+    "name": "旭川空港駐車場",
+    "address": "北海道上川郡東神楽町東2線16号98番地",
+    "latitude": 43.669201,
+    "longitude": 142.459091,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01453",
+    "cityName": "東神楽町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証のいずれかを提示。身障者用駐車区画に駐車のうえ、出口精算機のインターホンでさぽーとセンター(0120-951-365、24時間365日受付)に連絡して手続き。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間無料、1時間30分まで200円、2時間まで300円、以降1時間毎150円、24時間毎上限1,000円(6日目以降900円)※多客期(土日祝・お盆・年末年始等)は加算料金・上限額が異なる(24時間毎上限1,200円、6日目以降1,100円)\n障害者割引: 身障者用駐車区画は通常料金の約半額",
+    "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/parking/",
+    "updatedAt": "2026-08-25T00:00:00Z"
   }
 ];
