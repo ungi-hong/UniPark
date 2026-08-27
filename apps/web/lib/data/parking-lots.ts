@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1019
+// 件数: 1021
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -23172,5 +23172,48 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 最初の1時間無料、1時間30分まで200円、2時間まで300円、以降1時間毎150円、24時間毎上限1,000円(6日目以降900円)※多客期(土日祝・お盆・年末年始等)は加算料金・上限額が異なる(24時間毎上限1,200円、6日目以降1,100円)\n障害者割引: 身障者用駐車区画は通常料金の約半額",
     "sourceUrl": "https://www.hokkaido-airports.com/ja/asahikawa/access/parking/",
     "updatedAt": "2026-08-25T00:00:00Z"
+  },
+  {
+    "id": "01564-001",
+    "name": "女満別空港駐車場(第1・第2駐車場)",
+    "address": "北海道網走郡大空町女満別中央201-3",
+    "latitude": 43.882359,
+    "longitude": 144.155594,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01564",
+    "cityName": "大空町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "出庫時に出口ゲートの係員へ該当する手帳を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間まで無料、以降1時間30分まで200円、2時間まで300円、以降1時間毎150円、24時間毎上限800円(多客期は以降1時間毎200円、24時間毎上限1,100円)\n障害者割引: 身体障害者手帳等の該当する手帳提示で駐車料金が半額\n総台数: 761台",
+    "sourceUrl": "https://www.hokkaido-airports.com/ja/memanbetsu/access/parking/",
+    "updatedAt": "2026-08-27T00:00:00Z"
+  },
+  {
+    "id": "01578-001",
+    "name": "ウポポイ(民族共生象徴空間)駐車場(第1駐車場・臨時駐車場)",
+    "address": "北海道白老郡白老町若草町2丁目3",
+    "latitude": 42.570854,
+    "longitude": 141.356247,
+    "prefectureCode": "01",
+    "prefectureName": "北海道",
+    "cityCode": "01578",
+    "cityName": "白老町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "エントランス棟窓口で障害者手帳等を提示・確認のうえ無料サービス券を1枚交付(駐車場出口で使用)。対象は障がい者本人が乗車する車両1台に限る。大型バス駐車場は対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回500円(第1駐車場246台・臨時駐車場209台、当日入庫は最大料金として繰り返し適用。二輪車は無料。大型バス1回2,000円、マイクロバス1,000円)\n障害者割引: 障がい者本人が乗車する車両1台分の駐車料金が無料\n総台数: 455台",
+    "sourceUrl": "https://ainu-upopoy.go.jp/access/",
+    "updatedAt": "2026-08-27T00:00:00Z"
   }
 ];

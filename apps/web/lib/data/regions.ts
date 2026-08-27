@@ -115,6 +115,16 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "01564",
+    "name": "大空町",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01578",
+    "name": "白老町",
+    "prefectureCode": "01"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"
