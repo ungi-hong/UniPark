@@ -40,6 +40,10 @@ export const prefectures: Prefecture[] = [
   {
     "code": "28",
     "name": "兵庫県"
+  },
+  {
+    "code": "40",
+    "name": "福岡県"
   }
 ];
 
@@ -1408,6 +1412,21 @@ const cities: City[] = [
     "code": "28382",
     "name": "播磨町",
     "prefectureCode": "28"
+  },
+  {
+    "code": "40101",
+    "name": "北九州市門司区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40105",
+    "name": "北九州市戸畑区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40106",
+    "name": "北九州市小倉北区",
+    "prefectureCode": "40"
   }
 ];
 

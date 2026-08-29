@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1021
+// 件数: 1028
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -23215,5 +23215,167 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 普通車1回500円(第1駐車場246台・臨時駐車場209台、当日入庫は最大料金として繰り返し適用。二輪車は無料。大型バス1回2,000円、マイクロバス1,000円)\n障害者割引: 障がい者本人が乗車する車両1台分の駐車料金が無料\n総台数: 455台",
     "sourceUrl": "https://ainu-upopoy.go.jp/access/",
     "updatedAt": "2026-08-27T00:00:00Z"
+  },
+  {
+    "id": "40101-001",
+    "name": "北九州市営 九州鉄道記念館西駐車場",
+    "address": "福岡県北九州市門司区清滝二丁目3番",
+    "latitude": 33.943684,
+    "longitude": 130.962769,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40101",
+    "cityName": "北九州市門司区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持し、車を運転または同乗する方が対象。鉄道記念館西ゲート(開館時)で手帳またはミライロIDを提示し精算時に普通駐車料金の5割引(10円未満切り上げ)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 営業時間内(7:00-22:00)最初の1時間200円(最初の30分無料)、その後30分ごとに100円/営業時間外(21:00-8:00)1回1,300円\n障害者割引: 5割引(半額)\n総台数: 30台",
+    "sourceUrl": "https://www.city.kitakyushu.lg.jp/contents/05600065.html",
+    "updatedAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "40101-002",
+    "name": "関門海峡ミュージアム駐車場",
+    "address": "福岡県北九州市門司区西海岸一丁目3番3号",
+    "latitude": 33.943962,
+    "longitude": 130.95929,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40101",
+    "cityName": "北九州市門司区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "福岡県内に居住する方が対象。(1)身体障害者手帳(障害程度1級〜3級)の交付を受けた者が運転または同乗する普通自動車、(2)身体障害者手帳(下肢・体幹不自由、4級〜6級)の交付を受けた者が運転する普通自動車、(3)療育手帳Aの交付を受けた者が運転または同乗する普通自動車、(4)精神障害者保健福祉手帳(1級)の交付を受けた者が運転または同乗する普通自動車。関門海峡ミュージアム管理要綱第5条【駐車場利用料金】に基づく減免。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分200円(3時間まで)、最大料金(3〜12時間)800円、24時間営業\n障害者割引: 5割引(半額)\n総台数: 200台",
+    "sourceUrl": "https://www.city.kitakyushu.lg.jp/files/000811898.pdf",
+    "updatedAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "40105-001",
+    "name": "ウェルとばた駐車場",
+    "address": "福岡県北九州市戸畑区汐井町1番6号",
+    "latitude": 33.897015,
+    "longitude": 130.821274,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40105",
+    "cityName": "北九州市戸畑区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の所持者が運転または同乗する自動車が対象。精算時に駐車料金が半額(10円未満の端数は切り上げ)。2階総合案内窓口または1階エレベーターホール横の防災センター(警備員控室)で手帳(ミライロID可)と駐車券を提示して割引処理を受ける必要あり。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分150円(上限なし)\n障害者割引: 半額\n総台数: 120台",
+    "sourceUrl": "https://www.wel-tobata.jp/floor/1f-1/",
+    "updatedAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "40106-001",
+    "name": "北九州市営天神島駐車場",
+    "address": "福岡県北九州市小倉北区古船場町1番27号",
+    "latitude": 33.879799,
+    "longitude": 130.880402,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40106",
+    "cityName": "北九州市小倉北区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(ミライロID可)所持者が運転または同乗する場合、駐車場管理室の係員に手帳を提示すると精算時に普通駐車料金の5割引(10円未満は切り上げ)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 30分150円(営業時間内7:00〜19:00、最大1,000円/営業時間外19:00〜翌7:00は最大1,200円)\n障害者割引: 5割引\n総台数: 304台",
+    "sourceUrl": "https://www.city.kitakyushu.lg.jp/contents/924_00500.html",
+    "updatedAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "40106-002",
+    "name": "北九州市営勝山公園地下駐車場",
+    "address": "福岡県北九州市小倉北区城内1番",
+    "latitude": 33.88448,
+    "longitude": 130.875549,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40106",
+    "cityName": "北九州市小倉北区",
+    "accessibleSpaceTotal": 13,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(ミライロID可)所持者が運転または同乗する場合、駐車場管理室で手帳を提示すると精算時に普通駐車料金の5割引(10円未満は切り上げ)。支払いは現金のみ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 13
+      }
+    ],
+    "notes": "通常料金: 30分150円(営業時間内7:30〜23:00、最大1,000円/営業時間外は1回1,000円)\n障害者割引: 5割引\n総台数: 428台",
+    "sourceUrl": "https://pm-kokura.com/katsuyama",
+    "updatedAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "40106-003",
+    "name": "北九州市立男女共同参画センター・ムーブ駐車場",
+    "address": "福岡県北九州市小倉北区大手町11番4号",
+    "latitude": 33.878998,
+    "longitude": 130.870651,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40106",
+    "cityName": "北九州市小倉北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者が運転または同乗する自動車は駐車料金が半額。手帳と駐車券を3階窓口、1階防災センターまたは1階図書情報室へ提示して申請。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに100円(最初の20分は無料)\n障害者割引: 半額\n総台数: 100台",
+    "sourceUrl": "https://www.kitakyu-move.jp/sisetsucat/sisetsu-park",
+    "updatedAt": "2026-08-29T00:00:00Z"
+  },
+  {
+    "id": "40106-004",
+    "name": "J:COM北九州芸術劇場駐車場(リバーウォーク北九州駐車場)",
+    "address": "福岡県北九州市小倉北区室町1丁目1番1号",
+    "latitude": 33.885876,
+    "longitude": 130.875244,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40106",
+    "cityName": "北九州市小倉北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳所持者が運転または同乗する車両は、J:COM北九州芸術劇場利用に伴う駐車場使用料の半額を減免。手続き方法は劇場窓口へ要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 40分200円(平日)/40分300円(土日祝・特別日、2026年4月1日改定)\n障害者割引: 半額\n総台数: 800台",
+    "sourceUrl": "https://www.city.kitakyushu.lg.jp/contents/26501246.html",
+    "updatedAt": "2026-08-29T00:00:00Z"
   }
 ];
