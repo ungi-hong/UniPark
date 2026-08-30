@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1075
+// 件数: 1084
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24461,6 +24461,216 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 一般利用:~60分500円/60分超~120分1,000円/120分超~180分1,500円/180分超~240分2,000円/240分超~300分2,500円\n障害者割引: 無料\n総台数: 48台",
     "sourceUrl": "https://fukuokacity-gym.com/jonan/new/%E9%A7%90%E8%BB%8A%E5%A0%B4%E6%96%99%E9%87%91-3/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40202-001",
+    "name": "大牟田市役所駐車場(優先駐車場)",
+    "address": "福岡県大牟田市有明町2丁目3番地",
+    "latitude": 33.030174,
+    "longitude": 130.446136,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40202",
+    "cityName": "大牟田市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "本庁舎入口付近の優先駐車場(2台分)は無料。対象は障害のある方、妊産婦の方、高齢の方、病気やけがをされている方。利用可能時間は開庁日(月~金)午前8時20分~午後5時15分。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入庫から60分以内220円(税込)、以降60分ごとに110円(税込)\n障害者割引: 無料(優先駐車場2台分)",
+    "sourceUrl": "https://www.city.omuta.lg.jp/kiji0034217/index.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40202-002",
+    "name": "大牟田駅東口駐車場",
+    "address": "福岡県大牟田市大字大牟田1232番地6",
+    "latitude": 33.026077,
+    "longitude": 130.474319,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40202",
+    "cityName": "大牟田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。各手帳を係員へ提示し駐車利用券を購入(半額)。月極契約は申込み時に手帳提示。管理:大牟田市(指定管理者)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 24時間(年中無休)、1日(24時間ごと)800円(730円+税、10円未満切り捨て)を上限。月極11,000円/月\n障害者割引: 利用券購入時半額。月極契約は5,500円/月\n総台数: 44台",
+    "sourceUrl": "http://www.nkscorp.com/service/designated_mg/higasi.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40202-003",
+    "name": "新大牟田駅駐車場",
+    "address": "福岡県大牟田市岩本新町1丁目306番地",
+    "latitude": 33.070389,
+    "longitude": 130.48764,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40202",
+    "cityName": "大牟田市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。各手帳を係員へ提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 午前6時~午後10時: 30分以内無料、30~60分220円、以降60分ごとに110円。午後10時~翌午前6時: 30分以内無料、30~60分50円、以降60分ごとに50円。1日上限350円+税\n障害者割引: 利用券購入時半額\n総台数: 77台",
+    "sourceUrl": "http://www.nkscorp.com/service/designated_mg/shinomuta.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40202-004",
+    "name": "新大牟田駅南駐車場",
+    "address": "福岡県大牟田市大字岩本2381番地3",
+    "latitude": 33.066898,
+    "longitude": 130.495544,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40202",
+    "cityName": "大牟田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。各手帳を係員へ提示。月極契約は申込み時に提示が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時利用料金は公式サイトの料金一覧表を参照。月極3,000円/月\n障害者割引: 利用券購入時半額。月極契約は1,500円/月\n総台数: 98台",
+    "sourceUrl": "https://www.city.omuta.lg.jp/kiji00321334/index.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40202-005",
+    "name": "大牟田市立病院駐車場",
+    "address": "福岡県大牟田市宝坂町2丁目19番地1",
+    "latitude": 33.024261,
+    "longitude": 130.445297,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40202",
+    "cityName": "大牟田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者は無料(証明が必要)。受付窓口等で身体障害者手帳等の証明提示が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 外来患者: 30分無料、以降1回100円(7時~17時)。その他利用者: 30分無料、以降2時間ごとに100円(7時~17時)。17時~翌7時は料金半額。\n障害者割引: 無料",
+    "sourceUrl": "https://www.ghp.omuta.fukuoka.jp/visitor/visitor0304.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40203-001",
+    "name": "久留米シティプラザ地下駐車場",
+    "address": "福岡県久留米市六ツ門町8-1",
+    "latitude": 33.314003,
+    "longitude": 130.513168,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40203",
+    "cityName": "久留米市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持し、観劇・コンサート・展示会・イベント・会議・研修会などで久留米シティプラザを利用する方が対象。精算前に手帳と駐車券を2階総合受付へ提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間200円、以後30分ごとに100円(4時間以上12時間以内800円、12時間以降は1時間ごとに100円)\n障害者割引: 利用した時間分の駐車料金を減免(実質無料)\n総台数: 109台",
+    "sourceUrl": "https://www.city.kurume.fukuoka.jp/1070kenkou/2010fukushi/3040shougaishawaribiki/2015-0224-1333-91.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40203-002",
+    "name": "えーるピア久留米駐車場",
+    "address": "福岡県久留米市諏訪野町1830-6",
+    "latitude": 33.306896,
+    "longitude": 130.521423,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40203",
+    "cityName": "久留米市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・被爆者健康手帳のいずれかの所持者が運転または同乗している場合に、えーるピア久留米利用時に限り駐車料金が免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、30分超3時間まで200円、3時間超は1時間ごとに100円加算\n障害者割引: 無料(駐車料金全額免除)\n総台数: 270台",
+    "sourceUrl": "https://sports-manabi.jp/elpia/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40205-001",
+    "name": "飯塚市営飯塚立体駐車場",
+    "address": "福岡県飯塚市飯塚14番7号",
+    "latitude": 33.635761,
+    "longitude": 130.685532,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40205",
+    "cityName": "飯塚市",
+    "accessibleSpaceTotal": 13,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "対象:身体障害者手帳1~3級の交付を受けている者(下肢障がいは4級まで対象)、療育手帳Aの交付を受けている者、精神障害者保健福祉手帳1~3級の交付を受けている者が運転または同乗する自動車。利用方法:出口精算機のインターホンを押しコールセンターを呼び出し、備え付けカメラに向かって手帳を提示(事前精算機での処理不可、ミライロID可)。手帳の提示がない場合は割引不可。他の割引(コミュニティセンター等)との重複割引は不可。問合せ:飯塚市社会・障がい者福祉課 電話0948-22-5500(内線1151・1152)"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 13
+      }
+    ],
+    "notes": "通常料金: 1時間以内200円、1時間超4時間以内310円(基本料金)、4時間超は30分毎100円、入庫から24時間以内最大1,200円\n障害者割引: 最初の4時間以内は基本料金310円を免除(4時間超過分の30分毎100円の割増料金は通常どおり負担)\n総台数: 436台",
+    "sourceUrl": "https://www.city.iizuka.lg.jp/uploaded/attachment/6510.pdf",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40205-002",
+    "name": "飯塚文化会館駐車場(コスモスコモン地下駐車場)",
+    "address": "福岡県飯塚市飯塚14番66号",
+    "latitude": 33.636292,
+    "longitude": 130.684387,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40205",
+    "cityName": "飯塚市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "対象:身体障害者手帳1~3級の交付を受けている者(下肢障がいは4級まで対象)、療育手帳Aの交付を受けている者、精神障害者保健福祉手帳1~3級の交付を受けている者が運転または同乗する自動車。利用方法:駐車場管理人室の係員に手帳と駐車券を提示、又はインターホンを押し係員が来たら手帳と駐車券を提示(ミライロID可)。手帳の提示がない場合は割引不可。他の割引との重複割引は不可。問合せ:飯塚市社会・障がい者福祉課 電話0948-22-5500(内線1151・1152)"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 1時間以内200円、1時間超4時間以内310円(基本料金)、4時間超は30分毎100円、入庫から24時間以内最大1,200円\n障害者割引: 最初の4時間以内は基本料金310円を免除(4時間超過分の30分毎100円の割増料金は通常どおり負担)\n総台数: 117台",
+    "sourceUrl": "https://www.city.iizuka.lg.jp/uploaded/attachment/6510.pdf",
     "updatedAt": "2026-08-30T00:00:00Z"
   }
 ];

@@ -1472,6 +1472,21 @@ const cities: City[] = [
     "code": "40136",
     "name": "福岡市城南区",
     "prefectureCode": "40"
+  },
+  {
+    "code": "40202",
+    "name": "大牟田市",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40203",
+    "name": "久留米市",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40205",
+    "name": "飯塚市",
+    "prefectureCode": "40"
   }
 ];
 
