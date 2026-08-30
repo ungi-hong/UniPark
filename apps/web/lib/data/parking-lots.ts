@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1084
+// 件数: 1085
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -12966,6 +12966,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 1日500円\n障害者割引: 1日200円\n総台数: 40台",
     "sourceUrl": "https://www.town.yokoshibahikari.chiba.jp/site/yokoshibahikari-navi/1580.html",
     "updatedAt": "2026-08-13T00:00:00Z"
+  },
+  {
+    "id": "23225-001",
+    "name": "知立市駅前駐車場",
+    "address": "愛知県知立市新富1丁目1番地",
+    "latitude": 35.006355,
+    "longitude": 137.041626,
+    "prefectureCode": "23",
+    "prefectureName": "愛知県",
+    "cityCode": "23225",
+    "cityName": "知立市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "知立市内に住所を有し、身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持し、かつ自動車税(軽自動車税)の減免を受けている人が対象。市役所福祉課(1階北側5番窓口、電話0566-95-0118)に、障害者手帳、減免を受けた車両の車検証、交付申請書を提出して申請。前回交付日から1年経過した月の初日から再申請可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 知立市有料駐車場プリペイドカード(1,100円券)を年2枚交付",
+    "sourceUrl": "https://www.city.chiryu.aichi.jp/soshiki/fukushikodomo/fukushi/gyomu/1/2/1445302180496.html",
+    "updatedAt": "2026-08-18T00:00:00Z"
   },
   {
     "id": "27102-001",

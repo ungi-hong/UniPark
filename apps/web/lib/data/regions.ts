@@ -969,6 +969,11 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "23225",
+    "name": "知立市",
+    "prefectureCode": "23"
+  },
+  {
     "code": "23238",
     "name": "長久手市",
     "prefectureCode": "23"
