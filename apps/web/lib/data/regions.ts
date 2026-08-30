@@ -1497,6 +1497,11 @@ const cities: City[] = [
     "code": "40218",
     "name": "春日市",
     "prefectureCode": "40"
+  },
+  {
+    "code": "40345",
+    "name": "新宮町",
+    "prefectureCode": "40"
   }
 ];
 

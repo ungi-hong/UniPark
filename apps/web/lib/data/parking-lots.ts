@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1087
+// 件数: 1088
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24734,6 +24734,28 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入庫から2時間以内無料、2時間超過は30分ごとに150円\n障害者割引: 駐車料金全額減免\n総台数: 228台",
     "sourceUrl": "http://www.cloverplaza.jp/traffic/parking-fee-for-the-persons-with-disabilities.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40345-001",
+    "name": "新宮漁港駐車場",
+    "address": "福岡県糟屋郡新宮町大字湊",
+    "latitude": 33.7136,
+    "longitude": 130.423569,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40345",
+    "cityName": "新宮町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人が対象。一般利用または相島渡航者利用の駐車料金が半額になる。適用を受けるには駐車場の精算機横に設置された電話でオペレーターの指示にあわせて操作する必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、30分超〜3時間以内300円、3時間超〜6時間以内600円、6時間超〜12時間以内1,000円、12時間超は12時間ごとに200円加算(上限2,000円)\n障害者割引: 半額",
+    "sourceUrl": "https://www.town.shingu.fukuoka.jp/soshiki/toshi_seibi/8/1/1831.html",
     "updatedAt": "2026-08-30T00:00:00Z"
   }
 ];
