@@ -1427,6 +1427,31 @@ const cities: City[] = [
     "code": "40106",
     "name": "北九州市小倉北区",
     "prefectureCode": "40"
+  },
+  {
+    "code": "40107",
+    "name": "北九州市小倉南区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40108",
+    "name": "北九州市八幡東区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40109",
+    "name": "北九州市八幡西区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40131",
+    "name": "福岡市東区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40132",
+    "name": "福岡市博多区",
+    "prefectureCode": "40"
   }
 ];
 
