@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1055
+// 件数: 1075
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24013,6 +24013,454 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 最初60分400円(30分以内無料)\n障害者割引: 半額\n総台数: 1126台",
     "sourceUrl": "https://www.fukuoka-airport.jp/barrier-free/?access=int",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-001",
+    "name": "福岡市庁舎駐車場",
+    "address": "福岡県福岡市中央区天神1丁目8番1号",
+    "latitude": 33.590084,
+    "longitude": 130.401581,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "心身障がい者本人が運転または同乗する自動車が対象。身体障害者手帳、療育手帳、精神障害者保健福祉手帳、特別児童扶養手当証書のいずれか(ミライロID可)を1階窓口・出口・警備室に提示。1回の利用につき2時間まで料金免除。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 地下1階駐車場・一般利用等(詳細は公式PDF参照)\n障害者割引: 2時間まで無料",
+    "sourceUrl": "https://www.city.fukuoka.lg.jp/zaisei/zaisan/shisei/parking.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-002",
+    "name": "福岡市市民福祉プラザ(ふくふくプラザ)駐車場",
+    "address": "福岡県福岡市中央区荒戸3丁目3番39号",
+    "latitude": 33.592846,
+    "longitude": 130.373093,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかを所持する者が運転または同乗する自動車が対象。駐車時に手帳を提示。障がい者専用の駐車場のため一般利用者は公共交通機関の利用を推奨。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 30分100円\n障害者割引: 無料\n総台数: 62台",
+    "sourceUrl": "https://www.fukufukuplaza.jp/access/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-003",
+    "name": "アクロス福岡駐車場",
+    "address": "福岡県福岡市中央区天神1丁目1番1号",
+    "latitude": 33.589542,
+    "longitude": 130.403717,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障がい者手帳・精神障がい者手帳・療育手帳と「施設利用証明書」(チケット半券や店舗レシートでも可)を地下3階駐車場管理室に提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 地下3階平面駐車場、時間貸料金(詳細は公式サイト参照)\n障害者割引: 施設利用証明書提示で2時間無料券(シンフォニーホール等主要ホール利用時は3時間無料券)\n総台数: 116台",
+    "sourceUrl": "https://www.acros.or.jp/r_facilities/parking.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-004",
+    "name": "福岡市美術館駐車場",
+    "address": "福岡県福岡市中央区大濠公園1番6号",
+    "latitude": 33.589401,
+    "longitude": 130.373947,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・特定医療受給者証等の所持者が運転または同乗する自動車が対象。1階南口前専用スペース利用時は手帳所持のみでよく、美術館専用有料駐車場利用時は手帳提示で使用料無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間200円\n障害者割引: 無料\n総台数: 26台",
+    "sourceUrl": "https://www.fukuoka-art-museum.jp/guide/barrierfree/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-005",
+    "name": "セイワパーク天神中央公園駐車場",
+    "address": "福岡県福岡市中央区天神1-318",
+    "latitude": 33.590878,
+    "longitude": 130.401398,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 7,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、特別児童扶養手当受給者証のいずれかを所持する運転者または同乗者が対象。現地管理室(駐車場出口側)で手続き。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 自動車30分200円(終日)\n障害者割引: 最初の2時間無料\n総台数: 246台",
+    "sourceUrl": "https://www.seiwapark.co.jp/search/%E3%82%BB%E3%82%A4%E3%83%AF%E3%83%91%E3%83%BC%E3%82%AF%E5%A4%A9%E7%A5%9E%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E9%A7%90%E8%BB%8A%E5%A0%B4",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-006",
+    "name": "舞鶴公園駐車場(第1~第4駐車場)",
+    "address": "福岡県福岡市中央区城内1",
+    "latitude": 33.587425,
+    "longitude": 130.383011,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "福岡市公園条例施行規則第15条により、心身障がい者及びその介護者が有料公園施設を利用するときは使用料を全額免除。身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかが対象。出庫時に精算機インターホンで連絡しカメラに手帳を提示するか、平和台陸上競技場1階の管理事務所窓口で駐車券と手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間150円(第4駐車場は2時間まで150円、以降1時間400円)\n障害者割引: 全額免除\n総台数: 444台",
+    "sourceUrl": "https://www.midorimachi.jp/maiduru/news/detail/682",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-007",
+    "name": "六本松421立体駐車場(福岡市科学館利用者対象)",
+    "address": "福岡県福岡市中央区六本松4丁目2番1号",
+    "latitude": 33.576515,
+    "longitude": 130.378067,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "障がい者手帳等を所持する福岡市科学館利用者が対象。六本松421の3階総合案内/チケットカウンターに駐車券と障がい者手帳等を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円(夜間20時~8時最大800円)\n障害者割引: 2時間まで無料",
+    "sourceUrl": "https://www.fukuokacity-kagakukan.jp/use/faq.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40133-008",
+    "name": "福岡市動植物園駐車場",
+    "address": "福岡県福岡市中央区南公園1番1号",
+    "latitude": 33.571815,
+    "longitude": 130.389282,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40133",
+    "cityName": "福岡市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれかを提示(ミライロIDも可)。全車種対象で駐車料金無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円、中型車1,000円、大型車2,000円\n障害者割引: 無料",
+    "sourceUrl": "https://zoo.city.fukuoka.lg.jp/general/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40134-001",
+    "name": "福岡市立南市民センター駐車場",
+    "address": "福岡県福岡市南区塩原2丁目8-2",
+    "latitude": 33.565971,
+    "longitude": 130.423935,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40134",
+    "cityName": "福岡市南区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "福岡市の療育手帳・身体障害者手帳・精神障害者保健福祉手帳のいずれかを持つ施設利用者。受付で手帳と駐車券を提示し無料処理を受ける"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 60分以内無料、60分超120分以内200円、120分超300円(当日最大)。施設利用者は受付での駐車券処理が必要\n障害者割引: 無料\n総台数: 229台",
+    "sourceUrl": "https://minami-tk.jp/access/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40134-002",
+    "name": "福岡市立南体育館駐車場",
+    "address": "福岡県福岡市南区塩原2丁目8-1",
+    "latitude": 33.566044,
+    "longitude": 130.423859,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40134",
+    "cityName": "福岡市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "福岡市内居住で療育手帳・身体障害者手帳・精神障害者保健福祉手帳のいずれかを持つ施設利用者。窓口で手帳と駐車券を提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 施設利用者:60分以内無料、60分超120分以内200円、120分超300円(当日最大)。施設利用者以外は60分毎500円\n障害者割引: 無料\n総台数: 225台",
+    "sourceUrl": "https://ssk-minami-gym.com/price/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40134-003",
+    "name": "ABURAYAMA FUKUOKA駐車場",
+    "address": "福岡県福岡市南区柏原710-2(牧場側)/福岡県福岡市南区桧原855-4(市民の森側)",
+    "latitude": 33.51199,
+    "longitude": 130.380661,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40134",
+    "cityName": "福岡市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示。牧場側INFORMATIONまたは市民の森側自然観察センターで手帳と駐車券を提示して手続き"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車・準中型車:入庫から3時間まで300円、以降1時間ごとに100円加算。大型車:1日2,000円。バイク・自転車:無料\n障害者割引: 無料\n総台数: 730台",
+    "sourceUrl": "https://www.aburayama-fukuoka.com/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40134-004",
+    "name": "花畑園芸公園駐車場",
+    "address": "福岡県福岡市南区柏原7丁目571-1",
+    "latitude": 33.525742,
+    "longitude": 130.387024,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40134",
+    "cityName": "福岡市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "心身障がい者及びその介護者。療育手帳・身体障害者手帳・精神障害者保健福祉手帳のいずれかを提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 小型車(普通車・準中型車)300円、中型車(マイクロバス)1,000円、大型バス2,000円(1台1日以内)\n障害者割引: 無料\n総台数: 218台",
+    "sourceUrl": "https://hanahataengei.com/parkinfo/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40135-001",
+    "name": "福岡市立西市民センター・西図書館駐車場",
+    "address": "福岡県福岡市西区内浜1-4-1",
+    "latitude": 33.583084,
+    "longitude": 130.323502,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40135",
+    "cityName": "福岡市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "福岡市内居住者で療育手帳・身体障害者手帳・精神障害者保健福祉手帳のいずれかを2階受付で提示することで手続き可能"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分まで無料(施設利用者)/500円(非利用者)、60~120分200円(施設利用者)/1,000円(非利用者)、120分超は施設利用者300円上限・非利用者60分ごと500円加算\n障害者割引: 駐車料金を全額免除\n総台数: 32台",
+    "sourceUrl": "https://www.city.fukuoka.lg.jp/nishiku/shimin-c/kuyakusho-sisetsu/nishisimincenterchusya.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40135-002",
+    "name": "西部運動公園駐車場",
+    "address": "福岡県福岡市西区飯盛385",
+    "latitude": 33.545364,
+    "longitude": 130.321625,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40135",
+    "cityName": "福岡市西区",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳またはミライロIDを所持する方が運転または同乗する車が対象。公園窓口または駐車場出口インターホンで提示して手続き"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 1時間毎に100円、1日1回最大300円(普通車・大型車共通)\n障害者割引: 駐車料金免除(無料)\n総台数: 242台",
+    "sourceUrl": "https://seibu-sports-park.com/accessmap/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40135-003",
+    "name": "小戸公園駐車場(北側・中央)",
+    "address": "福岡県福岡市西区小戸2丁目",
+    "latitude": 33.594807,
+    "longitude": 130.31781,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40135",
+    "cityName": "福岡市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳を管理事務所(駐車券持参)または駐車場出口精算機インターホンで提示"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の15分無料、1~4時間は1時間ごとに100円、4時間超は最大500円\n障害者割引: 駐車料金無料\n総台数: 195台",
+    "sourceUrl": "https://www.kankyo-k.co.jp/odopark/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40135-004",
+    "name": "今津運動公園駐車場(第1~6駐車場)",
+    "address": "福岡県福岡市西区今津字津本2201",
+    "latitude": 33.60981,
+    "longitude": 130.252151,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40135",
+    "cityName": "福岡市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "療育手帳・身体障がい者手帳・精神障がい者保健福祉手帳の交付を受けている方が運転または同乗する車が対象"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から30分無料、以降1時間100円(1日1回最大300円)\n障害者割引: 駐車料金免除(無料)\n総台数: 884台",
+    "sourceUrl": "https://imazu-sportspark.jp/parksinfo/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40136-001",
+    "name": "福岡市立城南市民センター・城南図書館駐車場",
+    "address": "福岡県福岡市城南区片江5丁目3-25",
+    "latitude": 33.551525,
+    "longitude": 130.367188,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40136",
+    "cityName": "福岡市城南区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "市内在住で療育手帳・身体障害者手帳または精神障害者保健福祉手帳の交付を受けている方が運転または同乗する自動車が対象。施設窓口で手帳を提示し減免手続き(割引処理)を受ける必要がある。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 施設利用者:~60分無料/60分超~120分200円/120分超300円(当日最大)。施設利用者以外:~60分500円/60分超~120分1,000円/120分超60分ごとに500円加算(上限なし)\n障害者割引: 無料\n総台数: 73台",
+    "sourceUrl": "https://jonan-c.net/wp-content/uploads/2020/05/%E9%A7%90%E8%BB%8A%E5%A0%B4%E3%81%8C%E6%9C%89%E6%96%99%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81.pdf",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40136-002",
+    "name": "福岡大学病院駐車場",
+    "address": "福岡県福岡市城南区七隈七丁目45番1号",
+    "latitude": 33.546318,
+    "longitude": 130.358902,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40136",
+    "cityName": "福岡市城南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示した外来受診患者が対象。本館1階受付にて領収書と駐車券を提示して手続きを行う。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一般:入庫30分無料、以降4時間まで200円、以降1時間経過ごとに100円加算。外来受診患者:2時間まで100円、2~24時間まで200円\n障害者割引: 無料(外来受診患者に限る)",
+    "sourceUrl": "https://www.hop.fukuoka-u.ac.jp/parking/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40136-003",
+    "name": "友泉亭公園駐車場",
+    "address": "福岡県福岡市城南区友泉亭1-46",
+    "latitude": 33.563309,
+    "longitude": 130.375992,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40136",
+    "cityName": "福岡市城南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "療育手帳・身体障害者手帳・精神障害者保健福祉手帳の交付を受けている方が運転または同乗する車は駐車料金免除。中型・大型車利用時は事前に電話連絡(092-711-0415)が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車300円/日、中型車1,000円/日、大型車2,000円/日\n障害者割引: 無料\n総台数: 20台",
+    "sourceUrl": "https://yusentei.fukuoka-teien.com/access/",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40136-004",
+    "name": "福岡市立城南体育館駐車場",
+    "address": "福岡県福岡市城南区別府六丁目14番22号",
+    "latitude": 33.56728,
+    "longitude": 130.365311,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40136",
+    "cityName": "福岡市城南区",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "施設利用者のうち市内居住者で療育手帳・身体障害者手帳または精神障害者保健福祉手帳を持つ方が受付にて手帳を提示することで無料(令和7年4月1日の駐車場有料化に伴う減免措置)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 一般利用:~60分500円/60分超~120分1,000円/120分超~180分1,500円/180分超~240分2,000円/240分超~300分2,500円\n障害者割引: 無料\n総台数: 48台",
+    "sourceUrl": "https://fukuokacity-gym.com/jonan/new/%E9%A7%90%E8%BB%8A%E5%A0%B4%E6%96%99%E9%87%91-3/",
     "updatedAt": "2026-08-30T00:00:00Z"
   }
 ];

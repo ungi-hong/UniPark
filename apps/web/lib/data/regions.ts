@@ -1452,6 +1452,26 @@ const cities: City[] = [
     "code": "40132",
     "name": "福岡市博多区",
     "prefectureCode": "40"
+  },
+  {
+    "code": "40133",
+    "name": "福岡市中央区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40134",
+    "name": "福岡市南区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40135",
+    "name": "福岡市西区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40136",
+    "name": "福岡市城南区",
+    "prefectureCode": "40"
   }
 ];
 
