@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1085
+// 件数: 1087
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24692,6 +24692,48 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 1時間以内200円、1時間超4時間以内310円(基本料金)、4時間超は30分毎100円、入庫から24時間以内最大1,200円\n障害者割引: 最初の4時間以内は基本料金310円を免除(4時間超過分の30分毎100円の割増料金は通常どおり負担)\n総台数: 117台",
     "sourceUrl": "https://www.city.iizuka.lg.jp/uploaded/attachment/6510.pdf",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40218-001",
+    "name": "白水大池公園駐車場(正面入口・ちびっ子広場・東・北)",
+    "address": "福岡県春日市大字下白水209",
+    "latitude": 33.511929,
+    "longitude": 130.454712,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40218",
+    "cityName": "春日市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を保持している本人が運転または同乗している車両が対象。障がい者手帳またはミライロID(QRコード機能)を精算機インターフォン等で提示して減免処理。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の30分無料、以降60分毎に100円。平日最大300~500円、休日最大400~500円(駐車場により異なる)\n障害者割引: 駐車料金全額免除",
+    "sourceUrl": "https://www.city.kasuga.fukuoka.jp/shisetsu/park/1016271.html",
+    "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "40218-002",
+    "name": "クローバープラザ駐車場",
+    "address": "福岡県春日市原町3丁目1-7",
+    "latitude": 33.532234,
+    "longitude": 130.468155,
+    "prefectureCode": "40",
+    "prefectureName": "福岡県",
+    "cityCode": "40218",
+    "cityName": "春日市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の保持者本人が運転する車両、または1・2級の身体障害者/療育手帳保持者/1・2級の精神障害者等が同乗する車両を介護人が運転する場合が対象。センター棟1F総合案内またはアリーナ棟2F受付で手帳またはミライロIDと駐車券を提示し減免処理を受ける。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から2時間以内無料、2時間超過は30分ごとに150円\n障害者割引: 駐車料金全額減免\n総台数: 228台",
+    "sourceUrl": "http://www.cloverplaza.jp/traffic/parking-fee-for-the-persons-with-disabilities.html",
     "updatedAt": "2026-08-30T00:00:00Z"
   }
 ];
