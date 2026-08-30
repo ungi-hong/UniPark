@@ -16273,5 +16273,35 @@
     "discount_conditions": "対象:身体障害者手帳1~3級の交付を受けている者(下肢障がいは4級まで対象)、療育手帳Aの交付を受けている者、精神障害者保健福祉手帳1~3級の交付を受けている者が運転または同乗する自動車。利用方法:駐車場管理人室の係員に手帳と駐車券を提示、又はインターホンを押し係員が来たら手帳と駐車券を提示(ミライロID可)。手帳の提示がない場合は割引不可。他の割引との重複割引は不可。問合せ:飯塚市社会・障がい者福祉課 電話0948-22-5500(内線1151・1152)",
     "source_url": "https://www.city.iizuka.lg.jp/uploaded/attachment/6510.pdf",
     "verified_at": "2026-08-30"
+  },
+  {
+    "id": "40218-001",
+    "municipality_code": "40218",
+    "municipality": "春日市",
+    "name": "白水大池公園駐車場(正面入口・ちびっ子広場・東・北)",
+    "address": "福岡県春日市大字下白水209",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "最初の30分無料、以降60分毎に100円。平日最大300~500円、休日最大400~500円(駐車場により異なる)",
+    "discount_rate": "駐車料金全額免除",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を保持している本人が運転または同乗している車両が対象。障がい者手帳またはミライロID(QRコード機能)を精算機インターフォン等で提示して減免処理。",
+    "source_url": "https://www.city.kasuga.fukuoka.jp/shisetsu/park/1016271.html",
+    "verified_at": "2026-08-30"
+  },
+  {
+    "id": "40218-002",
+    "municipality_code": "40218",
+    "municipality": "春日市",
+    "name": "クローバープラザ駐車場",
+    "address": "福岡県春日市原町3丁目1-7",
+    "capacity": 228,
+    "capacity_accessible": null,
+    "normal_rate": "入庫から2時間以内無料、2時間超過は30分ごとに150円",
+    "discount_rate": "駐車料金全額減免",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の保持者本人が運転する車両、または1・2級の身体障害者/療育手帳保持者/1・2級の精神障害者等が同乗する車両を介護人が運転する場合が対象。センター棟1F総合案内またはアリーナ棟2F受付で手帳またはミライロIDと駐車券を提示し減免処理を受ける。",
+    "source_url": "http://www.cloverplaza.jp/traffic/parking-fee-for-the-persons-with-disabilities.html",
+    "verified_at": "2026-08-30"
   }
 ]
