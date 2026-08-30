@@ -40,6 +40,10 @@ export const prefectures: Prefecture[] = [
   {
     "code": "28",
     "name": "兵庫県"
+  },
+  {
+    "code": "40",
+    "name": "福岡県"
   }
 ];
 
@@ -112,6 +116,16 @@ const cities: City[] = [
   {
     "code": "01453",
     "name": "東神楽町",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01564",
+    "name": "大空町",
+    "prefectureCode": "01"
+  },
+  {
+    "code": "01578",
+    "name": "白老町",
     "prefectureCode": "01"
   },
   {
@@ -955,6 +969,11 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "23225",
+    "name": "知立市",
+    "prefectureCode": "23"
+  },
+  {
     "code": "23238",
     "name": "長久手市",
     "prefectureCode": "23"
@@ -1398,6 +1417,86 @@ const cities: City[] = [
     "code": "28382",
     "name": "播磨町",
     "prefectureCode": "28"
+  },
+  {
+    "code": "40101",
+    "name": "北九州市門司区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40105",
+    "name": "北九州市戸畑区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40106",
+    "name": "北九州市小倉北区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40107",
+    "name": "北九州市小倉南区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40108",
+    "name": "北九州市八幡東区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40109",
+    "name": "北九州市八幡西区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40131",
+    "name": "福岡市東区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40132",
+    "name": "福岡市博多区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40133",
+    "name": "福岡市中央区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40134",
+    "name": "福岡市南区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40135",
+    "name": "福岡市西区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40136",
+    "name": "福岡市城南区",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40202",
+    "name": "大牟田市",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40203",
+    "name": "久留米市",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40205",
+    "name": "飯塚市",
+    "prefectureCode": "40"
+  },
+  {
+    "code": "40218",
+    "name": "春日市",
+    "prefectureCode": "40"
   }
 ];
 
