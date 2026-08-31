@@ -16333,5 +16333,20 @@
     "discount_conditions": "管理事務室にて障がい者優待回数券を販売。対象となる手帳の種別・等級等はウェブページに明記なし(要問合せ)。購入・詳細は駐車場管理事務室(0550-84-0094)へ。運営は御殿場市が100%出資する御殿場総合サービス株式会社。",
     "source_url": "https://www.g-sougou.co.jp/ekinanparking/",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "22341-001",
+    "municipality_code": "22341",
+    "municipality": "清水町",
+    "name": "柿田川公園町営駐車場",
+    "address": "静岡県駿東郡清水町伏見71番地の7",
+    "capacity": 50,
+    "capacity_accessible": null,
+    "normal_rate": "普通車1回200円、バス等1回1,000円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "障害がある方は障害者手帳などを提示することにより無料。清水町民は免許証など町民であると確認できるものの提示により無料。利用時間は8時30分から16時30分まで(入庫は16時まで)。",
+    "source_url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00054.html",
+    "verified_at": "2026-08-31"
   }
 ]
