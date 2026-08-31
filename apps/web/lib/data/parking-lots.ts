@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1179
+// 件数: 1180
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26800,6 +26800,28 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入庫後1時間無料、以後1時間ごとに100円(当日上限500円、特別期間は入庫後3時間500円・当日上限1,000円)\n障害者割引: 半額\n総台数: 83台",
     "sourceUrl": "https://www.city.ueda.nagano.jp/site/park/105504.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20201-001",
+    "name": "城山公園駐車場(第1・第2・第3駐車場)",
+    "address": "長野県長野市箱清水一丁目7番1号",
+    "latitude": 36.662804,
+    "longitude": 138.191925,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20201",
+    "cityName": "長野市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "城山公園への来園者のうち障害者手帳をお持ちの方(市内在住の子育て世帯も対象)が、駐車券を持参のうえ割引認証箇所(動物園売店、テニスコート管理事務所、公園管理事務所)で障害者手帳を提示し駐車券の割引認証を受けることで、2時間まで無料となる。認証を受けられる時間は午前8時~午後5時。ながのこども館・城山テニスコート・城山公民館・県立美術館の利用者も対象。年末年始(12月29日~1月3日)、ゴールデンウィーク、お盆(8月13日~8月16日)等の混雑期は割引対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から20分まで100円、以降20分ごとに100円加算\n障害者割引: 2時間まで無料\n総台数: 433台",
+    "sourceUrl": "https://www.city.nagano.nagano.jp/n202500/contents/p006193.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
