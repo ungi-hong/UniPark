@@ -16333,5 +16333,20 @@
     "discount_conditions": "管理事務室にて障がい者優待回数券を販売。対象となる手帳の種別・等級等はウェブページに明記なし(要問合せ)。購入・詳細は駐車場管理事務室(0550-84-0094)へ。運営は御殿場市が100%出資する御殿場総合サービス株式会社。",
     "source_url": "https://www.g-sougou.co.jp/ekinanparking/",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "08201-001",
+    "municipality_code": "08201",
+    "municipality": "水戸市",
+    "name": "水戸芸術館 車椅子利用者用駐車スペース(塔東側)",
+    "address": "茨城県水戸市五軒町1-6-8",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "市営五軒町駐車場(地下・立体): 30分まで無料、1時間まで200円、以降30分ごとに100円、1日上限700円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "車椅子利用者が対象。水戸芸術館塔東側の地上駐車スペースを無料で利用可能。利用には事前に事務局(TEL.029-227-8111)への電話連絡が必要。",
+    "source_url": "https://www.arttowermito.or.jp/access/",
+    "verified_at": "2026-08-31"
   }
 ]
