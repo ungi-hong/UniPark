@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1183
+// 件数: 1185
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26890,6 +26890,49 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 定期利用 月額6,500円\n障害者割引: 定期利用の使用料を半額(月額3,250円)に減免",
     "sourceUrl": "https://www.city.chikuma.lg.jp/material/files/group/4/toguraekichushajoushougaishanowaribiki.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20321-001",
+    "name": "矢ケ崎公園駐車場",
+    "address": "長野県北佐久郡軽井沢町軽井沢東28番地3",
+    "latitude": 36.345718,
+    "longitude": 138.638245,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20321",
+    "cityName": "軽井沢町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等をお持ちの方は町内外問わず駐車料金が全額免除。事前に軽井沢町役場観光経済課窓口での申請手続きが必要で、申請後に回数券が発行される方式。旧軽井沢駐車場・旧軽井沢森裏駐車場・中軽井沢駅前駐車場・軽井沢駅北口西側駐車場・新軽井沢駐車場の各町営駐車場ページには同様の割引記載はなし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間未満無料、2〜4時間400円、4〜8時間600円、8〜12時間800円、12〜24時間1,000円、以後24時間ごとに2,000円加算\n障害者割引: 全額免除\n総台数: 65台",
+    "sourceUrl": "https://www.town.karuizawa.lg.jp/page/1416.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21210-001",
+    "name": "恵那駅西駐車場",
+    "address": "岐阜県恵那市大井町296番地10",
+    "latitude": 35.454254,
+    "longitude": 137.407669,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21210",
+    "cityName": "恵那市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳または療育手帳の交付を受けた方が乗車(運転または同乗)して駐車する場合が対象。減免を受けるには手帳の提示が必要。学生車両・バスは対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入場後1時間30分まで無料、1時間30分を超える場合30分ごとに50円、入庫から24時間まで1,000円(以降24時間ごとの上限も1,000円)\n障害者割引: 5割減免\n総台数: 190台",
+    "sourceUrl": "https://www.city.ena.lg.jp/soshikiichiran/kensetsubu/toshijutakuka/1/4/1/1868.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];

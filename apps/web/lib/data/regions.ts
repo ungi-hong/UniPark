@@ -46,6 +46,10 @@ export const prefectures: Prefecture[] = [
     "name": "長野県"
   },
   {
+    "code": "21",
+    "name": "岐阜県"
+  },
+  {
     "code": "22",
     "name": "静岡県"
   },
@@ -965,6 +969,16 @@ const cities: City[] = [
     "code": "20218",
     "name": "千曲市",
     "prefectureCode": "20"
+  },
+  {
+    "code": "20321",
+    "name": "軽井沢町",
+    "prefectureCode": "20"
+  },
+  {
+    "code": "21210",
+    "name": "恵那市",
+    "prefectureCode": "21"
   },
   {
     "code": "22203",
