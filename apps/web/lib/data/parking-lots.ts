@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1177
+// 件数: 1179
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26756,6 +26756,50 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入庫から90分まで無料、90分超6時間まで30分ごとに100円、6時間超24時間までは1,000円\n障害者割引: 無料\n総台数: 420台",
     "sourceUrl": "https://www.ikutopia.com/access/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20203-001",
+    "name": "上田城跡北駐車場",
+    "address": "長野県上田市二の丸6263番地イ",
+    "latitude": 36.404179,
+    "longitude": 138.244675,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20203",
+    "cityName": "上田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算時に障害者手帳またはミライロIDを提示することで駐車料金の割引(半額)を適用。普通車専用駐車場。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後1時間無料、以後1時間ごとに100円(当日上限500円、特別期間は入庫後3時間500円・当日上限1,000円)\n障害者割引: 半額\n総台数: 216台",
+    "sourceUrl": "https://www.city.ueda.nagano.jp/site/park/105504.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20203-002",
+    "name": "上田城跡南駐車場",
+    "address": "長野県上田市二の丸6263番地イ",
+    "latitude": 36.404179,
+    "longitude": 138.244675,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20203",
+    "cityName": "上田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "精算時に障害者手帳またはミライロIDを提示することで駐車料金の割引(半額)を適用。普通車専用駐車場。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後1時間無料、以後1時間ごとに100円(当日上限500円、特別期間は入庫後3時間500円・当日上限1,000円)\n障害者割引: 半額\n総台数: 83台",
+    "sourceUrl": "https://www.city.ueda.nagano.jp/site/park/105504.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
