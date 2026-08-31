@@ -42,12 +42,20 @@ export const prefectures: Prefecture[] = [
     "name": "愛知県"
   },
   {
+    "code": "26",
+    "name": "京都府"
+  },
+  {
     "code": "27",
     "name": "大阪府"
   },
   {
     "code": "28",
     "name": "兵庫県"
+  },
+  {
+    "code": "34",
+    "name": "広島県"
   },
   {
     "code": "40",
@@ -149,6 +157,11 @@ const cities: City[] = [
   {
     "code": "08221",
     "name": "ひたちなか市",
+    "prefectureCode": "08"
+  },
+  {
+    "code": "08309",
+    "name": "大洗町",
     "prefectureCode": "08"
   },
   {
@@ -1022,6 +1035,36 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "26105",
+    "name": "京都市東山区",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26107",
+    "name": "京都市南区",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26202",
+    "name": "舞鶴市",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26205",
+    "name": "宮津市",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26208",
+    "name": "向日市",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26209",
+    "name": "長岡京市",
+    "prefectureCode": "26"
+  },
+  {
     "code": "27102",
     "name": "大阪市都島区",
     "prefectureCode": "27"
@@ -1455,6 +1498,51 @@ const cities: City[] = [
     "code": "28382",
     "name": "播磨町",
     "prefectureCode": "28"
+  },
+  {
+    "code": "34101",
+    "name": "広島市中区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34103",
+    "name": "広島市南区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34104",
+    "name": "広島市西区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34106",
+    "name": "広島市安佐北区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34108",
+    "name": "広島市佐伯区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34202",
+    "name": "呉市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34205",
+    "name": "尾道市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34207",
+    "name": "福山市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34211",
+    "name": "大竹市",
+    "prefectureCode": "34"
   },
   {
     "code": "40101",

@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1105
+// 件数: 1159
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -25146,6 +25146,1221 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車600円、大型車1,800円、二輪車300円\n障害者割引: 無料\n総台数: 4000台",
     "sourceUrl": "https://www.hitachikaihin.jp/guide/ticket.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08309-001",
+    "name": "大洗サンビーチ駐車場(大洗町営駐車場)",
+    "address": "茨城県東茨城郡大洗町大貫町64番地先",
+    "latitude": 36.30452,
+    "longitude": 140.562378,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08309",
+    "cityName": "大洗町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害者手帳等の提示により無料。入場の際に身分証明書等の提示が必要。町内在住者も免許証等の提示により無料。対象は大洗第一・第二サンビーチ駐車場及び大洗海浜公園内駐車場。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1,000円、中型車1,300円、大型車3,000円、二輪車400円(土日祝日・特定期間(ゴールデンウィーク、海水浴場開設期間)の午前7時~午後3時、1日1回入場ごと)\n障害者割引: 無料",
+    "sourceUrl": "https://www.oarai-info.jp/news/postid_3724/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34205-001",
+    "name": "尾道駅前港湾駐車場",
+    "address": "広島県尾道市西御所町5",
+    "latitude": 34.401909,
+    "longitude": 133.189667,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34205",
+    "cityName": "尾道市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障害者手帳の提示により駐車料金が半額になる。適用時間帯は7時30分から21時30分まで。手帳種別・対象者範囲の詳細記載なし。問合せ先: 尾道駅前港湾駐車場(0848-22-5332)、尾道市港湾振興課(0848-22-8158)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 5m未満: 最初1時間200円、以降30分毎100円、1日上限2,000円\n障害者割引: 駐車料金1/2(半額)\n総台数: 227台",
+    "sourceUrl": "https://www.city.onomichi.hiroshima.jp/soshiki/8/18151.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34207-001",
+    "name": "福山市三之丸駐車場",
+    "address": "広島県福山市三之丸町9-1",
+    "latitude": 34.488625,
+    "longitude": 133.359665,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34207",
+    "cityName": "福山市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1級又は2級、療育手帳Ⓐ又はA、精神障害者保健福祉手帳1級の所持者本人が運転、又はその介護者運転の車に同乗して利用する場合に適用。夜間料金・定期料金は対象外。出庫時に東桜町駐車場管理室係員へ手帳(またはミライロID)を提示。係員不在時は後日領収書と手帳を提示すれば減免分の回数券を交付。連絡先: 東桜町駐車場管理室(084)921-8322。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 最初の30分160円、次の30分150円、以降30分毎100円(夜間21:30~8:30は1,030円、24時間最大3,740円、定期(1か月)10,500円)\n障害者割引: 駐車開始から2時間まで駐車料金無料\n総台数: 264台",
+    "sourceUrl": "https://www.city.fukuyama.hiroshima.jp/soshiki/toshikotsu/281754.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34207-002",
+    "name": "福山市東桜町駐車場",
+    "address": "広島県福山市東桜町5-11",
+    "latitude": 34.485043,
+    "longitude": 133.360641,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34207",
+    "cityName": "福山市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1級又は2級、療育手帳Ⓐ又はA、精神障害者保健福祉手帳1級の所持者本人が運転、又はその介護者運転の車に同乗して利用する場合に適用。夜間料金・定期料金は対象外。出庫時に東桜町駐車場管理室係員へ手帳(またはミライロID)を提示。係員不在時は後日領収書と手帳を提示すれば減免分の回数券を交付。連絡先: 東桜町駐車場管理室(084)921-8322。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 30分毎150円(最初30分150円、次30分150円、以降30分毎150円)(夜間21:30~8:30は1,200円、24時間最大5,100円、定期12,200円)\n障害者割引: 駐車開始から2時間まで駐車料金無料\n総台数: 334台",
+    "sourceUrl": "https://www.city.fukuyama.hiroshima.jp/soshiki/toshikotsu/281754.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34207-003",
+    "name": "福山市霞駐車場(まなびの館ローズコム内)",
+    "address": "広島県福山市霞町一丁目10-1",
+    "latitude": 34.482861,
+    "longitude": 133.366104,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34207",
+    "cityName": "福山市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1級又は2級、療育手帳Ⓐ又はA、精神障害者保健福祉手帳1級の所持者本人が運転、又はその介護者運転の車に同乗して利用する場合に適用。夜間料金・定期料金は対象外。出庫時に「まなびの館ローズコム防災センター」係員へ手帳(またはミライロID)を提示。係員不在時は後日領収書と手帳を提示すれば減免分の回数券を交付。連絡先: (084)932-7268。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 最初30分110円、次30分100円、以降30分毎100円(夜間22:30~8:30は700円、24時間最大3,510円)\n障害者割引: 駐車開始から2時間まで駐車料金無料\n総台数: 130台",
+    "sourceUrl": "https://www.city.fukuyama.hiroshima.jp/soshiki/toshikotsu/281754.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34207-004",
+    "name": "福山市駅南口駐車場",
+    "address": "広島県福山市東桜町129",
+    "latitude": 34.486374,
+    "longitude": 133.361282,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34207",
+    "cityName": "福山市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1級又は2級、療育手帳Ⓐ又はA、精神障害者保健福祉手帳1級の所持者本人が運転、又はその介護者運転の車に同乗して利用する場合に適用。夜間料金・定期料金は対象外。出庫時に駅南口駐車場管理室係員へ手帳(またはミライロID)を提示。係員不在時は後日領収書と手帳を提示すれば減免分の回数券を交付。連絡先: 駅南口駐車場管理室(084)926-2489。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 最初30分160円、次30分150円、以降30分毎130円(夜間22:00~8:00は1,000円、24時間最大4,690円、夜間専用定期(21:00~9:00)5,250円)\n障害者割引: 駐車開始から2時間まで駐車料金無料\n総台数: 142台",
+    "sourceUrl": "https://www.city.fukuyama.hiroshima.jp/soshiki/toshikotsu/281754.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-001",
+    "name": "広島市営中央駐車場",
+    "address": "広島県広島市中区基町",
+    "latitude": 34.401096,
+    "longitude": 132.456512,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 6:30〜25:00 210円/30分(上限1,800円)、一泊500円\n障害者割引: 最初の2時間まで無料\n総台数: 300台",
+    "sourceUrl": "https://hiroshima-park.com/parking/chuoh/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-002",
+    "name": "広島市営西新天地駐車場",
+    "address": "広島県広島市中区新天地",
+    "latitude": 34.391544,
+    "longitude": 132.462463,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜24:00 210円/30分(4時間毎上限1,200円)、0:00〜8:00 一泊500円\n障害者割引: 最初の2時間まで無料\n総台数: 95台",
+    "sourceUrl": "https://hiroshima-park.com/parking/nishitenchi/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-003",
+    "name": "広島市営鷹野橋駐車場",
+    "address": "広島県広島市中区大手町五丁目",
+    "latitude": 34.382099,
+    "longitude": 132.451996,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 150円/30分(上限1,300円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 16台",
+    "sourceUrl": "https://hiroshima-park.com/parking/takanobashi/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-004",
+    "name": "広島市営大手町第１駐車場",
+    "address": "広島県広島市中区大手町三丁目",
+    "latitude": 34.388386,
+    "longitude": 132.453278,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 220円/30分(上限なし)、20:00〜8:00 100円/60分(上限500円)\n障害者割引: 最初の2時間まで無料\n総台数: 17台",
+    "sourceUrl": "https://hiroshima-park.com/parking/ootemachi1/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-005",
+    "name": "広島市営小町第２駐車場",
+    "address": "広島県広島市中区小町",
+    "latitude": 34.388027,
+    "longitude": 132.457703,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 220円/30分(上限なし)、20:00〜8:00 100円/60分(上限500円)\n障害者割引: 最初の2時間まで無料\n総台数: 34台",
+    "sourceUrl": "https://hiroshima-park.com/parking/komachi2/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-006",
+    "name": "広島市営富士見町第４駐車場",
+    "address": "広島県広島市中区富士見町",
+    "latitude": 34.386593,
+    "longitude": 132.461639,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 200円/30分(上限1,200円)、20:00〜8:00 100円/60分(上限500円)\n障害者割引: 最初の2時間まで無料\n総台数: 29台",
+    "sourceUrl": "https://hiroshima-park.com/parking/fujimicho4/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-007",
+    "name": "広島市営富士見町第５駐車場",
+    "address": "広島県広島市中区富士見町",
+    "latitude": 34.386593,
+    "longitude": 132.461639,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 150円/30分(上限1,000円)、20:00〜8:00 100円/60分(上限700円)\n障害者割引: 最初の2時間まで無料\n総台数: 26台",
+    "sourceUrl": "https://hiroshima-park.com/parking/fujimicho5/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-008",
+    "name": "広島市営富士見町第６駐車場",
+    "address": "広島県広島市中区富士見町",
+    "latitude": 34.386593,
+    "longitude": 132.461639,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 150円/30分(上限1,000円)、20:00〜8:00 100円/60分(上限700円)\n障害者割引: 最初の2時間まで無料\n総台数: 39台",
+    "sourceUrl": "https://hiroshima-park.com/parking/fujimicho6/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-009",
+    "name": "広島市営鶴見町第１駐車場",
+    "address": "広島県広島市中区鶴見町",
+    "latitude": 34.38549,
+    "longitude": 132.467026,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 200円/60分(上限800円)、20:00〜8:00 100円/60分(上限600円)\n障害者割引: 最初の2時間まで無料\n総台数: 34台",
+    "sourceUrl": "https://hiroshima-park.com/parking/tsurumicho1/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-010",
+    "name": "広島市営鶴見町第２駐車場",
+    "address": "広島県広島市中区鶴見町",
+    "latitude": 34.38549,
+    "longitude": 132.467026,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 200円/60分(上限800円)、20:00〜8:00 100円/60分(上限600円)\n障害者割引: 最初の2時間まで無料\n総台数: 21台",
+    "sourceUrl": "https://hiroshima-park.com/parking/tsurumicho2/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-011",
+    "name": "広島市営中島町第１駐車場",
+    "address": "広島県広島市中区中島町",
+    "latitude": 34.392487,
+    "longitude": 132.452026,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜22:00 230円/30分(上限なし)、22:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 19台",
+    "sourceUrl": "https://hiroshima-park.com/parking/nakajimacho1/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-012",
+    "name": "広島市営中島町第２駐車場",
+    "address": "広島県広島市中区中島町",
+    "latitude": 34.392487,
+    "longitude": 132.452026,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜22:00 230円/30分(上限なし)、22:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 23台",
+    "sourceUrl": "https://hiroshima-park.com/parking/nakajimacho2/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-013",
+    "name": "広島市営舟入町第１駐車場",
+    "address": "広島県広島市中区舟入町",
+    "latitude": 34.390644,
+    "longitude": 132.444321,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 150円/30分(上限1,000円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 27台",
+    "sourceUrl": "https://hiroshima-park.com/parking/funairimachi1/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-014",
+    "name": "広島市営舟入町第２Ａ駐車場",
+    "address": "広島県広島市中区舟入町",
+    "latitude": 34.390644,
+    "longitude": 132.444321,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 100円/30分(上限1,200円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 10台",
+    "sourceUrl": "https://hiroshima-park.com/parking/funairimachi2a/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-015",
+    "name": "広島市営河原町第１Ａ駐車場",
+    "address": "広島県広島市中区河原町",
+    "latitude": 34.389961,
+    "longitude": 132.446747,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 100円/30分(上限900円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 16台",
+    "sourceUrl": "https://hiroshima-park.com/parking/kawaramachi1a/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34101-016",
+    "name": "広島市営河原町第２駐車場",
+    "address": "広島県広島市中区河原町",
+    "latitude": 34.389961,
+    "longitude": 132.446747,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34101",
+    "cityName": "広島市中区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 100円/30分(上限1,200円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 25台",
+    "sourceUrl": "https://hiroshima-park.com/parking/kawaramachi2/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34103-001",
+    "name": "広島市営猿猴橋町駐車場",
+    "address": "広島県広島市南区猿猴橋町",
+    "latitude": 34.395035,
+    "longitude": 132.476501,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34103",
+    "cityName": "広島市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 200円/30分(上限1,200円)、20:00〜8:00 100円/60分(上限500円)\n障害者割引: 最初の2時間まで無料\n総台数: 36台",
+    "sourceUrl": "https://hiroshima-park.com/parking/enkoubashi/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34103-002",
+    "name": "広島市営的場町駐車場",
+    "address": "広島県広島市南区的場町一丁目",
+    "latitude": 34.39378,
+    "longitude": 132.474075,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34103",
+    "cityName": "広島市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 150円/30分(上限1,500円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 9台",
+    "sourceUrl": "https://hiroshima-park.com/parking/matoba/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34103-003",
+    "name": "広島市営広島駅新幹線口駐車場",
+    "address": "広島県広島市南区松原町",
+    "latitude": 34.397095,
+    "longitude": 132.475342,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34103",
+    "cityName": "広島市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 5:00〜24:00 230円/30分、0:00〜5:00 100円/60分(上限500円)\n障害者割引: 最初の2時間まで無料\n総台数: 40台",
+    "sourceUrl": "https://hiroshima-park.com/parking/shinkansenguchi/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34103-004",
+    "name": "広島県立広島産業会館 駐車場",
+    "address": "広島県広島市南区比治山本町12-18",
+    "latitude": 34.380074,
+    "longitude": 132.470337,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34103",
+    "cityName": "広島市南区",
+    "accessibleSpaceTotal": 9,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳を持つ施設利用者が対象。本館1階事務室または管理員室で手帳等を提示することで駐車料金が全額免除される。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 3時間まで30分150円、3時間超30分100円(1日上限1,900円)\n障害者割引: 無料\n総台数: 448台",
+    "sourceUrl": "https://sangyoukaikan.jp/access/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-001",
+    "name": "広島市営福島町Ａ駐車場",
+    "address": "広島県広島市西区福島町",
+    "latitude": 34.396732,
+    "longitude": 132.433945,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 200円/30分(上限1,000円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 11台",
+    "sourceUrl": "https://hiroshima-park.com/parking/fukushimachoa/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-002",
+    "name": "広島市営福島町Ｂ駐車場",
+    "address": "広島県広島市西区福島町",
+    "latitude": 34.396732,
+    "longitude": 132.433945,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 200円/30分(上限1,000円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 10台",
+    "sourceUrl": "https://hiroshima-park.com/parking/fukushimachob/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-003",
+    "name": "広島市営西観音町駐車場",
+    "address": "広島県広島市西区西観音町",
+    "latitude": 34.392296,
+    "longitude": 132.436966,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 100円/30分(上限600円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 24台",
+    "sourceUrl": "https://hiroshima-park.com/parking/nishikannoncho/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-004",
+    "name": "広島市営東観音町第１駐車場",
+    "address": "広島県広島市西区東観音町",
+    "latitude": 34.390873,
+    "longitude": 132.440628,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 100円/30分(24時間上限700円)、20:00〜8:00 100円/60分\n障害者割引: 最初の2時間まで無料\n総台数: 18台",
+    "sourceUrl": "https://hiroshima-park.com/parking/higashikannoncho1/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-005",
+    "name": "広島市営東観音町第２駐車場",
+    "address": "広島県広島市西区東観音町",
+    "latitude": 34.390873,
+    "longitude": 132.440628,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:00 100円/30分(上限700円)、20:00〜8:00 100円/60分(上限300円)\n障害者割引: 最初の2時間まで無料\n総台数: 18台",
+    "sourceUrl": "https://hiroshima-park.com/parking/higashikannoncho2/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-006",
+    "name": "広島市営西広島駅南駐車場",
+    "address": "広島県広島市西区己斐本町一丁目",
+    "latitude": 34.397594,
+    "longitude": 132.428711,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級のいずれかを所持する人、または公安委員会発行の駐車禁止除外指定車標章掲示車両が対象。対象者本人が運転する場合、または対象者が同乗し介護者が運転する場合に適用。ミライロIDアプリの提示、またはAMSお客様サポートセンターへのインターホン連絡・精算機カメラでの手帳確認により手続きする(割引認証機による減免券発行は2026年3月31日で廃止予定)。定期料金・一泊料金・夜間料金は減免対象外。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜22:00 150円/30分(24時間上限1,000円)、22:00〜8:00 100円/60分\n障害者割引: 最初の2時間まで無料\n総台数: 80台",
+    "sourceUrl": "https://hiroshima-park.com/parking/nishihiroshimaekiminami/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34104-007",
+    "name": "広島観音マリーナ 駐車場",
+    "address": "広島県広島市西区観音新町4丁目14番6号",
+    "latitude": 34.359703,
+    "longitude": 132.413376,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34104",
+    "cityName": "広島市西区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、戦傷病者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けた人が自ら運転する場合、またはこれらの人が同乗し介護者が運転する場合に、駐車料金が2分の1に減額される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間ごとに200円(5時間まで)、5時間超24時間までごとに1,130円\n障害者割引: 駐車料金2分の1減額",
+    "sourceUrl": "https://www.kanon-marina.co.jp/marina/fee/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34106-001",
+    "name": "広島市安佐動物公園駐車場",
+    "address": "広島県広島市安佐北区安佐町大字動物園",
+    "latitude": 34.497341,
+    "longitude": 132.442444,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34106",
+    "cityName": "広島市安佐北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "原爆障害者章、身体障害者手帳、療育手帳、精神障害者保健福祉手帳又は戦傷病者手帳の交付を受けている方が運転する軽・普通自動車、又は介護者の運転する軽・普通自動車に同乗している場合、来園当日に手帳等(ミライロID含む)を提示することで駐車料が免除される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車1台1回450円(軽自動車・準中型(小)自動車も同額)\n障害者割引: 無料",
+    "sourceUrl": "http://www.asazoo.jp/info/fee.php",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34106-002",
+    "name": "広島市立北部医療センター安佐市民病院駐車場",
+    "address": "広島県広島市安佐北区亀山南1丁目2-1",
+    "latitude": 34.516769,
+    "longitude": 132.497162,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34106",
+    "cityName": "広島市安佐北区",
+    "accessibleSpaceTotal": 19,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳1・2級、療育手帳マルA・A、精神障害者保健福祉手帳1級の交付を受けた見舞い客が対象。地下駐車場256台(思いやり駐車場16台含む)、西側駐車場70台(思いやり駐車場3台含む)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 19
+      }
+    ],
+    "notes": "通常料金: 見舞い客: 30分まで無料、以降30分ごとに100円加算(外来患者は24時間まで無料、以降30分ごとに100円加算)\n障害者割引: 見舞い客は入庫から1時間まで無料(通常の30分無料に加え、次の30分分の料金も免除)\n総台数: 326台",
+    "sourceUrl": "https://www.asa-hosp.city.hiroshima.jp/hospital/access/parking/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34108-001",
+    "name": "広島市植物公園駐車場",
+    "address": "広島県広島市佐伯区倉重3-495",
+    "latitude": 34.392982,
+    "longitude": 132.346436,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34108",
+    "cityName": "広島市佐伯区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳1・2級、療育手帳Ⓐ・A、精神障害者保健福祉手帳1級、または公安委員会発行の駐車禁止除外指定車標章の交付を受けている方が運転する軽・普通自動車、または介護者の運転する軽・普通自動車に同乗している場合、手帳等(ミライロID含む)の提示により駐車料金が免除される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通自動車1台1回450円(軽自動車・準中型(小)自動車も同額)\n障害者割引: 無料",
+    "sourceUrl": "http://www.hiroshima-bot.jp/nyuuen/acsess/cyusyaryo-genmen/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34202-001",
+    "name": "呉市営本通駐車場",
+    "address": "広島県呉市本通4-10-11",
+    "latitude": 34.245956,
+    "longitude": 132.568054,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34202",
+    "cityName": "呉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳1・2・3級、療育手帳Ⓐ・A・Ⓑ、精神障害者保健福祉手帳1・2級の交付を受けている方が対象。清算前に管理事務所へ申告が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円(最大1,200円)\n障害者割引: 5割減額\n総台数: 124台",
+    "sourceUrl": "https://www.city.kure.lg.jp/soshiki/67/chushazyou.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34202-002",
+    "name": "呉市営蔵本駐車場",
+    "address": "広島県呉市中央3-11-5",
+    "latitude": 34.247513,
+    "longitude": 132.563339,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34202",
+    "cityName": "呉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳1・2・3級、療育手帳Ⓐ・A・Ⓑ、精神障害者保健福祉手帳1・2級の交付を受けている方が対象。清算前に管理事務所へ申告が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円(最大1,200円)\n障害者割引: 5割減額\n総台数: 355台",
+    "sourceUrl": "https://www.city.kure.lg.jp/soshiki/67/chushazyou.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34202-003",
+    "name": "呉市営呉駅西駐車場",
+    "address": "広島県呉市宝町1-10",
+    "latitude": 34.245716,
+    "longitude": 132.556946,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34202",
+    "cityName": "呉市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳1・2・3級、療育手帳Ⓐ・A・Ⓑ、精神障害者保健福祉手帳1・2級の交付を受けている方が対象。清算前に管理事務所へ申告が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円(最大1,500円)\n障害者割引: 5割減額\n総台数: 481台",
+    "sourceUrl": "https://www.city.kure.lg.jp/soshiki/67/chushazyou.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34211-001",
+    "name": "大竹駅東口送迎用駐車場",
+    "address": "広島県大竹市西栄一丁目9",
+    "latitude": 34.216778,
+    "longitude": 132.22467,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34211",
+    "cityName": "大竹市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。精算時にコールセンター(0120-951-365)へ連絡するか、ミライロIDのQRコード機能を利用して手続きすることで駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、以後30分ごと300円、1日最大5,000円\n障害者割引: 半額\n総台数: 14台",
+    "sourceUrl": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34211-002",
+    "name": "大竹駅西口送迎用駐車場",
+    "address": "広島県大竹市新町一丁目1",
+    "latitude": 34.217796,
+    "longitude": 132.223267,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34211",
+    "cityName": "大竹市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。精算時にコールセンター(0120-951-365)へ連絡するか、ミライロIDのQRコード機能を利用して手続きすることで駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、以後30分ごと300円、1日最大5,000円\n障害者割引: 半額\n総台数: 12台",
+    "sourceUrl": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26202-001",
+    "name": "赤れんがパーク駐車場",
+    "address": "京都府舞鶴市字北吸1039番地の2",
+    "latitude": 35.476192,
+    "longitude": 135.381454,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26202",
+    "cityName": "舞鶴市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、戦傷病者手帳、被爆者健康手帳の交付を受けている方が対象。精算前に赤れんがパーク2号棟受付(営業時間外は市役所本館西口宿直室)で障害者手帳を提示して割引券(QRコード)の交付を受け、精算時に精算機または専用アプリで読み取らせることで駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、30分超~1時間ごと100円、24時間最大500円(バス1,000円/24時間、二輪車無料)\n障害者割引: 半額\n総台数: 80台",
+    "sourceUrl": "https://www.city.maizuru.kyoto.jp/0000013369.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26202-002",
+    "name": "舞鶴市営七条海岸駐車場",
+    "address": "京都府舞鶴市浜47-4",
+    "latitude": 35.477341,
+    "longitude": 135.394196,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26202",
+    "cityName": "舞鶴市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、戦傷病者手帳、被爆者健康手帳の交付を受けている方が乗車する自動車が対象(定期利用者は対象外)。舞鶴市駐車場条例施行規則第4条により駐車料金の10分の5(2分の1)を減免(市長が特別の理由を認めた場合は10分の10以内)。利用前に市役所土木課・障害福祉/国民年金課、西支所保健福祉係、商工観光センター、西駅交流センター、西市民プラザのいずれかで割引券の交付を受け、利用日を職員に伝える必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間ごと100円、24時間最大500円(令和4年4月1日改定)\n障害者割引: 半額\n総台数: 91台",
+    "sourceUrl": "https://www.city.maizuru.kyoto.jp/html/reiki_int/reiki_honbun/k104RG00000342.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26202-003",
+    "name": "舞鶴市営南田辺駐車場",
+    "address": "京都府舞鶴市南田辺2-5",
+    "latitude": 35.447472,
+    "longitude": 135.33046,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26202",
+    "cityName": "舞鶴市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、戦傷病者手帳、被爆者健康手帳の交付を受けている方が乗車する自動車が対象(定期利用者は対象外)。舞鶴市駐車場条例施行規則第4条により駐車料金の10分の5(2分の1)を減免(市長が特別の理由を認めた場合は10分の10以内)。利用前に市役所土木課・障害福祉/国民年金課、西支所保健福祉係、商工観光センター、西駅交流センター、西市民プラザのいずれかで割引券の交付を受け、利用日を職員に伝える必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間ごと100円、24時間最大500円(令和4年4月1日改定)\n障害者割引: 半額\n総台数: 70台",
+    "sourceUrl": "https://www.city.maizuru.kyoto.jp/html/reiki_int/reiki_honbun/k104RG00000342.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26202-004",
+    "name": "舞鶴市営東舞鶴駅駐車場",
+    "address": "京都府舞鶴市浜町567-1",
+    "latitude": 35.468212,
+    "longitude": 135.393295,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26202",
+    "cityName": "舞鶴市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、戦傷病者手帳、被爆者健康手帳の交付を受けている方が乗車する自動車が対象(定期利用者は対象外)。舞鶴市駐車場条例施行規則第4条により駐車料金の10分の5(2分の1)を減免(市長が特別の理由を認めた場合は10分の10以内)。利用前に市役所土木課・障害福祉/国民年金課、西支所保健福祉係、商工観光センター、西駅交流センター、西市民プラザのいずれかで割引券の交付を受け、利用日を職員に伝える必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間ごと100円、24時間最大500円(令和4年4月1日改定)\n障害者割引: 半額\n総台数: 101台",
+    "sourceUrl": "https://www.city.maizuru.kyoto.jp/html/reiki_int/reiki_honbun/k104RG00000342.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26202-005",
+    "name": "舞鶴市営西舞鶴駅駐車場",
+    "address": "京都府舞鶴市南田辺25-7",
+    "latitude": 35.443958,
+    "longitude": 135.330368,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26202",
+    "cityName": "舞鶴市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、戦傷病者手帳、被爆者健康手帳の交付を受けている方が乗車する自動車が対象(定期利用者は対象外)。舞鶴市駐車場条例施行規則第4条により駐車料金の10分の5(2分の1)を減免(市長が特別の理由を認めた場合は10分の10以内)。利用前に市役所土木課・障害福祉/国民年金課、西支所保健福祉係、商工観光センター、西駅交流センター、西市民プラザのいずれかで割引券の交付を受け、利用日を職員に伝える必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間ごと100円、24時間最大500円(令和4年4月1日改定)\n障害者割引: 半額\n総台数: 123台",
+    "sourceUrl": "https://www.city.maizuru.kyoto.jp/html/reiki_int/reiki_honbun/k104RG00000342.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26105-001",
+    "name": "三井のリパーク京都国立博物館前",
+    "address": "京都府京都市東山区茶屋町527",
+    "latitude": 34.990662,
+    "longitude": 135.7724,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26105",
+    "cityName": "京都市東山区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳等を提示の方が対象。駐車券及び手帳等を京都国立博物館インフォメーション(平成知新館1階、庭園のみ開館期間は南門入口)に提示。七条通側のこの駐車場のみ対象(他の博物館周辺駐車場は対象外)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分200円、最大料金 平日800円/土日祝1,200円(入庫後24時間以内)\n障害者割引: 2時間無料\n総台数: 62台",
+    "sourceUrl": "https://www.kyohaku.go.jp/jp/visit/access/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26107-001",
+    "name": "京都駅八条口駐車場",
+    "address": "京都府京都市南区東九条西山王町31番地",
+    "latitude": 34.983669,
+    "longitude": 135.760468,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26107",
+    "cityName": "京都市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "障害のある本人が運転又は同乗していることが条件。精算前に駐車場係員に駐車券と障害者手帳を提示。京都市営駐車場のうち障害者割引があるのはこの駐車場のみ(京都・滋賀駐車場なびQ&Aより)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分300円(9:00~21:00)、60分100円(21:00~翌9:00)、当日最大3,000円、夜間最大(0:00~9:00)500円\n障害者割引: 1時間無料\n総台数: 166台",
+    "sourceUrl": "https://kyotopublic.or.jp/parking/pages/qa",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26209-001",
+    "name": "長岡京市営長岡京駅西駐車場",
+    "address": "京都府長岡京市神足2丁目2-1",
+    "latitude": 34.922802,
+    "longitude": 135.69902,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26209",
+    "cityName": "長岡京市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳の交付を受けている者が運転又は同乗している自動車が対象(長岡京市営駐車場設置条例施行規則第5条に基づく5割減額)。長岡京市在住を問わず対象。お帰りまでにバンビオ1番館1階総合交流センター行政サービスコーナー(午前8時30分~午後10時)またはバンビオ2番館駐車場2階駐車場受付窓口(午前5時~翌午前1時30分)で手帳を提示のうえ手続きが必要。出口ゲートでの支払いが現金の場合に限る。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 20分毎100円(1日最大1,500円、深夜1:30~5:00は1泊300円)\n障害者割引: 5割引\n総台数: 388台",
+    "sourceUrl": "https://www.nud.jp/park/price/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26209-002",
+    "name": "長岡京市営西山天王山駅東駐車場",
+    "address": "京都府長岡京市友岡4-635",
+    "latitude": 34.914051,
+    "longitude": 135.689911,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26209",
+    "cityName": "長岡京市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "長岡京市営駐車場設置条例施行規則第5条により、身体障害者手帳、療育手帳又は精神障害者保健福祉手帳の交付を受けている者が運転又は同乗している自動車を駐車させるとき、駐車料が5割減額される。2025年4月から指定管理者はタイムズ24株式会社で、ミライロID対応駐車場としても案内されている。手続き方法は運営者(タイムズ)に要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分100円(駐車後24時間最大800円、20:00~8:00の間の最大料金300円)\n障害者割引: 5割引\n総台数: 41台",
+    "sourceUrl": "https://www.city.nagaokakyo.lg.jp/html/reiki/reiki_honbun/b400RG00000589.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26205-001",
+    "name": "宮津市営天橋立駐車場",
+    "address": "京都府宮津市文珠647",
+    "latitude": 35.558655,
+    "longitude": 135.183365,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26205",
+    "cityName": "宮津市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "自ら運転するか、又は介護者の運転する車両に同乗して市営駐車場を利用する場合に駐車料金を一部免除。ミライロIDアプリの提示等により適用(指定管理者アマノマネジメントサービス株式会社)。免除の具体的な割合・金額はウェブサイト上に明記されておらず、詳細はお問い合わせフォームまたはAMSお客様さぽーとセンター(0120-951-365)で確認する必要がある。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 準中型車以下:平日1時間350円(最大700円)、土日祝1時間500円(最大1,500円)。大型車等:平日1時間500円、土日祝1時間1,000円(最大2,000円)\n障害者割引: 駐車料金を一部免除(免除額は非公表)\n総台数: 213台",
+    "sourceUrl": "https://miyazu-park.com/parkinglist/parking001/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26205-002",
+    "name": "宮津市営宮津駅前駐車場",
+    "address": "京都府宮津市鶴賀2065番35",
+    "latitude": 35.53503,
+    "longitude": 135.199677,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26205",
+    "cityName": "宮津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "自ら運転するか、又は介護者の運転する車両に同乗して市営駐車場を利用する場合に駐車料金を一部免除。ミライロIDアプリの提示等により適用(指定管理者アマノマネジメントサービス株式会社)。免除の具体的な割合・金額はウェブサイト上に明記されておらず、詳細はお問い合わせフォームまたはAMSお客様さぽーとセンター(0120-951-365)で確認する必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 24時間営業。最初30分無料、以降30分ごと100円、当日最大500円\n障害者割引: 駐車料金を一部免除(免除額は非公表)",
+    "sourceUrl": "https://miyazu-park.com/parkinglist/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26208-001",
+    "name": "向日市役所駐車場(第1・2・3駐車場)",
+    "address": "京都府向日市寺戸町中野20番地",
+    "latitude": 34.948475,
+    "longitude": 135.697968,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26208",
+    "cityName": "向日市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方は駐車料金が無料(向日市営駐車場設置条例施行規則第5条第1項に基づく免除対象施設)。免除を受ける場合は総務課へお声掛けの上、手帳を提示する。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(8:30~17:30)60分450円(最大1,500円)、夜間(17:30~8:30)60分300円(最大500円)\n障害者割引: 無料\n総台数: 50台",
+    "sourceUrl": "https://www.city.muko.kyoto.jp/soshiki/8/3000.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26208-002",
+    "name": "向日市女性活躍センター前駐車場",
+    "address": "京都府向日市寺戸町中ノ段16番地の7",
+    "latitude": 34.946316,
+    "longitude": 135.701233,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26208",
+    "cityName": "向日市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方は駐車料金が無料(向日市営駐車場設置条例施行規則第5条第1項に基づく免除対象施設)。免除を受ける場合は女性活躍センターへお声掛けの上、手帳を提示する。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(8:00~20:00)60分350円(最大600円)、夜間(20:00~8:00)60分150円(最大600円)\n障害者割引: 無料\n総台数: 20台",
+    "sourceUrl": "https://www.city.muko.kyoto.jp/soshiki/8/3000.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
