@@ -17473,5 +17473,20 @@
     "discount_conditions": "ホール敷地内の障がい者用駐車場(3台)は利用料金無料。利用希望者はくらら総合案内・事務室(082-426-5900、9:00~19:00)へ事前連絡が必要で、利用日の1か月前から前日まで予約可能・先着順。手帳種別の限定記載は原文になし。",
     "source_url": "https://kurara-hall.jp/access/",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "04324-001",
+    "municipality_code": "04324",
+    "municipality": "川崎町",
+    "name": "国営みちのく杜の湖畔公園 駐車場",
+    "address": "宮城県柴田郡川崎町大字小野字二本松53-9",
+    "capacity": 1400,
+    "capacity_accessible": null,
+    "normal_rate": "普通車400円、大型車1,100円、二輪車150円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳を運転者又は同乗者が提示した場合、駐車料金は無料。",
+    "source_url": "https://www.thr.mlit.go.jp/m-park/price/index.html",
+    "verified_at": "2026-08-31"
   }
 ]
