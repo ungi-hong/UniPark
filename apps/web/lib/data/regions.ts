@@ -947,6 +947,11 @@ const cities: City[] = [
     "prefectureCode": "15"
   },
   {
+    "code": "20201",
+    "name": "長野市",
+    "prefectureCode": "20"
+  },
+  {
     "code": "20203",
     "name": "上田市",
     "prefectureCode": "20"
