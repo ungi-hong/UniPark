@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1183
+// 件数: 1184
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26890,6 +26890,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 定期利用 月額6,500円\n障害者割引: 定期利用の使用料を半額(月額3,250円)に減免",
     "sourceUrl": "https://www.city.chikuma.lg.jp/material/files/group/4/toguraekichushajoushougaishanowaribiki.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20321-001",
+    "name": "矢ケ崎公園駐車場",
+    "address": "長野県北佐久郡軽井沢町軽井沢東28番地3",
+    "latitude": 36.345718,
+    "longitude": 138.638245,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20321",
+    "cityName": "軽井沢町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳等をお持ちの方は町内外問わず駐車料金が全額免除。事前に軽井沢町役場観光経済課窓口での申請手続きが必要で、申請後に回数券が発行される方式。旧軽井沢駐車場・旧軽井沢森裏駐車場・中軽井沢駅前駐車場・軽井沢駅北口西側駐車場・新軽井沢駐車場の各町営駐車場ページには同様の割引記載はなし。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間未満無料、2〜4時間400円、4〜8時間600円、8〜12時間800円、12〜24時間1,000円、以後24時間ごとに2,000円加算\n障害者割引: 全額免除\n総台数: 65台",
+    "sourceUrl": "https://www.town.karuizawa.lg.jp/page/1416.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
