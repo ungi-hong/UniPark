@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1089
+// 件数: 1096
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24777,6 +24777,168 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 昼間(8:00~20:00)30分100円(上限1,200円)、夜間(20:00~8:00)60分100円(上限1,000円)\n障害者割引: 障がい者優待回数券(100円区画用)30枚綴り1冊2,030円(3,000円相当・約32%引き)、14枚綴り1冊1,010円(1,400円相当・約28%引き)",
     "sourceUrl": "https://www.g-sougou.co.jp/ekinanparking/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-001",
+    "name": "沼津市営香貫駐車場（立体駐車場・平面駐車場〔体育館〕・平面駐車場〔文化センター〕）",
+    "address": "静岡県沼津市御幸町14-32",
+    "latitude": 35.095814,
+    "longitude": 138.863892,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 9,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 立体駐車場:7:00〜22:30は60分ごとに100円(20:00〜翌9:00は730円)/平面駐車場(体育館):最初の1時間200円、以降1時間ごとに100円(20:00〜翌9:00は730円)/平面駐車場(文化センター):7:00〜22:30は60分ごとに100円(20:00〜翌9:00は730円)\n障害者割引: 最初の2時間まで全額免除\n総台数: 650台",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-002",
+    "name": "サンウェルぬまづ(ぬまづ健康福祉プラザ)駐車場",
+    "address": "静岡県沼津市日の出町1-15",
+    "latitude": 35.109974,
+    "longitude": 138.866257,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(具体的な料金体系は公式ページに記載なし)\n障害者割引: 最初の4時間まで全額免除",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-003",
+    "name": "千本プラザ(沼津市高齢者等福祉世代交流活動施設)駐車場",
+    "address": "静岡県沼津市本字千本1910-206",
+    "latitude": 35.096767,
+    "longitude": 138.847366,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(具体的な料金体系は公式ページに記載なし)\n障害者割引: 最初の4時間まで全額免除",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-004",
+    "name": "キラメッセぬまづ(プラサヴェルデ)駐車場",
+    "address": "静岡県沼津市大手町1-1-4",
+    "latitude": 35.103424,
+    "longitude": 138.861343,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 10,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 10
+      }
+    ],
+    "notes": "通常料金: プラサヴェルデ利用者:8:00〜23:00は30分50円、23:00〜8:00は60分50円/一般利用者:8:00〜23:00は30分100円、23:00〜8:00は60分100円(24時間最大1,000円)\n障害者割引: 最初の4時間まで全額免除\n総台数: 446台",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-005",
+    "name": "沼津御用邸記念公園駐車場",
+    "address": "静岡県沼津市下香貫島郷2802-1",
+    "latitude": 35.076717,
+    "longitude": 138.871735,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(具体的な料金体系は公式ページに記載なし)\n障害者割引: 最初の2時間まで全額免除",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-006",
+    "name": "沼津市立病院駐車場",
+    "address": "静岡県沼津市東椎路字春ノ木550",
+    "latitude": 35.119942,
+    "longitude": 138.835129,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(具体的な料金体系は公式ページに記載なし)\n障害者割引: 最初の2時間まで全額免除",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22203-007",
+    "name": "沼津市立図書館駐車場",
+    "address": "静岡県沼津市三枚橋町9-1",
+    "latitude": 35.100639,
+    "longitude": 138.862869,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22203",
+    "cityName": "沼津市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 4,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。なお小学生以下の子ども同伴者は最初の1時間まで全額免除(障害者割引とは別条件)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 有料(具体的な料金体系は公式ページに記載なし)\n障害者割引: 最初の4時間まで全額免除",
+    "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
