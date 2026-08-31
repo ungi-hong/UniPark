@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1185
+// 件数: 1189
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26933,6 +26933,90 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入場後1時間30分まで無料、1時間30分を超える場合30分ごとに50円、入庫から24時間まで1,000円(以降24時間ごとの上限も1,000円)\n障害者割引: 5割減免\n総台数: 190台",
     "sourceUrl": "https://www.city.ena.lg.jp/soshikiichiran/kensetsubu/toshijutakuka/1/4/1/1868.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21212-001",
+    "name": "土岐市駅前駐車場",
+    "address": "岐阜県土岐市泉町久尻615-6",
+    "latitude": 35.359547,
+    "longitude": 137.181976,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21212",
+    "cityName": "土岐市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間無料、以降30分ごとに50円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 19台",
+    "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21212-002",
+    "name": "土岐市駅西駐車場",
+    "address": "岐阜県土岐市泉町久尻562-6",
+    "latitude": 35.359547,
+    "longitude": 137.181976,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21212",
+    "cityName": "土岐市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 2時間無料、以降30分ごとに50円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 67台",
+    "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21212-003",
+    "name": "土岐市駅北駐車場",
+    "address": "岐阜県土岐市泉郷町1丁目1-1",
+    "latitude": 35.359882,
+    "longitude": 137.18103,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21212",
+    "cityName": "土岐市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 12時間300円、以降6時間ごとに200円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 368台",
+    "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21212-004",
+    "name": "土岐市駅前広場駐車場",
+    "address": "岐阜県土岐市泉町久尻614-16",
+    "latitude": 35.3596,
+    "longitude": 137.183929,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21212",
+    "cityName": "土岐市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分無料、以降30分ごとに200円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 12台",
+    "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
