@@ -976,6 +976,16 @@ const cities: City[] = [
     "prefectureCode": "20"
   },
   {
+    "code": "21201",
+    "name": "岐阜市",
+    "prefectureCode": "21"
+  },
+  {
+    "code": "21203",
+    "name": "高山市",
+    "prefectureCode": "21"
+  },
+  {
     "code": "21210",
     "name": "恵那市",
     "prefectureCode": "21"
