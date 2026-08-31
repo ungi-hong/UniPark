@@ -1506,6 +1506,11 @@ const cities: City[] = [
     "prefectureCode": "34"
   },
   {
+    "code": "34211",
+    "name": "大竹市",
+    "prefectureCode": "34"
+  },
+  {
     "code": "40101",
     "name": "北九州市門司区",
     "prefectureCode": "40"
