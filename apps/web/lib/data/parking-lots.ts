@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1243
+// 件数: 1254
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28202,6 +28202,265 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 一時駐車:1時間ごとに100円、24時間以内最大600円(定期駐車:1か月5,230円・3か月14,140円)\n障害者割引: 駐車料金の2分の1を減額\n総台数: 17台",
     "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07202-001",
+    "name": "生涯学習総合センター(會津稽古堂)駐車場",
+    "address": "福島県会津若松市栄町3番50号",
+    "latitude": 37.496475,
+    "longitude": 139.930161,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07202",
+    "cityName": "会津若松市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳等をお持ちの方、または障がい者の方の送迎のために駐車場を利用する場合、1階総合案内窓口に手帳を提示すると駐車料金が無料になる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに100円(施設利用者は2時間無料、以後30分ごとに100円)\n障害者割引: 無料\n総台数: 93台",
+    "sourceUrl": "https://www.city.aizuwakamatsu.fukushima.jp/docs/2015060700027/file_contents/riyouannai2.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-001",
+    "name": "太陽メンテナンス麓山立体駐車場(郡山市麓山地区立体駐車場)",
+    "address": "福島県郡山市麓山一丁目167番1",
+    "latitude": 37.395012,
+    "longitude": 140.374557,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が、対象施設(アサカ理研郡山中央図書館、郡山市立中央公民館、郡山公会堂、21世紀記念公園及び麓山公園、郡山市労働福祉会館、けんしん郡山文化センター、郡山市男女共同参画センター、郡山市歴史情報博物館)の窓口または駐車場管理室(午後11時30分まで)に手帳を提示して申し出ることで無料手続き可能。身体障害者手帳第1種、療育手帳所持者、精神障害者保健福祉手帳1級の方は、介護のため同伴する方(1人限り)も無料対象。おもいやり駐車場2台分も別途設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに100円(1日最大1,000円、24時リセット・繰り返し適用)\n障害者割引: 無料(入場から2時間経過後も無料)\n総台数: 568台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/125/62966.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-002",
+    "name": "郡山総合体育館第一駐車場(宝来屋ボンズアリーナ)",
+    "address": "福島県郡山市豊田町3-10",
+    "latitude": 37.396748,
+    "longitude": 140.362793,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が、対象施設(宝来屋ボンズアリーナ、郡山ヒロセ電機開成山陸上競技場、ヨーク開成山スタジアム、郡山しんきん開成山プール、開成山弓道場、ミューカルがくと館、こおりやま文学の森資料館)の窓口に手帳を提示して申し出ることで免除手続き可能。身体障害者手帳第1種、療育手帳所持者、精神障害者保健福祉手帳1級の方は介護同伴者(1人限り)も無料対象。市役所またはにこにここども館利用者も無料対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに普通車100円(1日最大1,000円)\n障害者割引: 無料(入場から2時間経過後も無料)\n総台数: 123台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/44/98042.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-003",
+    "name": "郡山総合体育館第二駐車場(宝来屋ボンズアリーナ)",
+    "address": "福島県郡山市豊田町3-10",
+    "latitude": 37.396748,
+    "longitude": 140.362793,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が、対象施設の窓口に手帳を提示して申し出ることで免除手続き可能。第1種身体障害者手帳、療育手帳、1級精神障害者保健福祉手帳の場合は介護同伴者(1人限り)も無料対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに普通車100円(1日最大1,000円)\n障害者割引: 無料(入場から2時間経過後も無料)\n総台数: 30台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/44/98042.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-004",
+    "name": "開成山陸上競技場北側駐車場",
+    "address": "福島県郡山市開成一丁目5番12号",
+    "latitude": 37.398209,
+    "longitude": 140.361191,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が、対象施設の窓口に手帳を提示して申し出ることで免除手続き可能。第1種身体障害者手帳、療育手帳、1級精神障害者保健福祉手帳の場合は介護同伴者(1人限り)も無料対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに普通車100円(1日最大1,000円)\n障害者割引: 無料(入場から2時間経過後も無料)\n総台数: 174台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/44/98042.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-005",
+    "name": "開成山陸上競技場東側駐車場",
+    "address": "福島県郡山市開成一丁目5番12号",
+    "latitude": 37.398209,
+    "longitude": 140.361191,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が、対象施設(ミューカルがくと館利用者はこの駐車場を利用)の窓口に手帳を提示して申し出ることで免除手続き可能。第1種身体障害者手帳、療育手帳、1級精神障害者保健福祉手帳の場合は介護同伴者(1人限り)も無料対象。大型車用2台あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに普通車100円(1日最大1,000円)\n障害者割引: 無料(入場から2時間経過後も無料)\n総台数: 159台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/44/98042.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-006",
+    "name": "開成山屋内水泳場東側駐車場(郡山しんきん開成山プール)",
+    "address": "福島県郡山市開成一丁目5番12号",
+    "latitude": 37.398209,
+    "longitude": 140.361191,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかの交付を受けている方が、対象施設の窓口に手帳を提示して申し出ることで免除手続き可能。第1種身体障害者手帳、療育手帳、1級精神障害者保健福祉手帳の場合は介護同伴者(1人限り)も無料対象。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに普通車100円(1日最大1,000円)\n障害者割引: 無料(入場から2時間経過後も無料)\n総台数: 44台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/44/98042.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07203-007",
+    "name": "郡山市役所駐車場(本庁舎・西庁舎)",
+    "address": "福島県郡山市朝日一丁目23番7号",
+    "latitude": 37.399815,
+    "longitude": 140.360077,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07203",
+    "cityName": "郡山市",
+    "accessibleSpaceTotal": 10,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障がい者(身体・精神・療育いずれかの手帳所持者)及び介助者による駐車は用務先を問わず無料。(1)ゲート外の「思いやり駐車場」(本庁舎正面西側7台・うち車いす利用者用5台、西庁舎3台)利用時は手続き不要。(2)ゲート内駐車スペース利用時は、事前に本庁舎・西庁舎の受付(閉庁時は警備室)で障害者手帳等を提示するか、出庫時にゲート横の受話器でコールセンターに連絡しカメラに手帳を提示する必要あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 10
+      }
+    ],
+    "notes": "通常料金: 入場から2時間無料、以降30分ごとに100円(1日最大1,000円、24時リセット)。庁舎目的利用は2時間超過後も無料、庁舎外目的は2時間超過分が有料。\n障害者割引: 無料(用務先を問わず駐車料金がかからない)\n総台数: 308台",
+    "sourceUrl": "https://www.city.koriyama.lg.jp/soshiki/1/97783.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07207-001",
+    "name": "須賀川市役所本庁舎駐車場(おもいやり駐車場)",
+    "address": "福島県須賀川市八幡町135",
+    "latitude": 37.286598,
+    "longitude": 140.372482,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07207",
+    "cityName": "須賀川市",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "「おもいやり駐車場利用証」の掲示が必要。利用可能時間は平日8:00~18:00、土曜8:00~15:00(日曜・祝日および12/31~1/3は終日閉鎖)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 市役所での手続き利用者は最初の2時間まで無料、以降1時間ごとに200円(24時間ごとの上限2,000円)。正面駐車場は18時~翌2時は無料。\n障害者割引: おもいやり駐車場(3台)は「おもいやり駐車場利用証」の掲示により無料(時間制限なし、開場時間内)\n総台数: 309台",
+    "sourceUrl": "https://www.city.sukagawa.fukushima.jp/shisei/gaiyo/city_profile/honchosya/1002563.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07208-001",
+    "name": "喜多方駅前駐車場",
+    "address": "福島県喜多方市字町田下8239番地8",
+    "latitude": 37.644093,
+    "longitude": 139.868011,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07208",
+    "cityName": "喜多方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳または精神障がい者保健福祉手帳を所持する方。清算前に喜多方駅構内の観光案内所職員に手帳を提示し、無料駐車券の交付を受ける。令和2年10月1日から実施。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、30分超1時間まで100円、1時間超2時間まで300円、2時間超24時間まで500円\n障害者割引: 使用料免除(無料)\n総台数: 79台",
+    "sourceUrl": "https://www.city.kitakata.fukushima.jp/soshiki/syoukan/27527.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "07208-002",
+    "name": "西四ツ谷駐車場",
+    "address": "福島県喜多方市字西四ツ谷167番地",
+    "latitude": 37.649628,
+    "longitude": 139.877014,
+    "prefectureCode": "07",
+    "prefectureName": "福島県",
+    "cityCode": "07208",
+    "cityName": "喜多方市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳、療育手帳または精神障がい者保健福祉手帳を所持する方。受付時に観光案内所職員に手帳を掲示。開所時間 3~11月 8:30-17:00、12~2月 10:00-15:00。令和2年10月1日から実施。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車・軽自動車 300円/日、中型車・大型車 1,000円/日\n障害者割引: 使用料免除(無料)\n総台数: 25台",
+    "sourceUrl": "https://www.city.kitakata.fukushima.jp/soshiki/syoukan/27527.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
