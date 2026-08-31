@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1144
+// 件数: 1146
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26023,6 +26023,58 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 30分100円(最大1,500円)\n障害者割引: 5割減額\n総台数: 481台",
     "sourceUrl": "https://www.city.kure.lg.jp/soshiki/67/chushazyou.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34211-001",
+    "name": "大竹駅東口送迎用駐車場",
+    "address": "広島県大竹市西栄一丁目9",
+    "latitude": 34.216778,
+    "longitude": 132.22467,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34211",
+    "cityName": "大竹市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。精算時にコールセンター(0120-951-365)へ連絡するか、ミライロIDのQRコード機能を利用して手続きすることで駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、以後30分ごと300円、1日最大5,000円\n障害者割引: 半額\n総台数: 14台",
+    "sourceUrl": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34211-002",
+    "name": "大竹駅西口送迎用駐車場",
+    "address": "広島県大竹市新町一丁目1",
+    "latitude": 34.217796,
+    "longitude": 132.223267,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34211",
+    "cityName": "大竹市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。精算時にコールセンター(0120-951-365)へ連絡するか、ミライロIDのQRコード機能を利用して手続きすることで駐車料金が半額になる。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入庫後30分無料、以後30分ごと300円、1日最大5,000円\n障害者割引: 半額\n総台数: 12台",
+    "sourceUrl": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
