@@ -17745,6 +17745,21 @@
     "verified_at": "2026-08-31"
   },
   {
+    "id": "20321-001",
+    "municipality_code": "20321",
+    "municipality": "軽井沢町",
+    "name": "矢ケ崎公園駐車場",
+    "address": "長野県北佐久郡軽井沢町軽井沢東28番地3",
+    "capacity": 65,
+    "capacity_accessible": null,
+    "normal_rate": "2時間未満無料、2〜4時間400円、4〜8時間600円、8〜12時間800円、12〜24時間1,000円、以後24時間ごとに2,000円加算",
+    "discount_rate": "全額免除",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳等をお持ちの方は町内外問わず駐車料金が全額免除。事前に軽井沢町役場観光経済課窓口での申請手続きが必要で、申請後に回数券が発行される方式。旧軽井沢駐車場・旧軽井沢森裏駐車場・中軽井沢駅前駐車場・軽井沢駅北口西側駐車場・新軽井沢駐車場の各町営駐車場ページには同様の割引記載はなし。",
+    "source_url": "https://www.town.karuizawa.lg.jp/page/1416.html",
+    "verified_at": "2026-08-31"
+  },
+  {
     "id": "21210-001",
     "municipality_code": "21210",
     "municipality": "恵那市",

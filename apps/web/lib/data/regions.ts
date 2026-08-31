@@ -967,6 +967,11 @@ const cities: City[] = [
     "prefectureCode": "20"
   },
   {
+    "code": "20321",
+    "name": "軽井沢町",
+    "prefectureCode": "20"
+  },
+  {
     "code": "22203",
     "name": "沼津市",
     "prefectureCode": "22"
