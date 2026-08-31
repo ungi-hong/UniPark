@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1096
+// 件数: 1098
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24939,6 +24939,48 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 有料(具体的な料金体系は公式ページに記載なし)\n障害者割引: 最初の4時間まで全額免除",
     "sourceUrl": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08201-001",
+    "name": "水戸芸術館 車椅子利用者用駐車スペース(塔東側)",
+    "address": "茨城県水戸市五軒町1-6-8",
+    "latitude": 36.379601,
+    "longitude": 140.465317,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08201",
+    "cityName": "水戸市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "車椅子利用者が対象。水戸芸術館塔東側の地上駐車スペースを無料で利用可能。利用には事前に事務局(TEL.029-227-8111)への電話連絡が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 市営五軒町駐車場(地下・立体): 30分まで無料、1時間まで200円、以降30分ごとに100円、1日上限700円\n障害者割引: 無料",
+    "sourceUrl": "https://www.arttowermito.or.jp/access/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "22341-001",
+    "name": "柿田川公園町営駐車場",
+    "address": "静岡県駿東郡清水町伏見71番地の7",
+    "latitude": 35.107105,
+    "longitude": 138.901093,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22341",
+    "cityName": "清水町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "障害がある方は障害者手帳などを提示することにより無料。清水町民は免許証など町民であると確認できるものの提示により無料。利用時間は8時30分から16時30分まで(入庫は16時まで)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車1回200円、バス等1回1,000円\n障害者割引: 無料\n総台数: 50台",
+    "sourceUrl": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00054.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
