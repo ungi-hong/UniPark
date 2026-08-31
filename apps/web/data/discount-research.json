@@ -17158,5 +17158,35 @@
     "discount_conditions": "身体障害者手帳1・2・3級、療育手帳Ⓐ・A・Ⓑ、精神障害者保健福祉手帳1・2級の交付を受けている方が対象。清算前に管理事務所へ申告が必要。",
     "source_url": "https://www.city.kure.lg.jp/soshiki/67/chushazyou.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "34211-001",
+    "municipality_code": "34211",
+    "municipality": "大竹市",
+    "name": "大竹駅東口送迎用駐車場",
+    "address": "広島県大竹市西栄一丁目9",
+    "capacity": 14,
+    "capacity_accessible": 1,
+    "normal_rate": "入庫後30分無料、以後30分ごと300円、1日最大5,000円",
+    "discount_rate": "半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。精算時にコールセンター(0120-951-365)へ連絡するか、ミライロIDのQRコード機能を利用して手続きすることで駐車料金が半額になる。",
+    "source_url": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "34211-002",
+    "municipality_code": "34211",
+    "municipality": "大竹市",
+    "name": "大竹駅西口送迎用駐車場",
+    "address": "広島県大竹市新町一丁目1",
+    "capacity": 12,
+    "capacity_accessible": 1,
+    "normal_rate": "入庫後30分無料、以後30分ごと300円、1日最大5,000円",
+    "discount_rate": "半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。精算時にコールセンター(0120-951-365)へ連絡するか、ミライロIDのQRコード機能を利用して手続きすることで駐車料金が半額になる。",
+    "source_url": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "verified_at": "2026-08-31"
   }
 ]
