@@ -17548,5 +17548,50 @@
     "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳を運転者又は同乗者が提示した場合、駐車料金は無料。",
     "source_url": "https://www.thr.mlit.go.jp/m-park/price/index.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "04101-001",
+    "municipality_code": "04101",
+    "municipality": "仙台市青葉区",
+    "name": "仙台市勾当台公園地下駐車場",
+    "address": "宮城県仙台市青葉区国分町三丁目7番1号",
+    "capacity": 155,
+    "capacity_accessible": null,
+    "normal_rate": "7時30分~22時30分 20分ごと100円",
+    "discount_rate": "1時間無料",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料。駐車場管理室係員に駐車券と手帳を提示(スマートフォンの障害者手帳アプリ「ミライロID」の提示も可)。",
+    "source_url": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo/index.html",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "04101-002",
+    "municipality_code": "04101",
+    "municipality": "仙台市青葉区",
+    "name": "仙台市二日町駐車場",
+    "address": "宮城県仙台市青葉区二日町1番30号",
+    "capacity": 73,
+    "capacity_accessible": null,
+    "normal_rate": "7時30分~22時30分 30分ごと100円",
+    "discount_rate": "1時間無料",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料(勾当台公園地下駐車場と共通の制度)。駐車場管理室係員に駐車券と手帳を提示(スマートフォンの障害者手帳アプリ「ミライロID」の提示も可)。",
+    "source_url": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo/index.html",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "04102-001",
+    "municipality_code": "04102",
+    "municipality": "仙台市宮城野区",
+    "name": "元気フィールド仙台(仙台市新田東総合運動場)駐車場",
+    "address": "宮城県仙台市宮城野区新田東4丁目1番1号",
+    "capacity": 375,
+    "capacity_accessible": 40,
+    "normal_rate": "普通車:最初の1時間100円、以後30分ごと50円加算(大型車・マイクロバス:1時間ごと400円)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳又は被爆者健康手帳をお持ちの方(付き添う満18歳以上の介護人1名を含む)が施設を利用する場合、窓口に手帳を提示すると駐車場が無料または減免になる(仙台市のスポーツ施設における障がい者の使用料減免制度に基づく措置)。",
+    "source_url": "https://www.genkifieldsendai.com/access/",
+    "verified_at": "2026-08-31"
   }
 ]
