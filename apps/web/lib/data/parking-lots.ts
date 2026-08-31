@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1232
+// 件数: 1243
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27943,6 +27943,265 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 最初の30分無料、以降30分毎100円\n障害者割引: 終日無料\n総台数: 18台",
     "sourceUrl": "https://www.city.kasaoka.okayama.jp/soshiki/26/53069.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-001",
+    "name": "岡山後楽園駐車場",
+    "address": "岡山県岡山市北区後楽園1-5",
+    "latitude": 34.668472,
+    "longitude": 133.933731,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳・特定疾患等の医療受給者票・スモン健康管理手帳をお持ちの方及び同伴の介護者が対象。入園時に正門入園券売り場で手帳等と駐車券を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車40分100円、大型車(バス等)1日1回1,000円\n障害者割引: 無料\n総台数: 582台",
+    "sourceUrl": "https://okayama-korakuen.jp/goriyo/441.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-002",
+    "name": "天神町駐車場",
+    "address": "岡山県岡山市北区天神町3番5",
+    "latitude": 34.666977,
+    "longitude": 133.928116,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 9,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。精算前に管理事務所(城下地下駐車場内)で手帳等を提示、または障害者手帳アプリ「ミライロID」を出口精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 最初の1時間まで300円、以降30分ごとに150円、夜間(午後8時~翌日午前8時)最大400円\n障害者割引: 駐車料金の2分の1を減額\n総台数: 175台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-003",
+    "name": "城下地下駐車場",
+    "address": "岡山県岡山市北区表町一丁目城下地下1号",
+    "latitude": 34.66399,
+    "longitude": 133.929504,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 3,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。精算前に管理事務所で手帳等を提示、または障害者手帳アプリ「ミライロID」を出口精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 最初の1時間まで300円、以降30分ごとに150円、夜間(午後8時~翌日午前8時)最大500円\n障害者割引: 駐車料金の2分の1を減額\n総台数: 174台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-004",
+    "name": "駅南駐車場",
+    "address": "岡山県岡山市北区下石井一丁目32番2号",
+    "latitude": 34.662457,
+    "longitude": 133.917328,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。精算前に駐車場管理室で手帳等を提示(管理人不在時は事前精算機のインターホンでお客様センターに連絡)、または障害者手帳アプリ「ミライロID」を事前精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 普通車:15分ごとに100円、1日最大2,090円/大型車:30分ごとに520円、夜間最大3,350円\n障害者割引: 駐車料金の2分の1を減額\n総台数: 19台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-005",
+    "name": "駅元町北駐車場",
+    "address": "岡山県岡山市北区駅元町31番109",
+    "latitude": 34.667892,
+    "longitude": 133.917648,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。出口精算機のインターホンでお客様センターに連絡し遠隔カメラに手帳等を提示、または障害者手帳アプリ「ミライロID」を出口精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 最初の1時間まで300円、以降30分ごとに150円、夜間(午後8時~翌日午前8時)最大800円\n障害者割引: 駐車料金の2分の1を減額\n総台数: 22台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-006",
+    "name": "烏城公園駐車場",
+    "address": "岡山県岡山市北区丸の内二丁目2番3号",
+    "latitude": 34.665546,
+    "longitude": 133.93486,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "普通自動車を自ら運転または同乗し利用する方で、身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持している場合。精算前に精算機のカメラに手帳を掲示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 最初の1時間まで300円、以降30分ごとに100円、上限は平日800円・土日祝1,000円\n障害者割引: 駐車料金の2分の1を減額\n総台数: 41台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-007",
+    "name": "北長瀬未来ふれあい総合公園駐車場",
+    "address": "岡山県岡山市北区北長瀬表町2-17-20",
+    "latitude": 34.652351,
+    "longitude": 133.890305,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 15,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。精算前に出口精算機に表示されている問い合わせ先に連絡し減免の手続きを行う。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 15
+      }
+    ],
+    "notes": "通常料金: 30分毎100円(最初の1時間まで無料)、当日1日最大料金700円(第3駐車場は土日祝のみ最大500円)\n障害者割引: 駐車料金の2分の1を減額\n総台数: 1068台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000030956.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33101-008",
+    "name": "福渡駅駐車場",
+    "address": "岡山県岡山市北区建部町福渡498番13",
+    "latitude": 34.870262,
+    "longitude": 133.91153,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33101",
+    "cityName": "岡山市北区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。出口精算機のインターホンでお客様センターに連絡し遠隔カメラに手帳等を提示、または障害者手帳アプリ「ミライロID」を出口精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 終日60分100円、入庫後24時間400円(定期駐車:1か月3,300円・3か月8,910円、第1駐車場21台は定期専用)\n障害者割引: 駐車料金の2分の1を減額\n総台数: 66台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33103-001",
+    "name": "西大寺駅駐車場",
+    "address": "岡山県岡山市東区西大寺上二丁目818番地7",
+    "latitude": 34.659576,
+    "longitude": 134.035309,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33103",
+    "cityName": "岡山市東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "定期契約のみの駐車場。対象は(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級等を所持し自ら運転する方、(3)同区分の手帳所持者を同乗する場合。定期契約の割引適用は管理事務所(城下地下駐車場内、086-225-7110)へ問い合わせが必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 定期駐車専用(一時駐車なし):1か月6,280円、3か月16,970円\n障害者割引: 駐車料金の2分の1を減額\n総台数: 100台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33103-002",
+    "name": "瀬戸駅駐車場",
+    "address": "岡山県岡山市東区瀬戸町下578番地21",
+    "latitude": 34.732006,
+    "longitude": 134.040543,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33103",
+    "cityName": "岡山市東区",
+    "accessibleSpaceTotal": 1,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。出口精算機のインターホンでお客様センターに連絡し遠隔カメラに手帳等を提示、または障害者手帳アプリ「ミライロID」を出口精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 一時駐車:1時間ごとに100円、24時間以内最大600円(定期駐車:1か月5,230円・3か月14,140円)\n障害者割引: 駐車料金の2分の1を減額\n総台数: 32台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33103-003",
+    "name": "万富駅駐車場",
+    "address": "岡山県岡山市東区瀬戸町万富597番地18",
+    "latitude": 34.768742,
+    "longitude": 134.085052,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33103",
+    "cityName": "岡山市東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "(1)自動車税・軽自動車税の減免措置を受けている車を自ら運転または生計を一にする方の運転に同乗する身体障害者、(2)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症を所持し自ら運転する方、(3)身体障害者手帳1・2級・戦傷病者手帳特別項症~第二項症・療育手帳A・精神障害者保健福祉手帳1級所持者を同乗する場合。出口精算機のインターホンでお客様センターに連絡し遠隔カメラに手帳等を提示、または障害者手帳アプリ「ミライロID」を出口精算機の二次元コードリーダーにかざす。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 一時駐車:1時間ごとに100円、24時間以内最大600円(定期駐車:1か月5,230円・3か月14,140円)\n障害者割引: 駐車料金の2分の1を減額\n総台数: 17台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];

@@ -1663,6 +1663,16 @@ const cities: City[] = [
     "prefectureCode": "28"
   },
   {
+    "code": "33101",
+    "name": "岡山市北区",
+    "prefectureCode": "33"
+  },
+  {
+    "code": "33103",
+    "name": "岡山市東区",
+    "prefectureCode": "33"
+  },
+  {
     "code": "33104",
     "name": "岡山市南区",
     "prefectureCode": "33"
