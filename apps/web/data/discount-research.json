@@ -16573,5 +16573,20 @@
     "discount_conditions": "運転者又は同乗者が身体障害者手帳、療育手帳、精神障害者保健福祉手帳(スマートフォンアプリ「ミライロID」の画面提示でも可)を提示した場合、普通車・二輪車の駐車料金が無料。対象は西駐車場・南駐車場のみ(海浜口駐車場・臨時駐車場は対象外)。同乗者11人以上の普通車の場合は同乗の障がい者2名分の手帳提示が必要。",
     "source_url": "https://www.hitachikaihin.jp/guide/ticket.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "08309-001",
+    "municipality_code": "08309",
+    "municipality": "大洗町",
+    "name": "大洗サンビーチ駐車場(大洗町営駐車場)",
+    "address": "茨城県東茨城郡大洗町大貫町64番地先",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "普通車1,000円、中型車1,300円、大型車3,000円、二輪車400円(土日祝日・特定期間(ゴールデンウィーク、海水浴場開設期間)の午前7時~午後3時、1日1回入場ごと)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "障害者手帳等の提示により無料。入場の際に身分証明書等の提示が必要。町内在住者も免許証等の提示により無料。対象は大洗第一・第二サンビーチ駐車場及び大洗海浜公園内駐車場。",
+    "source_url": "https://www.oarai-info.jp/news/postid_3724/",
+    "verified_at": "2026-08-31"
   }
 ]
