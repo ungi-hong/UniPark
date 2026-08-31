@@ -16663,5 +16663,50 @@
     "discount_conditions": "身体障害者手帳1級又は2級、療育手帳Ⓐ又はA、精神障害者保健福祉手帳1級の所持者本人が運転、又はその介護者運転の車に同乗して利用する場合に適用。夜間料金・定期料金は対象外。出庫時に駅南口駐車場管理室係員へ手帳(またはミライロID)を提示。係員不在時は後日領収書と手帳を提示すれば減免分の回数券を交付。連絡先: 駅南口駐車場管理室(084)926-2489。",
     "source_url": "https://www.city.fukuyama.hiroshima.jp/soshiki/toshikotsu/281754.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "34211-001",
+    "municipality_code": "34211",
+    "municipality": "大竹市",
+    "name": "大竹駅東口送迎用駐車場",
+    "address": "広島県大竹市西栄一丁目9",
+    "capacity": 14,
+    "capacity_accessible": 1,
+    "normal_rate": "入庫後30分は無料、以降30分ごとに300円、1日最大5,000円",
+    "discount_rate": "半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持する方が対象。精算時に手帳を提示のうえコールセンター(アマノマネジメントサービス株式会社 0120-951-365)へ連絡するか、ミライロIDを使用して手続き。",
+    "source_url": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "34211-002",
+    "municipality_code": "34211",
+    "municipality": "大竹市",
+    "name": "大竹駅西口送迎用駐車場",
+    "address": "広島県大竹市新町一丁目1",
+    "capacity": 12,
+    "capacity_accessible": 1,
+    "normal_rate": "入庫後30分は無料、以降30分ごとに300円、1日最大5,000円",
+    "discount_rate": "半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを所持する方が対象。精算時に手帳を提示のうえコールセンター(アマノマネジメントサービス株式会社 0120-951-365)へ連絡するか、ミライロIDを使用して手続き。",
+    "source_url": "https://www.city.otake.hiroshima.jp/soshiki/kensetsu/toshikeikaku/keikakuseibikakari/chusyajo/8204.html",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "34212-001",
+    "municipality_code": "34212",
+    "municipality": "東広島市",
+    "name": "東広島芸術文化ホールくらら 障がい者用駐車場",
+    "address": "広島県東広島市西条栄町7番19号",
+    "capacity": 3,
+    "capacity_accessible": 3,
+    "normal_rate": null,
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "ホール敷地内の障がい者用駐車場(3台)は利用料金無料。利用希望者はくらら総合案内・事務室(082-426-5900、9:00~19:00)へ事前連絡が必要で、利用日の1か月前から前日まで予約可能・先着順。手帳種別の限定記載は原文になし。",
+    "source_url": "https://kurara-hall.jp/access/",
+    "verified_at": "2026-08-31"
   }
 ]
