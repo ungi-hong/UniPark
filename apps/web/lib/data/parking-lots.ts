@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1219
+// 件数: 1222
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27664,6 +27664,71 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 30分以内無料、以後1時間ごとに100円、12～24時間以内1,200円\n障害者割引: 無料\n総台数: 32台",
     "sourceUrl": "https://www.city.tatebayashi.gunma.jp/s066/kurashi/080/20200107232000.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "09201-001",
+    "name": "市営中央駐車場",
+    "address": "栃木県宇都宮市宮園町8番4号",
+    "latitude": 36.558796,
+    "longitude": 139.881927,
+    "prefectureCode": "09",
+    "prefectureName": "栃木県",
+    "cityCode": "09201",
+    "cityName": "宇都宮市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の交付を受けている方が対象。総合福祉センター、中央生涯学習センターを利用する場合は3時間まで無料。詳細は駐車場窓口(028-636-1965)へ確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 基本料金20分ごとに100円、夜間料金(午後10時~翌日午前8時)1時間ごとに100円\n障害者割引: 2時間まで無料(総合福祉センター・中央生涯学習センター利用者は3時間まで無料)\n総台数: 81台",
+    "sourceUrl": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/chushajo/1006138.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "09201-002",
+    "name": "市営駅西駐車場",
+    "address": "栃木県宇都宮市川向町632番地5",
+    "latitude": 36.560104,
+    "longitude": 139.898148,
+    "prefectureCode": "09",
+    "prefectureName": "栃木県",
+    "cityCode": "09201",
+    "cityName": "宇都宮市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 2,
+      "conditions": "身体障がい者手帳等の交付を受けている方が対象。詳細は駐車場窓口(028-622-7192)へ確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 基本料金20分ごとに100円、夜間料金(午後10時~翌日午前7時)1時間ごとに100円\n障害者割引: 2時間まで無料\n総台数: 46台",
+    "sourceUrl": "https://www.city.utsunomiya.lg.jp/kurashi/kotsu/chushajo/1006140.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10209-001",
+    "name": "桜山公園駐車場",
+    "address": "群馬県藤岡市三波川2166-1",
+    "latitude": 36.16082,
+    "longitude": 138.994827,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10209",
+    "cityName": "藤岡市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "有料期間中、障害者手帳をお持ちの方は桜山公園料金所にて障害者手帳を提示すると駐車料金が無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 春・秋の開花シーズンのみ有料(普通車500円、二輪100円、マイクロバス等29人以下1,500円、大型バス30人以上2,000円)。それ以外の期間・「群馬県民の日」(10月28日)・「桜山まつり」(12月1日)は無料\n障害者割引: 無料\n総台数: 501台",
+    "sourceUrl": "https://www.city.fujioka.gunma.jp/soshiki/onisisogoshisho/nigiwaikanko/1/sakurayamakouenakusesu.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
