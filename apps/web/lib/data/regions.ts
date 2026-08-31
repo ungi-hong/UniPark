@@ -42,6 +42,10 @@ export const prefectures: Prefecture[] = [
     "name": "愛知県"
   },
   {
+    "code": "26",
+    "name": "京都府"
+  },
+  {
     "code": "27",
     "name": "大阪府"
   },
@@ -1029,6 +1033,36 @@ const cities: City[] = [
     "code": "23342",
     "name": "豊山町",
     "prefectureCode": "23"
+  },
+  {
+    "code": "26105",
+    "name": "京都市東山区",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26107",
+    "name": "京都市南区",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26202",
+    "name": "舞鶴市",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26205",
+    "name": "宮津市",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26208",
+    "name": "向日市",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26209",
+    "name": "長岡京市",
+    "prefectureCode": "26"
   },
   {
     "code": "27102",
