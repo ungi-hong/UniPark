@@ -16468,5 +16468,20 @@
     "discount_conditions": "障害がある方は障害者手帳などを提示することにより無料。清水町民は免許証など町民であると確認できるものの提示により無料。利用時間は8時30分から16時30分まで(入庫は16時まで)。",
     "source_url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00054.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "08309-001",
+    "municipality_code": "08309",
+    "municipality": "大洗町",
+    "name": "大洗サンビーチ駐車場(大洗町営駐車場)",
+    "address": "茨城県東茨城郡大洗町大貫町64番地先",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "普通車1,000円、中型車1,300円、大型車3,000円、二輪車400円(土日祝日・特定期間(ゴールデンウィーク、海水浴場開設期間)の午前7時~午後3時、1日1回入場ごと)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "障害者手帳等の提示により無料。入場の際に身分証明書等の提示が必要。町内在住者も免許証等の提示により無料。対象は大洗第一・第二サンビーチ駐車場及び大洗海浜公園内駐車場。",
+    "source_url": "https://www.oarai-info.jp/news/postid_3724/",
+    "verified_at": "2026-08-31"
   }
 ]
