@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1098
+// 件数: 1105
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24981,6 +24981,171 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車1回200円、バス等1回1,000円\n障害者割引: 無料\n総台数: 50台",
     "sourceUrl": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00054.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08220-001",
+    "name": "つくば駅前広場駐車場",
+    "address": "茨城県つくば市吾妻一丁目8番地7",
+    "latitude": 36.082317,
+    "longitude": 140.112625,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08220",
+    "cityName": "つくば市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "つくば市に住所を有する方で、心身に障害のある方(身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方)が自動車を運転する場合又はその家族が運転する自動車に同乗する場合が対象。事前に建設部公園・施設課都市施設係へ駐車料金減額申請を行い「特別駐車カード」の交付を受ける必要がある。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入庫後20分まで無料、20分以降10分ごとに100円(最大料金設定なし)\n障害者割引: 半額\n総台数: 37台",
+    "sourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/kensetsubukoen_shisetsuka/gyomuannai/4/1/1017012.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08220-002",
+    "name": "研究学園駅北口広場駐車場",
+    "address": "茨城県つくば市研究学園五丁目111番地",
+    "latitude": 36.084579,
+    "longitude": 140.083054,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08220",
+    "cityName": "つくば市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "つくば市に住所を有する方で、心身に障害のある方(身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方)が自動車を運転する場合又はその家族が運転する自動車に同乗する場合が対象。事前に建設部公園・施設課都市施設係へ駐車料金減額申請を行い「特別駐車カード」の交付を受ける必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後20分まで無料、20分以降10分ごとに100円(最大料金設定なし)\n障害者割引: 半額\n総台数: 18台",
+    "sourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/kensetsubukoen_shisetsuka/gyomuannai/4/1/1017012.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08220-003",
+    "name": "みどりの駅西口広場駐車場",
+    "address": "茨城県つくば市みどりの一丁目102番地",
+    "latitude": 36.028309,
+    "longitude": 140.05397,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08220",
+    "cityName": "つくば市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "つくば市に住所を有する方で、心身に障害のある方(身体障害者手帳・療育手帳・精神障害者保健福祉手帳の交付を受けている方)が自動車を運転する場合又はその家族が運転する自動車に同乗する場合が対象。事前に建設部公園・施設課都市施設係へ駐車料金減額申請を行い「特別駐車カード」の交付を受ける必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後20分まで無料、20分以降10分ごとに100円(最大料金設定なし)\n障害者割引: 半額\n総台数: 7台",
+    "sourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/kensetsubukoen_shisetsuka/gyomuannai/4/1/1017012.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08220-004",
+    "name": "市営筑波山第1駐車場",
+    "address": "茨城県つくば市沼田1698-1",
+    "latitude": 36.21204,
+    "longitude": 140.089569,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08220",
+    "cityName": "つくば市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。駐車料金が2分の1に減額される。経済部観光推進課(つくば市研究学園1丁目1番地1)へ申請書と手帳の写しを提出(郵送・FAX可)、承認後の受理書を持参して利用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 普通車500円、大型車2,000円(利用可能時間5:00~20:00、精算機での前払い制)\n障害者割引: 半額\n総台数: 215台",
+    "sourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/keizaibukankosuishinka/gyomuannai/3/3/1001424.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08220-005",
+    "name": "市営筑波山第3駐車場",
+    "address": "茨城県つくば市筑波1108",
+    "latitude": 36.217861,
+    "longitude": 140.100342,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08220",
+    "cityName": "つくば市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。駐車料金が2分の1に減額される。経済部観光推進課(つくば市研究学園1丁目1番地1)へ申請書と手帳の写しを提出(郵送・FAX可)、承認後の受理書を持参して利用。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 普通車500円、大型車2,000円(利用可能時間5:00~20:00、精算機での前払い制)\n障害者割引: 半額\n総台数: 148台",
+    "sourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/keizaibukankosuishinka/gyomuannai/3/3/1001424.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08220-006",
+    "name": "市営筑波山第4駐車場",
+    "address": "茨城県つくば市筑波1232",
+    "latitude": 36.217861,
+    "longitude": 140.100342,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08220",
+    "cityName": "つくば市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。駐車料金が2分の1に減額される。経済部観光推進課(つくば市研究学園1丁目1番地1)へ申請書と手帳の写しを提出(郵送・FAX可)、承認後の受理書を持参して利用。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車500円(利用可能時間5:00~20:00、精算機での前払い制)\n障害者割引: 半額\n総台数: 97台",
+    "sourceUrl": "https://www.city.tsukuba.lg.jp/soshikikarasagasu/keizaibukankosuishinka/gyomuannai/3/3/1001424.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "08221-001",
+    "name": "国営ひたち海浜公園 西駐車場・南駐車場",
+    "address": "茨城県ひたちなか市馬渡字大沼605-4",
+    "latitude": 36.398067,
+    "longitude": 140.572067,
+    "prefectureCode": "08",
+    "prefectureName": "茨城県",
+    "cityCode": "08221",
+    "cityName": "ひたちなか市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "運転者又は同乗者が身体障害者手帳、療育手帳、精神障害者保健福祉手帳(スマートフォンアプリ「ミライロID」の画面提示でも可)を提示した場合、普通車・二輪車の駐車料金が無料。対象は西駐車場・南駐車場のみ(海浜口駐車場・臨時駐車場は対象外)。同乗者11人以上の普通車の場合は同乗の障がい者2名分の手帳提示が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車600円、大型車1,800円、二輪車300円\n障害者割引: 無料\n総台数: 4000台",
+    "sourceUrl": "https://www.hitachikaihin.jp/guide/ticket.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
