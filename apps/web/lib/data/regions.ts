@@ -1035,6 +1035,16 @@ const cities: City[] = [
     "prefectureCode": "23"
   },
   {
+    "code": "26102",
+    "name": "京都市上京区",
+    "prefectureCode": "26"
+  },
+  {
+    "code": "26103",
+    "name": "京都市左京区",
+    "prefectureCode": "26"
+  },
+  {
     "code": "26105",
     "name": "京都市東山区",
     "prefectureCode": "26"
@@ -1542,6 +1552,11 @@ const cities: City[] = [
   {
     "code": "34211",
     "name": "大竹市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34212",
+    "name": "東広島市",
     "prefectureCode": "34"
   },
   {

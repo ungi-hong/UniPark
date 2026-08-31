@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1159
+// 件数: 1165
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26361,6 +26361,137 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 昼間(8:00~20:00)60分350円(最大600円)、夜間(20:00~8:00)60分150円(最大600円)\n障害者割引: 無料\n総台数: 20台",
     "sourceUrl": "https://www.city.muko.kyoto.jp/soshiki/8/3000.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26102-001",
+    "name": "広小路駐車場(京都府立医科大学附属病院)",
+    "address": "京都府京都市上京区河原町通広小路上る梶井町465",
+    "latitude": 35.029552,
+    "longitude": 135.756714,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26102",
+    "cityName": "京都市上京区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(いずれもミライロID可)等の福祉割引対象者は当日無料(入庫後最大17時間まで)。平日のみ適用、患者本人1日1台限定、付き添いは対象外。1階福祉割引窓口(2番)へ必要書類を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 受診等をされた方は当日600円(入庫後最大17時間まで)、一般利用は入庫1時間30分まで600円・以降30分毎200円加算\n障害者割引: 無料\n総台数: 89台",
+    "sourceUrl": "https://www.h.kpu-m.ac.jp/doc/aboutus/access.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26102-002",
+    "name": "河原町駐車場(京都府立医科大学附属病院)",
+    "address": "京都府京都市上京区河原町通広小路上る梶井町465",
+    "latitude": 35.029552,
+    "longitude": 135.756714,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26102",
+    "cityName": "京都市上京区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳(いずれもミライロID可)等の福祉割引対象者は当日無料(入庫後最大17時間まで)。平日のみ適用、患者本人1日1台限定、付き添いは対象外。1階福祉割引窓口(2番)へ必要書類を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 受診等をされた方は当日600円(入庫後最大17時間まで)、一般利用は入庫1時間30分まで600円・以降30分毎200円加算\n障害者割引: 無料\n総台数: 46台",
+    "sourceUrl": "https://www.h.kpu-m.ac.jp/doc/aboutus/access.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26103-001",
+    "name": "京都府立植物園駐車場",
+    "address": "京都府京都市左京区下鴨半木町(正門東側)",
+    "latitude": 35.048355,
+    "longitude": 135.764236,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26103",
+    "cityName": "京都市左京区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、戦傷病者手帳、被爆者健康手帳のいずれか(ミライロID可)を提示すると入園料・温室観覧料とともに駐車料が無料。介護者も無料。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 乗用車300円/1時間、1日最大1,200円(バス2,550円)\n障害者割引: 無料\n総台数: 150台",
+    "sourceUrl": "https://www.pref.kyoto.jp/plant/usageguidance.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26103-002",
+    "name": "トラストパーク京都学・歴彩館(京都府立京都学・歴彩館)",
+    "address": "京都府京都市左京区下鴨半木町1-29",
+    "latitude": 35.050365,
+    "longitude": 135.75975,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26103",
+    "cityName": "京都市左京区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳(いずれもミライロID可)を所持する本人が対象。1階総合案内にてミライロID・駐車券を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分300円(8:00~22:00)、60分100円(22:00~8:00)、最大料金 平日900円・土日祝1,200円\n障害者割引: 無料\n総台数: 31台",
+    "sourceUrl": "https://mirairo-id.jp/place/rekisaikan/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "26103-003",
+    "name": "みやこめっせ駐車場(京都市勧業館)",
+    "address": "京都府京都市左京区岡崎成勝寺町9番地の1",
+    "latitude": 35.013077,
+    "longitude": 135.781433,
+    "prefectureCode": "26",
+    "prefectureName": "京都府",
+    "cityCode": "26103",
+    "cityName": "京都市左京区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "fixed",
+    "discount": {
+      "type": "fixed",
+      "value": 200,
+      "conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、被爆者健康手帳、戦傷病者手帳、京都市福祉乗車証、ミライロIDのいずれかを1階東側警備室で駐車券とともに提示すると、当日の駐車場利用料金から200円を割引するチケットが交付される。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初1時間520円、以降30分毎200円(平日最大1,500円、土日祝最大料金なし)\n障害者割引: 200円割引\n総台数: 163台",
+    "sourceUrl": "https://www.miyakomesse.jp/access/parking/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "34212-001",
+    "name": "東広島芸術文化ホールくらら 障がい者用駐車場",
+    "address": "広島県東広島市西条栄町7番19号",
+    "latitude": 34.428345,
+    "longitude": 132.742554,
+    "prefectureCode": "34",
+    "prefectureName": "広島県",
+    "cityCode": "34212",
+    "cityName": "東広島市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "ホール敷地内の障がい者用駐車場(3台)は利用料金無料。利用希望者はくらら総合案内・事務室(082-426-5900、9:00~19:00)へ事前連絡が必要で、利用日の1か月前から前日まで予約可能・先着順。手帳種別の限定記載は原文になし。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 3台",
+    "sourceUrl": "https://kurara-hall.jp/access/",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
