@@ -17608,5 +17608,20 @@
     "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料。駐車場管理室係員に駐車券と手帳を提示(スマートフォンアプリ「ミライロID」の提示も可)。",
     "source_url": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "04207-001",
+    "municipality_code": "04207",
+    "municipality": "名取市",
+    "name": "仙台空港駐車場(1A・1B・2)",
+    "address": "宮城県名取市下増田字南原無番地",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "入場から30分無料(1日1回まで)、1時間まで1B・2は200円/1Aは300円(通常期)、以降1時間毎同額、24時間毎最大1B・2は800円/1Aは1,200円(通常期)",
+    "discount_rate": "半額",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている者、または自治体が発行するパーキングパーミット利用証の交付を受けている者が乗車する自動車(営業用車両及び大型自動車を除く)が対象。手帳原本またはミライロID等の電子手帳・パーキングパーミット利用証を管理者指定の場所(1階インフォメーション等)で提示・車両ナンバー登録することで、時間貸料金から半額の割引が適用される(仙台空港駐車場管理規程第11条)。対象者は場内の「ゆずりあいスペース」も利用可(同規程第13条)。予約制の1Rは変動料金制のため取扱いが異なる場合があり詳細は要確認。",
+    "source_url": "https://www.sendai-airport.co.jp/company/assets/sendai_rule.pdf",
+    "verified_at": "2026-08-31"
   }
 ]
