@@ -16453,5 +16453,20 @@
     "discount_conditions": "車椅子利用者が対象。水戸芸術館塔東側の地上駐車スペースを無料で利用可能。利用には事前に事務局(TEL.029-227-8111)への電話連絡が必要。",
     "source_url": "https://www.arttowermito.or.jp/access/",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "22341-001",
+    "municipality_code": "22341",
+    "municipality": "清水町",
+    "name": "柿田川公園町営駐車場",
+    "address": "静岡県駿東郡清水町伏見71番地の7",
+    "capacity": 50,
+    "capacity_accessible": null,
+    "normal_rate": "普通車1回200円、バス等1回1,000円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "障害がある方は障害者手帳などを提示することにより無料。清水町民は免許証など町民であると確認できるものの提示により無料。利用時間は8時30分から16時30分まで(入庫は16時まで)。",
+    "source_url": "https://www.town.shimizu.shizuoka.jp/toshi/toshi00054.html",
+    "verified_at": "2026-08-31"
   }
 ]
