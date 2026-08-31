@@ -981,6 +981,11 @@ const cities: City[] = [
     "prefectureCode": "21"
   },
   {
+    "code": "21212",
+    "name": "土岐市",
+    "prefectureCode": "21"
+  },
+  {
     "code": "22203",
     "name": "沼津市",
     "prefectureCode": "22"
