@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1189
+// 件数: 1205
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27017,6 +27017,351 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 30分無料、以降30分ごとに200円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 12台",
     "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21201-001",
+    "name": "金公園地下駐車場",
+    "address": "岐阜県岐阜市金町5-7",
+    "latitude": 35.415581,
+    "longitude": 136.757523,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21201",
+    "cityName": "岐阜市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示。岐阜市が障害者割引の対象として公表している市営等駐車場のひとつ。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1時間30分150円〜\n障害者割引: 5割引\n総台数: 145台",
+    "sourceUrl": "https://www.city.gifu.lg.jp/kenko/syougaisyafukushi/1004706/1004728.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21201-002",
+    "name": "岐阜市駅西駐車場(昭和コンクリート駅西駐車場)",
+    "address": "岐阜県岐阜市橋本町2-16",
+    "latitude": 35.410236,
+    "longitude": 136.754059,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21201",
+    "cityName": "岐阜市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 5割引\n総台数: 56台",
+    "sourceUrl": "https://www.city.gifu.lg.jp/kenko/syougaisyafukushi/1004706/1004728.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21201-003",
+    "name": "岐阜シティ・タワー43地下駐車場",
+    "address": "岐阜県岐阜市橋本町2-52",
+    "latitude": 35.41074,
+    "longitude": 136.754135,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21201",
+    "cityName": "岐阜市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 5割引\n総台数: 679台",
+    "sourceUrl": "https://www.city.gifu.lg.jp/kenko/syougaisyafukushi/1004706/1004728.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21201-004",
+    "name": "みんなの森ぎふメディアコスモス付属駐車場",
+    "address": "岐阜県岐阜市司町40-5",
+    "latitude": 35.426994,
+    "longitude": 136.760193,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21201",
+    "cityName": "岐阜市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示。施設利用者は2時間無料、超過分および施設非利用者は5割引。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 施設利用者は2時間無料、それ以外は5割引\n総台数: 300台",
+    "sourceUrl": "https://www.city.gifu.lg.jp/kenko/syougaisyafukushi/1004706/1004728.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21201-005",
+    "name": "岐阜公園来園者駐車場(大宮駐車場)",
+    "address": "岐阜県岐阜市大宮町1-39-1",
+    "latitude": 35.435524,
+    "longitude": 136.77356,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21201",
+    "cityName": "岐阜市",
+    "accessibleSpaceTotal": 12,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳のいずれかを提示で駐車料金無料。障がい者等優先区画12台あり。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 12
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 50台",
+    "sourceUrl": "https://www.city.gifu.lg.jp/kenko/syougaisyafukushi/1004706/1004728.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21201-006",
+    "name": "岐阜市新庁舎立体駐車場",
+    "address": "岐阜県岐阜市司町40-1",
+    "latitude": 35.426994,
+    "longitude": 136.760193,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21201",
+    "cityName": "岐阜市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "岐阜市庁舎駐車場条例施行規則に基づく。庁舎利用者の2時間無料に加え、超過分の使用料を5割減額。"
+    },
+    "accessibleSpaces": [],
+    "notes": "障害者割引: 庁舎利用の2時間無料を超えた分をさらに5割減額\n総台数: 432台",
+    "sourceUrl": "https://www.city.gifu.lg.jp/kenko/syougaisyafukushi/1004706/1004728.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-001",
+    "name": "高山市営 不動橋駐車場",
+    "address": "岐阜県高山市七日町2-135-1",
+    "latitude": 36.148743,
+    "longitude": 137.256012,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 62台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-002",
+    "name": "高山市営 天満駐車場",
+    "address": "岐阜県高山市名田町2-3",
+    "latitude": 36.134426,
+    "longitude": 137.255829,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 92台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-003",
+    "name": "高山市営 かじ橋駐車場",
+    "address": "岐阜県高山市本町3-9",
+    "latitude": 36.144077,
+    "longitude": 137.257645,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 52台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-004",
+    "name": "高山市営 空町駐車場",
+    "address": "岐阜県高山市馬場町2-115",
+    "latitude": 36.143284,
+    "longitude": 137.262573,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 128台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-005",
+    "name": "高山市営 花岡駐車場",
+    "address": "岐阜県高山市花岡町2-14-4",
+    "latitude": 36.146042,
+    "longitude": 137.251968,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 155台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-006",
+    "name": "高山市営 えび坂駐車場",
+    "address": "岐阜県高山市馬場町2-1-1",
+    "latitude": 36.143059,
+    "longitude": 137.261673,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 55台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-007",
+    "name": "高山市営 弥生橋駐車場",
+    "address": "岐阜県高山市大新町1-2",
+    "latitude": 36.146629,
+    "longitude": 137.258133,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 21台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-008",
+    "name": "高山市営 神明駐車場",
+    "address": "岐阜県高山市神明町4-18",
+    "latitude": 36.13953,
+    "longitude": 137.260468,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 52台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-009",
+    "name": "高山市営 広小路駐車場",
+    "address": "岐阜県高山市名田町5-100",
+    "latitude": 36.141037,
+    "longitude": 137.25441,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 33台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21203-010",
+    "name": "高山市営 高山駅西駐車場",
+    "address": "岐阜県高山市昭和町1-301",
+    "latitude": 36.140686,
+    "longitude": 137.250137,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21203",
+    "cityName": "高山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・精神障害者保健福祉手帳・療育手帳の所持者、または車椅子利用者が対象。手帳の提示のみで可(事前申請不要)。高山市営駐車場10か所すべてが対象。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 130台",
+    "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
