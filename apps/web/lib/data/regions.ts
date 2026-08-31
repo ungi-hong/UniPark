@@ -14,6 +14,10 @@ export const prefectures: Prefecture[] = [
     "name": "北海道"
   },
   {
+    "code": "04",
+    "name": "宮城県"
+  },
+  {
     "code": "08",
     "name": "茨城県"
   },
@@ -143,6 +147,26 @@ const cities: City[] = [
     "code": "01578",
     "name": "白老町",
     "prefectureCode": "01"
+  },
+  {
+    "code": "04101",
+    "name": "仙台市青葉区",
+    "prefectureCode": "04"
+  },
+  {
+    "code": "04102",
+    "name": "仙台市宮城野区",
+    "prefectureCode": "04"
+  },
+  {
+    "code": "04323",
+    "name": "柴田町",
+    "prefectureCode": "04"
+  },
+  {
+    "code": "04324",
+    "name": "川崎町",
+    "prefectureCode": "04"
   },
   {
     "code": "08201",
