@@ -17743,5 +17743,20 @@
     "discount_conditions": "身体または精神に障がいがあり歩行が困難な方等が対象。一時利用の駐車場については減免の規定なし。市の例規に基づく定期利用者向けの減免。",
     "source_url": "https://www.city.chikuma.lg.jp/material/files/group/4/toguraekichushajoushougaishanowaribiki.pdf",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "21210-001",
+    "municipality_code": "21210",
+    "municipality": "恵那市",
+    "name": "恵那駅西駐車場",
+    "address": "岐阜県恵那市大井町296番地10",
+    "capacity": 190,
+    "capacity_accessible": null,
+    "normal_rate": "入場後1時間30分まで無料、1時間30分を超える場合30分ごとに50円、入庫から24時間まで1,000円(以降24時間ごとの上限も1,000円)",
+    "discount_rate": "5割減免",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、精神障害者保健福祉手帳または療育手帳の交付を受けた方が乗車(運転または同乗)して駐車する場合が対象。減免を受けるには手帳の提示が必要。学生車両・バスは対象外。",
+    "source_url": "https://www.city.ena.lg.jp/soshikiichiran/kensetsubu/toshijutakuka/1/4/1/1868.html",
+    "verified_at": "2026-08-31"
   }
 ]
