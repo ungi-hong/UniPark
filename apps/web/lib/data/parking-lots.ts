@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1209
+// 件数: 1213
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27450,6 +27450,90 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 最初の1時間まで30分ごとに160円、以降30分ごとに150円(総合保健センター利用者は用務に要した時間まで無料、中央図書館利用者は2時間まで無料)\n障害者割引: 5割引\n総台数: 400台",
     "sourceUrl": "https://www.city.takasaki.gunma.jp/page/3780.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21202-001",
+    "name": "東外側駐車場",
+    "address": "岐阜県大垣市東外側町2丁目21番地",
+    "latitude": 35.364101,
+    "longitude": 136.615204,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21202",
+    "cityName": "大垣市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "大垣市内に住所を有し、身体障害者手帳または戦傷病者手帳の交付を受けている方が対象。優待が受けられる市営駐車場は当駐車場と市営清水駐車場の2か所。交通政策課駐車場グループ(大垣市丸の内2丁目29番地、0584-47-7397)へ申請し、優待券は申請日に即日交付。申請には自動車検査証(写し)が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに100円、24時間以内の上限900円(4時間30分を超える場合)\n障害者割引: 優待券により無料\n総台数: 200台",
+    "sourceUrl": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000062/62628/R0801syougaifukushi.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21202-002",
+    "name": "清水駐車場",
+    "address": "岐阜県大垣市清水町71番地",
+    "latitude": 35.361794,
+    "longitude": 136.620895,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21202",
+    "cityName": "大垣市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "大垣市内に住所を有し、身体障害者手帳または戦傷病者手帳の交付を受けている方が対象。優待が受けられる市営駐車場は当駐車場と市営東外側駐車場の2か所。交通政策課駐車場グループ(大垣市丸の内2丁目29番地、0584-47-7397)へ申請し、優待券は申請日に即日交付。申請には自動車検査証(写し)が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分ごとに100円、24時間以内の上限600円(3時間を超え24時間以内)\n障害者割引: 優待券により無料\n総台数: 70台",
+    "sourceUrl": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000062/62628/R0801syougaifukushi.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21202-003",
+    "name": "スイトピアセンター駐車場",
+    "address": "岐阜県大垣市室本町5丁目51番地",
+    "latitude": 35.364246,
+    "longitude": 136.60788,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21202",
+    "cityName": "大垣市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳の所持者または特定医療費(指定難病)受給者が対象。福祉駐車券は1枚で10回まで使用可能、使用後は再度申請が必要。申請窓口はスイトピアセンター施設管理課(大垣市室本町5丁目51番地、0584-74-6050)。申請には自動車検査証・運転される方の運転免許証が必要。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後2時間まで無料、以後(当日開館時間内)200円\n障害者割引: 福祉駐車券により無料\n総台数: 475台",
+    "sourceUrl": "https://www.city.ogaki.lg.jp/cmsfiles/contents/0000062/62628/R0801syougaifukushi.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "21204-001",
+    "name": "多治見市産業文化センター立体駐車場",
+    "address": "岐阜県多治見市新町1丁目23番地",
+    "latitude": 35.333942,
+    "longitude": 137.129227,
+    "prefectureCode": "21",
+    "prefectureName": "岐阜県",
+    "cityCode": "21204",
+    "cityName": "多治見市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳をお持ちの方で多治見市在住の方が対象(多治見市条例第33条)。1階事務室へお申し出のこと。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間まで無料、以降30分ごとに100円\n障害者割引: 無料\n総台数: 36台",
+    "sourceUrl": "http://www.c-5.ne.jp/~sanbun/floor/f0/index.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];

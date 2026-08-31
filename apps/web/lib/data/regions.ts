@@ -990,8 +990,18 @@ const cities: City[] = [
     "prefectureCode": "21"
   },
   {
+    "code": "21202",
+    "name": "大垣市",
+    "prefectureCode": "21"
+  },
+  {
     "code": "21203",
     "name": "高山市",
+    "prefectureCode": "21"
+  },
+  {
+    "code": "21204",
+    "name": "多治見市",
     "prefectureCode": "21"
   },
   {
