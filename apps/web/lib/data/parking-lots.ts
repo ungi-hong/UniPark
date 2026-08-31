@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1213
+// 件数: 1219
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27534,6 +27534,136 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 最初の1時間まで無料、以降30分ごとに100円\n障害者割引: 無料\n総台数: 36台",
     "sourceUrl": "http://www.c-5.ne.jp/~sanbun/floor/f0/index.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10205-001",
+    "name": "太田駅北口駅前広場駐車場",
+    "address": "群馬県太田市東本町16-1",
+    "latitude": 36.294262,
+    "longitude": 139.380493,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10205",
+    "cityName": "太田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。事前に「駐車場使用料減免申請書」を地域モビリティ戦略課に提出し承認を受ける必要がある(該当手帳と認め印が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分まで無料、以後1時間ごとに100円\n障害者割引: 無料\n総台数: 15台",
+    "sourceUrl": "https://www.city.ota.gunma.jp/page/2280.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10205-002",
+    "name": "太田駅南口駅前広場駐車場",
+    "address": "群馬県太田市飯田町1418",
+    "latitude": 36.289005,
+    "longitude": 139.379578,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10205",
+    "cityName": "太田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。事前に「駐車場使用料減免申請書」を地域モビリティ戦略課に提出し承認を受ける必要がある(該当手帳と認め印が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫後30分まで無料、以後1時間ごとに100円\n障害者割引: 無料\n総台数: 25台",
+    "sourceUrl": "https://www.city.ota.gunma.jp/page/2280.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10205-003",
+    "name": "飯田町駐車場",
+    "address": "群馬県太田市飯田町894-1",
+    "latitude": 36.288673,
+    "longitude": 139.378662,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10205",
+    "cityName": "太田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。事前に「駐車場使用料減免申請書」を地域モビリティ戦略課に提出し承認を受ける必要がある(該当手帳と認め印が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 4時間まで1時間ごとに100円、超過時12時間ごとに500円\n障害者割引: 無料\n総台数: 46台",
+    "sourceUrl": "https://www.city.ota.gunma.jp/page/2280.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10205-004",
+    "name": "バスターミナルおおた駐車場",
+    "address": "群馬県太田市飯塚町169",
+    "latitude": 36.276871,
+    "longitude": 139.381119,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10205",
+    "cityName": "太田市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。事前に「駐車場使用料減免申請書」を地域モビリティ戦略課に提出し承認を受ける必要がある(該当手帳と認め印が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 0～1時間無料、1～12時間200円、12～24時間300円、以降12時間ごとに100円\n障害者割引: 無料\n総台数: 459台",
+    "sourceUrl": "https://www.city.ota.gunma.jp/page/2274.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10206-001",
+    "name": "下之町（立体、平面）駐車場",
+    "address": "群馬県沼田市下之町1018",
+    "latitude": 36.643471,
+    "longitude": 139.043488,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10206",
+    "cityName": "沼田市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者福祉手帳の交付を受けている人が対象。手帳の提示により施設の利用時間すべてが無料(駐車券の携帯が必要)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 最初の2時間まで無料、2～11時間は1時間ごとに100円、11～24時間は1,000円\n障害者割引: 無料\n総台数: 429台",
+    "sourceUrl": "https://www.city.numata.gunma.jp/shisetsu/shiyakusho/1009126.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10207-001",
+    "name": "館林駅西口駅前広場駐車場",
+    "address": "群馬県館林市栄町2486番外",
+    "latitude": 36.247555,
+    "longitude": 139.523911,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10207",
+    "cityName": "館林市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。館林市駐車場条例施行規則第5条に基づき、事前に「駐車場使用料免除申請書」を道路河川課に提出し承認を受ける必要がある(該当手帳が必要)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分以内無料、以後1時間ごとに100円、12～24時間以内1,200円\n障害者割引: 無料\n総台数: 32台",
+    "sourceUrl": "https://www.city.tatebayashi.gunma.jp/s066/kurashi/080/20200107232000.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
