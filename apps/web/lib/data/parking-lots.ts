@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1222
+// 件数: 1232
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27729,6 +27729,220 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 春・秋の開花シーズンのみ有料(普通車500円、二輪100円、マイクロバス等29人以下1,500円、大型バス30人以上2,000円)。それ以外の期間・「群馬県民の日」(10月28日)・「桜山まつり」(12月1日)は無料\n障害者割引: 無料\n総台数: 501台",
     "sourceUrl": "https://www.city.fujioka.gunma.jp/soshiki/onisisogoshisho/nigiwaikanko/1/sakurayamakouenakusesu.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33104-001",
+    "name": "南区役所駐車場",
+    "address": "岡山県岡山市南区浦安南町495-5",
+    "latitude": 34.599648,
+    "longitude": 133.919464,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33104",
+    "cityName": "岡山市南区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳1級・2級、戦傷病者手帳特別項症・第一項症・第二項症を所持し自ら運転する場合、または身体障害者手帳1・2級、戦傷病者手帳特別項症・第一項症・第二項症、療育手帳A、精神障害者保健福祉手帳1級所持者を同乗させて運転する場合等が対象。障害者手帳アプリ「ミライロID」の提示でも適用。精算手続き前に出口精算機表示の問い合わせ先（南区役所総務・地域振興課 086-902-3500）に連絡し減免手続きを行う。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車:最初の2時間無料、以降1時間100円（大型車:最初の2時間無料、以降1日520円）\n障害者割引: 駐車料金の2分の1減額\n総台数: 60台",
+    "sourceUrl": "https://www.city.okayama.jp/kurashi/0000007815.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-001",
+    "name": "倉敷市営駅前駐車場",
+    "address": "岡山県倉敷市阿知1丁目7番2-108号",
+    "latitude": 34.602024,
+    "longitude": 133.767563,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(7時～23時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 231台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-002",
+    "name": "倉敷市営駅東駐車場",
+    "address": "岡山県倉敷市阿知1丁目6番15号",
+    "latitude": 34.602203,
+    "longitude": 133.767441,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(7時～23時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 141台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-003",
+    "name": "倉敷市営あちてらす倉敷駐車場",
+    "address": "岡山県倉敷市阿知3丁目13-1",
+    "latitude": 34.598946,
+    "longitude": 133.768036,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(7時～23時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 198台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-004",
+    "name": "倉敷市中央駐車場",
+    "address": "岡山県倉敷市中央2丁目6番1号",
+    "latitude": 34.594997,
+    "longitude": 133.768982,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(7時～23時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 175台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-005",
+    "name": "倉敷市営美観地区南駐車場",
+    "address": "岡山県倉敷市中央1丁目18番1号",
+    "latitude": 34.593105,
+    "longitude": 133.770554,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(7時～23時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 177台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-006",
+    "name": "倉敷市営美観地区東駐車場",
+    "address": "岡山県倉敷市本町17番1号",
+    "latitude": 34.5956,
+    "longitude": 133.776443,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(7時～22時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 148台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-007",
+    "name": "水島東栄町駐車場",
+    "address": "岡山県倉敷市水島東栄町7番1号",
+    "latitude": 34.53738,
+    "longitude": 133.743469,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。出庫精算可能時間(9時～17時)内に、精算前に駐車場管理事務所へ駐車券と手帳等を提示し減額を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分毎100円\n障害者割引: 普通駐車料金の50%減免\n総台数: 89台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33202-008",
+    "name": "児島市民交流センター駐車場（第1～3駐車場）",
+    "address": "岡山県倉敷市児島味野2-2-38",
+    "latitude": 34.467892,
+    "longitude": 133.802719,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33202",
+    "cityName": "倉敷市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障がい者手帳1級～2級、療育手帳A、精神障がい者保健福祉手帳1級所持者が運転または乗車する自動車が対象。障がい者手帳アプリの提示でも適用。精算前に駐車場管理事務所へ駐車券と手帳等を提示し免除を受ける。精算後の払い戻しは不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 60分毎100円、24時間最大500円（施設利用者は最初の2時間無料）\n障害者割引: 入庫から24時間の駐車料金を全額免除\n総台数: 228台",
+    "sourceUrl": "https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013735/1014448.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "33205-001",
+    "name": "笠岡駅前広場駐車場（身体障害者等駐車区画）",
+    "address": "岡山県笠岡市中央町1-1",
+    "latitude": 34.507065,
+    "longitude": 133.507462,
+    "prefectureCode": "33",
+    "prefectureName": "岡山県",
+    "cityCode": "33205",
+    "cityName": "笠岡市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "「ほっとパーキングおかやま」駐車場利用証制度の登録者（身体・知的・精神障害や高齢・難病等により歩行が困難な方、一時的に歩行困難な方等）を対象に、身体障害者等駐車区画（1区画）を令和5年9月1日から終日無料開放。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 最初の30分無料、以降30分毎100円\n障害者割引: 終日無料\n総台数: 18台",
+    "sourceUrl": "https://www.city.kasaoka.okayama.jp/soshiki/26/53069.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];

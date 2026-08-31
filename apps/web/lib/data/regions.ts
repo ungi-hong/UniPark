@@ -78,6 +78,10 @@ export const prefectures: Prefecture[] = [
     "name": "兵庫県"
   },
   {
+    "code": "33",
+    "name": "岡山県"
+  },
+  {
     "code": "34",
     "name": "広島県"
   },
@@ -1657,6 +1661,21 @@ const cities: City[] = [
     "code": "28382",
     "name": "播磨町",
     "prefectureCode": "28"
+  },
+  {
+    "code": "33104",
+    "name": "岡山市南区",
+    "prefectureCode": "33"
+  },
+  {
+    "code": "33202",
+    "name": "倉敷市",
+    "prefectureCode": "33"
+  },
+  {
+    "code": "33205",
+    "name": "笠岡市",
+    "prefectureCode": "33"
   },
   {
     "code": "34101",
