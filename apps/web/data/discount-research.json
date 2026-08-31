@@ -17698,5 +17698,50 @@
     "discount_conditions": "城山公園への来園者のうち障害者手帳をお持ちの方(市内在住の子育て世帯も対象)が、駐車券を持参のうえ割引認証箇所(動物園売店、テニスコート管理事務所、公園管理事務所)で障害者手帳を提示し駐車券の割引認証を受けることで、2時間まで無料となる。認証を受けられる時間は午前8時~午後5時。ながのこども館・城山テニスコート・城山公民館・県立美術館の利用者も対象。年末年始(12月29日~1月3日)、ゴールデンウィーク、お盆(8月13日~8月16日)等の混雑期は割引対象外。",
     "source_url": "https://www.city.nagano.nagano.jp/n202500/contents/p006193.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "20213-001",
+    "municipality_code": "20213",
+    "municipality": "飯山市",
+    "name": "飯山駅斑尾口駐車場(平面駐車場)",
+    "address": "長野県飯山市大字飯山747番地1",
+    "capacity": 59,
+    "capacity_accessible": null,
+    "normal_rate": "定期使用 1年につき60,000円(月額5,000円相当)",
+    "discount_rate": "定期使用料を月額3,000円に減免",
+    "discount_scope": "partial",
+    "discount_conditions": "障がい者手帳の交付を受けている飯山市民で、自己の運転する車両を定期券利用で駐車する者が対象。市営駐車場定期利用申請書(様式第1号)に加え、減免申請書(様式第5号)、住民票の写し、免許証の写し、障がい者手帳の写しを飯山駅斑尾口駐車場管理事務所へ提出。後日の減免申請による還付は不可。",
+    "source_url": "https://www.city.iiyama.nagano.jp/soshiki/machizukuri/keikaku/oshirase.htm/ekimaehiroba",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "20213-002",
+    "municipality_code": "20213",
+    "municipality": "飯山市",
+    "name": "飯山駅斑尾口駐車場(立体駐車場)",
+    "address": "長野県飯山市大字飯山747番地1",
+    "capacity": 409,
+    "capacity_accessible": 9,
+    "normal_rate": "定期使用 1年につき120,000円(月額10,000円相当)",
+    "discount_rate": "定期使用料を月額5,000円に減免",
+    "discount_scope": "partial",
+    "discount_conditions": "障がい者手帳の交付を受けている飯山市民で、自己の運転する車両を定期券利用で駐車する者が対象。市営駐車場定期利用申請書(様式第1号)に加え、減免申請書(様式第5号)、住民票の写し、免許証の写し、障がい者手帳の写しを飯山駅斑尾口駐車場管理事務所へ提出。後日の減免申請による還付は不可。",
+    "source_url": "https://www.city.iiyama.nagano.jp/soshiki/machizukuri/keikaku/oshirase.htm/ekimaehiroba",
+    "verified_at": "2026-08-31"
+  },
+  {
+    "id": "20218-001",
+    "municipality_code": "20218",
+    "municipality": "千曲市",
+    "name": "戸倉駅前駐車場(千曲市営)",
+    "address": "長野県千曲市戸倉1345-25",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "定期利用 月額6,500円",
+    "discount_rate": "定期利用の使用料を半額(月額3,250円)に減免",
+    "discount_scope": "partial",
+    "discount_conditions": "身体または精神に障がいがあり歩行が困難な方等が対象。一時利用の駐車場については減免の規定なし。市の例規に基づく定期利用者向けの減免。",
+    "source_url": "https://www.city.chikuma.lg.jp/material/files/group/4/toguraekichushajoushougaishanowaribiki.pdf",
+    "verified_at": "2026-08-31"
   }
 ]
