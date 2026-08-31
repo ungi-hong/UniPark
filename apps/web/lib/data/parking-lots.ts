@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1180
+// 件数: 1183
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26822,6 +26822,74 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入庫から20分まで100円、以降20分ごとに100円加算\n障害者割引: 2時間まで無料\n総台数: 433台",
     "sourceUrl": "https://www.city.nagano.nagano.jp/n202500/contents/p006193.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20213-001",
+    "name": "飯山駅斑尾口駐車場(平面駐車場)",
+    "address": "長野県飯山市大字飯山747番地1",
+    "latitude": 36.846912,
+    "longitude": 138.358932,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20213",
+    "cityName": "飯山市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "障がい者手帳の交付を受けている飯山市民で、自己の運転する車両を定期券利用で駐車する者が対象。市営駐車場定期利用申請書(様式第1号)に加え、減免申請書(様式第5号)、住民票の写し、免許証の写し、障がい者手帳の写しを飯山駅斑尾口駐車場管理事務所へ提出。後日の減免申請による還付は不可。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 定期使用 1年につき60,000円(月額5,000円相当)\n障害者割引: 定期使用料を月額3,000円に減免\n総台数: 59台",
+    "sourceUrl": "https://www.city.iiyama.nagano.jp/soshiki/machizukuri/keikaku/oshirase.htm/ekimaehiroba",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20213-002",
+    "name": "飯山駅斑尾口駐車場(立体駐車場)",
+    "address": "長野県飯山市大字飯山747番地1",
+    "latitude": 36.846912,
+    "longitude": 138.358932,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20213",
+    "cityName": "飯山市",
+    "accessibleSpaceTotal": 9,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "conditions": "障がい者手帳の交付を受けている飯山市民で、自己の運転する車両を定期券利用で駐車する者が対象。市営駐車場定期利用申請書(様式第1号)に加え、減免申請書(様式第5号)、住民票の写し、免許証の写し、障がい者手帳の写しを飯山駅斑尾口駐車場管理事務所へ提出。後日の減免申請による還付は不可。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 定期使用 1年につき120,000円(月額10,000円相当)\n障害者割引: 定期使用料を月額5,000円に減免\n総台数: 409台",
+    "sourceUrl": "https://www.city.iiyama.nagano.jp/soshiki/machizukuri/keikaku/oshirase.htm/ekimaehiroba",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "20218-001",
+    "name": "戸倉駅前駐車場(千曲市営)",
+    "address": "長野県千曲市戸倉1345-25",
+    "latitude": 36.496681,
+    "longitude": 138.151077,
+    "prefectureCode": "20",
+    "prefectureName": "長野県",
+    "cityCode": "20218",
+    "cityName": "千曲市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体または精神に障がいがあり歩行が困難な方等が対象。一時利用の駐車場については減免の規定なし。市の例規に基づく定期利用者向けの減免。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 定期利用 月額6,500円\n障害者割引: 定期利用の使用料を半額(月額3,250円)に減免",
+    "sourceUrl": "https://www.city.chikuma.lg.jp/material/files/group/4/toguraekichushajoushougaishanowaribiki.pdf",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
