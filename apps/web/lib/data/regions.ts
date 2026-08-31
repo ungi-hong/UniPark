@@ -42,6 +42,10 @@ export const prefectures: Prefecture[] = [
     "name": "新潟県"
   },
   {
+    "code": "20",
+    "name": "長野県"
+  },
+  {
     "code": "22",
     "name": "静岡県"
   },
@@ -941,6 +945,11 @@ const cities: City[] = [
     "code": "15103",
     "name": "新潟市中央区",
     "prefectureCode": "15"
+  },
+  {
+    "code": "20203",
+    "name": "上田市",
+    "prefectureCode": "20"
   },
   {
     "code": "22203",
