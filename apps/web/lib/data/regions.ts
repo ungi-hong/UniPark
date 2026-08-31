@@ -50,6 +50,10 @@ export const prefectures: Prefecture[] = [
     "name": "兵庫県"
   },
   {
+    "code": "34",
+    "name": "広島県"
+  },
+  {
     "code": "40",
     "name": "福岡県"
   }
@@ -149,6 +153,11 @@ const cities: City[] = [
   {
     "code": "08221",
     "name": "ひたちなか市",
+    "prefectureCode": "08"
+  },
+  {
+    "code": "08309",
+    "name": "大洗町",
     "prefectureCode": "08"
   },
   {
@@ -1455,6 +1464,51 @@ const cities: City[] = [
     "code": "28382",
     "name": "播磨町",
     "prefectureCode": "28"
+  },
+  {
+    "code": "34101",
+    "name": "広島市中区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34103",
+    "name": "広島市南区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34104",
+    "name": "広島市西区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34106",
+    "name": "広島市安佐北区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34108",
+    "name": "広島市佐伯区",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34202",
+    "name": "呉市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34205",
+    "name": "尾道市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34207",
+    "name": "福山市",
+    "prefectureCode": "34"
+  },
+  {
+    "code": "34211",
+    "name": "大竹市",
+    "prefectureCode": "34"
   },
   {
     "code": "40101",
