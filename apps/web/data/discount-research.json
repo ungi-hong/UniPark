@@ -17458,5 +17458,20 @@
     "discount_conditions": "身体障害者手帳、精神障害者保健福祉手帳、療育手帳、被爆者健康手帳、戦傷病者手帳、京都市福祉乗車証、ミライロIDのいずれかを1階東側警備室で駐車券とともに提示すると、当日の駐車場利用料金から200円を割引するチケットが交付される。",
     "source_url": "https://www.miyakomesse.jp/access/parking/",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "34212-001",
+    "municipality_code": "34212",
+    "municipality": "東広島市",
+    "name": "東広島芸術文化ホールくらら 障がい者用駐車場",
+    "address": "広島県東広島市西条栄町7番19号",
+    "capacity": 3,
+    "capacity_accessible": 3,
+    "normal_rate": null,
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "ホール敷地内の障がい者用駐車場(3台)は利用料金無料。利用希望者はくらら総合案内・事務室(082-426-5900、9:00~19:00)へ事前連絡が必要で、利用日の1か月前から前日まで予約可能・先着順。手帳種別の限定記載は原文になし。",
+    "source_url": "https://kurara-hall.jp/access/",
+    "verified_at": "2026-08-31"
   }
 ]
