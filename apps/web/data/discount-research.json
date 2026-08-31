@@ -16320,6 +16320,21 @@
     "verified_at": "2026-08-30"
   },
   {
+    "id": "22215-001",
+    "municipality_code": "22215",
+    "municipality": "御殿場市",
+    "name": "御殿場市営駅南駐車場",
+    "address": "静岡県御殿場市新橋1848-6",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "昼間(8:00~20:00)30分100円(上限1,200円)、夜間(20:00~8:00)60分100円(上限1,000円)",
+    "discount_rate": "障がい者優待回数券(100円区画用)30枚綴り1冊2,030円(3,000円相当・約32%引き)、14枚綴り1冊1,010円(1,400円相当・約28%引き)",
+    "discount_scope": "partial",
+    "discount_conditions": "管理事務室にて障がい者優待回数券を販売。対象となる手帳の種別・等級等はウェブページに明記なし(要問合せ)。購入・詳細は駐車場管理事務室(0550-84-0094)へ。運営は御殿場市が100%出資する御殿場総合サービス株式会社。",
+    "source_url": "https://www.g-sougou.co.jp/ekinanparking/",
+    "verified_at": "2026-08-31"
+  },
+  {
     "id": "22203-001",
     "municipality_code": "22203",
     "municipality": "沼津市",
