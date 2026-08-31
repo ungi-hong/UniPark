@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1088
+// 件数: 1089
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24757,5 +24757,26 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 30分以内無料、30分超〜3時間以内300円、3時間超〜6時間以内600円、6時間超〜12時間以内1,000円、12時間超は12時間ごとに200円加算(上限2,000円)\n障害者割引: 半額",
     "sourceUrl": "https://www.town.shingu.fukuoka.jp/soshiki/toshi_seibi/8/1/1831.html",
     "updatedAt": "2026-08-30T00:00:00Z"
+  },
+  {
+    "id": "22215-001",
+    "name": "御殿場市営駅南駐車場",
+    "address": "静岡県御殿場市新橋1848-6",
+    "latitude": 35.298706,
+    "longitude": 138.932877,
+    "prefectureCode": "22",
+    "prefectureName": "静岡県",
+    "cityCode": "22215",
+    "cityName": "御殿場市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "管理事務室にて障がい者優待回数券を販売。対象となる手帳の種別・等級等はウェブページに明記なし(要問合せ)。購入・詳細は駐車場管理事務室(0550-84-0094)へ。運営は御殿場市が100%出資する御殿場総合サービス株式会社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 昼間(8:00~20:00)30分100円(上限1,200円)、夜間(20:00~8:00)60分100円(上限1,000円)\n障害者割引: 障がい者優待回数券(100円区画用)30枚綴り1冊2,030円(3,000円相当・約32%引き)、14枚綴り1冊1,010円(1,400円相当・約28%引き)",
+    "sourceUrl": "https://www.g-sougou.co.jp/ekinanparking/",
+    "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
