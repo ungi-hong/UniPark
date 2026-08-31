@@ -18283,5 +18283,20 @@
     "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている方が対象。館林市駐車場条例施行規則第5条に基づき、事前に「駐車場使用料免除申請書」を道路河川課に提出し承認を受ける必要がある(該当手帳が必要)。",
     "source_url": "https://www.city.tatebayashi.gunma.jp/s066/kurashi/080/20200107232000.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "10209-001",
+    "municipality_code": "10209",
+    "municipality": "藤岡市",
+    "name": "桜山公園駐車場",
+    "address": "群馬県藤岡市三波川2166-1",
+    "capacity": 501,
+    "capacity_accessible": null,
+    "normal_rate": "春・秋の開花シーズンのみ有料(普通車500円、二輪100円、マイクロバス等29人以下1,500円、大型バス30人以上2,000円)。それ以外の期間・「群馬県民の日」(10月28日)・「桜山まつり」(12月1日)は無料",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "有料期間中、障害者手帳をお持ちの方は桜山公園料金所にて障害者手帳を提示すると駐車料金が無料。",
+    "source_url": "https://www.city.fujioka.gunma.jp/soshiki/onisisogoshisho/nigiwaikanko/1/sakurayamakouenakusesu.html",
+    "verified_at": "2026-08-31"
   }
 ]
