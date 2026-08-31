@@ -17595,6 +17595,21 @@
     "verified_at": "2026-08-31"
   },
   {
+    "id": "04105-001",
+    "municipality_code": "04105",
+    "municipality": "仙台市泉区",
+    "name": "仙台市泉中央駅前駐車場",
+    "address": "宮城県仙台市泉区泉中央一丁目8番地の4",
+    "capacity": 937,
+    "capacity_accessible": null,
+    "normal_rate": "地下階30分100円(最初の30分は無料)、地上階30分100円(24時間最大700円)",
+    "discount_rate": "1時間分無料",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料。駐車場管理室係員に駐車券と手帳を提示(スマートフォンアプリ「ミライロID」の提示も可)。",
+    "source_url": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo.html",
+    "verified_at": "2026-08-31"
+  },
+  {
     "id": "04207-001",
     "municipality_code": "04207",
     "municipality": "名取市",
