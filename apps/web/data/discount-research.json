@@ -16438,5 +16438,20 @@
     "discount_conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている人(同乗する介護者含む)が対象。本人確認できる手帳等(コピー不可)を提示する。ミライロID可。なお小学生以下の子ども同伴者は最初の1時間まで全額免除(障害者割引とは別条件)。",
     "source_url": "https://www.city.numazu.shizuoka.jp/kurashi/access/parking/p-genmen.htm",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "08201-001",
+    "municipality_code": "08201",
+    "municipality": "水戸市",
+    "name": "水戸芸術館 車椅子利用者用駐車スペース(塔東側)",
+    "address": "茨城県水戸市五軒町1-6-8",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "市営五軒町駐車場(地下・立体): 30分まで無料、1時間まで200円、以降30分ごとに100円、1日上限700円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "車椅子利用者が対象。水戸芸術館塔東側の地上駐車スペースを無料で利用可能。利用には事前に事務局(TEL.029-227-8111)への電話連絡が必要。",
+    "source_url": "https://www.arttowermito.or.jp/access/",
+    "verified_at": "2026-08-31"
   }
 ]
