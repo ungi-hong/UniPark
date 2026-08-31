@@ -220,6 +220,21 @@ const cities: City[] = [
     "prefectureCode": "10"
   },
   {
+    "code": "10205",
+    "name": "太田市",
+    "prefectureCode": "10"
+  },
+  {
+    "code": "10206",
+    "name": "沼田市",
+    "prefectureCode": "10"
+  },
+  {
+    "code": "10207",
+    "name": "館林市",
+    "prefectureCode": "10"
+  },
+  {
     "code": "11102",
     "name": "さいたま市北区",
     "prefectureCode": "11"
