@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1205
+// 件数: 1209
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -27362,6 +27362,94 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 8:00〜20:30は30分150円、20:30〜8:00は1時間50円\n障害者割引: 無料\n総台数: 130台",
     "sourceUrl": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000035/1006836.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10202-001",
+    "name": "高松地下駐車場",
+    "address": "群馬県高崎市高松町4",
+    "latitude": 36.323921,
+    "longitude": 139.001572,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10202",
+    "cityName": "高崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかを持つ人が運転または同乗している場合。出庫の際に手帳と駐車券を料金所の係員に提示。指定管理者は一般財団法人高崎市都市整備公社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間まで30分ごとに160円、以降30分ごとに150円(営業時間外の夜間駐車料金1,040円)\n障害者割引: 5割引\n総台数: 150台",
+    "sourceUrl": "https://www.city.takasaki.gunma.jp/page/3780.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10202-002",
+    "name": "城址地下駐車場",
+    "address": "群馬県高崎市高松町35-1",
+    "latitude": 36.321316,
+    "longitude": 139.003265,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10202",
+    "cityName": "高崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかを持つ人が運転または同乗している場合。出庫の際に手帳と駐車券を料金所の係員に提示。指定管理者は一般財団法人高崎市都市整備公社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間まで30分ごとに160円、以降30分ごとに150円(営業時間外の夜間駐車料金1,040円)\n障害者割引: 5割引\n総台数: 192台",
+    "sourceUrl": "https://www.city.takasaki.gunma.jp/page/3780.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10202-003",
+    "name": "城址第二地下駐車場",
+    "address": "群馬県高崎市高松町35-1",
+    "latitude": 36.321316,
+    "longitude": 139.003265,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10202",
+    "cityName": "高崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかを持つ人が運転または同乗している場合。出庫の際に手帳と駐車券を料金所の係員に提示。指定管理者は一般財団法人高崎市都市整備公社。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間まで30分ごとに160円、以降30分ごとに150円(営業時間外の夜間駐車料金1,040円)\n障害者割引: 5割引\n総台数: 391台",
+    "sourceUrl": "https://www.city.takasaki.gunma.jp/page/3780.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "10202-004",
+    "name": "高崎市総合保健センター(中央図書館)立体駐車場",
+    "address": "群馬県高崎市高松町5-28",
+    "latitude": 36.325939,
+    "longitude": 139.00087,
+    "prefectureCode": "10",
+    "prefectureName": "群馬県",
+    "cityCode": "10202",
+    "cityName": "高崎市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳のいずれかを持つ人が運転または同乗している場合。手帳と駐車券を高崎市総合保健センター1階の総合管理室の警備員に提示して認証を受ける。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間まで30分ごとに160円、以降30分ごとに150円(総合保健センター利用者は用務に要した時間まで無料、中央図書館利用者は2時間まで無料)\n障害者割引: 5割引\n総台数: 400台",
+    "sourceUrl": "https://www.city.takasaki.gunma.jp/page/3780.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
