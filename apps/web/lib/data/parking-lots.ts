@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1173
+// 件数: 1174
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26670,6 +26670,28 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 普通車:最初の1時間100円、以後30分ごと50円加算(大型車・マイクロバス:1時間ごと400円)\n障害者割引: 無料\n総台数: 375台",
     "sourceUrl": "https://www.genkifieldsendai.com/access/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "04105-001",
+    "name": "仙台市泉中央駅前駐車場",
+    "address": "宮城県仙台市泉区泉中央一丁目8番地の4",
+    "latitude": 38.31892,
+    "longitude": 140.876221,
+    "prefectureCode": "04",
+    "prefectureName": "宮城県",
+    "cityCode": "04105",
+    "cityName": "仙台市泉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料。駐車場管理室係員に駐車券と手帳を提示(スマートフォンアプリ「ミライロID」の提示も可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 地下階30分100円(最初の30分は無料)、地上階30分100円(24時間最大700円)\n障害者割引: 1時間分無料\n総台数: 937台",
+    "sourceUrl": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
