@@ -863,6 +863,11 @@ const cities: City[] = [
     "prefectureCode": "14"
   },
   {
+    "code": "22203",
+    "name": "沼津市",
+    "prefectureCode": "22"
+  },
+  {
     "code": "22215",
     "name": "御殿場市",
     "prefectureCode": "22"
