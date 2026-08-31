@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1175
+// 件数: 1177
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26714,6 +26714,48 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 入場から30分無料(1日1回まで)、1時間まで1B・2は200円/1Aは300円(通常期)、以降1時間毎同額、24時間毎最大1B・2は800円/1Aは1,200円(通常期)\n障害者割引: 半額",
     "sourceUrl": "https://www.sendai-airport.co.jp/company/assets/sendai_rule.pdf",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "15102-001",
+    "name": "新潟空港駐車場(第1駐車場)",
+    "address": "新潟県新潟市東区松浜町3710",
+    "latitude": 37.954742,
+    "longitude": 139.116745,
+    "prefectureCode": "15",
+    "prefectureName": "新潟県",
+    "cityCode": "15102",
+    "cityName": "新潟市東区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "unknown",
+    "discount": {
+      "type": "unknown",
+      "conditions": "身体障害者手帳、戦傷病者手帳、療育手帳、精神障害者保健福祉手帳、被爆者健康手帳、特定疾患医療受給者証、特定医療費(指定難病)受給者証、小児慢性特定疾病医療受給者証等を提示することで、第1駐車場(P1)利用時に限り駐車料金が50%割引となる。第2駐車場(P2)では割引の手続きができない。職員不在時間帯に出庫した場合は後日精算可能。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 30分まで100円、60分まで200円、90分まで300円、120分まで600円、以降1時間ごとに150円、24時間ごとの上限800円(第1駐車場)\n障害者割引: 上記料金の50%割引(30分50円、60分100円、90分150円、120分300円、以降1時間ごとに100円、24時間ごとの上限400円)\n総台数: 1073台",
+    "sourceUrl": "https://www.aeif.or.jp/nigata/",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "15103-001",
+    "name": "いくとぴあ食花 駐車場(第1・第2駐車場)",
+    "address": "新潟県新潟市中央区清五郎401",
+    "latitude": 37.881832,
+    "longitude": 139.053085,
+    "prefectureCode": "15",
+    "prefectureName": "新潟県",
+    "cityCode": "15103",
+    "cityName": "新潟市中央区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、ミライロID又はおもいやり駐車場利用証のいずれかを提示することで駐車料金が無料となる。情報館、食育・花育センター、こども創造センター、動物ふれあいセンターのいずれかで無料処理の手続きが必要(受付時間9:00~17:00)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入庫から90分まで無料、90分超6時間まで30分ごとに100円、6時間超24時間までは1,000円\n障害者割引: 無料\n総台数: 420台",
+    "sourceUrl": "https://www.ikutopia.com/access/",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
