@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1170
+// 件数: 1173
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26601,6 +26601,75 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車400円、大型車1,100円、二輪車150円\n障害者割引: 無料\n総台数: 1400台",
     "sourceUrl": "https://www.thr.mlit.go.jp/m-park/price/index.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "04101-001",
+    "name": "仙台市勾当台公園地下駐車場",
+    "address": "宮城県仙台市青葉区国分町三丁目7番1号",
+    "latitude": 38.268028,
+    "longitude": 140.869476,
+    "prefectureCode": "04",
+    "prefectureName": "宮城県",
+    "cityCode": "04101",
+    "cityName": "仙台市青葉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料。駐車場管理室係員に駐車券と手帳を提示(スマートフォンの障害者手帳アプリ「ミライロID」の提示も可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時30分~22時30分 20分ごと100円\n障害者割引: 1時間無料\n総台数: 155台",
+    "sourceUrl": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo/index.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "04101-002",
+    "name": "仙台市二日町駐車場",
+    "address": "宮城県仙台市青葉区二日町1番30号",
+    "latitude": 38.269131,
+    "longitude": 140.869736,
+    "prefectureCode": "04",
+    "prefectureName": "宮城県",
+    "cityCode": "04101",
+    "cityName": "仙台市青葉区",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳、療育手帳又は精神障害者保健福祉手帳をお持ちの方が運転又は同乗する自動車が駐車した場合、駐車料金が1時間分無料(勾当台公園地下駐車場と共通の制度)。駐車場管理室係員に駐車券と手帳を提示(スマートフォンの障害者手帳アプリ「ミライロID」の提示も可)。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7時30分~22時30分 30分ごと100円\n障害者割引: 1時間無料\n総台数: 73台",
+    "sourceUrl": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo/index.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "04102-001",
+    "name": "元気フィールド仙台(仙台市新田東総合運動場)駐車場",
+    "address": "宮城県仙台市宮城野区新田東4丁目1番1号",
+    "latitude": 38.279743,
+    "longitude": 140.935974,
+    "prefectureCode": "04",
+    "prefectureName": "宮城県",
+    "cityCode": "04102",
+    "cityName": "仙台市宮城野区",
+    "accessibleSpaceTotal": 40,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳、戦傷病者手帳又は被爆者健康手帳をお持ちの方(付き添う満18歳以上の介護人1名を含む)が施設を利用する場合、窓口に手帳を提示すると駐車場が無料または減免になる(仙台市のスポーツ施設における障がい者の使用料減免制度に基づく措置)。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 40
+      }
+    ],
+    "notes": "通常料金: 普通車:最初の1時間100円、以後30分ごと50円加算(大型車・マイクロバス:1時間ごと400円)\n障害者割引: 無料\n総台数: 375台",
+    "sourceUrl": "https://www.genkifieldsendai.com/access/",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];

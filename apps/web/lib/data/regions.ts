@@ -149,6 +149,16 @@ const cities: City[] = [
     "prefectureCode": "01"
   },
   {
+    "code": "04101",
+    "name": "仙台市青葉区",
+    "prefectureCode": "04"
+  },
+  {
+    "code": "04102",
+    "name": "仙台市宮城野区",
+    "prefectureCode": "04"
+  },
+  {
     "code": "04323",
     "name": "柴田町",
     "prefectureCode": "04"
