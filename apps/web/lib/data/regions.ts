@@ -164,6 +164,11 @@ const cities: City[] = [
     "prefectureCode": "04"
   },
   {
+    "code": "04207",
+    "name": "名取市",
+    "prefectureCode": "04"
+  },
+  {
     "code": "04323",
     "name": "柴田町",
     "prefectureCode": "04"

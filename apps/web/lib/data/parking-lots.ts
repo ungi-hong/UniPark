@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1174
+// 件数: 1175
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -26692,6 +26692,28 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 地下階30分100円(最初の30分は無料)、地上階30分100円(24時間最大700円)\n障害者割引: 1時間分無料\n総台数: 937台",
     "sourceUrl": "https://www.city.sendai.jp/somu-chose/kurashi/machi/kotsu/chushajo/annai/chushajo.html",
+    "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "04207-001",
+    "name": "仙台空港駐車場(1A・1B・2)",
+    "address": "宮城県名取市下増田字南原無番地",
+    "latitude": 38.144398,
+    "longitude": 140.919373,
+    "prefectureCode": "04",
+    "prefectureName": "宮城県",
+    "cityCode": "04207",
+    "cityName": "名取市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳、精神障害者保健福祉手帳の交付を受けている者、または自治体が発行するパーキングパーミット利用証の交付を受けている者が乗車する自動車(営業用車両及び大型自動車を除く)が対象。手帳原本またはミライロID等の電子手帳・パーキングパーミット利用証を管理者指定の場所(1階インフォメーション等)で提示・車両ナンバー登録することで、時間貸料金から半額の割引が適用される(仙台空港駐車場管理規程第11条)。対象者は場内の「ゆずりあいスペース」も利用可(同規程第13条)。予約制の1Rは変動料金制のため取扱いが異なる場合があり詳細は要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 入場から30分無料(1日1回まで)、1時間まで1B・2は200円/1Aは300円(通常期)、以降1時間毎同額、24時間毎最大1B・2は800円/1Aは1,200円(通常期)\n障害者割引: 半額",
+    "sourceUrl": "https://www.sendai-airport.co.jp/company/assets/sendai_rule.pdf",
     "updatedAt": "2026-08-31T00:00:00Z"
   }
 ];
