@@ -18808,5 +18808,50 @@
     "discount_conditions": "身体障害者手帳、療育手帳(愛護手帳)、精神障害者保健福祉手帳をお持ちの方。2025年11月1日以降に出庫される方が対象。青森空港発着国際線を利用する場合は割引後の料金が低い方が適用される。",
     "source_url": "https://www.aomori-airport.co.jp/news/post-13250",
     "verified_at": "2026-09-01"
+  },
+  {
+    "id": "03402-001",
+    "municipality_code": "03402",
+    "municipality": "平泉町",
+    "name": "中尊寺第一駐車場",
+    "address": "岩手県西磐井郡平泉町平泉字衣関34-2",
+    "capacity": 150,
+    "capacity_accessible": null,
+    "normal_rate": "普通車400円、大型車950円、マイクロバス800円、自動二輪50円",
+    "discount_rate": "駐車料金無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、年中無休。",
+    "source_url": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
+    "verified_at": "2026-09-01"
+  },
+  {
+    "id": "03402-002",
+    "municipality_code": "03402",
+    "municipality": "平泉町",
+    "name": "中尊寺第二駐車場",
+    "address": "岩手県西磐井郡平泉町平泉字坂下29-9",
+    "capacity": 304,
+    "capacity_accessible": null,
+    "normal_rate": "普通車400円、大型車950円、マイクロバス800円、自動二輪50円",
+    "discount_rate": "駐車料金無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、不定期休日有。",
+    "source_url": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
+    "verified_at": "2026-09-01"
+  },
+  {
+    "id": "03402-003",
+    "municipality_code": "03402",
+    "municipality": "平泉町",
+    "name": "毛越寺駐車場",
+    "address": "岩手県西磐井郡平泉町平泉字大沢61-2",
+    "capacity": 330,
+    "capacity_accessible": null,
+    "normal_rate": "普通車300円、大型車750円、マイクロバス600円、自動二輪50円",
+    "discount_rate": "駐車料金無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、年中無休。",
+    "source_url": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
+    "verified_at": "2026-09-01"
   }
 ]
