@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1266
+// 件数: 1267
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28744,6 +28744,27 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 最初の30分は無料。30分を超え1時間まで400円、以後20分毎に100円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 12台",
     "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16207-001",
+    "name": "黒部市営新幹線駅第2駐車場（障害者等用）",
+    "address": "富山県黒部市若栗2815",
+    "latitude": 36.877556,
+    "longitude": 137.496353,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16207",
+    "cityName": "黒部市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "第2駐車場のうち障害者等用区画は「富山県ゆずりあいパーキング（障害者等用駐車場）利用証制度」の対象区画で無料。利用には利用証を取得し、車の外から見える場所に掲示する必要がある。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 第1駐車場：24時間まで500円、以降12時間ごとに200円加算。第2・第3駐車場（一般区画）：24時間まで200円、以降12時間ごとに200円加算。\n障害者割引: 駐車料金を全額免除（無料）",
+    "sourceUrl": "https://www.city.kurobe.toyama.jp/news/detail.aspx?servno=27604",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];
