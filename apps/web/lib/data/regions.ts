@@ -70,6 +70,10 @@ export const prefectures: Prefecture[] = [
     "name": "富山県"
   },
   {
+    "code": "17",
+    "name": "石川県"
+  },
+  {
     "code": "20",
     "name": "長野県"
   },
@@ -1051,6 +1055,11 @@ const cities: City[] = [
     "code": "16207",
     "name": "黒部市",
     "prefectureCode": "16"
+  },
+  {
+    "code": "17203",
+    "name": "小松市",
+    "prefectureCode": "17"
   },
   {
     "code": "20201",

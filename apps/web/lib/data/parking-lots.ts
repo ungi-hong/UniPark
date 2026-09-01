@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1267
+// 件数: 1268
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28765,6 +28765,32 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 第1駐車場：24時間まで500円、以降12時間ごとに200円加算。第2・第3駐車場（一般区画）：24時間まで200円、以降12時間ごとに200円加算。\n障害者割引: 駐車料金を全額免除（無料）",
     "sourceUrl": "https://www.city.kurobe.toyama.jp/news/detail.aspx?servno=27604",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "17203-001",
+    "name": "小松空港駐車場",
+    "address": "石川県小松市浮柳町ヨ50番地先",
+    "latitude": 36.405926,
+    "longitude": 136.420837,
+    "prefectureCode": "17",
+    "prefectureName": "石川県",
+    "cityCode": "17203",
+    "cityName": "小松市",
+    "accessibleSpaceTotal": 24,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "障がい者手帳（身体障害者手帳、療育手帳、精神障害者保健福祉手帳等）を提示すると駐車料金が半額になる。入場後、駐車券と障がい者手帳を持って管理事務所（P2駐車場出口横）へ。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 24
+      }
+    ],
+    "notes": "通常料金: 第2駐車場：30分まで無料、90分まで200円、120分まで300円、以降1時間毎150円、24時間毎最大500円。第1駐車場も同様の料金体系。\n障害者割引: 駐車料金が半額\n総台数: 1463台",
+    "sourceUrl": "https://www.komatsuairport.jp/access/parking-kokunai.html",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];
