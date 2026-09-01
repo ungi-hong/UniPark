@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1253
+// 件数: 1254
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28441,5 +28441,31 @@ export const parkingLots: ParkingLotDetail[] = [
     "notes": "通常料金: 普通車・軽自動車 300円/日、中型車・大型車 1,000円/日\n障害者割引: 使用料免除(無料)\n総台数: 25台",
     "sourceUrl": "https://www.city.kitakata.fukushima.jp/soshiki/syoukan/27527.html",
     "updatedAt": "2026-08-31T00:00:00Z"
+  },
+  {
+    "id": "02201-001",
+    "name": "青森空港有料駐車場",
+    "address": "青森県青森市大字大谷字小谷1-5",
+    "latitude": 40.735302,
+    "longitude": 140.690491,
+    "prefectureCode": "02",
+    "prefectureName": "青森県",
+    "cityCode": "02201",
+    "cityName": "青森市",
+    "accessibleSpaceTotal": 32,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 50,
+      "conditions": "身体障害者手帳、療育手帳(愛護手帳)、精神障害者保健福祉手帳をお持ちの方。2025年11月1日以降に出庫される方が対象。青森空港発着国際線を利用する場合は割引後の料金が低い方が適用される。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 32
+      }
+    ],
+    "notes": "通常料金: 日帰り200円、1泊1,030円(基本料金200円+泊車料金830円)、2泊1,860円、3泊以上は1泊増すごとに830円加算\n障害者割引: 駐車料金半額(半額後10円未満は切り上げ)\n総台数: 1948台",
+    "sourceUrl": "https://www.aomori-airport.co.jp/news/post-13250",
+    "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];
