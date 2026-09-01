@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1268
+// 件数: 1282
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28791,6 +28791,370 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 第2駐車場：30分まで無料、90分まで200円、120分まで300円、以降1時間毎150円、24時間毎最大500円。第1駐車場も同様の料金体系。\n障害者割引: 駐車料金が半額\n総台数: 1463台",
     "sourceUrl": "https://www.komatsuairport.jp/access/parking-kokunai.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16201-001",
+    "name": "富山市営城址公園駐車場",
+    "address": "富山県富山市本丸1番42号",
+    "latitude": 36.693668,
+    "longitude": 137.212601,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16201",
+    "cityName": "富山市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳1級もしくは2級、療育手帳A、または精神障害者保健福祉手帳1級の交付を受けている方が運転または同乗する自動車が対象。市営駐車場(城址公園・総曲輪・桜町・富山駅北)の利用料金のうち、最初の1時間分を免除。入場または出場の際に対象の手帳(ミライロID可)を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 全日 最初の1時間330円、8:00-23:00 110円/30分、23:00-翌8:00 110円/60分\n障害者割引: 最初の1時間分を免除\n総台数: 98台",
+    "sourceUrl": "https://www.city.toyama.lg.jp/health/shogaisha/1010515/1003549.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16201-002",
+    "name": "富山市営総曲輪駐車場",
+    "address": "富山県富山市総曲輪二丁目8番3号",
+    "latitude": 36.691315,
+    "longitude": 137.213058,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16201",
+    "cityName": "富山市",
+    "accessibleSpaceTotal": 6,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳1級もしくは2級、療育手帳A、または精神障害者保健福祉手帳1級の交付を受けている方が運転または同乗する自動車が対象。市営駐車場(城址公園・総曲輪・桜町・富山駅北)の利用料金のうち、最初の1時間分を免除。入場または出場の際に対象の手帳(ミライロID可)を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 6
+      }
+    ],
+    "notes": "通常料金: 全日 最初の1時間330円、8:00-23:00 110円/30分、23:00-翌8:00 110円/60分\n障害者割引: 最初の1時間分を免除\n総台数: 398台",
+    "sourceUrl": "https://www.city.toyama.lg.jp/health/shogaisha/1010515/1003549.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16201-003",
+    "name": "富山市営桜町駐車場",
+    "address": "富山県富山市桜町二丁目1番1号",
+    "latitude": 36.699268,
+    "longitude": 137.212387,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16201",
+    "cityName": "富山市",
+    "accessibleSpaceTotal": 5,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳1級もしくは2級、療育手帳A、または精神障害者保健福祉手帳1級の交付を受けている方が運転または同乗する自動車が対象。市営駐車場(城址公園・総曲輪・桜町・富山駅北)の利用料金のうち、最初の1時間分を免除。入場または出場の際に対象の手帳(ミライロID可)を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "通常料金: 全日 最初の1時間330円、8:00-23:00 110円/30分、23:00-翌8:00 110円/60分\n障害者割引: 最初の1時間分を免除\n総台数: 253台",
+    "sourceUrl": "https://www.city.toyama.lg.jp/health/shogaisha/1010515/1003549.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16201-004",
+    "name": "富山市営富山駅北駐車場",
+    "address": "富山県富山市牛島町24番2号",
+    "latitude": 36.703316,
+    "longitude": 137.212189,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16201",
+    "cityName": "富山市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 1,
+      "conditions": "身体障害者手帳1級もしくは2級、療育手帳A、または精神障害者保健福祉手帳1級の交付を受けている方が運転または同乗する自動車が対象。市営駐車場(城址公園・総曲輪・桜町・富山駅北)の利用料金のうち、最初の1時間分を免除。入場または出場の際に対象の手帳(ミライロID可)を提示。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 全日 最初の1時間330円、8:00-23:00 110円/30分、23:00-翌8:00 110円/60分\n障害者割引: 最初の1時間分を免除\n総台数: 544台",
+    "sourceUrl": "https://www.city.toyama.lg.jp/health/shogaisha/1010515/1003549.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-001",
+    "name": "高岡市営御旅屋駐車場",
+    "address": "富山県高岡市御旅屋町1222-1",
+    "latitude": 36.746326,
+    "longitude": 137.014877,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 入場から60分以内無料、60分超~90分以内100円/30分、以降100円/30分(24時間以内上限1,000円)\n障害者割引: 2割引\n総台数: 355台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-002",
+    "name": "高岡市営高岡中央駐車場",
+    "address": "富山県高岡市下関町6-11",
+    "latitude": 36.742062,
+    "longitude": 137.015594,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 12,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 12
+      }
+    ],
+    "notes": "通常料金: 入場から30分以内無料、30分超~60分以内330円、以降7:00-22:00は30分毎110円・22:00-7:00は120分毎110円(24時間以内上限1,100円)\n障害者割引: 2割引\n総台数: 751台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-003",
+    "name": "高岡市営高岡駅前駐車場",
+    "address": "富山県高岡市下関町295-16",
+    "latitude": 36.7416,
+    "longitude": 137.015564,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入場から30分以内無料、30分超~60分以内400円、以降30分毎100円\n障害者割引: 2割引\n総台数: 19台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-004",
+    "name": "高岡市営高岡駅南駐車場",
+    "address": "富山県高岡市駅南五丁目801-7",
+    "latitude": 36.739697,
+    "longitude": 137.013565,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 入場から30分以内無料、30分超~60分以内110円、以降60分毎110円(24時間以内上限1,100円、24時間超過時24時間毎880円)\n障害者割引: 2割引\n総台数: 47台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-005",
+    "name": "高岡市営新高岡駅第1駐車場",
+    "address": "富山県高岡市下黒田3018番地",
+    "latitude": 36.726322,
+    "longitude": 137.007538,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 95台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-006",
+    "name": "高岡市営新高岡駅第2駐車場",
+    "address": "富山県高岡市下黒田3007番地",
+    "latitude": 36.726322,
+    "longitude": 137.007538,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 63台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-007",
+    "name": "高岡市営新高岡駅第3駐車場",
+    "address": "富山県高岡市下黒田3002番地",
+    "latitude": 36.726322,
+    "longitude": 137.007538,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 2,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 2
+      }
+    ],
+    "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 98台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-008",
+    "name": "高岡市営新高岡駅前南駐車場",
+    "address": "富山県高岡市下黒田3014番地",
+    "latitude": 36.726322,
+    "longitude": 137.007538,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 52台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-009",
+    "name": "高岡市営新高岡駅立体駐車場",
+    "address": "富山県高岡市下黒田3001番地",
+    "latitude": 36.726322,
+    "longitude": 137.007538,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 8,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。自動二輪車10台分も併設。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 8
+      }
+    ],
+    "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 483台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "16202-010",
+    "name": "高岡市営新高岡駅前北駐車場(短時間駐車場)",
+    "address": "富山県高岡市下黒田1529番地",
+    "latitude": 36.727303,
+    "longitude": 137.010223,
+    "prefectureCode": "16",
+    "prefectureName": "富山県",
+    "cityCode": "16202",
+    "cityName": "高岡市",
+    "accessibleSpaceTotal": 1,
+    "discountType": "percentage",
+    "discount": {
+      "type": "percentage",
+      "value": 20,
+      "conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 1
+      }
+    ],
+    "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 38台",
+    "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];

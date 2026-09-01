@@ -1052,6 +1052,16 @@ const cities: City[] = [
     "prefectureCode": "15"
   },
   {
+    "code": "16201",
+    "name": "富山市",
+    "prefectureCode": "16"
+  },
+  {
+    "code": "16202",
+    "name": "高岡市",
+    "prefectureCode": "16"
+  },
+  {
     "code": "16207",
     "name": "黒部市",
     "prefectureCode": "16"
