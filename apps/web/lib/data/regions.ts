@@ -190,6 +190,11 @@ const cities: City[] = [
     "prefectureCode": "02"
   },
   {
+    "code": "03201",
+    "name": "盛岡市",
+    "prefectureCode": "03"
+  },
+  {
     "code": "03402",
     "name": "平泉町",
     "prefectureCode": "03"

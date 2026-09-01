@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1257
+// 件数: 1260
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28529,6 +28529,73 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 普通車300円、大型車750円、マイクロバス600円、自動二輪50円\n障害者割引: 駐車料金無料\n総台数: 330台",
     "sourceUrl": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "03201-001",
+    "name": "盛岡市動物公園ZOOMO 駐車場",
+    "address": "岩手県盛岡市新庄字下八木田60-18",
+    "latitude": 39.697155,
+    "longitude": 141.196594,
+    "prefectureCode": "03",
+    "prefectureName": "岩手県",
+    "cityCode": "03201",
+    "cityName": "盛岡市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を所持する方(ミライロID提示も可)。入園の際に窓口で駐車券と手帳を提示。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車(軽自動車・小型乗用車等) 300円、大型車(乗車定員11人以上) 1,000円(後払い制)\n障害者割引: 無料\n総台数: 472台",
+    "sourceUrl": "https://zoomo.co.jp/guide/",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "03201-002",
+    "name": "いわて県民情報交流センター(アイーナ) 身障者用駐車場",
+    "address": "岩手県盛岡市盛岡駅西通1丁目7番1号(1階南玄関前)",
+    "latitude": 39.701973,
+    "longitude": 141.13353,
+    "prefectureCode": "03",
+    "prefectureName": "岩手県",
+    "cityCode": "03201",
+    "cityName": "盛岡市",
+    "accessibleSpaceTotal": 5,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "ドアを全開にしなければ乗降できない体の不自由な方や歩行が困難で介添えが必要な方等のための専用駐車場。隣接する盛岡駅西口地区駐車場・マリオス立体駐車場(いずれも有料)とは別に設置。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 5
+      }
+    ],
+    "notes": "障害者割引: 無料\n総台数: 5台",
+    "sourceUrl": "https://www.aiina.jp/soshiki/2/21.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "03201-003",
+    "name": "プラザおでって地下駐車場",
+    "address": "岩手県盛岡市中ノ橋通一丁目1-10",
+    "latitude": 39.700363,
+    "longitude": 141.154709,
+    "prefectureCode": "03",
+    "prefectureName": "岩手県",
+    "cityCode": "03201",
+    "cityName": "盛岡市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "車椅子利用の方は駐車料金無料。詳細手続きは施設窓口(019-604-3300)へ要確認。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 7:00-18:00 30分ごとに100円、18:00-23:00 1時間ごとに100円、23:00-翌7:00 1時間ごとに80円(営業時間 7:00-23:00)\n障害者割引: 無料\n総台数: 38台",
+    "sourceUrl": "https://www.city.morioka.iwate.jp/kenkou/shogai/barrierfree/1006044/1006180/1006195.html",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];
