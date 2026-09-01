@@ -227,11 +227,6 @@ const cities: City[] = [
     "prefectureCode": "07"
   },
   {
-    "code": "08201",
-    "name": "水戸市",
-    "prefectureCode": "08"
-  },
-  {
     "code": "08220",
     "name": "つくば市",
     "prefectureCode": "08"
