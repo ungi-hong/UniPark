@@ -18988,5 +18988,20 @@
     "discount_conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。無人駐車場のため、備付のインターホンで係員を呼び出すこと。",
     "source_url": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
     "verified_at": "2026-09-01"
+  },
+  {
+    "id": "16207-001",
+    "municipality_code": "16207",
+    "municipality": "黒部市",
+    "name": "黒部市営新幹線駅第2駐車場（障害者等用）",
+    "address": "富山県黒部市若栗2815",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "第1駐車場：24時間まで500円、以降12時間ごとに200円加算。第2・第3駐車場（一般区画）：24時間まで200円、以降12時間ごとに200円加算。",
+    "discount_rate": "駐車料金を全額免除（無料）",
+    "discount_scope": "full",
+    "discount_conditions": "第2駐車場のうち障害者等用区画は「富山県ゆずりあいパーキング（障害者等用駐車場）利用証制度」の対象区画で無料。利用には利用証を取得し、車の外から見える場所に掲示する必要がある。",
+    "source_url": "https://www.city.kurobe.toyama.jp/news/detail.aspx?servno=27604",
+    "verified_at": "2026-09-01"
   }
 ]
