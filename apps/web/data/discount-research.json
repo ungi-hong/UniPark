@@ -18793,5 +18793,20 @@
     "discount_conditions": "身体障がい者手帳、療育手帳または精神障がい者保健福祉手帳を所持する方。受付時に観光案内所職員に手帳を掲示。開所時間 3~11月 8:30-17:00、12~2月 10:00-15:00。令和2年10月1日から実施。",
     "source_url": "https://www.city.kitakata.fukushima.jp/soshiki/syoukan/27527.html",
     "verified_at": "2026-08-31"
+  },
+  {
+    "id": "02201-001",
+    "municipality_code": "02201",
+    "municipality": "青森市",
+    "name": "青森空港有料駐車場",
+    "address": "青森県青森市大字大谷字小谷1-5",
+    "capacity": 1948,
+    "capacity_accessible": 32,
+    "normal_rate": "日帰り200円、1泊1,030円(基本料金200円+泊車料金830円)、2泊1,860円、3泊以上は1泊増すごとに830円加算",
+    "discount_rate": "駐車料金半額(半額後10円未満は切り上げ)",
+    "discount_scope": "partial",
+    "discount_conditions": "身体障害者手帳、療育手帳(愛護手帳)、精神障害者保健福祉手帳をお持ちの方。2025年11月1日以降に出庫される方が対象。青森空港発着国際線を利用する場合は割引後の料金が低い方が適用される。",
+    "source_url": "https://www.aomori-airport.co.jp/news/post-13250",
+    "verified_at": "2026-09-01"
   }
 ]
