@@ -19228,5 +19228,20 @@
     "discount_conditions": "障がい者専用駐車枠に駐車後、身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳のいずれか(2025年4月からミライロID可)と駐車券を、立体駐車場管理室の窓口に提示すると普通駐車料金が2割引となる。福岡駅前・福岡駅西駐車場を除く高岡市営駐車場が対象。受付時間は午前7時から午後11時まで。",
     "source_url": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
     "verified_at": "2026-09-01"
+  },
+  {
+    "id": "24205-001",
+    "municipality_code": "24205",
+    "municipality": "桑名市",
+    "name": "柿安コミュニティパーク駐車場(吉之丸コミュニティパーク駐車場)",
+    "address": "三重県桑名市吉之丸7",
+    "capacity": null,
+    "capacity_accessible": null,
+    "normal_rate": "1日1回 普通車250円・大型車(バス等)1,000円・単車(バイク等)120円",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により使用料の減免(無料)が受けられる。",
+    "source_url": "https://www.city.kuwana.lg.jp/asset/kurashi/koutsuu/24-10646-225-352.html",
+    "verified_at": "2026-09-01"
   }
 ]
