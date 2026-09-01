@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1254
+// 件数: 1257
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28466,6 +28466,69 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 日帰り200円、1泊1,030円(基本料金200円+泊車料金830円)、2泊1,860円、3泊以上は1泊増すごとに830円加算\n障害者割引: 駐車料金半額(半額後10円未満は切り上げ)\n総台数: 1948台",
     "sourceUrl": "https://www.aomori-airport.co.jp/news/post-13250",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "03402-001",
+    "name": "中尊寺第一駐車場",
+    "address": "岩手県西磐井郡平泉町平泉字衣関34-2",
+    "latitude": 38.998981,
+    "longitude": 141.104019,
+    "prefectureCode": "03",
+    "prefectureName": "岩手県",
+    "cityCode": "03402",
+    "cityName": "平泉町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、年中無休。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車400円、大型車950円、マイクロバス800円、自動二輪50円\n障害者割引: 駐車料金無料\n総台数: 150台",
+    "sourceUrl": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "03402-002",
+    "name": "中尊寺第二駐車場",
+    "address": "岩手県西磐井郡平泉町平泉字坂下29-9",
+    "latitude": 39.000168,
+    "longitude": 141.107574,
+    "prefectureCode": "03",
+    "prefectureName": "岩手県",
+    "cityCode": "03402",
+    "cityName": "平泉町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、不定期休日有。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車400円、大型車950円、マイクロバス800円、自動二輪50円\n障害者割引: 駐車料金無料\n総台数: 304台",
+    "sourceUrl": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "03402-003",
+    "name": "毛越寺駐車場",
+    "address": "岩手県西磐井郡平泉町平泉字大沢61-2",
+    "latitude": 38.986553,
+    "longitude": 141.107666,
+    "prefectureCode": "03",
+    "prefectureName": "岩手県",
+    "cityCode": "03402",
+    "cityName": "平泉町",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、年中無休。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 普通車300円、大型車750円、マイクロバス600円、自動二輪50円\n障害者割引: 駐車料金無料\n総台数: 330台",
+    "sourceUrl": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];
