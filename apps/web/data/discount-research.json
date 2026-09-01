@@ -18853,5 +18853,50 @@
     "discount_conditions": "身体障害者の方は駐車料金無料。料金所係員に障害者手帳を提示。営業時間8:30~17:00、年中無休。",
     "source_url": "https://www.town.hiraizumi.iwate.jp/index.cfm/26,1031,126,272,html",
     "verified_at": "2026-09-01"
+  },
+  {
+    "id": "03201-001",
+    "municipality_code": "03201",
+    "municipality": "盛岡市",
+    "name": "盛岡市動物公園ZOOMO 駐車場",
+    "address": "岩手県盛岡市新庄字下八木田60-18",
+    "capacity": 472,
+    "capacity_accessible": null,
+    "normal_rate": "普通車(軽自動車・小型乗用車等) 300円、大型車(乗車定員11人以上) 1,000円(後払い制)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳を所持する方(ミライロID提示も可)。入園の際に窓口で駐車券と手帳を提示。",
+    "source_url": "https://zoomo.co.jp/guide/",
+    "verified_at": "2026-09-01"
+  },
+  {
+    "id": "03201-002",
+    "municipality_code": "03201",
+    "municipality": "盛岡市",
+    "name": "いわて県民情報交流センター(アイーナ) 身障者用駐車場",
+    "address": "岩手県盛岡市盛岡駅西通1丁目7番1号(1階南玄関前)",
+    "capacity": 5,
+    "capacity_accessible": 5,
+    "normal_rate": null,
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "ドアを全開にしなければ乗降できない体の不自由な方や歩行が困難で介添えが必要な方等のための専用駐車場。隣接する盛岡駅西口地区駐車場・マリオス立体駐車場(いずれも有料)とは別に設置。",
+    "source_url": "https://www.aiina.jp/soshiki/2/21.html",
+    "verified_at": "2026-09-01"
+  },
+  {
+    "id": "03201-003",
+    "municipality_code": "03201",
+    "municipality": "盛岡市",
+    "name": "プラザおでって地下駐車場",
+    "address": "岩手県盛岡市中ノ橋通一丁目1-10",
+    "capacity": 38,
+    "capacity_accessible": null,
+    "normal_rate": "7:00-18:00 30分ごとに100円、18:00-23:00 1時間ごとに100円、23:00-翌7:00 1時間ごとに80円(営業時間 7:00-23:00)",
+    "discount_rate": "無料",
+    "discount_scope": "full",
+    "discount_conditions": "車椅子利用の方は駐車料金無料。詳細手続きは施設窓口(019-604-3300)へ要確認。",
+    "source_url": "https://www.city.morioka.iwate.jp/kenkou/shogai/barrierfree/1006044/1006180/1006195.html",
+    "verified_at": "2026-09-01"
   }
 ]
