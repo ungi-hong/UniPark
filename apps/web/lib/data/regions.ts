@@ -18,6 +18,10 @@ export const prefectures: Prefecture[] = [
     "name": "青森県"
   },
   {
+    "code": "03",
+    "name": "岩手県"
+  },
+  {
     "code": "04",
     "name": "宮城県"
   },
@@ -184,6 +188,11 @@ const cities: City[] = [
     "code": "02201",
     "name": "青森市",
     "prefectureCode": "02"
+  },
+  {
+    "code": "03402",
+    "name": "平泉町",
+    "prefectureCode": "03"
   },
   {
     "code": "04101",
