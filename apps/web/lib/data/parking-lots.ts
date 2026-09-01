@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1254
+// 件数: 1253
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -24942,27 +24942,6 @@ export const parkingLots: ParkingLotDetail[] = [
     "updatedAt": "2026-08-31T00:00:00Z"
   },
   {
-    "id": "08201-001",
-    "name": "水戸芸術館 車椅子利用者用駐車スペース(塔東側)",
-    "address": "茨城県水戸市五軒町1-6-8",
-    "latitude": 36.379601,
-    "longitude": 140.465317,
-    "prefectureCode": "08",
-    "prefectureName": "茨城県",
-    "cityCode": "08201",
-    "cityName": "水戸市",
-    "accessibleSpaceTotal": 0,
-    "discountType": "free",
-    "discount": {
-      "type": "free",
-      "conditions": "車椅子利用者が対象。水戸芸術館塔東側の地上駐車スペースを無料で利用可能。利用には事前に事務局(TEL.029-227-8111)への電話連絡が必要。"
-    },
-    "accessibleSpaces": [],
-    "notes": "通常料金: 市営五軒町駐車場(地下・立体): 30分まで無料、1時間まで200円、以降30分ごとに100円、1日上限700円\n障害者割引: 無料",
-    "sourceUrl": "https://www.arttowermito.or.jp/access/",
-    "updatedAt": "2026-08-31T00:00:00Z"
-  },
-  {
     "id": "22341-001",
     "name": "柿田川公園町営駐車場",
     "address": "静岡県駿東郡清水町伏見71番地の7",
@@ -26841,7 +26820,7 @@ export const parkingLots: ParkingLotDetail[] = [
       "conditions": "障がい者手帳の交付を受けている飯山市民で、自己の運転する車両を定期券利用で駐車する者が対象。市営駐車場定期利用申請書(様式第1号)に加え、減免申請書(様式第5号)、住民票の写し、免許証の写し、障がい者手帳の写しを飯山駅斑尾口駐車場管理事務所へ提出。後日の減免申請による還付は不可。"
     },
     "accessibleSpaces": [],
-    "notes": "通常料金: 定期使用 1年につき60,000円(月額5,000円相当)\n障害者割引: 定期使用料を月額3,000円に減免\n総台数: 59台",
+    "notes": "通常料金: 定期使用 1年につき60,000円(月額5,000円相当)\n障害者割引: 【定期利用のみ】定期使用料を月額3,000円に減免\n総台数: 59台",
     "sourceUrl": "https://www.city.iiyama.nagano.jp/soshiki/machizukuri/keikaku/oshirase.htm/ekimaehiroba",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
@@ -26866,7 +26845,7 @@ export const parkingLots: ParkingLotDetail[] = [
         "count": 9
       }
     ],
-    "notes": "通常料金: 定期使用 1年につき120,000円(月額10,000円相当)\n障害者割引: 定期使用料を月額5,000円に減免\n総台数: 409台",
+    "notes": "通常料金: 定期使用 1年につき120,000円(月額10,000円相当)\n障害者割引: 【定期利用のみ】定期使用料を月額5,000円に減免\n総台数: 409台",
     "sourceUrl": "https://www.city.iiyama.nagano.jp/soshiki/machizukuri/keikaku/oshirase.htm/ekimaehiroba",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
@@ -26888,7 +26867,7 @@ export const parkingLots: ParkingLotDetail[] = [
       "conditions": "身体または精神に障がいがあり歩行が困難な方等が対象。一時利用の駐車場については減免の規定なし。市の例規に基づく定期利用者向けの減免。"
     },
     "accessibleSpaces": [],
-    "notes": "通常料金: 定期利用 月額6,500円\n障害者割引: 定期利用の使用料を半額(月額3,250円)に減免",
+    "notes": "通常料金: 定期利用 月額6,500円\n障害者割引: 【定期利用のみ】定期利用の使用料を半額(月額3,250円)に減免",
     "sourceUrl": "https://www.city.chikuma.lg.jp/material/files/group/4/toguraekichushajoushougaishanowaribiki.pdf",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
@@ -26952,7 +26931,7 @@ export const parkingLots: ParkingLotDetail[] = [
       "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
     },
     "accessibleSpaces": [],
-    "notes": "通常料金: 2時間無料、以降30分ごとに50円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 19台",
+    "notes": "通常料金: 2時間無料、以降30分ごとに50円加算\n障害者割引: 【助成・要事前申請】年間最大11,000円分のプリペイドカード交付による助成\n総台数: 19台",
     "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
@@ -26973,7 +26952,7 @@ export const parkingLots: ParkingLotDetail[] = [
       "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
     },
     "accessibleSpaces": [],
-    "notes": "通常料金: 2時間無料、以降30分ごとに50円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 67台",
+    "notes": "通常料金: 2時間無料、以降30分ごとに50円加算\n障害者割引: 【助成・要事前申請】年間最大11,000円分のプリペイドカード交付による助成\n総台数: 67台",
     "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
@@ -26994,7 +26973,7 @@ export const parkingLots: ParkingLotDetail[] = [
       "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
     },
     "accessibleSpaces": [],
-    "notes": "通常料金: 12時間300円、以降6時間ごとに200円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 368台",
+    "notes": "通常料金: 12時間300円、以降6時間ごとに200円加算\n障害者割引: 【助成・要事前申請】年間最大11,000円分のプリペイドカード交付による助成\n総台数: 368台",
     "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
@@ -27015,7 +26994,7 @@ export const parkingLots: ParkingLotDetail[] = [
       "conditions": "身体障害者手帳・戦傷病者手帳・療育手帳・精神障害者保健福祉手帳の所持者、または指定難病/小児慢性特定疾病医療受給者証(色素性乾皮症患者のみ)の所持者、およびその介助者で、かつ駐車禁止除外指定車標章を所有する者。都市計画課へ申請し、年間最大11,000円分のプリペイドカードを3回に分けて交付される(利用の都度の料金割引ではなく、市営駐車場で使えるプリペイドカードの交付による助成)。"
     },
     "accessibleSpaces": [],
-    "notes": "通常料金: 30分無料、以降30分ごとに200円加算\n障害者割引: 年間最大11,000円分のプリペイドカード交付による助成\n総台数: 12台",
+    "notes": "通常料金: 30分無料、以降30分ごとに200円加算\n障害者割引: 【助成・要事前申請】年間最大11,000円分のプリペイドカード交付による助成\n総台数: 12台",
     "sourceUrl": "https://www.city.toki.lg.jp/kurashi/doro/1004728/1003768.html",
     "updatedAt": "2026-08-31T00:00:00Z"
   },
