@@ -26,6 +26,10 @@ export const prefectures: Prefecture[] = [
     "name": "宮城県"
   },
   {
+    "code": "06",
+    "name": "山形県"
+  },
+  {
     "code": "07",
     "name": "福島県"
   },
@@ -228,6 +232,11 @@ const cities: City[] = [
     "code": "04324",
     "name": "川崎町",
     "prefectureCode": "04"
+  },
+  {
+    "code": "06201",
+    "name": "山形市",
+    "prefectureCode": "06"
   },
   {
     "code": "07202",

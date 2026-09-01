@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1260
+// 件数: 1266
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -28596,6 +28596,154 @@ export const parkingLots: ParkingLotDetail[] = [
     "accessibleSpaces": [],
     "notes": "通常料金: 7:00-18:00 30分ごとに100円、18:00-23:00 1時間ごとに100円、23:00-翌7:00 1時間ごとに80円(営業時間 7:00-23:00)\n障害者割引: 無料\n総台数: 38台",
     "sourceUrl": "https://www.city.morioka.iwate.jp/kenkou/shogai/barrierfree/1006044/1006180/1006195.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "06201-001",
+    "name": "山形市中央駐車場",
+    "address": "山形県山形市旅篭町二丁目2番13号",
+    "latitude": 38.254753,
+    "longitude": 140.339493,
+    "prefectureCode": "06",
+    "prefectureName": "山形県",
+    "cityCode": "06201",
+    "cityName": "山形市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 0.03,
+      "conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の1時間まで250円、以後30分毎に100円。土日祝等（市役所閉庁日）は最大500円、平日夜間（17:30-22:00）は最大300円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 421台",
+    "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "06201-002",
+    "name": "山形市香澄駐車場",
+    "address": "山形県山形市香澄町二丁目9番46号",
+    "latitude": 38.249695,
+    "longitude": 140.333679,
+    "prefectureCode": "06",
+    "prefectureName": "山形県",
+    "cityCode": "06201",
+    "cityName": "山形市",
+    "accessibleSpaceTotal": 3,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 0.03,
+      "conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 3
+      }
+    ],
+    "notes": "通常料金: 営業時間内（7:30-22:00）は最初の1時間まで250円、以後30分毎に100円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 141台",
+    "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "06201-003",
+    "name": "山形市大手町駐車場",
+    "address": "山形県山形市大手町1番61号",
+    "latitude": 38.255363,
+    "longitude": 140.332993,
+    "prefectureCode": "06",
+    "prefectureName": "山形県",
+    "cityCode": "06201",
+    "cityName": "山形市",
+    "accessibleSpaceTotal": 4,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 0.03,
+      "conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 4
+      }
+    ],
+    "notes": "通常料金: 営業時間内（7:30-22:00）は最初の1時間まで250円、以後30分毎に100円。夜間（21:30-翌日8:30）は1台につき660円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 182台",
+    "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "06201-004",
+    "name": "山形市済生館前駐車場",
+    "address": "山形県山形市七日町一丁目3番1号",
+    "latitude": 38.253201,
+    "longitude": 140.336639,
+    "prefectureCode": "06",
+    "prefectureName": "山形県",
+    "cityCode": "06201",
+    "cityName": "山形市",
+    "accessibleSpaceTotal": 9,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 0.03,
+      "conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 9
+      }
+    ],
+    "notes": "通常料金: 最初の1時間まで300円、以後30分毎に100円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 432台",
+    "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "06201-005",
+    "name": "山形駅東口交通センター駐車場",
+    "address": "山形県山形市香澄町一丁目16番34号",
+    "latitude": 38.249886,
+    "longitude": 140.328796,
+    "prefectureCode": "06",
+    "prefectureName": "山形県",
+    "cityCode": "06201",
+    "cityName": "山形市",
+    "accessibleSpaceTotal": 7,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 0.03,
+      "conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。"
+    },
+    "accessibleSpaces": [
+      {
+        "count": 7
+      }
+    ],
+    "notes": "通常料金: 最初の30分で200円、以後30分ごとに100円加算、24時間の上限は1,200円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 499台",
+    "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "06201-006",
+    "name": "山形駅西口駅前広場駐車場",
+    "address": "山形県山形市双葉町一丁目509番",
+    "latitude": 38.248219,
+    "longitude": 140.325073,
+    "prefectureCode": "06",
+    "prefectureName": "山形県",
+    "cityCode": "06201",
+    "cityName": "山形市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "cap_hours",
+    "discount": {
+      "type": "cap_hours",
+      "maxHours": 0.03,
+      "conditions": "身体障がい者手帳（1～3級）、療育手帳、精神障がい者保健福祉手帳（1～2級）の所持者が対象。精算前に駐車場係員に連絡のうえ手帳を提示すること。無人駐車場のため、備付のインターホンで係員を呼び出すこと。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 最初の30分は無料。30分を超え1時間まで400円、以後20分毎に100円。\n障害者割引: 駐車料金の2分の1を免除\n総台数: 12台",
+    "sourceUrl": "https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008377/1004615.html",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];
