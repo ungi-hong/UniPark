@@ -6,7 +6,7 @@ type ParkingLotDetail = components["schemas"]["ParkingLotDetail"];
 // 生成元: apps/web/data/discount-research.json
 // 生成スクリプト: apps/web/scripts/build-parking-mock.mjs
 // 緯度経度は国土地理院ジオコーディング API による住所→座標変換 (一部は市区町村名でフォールバック)。
-// 件数: 1282
+// 件数: 1283
 
 export const parkingLots: ParkingLotDetail[] = [
   {
@@ -29155,6 +29155,27 @@ export const parkingLots: ParkingLotDetail[] = [
     ],
     "notes": "通常料金: 入場から30分無料、以降30分毎100円(24時間上限600円)\n障害者割引: 2割引\n総台数: 38台",
     "sourceUrl": "https://www.city.takaoka.toyama.jp/yokuarushitsumon/kurashi_tetsuzuki/10/8187.html",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  },
+  {
+    "id": "24205-001",
+    "name": "柿安コミュニティパーク駐車場(吉之丸コミュニティパーク駐車場)",
+    "address": "三重県桑名市吉之丸7",
+    "latitude": 35.066738,
+    "longitude": 136.698074,
+    "prefectureCode": "24",
+    "prefectureName": "三重県",
+    "cityCode": "24205",
+    "cityName": "桑名市",
+    "accessibleSpaceTotal": 0,
+    "discountType": "free",
+    "discount": {
+      "type": "free",
+      "conditions": "身体障害者手帳・療育手帳・精神障害者保健福祉手帳の提示により使用料の減免(無料)が受けられる。"
+    },
+    "accessibleSpaces": [],
+    "notes": "通常料金: 1日1回 普通車250円・大型車(バス等)1,000円・単車(バイク等)120円\n障害者割引: 無料",
+    "sourceUrl": "https://www.city.kuwana.lg.jp/asset/kurashi/koutsuu/24-10646-225-352.html",
     "updatedAt": "2026-09-01T00:00:00Z"
   }
 ];

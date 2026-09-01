@@ -90,6 +90,10 @@ export const prefectures: Prefecture[] = [
     "name": "愛知県"
   },
   {
+    "code": "24",
+    "name": "三重県"
+  },
+  {
     "code": "26",
     "name": "京都府"
   },
@@ -1265,6 +1269,11 @@ const cities: City[] = [
     "code": "23342",
     "name": "豊山町",
     "prefectureCode": "23"
+  },
+  {
+    "code": "24205",
+    "name": "桑名市",
+    "prefectureCode": "24"
   },
   {
     "code": "26102",
