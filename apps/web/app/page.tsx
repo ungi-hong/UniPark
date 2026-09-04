@@ -1,10 +1,19 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { LocateFixed } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronDown,
+  Filter,
+  Info,
+  LocateFixed,
+  MapPin,
+  Search,
+  X,
+} from "lucide-react";
 import "maplibre-gl/dist/maplibre-gl.css";
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Map,
   Marker,
@@ -16,10 +25,11 @@ import { api, type ParkingLotSummary } from "@/lib/api-client";
 
 const TOKYO_STATION = { lat: 35.6812, lng: 139.7671 };
 const DEFAULT_ZOOM = 14;
-// OpenAPI 仕様: /parking-lots/nearby の radius は 100〜10000m
 const RADIUS_MIN_M = 100;
 const RADIUS_MAX_M = 10000;
 const DEFAULT_RADIUS_M = 2000;
+
+type ParkingFilter = "all" | "discount" | "accessible";
 
 function haversineMeters(
   aLng: number,
@@ -27,46 +37,127 @@ function haversineMeters(
   bLng: number,
   bLat: number,
 ): number {
-  const R = 6371000;
-  const toRad = (d: number) => (d * Math.PI) / 180;
+  const radius = 6371000;
+  const toRad = (degrees: number) => (degrees * Math.PI) / 180;
   const dLat = toRad(bLat - aLat);
   const dLng = toRad(bLng - aLng);
   const s1 = Math.sin(dLat / 2);
   const s2 = Math.sin(dLng / 2);
-  const a =
-    s1 * s1 + Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * s2 * s2;
-  return 2 * R * Math.asin(Math.sqrt(a));
+  const value =
+    s1 * s1 +
+    Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * s2 * s2;
+  return 2 * radius * Math.asin(Math.sqrt(value));
 }
 
-function clamp(v: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, v));
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
 }
 
 function useGeolocation() {
-  const [pos, setPos] = useState<{ lat: number; lng: number } | null>(null);
+  const [position, setPosition] = useState<{
+    lat: number;
+    lng: number;
+  } | null>(null);
   const [denied, setDenied] = useState(false);
   const started = useRef(false);
 
   useEffect(() => {
     if (started.current) return;
     started.current = true;
-    if (typeof navigator === "undefined" || !navigator.geolocation) {
+    if (!navigator.geolocation) {
       queueMicrotask(() => setDenied(true));
       return;
     }
     navigator.geolocation.getCurrentPosition(
-      (p) => setPos({ lat: p.coords.latitude, lng: p.coords.longitude }),
+      (result) =>
+        setPosition({
+          lat: result.coords.latitude,
+          lng: result.coords.longitude,
+        }),
       () => setDenied(true),
       { enableHighAccuracy: false, timeout: 8000, maximumAge: 60_000 },
     );
   }, []);
 
-  return { pos, denied };
+  return { position, denied };
 }
 
-function NearbyMap({ mapTilerKey }: { mapTilerKey: string }) {
-  const { pos, denied } = useGeolocation();
-  const [selected, setSelected] = useState<ParkingLotSummary | null>(null);
+function getDiscountLabel(parkingLot: ParkingLotSummary): string {
+  switch (parkingLot.discountType) {
+    case "free":
+      return "無料・免除あり";
+    case "percentage":
+      return "料金割引あり";
+    case "fixed":
+      return "定額割引あり";
+    case "cap_hours":
+      return "時間無料あり";
+    case "amount_cap":
+      return "上限額あり";
+    default:
+      return "割引内容は要確認";
+  }
+}
+
+function ParkingCard({
+  parkingLot,
+  selected,
+  onSelect,
+}: {
+  parkingLot: ParkingLotSummary;
+  selected: boolean;
+  onSelect: () => void;
+}) {
+  return (
+    <li>
+      <button
+        type="button"
+        className={`explorer-card ${selected ? "is-selected" : ""}`}
+        onClick={onSelect}
+        aria-pressed={selected}
+      >
+        <div className="explorer-card-top">
+          <span className="explorer-card-type">
+            {parkingLot.cityName} · 駐車場
+          </span>
+          <span
+            className={`explorer-status ${
+              parkingLot.discountType === "unknown"
+                ? "is-unverified"
+                : parkingLot.discountType === "free"
+                  ? "is-free"
+                  : "is-available"
+            }`}
+          >
+            {parkingLot.discountType === "unknown" ? "要確認" : "割引あり"}
+          </span>
+        </div>
+        <h2>{parkingLot.name}</h2>
+        <p className="explorer-card-address">
+          <MapPin aria-hidden="true" />
+          {parkingLot.address}
+        </p>
+        <p className="explorer-card-summary">
+          {getDiscountLabel(parkingLot)}
+          {parkingLot.accessibleSpaceTotal > 0 &&
+            ` · 車いす区画 ${parkingLot.accessibleSpaceTotal}台`}
+        </p>
+        <span className="explorer-card-detail">
+          地図で見る <ArrowRight size={14} aria-hidden="true" />
+        </span>
+      </button>
+    </li>
+  );
+}
+
+function ParkingExplorer({ mapTilerKey }: { mapTilerKey: string }) {
+  const { position, denied } = useGeolocation();
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [city, setCity] = useState("all");
+  const [filter, setFilter] = useState<ParkingFilter>("all");
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const [listOpen, setListOpen] = useState(false);
   const [viewState, setViewState] = useState({
     longitude: TOKYO_STATION.lng,
     latitude: TOKYO_STATION.lat,
@@ -80,53 +171,49 @@ function NearbyMap({ mapTilerKey }: { mapTilerKey: string }) {
   const mapRef = useRef<MapRef>(null);
   const autoCentered = useRef(false);
 
-  // 位置情報が初めて取れた時だけ自動で現在地中心にパン (以降のユーザー操作は尊重)
   useEffect(() => {
-    if (autoCentered.current) return;
-    if (!pos) return;
+    if (autoCentered.current || !position) return;
     autoCentered.current = true;
     queueMicrotask(() =>
-      setViewState((v) => ({
-        ...v,
-        longitude: pos.lng,
-        latitude: pos.lat,
+      setViewState((current) => ({
+        ...current,
+        longitude: position.lng,
+        latitude: position.lat,
         zoom: DEFAULT_ZOOM,
       })),
     );
-  }, [pos]);
+  }, [position]);
 
-  // 現在のマップ bounds から検索 center と radius (画面対角線の半分) を確定する
   const syncSearchFromMap = useCallback(() => {
     const map = mapRef.current?.getMap();
     if (!map) return;
     const bounds = map.getBounds();
     const center = bounds.getCenter();
-    const ne = bounds.getNorthEast();
-    const diagonalHalfM = haversineMeters(
+    const northEast = bounds.getNorthEast();
+    const diagonalHalf = haversineMeters(
       center.lng,
       center.lat,
-      ne.lng,
-      ne.lat,
+      northEast.lng,
+      northEast.lat,
     );
     const radius = clamp(
-      Math.round(diagonalHalfM),
+      Math.round(diagonalHalf),
       RADIUS_MIN_M,
       RADIUS_MAX_M,
     );
-    setSearchParams((prev) => {
-      // 微小な揺らぎでの再 fetch を避ける
+    setSearchParams((previous) => {
       if (
-        Math.abs(prev.lat - center.lat) < 1e-5 &&
-        Math.abs(prev.lng - center.lng) < 1e-5 &&
-        Math.abs(prev.radius - radius) < 50
+        Math.abs(previous.lat - center.lat) < 1e-5 &&
+        Math.abs(previous.lng - center.lng) < 1e-5 &&
+        Math.abs(previous.radius - radius) < 50
       ) {
-        return prev;
+        return previous;
       }
       return { lat: center.lat, lng: center.lng, radius };
     });
   }, []);
 
-  const { data, isFetching } = useQuery({
+  const { data = [], isFetching } = useQuery({
     queryKey: [
       "parking-lots",
       "nearby",
@@ -137,129 +224,276 @@ function NearbyMap({ mapTilerKey }: { mapTilerKey: string }) {
     queryFn: () => api.findNearbyParkingLots(searchParams),
   });
 
-  const radiusKm = (searchParams.radius / 1000).toFixed(1);
-  const count = data?.length ?? 0;
-  const statusLabel =
-    !pos && !denied
-      ? "現在地取得中…"
-      : `${count} 件 (半径 ${radiusKm} km)`;
+  const cities = useMemo(
+    () => [...new Set(data.map((parkingLot) => parkingLot.cityName))].sort(),
+    [data],
+  );
+  const filtered = useMemo(() => {
+    const normalizedQuery = query.trim().toLocaleLowerCase("ja");
+    return data.filter((parkingLot) => {
+      if (city !== "all" && parkingLot.cityName !== city) return false;
+      if (filter === "discount" && parkingLot.discountType === "unknown") {
+        return false;
+      }
+      if (
+        filter === "accessible" &&
+        parkingLot.accessibleSpaceTotal === 0
+      ) {
+        return false;
+      }
+      if (!normalizedQuery) return true;
+      return [parkingLot.name, parkingLot.address, parkingLot.cityName]
+        .join(" ")
+        .toLocaleLowerCase("ja")
+        .includes(normalizedQuery);
+    });
+  }, [city, data, filter, query]);
 
+  const selected = filtered.find(
+    (parkingLot) => parkingLot.id === selectedId,
+  );
+  const selectParkingLot = (parkingLot: ParkingLotSummary) => {
+    setSelectedId(parkingLot.id);
+    mapRef.current?.flyTo({
+      center: [parkingLot.longitude, parkingLot.latitude],
+      zoom: 16,
+      duration: 500,
+    });
+  };
   const recenterToMe = () => {
-    if (!pos) return;
-    setViewState((v) => ({
-      ...v,
-      longitude: pos.lng,
-      latitude: pos.lat,
+    if (!position) return;
+    setViewState((current) => ({
+      ...current,
+      longitude: position.lng,
+      latitude: position.lat,
       zoom: DEFAULT_ZOOM,
     }));
   };
 
   return (
-    <div className="relative flex-1 [&_.maplibregl-ctrl-top-right]:mt-12">
-      <Map
-        ref={mapRef}
-        {...viewState}
-        onMove={(e: ViewStateChangeEvent) =>
-          setViewState((v) => ({ ...v, ...e.viewState }))
-        }
-        onMoveEnd={syncSearchFromMap}
-        onLoad={syncSearchFromMap}
-        mapStyle={`https://api.maptiler.com/maps/streets-v2/style.json?key=${mapTilerKey}`}
-        style={{ position: "absolute", inset: 0 }}
+    <main className="explorer-page">
+      <section
+        className={`explorer-sidebar ${listOpen ? "is-list-open" : ""}`}
+        aria-label="駐車場検索"
       >
-        <NavigationControl position="top-right" />
-        {pos && (
-          <Marker longitude={pos.lng} latitude={pos.lat} color="#3b82f6" />
-        )}
-        {(data ?? []).map((p) => (
-          <Marker
-            key={p.id}
-            longitude={p.longitude}
-            latitude={p.latitude}
-            color="#16a34a"
-            onClick={(e) => {
-              e.originalEvent.stopPropagation();
-              setSelected(p);
-            }}
-          />
-        ))}
-      </Map>
-
-      <div className="pointer-events-none absolute inset-x-2 top-2 flex justify-between gap-2">
-        <div className="rounded-full bg-white/90 px-3 py-1 text-xs text-zinc-700 shadow backdrop-blur">
-          {statusLabel}
-          {isFetching && " · 読込中"}
+        <div className="explorer-heading">
+          <div>
+            <p className="explorer-eyebrow">PARKING MAP</p>
+            <h1>駐車場を探す</h1>
+            <p className="explorer-heading-copy">障がい者向け駐車料金割引</p>
+          </div>
+          <Link href="/facilities" className="explorer-switch-link">
+            施設を探す
+          </Link>
+          <button
+            type="button"
+            className="explorer-mobile-filter"
+            onClick={() => setFiltersOpen((open) => !open)}
+            aria-expanded={filtersOpen}
+          >
+            <Filter size={15} aria-hidden="true" />絞り込み
+          </button>
         </div>
-        <Link
-          href="/list"
-          className="pointer-events-auto rounded-full bg-white/90 px-3 py-1 text-xs text-zinc-700 shadow backdrop-blur"
-        >
-          一覧で見る
-        </Link>
-      </div>
 
-      {!selected && (
-        <button
-          type="button"
-          onClick={recenterToMe}
-          disabled={!pos}
-          aria-label="現在地に戻す"
-          className="absolute bottom-4 left-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-zinc-700 shadow-lg transition disabled:opacity-40"
+        <div
+          className={`explorer-filters ${
+            filtersOpen ? "is-mobile-open" : ""
+          }`}
         >
-          <LocateFixed className="h-5 w-5" />
-        </button>
-      )}
+          <label className="explorer-search">
+            <span className="sr-only">駐車場名・住所から検索</span>
+            <Search aria-hidden="true" />
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="駐車場名・住所から検索"
+            />
+            {query && (
+              <button
+                type="button"
+                onClick={() => setQuery("")}
+                aria-label="検索語を消去"
+              >
+                <X size={15} aria-hidden="true" />
+              </button>
+            )}
+          </label>
 
-      {selected && (
-        <SimpleInfoPanel
-          parkingLot={selected}
-          onClose={() => setSelected(null)}
-        />
-      )}
-    </div>
-  );
-}
+          <div className="explorer-select-grid">
+            <label className="explorer-select">
+              市区町村
+              <select
+                value={city}
+                onChange={(event) => setCity(event.target.value)}
+              >
+                <option value="all">すべて</option>
+                {cities.map((name) => (
+                  <option key={name} value={name}>{name}</option>
+                ))}
+              </select>
+              <ChevronDown aria-hidden="true" />
+            </label>
+            <label className="explorer-select">
+              表示範囲
+              <select value="map" disabled>
+                <option value="map">現在の地図範囲</option>
+              </select>
+              <ChevronDown aria-hidden="true" />
+            </label>
+          </div>
 
-function SimpleInfoPanel({
-  parkingLot,
-  onClose,
-}: {
-  parkingLot: ParkingLotSummary;
-  onClose: () => void;
-}) {
-  return (
-    <div className="absolute inset-x-4 bottom-4 space-y-2 rounded-2xl bg-white p-4 shadow-2xl">
-      <div className="flex items-start justify-between gap-2">
-        <h2 className="text-base leading-snug font-semibold">
-          {parkingLot.name}
-        </h2>
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="閉じる"
-          className="-mt-1 -mr-1 px-2 py-1 text-zinc-400"
+          <p className="explorer-filter-label">
+            <Filter size={14} aria-hidden="true" />情報で絞り込む
+          </p>
+          <div className="explorer-segmented">
+            <button
+              type="button"
+              className={filter === "all" ? "is-active" : ""}
+              onClick={() => setFilter("all")}
+            >
+              すべて
+            </button>
+            <button
+              type="button"
+              className={filter === "discount" ? "is-active" : ""}
+              onClick={() => setFilter("discount")}
+            >
+              割引あり
+            </button>
+            <button
+              type="button"
+              className={filter === "accessible" ? "is-active" : ""}
+              onClick={() => setFilter("accessible")}
+            >
+              車いす区画
+            </button>
+          </div>
+        </div>
+
+        <div className="explorer-results-header">
+          <span><strong>{filtered.length}</strong> 件の駐車場</span>
+          <Link href="/list">地域一覧から探す</Link>
+        </div>
+        <div className="explorer-results">
+          {filtered.length > 0 ? (
+            <ul className="explorer-list">
+              {filtered.map((parkingLot) => (
+                <ParkingCard
+                  key={parkingLot.id}
+                  parkingLot={parkingLot}
+                  selected={parkingLot.id === selectedId}
+                  onSelect={() => selectParkingLot(parkingLot)}
+                />
+              ))}
+            </ul>
+          ) : (
+            <div className="explorer-empty">
+              <Search size={24} aria-hidden="true" />
+              <strong>駐車場が見つかりません</strong>
+              <p>地図を移動するか、条件を変えてください。</p>
+            </div>
+          )}
+        </div>
+        <p className="explorer-footnote">
+          <Info aria-hidden="true" />
+          掲載情報は自治体・施設の公式サイト等をもとに確認しています。
+        </p>
+      </section>
+
+      <section className="explorer-map" aria-label="駐車場マップ">
+        <Map
+          ref={mapRef}
+          {...viewState}
+          onMove={(event: ViewStateChangeEvent) =>
+            setViewState((current) => ({ ...current, ...event.viewState }))
+          }
+          onMoveEnd={syncSearchFromMap}
+          onLoad={syncSearchFromMap}
+          mapStyle={`https://api.maptiler.com/maps/streets-v2/style.json?key=${mapTilerKey}`}
+          style={{ position: "absolute", inset: 0 }}
         >
-          ×
-        </button>
-      </div>
-      <p className="text-xs text-zinc-500">{parkingLot.address}</p>
-      <div className="flex items-center justify-between text-xs">
-        <span className="text-zinc-700">
-          車椅子区画 {parkingLot.accessibleSpaceTotal} 台
-        </span>
-        {typeof parkingLot.distanceM === "number" && (
-          <span className="text-zinc-500">
-            {Math.round(parkingLot.distanceM)} m
-          </span>
+          <NavigationControl position="top-right" />
+          {position && (
+            <Marker longitude={position.lng} latitude={position.lat} color="#3b82f6" />
+          )}
+          {filtered.map((parkingLot) => (
+            <Marker
+              key={parkingLot.id}
+              longitude={parkingLot.longitude}
+              latitude={parkingLot.latitude}
+              anchor="bottom"
+              onClick={(event) => {
+                event.originalEvent.stopPropagation();
+                selectParkingLot(parkingLot);
+              }}
+            >
+              <span
+                className={`explorer-marker ${
+                  parkingLot.discountType !== "unknown" ? "is-primary" : ""
+                } ${parkingLot.id === selectedId ? "is-selected" : ""}`}
+              >
+                <MapPin aria-hidden="true" />
+              </span>
+            </Marker>
+          ))}
+        </Map>
+
+        <div className="explorer-map-status" aria-live="polite">
+          {!position && !denied
+            ? "現在地を取得中"
+            : `${filtered.length}件 · 半径${(
+                searchParams.radius / 1000
+              ).toFixed(1)}km`}
+          {isFetching && " · 読み込み中"}
+        </div>
+
+        <div className="explorer-map-legend">
+          <span><i className="is-primary" />割引あり</span>
+          <span><i />要確認</span>
+        </div>
+
+        {selected && (
+          <div className="explorer-map-card">
+            <button
+              type="button"
+              className="explorer-map-card-close"
+              onClick={() => setSelectedId(null)}
+              aria-label="選択を解除"
+            >
+              <X size={16} aria-hidden="true" />
+            </button>
+            <small>{selected.cityName} · 駐車場</small>
+            <h3>{selected.name}</h3>
+            <p>
+              {getDiscountLabel(selected)}
+              {selected.accessibleSpaceTotal > 0 &&
+                ` · 車いす区画 ${selected.accessibleSpaceTotal}台`}
+            </p>
+            <Link href={`/parking/${selected.id}`}>
+              詳細を見る <ArrowRight size={14} aria-hidden="true" />
+            </Link>
+          </div>
         )}
+
+        <button
+          type="button"
+          className="explorer-location-button"
+          onClick={recenterToMe}
+          disabled={!position}
+          aria-label="現在地に戻す"
+        >
+          <LocateFixed size={19} aria-hidden="true" />
+        </button>
+      </section>
+
+      <div className="explorer-mobile-sheet">
+        <span>{filtered.length}件の駐車場</span>
+        <button type="button" onClick={() => setListOpen((open) => !open)}>
+          {listOpen ? "一覧を閉じる" : "一覧を見る"}
+        </button>
       </div>
-      <Link
-        href={`/parking/${parkingLot.id}`}
-        className="block w-full rounded-xl bg-zinc-900 py-2 text-center text-sm font-medium text-white"
-      >
-        詳細を見る
-      </Link>
-    </div>
+    </main>
   );
 }
 
@@ -267,25 +501,16 @@ export default function Home() {
   const mapTilerKey = process.env.NEXT_PUBLIC_MAPTILER_KEY;
   if (!mapTilerKey) {
     return (
-      <div className="flex flex-1 flex-col items-center justify-center gap-4 px-8 py-16 text-center">
-        <h1 className="text-xl font-semibold">UniPark</h1>
+      <main className="flex flex-1 flex-col items-center justify-center gap-4 bg-white px-8 py-16 text-center">
+        <h1 className="text-xl font-semibold">駐車場を探す</h1>
         <p className="max-w-sm text-sm text-zinc-600">
-          マップ表示には MapTiler の API キーが必要です。
-          <br />
-          <code className="text-xs">apps/web/.env.local</code> に
-          <br />
-          <code className="text-xs">NEXT_PUBLIC_MAPTILER_KEY=…</code>
-          <br />
-          を設定して再起動してください。
+          地図を表示するための設定が不足しています。
         </p>
-        <Link
-          href="/list"
-          className="rounded-xl bg-zinc-900 px-4 py-2 text-sm text-white"
-        >
-          一覧から探す
+        <Link href="/list" className="border border-zinc-300 px-4 py-2 text-sm font-semibold text-blue-700">
+          地域一覧から探す
         </Link>
-      </div>
+      </main>
     );
   }
-  return <NearbyMap mapTilerKey={mapTilerKey} />;
+  return <ParkingExplorer mapTilerKey={mapTilerKey} />;
 }
