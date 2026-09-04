@@ -36,3 +36,12 @@ vendor/
 *.swp
 .DS_Store
 Thumbs.db
+.vercel
+.env*
+
+# Local facility-research coordination state and backups
+.facility-research-work/
+
+# Local agent/runtime state
+.agents/
+.claude/worktrees/
