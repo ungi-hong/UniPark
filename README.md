@@ -15,7 +15,7 @@ pnpm workspaces のモノレポ。データが読み取り専用・小規模な�
 
 地図は MapLibre GL + MapTiler。PWA 対応(ホーム画面追加・オフラインで直近閲覧した詳細ページを表示)。
 
-設計の経緯・詳細は [PORTFOLIO.md](./PORTFOLIO.md) を参照。
+今後のプロダクト方針と実装順は [docs/product-plan.md](./docs/product-plan.md)、設計の経緯・詳細は [PORTFOLIO.md](./PORTFOLIO.md) を参照。
 
 ## 開発
 
