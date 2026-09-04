@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research Accessible Facilities"
+  short_description: "Research accessible facilities safely, including parallel batches"
+  default_prompt: "Use $research-discount-facilities to research the next municipality's accessible facilities."
