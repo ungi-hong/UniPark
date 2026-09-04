@@ -2,13 +2,13 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "UniPark",
-    short_name: "UniPark",
-    description: "東京の障がい者割引のある駐車場をモバイルで分かりやすく",
+    name: "障害者くらしナビ",
+    short_name: "くらしナビ",
+    description: "障害者向けの割引施設・バリアフリー・駐車場情報を探せます",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",
-    theme_color: "#18181b",
+    theme_color: "#1769aa",
     lang: "ja",
     icons: [
       {

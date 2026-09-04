@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import { ServiceWorkerRegister } from "./sw-register";
 import { Footer } from "./footer";
+import { AppNav } from "./app-nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,17 +17,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UniPark",
-  description: "東京の障がい者割引のある駐車場をモバイルで分かりやすく",
+  metadataBase: new URL("https://shogaisha-kurashi.com"),
+  title: {
+    default: "障害者くらしナビ",
+    template: "%s | 障害者くらしナビ",
+  },
+  description:
+    "障害者向けの制度、割引施設、バリアフリー情報、駐車場情報を探せるWebサービスです。",
   appleWebApp: {
     capable: true,
-    title: "UniPark",
+    title: "障害者くらしナビ",
     statusBarStyle: "default",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#18181b",
+  themeColor: "#1769aa",
 };
 
 export default function RootLayout({
@@ -40,6 +46,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <AppNav />
         <Providers>{children}</Providers>
         <Footer />
         <ServiceWorkerRegister />
